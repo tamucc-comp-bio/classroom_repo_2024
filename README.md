@@ -40,7 +40,7 @@ Project examples: automatically process data from experimental apparatus; image 
 ### Section 1.  Welcome to the Matrix
 
 * [08/21  Week00  Introduction & Data](lectures/lecture00.md)
-  * [Assignment_0  Due, 09/06](assignments/assignment_0.md)
+  * [Assignment_0  Due, 08/28](assignments/assignment_0.md)
 
 <!-- 
 
