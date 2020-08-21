@@ -28,7 +28,7 @@
 
 We have a steep learning curve to traverse, so we are going to "flip" the classroom next week. Flipping the classroom means that you work on the material to be covered before we address it in lecture.  Then we can spend time in lecture going over the most challenging topics, as identified by you. Then we will continue together in lecture through new material that builds upon this assignment.
 
-Your assignment is to work through [**Chapter 1**](text_book_resources/ComputingSkillsforBiologists_Chapter1.pdf) to "Intermezzo 1.2". The chapter is set up in an interactive fashion, where you are expected to type in the 
+Your assignment is to work through [**Chapter 1**](https://github.com/tamucc-comp-bio-2020/classroom_repo/blob/master/text_book_resources/ComputingSkillsforBiologists_Chapter1.pdf) to "Intermezzo 1.2". The chapter is set up in an interactive fashion, where you are expected to type in the 
 ```
 code blocks
 ``` 
