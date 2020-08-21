@@ -56,11 +56,8 @@ Project examples: automatically process data from experimental apparatus; image 
 </p>
 </details>
 
-<details><summary>[FULL SYLLABUS](syllabi)</summary>
-<p>
+[FULL SYLLABUS](syllabi)
 
-</p>
-</details>
 
 ---
 
