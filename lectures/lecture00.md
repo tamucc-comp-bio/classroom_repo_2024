@@ -1,5 +1,6 @@
 # Week_00 INTRODUCTION & DATA
-## [Lecture_00 Slides](https://github.com/tamucc-comp-bio/fall_2019/blob/master/lectures/Lecture00_Overview_BigData.pdf)
+
+## [Lecture_00 Slides](Week00_files/Lecture00_Overview_BigData.pdf)
 
 This link will download today's lecture slides to your computer.
 
