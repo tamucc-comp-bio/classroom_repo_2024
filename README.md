@@ -2,7 +2,7 @@
 # BIOL 4590/5590, MARB 6590
 # Department of Life Sciences, Texas A&M University - Corpus Christi
 
-## <details><summary>OVERVIEW</summary>
+<details><summary>OVERVIEW</summary>
 <p>
 
 This is a 3 credit course for upper-level undergraduates and graduate students that introduces the powerful open-source computing tools that are used in biological research for the creation, organization, manipulation, processing, analysis, and archiving of “big data”. This course is designed to prepare and enable students to use computational tools for bioinformatic applications in advanced courses and independent research projects. The primary topics covered are: data formats and repositories, command line Linux computing and scripting, regular expressions, super-computing, computer programming with PYTHON and R, data visualization with R, version control and dissemination of scripts and programs with GIT, typesetting with LATEX, and organizing data with SQL relational databases. 
@@ -10,7 +10,7 @@ This is a 3 credit course for upper-level undergraduates and graduate students t
 </p>
 </details>
 
-## <details><summary>RESOURCES</summary>
+<details><summary>RESOURCES</summary>
 <p>
 
 Text Book: [Computing Skills for Biologists](https://computingskillsforbiologists.com/)
@@ -28,7 +28,9 @@ Text Book: [Computing Skills for Biologists](https://computingskillsforbiologist
 </p>
 </details>
 
-## STUDENT LEARNING OUTCOMES
+<details><summary>STUDENT LEARNING OUTCOMES</summary>
+<p>
+
 Upon the successful completion of this course, students should be able to: 
 1.	Recognize, describe, and organize data into standard biological data structures
 2.	Locate scientific data repositories and extract data
@@ -39,7 +41,11 @@ Upon the successful completion of this course, students should be able to:
 7.	Typeset with `LaTeX` or `MarkDown` variants
 8.	Use the most popular open-source tools for biological data manipulation
 
-## INSTRUCTIONAL METHODS AND ACTIVITIES
+</p>
+</details>
+
+<details><summary>INSTRUCTIONAL METHODS AND ACTIVITIES</summary>
+<p>
 
 Computation for 21st Century Biologists will convene on Fridays at 1pm for 2.5 hours.  Class periods will involve interactive lectures that require each student to have a computer designed for content creation (Linux, OSX, Windows, not chrome, not iOS, not Android). Homework exercises will embellish upon concepts addressed in lecture. Participation involves attending lectures and performance on unannounced quizzes.  Weekly Assignments will be given to reinforce concepts covered in lectures and encourage students to start using computational tools.  Exams will be used to evaluate comprehension of the materials covered in lectures and assignments. For undergraduates only, a comprehensive Final Exam will be used to assess the learning objectives detailed above.
 
@@ -47,9 +53,19 @@ Rather than having a final exam, graduate students are expected to complete a Fi
 
 Project examples: automatically process data from experimental apparatus; image analysis; automated reporting of experimental results; downloading and organizing data from online repositories; etc… 
 
-## [FULL SYLLABUS](syllabi)
+</p>
+</details>
 
-### Section 1.  Welcome to the Matrix
+<details><summary>FULL SYLLABUS](syllabi)</summary>
+<p>
+
+</p>
+</details>
+
+---
+
+<details><summary>Section 1.  Welcome to the Matrix</summary>
+<p>
 
 * [08/21  Week00  Introduction & Data](lectures/lecture00.md)
   * [Assignment_0  Due, 08/28](assignments/assignment_0.md)
@@ -75,9 +91,15 @@ Project examples: automatically process data from experimental apparatus; image 
 
 -->
 
+</p>
+</details>
+
+
 ---
 
-### Section 2. Programming the Matrix
+<details><summary>Section 2. Programming the Matrix</summary>
+<p>
+
 
 <!-- 
 
@@ -100,9 +122,15 @@ Project examples: automatically process data from experimental apparatus; image 
 
 -->
 
+
+</p>
+</details>
+
+
 ---
 
-### Section 3. Becoming "The One"
+<details><summary>Section 3. Becoming "The One"</summary>
+<p>
 
 <!-- 
 
@@ -118,9 +146,14 @@ Project examples: automatically process data from experimental apparatus; image 
 
 -->
 
+</p>
+</details>
+
+
 ---
 
-### Final Exam. "Welcome to the Real World"
+<details><summary>Final Exam: "Welcome to the Desert of the Real"</summary>
+<p>
 
 <!-- 
 
@@ -135,7 +168,7 @@ We have spent the semester learning:
 * distributing our work using GitHub
 
 #### Undergraduates:  
-I will issue a Final Exam in much the same way I've issued assignments. It will be due Wed Dec 13.
+I will issue a Final Exam in much the same way I have issued assignments. It will be due Wed Dec 13.
 
 #### Graduates
 Your "final" is completing your independent project (repo due 12/04, presentations Wed 12/13 at noon location TBA) where you automate the processing, analysis, and/or visualization of data
@@ -146,3 +179,7 @@ Your "final" is completing your independent project (repo due 12/04, presentatio
 
 -->
 
+</p>
+</details>
+
+---
