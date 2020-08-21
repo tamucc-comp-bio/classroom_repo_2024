@@ -30,7 +30,7 @@
 
 ## IN CLASS EXERCISES
 
-* There were no in class exercises this week. CSB Mind Expanders 01.01 & 01.02 were completed prior to class in [Assignment_0](https://github.com/tamucc-comp-bio/fall_2019/blob/master/assignments/assignment_0.md)
+* There were no in class exercises this week. CSB Mind Expanders 01.01 & 01.02 were completed prior to class in [Assignment_0](https://github.com/tamucc-comp-bio-2020/classroom_repo/blob/master/assignments/assignment_0.md)
 
 <!-- 
 
