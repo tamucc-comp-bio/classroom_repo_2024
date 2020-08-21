@@ -16,7 +16,7 @@ Text Book: [Computing Skills for Biologists](https://computingskillsforbiologist
 
 [Linux Cheat Sheet](resources/CheatSheetLinux_8-12-2016.pdf)
 
-## STUDENT LEARNING OUTCOMES AND ASSESSMENT
+## STUDENT LEARNING OUTCOMES
 Upon the successful completion of this course, students should be able to: 
 1.	Recognize, describe, and organize data into standard biological data structures
 2.	Locate scientific data repositories and extract data
@@ -39,8 +39,10 @@ Project examples: automatically process data from experimental apparatus; image 
 
 ### Section 1.  Welcome to the Matrix
 
-* [08/30  Week00  Introduction & Data](https://github.com/tamucc-comp-bio/fall_2019/blob/master/lectures/lecture00.md)
-  * [Assignment_0  Due, 09/06](https://github.com/tamucc-comp-bio/fall_2019/blob/master/assignments/assignment_0.md)
+* [08/21  Week00  Introduction & Data](lectures/lecture00.md)
+  * [Assignment_0  Due, 09/06](assignments/assignment_0.md)
+
+<!-- 
 
 * [09/06  Week01 Unix I](https://github.com/tamucc-comp-bio/fall_2019/blob/master/lectures/lecture01.md)
   * [Assignment_1,  Due 09/13](https://github.com/tamucc-comp-bio/fall_2019/blob/master/assignments/assignment_1.md)
@@ -59,9 +61,13 @@ Project examples: automatically process data from experimental apparatus; image 
   * [Install Anaconda & Jupyter, Due 10/04](http://computingskillsforbiologists.com/setup/basic-programming/), Due 10/04
   * [Grad Student Course Project: GitHub Repo w/ ReadMe, Due 10/04](https://github.com/tamucc-comp-bio/fall_2019/blob/master/assignments/gradproject_githubrep.md)
 
+-->
+
 ---
 
 ### Section 2. Programming the Matrix
+
+<!-- 
 
 * [10/04  Week05 Basic Python Programming I](https://github.com/tamucc-comp-bio/fall_2019/blob/master/lectures/lecture05.md)
   * [Assignment_5, Due 10/11](https://github.com/tamucc-comp-bio/fall_2019/blob/master/assignments/assignment_5.md)
@@ -80,9 +86,13 @@ Project examples: automatically process data from experimental apparatus; image 
 * [11/01  Week09 Scientific Computing](https://github.com/tamucc-comp-bio/fall_2019/blob/master/lectures/lecture09.md)
   * [Exam 2, Due 11/08](https://classroom.github.com/a/VSNTwKf2)
 
+-->
+
 ---
 
 ### Section 3. Becoming "The One"
+
+<!-- 
 
 * [11/08  Week10 Statistical Computing I](https://github.com/tamucc-comp-bio/fall_2019/blob/master/lectures/lecture10.md)
   * No Assignment
@@ -94,9 +104,13 @@ Project examples: automatically process data from experimental apparatus; image 
   * [Assignment 12, Due 12/04](https://classroom.github.com/a/1cpXbLT8) *Undergrads Only*
   * Graduate students, push your completed independent projects to GitHub on 12/04
 
+-->
+
 ---
 
 ### Final Exam. "Welcome to the Real World"
+
+<!-- 
 
 We have spent the semester learning: 
 * the philosophy of data science and linux
@@ -117,3 +131,6 @@ Your "final" is completing your independent project (repo due 12/04, presentatio
 ---
     
 * [Summaries of Responses](https://github.com/comp-bio-fall-2019/Class_Info/blob/master/response_summaries.md)
+
+-->
+
