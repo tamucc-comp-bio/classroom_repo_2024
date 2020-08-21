@@ -1,6 +1,6 @@
 # Assignment 0 
 
-## Due 09/06
+## Due 08/28
 
 ## Computer Preparation
 * Win10
@@ -28,19 +28,19 @@
 
 We have a steep learning curve to traverse, so we are going to "flip" the classroom next week. Flipping the classroom means that you work on the material to be covered before we address it in lecture.  Then we can spend time in lecture going over the most challenging topics, as identified by you. Then we will continue together in lecture through new material that builds upon this assignment.
 
-Your assignment is to work through [**Chapter 1**](https://github.com/tamucc-comp-bio/fall_2019/blob/master/text_book_resources/ComputingSkillsforBiologists_Chapter1.pdf) to "Intermezzo 1.2". The chapter is set up in an interactive fashion, where you are expected to type in the 
+Your assignment is to work through [**Chapter 1**](text_book_resources/ComputingSkillsforBiologists_Chapter1.pdf) to "Intermezzo 1.2". The chapter is set up in an interactive fashion, where you are expected to type in the 
 ```
 code blocks
 ``` 
 to learn the material.  
 
 ## Text Book Vs. Lecture Slides
-The [**Lecture_01 Slides**](https://github.com/tamucc-comp-bio/fall_2019/blob/master/lectures/Lecture01_WelcomeToTheMatrix.pdf) closely follow the book but there is some additional information that is not provided in the book (and vice versa). In the lecture slides, the `code blocks` are represented by green text on a black background, mimicking the terminal.
+The [**Lecture_01 Slides**](lectures/Week01_files/Lecture01_WelcomeToTheMatrix.pdf) closely follow the book but there is some additional information that is not provided in the book (and vice versa). In the lecture slides, the `code blocks` are represented by green text on a black background, mimicking the terminal.
 
 **Use _BodyMass.csv_ (slides) rather than _BodyM.csv_ (book)**
 
 ## Evaluation of Learning
-To evaluate your performance on the _Intermezzos_ and ask other questions to evaluate your progress, I've created a _Mind Expander_ for each _Intermezzo_, and they follow the same numbering format. You are expected to complete Mind Expanders 1.1 and 1.2, which are linked below. You need to be logged into your [TAMUCC email account](https://outlook.tamucc.edu) for the _Mind Expanders_ to record your work.
+To evaluate your performance on the _Intermezzos_ and ask other questions to evaluate your progress, I have created a _Mind Expander_ for each _Intermezzo_, and they follow the same numbering format. You are expected to complete Mind Expanders 1.1 and 1.2, which are linked below. You need to be logged into your [TAMUCC email account](https://outlook.tamucc.edu) for the _Mind Expanders_ to record your work.
 
 
 **_You can resubmit your answers as neccessary_**
