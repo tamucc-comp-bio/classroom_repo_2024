@@ -1,4 +1,4 @@
-### Computational Skills for 21st Century Biologists
+## Computational Skills for 21st Century Biologists
 #### BIOL 4590/5590, MARB 6590
 #### Department of Life Sciences, Texas A&M University - Corpus Christi
 
