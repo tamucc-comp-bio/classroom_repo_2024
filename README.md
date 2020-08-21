@@ -5,6 +5,8 @@
 <details><summary>OVERVIEW</summary>
 <p>
 
+[FULL SYLLABUS](syllabi)
+
 This is a 3 credit course for upper-level undergraduates and graduate students that introduces the powerful open-source computing tools that are used in biological research for the creation, organization, manipulation, processing, analysis, and archiving of “big data”. This course is designed to prepare and enable students to use computational tools for bioinformatic applications in advanced courses and independent research projects. The primary topics covered are: data formats and repositories, command line Linux computing and scripting, regular expressions, super-computing, computer programming with PYTHON and R, data visualization with R, version control and dissemination of scripts and programs with GIT, typesetting with LATEX, and organizing data with SQL relational databases. 
 
 </p>
@@ -55,8 +57,6 @@ Project examples: automatically process data from experimental apparatus; image 
 
 </p>
 </details>
-
-[FULL SYLLABUS](syllabi)
 
 
 ---
