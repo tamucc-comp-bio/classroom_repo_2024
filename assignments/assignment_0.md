@@ -35,7 +35,7 @@ code blocks
 to learn the material.  
 
 ## Text Book Vs. Lecture Slides
-The [**Lecture_01 Slides**](lectures/Week01_files/Lecture01_WelcomeToTheMatrix.pdf) closely follow the book but there is some additional information that is not provided in the book (and vice versa). In the lecture slides, the `code blocks` are represented by green text on a black background, mimicking the terminal.
+The [**Lecture_01 Slides**](https://github.com/tamucc-comp-bio-2020/classroom_repo/blob/master/lectures/Week01_files/Lecture01_WelcomeToTheMatrix.pdf) closely follow the book but there is some additional information that is not provided in the book (and vice versa). In the lecture slides, the `code blocks` are represented by green text on a black background, mimicking the terminal.
 
 **Use _BodyMass.csv_ (slides) rather than _BodyM.csv_ (book)**
 
