@@ -61,8 +61,8 @@ Project examples: automatically process data from experimental apparatus; image 
 
 ---
 
-<details><summary>Section 1.  Welcome to the Matrix</summary>
-<p>
+Section 1.  Welcome to the Matrix
+
 
 * [08/21  Week00  Introduction & Data](lectures/lecture00.md)
   * [Assignment_0  Due, 08/28](assignments/assignment_0.md)
@@ -88,10 +88,6 @@ Project examples: automatically process data from experimental apparatus; image 
   * [Grad Student Course Project: GitHub Repo w/ ReadMe, Due 10/04](https://github.com/tamucc-comp-bio/fall_2019/blob/master/assignments/gradproject_githubrep.md)
 
 -->
-
-</p>
-</details>
-
 
 ---
 
