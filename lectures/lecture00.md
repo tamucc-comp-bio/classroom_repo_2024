@@ -46,4 +46,4 @@ These text editors are very handy for viewing and editing code
 ---
 
 ## HOMEWORK
-[Assignment_0](https://github.com/tamucc-comp-bio/fall_2019/blob/master/assignments/assignment_0.md) complete before the next class
+[Assignment_0](assignments/assignment_0.md) complete before the next class
