@@ -17,11 +17,13 @@ This is a 3 credit course for upper-level undergraduates and graduate students t
 
 Text Book: [Computing Skills for Biologists](https://computingskillsforbiologists.com/)
 
-[Downloading Software](http://computingskillsforbiologists.com/setup/)
+[R for Data Science](https://r4ds.had.co.nz/)
 
-[Text Book Resource Downloads](https://computingskillsforbiologists.com/downloads/)
+[CSB Guide to Downloading Software](http://computingskillsforbiologists.com/setup/)
 
-[Text Book GitHub Repository](https://github.com/CSB-book/CSB)
+[CSB Text Book Resource Downloads](https://computingskillsforbiologists.com/downloads/)
+
+[CSB Text Book GitHub Repository](https://github.com/CSB-book/CSB)
 
 [Apply Win10 Ubuntu Settings To New Computer](https://github.com/cbirdlab/wlsUBUNTU_settings/blob/master/README.md)
 
