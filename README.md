@@ -67,9 +67,10 @@ Project examples: automatically process data from experimental apparatus; image 
 * [08/21  Week00  Introduction & Data](lectures/lecture00.md)
   * [Assignment_0  Due, 08/28](assignments/assignment_0.md)
 
+* [08/28  Week01 Unix I](https://github.com/tamucc-comp-bio/fall_2019/blob/master/lectures/lecture01.md)
+
 <!-- 
 
-* [09/06  Week01 Unix I](https://github.com/tamucc-comp-bio/fall_2019/blob/master/lectures/lecture01.md)
   * [Assignment_1,  Due 09/13](https://github.com/tamucc-comp-bio/fall_2019/blob/master/assignments/assignment_1.md)
   * [Grad Student Course Project: Ideas, Due 09/13](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUOUo2UVRUMVgwTUlQMlpUQzUzOTIzME9LNi4u)
   
