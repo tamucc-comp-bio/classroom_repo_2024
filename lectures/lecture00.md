@@ -1,6 +1,6 @@
 # Week_00 INTRODUCTION & DATA
 
-## [Lecture 00 Recording Stream](https://tamucc.webex.com/webappng/sites/tamucc/recording/playback/c435d912674b47eda6ca33daa6491eab)
+## [Lecture_00 Stream](https://tamucc.webex.com/webappng/sites/tamucc/recording/playback/c435d912674b47eda6ca33daa6491eab)
 
 ## [Lecture_00 Slides](Week00_files/Lecture00_Overview_BigData.pdf)
 
