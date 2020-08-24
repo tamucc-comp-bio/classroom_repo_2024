@@ -62,7 +62,9 @@ Project examples: automatically process data from experimental apparatus; image 
 
 ---
 
-### SCEDULE
+### SCHEDULE
+
+---
 
 SECTION 1.  WELCOME TO THE MATRIX
 
@@ -91,7 +93,7 @@ SECTION 1.  WELCOME TO THE MATRIX
 
 -->
 
-<details><summary>QUIZ RESULTS & ANSWERS</summary>
+<details><summary>Quiz Results and Answers</summary>
 <p>
 
 * [Quiz 0.0](https://forms.office.com/Pages/AnalysisPage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMlExSEtYN0pTTFVXUzJJUlpYRUNGQzU1Ti4u&AnalyzerToken=xEeP1kCHWBVvr2lUyEOtLJ63vGJEY4Nq)
@@ -99,10 +101,10 @@ SECTION 1.  WELCOME TO THE MATRIX
 </p>
 </details>
 
+---
 
-<details><summary>Section 2. Programming the Matrix</summary>
+<details><summary>SECTION 2. PROGRAMMING THE MATRIX</summary>
 <p>
-
 
 <!-- 
 
@@ -128,8 +130,9 @@ SECTION 1.  WELCOME TO THE MATRIX
 </p>
 </details>
 
+---
 
-<details><summary>Section 3. Becoming "The One"</summary>
+<details><summary>SECTION 3. BECOMING "THE ONE"</summary>
 <p>
 
 <!-- 
@@ -149,8 +152,9 @@ SECTION 1.  WELCOME TO THE MATRIX
 </p>
 </details>
 
+---
 
-<details><summary>Final Exam: "Welcome to the Desert of the Real"</summary>
+<details><summary>FINAL EXAM: "Welcome to the Desert of the Real"</summary>
 <p>
 
 <!-- 
