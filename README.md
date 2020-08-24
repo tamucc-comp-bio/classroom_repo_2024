@@ -94,12 +94,11 @@ SECTION 1.  WELCOME TO THE MATRIX
 <details><summary>QUIZ RESULTS & ANSWERS</summary>
 <p>
 
-[Quiz 0.0](https://forms.office.com/Pages/AnalysisPage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMlExSEtYN0pTTFVXUzJJUlpYRUNGQzU1Ti4u&AnalyzerToken=xEeP1kCHWBVvr2lUyEOtLJ63vGJEY4Nq)
+* [Quiz 0.0](https://forms.office.com/Pages/AnalysisPage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMlExSEtYN0pTTFVXUzJJUlpYRUNGQzU1Ti4u&AnalyzerToken=xEeP1kCHWBVvr2lUyEOtLJ63vGJEY4Nq)
 
 </p>
 </details>
 
----
 
 <details><summary>Section 2. Programming the Matrix</summary>
 <p>
@@ -126,12 +125,9 @@ SECTION 1.  WELCOME TO THE MATRIX
 
 -->
 
-
 </p>
 </details>
 
-
----
 
 <details><summary>Section 3. Becoming "The One"</summary>
 <p>
@@ -154,8 +150,6 @@ SECTION 1.  WELCOME TO THE MATRIX
 </details>
 
 
----
-
 <details><summary>Final Exam: "Welcome to the Desert of the Real"</summary>
 <p>
 
@@ -176,10 +170,6 @@ I will issue a Final Exam in much the same way I have issued assignments. It wil
 
 #### Graduates
 Your "final" is completing your independent project (repo due 12/04, presentations Wed 12/13 at noon location TBA) where you automate the processing, analysis, and/or visualization of data
-
----
-    
-* [Summaries of Responses](https://github.com/comp-bio-fall-2019/Class_Info/blob/master/response_summaries.md)
 
 -->
 
