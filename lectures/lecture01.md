@@ -27,6 +27,12 @@ You are expected to start each lecture with your terminal window open and ready 
     git clone https://github.com/CSB-book/CSB.git
     ```
 
+  * It's always a good idea to keep your apps in `Ubuntu` up to date. _The first time you do this, it could take a long time to finish. After that, if you do this when you log in, it should go quickly._
+    ```bash
+    sudo apt update
+    sudo apt upgrade
+    ```
+
 </p>
 </details>
 
