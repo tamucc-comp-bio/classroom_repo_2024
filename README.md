@@ -61,14 +61,8 @@ Project examples: automatically process data from experimental apparatus; image 
 </details>
 
 ---
-<details><summary>QUIZ RESULTS & ANSWERS</summary>
-<p>
 
-[Quiz 0.0](https://forms.office.com/Pages/AnalysisPage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMlExSEtYN0pTTFVXUzJJUlpYRUNGQzU1Ti4u&AnalyzerToken=xEeP1kCHWBVvr2lUyEOtLJ63vGJEY4Nq)
-
-</p>
-</details>
----
+#### SCEDULE
 
 Section 1.  Welcome to the Matrix
 
@@ -97,6 +91,14 @@ Section 1.  Welcome to the Matrix
   * [Grad Student Course Project: GitHub Repo w/ ReadMe, Due 10/04](https://github.com/tamucc-comp-bio/fall_2019/blob/master/assignments/gradproject_githubrep.md)
 
 -->
+
+<details><summary>QUIZ RESULTS & ANSWERS</summary>
+<p>
+
+[Quiz 0.0](https://forms.office.com/Pages/AnalysisPage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMlExSEtYN0pTTFVXUzJJUlpYRUNGQzU1Ti4u&AnalyzerToken=xEeP1kCHWBVvr2lUyEOtLJ63vGJEY4Nq)
+
+</p>
+</details>
 
 ---
 
