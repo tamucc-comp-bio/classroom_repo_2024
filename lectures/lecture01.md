@@ -6,6 +6,8 @@
 
 ## Computer Preparation
 
+You are expected to start each lecture with your terminal window open and ready to go.
+
 <details><summary>Win10</summary>
 <p>
 
