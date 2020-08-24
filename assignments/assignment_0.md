@@ -59,10 +59,17 @@ code blocks
 ``` 
 to learn the material.  
 
+
+## Resources to Help You
+
+I highly recommend that you print out the [Linux Cheat Sheet](https://github.com/tamucc-comp-bio-2020/classroom_repo/blob/master/resources/CheatSheetLinux_8-12-2016.pdf) which I created for myself and my students when I was learning `bash`.  It's unique because it translates english into `bash`.
+
+
 ## Text Book Vs. Lecture Slides
 The [**Lecture_01 Slides**](https://github.com/tamucc-comp-bio-2020/classroom_repo/blob/master/lectures/Week01_files/Lecture01_WelcomeToTheMatrix.pdf) closely follow the book but there is some additional information that is not provided in the book (and vice versa). In the lecture slides, the `code blocks` are represented by green text on a black background, mimicking the terminal.
 
 **Use _BodyMass.csv_ (slides) rather than _BodyM.csv_ (book)**
+
 
 ## Evaluation of Learning
 To evaluate your performance on the _Intermezzos_ and ask other questions to evaluate your progress, I have created a _Mind Expander_ for each _Intermezzo_, and they follow the same numbering format. You are expected to complete Mind Expanders 1.1 and 1.2, which are linked below. You need to be logged into your [TAMUCC email account](https://outlook.tamucc.edu) for the _Mind Expanders_ to record your work.
