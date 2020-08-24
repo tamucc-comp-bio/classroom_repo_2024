@@ -62,10 +62,9 @@ Project examples: automatically process data from experimental apparatus; image 
 
 ---
 
-#### SCEDULE
+### SCEDULE
 
-Section 1.  Welcome to the Matrix
-
+SECTION 1.  WELCOME TO THE MATRIX
 
 * [08/21  Week00  Introduction & Data](lectures/lecture00.md)
   * [Assignment_0  Due, 08/28](assignments/assignment_0.md)
