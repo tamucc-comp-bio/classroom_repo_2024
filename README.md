@@ -60,6 +60,16 @@ Project examples: automatically process data from experimental apparatus; image 
 </p>
 </details>
 
+<details><summary>VIRTUAL CLASSROOM & OFFICE LOCATIONS</summary>
+<p>
+
+[Lectures, F 1-3:30](https://tamucc.webex.com/tamucc/j.php?MTID=m04b44c32e11f93d46fd985947052e0d0)
+
+[Office hours, W-F 3-5](https://tamucc.webex.com/meet/cbird)
+
+</p>
+</details>
+
 ---
 
 ### SCHEDULE
