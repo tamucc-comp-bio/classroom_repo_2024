@@ -63,9 +63,11 @@ Project examples: automatically process data from experimental apparatus; image 
 <details><summary>VIRTUAL CLASSROOM & OFFICE LOCATIONS</summary>
 <p>
 
-[Lectures, F 1-3:30](https://tamucc.webex.com/tamucc/j.php?MTID=m04b44c32e11f93d46fd985947052e0d0)
+[Lectures](https://tamucc.webex.com/tamucc/j.php?MTID=m04b44c32e11f93d46fd985947052e0d0) are F 1-3:30. 
 
-[Office hours, W-F 3-5](https://tamucc.webex.com/meet/cbird)
+[Office hours](https://tamucc.webex.com/meet/cbird) are W-Th 3-5 & F 3:30-5
+
+[Grades](https://bb9.tamucc.edu) will be maintained on black board.
 
 </p>
 </details>
