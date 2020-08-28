@@ -159,7 +159,7 @@ Comparison of GUI and CLI for manipulating data
 </p>
 </details>
 
-<details><summary>Interactive Session: getting your feet wet</summary>
+<details><summary>Interactive Session: Getting Started with Unix</summary>
 <p>
 
 ### Open A Terminal Window
@@ -323,8 +323,141 @@ ls CSB/unix/solutions
 </p>
 </details>
 
-<details><summary>Interactive Session: getting your feet wet</summary>
+<details><summary>Interactive Session: The Shell</summary>
 <p>
+
+### The [Shell](https://en.wikipedia.org/wiki/Shell_(computing))
+
+* The shell is software that controls the [operating system kernel](https://en.wikipedia.org/wiki/Kernel_(operating_system)) and is accessed through a terminal window
+
+* The shell we are using in Ubuntu and MacOS is called `bash`, or Born Again Shell
+
+* `bash` is a [shell scripting](https://en.wikipedia.org/wiki/Shell_script) computer language
+
+* The commands we have been using are `bash` commands which allow us to control the operating system
+
+The image below shows the [command prompt](https://en.wikipedia.org/wiki/Command-line_interface#Command_prompt) on my computer. Below the picture, we decode some of the information for you.
+
+![](Week01_files/cmd_prompt.png)
+
+`$` Indicates the terminal is ready  to accept commands
+
+`~` Indicates where I am, the home dir
+
+`LAPTOP-URSOLRPO` is the name of my laptop (very creative, am I right?!)
+
+`cbird` is my user name
+
+The rest is not important right now, but if you are dying to know, the `(base)` is there because I have [anaconda](https://www.anaconda.com/) running to manage [python](https://en.wikipedia.org/wiki/Python_(programming_language)). If I turn off anaconda, then the `(base)` will go away.
+
+---
+
+### Bash Keyboard Shortcuts
+
+*`↑`*	Scroll through previous commands
+
+*`Tab`*	autocomplete command, dir, or file name. if you hit tab and nothing happens there are either multiple matches or 0 matches
+
+*`Tab,Tab`*	 show matches
+
+![](Week01_files/keyboard_shortcuts.png)
+
+Go ahead and try some of these in your terminal. 
+
+Note that I have created a [Linux Cheat Sheet](https://github.com/tamucc-comp-bio-2020/classroom_repo/blob/master/resources/CheatSheetLinux_8-12-2016.pdf)to help you with common `bash` commands and keyboard shortcuts.  I encourage you to print this out on a single sheet of paper, both sides, for your reference.
+
+---
+
+### `bash` Command Syntax
+
+Let us consider the following command:
+
+```bash
+# be sure to type the following commands into your terminal, but not this message
+cal
+cal 2020
+cal -j
+cal --julian
+cal -j 2020
+```
+
+_Note: `ctrl + c` will stop a command if it is taking too long to complete_
+
+* Bash _*commands*_ like `cal` are programs that follow the UNIX philosophy.
+
+* _*Arguments*_ like `2020` are essentially options, order usually matters and some commands require particular arguments. For example, `cp` or copy requires at least which file to copy and where to copy it, in that order
+
+* `-j` is an _*option*_, in this case it means Julian calendar
+
+  * `--julian` is the same as `–j`, options that are words are _always_ preceded by two dashes
+
+---
+
+### Getting Help with `bash`
+
+#### 1. Use an internet search with your favorite search engine if you know what you want to do, but do not know the command
+
+Example search terms: `bash <english description of what you want to do>`
+
+Do not be afraid to modify and try different english descriptions if you do not succeed in the first search
+
+
+#### 2. Use the `man` command if you know the command but are not sure of the options and arguments
+
+```bash
+man cal
+```  
+
+_scroll with arrow keys and `q` will get you out of the manual_
+
+All manuals in unix/linux follow the same format:
+
+`NAME`
+` <name and brief descrip>`
+ 
+`SYNOPSIS`
+` <examples of how to run>`
+ 
+`DESCRIPTION`
+` <detailed description>`
+` <list of arguments/options>`
+
+---
+
+### Changing Directories (`cd`)
+
+```
+# move up to parent directory
+cd ..
+
+# show path to present working directory
+pwd
+
+# move to root dir
+cd /
+pwd
+
+# go back to previous dir
+cd -
+pwd
+
+# go to the home dir
+cd ~
+pwd
+
+# show present working dir contents
+ls
+
+# show dir contents with more details
+ls -l
+
+# show dir contents with more details, sorted by *t*ime in *r*everse order with *h*uman readable file sizes.
+ls -ltrh
+```
+
+_Note:  single letter options can typically be combined together, `-l –t –r -h`  =  `-ltrh`_
+
+
 
 
 
