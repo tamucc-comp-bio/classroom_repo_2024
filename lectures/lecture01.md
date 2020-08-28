@@ -364,13 +364,11 @@ The rest is not important right now, but if you are dying to know, the `(base)` 
 
 Go ahead and try some of these in your terminal. 
 
-Note that I have created a [Linux Cheat Sheet](https://github.com/tamucc-comp-bio-2020/classroom_repo/blob/master/resources/CheatSheetLinux_8-12-2016.pdf)to help you with common `bash` commands and keyboard shortcuts.  I encourage you to print this out on a single sheet of paper, both sides, for your reference.
+Note that I have created a [Linux Cheat Sheet](https://github.com/tamucc-comp-bio-2020/classroom_repo/blob/master/resources/CheatSheetLinux_8-12-2016.pdf) to help you with common `bash` commands and keyboard shortcuts.  I encourage you to print this out on a single sheet of paper, both sides, for your reference.
 
 ---
 
 ### `bash` Command Syntax
-
-Let us consider the following command:
 
 ```bash
 # be sure to type the following commands into your terminal, but not this message
@@ -482,19 +480,397 @@ And the permissions can be further broken down.  The first column indicates whet
 
 ### Paths
 
+A _*path*_ is the address of file or directory
 
+An _*[absolute path](https://en.wikipedia.org/wiki/Path_(computing)#Absolute_and_relative_paths)*_ is complete and starts with root `/` or a variable that starts with root.  For example, the following return the same result regardless of pwd
+
+```bash
+# absolute paths, make sure you replace <username> with your user name
+ls /home/<username>/CSB
+ls ~/CSB
+ls $HOME/CSB
+```
+
+_*[Relative paths](https://en.wikipedia.org/wiki/Path_(computing)#Absolute_and_relative_paths)*_ start from the present working directory
+
+```bash
+# These relative paths only work if you are in the right dir
+ls ./CSB
+ls CSB
+ls ../
+```
+
+  * `.` Means present directory
+  * `..` means  parent directory
+
+It is best not to used spaces in dir and file names, but you can wrap file names with spaces in quotes or precede each space with a ` \ ` see pg 21 of CSB text for dealing w/ spaces
+
+
+---
 
 </p>
 </details>
 
 
+<details><summary>Intermezzo/Mind Expander 1.1</summary>
+<p>
 
-* There were no in class exercises this week. CSB Mind Expanders 01.01 & 01.02 were completed prior to class in [Assignment_0](https://github.com/tamucc-comp-bio-2020/classroom_repo/blob/master/assignments/assignment_0.md)
+### [Mind Expander 1.1](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUM1FFUUZLT01LR0ZGODU2WVNSV1c0NEpWMi4u)
+
+</p>
+</details>
+
+
+<details><summary>Interactive Session: Commands to Remember</summary>
+<p>
+
+### Copy with `cp <from> <to>`
+
+From here forward, we will adopt the code block syntax used in the CSB text book.  The `$` represents the command prompt and you are expected to type in the commands that follow it.
+
+```bash
+# goto sandbox
+$ cd ~/CSB/unix/sandbox
+
+# copy the following file to the present directory
+$ cp ../data/Buzzard2015_about.txt .
+
+# copy file and rename it in present dir
+$ cp ../data/Buzzard2015_about.txt ./Buzzard2015_about2.txt
+
+# copy whole data dir to present dir, then view present dir
+$ cp –rf ../data .
+
+$ ls
+```
+
+_Note:  `-r` means [recursive](https://en.wikipedia.org/wiki/Recursion_(computer_science)), `-f` means force_
+
+---
+
+### Move or rename with `mv <from> <to>`
+
+```bash
+# make sure you are still in sandbox, if not then 
+$ cd ~/CSB/unix/sandbox
+$ pwd
+
+# move the file to the data directory
+$ mv Buzzard2015_about2.txt ../data
+
+# rename a file that isn’t in your pwd
+$ mv ../data/Buzzard2015_about2.txt ../data/Buzzard2015_about_new.txt 
+
+# check your work
+$ ls ../data
+
+```
+
+_Note:  `bash` gives no positive feedback, only negative if something is wrong.  I will do my best to make up for the callousness of `bash`_
+
+
+---
+
+### Create file with touch <filename>
+
+```bash
+# make sure you are still in sandbox, if not then 
+$ cd ~/CSB/unix/sandbox
+$ pwd
+
+# inspect the current contents of the directory
+$ ls -l
+
+# create a new file (you can list multiple files)
+$ touch new_file.txt
+
+# inspect the contents of the directory again
+$ ls -l
+
+# if you touch the file a second time, the time of last access will change
+$ touch new_file.txt
+$ ls -l
+
+```
+
+_Note:  `bash` gives no positive feedback, only negative if something is wrong.  I will do my best to make up for the callousness of `bash`_
+
+---
+
+### Remove file(s) or dir(s) with `rm <name>` 
+### Make dirs with `mkdir <name>`
+
+```bash
+# make sure you are still in sandbox, if not then 
+$ cd ~/CSB/unix/sandbox
+$ pwd
+
+# delete new_file.txt in sandbox, the –i requests confirmation
+$ rm -i new_file.txt
+
+# make dir d1 in present dir, d2 in d1, and d3 in d2; if you have tree try it
+$ mkdir -p d1/d2/d3
+$ tree d1
+d1
+└── d2
+    └── d3
+
+# remove the d1,d2,& d3 dirs recursively
+$ rm -rf d1
+```
+
+_be careful with rm, you could delete your whole computer and there is no undo_
+
+---
+
+### View large files with `less -S <filename>`
+### Print and concatenate files `cat <filename>`
+### Print and sort files `sort <filename>`
+
+
+```bash
+# move to the data dir
+$ cd ~/CSB/unix/data
+
+# look at DNA alignment file, try duckduckgo search on “bash less commands”
+$ less –S Marra2014_data.fasta
+
+# type /ATCG inside of less to search; u=up, d=down, G=end, g=begin, q=exit
+
+# concatenate files and/or print to screen
+$ cat Marra2014_about.txt Gesquiere2011_about.txt Buzzard2015_about.txt
+
+# print the sorted lines of a file
+$ sort Gesquiere2011_data.csv
+
+# sort numerically by column 2 in reverse order and view in less
+$ sort –n –k2 –r Gesquiere2011_data.csv | less
+```
+
+_Note: in the last command we used a pipe `|` to direct the text stream from `sort` to `less`.  Remember the [Unix Philosophy](https://en.wikipedia.org/wiki/Unix_philosophy)_
+
+---
+
+### Count words with		`wc <filename>`
+### Determine file type		`file <filename>`
+
+```bash
+# count lines, words, and characters
+$ wc Gesquiere2011_about.txt
+
+# count lines only
+$ wc -l Marra2014_about.txt
+
+# determine file type, ASCII is a type of human-readable text file
+$ file Marra2014_about.txt
+Marra2014_about.txt: ASCII English text
+
+```
+
+_Do not forget to use `Tab` key to autocomplete directory names and prevent spelling mistakes_
+
+---
+
+### Retrieve beginning of file `head –n <number of lines> <filename>`
+### Retrieve end of file tail `–n <number of lines> <filename>`
+
+```bash
+# display first two lines of a file
+$ head -n 2 Gesquiere2011_data.csv
+
+# display last two lines of file
+$ tail -n 2 Gesquiere2011_data.csv
+
+# display from line 2 onward
+# (i.e., removing the header of the file)
+$ tail -n +2 Gesquiere2011_data.csv
+
+# display all but the last line
+$ head -n -1 Gesquiere2011_data.csv
+```
+
+_Do not forget to use `Tab` key to autocomplete file names and prevent spelling mistakes_
+
+---
+
+</p>
+</details>
+
+
+<details><summary>Intermezzo/Mind Expander 1.2</summary>
+<p>
+
+### [Mind Expander 1.2](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUM0VSMlJZMFg2VzlNNjZVUTJINk9TRlBSOC4u)
+
+</p>
+</details>
+
+
+<details><summary>Interactive Session: Advanced `bash` Commands</summary>
+<p>
+
+### Redirection of output (stdout) to file `[command] > filename`
+### Append stdout to file `[command] >> filename` 
+### Redirect contents of file to stdin `[command] < filename` 
+
+```bash
+# let’s start by moving to our sandbox
+$ cd ~/CSB/unix/sandbox
+
+# print text to screen, then print to file, then print file to screen
+$ echo "My first line" 
+$ echo "My first line" > test.txt
+$ cat test.txt
+
+# append file with additional text, then print file to screen
+$ echo "My second line" >> test.txt
+$ cat test.txt
+```
+
+_use `Tab` key to autocomplete names, prevent spelling mistakes_
+
+---
+
+### Problem Solving Scenario
+
+A machine provides you with thousands of data files. There’s so many, it is breaking your file browser. How many files are there?
+
+We will use the dir `unix/data/Saavedra2013` as an example of a directory with many files
+
+```bash
+# start by moving to our sandbox if you are not already there
+$ cd ~/CSB/unix/sandbox
+
+# save file names to file in pwd
+$ ls ../data/Saavedra2013 > filelist.txt
+
+# look at the file
+$ cat filelist.txt
+
+# count lines in the file
+$ wc -l filelist.txt
+
+# remove the file
+$ rm filelist.txt
+```
+
+![Common Operating Systems](Week01_files/pipeline.png)
+
+A pipe `|` passes the [stdout](https://en.wikipedia.org/wiki/Standard_streams#Standard_output_(stdout)) from one command to the [stdin](https://en.wikipedia.org/wiki/Standard_streams#Standard_input_(stdin)) of another
+
+How many files are there?
+
+```bash
+# list file names
+$ ls ../data/Saavedra2013
+
+# list file names and pipe into wc
+$ ls ../data/Saavedra2013 | wc –l
+59
+
+```
+
+---
+
+### TSV & CSV Data Files
+
+![Common Operating Systems](Week01_files/tsv.png)
+
+* Tab Separated Values (TSV)
+
+  * Tabs denote columns
+  
+* Comma Separated Values (CSV)
+
+  * Commas denote columns
+  
+* [Tidy data](https://en.wikipedia.org/wiki/Tidy_data)
+
+  * Each [row](https://en.wikipedia.org/wiki/Row_(database)) is one [unit of observation](https://en.wikipedia.org/wiki/Unit_of_observation)
+  
+  * Each [column](https://en.wikipedia.org/wiki/Column_(database)) is one dimension or aspect of the units of observation
+  
+* File extensions not always accurate
+
+
+---
+
+### Convert Among Formats Using `tr "<old delimiter>" "<new delimiter>"`
+
+```bash
+# view contents of csv
+$ less -S ../data/Pacifici2013_data.csv 
+
+# replace semicolons with commas using tr [find] [replace]
+$ cat ../data/Pacifici2013_data.csv | tr “;” “,” | less –S
+
+# view as tsv
+# \t is the nearly universal symbol for tab
+$ cat ../data/Pacifici2013_data.csv | tr ";" "\t" | less -S
+
+```
+
+_`tr` is an abbreviation for translate_
+
+---
+
+### Using `cut` to retrieve columns and `head` to retrieve rows
+
+```bash
+# change directory
+$ cd ~/CSB/unix/data
+
+# display first line of file (i.e., header of CSV file)
+$ head -n 1 Pacifici2013_data.csv
+
+# display first column of file
+$ cut -d ";" –f 1 Pacifici2013_data.csv
+
+# display second through fourth columns
+$ cut -d ";" -f 2-4 Pacifici2013_data.csv
+
+# display first “cell” of data
+$ head -n 1 Pacifici2013_data.csv | cut -d ";" -f 1
+
+```
+
+_Note: cut assumes tab delimited files.  If a different delimiter is used in the file, the `-d` option is used to specify the delimiter.  It is very easy to mistake spaces for tabs, and that will make `cut` do odd things with your data if you do not set `-d " "`_
+
+---
+
+### Connecting `cut` `head` `tail` `sort` `uniq`
+
+```bash
+# select 2nd column, display first 5 elements
+$ cut -d ";" -f 2 Pacifici2013_data.csv | head -n 5
+
+# select 2nd and 8th columns, display first 3 elements
+$ cut -d ";" -f 2,8 Pacifici2013_data.csv | head -n 3
+
+# select 2nd column without header, show 5 first elements
+$ cut -d ";" -f 2 Pacifici2013_data.csv | tail -n +2 | head -n 5
+
+# identify the orders in csv
+# select 2nd column without header, unique sorted elements
+$ cut -d ";" -f 2 Pacifici2013_data.csv | tail -n +2 | sort | uniq
+
+# count how many records per order in csv
+$ cut -d ";" -f 2 Pacifici2013_data.csv | tail -n +2 | sort | uniq -c
+
+```
+
+_ _
+
+---
+
+</p>
+</details>
+
 
 <!-- 
 
 ## HOMEWORK
-* [Assignment_1, Due 09/13](https://github.com/tamucc-comp-bio/fall_2019/blob/master/assignments/assignment_1.md)
+* [Assignment_1, Due 09/04](https://github.com/tamucc-comp-bio/fall_2019/blob/master/assignments/assignment_1.md)
 * [Graduate Student Course Project Ideas, Due 09/13](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUOUo2UVRUMVgwTUlQMlpUQzUzOTIzME9LNi4u)
 
 -->
