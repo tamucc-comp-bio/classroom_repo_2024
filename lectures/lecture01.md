@@ -164,9 +164,72 @@ Comparison of GUI and CLI for manipulating data
 
 ### Open A Terminal Window
 
+WIN10:  Search Ubuntu
+
 ![](Week01_files/open_ubuntu-terminal.png)
 
+MacOS: Search Terminal
+
 ![](Week01_files/open_mac-terminal.png)
+
+---
+
+### The [Directory Structure](https://en.wikipedia.org/wiki/Directory_structure) is the Organization of Files and Folders (aka Directories) In Your Computer
+
+WIN10 File Explorer
+
+![](Week01_files/win10_file-explorer.png)
+
+Ubuntu Terminal
+
+![](Week01_files/ubuntu_terminal.png)
+
+The CLI forces you to start memorizing where your files are and what they are named. This causes 95% of the difficulties in learning CLI, so start memorizing to your directory structure.
+
+We will use [code blocks](https://en.wikipedia.org/wiki/Block_(programming)) to let you know when and what to type into your CLI. Here, please enter the commands `pwd` and then `ls`.
+
+```bash
+pwd
+ls
+```
+
+`pwd` lists the present working directory
+
+`ls` lists the contents of the present working directory
+
+Pro tip: clear the screen with `ctrl + L` keystroke
+
+---
+
+### Unix/Linux Command Line Terminology
+
+The [path](https://en.wikipedia.org/wiki/Path_(computing)) is the address of a file or directory in the directory structure
+
+![](Week01_files/cli_terms.png)
+
+---
+
+### Notable Directories
+
+`/bin` contains several basic commands
+
+`/dev` Contains the files connecting to devices such as the keyboard, mouse, and screen
+
+`/etc`Contains configuration files
+
+`/tmp` Contains temporary files
+
+Try using `ls` to view these directories
+
+```bash
+ls /bin
+ls /dev
+ls /etc
+ls /tmp
+```
+
+---
+
 
 </p>
 </details>
