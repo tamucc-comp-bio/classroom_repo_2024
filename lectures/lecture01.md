@@ -64,7 +64,7 @@ You are expected to start each lecture with your terminal window open and ready 
 </details>
 
 
-<details><summary>LECTURE</summary>
+## <details><summary>LECTURE</summary>
 <p>
 
 For the online version of this course, I am converting the ppt slides to a more screen-splitting friendly format here in GitHub.
