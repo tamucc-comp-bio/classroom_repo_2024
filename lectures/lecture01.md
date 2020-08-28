@@ -424,7 +424,7 @@ All manuals in unix/linux follow the same format:
 
 ---
 
-### Changing Directories (`cd`)
+### Changing and Viewing Directories (`cd` `pwd` `ls`)
 
 ```
 # move up to parent directory
@@ -458,6 +458,29 @@ ls -ltrh
 _Note:  single letter options can typically be combined together, `-l –t –r -h`  =  `-ltrh`_
 
 
+The command `ls -ltrh` outputs a lot of information to the screen.  It can be overwhelming at first, but it is just basic information about your files and directories in the `pwd`
+
+In the following image, dirs are highlighted, files are not
+
+![](Week01_files/ls-ltrh_1.png)
+
+In the following image, the highlighted columns of information are as follows:
+
+![](Week01_files/ls-ltrh_2.png)
+
+And the permissions can be further broken down.  The first column indicates whether it is a file or a directory. The 2nd to 4th columns are the User permissions.  Each user belongs to a group, which has its own set of permissions. Last, there are permissions for all users regardless of affiliation (global)
+
+* `r` read permissions gives one the ability to view the contents of a file
+
+* `w` write permissions gives one the ability to modify a file
+
+* `x` execute permissions gives one the ability to run a file if it is written in computer code
+
+![](Week01_files/ls-ltrh_3.png)
+
+---
+
+### Paths
 
 
 
