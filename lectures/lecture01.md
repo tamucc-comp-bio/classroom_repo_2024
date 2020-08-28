@@ -68,20 +68,20 @@ You are expected to start each lecture with your terminal window open and ready 
 
 ## Lecture: Unix, Linux, & CLI
 
+For the online version of this course, I am converting the ppt slides to a more screen-splitting friendly format here in GitHub.
+
 <details><summary> </summary>
 <p>
-
-For the online version of this course, I am converting the ppt slides to a more screen-splitting friendly format here in GitHub.
 
 ### LINUX is a Free & Open Source Version of the UNIX Operating System
 
 ![Common Operating Systems](Week01_files/os.png)
 
-* An operating system is the primary interface between you and the computer
+* An [operating system](https://en.wikipedia.org/wiki/Operating_system) is the primary interface between you and the computer
 
-* Open source is a decentralized development model where all aspects of a project are viewable and generally free to use
+* [Open source](https://en.wikipedia.org/wiki/Open_source) is a decentralized development model where all aspects of a project are viewable and generally free to use
 
-* Linux is free
+* [Linux](https://en.wikipedia.org/wiki/Linux) is free
 
   * Supercomputers
 
@@ -90,14 +90,18 @@ For the online version of this course, I am converting the ppt slides to a more 
 
 ### The 2 Primary Methods of Interfacing with Computers
 
-Graphical User Interface (GUI)
+#### 1. Graphical User Interface ([GUI](https://en.wikipedia.org/wiki/Graphical_user_interface))
+
+A mouse or you finger is used to interface with images on a screen.
 
 ![](Week01_files/mouse.png)
 
 ![](Week01_files/gui.png)
 
 
-Command-line Interface (CLI)
+#### 2. Command-line Interface ([CLI](https://en.wikipedia.org/wiki/Command-line_interface))
+
+A keyboard is used to type commands into the computer and computer gives feedback on the screen.
 
 ![](Week01_files/keyboard.png)
 
@@ -127,8 +131,8 @@ Command-line Interface (CLI)
 
 ### The UNIX Philosophy
 
-![](Week01_files/linuxguys.png)
-![](Week01_files/morpheus.png)
+![](Week01_files/unixguys.png)
+![](Week01_files/unixphilosophy.png)
 
 ![](Week01_files/pipeline.png)
 
@@ -136,7 +140,7 @@ Command-line Interface (CLI)
 
 * All programs accept input as a text stream and output a modified [text stream](https://en.wikipedia.org/wiki/Standard_streams)
 
-* Programs can be linked together into serial [pipelines](https://en.wikipedia.org/wiki/Pipeline_(Unix\)) to achieve complex results
+* Programs can be linked together into serial [pipelines](https://en.wikipedia.org/wiki/Pipeline_(Unix)) to achieve complex results
 
 
 </p>
