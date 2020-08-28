@@ -709,9 +709,9 @@ _Do not forget to use `Tab` key to autocomplete file names and prevent spelling 
 <details><summary>Interactive Session: Advanced `bash` Commands</summary>
 <p>
 
-### Redirection of output (stdout) to file `[command] > filename`
-### Append stdout to file `[command] >> filename` 
-### Redirect contents of file to stdin `[command] < filename` 
+### Redirection of output ([stdout](https://en.wikipedia.org/wiki/Standard_streams#Standard_output_(stdout))) to file `[command] > filename`
+### Append [stdout](https://en.wikipedia.org/wiki/Standard_streams#Standard_output_(stdout)) to file `[command] >> filename` 
+### Redirect contents of file to [stdin](https://en.wikipedia.org/wiki/Standard_streams#Standard_input_(stdin)) `[command] < filename` 
 
 ```bash
 # let’s start by moving to our sandbox
@@ -773,6 +773,8 @@ $ ls ../data/Saavedra2013 | wc –l
 ---
 
 ### TSV & CSV Data Files
+
+In the table below, columns are separated by tabs.  The first column has no column header but is the sample ID.  Ozone, Solar.R, Wind, Temp, Month, and Day are all pieces of data (dimensions) describing each of the 10 samples.
 
 ![Common Operating Systems](Week01_files/tsv.png)
 
