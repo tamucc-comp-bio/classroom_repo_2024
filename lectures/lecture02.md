@@ -1,5 +1,7 @@
 # Week02 UNIX II
 
+# DOCUMENT & LINKS NOT YET UPDATED FOR FALL 2020
+
 ### [Assignment 1](https://github.com/tamucc-comp-bio/fall_2019/blob/master/assignments/assignment_1.md) is due at the beginning of this lecture
 
 ## [Lecture 02 Slides](https://github.com/tamucc-comp-bio/fall_2019/blob/master/lectures/Lecture02_WelcomeToTheMatrix.pdf)
