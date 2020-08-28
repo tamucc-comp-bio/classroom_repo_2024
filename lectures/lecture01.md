@@ -55,7 +55,7 @@ You are expected to start each lecture with your terminal window open and ready 
 </details>
 
 
-## <details><summary>Text Book Vs. Lecture Slides</summary>
+<details><summary>Text Book Vs. Lecture Slides</summary>
 <p>
 
 * The [**Lecture_01 Slides**](Week01_files/Lecture01_WelcomeToTheMatrix.pdf) closely follow the book but there is some additional information that is not provided in the book (and vice versa). In the lecture slides, the `code blocks` are represented by green text on a black background, mimicking the terminal.
@@ -98,10 +98,6 @@ Command-line Interface (CLI)
 ![](Week01_files/keyboard.png)
 
 ![](Week01_files/cli.png)
-
-
-
-
 
 </p>
 </details>
