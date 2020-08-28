@@ -184,9 +184,9 @@ Ubuntu Terminal
 
 ![](Week01_files/ubuntu_terminal.png)
 
-The CLI forces you to start memorizing where your files are and what they are named. This causes 95% of the difficulties in learning CLI, so start memorizing to your directory structure.
+The CLI forces you to start memorizing where your files are and what they are named. This causes 95% of the difficulties in learning CLI, so start memorizing to your directory structure.  It is also a good idea to be deliberate and organized when creating new directories and files.
 
-We will use [code blocks](https://en.wikipedia.org/wiki/Block_(programming)) to let you know when and what to type into your CLI. Here, please enter the commands `pwd` and then `ls`.
+We will use [code blocks](https://en.wikipedia.org/wiki/Block_(programming)) to let you know when and what to type into your CLI. Here, please enter the commands `pwd` and then `ls` into your terminal.
 
 ```bash
 pwd
@@ -209,7 +209,7 @@ The [path](https://en.wikipedia.org/wiki/Path_(computing)) is the address of a f
 
 ---
 
-### Notable Directories
+### Some Notable Directories (do not modify files here)
 
 `/bin` contains several basic commands
 
@@ -230,6 +230,64 @@ ls /tmp
 
 ---
 
+### Your Home Directory
+
+`/<username>/home` is the directory where you are expected to create and maintain your directories and files.
+
+  * Starting directory upon login
+
+  * Specific to user
+
+  * Place for personal files, dirs, programs, downloads etc
+
+`$HOME` is a [variable](https://en.wikipedia.org/wiki/Variable_(computer_science)) that contains the path to your home directory
+
+  * A variable stores information
+
+  * Always preceded by a `$` after it is created
+
+  * `$HOME` is an environmental variable created by the operating system and `bash`
+  
+  * a shortcut for `$HOME` is the `~` character located at the upper left of your keyboard
+
+```bash
+echo $HOME
+pwd
+ls
+ls $HOME
+ls ~
+```
+
+---
+
+### The Directory Tree
+
+![](Week01_files/dir_tree.png)
+
+A map of the directories and files on your computers hard drives and/or solid state drives
+
+If you have Ubuntu or a Mac with `homebrew` or some other linux package manger, you can install `tree` to view portions of your directory tree in "tree" format.
+
+```bash
+# this is a comment, do not type it into your terminal
+# Ubuntu Only
+sudo apt install tree
+
+# Mac with homebrew only
+brew install tree
+```
+```bash
+# this will only work if you have tree installed, it is just an example so do not worry if you do not have it
+cd ~
+tree CSB
+tree -L 1 CSB
+tree -L 2 CSB
+man tree
+```
+
+
+
+use the key
 
 </p>
 </details>
