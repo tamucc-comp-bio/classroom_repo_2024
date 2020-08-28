@@ -70,10 +70,10 @@ You are expected to start each lecture with your terminal window open and ready 
 
 For the online version of this course, I am converting the ppt slides to a more screen-splitting friendly format here in GitHub.
 
-<details><summary> </summary>
+<details><summary>Introduction</summary>
 <p>
 
-### LINUX is a Free & Open Source Version of the UNIX Operating System
+### [Linux](https://en.wikipedia.org/wiki/Linux) is a Free & Open Source Version of the [UNIX](https://en.wikipedia.org/wiki/Unix) Operating System
 
 ![Common Operating Systems](Week01_files/os.png)
 
@@ -81,12 +81,13 @@ For the online version of this course, I am converting the ppt slides to a more 
 
 * [Open source](https://en.wikipedia.org/wiki/Open_source) is a decentralized development model where all aspects of a project are viewable and generally free to use
 
-* [Linux](https://en.wikipedia.org/wiki/Linux) is free
+* Linux is free
 
-  * Supercomputers
+  * [Supercomputers](https://en.wikipedia.org/wiki/Supercomputer) typically use it
 
   * Useful text manipulation tools
 
+---
 
 ### The 2 Primary Methods of Interfacing with Computers
 
@@ -107,6 +108,7 @@ A keyboard is used to type commands into the computer and computer gives feedbac
 
 ![](Week01_files/cli.png)
 
+---
 
 ### Why use CLI Linux?
 
@@ -128,8 +130,9 @@ A keyboard is used to type commands into the computer and computer gives feedbac
 
 * Large body of support online
 
+---
 
-### The UNIX Philosophy
+### The [UNIX Philosophy](https://en.wikipedia.org/wiki/Unix_philosophy)
 
 ![](Week01_files/unixguys.png)
 ![](Week01_files/unixphilosophy.png)
@@ -142,11 +145,31 @@ A keyboard is used to type commands into the computer and computer gives feedbac
 
 * Programs can be linked together into serial [pipelines](https://en.wikipedia.org/wiki/Pipeline_(Unix)) to achieve complex results
 
+---
+
+### Documentation of Linux CLI Pipelines Facilitate Scientific Reproducibility and Long-Term Efficiency
+
+Comparison of GUI and CLI for manipulating data
+
+![](Week01_files/guiVScli.png)
+
+---
+
 
 </p>
 </details>
 
+<details><summary>Interactive Session</summary>
+<p>
 
+### Open A Terminal Window
+
+![](Week01_files/open_ubuntu-terminal.png)
+
+![](Week01_files/open_mac-terminal.png)
+
+</p>
+</details>
 
 
 
