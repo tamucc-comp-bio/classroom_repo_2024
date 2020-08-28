@@ -159,7 +159,7 @@ Comparison of GUI and CLI for manipulating data
 </p>
 </details>
 
-<details><summary>Interactive Session</summary>
+<details><summary>Interactive Session: getting your feet wet</summary>
 <p>
 
 ### Open A Terminal Window
@@ -234,6 +234,8 @@ ls /tmp
 
 `/<username>/home` is the directory where you are expected to create and maintain your directories and files.
 
+  * Note that `<username>` is a place holder for your username on your computer
+  
   * Starting directory upon login
 
   * Specific to user
@@ -264,18 +266,21 @@ ls ~
 
 ![](Week01_files/dir_tree.png)
 
-A map of the directories and files on your computers hard drives and/or solid state drives
+The directory tree is a map of the directories and files on your computers hard drives and/or solid state drives
 
 If you have Ubuntu or a Mac with `homebrew` or some other linux package manger, you can install `tree` to view portions of your directory tree in "tree" format.
 
 ```bash
-# this is a comment, do not type it into your terminal
+# this is a comment, as indicated by the # at the beginning of the line.  Do not type it into your terminal
 # Ubuntu Only
 sudo apt install tree
 
 # Mac with homebrew only
 brew install tree
 ```
+
+We just installed the `tree` command (or app) from the internet to your computer.  If you were not able to do this because you did not install `homebrew` on your mac, it is ok. `tree` is not a critical command
+
 ```bash
 # this will only work if you have tree installed, it is just an example so do not worry if you do not have it
 cd ~
@@ -285,16 +290,46 @@ tree -L 2 CSB
 man tree
 ```
 
+The `man` command is nearly universal in displaying the manual for "commands" such as `tree`. Use the `q` keystroke to exit the manual for tree.
 
+---
 
-use the key
+### The `CSB/unix` [Repository](https://en.wikipedia.org/wiki/Repository_(version_control))
+
+Our primary text book, [Computing Skills for Biologists](https://computingskillsforbiologists.com/), provides a rich assortment of resources for you.  Most of these resources are contained in a GitHub repository that you have cloned into your home directory.  This is the `CSB` directory. 
+
+The `CSB` directory is organized by topic, with subdirectories dedicated to different chapters.  The directory for chapter 1 is `CSB/unix`.
+
+`CSB/unix/data` Contains data for examples and exercises
+
+`CSB/unix/installation` Contains instructions for installing software for this chapter
+
+`CSB/unix/sandbox` Dir where we work and experiment
+
+`CSB/unix/solutions` Solutions in code (`bash`) pseudocode (plain English) for your consultation when you get stuck with an exercise
+
+```bash
+# I am adding the 'cd ~' command to make sure you are in your home dir before running the 'ls' commands
+cd ~
+ls CSB/unix/
+ls CSB/unix/data
+ls CSB/unix/installation
+ls CSB/unix/sandbox
+ls CSB/unix/solutions
+```
+
+---
 
 </p>
 </details>
 
+<details><summary>Interactive Session: getting your feet wet</summary>
+<p>
 
 
 
+</p>
+</details>
 
 
 
