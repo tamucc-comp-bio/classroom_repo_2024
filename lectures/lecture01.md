@@ -54,11 +54,15 @@ You are expected to start each lecture with your terminal window open and ready 
 </p>
 </details>
 
-## Text Book Vs. Lecture Slides
+
+## <details><summary>Text Book Vs. Lecture Slides</summary>
+<p>
+
 * The [**Lecture_01 Slides**](Week01_files/Lecture01_WelcomeToTheMatrix.pdf) closely follow the book but there is some additional information that is not provided in the book (and vice versa). In the lecture slides, the `code blocks` are represented by green text on a black background, mimicking the terminal.
 
+</p>
+</details>
 
-## IN CLASS EXERCISES
 
 <details><summary>LECTURE</summary>
 <p>
@@ -78,6 +82,20 @@ For the online version of this course, I am converting the ppt slides to a more 
   * Supercomputers
 
   * Useful text manipulation tools
+
+
+### 2 Primary Methods of Interfacing with Computers
+
+Graphical User Interface (GUI)
+![](Week01_files/mouse.png)
+![](Week01_files/gui.png)
+
+Command-line Interface (CLI)
+![](Week01_files/keyboard.png)
+![](Week01_files/cli.png)
+
+
+
 
 
 </p>
