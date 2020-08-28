@@ -87,11 +87,16 @@ For the online version of this course, I am converting the ppt slides to a more 
 ### 2 Primary Methods of Interfacing with Computers
 
 Graphical User Interface (GUI)
+
 ![](Week01_files/mouse.png)
+
 ![](Week01_files/gui.png)
 
+
 Command-line Interface (CLI)
+
 ![](Week01_files/keyboard.png)
+
 ![](Week01_files/cli.png)
 
 
