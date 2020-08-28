@@ -66,7 +66,7 @@ You are expected to start each lecture with your terminal window open and ready 
 </details>
 
 
-## LECTURE
+## Lecture: Unix, Linux, & CLI
 
 <details><summary> </summary>
 <p>
@@ -88,7 +88,7 @@ For the online version of this course, I am converting the ppt slides to a more 
   * Useful text manipulation tools
 
 
-### 2 Primary Methods of Interfacing with Computers
+### The 2 Primary Methods of Interfacing with Computers
 
 Graphical User Interface (GUI)
 
@@ -103,8 +103,51 @@ Command-line Interface (CLI)
 
 ![](Week01_files/cli.png)
 
+
+### Why use CLI Linux?
+
+![](Week01_files/morpheus.png)
+
+* Free
+
+* Automation
+
+* Flexibility
+
+* Powerful
+
+* Designed for developers
+
+* Supercomputers use it
+
+* Many software tools for biologists
+
+* Large body of support online
+
+
+### The UNIX Philosophy
+
+![](Week01_files/linuxguys.png)
+![](Week01_files/morpheus.png)
+
+![](Week01_files/pipeline.png)
+
+* One program ([command](https://en.wikipedia.org/wiki/List_of_Unix_commands)) does one thing
+
+* All programs accept input as a text stream and output a modified [text stream](https://en.wikipedia.org/wiki/Standard_streams)
+
+* Programs can be linked together into serial [pipelines](https://en.wikipedia.org/wiki/Pipeline_(Unix\)) to achieve complex results
+
+
 </p>
 </details>
+
+
+
+
+
+
+
 
 
 * There were no in class exercises this week. CSB Mind Expanders 01.01 & 01.02 were completed prior to class in [Assignment_0](https://github.com/tamucc-comp-bio-2020/classroom_repo/blob/master/assignments/assignment_0.md)
