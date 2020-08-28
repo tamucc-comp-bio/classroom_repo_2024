@@ -85,11 +85,11 @@ SECTION 1.  WELCOME TO THE MATRIX
 
 * [08/28  Week01 Unix I](lectures/lecture01.md)
 
-  * [Assignment_1,  Due 09/13](assignments/assignment_1.md)
+  * [Assignment_1,  Due 09/04](assignments/assignment_1.md)
   
-  * [Grad Student Course Project: Ideas, Due 09/13](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUOUo2UVRUMVgwTUlQMlpUQzUzOTIzME9LNi4u)
+  * [Grad Student Course Project: Ideas, Due 09/04](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUOUo2UVRUMVgwTUlQMlpUQzUzOTIzME9LNi4u)
   
-* [09/13  Week02 Unix II](lectures/lecture02.md)
+* [09/04  Week02 Unix II](lectures/lecture02.md)
 
 <!-- 
 
