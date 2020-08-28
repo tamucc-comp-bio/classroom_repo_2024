@@ -57,7 +57,32 @@ You are expected to start each lecture with your terminal window open and ready 
 ## Text Book Vs. Lecture Slides
 * The [**Lecture_01 Slides**](Week01_files/Lecture01_WelcomeToTheMatrix.pdf) closely follow the book but there is some additional information that is not provided in the book (and vice versa). In the lecture slides, the `code blocks` are represented by green text on a black background, mimicking the terminal.
 
+
 ## IN CLASS EXERCISES
+
+<details><summary>LECTURE</summary>
+<p>
+
+For the online version of this course, I am converting the ppt slides to a more screen-splitting friendly format here in GitHub.
+
+### LINUX is a Free & Open Source Version of the UNIX Operating System
+
+![Common Operating Systems](Week01_files/os.png)
+
+* An operating system is the primary interface between you and the computer
+
+* Open source is a decentralized development model where all aspects of a project are viewable and generally free to use
+
+* Linux is free
+
+  * Supercomputers
+
+  * Useful text manipulation tools
+
+
+</p>
+</details>
+
 
 * There were no in class exercises this week. CSB Mind Expanders 01.01 & 01.02 were completed prior to class in [Assignment_0](https://github.com/tamucc-comp-bio-2020/classroom_repo/blob/master/assignments/assignment_0.md)
 
