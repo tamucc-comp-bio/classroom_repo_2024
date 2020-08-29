@@ -755,6 +755,8 @@ $ rm filelist.txt
 
 ![Common Operating Systems](Week01_files/pipeline.png)
 
+![Common Operating Systems](Week01_files/pipeline2.png)
+
 A pipe `|` passes the [stdout](https://en.wikipedia.org/wiki/Standard_streams#Standard_output_(stdout)) from one command to the [stdin](https://en.wikipedia.org/wiki/Standard_streams#Standard_input_(stdin)) of another
 
 How many files are there?
