@@ -232,7 +232,7 @@ ls /tmp
 
 ### Your Home Directory
 
-`/<username>/home` is the directory where you are expected to create and maintain your directories and files.
+`/home/<username>` is the directory where you are expected to create and maintain your directories and files.
 
   * Note that `<username>` is a place holder for your username on your computer
   
