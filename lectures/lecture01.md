@@ -375,7 +375,6 @@ Note that I have created a [Linux Cheat Sheet](https://github.com/tamucc-comp-bi
 cal
 cal 2020
 cal -j
-cal --julian
 cal -j 2020
 ```
 
@@ -387,7 +386,7 @@ _Note: `ctrl + c` will stop a command if it is taking too long to complete_
 
 * `-j` is an _*option*_, in this case it means Julian calendar
 
-  * `--julian` is the same as `–j`, options that are words are _always_ preceded by two dashes
+  * if an option is preceded by a single `-`, it is customary for that option to be represented by a single letter.  If an option is preceded by two dashes `--julian` it is typically a word.  In this case, `cal` has been updated and all word options have been removed, so `--julian` is no longer recognized.  Realize that it is up to the developer ( the person who writes the software ) to enforce formats, so you will find commands that do not follow convention as you get into more "boutique" commands and apps.
 
 ---
 
