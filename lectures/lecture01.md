@@ -914,6 +914,8 @@ $ cut -d ";" -f 2 Pacifici2013_data.csv | tail -n +2 | sort | uniq -c
 
 _Note: `uniq` is a command that that removes consecutive duplicate lines (rows). For this reason, the input to `uniq` is almost always sorted beforehand.  Use `man uniq` to see the description of the `-c` option.  I use `uniq -c` all the time._
 
+_Note: `sort -t";"` specifies the delimiter character, also known as a field separator.  Try `man sort` and search `/field` to see the manual entry for this.
+
 ---
 
 </p>
