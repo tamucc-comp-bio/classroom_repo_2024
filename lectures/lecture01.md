@@ -785,16 +785,16 @@ $ ls ../data/Saavedra2013 | wc –l
 
 ---
 
-### TSV & CSV Data Files
+### [TSV](https://en.wikipedia.org/wiki/Tab-separated_values) & [CSV](https://en.wikipedia.org/wiki/Comma-separated_values) Data Files
 
-In the table below, columns are separated by tabs.  The first column has no column header but is the sample ID.  Ozone, Solar.R, Wind, Temp, Month, and Day are all pieces of data (dimensions) describing each of the 10 samples.
+In the tidy table below, columns are _*delimited*_ by tabs.  The first column has no column header but is the sample ID.  Ozone, Solar.R, Wind, Temp, Month, and Day are all pieces of data (dimensions) describing each of the 10 samples.
 
 ![Common Operating Systems](Week01_files/tsv.png)
 
 * Tab Separated Values (TSV)
 
   * Tabs denote columns
-  
+
 * Comma Separated Values (CSV)
 
   * Commas denote columns
@@ -805,7 +805,42 @@ In the table below, columns are separated by tabs.  The first column has no colu
   
   * Each [column](https://en.wikipedia.org/wiki/Column_(database)) is one dimension or aspect of the units of observation
   
-* File extensions not always accurate
+* File extensions not always accurate, so it is important to view a file to be sure of the delimiter.
+
+Do not type in the following code blocks.  They are here to show you TSV and CSV formatting
+
+| Column 1 Header | Column 2 Header | Column 3 Header |
+| Row 1 Column 1  | Row 1 Column 2  | Row 1 Column 3  |
+| Row 2 Column 1  | Row 2 Column 2  | Row 2 Column 3  |
+| Row 3 Column 1  | Row 3 Column 2  | Row 3 Column 3  |
+| Row 4 Column 1  | Row 4 Column 2  | Row 4 Column 3  |
+
+TSV
+```
+Column 1 Header\tColumn 2 Header\tColumn 3 Header
+Row 1 Column 1	Row 1 Column 2	Row 1 Column 3
+Row 2 Column 1	Row 2 Column 2	Row 2 Column 3
+Row 3 Column 1	Row 3 Column 2	Row 3 Column 3
+Row 4 Column 1	Row 4 Column 2	Row 4 Column 3
+```
+
+TSV
+```
+Column 1 Header\tColumn 2 Header\tColumn 3 Header
+Row 1 Column 1\tRow 1 Column 2\tRow 1 Column 3
+Row 2 Column 1\tRow 2 Column 2\tRow 2 Column 3
+Row 3 Column 1\tRow 3 Column 2\tRow 3 Column 3
+Row 4 Column 1\tRow 4 Column 2\tRow 4 Column 3
+```
+
+CSV
+```
+Column 1 Header, Column 2 Header, Column 3 Header
+Row 1 Column 1, Row 1 Column 2, Row 1 Column 3
+Row 2 Column 1, Row 2 Column 2, Row 2 Column 3
+Row 3 Column 1, Row 3 Column 2, Row 3 Column 3
+Row 4 Column 1, Row 4 Column 2, Row 4 Column 3
+```
 
 
 ---
