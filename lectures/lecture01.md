@@ -924,6 +924,24 @@ _Note: `tr -s` can be used to easily convert files or text streams that have mul
 
 ---
 
+### Advanced Pipelining
+
+When constructing long pipelines like the last one in the code block above, you should build it step by step, testing the output as you go.
+
+I like to use `less -S` to capture and view the output when it takes up many lines
+
+```
+# here is an example of how to build the really long pipe above, from scratch
+$ cut -d";" -f2 ../data/Pacifici2013_data.csv | less -S
+$ cut -d";" -f2 ../data/Pacifici2013_data.csv |  tail -n +2 | less -S
+$ cut -d";" -f2 ../data/Pacifici2013_data.csv |  tail -n +2 | sort | less -S
+$ cut -d";" -f2 ../data/Pacifici2013_data.csv |  tail -n +2 | sort | uniq -c | less -S
+$ cut -d";" -f2 ../data/Pacifici2013_data.csv |  tail -n +2 | sort | uniq -c | tr -s " " "\t" | less -S
+$ cut -d";" -f2 ../data/Pacifici2013_data.csv |  tail -n +2 | sort | uniq -c | tr -s " " "\t" | cut -f2-3 | less -S
+$ cut -d";" -f2 ../data/Pacifici2013_data.csv |  tail -n +2 | sort | uniq -c | tr -s " " "\t" | cut -f2-3 | sort -n | less -S
+$ cut -d";" -f2 ../data/Pacifici2013_data.csv |  tail -n +2 | sort | uniq -c | tr -s " " "\t" | cut -f2-3 | sort -n | tail -n1
+```
+
 </p>
 </details>
 
