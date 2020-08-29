@@ -753,6 +753,10 @@ $ wc -l filelist.txt
 $ rm filelist.txt
 ```
 
+---
+
+### Piping Text Streams From One Command to the Next with `|`
+
 ![Common Operating Systems](Week01_files/pipeline.png)
 
 ![Common Operating Systems](Week01_files/pipeline2.png)
