@@ -809,6 +809,8 @@ In the tidy table below, columns are _*delimited*_ by tabs.  The first column ha
 
 Do not type in the following code blocks.  They are here to show you TSV and CSV formatting
 
+
+Tidy Table:
 | Column 1 Header | Column 2 Header | Column 3 Header |
 | --------------- | --------------- | --------------- |
 | Row 1 Column 1 | Row 1 Column 2 | Row 1 Column 3 |
@@ -825,7 +827,7 @@ Row 3 Column 1	Row 3 Column 2	Row 3 Column 3
 Row 4 Column 1	Row 4 Column 2	Row 4 Column 3
 ```
 
-TSV
+TSV File with tabs denoted by `\t`.  Note your text files will not contain `\t`.  I did this show where tabs were, versus spaces.
 ```
 Column 1 Header\tColumn 2 Header\tColumn 3 Header
 Row 1 Column 1\tRow 1 Column 2\tRow 1 Column 3
