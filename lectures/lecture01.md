@@ -910,11 +910,17 @@ $ cut -d ";" -f 2 Pacifici2013_data.csv | tail -n +2 | sort | uniq
 # count how many records per order in csv
 $ cut -d ";" -f 2 Pacifici2013_data.csv | tail -n +2 | sort | uniq -c
 
+# output the order with the most records, including the number of records in csv
+$ cut -d";" -f2 ../data/Pacifici2013_data.csv |  tail -n +2 | sort | uniq -c | tr -s " " "\t" | cut -f2-3 | sort -n | tail -n1
+
+
 ```
 
 _Note: `uniq` is a command that that removes consecutive duplicate lines (rows). For this reason, the input to `uniq` is almost always sorted beforehand.  Use `man uniq` to see the description of the `-c` option.  I use `uniq -c` all the time._
 
-_Note: `sort -t";"` specifies the delimiter character, also known as a field separator.  Try `man sort` and search `/field` to see the manual entry for this.
+_Note: `sort -t";"` specifies the delimiter character, also known as a field separator.  Try `man sort` and search `/field` to see the manual entry for this._
+
+_Note: `tr -s` can be used to easily convert files or text streams that have multiple spaces in between columns (such as the output of `uniq -c` into a tab separated format_
 
 ---
 
