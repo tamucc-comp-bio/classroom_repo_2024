@@ -933,13 +933,13 @@ I like to use `less -S` to capture and view the output when it takes up many lin
 ```
 # here is an example of how to build the really long pipe above, from scratch
 $ cut -d";" -f2 ../data/Pacifici2013_data.csv | less -S
-$ cut -d";" -f2 ../data/Pacifici2013_data.csv |  tail -n +2 | less -S
-$ cut -d";" -f2 ../data/Pacifici2013_data.csv |  tail -n +2 | sort | less -S
-$ cut -d";" -f2 ../data/Pacifici2013_data.csv |  tail -n +2 | sort | uniq -c | less -S
-$ cut -d";" -f2 ../data/Pacifici2013_data.csv |  tail -n +2 | sort | uniq -c | tr -s " " "\t" | less -S
-$ cut -d";" -f2 ../data/Pacifici2013_data.csv |  tail -n +2 | sort | uniq -c | tr -s " " "\t" | cut -f2-3 | less -S
-$ cut -d";" -f2 ../data/Pacifici2013_data.csv |  tail -n +2 | sort | uniq -c | tr -s " " "\t" | cut -f2-3 | sort -n | less -S
-$ cut -d";" -f2 ../data/Pacifici2013_data.csv |  tail -n +2 | sort | uniq -c | tr -s " " "\t" | cut -f2-3 | sort -n | tail -n1
+$ cut -d";" -f2 ../data/Pacifici2013_data.csv | tail -n +2 | less -S
+$ cut -d";" -f2 ../data/Pacifici2013_data.csv | tail -n +2 | sort | less -S
+$ cut -d";" -f2 ../data/Pacifici2013_data.csv | tail -n +2 | sort | uniq -c | less -S
+$ cut -d";" -f2 ../data/Pacifici2013_data.csv | tail -n +2 | sort | uniq -c | tr -s " " "\t" | less -S
+$ cut -d";" -f2 ../data/Pacifici2013_data.csv | tail -n +2 | sort | uniq -c | tr -s " " "\t" | cut -f2-3 | less -S
+$ cut -d";" -f2 ../data/Pacifici2013_data.csv | tail -n +2 | sort | uniq -c | tr -s " " "\t" | cut -f2-3 | sort -n | less -S
+$ cut -d";" -f2 ../data/Pacifici2013_data.csv | tail -n +2 | sort | uniq -c | tr -s " " "\t" | cut -f2-3 | sort -n | tail -n1
 ```
 
 </p>
