@@ -810,10 +810,11 @@ In the tidy table below, columns are _*delimited*_ by tabs.  The first column ha
 Do not type in the following code blocks.  They are here to show you TSV and CSV formatting
 
 | Column 1 Header | Column 2 Header | Column 3 Header |
-| Row 1 Column 1  | Row 1 Column 2  | Row 1 Column 3  |
-| Row 2 Column 1  | Row 2 Column 2  | Row 2 Column 3  |
-| Row 3 Column 1  | Row 3 Column 2  | Row 3 Column 3  |
-| Row 4 Column 1  | Row 4 Column 2  | Row 4 Column 3  |
+| --------------- | --------------- | --------------- |
+| Row 1 Column 1 | Row 1 Column 2 | Row 1 Column 3 |
+| Row 2 Column 1 | Row 2 Column 2 | Row 2 Column 3 |
+| Row 3 Column 1 | Row 3 Column 2 | Row 3 Column 3 |
+| Row 4 Column 1 | Row 4 Column 2 | Row 4 Column 3 |
 
 TSV
 ```
