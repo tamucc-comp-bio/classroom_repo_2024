@@ -526,7 +526,7 @@ It is best not to used spaces in dir and file names, but you can wrap file names
 
 ### Copy with `cp <from> <to>`
 
-From here forward, we will adopt the code block syntax used in the CSB text book.  The `$` represents the command prompt and you are expected to type in the commands that follow it.
+From here forward, we will adopt the code block syntax used in the CSB text book.  The `$` represents the command prompt and you are expected to type in the commands that follow it, but _*do not start any command with the `$`*_.
 
 ```bash
 # goto sandbox
