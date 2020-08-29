@@ -718,13 +718,21 @@ $ cd ~/CSB/unix/sandbox
 
 # print text to screen, then print to file, then print file to screen
 $ echo "My first line" 
+My first line
+
 $ echo "My first line" > test.txt
 $ cat test.txt
+My first line
 
 # append file with additional text, then print file to screen
 $ echo "My second line" >> test.txt
 $ cat test.txt
+My first line
+My second line
 ```
+
+
+
 
 _use `Tab` key to autocomplete names, prevent spelling mistakes_
 
