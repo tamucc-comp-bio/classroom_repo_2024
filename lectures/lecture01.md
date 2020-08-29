@@ -912,7 +912,7 @@ $ cut -d ";" -f 2 Pacifici2013_data.csv | tail -n +2 | sort | uniq -c
 
 ```
 
-_Note: `uniq` is a command that that removes consecutive duplicate lines (rows). For this reason, the input to `uniq` is almost always sorted beforehand.  Use `man uniq` to see the description of the `-c` option.  I use `uniq -c` all the time.
+_Note: `uniq` is a command that that removes consecutive duplicate lines (rows). For this reason, the input to `uniq` is almost always sorted beforehand.  Use `man uniq` to see the description of the `-c` option.  I use `uniq -c` all the time._
 
 ---
 
