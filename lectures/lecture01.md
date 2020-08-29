@@ -464,7 +464,7 @@ In the following image, dirs are highlighted, files are not
 
 In the following image, the highlighted columns of information are as follows:
 
-![](Week01_files/ls-ltrh_2.png)
+![](Week01_files/ls-ltrh_2.PNG)
 
 And the permissions can be further broken down.  The first column indicates whether it is a file or a directory. The 2nd to 4th columns are the User permissions.  Each user belongs to a group, which has its own set of permissions. Last, there are permissions for all users regardless of affiliation (global)
 
@@ -474,7 +474,7 @@ And the permissions can be further broken down.  The first column indicates whet
 
 * `x` execute permissions gives one the ability to run a file if it is written in computer code
 
-![](Week01_files/ls-ltrh_3.png)
+![](Week01_files/ls-ltrh_3.PNG)
 
 ---
 
