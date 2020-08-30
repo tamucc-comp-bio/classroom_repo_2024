@@ -58,7 +58,7 @@ You are expected to start each lecture with your terminal window open and ready 
 
 ## Text Book Vs. Lecture Slides
 
-<details><summary>expand</summary>
+<details><summary>click to expand</summary>
 <p>
 
 The [**Lecture_02 Slides**](https://github.com/tamucc-comp-bio/fall_2019/blob/master/lectures/Lecture02_WelcomeToTheMatrix.pdf) closely follow the book but there is some additional information that is not provided in the book (and vice versa). In the lecture slides, the `code blocks` are represented by green text on a black background, mimicking the terminal.
@@ -89,6 +89,33 @@ cut -d ";" -f 2-6 $1 | \
  # save to file (second argument)
 	sort -nrk6 > $2
 ```
+
+</p>
+</details>
+
+## NEW MATERIAL (CSB Section 1.6.3 - 1.9.3, TO BE COVERED BEFORE LECTURE AS PART OF ASSIGNMENT 1) 
+
+For the online version of this course, I am converting the ppt slides to a more screen-splitting friendly format here in GitHub.
+
+<details><summary>Introduction</summary>
+<p>
+
+### [Linux](https://en.wikipedia.org/wiki/Linux) is a Free & Open Source Version of the [UNIX](https://en.wikipedia.org/wiki/Unix) Operating System
+
+![Common Operating Systems](Week01_files/os.png)
+
+* An [operating system](https://en.wikipedia.org/wiki/Operating_system) is the primary interface between you and the computer
+
+* [Open source](https://en.wikipedia.org/wiki/Open_source) is a decentralized development model where all aspects of a project are viewable and generally free to use
+
+* Linux is free
+
+  * [Supercomputers](https://en.wikipedia.org/wiki/Supercomputer) typically use it
+
+  * Useful text manipulation tools
+
+---
+
 
 </p>
 </details>
