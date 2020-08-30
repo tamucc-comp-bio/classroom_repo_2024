@@ -136,13 +136,15 @@ Abbbb
 
 ```
 
+_Note: `tr` does not accept a file as an argument, always use pipe `|` or redirect a file into `tr` (`tr " " "," < file.txt`)_
+
 ---
 
-### 
+### Use `;` to separate multiple independent commands on 1 line
 
 ```bash
-
-
+# move to sandbox and list files
+cd ~/CSB/unix/sandbox; ls
 ```
 
 ---
@@ -205,7 +207,7 @@ Abbbb
 
 
 
-## IN CLASS EXERCISES
+## In Class Exercises
 Complete the exercise(s) by answering the question(s) in the online form and submitting.  You must be logged into your TAMUCC email account to have your identity attached to your answers. 
 
 You may work in groups, but each person must fill out the online answer form.
@@ -216,6 +218,6 @@ The exercises in the online forms closely follow those in the book.  I do make m
 
 * [Exercise 1.10.3 Plant-Pollinator Networks](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMlpVSUQ0U1hTSFZERDE1WUdZWjRYUlhaWi4u)
 
-## HOMEWORK
+## Homework
 * [Assignment_2, Due 09/20](https://github.com/tamucc-comp-bio/fall_2019/blob/master/assignments/assignment_2.md)
 
