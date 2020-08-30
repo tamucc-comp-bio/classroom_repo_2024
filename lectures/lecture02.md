@@ -67,9 +67,6 @@ The [**Lecture_02 Slides**](https://github.com/tamucc-comp-bio/fall_2019/blob/ma
 
 * Page 46, the script on the bottom half of the page is poor form. Making a bunch of tmp files is a bad idea.  Do this instead:
 
-</p>
-</details>
-
 ```
 #!/bin/bash
 
@@ -92,6 +89,9 @@ cut -d ";" -f 2-6 $1 | \
  # save to file (second argument)
 	sort -nrk6 > $2
 ```
+
+</p>
+</details>
 
 ## IN CLASS EXERCISES
 Complete the exercise(s) by answering the question(s) in the online form and submitting.  You must be logged into your TAMUCC email account to have your identity attached to your answers. 
