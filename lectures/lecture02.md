@@ -1,6 +1,6 @@
 # Week02 UNIX II
 
-# DOCUMENT & LINKS NOT YET UPDATED FOR FALL 2020
+# DOCUMENT PRESENTLY BEING UPDATED FOR FALL 2020
 
 ### [Assignment 1](https://github.com/tamucc-comp-bio-2020/classroom_repo/blob/master/assignments/assignment_1.md) is due at the beginning of this lecture
 
