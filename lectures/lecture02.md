@@ -100,7 +100,7 @@ For the online version of this course, I am converting the ppt slides to a more 
 <details><summary>Additional Important Commands</summary>
 <p>
 
-### [Substituting Characters Using 	`tr`
+### Substituting Characters Using 	`tr`
 ### Predefined Characters `[:upper:]`
 
 `tr` can be used to replace one or more characters
@@ -142,6 +142,8 @@ _Note: `tr` does not accept a file as an argument, always use pipe `|` or redire
 
 ### Use `;` to separate multiple independent commands on 1 line
 
+`;` is equivalent to a period in an english sentence.
+
 ```bash
 # move to sandbox and list files
 cd ~/CSB/unix/sandbox; ls
@@ -150,30 +152,106 @@ cd ~/CSB/unix/sandbox; ls
 ---
 
 
-### 
+### Making a New File From An Existing File
+
+Make a new file `BodyMass.csv` in sandbox dir based on columns 2-6 in `Pacifici2013_data.csv`, remove header, sort lines according to body mass (large to small), change ; to spaces
 
 ```bash
+# 1. View header row to refresh your memory
+$ head -n 1 ../data/Pacifici2013_data.csv 
+$ head -n 1 ../data/Pacifici2013_data.csv | tr ";" "\n"
 
+# 2. Start building pipe, use head to view
+$ cut -d ";" -f2-6 ../data/Pacifici2013_data.csv | head
 
+# 3. Add to pipe by changing ; to tabs, use head to view
+$ cut -d ";" -f2-6 ../data/Pacifici2013_data.csv | tr ";" "\t" | head
+
+# 4. Add to pipe by removing first line, figure out sort options, use head to view
+$ cut -d ";" -f2-6 ../data/Pacifici2013_data.csv | tr ";" " " | tail -n+2 | sort -nrk6 | head
+
+# 5. Instead of piping to head, redirect output to file named BodyMass.csv
+$ cut -d ";" -f2-6 ../data/Pacifici2013_data.csv | tr ";" " " | tail -n+2 | sort -nrk6 > BodyMass.csv
 ```
+
+_Note: in step 1, we use `tr` to replace semicolons `;` with "[line feeds](https://en.wikipedia.org/wiki/Newline)" `\n` to view one column header per line._
+
+_`\ ` is the "[escape character](https://en.wikipedia.org/wiki/Escape_character)".  What follows the `\ ` has an alternate meaning._
+  * `t` is the letter "t", `\t` is a [metacharacter](https://en.wikipedia.org/wiki/Metacharacter) that symbolizes a tab
+  * `n` is the letter "n", `\n` is a metacharacter that symbolizes the end of a line (aka line feed)
 
 ---
 
-### 
+### [Wildcards](https://en.wikipedia.org/wiki/Wildcard_character) are Symbols that Represent Multiple Characters
+
+`*` Matches zero or more characters, except "leading dot"
+
+`?` Matches any single character, except "leading dot"
+
+`[]` match any one of the characters in the brackets
+
 
 ```bash
+# goto miRNA dir inside data dir
+$ cd ~/CSB/unix/data/miRNA
 
+# list all files that end with fasta 
+$ ls *fasta
+
+# count the numbers of lines in all the fasta files
+$ wc -l *fasta
+
+# print the first two lines of each file whose name starts with pp
+$ head -n 2 pp*
+
+# determine the type of every file that has an extension with exactly three letters
+$ file *.???
+
+# list all files begining with either g, h, or m and ending with fasta
+ls [ghm]*fasta
 
 ```
+
+_Note: in unix and linux, hidden files are marked by a "leading dot" `.`.  Try `ls -a` to see all files, including those that are hidden.  Wildcards will not return hidden files without being preceded by a `.` _
 
 ---
 
-### 
+### Selecting lines with matching pattern using `grep [options] [pattern] <filename>` 
+
+* Every line that matches the pattern is returned
+
+  * there are options that allow more specific output, such as a word rather than a line
+
+* Many options to increase functionality. I use `grep` all the time.
+
+* [Regular Expressions](https://en.wikipedia.org/wiki/Regular_expression), aka regex, are used for pattern matching in text files
+
+  * A language of characters, metacharacters, wildcards
+  
+  * 2 primary syntaxes or standards: [POSIX](https://en.wikipedia.org/wiki/POSIX) (default in `grep`), [Perl](https://en.wikipedia.org/wiki/Perl) (use `-P` option in `grep`)
+  
+    * when searching for help on regex, it is important to know which standard the pattern is using because POSIX is not the same a Perl
+
 
 ```bash
+# goto unix chapter sandbox
+$ cd ~/CSB/unix/sandbox
 
+# how many wombats (fam Vombatidae)?
+$ grep "Vombatidae" BodyMass.csv
+$ grep -c "Vombatidae" BodyMass.csv
 
+# which cattle are in file?
+$ grep "Bos" BodyMass.csv
+
+# Only match whole words
+$ grep –w "Bos" BodyMass.csv
+
+# Make search case insensitive
+$ grep –i "Bos" BodyMass.csv
 ```
+
+_Note: the `grep -c` option is very handy for counting and can negate the need for `wc -l`
 
 ---
 
