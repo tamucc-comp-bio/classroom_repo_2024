@@ -304,9 +304,7 @@ $ find ../data -type d
 
 ---
 
-### Change Permissions with `chmod`
-
-![](Week01_files/ls-ltrh_3.PNG)
+### Change Permissions with `chmod [options] ### filename`
 
 * Three types of permissions
 
@@ -320,10 +318,44 @@ $ find ../data -type d
 
 * View with `ls -l`
 
+![](Week01_files/ls-ltrh_3.PNG)
+
+* Setting permissions using “octal” numeric system
+
+  * read = 4
+  
+  * write = 2
+  
+  * execute =1
+  
+* Simply add numbers together for different combos of permissions
+
+  * Each combo is only represented by one number
+  
+    * if the user has all permissions, 4 + 2 + 1 = 7
+  
+    * if the group has read permissions, 4
+  
+    * if the global has no permissions, 0
+
+      * 740
 
 ```bash
+# create a file in the unix sandbox
+$ touch permissions.txt
+$ ls –l
 
+# change permissions so that user can r,w,x; group can r,x; and global can r
+$ chmod 754 permissions.txt
+$ ls –l
 
+# give everybody full permissions 
+$ chmod 777 permissions.txt
+$ ls –l
+
+# give yourself full permissions, but only let others read your files 
+$ chmod 744 permissions.txt
+$ ls –l
 ```
 
 ---
