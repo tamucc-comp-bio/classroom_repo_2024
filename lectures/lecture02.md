@@ -2,9 +2,9 @@
 
 # DOCUMENT & LINKS NOT YET UPDATED FOR FALL 2020
 
-### [Assignment 1](https://github.com/tamucc-comp-bio/fall_2019/blob/master/assignments/assignment_1.md) is due at the beginning of this lecture
+### [Assignment 1](https://github.com/tamucc-comp-bio-2020/classroom_repo/blob/master/assignments/assignment_1.md) is due at the beginning of this lecture
 
-## [Lecture 02 Slides](https://github.com/tamucc-comp-bio/fall_2019/blob/master/lectures/Lecture02_WelcomeToTheMatrix.pdf)
+## [Lecture 02 Slides](Week02_files/Lecture02_WelcomeToTheMatrix.pdf)
 
 ## Computer Preparation
 You are expected to start each lecture with your terminal window open and ready to go.
