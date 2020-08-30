@@ -93,32 +93,117 @@ cut -d ";" -f 2-6 $1 | \
 </p>
 </details>
 
-## NEW MATERIAL (CSB Section 1.6.3 - 1.9.3, TO BE COVERED BEFORE LECTURE AS PART OF ASSIGNMENT 1) 
+## New Material To Be Covered Prior to Lecture (CSB Section 1.6.3 - 1.9.3) 
 
 For the online version of this course, I am converting the ppt slides to a more screen-splitting friendly format here in GitHub.
 
-<details><summary>Introduction</summary>
+<details><summary>Additional Important Commands</summary>
 <p>
 
-### [Linux](https://en.wikipedia.org/wiki/Linux) is a Free & Open Source Version of the [UNIX](https://en.wikipedia.org/wiki/Unix) Operating System
+### [Substituting Characters Using 	`tr`
+### Predefined Characters `[:upper:]`
 
-![Common Operating Systems](Week01_files/os.png)
+`tr` can be used to replace one or more characters
 
-* An [operating system](https://en.wikipedia.org/wiki/Operating_system) is the primary interface between you and the computer
+```bash
+# change all a to b
+$ echo "aaaabbb" | tr "a" "b"
+bbbbbbb
 
-* [Open source](https://en.wikipedia.org/wiki/Open_source) is a decentralized development model where all aspects of a project are viewable and generally free to use
+# change 1, 2, 3, 4, and 5 to zero
+$ echo "123456789" | tr 1-5 0
+000006789
 
-* Linux is free
+# change a, c, t, g to upper case
+$ echo "ACtGGcAaTT" | tr actg ACTG
+ACTGGCAATT 
 
-  * [Supercomputers](https://en.wikipedia.org/wiki/Supercomputer) typically use it
+# change lower case letters to upper case
+$ echo "ACtGGcAaTT" | tr [:lower:] [:upper:]
+ACTGGCAATT
 
-  * Useful text manipulation tools
+# change a, b, or c to 1, 2 ,or 3 repectively
+$ echo "aabbccddee" | tr a-c 1-3
+112233ddee
+
+# delete all occurrences of a
+$ echo "aaaaabbbb" | tr -d a
+bbbb
+
+# remove consecutive duplicate occurrences of a
+$ echo "aaaaabbbb" | tr -s a
+Abbbb
+
+```
+
+---
+
+### 
+
+```bash
+
+
+```
 
 ---
 
 
+### 
+
+```bash
+
+
+```
+
+---
+
+### 
+
+```bash
+
+
+```
+
+---
+
+### 
+
+```bash
+
+
+```
+
+---
+
+### 
+
+```bash
+
+
+```
+
+---
+
+### 
+
+```bash
+
+
+```
+
+---
+
+
+
 </p>
 </details>
+
+
+
+
+
+
+
 
 ## IN CLASS EXERCISES
 Complete the exercise(s) by answering the question(s) in the online form and submitting.  You must be logged into your TAMUCC email account to have your identity attached to your answers. 

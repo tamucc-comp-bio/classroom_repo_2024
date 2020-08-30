@@ -159,7 +159,7 @@ Comparison of GUI and CLI for manipulating data
 </p>
 </details>
 
-<details><summary>Interactive Session: Getting Started with Unix</summary>
+<details><summary>Getting Started with Unix</summary>
 <p>
 
 ### Open A Terminal Window
@@ -323,7 +323,7 @@ ls CSB/unix/solutions
 </p>
 </details>
 
-<details><summary>Interactive Session: The Shell</summary>
+<details><summary>The Shell</summary>
 <p>
 
 ### The [Shell](https://en.wikipedia.org/wiki/Shell_(computing))
@@ -520,7 +520,7 @@ It is best not to used spaces in dir and file names, but you can wrap file names
 </details>
 
 
-<details><summary>Interactive Session: Commands to Remember</summary>
+<details><summary>Commands to Remember</summary>
 <p>
 
 ### Copy with `cp <from> <to>`
@@ -705,7 +705,7 @@ _Do not forget to use `Tab` key to autocomplete file names and prevent spelling 
 </details>
 
 
-<details><summary>Interactive Session: Advanced `bash` Commands</summary>
+<details><summary>Advanced `bash` Commands</summary>
 <p>
 
 ### Redirection of output ([stdout](https://en.wikipedia.org/wiki/Standard_streams#Standard_output_(stdout))) to file `[command] > filename`
