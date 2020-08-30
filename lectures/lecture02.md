@@ -271,7 +271,7 @@ $ grep -r "Gorilla" ../data
 
 ```
 
-_Note: the `grep -c` option is very handy for counting and can negate the need for `wc -l` 
+_Note: the `grep -c` option is very handy for counting and can negate the need for `wc -l` _
 
 ---
 
@@ -289,19 +289,65 @@ $ find ../data | wc -l
 $ find ../data -name "n30.txt"
 
 # use wildcards to find all files in data that contain about
-$ find ../data -iname "*about*“
+$ find ../data -iname "*about*"
 
 # count all files that end in .txt in data, then do same but do not include subdirs
 $ find ../data -name "*.txt" | wc –l
 $ find ../data -maxdepth 1 -name "*.txt" | wc –l
 
 # count files in data that do not include about
-$ find ../data -not -name "*about*" | wc –l
+$ find ../data -not -name "*about*" | wc -l
 
 # find directories with data in path or name
 $ find ../data -type d
 ```
 
+---
+
+### Change Permissions with `chmod`
+
+![](Week01_files/ls-ltrh_3.PNG)
+
+* Three types of permissions
+
+  * Read, Write, Execute
+  
+  * Program will not run if `x` is not set
+
+* Three types of users
+
+  * User, Group, Global
+
+* View with `ls -l`
+
+
+```bash
+
+
+```
+
+---
+
+
+</p>
+</details>
+
+<details><summary>Mind Expander 1.4</summary>
+<p>
+[Link](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlURVhQUzBWODVKR0VJTTE2WjlZN05ZTjhMRi4u)
+</p>
+</details>
+
+<details><summary>Scripts</summary>
+<p>
+
+
+### 
+
+```bash
+
+
+```
 
 ---
 
@@ -314,6 +360,41 @@ $ find ../data -type d
 
 ---
 
+### 
+
+```bash
+
+
+```
+
+---
+
+### 
+
+```bash
+
+
+```
+
+---
+
+### 
+
+```bash
+
+
+```
+
+---
+
+### 
+
+```bash
+
+
+```
+
+---
 
 
 </p>
