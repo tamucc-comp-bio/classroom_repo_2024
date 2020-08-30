@@ -16,7 +16,7 @@ You are expected to start each lecture with your terminal window open and ready 
   
   * Log into your Ubuntu terminal.  _We will not use `gitbash` unless you can not get Ubuntu running._ After logging in, You are in your home directory. 
   
-  * If you are using an Ubuntu terminal that hasn't been setup (you'll know because it will ask you to create a new user name and password) or you notice odd cursor behavior when editing text in the terminal, then run the following code:
+  * If you are using an Ubuntu terminal that has not been setup (you will know because it will ask you to create a new user name and password) or you notice odd cursor behavior when editing text in the terminal, then run the following code:
   
     ```bash
     git clone https://github.com/cbirdlab/wlsUBUNTU_settings.git
@@ -245,22 +245,63 @@ $ grep -c "Vombatidae" BodyMass.csv
 $ grep "Bos" BodyMass.csv
 
 # Only match whole words
-$ grep –w "Bos" BodyMass.csv
+$ grep -w "Bos" BodyMass.csv
+
+# Only match whole words and only return the words that match, rather than the lines
+$ grep -wo "Bos" BodyMass.csv
 
 # Make search case insensitive
 $ grep –i "Bos" BodyMass.csv
+
+# which mammals have body weight most similar to the gorilla?
+# option –B lines before match, option –A lines after match
+$ grep -B 2 -A 2 "Gorilla gorilla" BodyMass.csv
+
+# show line number of gorilla
+$ grep -n "Gorilla gorilla" BodyMass.csv
+
+# -v means match anything except pattern
+$ grep Gorilla BodyMass.csv | grep -v gorilla
+
+# return all lines with Gorilla or Pan, note use of escape char \
+$ grep -w "Gorilla\|Pan" BodyMass.csv
+
+# return all lines with Gorilla for all files in data dir and its subdirs. -r recursive, searches subdirs
+$ grep -r "Gorilla" ../data
+
 ```
 
-_Note: the `grep -c` option is very handy for counting and can negate the need for `wc -l`
+_Note: the `grep -c` option is very handy for counting and can negate the need for `wc -l` 
 
 ---
 
-### 
+### Searching for files with `find [dir] [options] [pattern]` 
+
 
 ```bash
+# current directory is the unix sandbox
+$ find ../data
 
+# how many files are in data?
+$ find ../data | wc -l
 
+# find file named n30.txt in data
+$ find ../data -name "n30.txt"
+
+# use wildcards to find all files in data that contain about
+$ find ../data -iname "*about*“
+
+# count all files that end in .txt in data, then do same but do not include subdirs
+$ find ../data -name "*.txt" | wc –l
+$ find ../data -maxdepth 1 -name "*.txt" | wc –l
+
+# count files in data that do not include about
+$ find ../data -not -name "*about*" | wc –l
+
+# find directories with data in path or name
+$ find ../data -type d
 ```
+
 
 ---
 
