@@ -1,6 +1,6 @@
 # Week02 UNIX II
 
-# DOCUMENT PRESENTLY BEING UPDATED FOR FALL 2020
+# DOCUMENT PRESENTLY BEING UPDATED FOR FALL 2020, Refer to the Slides Below for Complete Treatment of the Rest of Ch 1
 
 ### [Assignment 1](https://github.com/tamucc-comp-bio-2020/classroom_repo/blob/master/assignments/assignment_1.md) is due at the beginning of this lecture
 
@@ -328,17 +328,15 @@ $ find ../data -type d
   
   * execute =1
   
-* Simply add numbers together for different combos of permissions
+  * Simply add numbers together for different combos of permissions
 
-  * Each combo is only represented by one number
-  
     * if the user has all permissions, 4 + 2 + 1 = 7
   
     * if the group has read permissions, 4
   
     * if the global has no permissions, 0
 
-      * 740
+      * the full set of permissions are then: 740
 
 ```bash
 # create a file in the unix sandbox
