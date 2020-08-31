@@ -358,6 +358,53 @@ $ ls –l
 
 ---
 
+### Super User Do to Execute Command as Administrator: `sudo <command> <options> <arguments>`
+
+* Use `sudo` when computer tells you no.
+* Make sure you are certain that you are correct and computer is wrong to not execute your command.
+* You will need sudo for installing software
+
+
+```bash
+$ apt update
+Reading package lists... Done
+E: Could not open lock file /var/lib/apt/lists/lock - open (13: Permission denied)
+E: Unable to lock directory /var/lib/apt/lists/
+W: Problem unlinking the file /var/cache/apt/pkgcache.bin - RemoveCaches (13: Permission denied)
+W: Problem unlinking the file /var/cache/apt/srcpkgcache.bin - RemoveCaches (13: Permission denied)
+
+$ sudo apt update
+
+```
+
+---
+
+### Change Owners With `chown`
+
+The user who creates a file or directory owns that file or directory, but sometimes you will want to transfer ownership (usually to yourself).
+
+```bash
+# create a directory with a subdirectory
+$ mkdir -p test_dir/test_subdir
+$ ls -l 
+$ ls -l test_dir
+
+# list valid users
+$ cut –d: -f1 /etc/passwd
+
+# change owner of dir, -R includes subdirs
+$ chown -R ValidUserName test_dir/
+$ sudo chown -R ValidUserName test_dir/
+$ ls –l
+$ ls –l test_dir
+
+# change owner back to you
+$ sudo chown -R $USER test_dir/
+```
+
+---
+
+
 
 </p>
 </details>
