@@ -420,6 +420,7 @@ $ sudo chown -R $USER test_dir/
 <details><summary>Scripts</summary>
 <p>
 
+See the lecture 2 slides and chapter 1 for this material
 
 ### 
 
@@ -478,12 +479,6 @@ $ sudo chown -R $USER test_dir/
 
 </p>
 </details>
-
-
-
-
-
-
 
 
 ## In Class Exercises
