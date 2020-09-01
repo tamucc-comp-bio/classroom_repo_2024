@@ -488,7 +488,7 @@ to save changes made in nano without closing: `ctrl + o`, then `enter`
 
 Your screen in `nano` should look like this:
 
-![nano screen](Week02_files/nano_screen.png)
+![](Week02_files/nano_screen.png)
 
 ---
 
