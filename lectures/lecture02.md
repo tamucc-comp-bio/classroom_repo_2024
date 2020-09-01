@@ -435,11 +435,11 @@ $ nano ExtractBodyM.sh
 # ctrl + x to save and exit, then "y" to use the existing name, then "enter key"
 
 # If you have Ubuntu, make sure that you have xming turned on
-# open ExtractBodyM.sh in GUI text editor
+# open ExtractBodyM.sh in GUI text editor.  If this does not work, then use the nano command above
 $ gedit ExtractBodyM.sh
 
 # If you have Mac
-# open ExtractBodyM.sh in GUI text editor
+# open ExtractBodyM.sh in GUI text editor.  If this does not work, then use the nano command above
 $ open –a bbedit ExtractBodyM.sh
 # or
 $ open ExtractBodyM.sh
@@ -450,6 +450,10 @@ Either type in or copy and paste the pipeline we made previously to make `BodyMa
 ```bash
 cut –d “;” -f 2-6 ../data/Pacifici2013_data.csv | tr ";" " " | tail -n+2 | sort -nrk6 > BodyMass.csv
 ```
+
+The script should look like this:
+
+![](Week02_files/nano_screen_1.png)
 
 Close the script then run it as follows:
 
