@@ -448,7 +448,7 @@ $ open ExtractBodyM.sh
 Either type in or copy and paste the pipeline we made previously to make `BodyMass.csv` into `ExtractBodyM.sh`:
 
 ```bash
-cut –d “;” -f 2-6 ../data/Pacifici2013_data.csv | tr ";" " " | tail -n+2 | sort -nrk6 > BodyMass.csv
+cut -d ";" -f 2-6 ../data/Pacifici2013_data.csv | tr ";" " " | tail -n+2 | sort -nrk6 > BodyMass.csv
 ```
 
 The script should look like this:
@@ -468,6 +468,9 @@ $ ls –ltrh
 $ nano ExtractBodyM.sh
 ```
 
+---
+
+### Documenting your script appropriately
 
 * It is important to write comments in English to describe what the script is doing
 
@@ -493,7 +496,13 @@ Your screen in `nano` should look like this:
 
 To save changes made in nano without closing: `ctrl + o`, then `enter`.  Do not change the name of the script
 
-Now, let us organize the script so that each pipe in the pipeline occurs on one line by adding the escape character `\ ` after each pipe `|` and hitting enter. When complete, your screen should look like this:
+---
+
+### Organizing the script
+
+It can be a good idea to try to limit a script to 1 command per line to improve its readability.
+
+Now, let us organize the script so that each pipe in the pipeline occurs on one line by adding the escape character `\ ` after each pipe `|` and hitting enter. The `\ ` tells `bash` to ignore the end of the line.  When complete, your screen should look like this:
 
 ![](Week02_files/nano_screen_3.png)
 
@@ -506,21 +515,51 @@ _Note: `ctrl + k` will delete a line in `nano`_
 
 ---
 
-### 
+### Indenting consistently
+
+Indentation is a key to writing readable code.  Because we are continuing the same pipe, it is a good idea to indent the subsequent lines in the pipe, as follows:
+
+![](Week02_files/nano_screen_5.png)
+
+---
+
+### Accepting arguments from the command line
+
+It is easy to write a script that accepts arguments when run from the command line.  Recall that an argument is a word or number that is passed to a command.  The first argument after a script or command is saved into a variable called `$1` automatically. A second argument is saved to `$2`, so on and so forth.  
+
+Let us make our script accept a path to the input file and a path to the output file rather than [hard coding](https://en.wikipedia.org/wiki/Hard_coding) the input and output files. We do this by replacing the input `../data/Pacifici2013_data.csv` and output file paths `BodyMass.csv` with `$1` and `$2`, respectively. Do not forget to add to the documentation, and describe how the script should be run:
+
+![](Week02_files/nano_screen_6.png)
+
+Do not forget to save your work with `ctrl + o`.
+
+---
+
+### Running the script
+
+Close `nano` with `ctrl + x`, then let us run the script.
 
 ```bash
-
-
+# run ExtractBodyM.sh script
+$ bash ExtractBodyM.sh ../data/Pacifici2013_data.csv BodyM.csv
 ```
 
 ---
 
-### 
+### Making script "executable"
+
+You can always run a bash script using `bash scriptname`, but you can also make the script executable so that you do not need to call `bash` to run the script.  The permissions need to be changed with `chmod`. Here we will give all users read, write, and execute priviledges. 
 
 ```bash
-
+# change permissions so script is executable
+$ chmod 777 ExtractBodyM.sh
 
 ```
+
+Then, we need to add a [shebang!](https://en.wikipedia.org/wiki/Shebang_(Unix)) `#!`to the script. A shebang! tells the computer which program to run the script with, is always preceded by a `#!` and should be on the first line of the script.
+
+![](Week02_files/nano_screen_7.png)
+
 
 ---
 
