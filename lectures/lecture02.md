@@ -533,6 +533,8 @@ Let us make our script accept a path to the input file and a path to the output 
 
 Do not forget to save your work with `ctrl + o`.
 
+_Note: all variables are preceded by a `$`.  Avoid creating variables named 1, 2, etc because they could interfere with arguments read in from the command line._
+
 ---
 
 ### Running the script
@@ -554,30 +556,103 @@ You can always run a bash script using `bash scriptname`, but you can also make 
 # change permissions so script is executable
 $ chmod 777 ExtractBodyM.sh
 
+# open script to add shebang!
+$ nano ExtractBodyM.sh
 ```
 
 Then, we need to add a [shebang!](https://en.wikipedia.org/wiki/Shebang_(Unix)) `#!`to the script. A shebang! tells the computer which program to run the script with, is always preceded by a `#!` and should be on the first line of the script.
 
 ![](Week02_files/nano_screen_7.png)
 
-
----
-
-### 
+Close `nano` and now you run the script as follows:
 
 ```bash
-
-
+./ExtractBodyM.sh ../data/Pacifici2013_data.csv BodyM.csv
 ```
 
 ---
 
-### 
+</p>
+</details>
+
+
+<details><summary>`for` Loops</summary>
+<p>
+
+### `for [variableName] in [list]; do [something]; done` 
+
+* For loops automate repetitive tasks
+
+  * 1 task, 100 files
+  
+  * Same task, many different arguments
+
 
 ```bash
+$ cd ~/CSB/unix/data/miRNA
+$ ls
 
+# display first two lines of two fastas ( do not type in the > )
+$ for file in ggo_miR.fasta hsa_miR.fasta
+> do head -n 2 $file
+> done
+```
+
+Let us break down the multiline `for` loop above.  
+
+  * Line 1: `file` is the variable name.  
+  
+    * We could have named it anything but the CSB book uses `file`.  
+	
+    * I prefer to use `i`.  
+  
+  * Line 1: `ggo_miR.fasta hsa_miR.fasta` is the list
+  
+    * A list of file names
+  
+    * A list can also be the name of a file with a list inside of it
+	
+	* Or, a list can be a sequence of numbers, e.g. `seq 1 10`
+
+  * Line 2: `head -n2 $file` is the command
+  
+    * return the first two lines of the file specified in `$file`
+	
+	* on the first cycle of the loop, `$file` is `ggo_miR.fasta`
+	
+  * Line 3: `done` tells the code to loop back to line 1 and make `file=hsa_miR.fasta`
+  
+    * The loop continues cycling until the whole list is complete.
+	
+	* this loop cycles twice because there are two file names in the list
+	
+
+Let us make a longer list of files using a wildcard
+
+```bash
+# display first two lines of all fastas
+$ for file in *.fasta
+> do head -n 2 $file
+> done
 
 ```
+
+_Note: When setting a variable equal to a value, don’t use a `$`. When calling the value held in the variable, use a `$`_
+
+---
+
+### Another `for` loop example
+
+In the following for loop, we use a for loop to extract three types of microRNA from all of the `fasta` files and save them into 1 file per type of miRNA.
+
+```bash
+# display first two lines of two fastas
+$ for miR in miR-208a miR-564 miR-3170
+> do grep $miR -A1 *.fasta > $miR.fasta
+> done
+```
+
+![](Week02_files/forloop.png)
 
 ---
 
