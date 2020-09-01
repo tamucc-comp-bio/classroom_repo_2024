@@ -417,17 +417,78 @@ $ sudo chown -R $USER test_dir/
 </p>
 </details>
 
-<details><summary>Scripts</summary>
+<details><summary>Scripting</summary>
 <p>
 
 See the lecture 2 slides and chapter 1 for this material
 
-### 
+### What are [scripts](https://en.wikipedia.org/wiki/Scripting_language)?
+
+A script is a file with a list of commands which are executed sequentially from the first line to the last.
+
+In lecture 0, we installed [xming](https://sourceforge.net/projects/xming/) on windows computers.  You need to have [xming](https://sourceforge.net/projects/xming/) turned on for the next commands to work in Ubuntu on windows computers.  
 
 ```bash
+# create and open ExtractBodyM.sh in CLI text editor
+$ nano ExtractBodyM.sh
 
+# ctrl + x to save and exit, then "y" to use the existing name, then "enter key"
+
+# If you have Ubuntu, make sure that you have xming turned on
+# open ExtractBodyM.sh in GUI text editor
+$ gedit ExtractBodyM.sh
+
+# If you have Mac
+# open ExtractBodyM.sh in GUI text editor
+$ open –a bbedit ExtractBodyM.sh
+# or
+$ open ExtractBodyM.sh
+```
+
+Either type in or copy and paste the pipeline we made previously to make `BodyMass.csv` into `ExtractBodyM.sh`:
+
+```bash
+cut –d “;” -f 2-6 ../data/Pacifici2013_data.csv | tr ";" " " | tail -n+2 | sort -nrk6 > BodyMass.csv
+```
+
+Close the script then run it as follows:
+
+```bash
+# run ExtractBodyM.sh script
+$ bash ExtractBodyM.sh
+
+# view directory
+$ ls –ltrh
+
+# Open script again
+$ nano ExtractBodyM.sh
+```
+
+
+* It is important to write comments in English to describe what the script is doing
+
+  * You’ll forget what the code does
+  
+  * Makes it easier for others to figure out what is happening in the script
+  
+  * Easier to identify errors
+
+Add the following comments to the script before the code using nano
+
+```bash
+# isolate columns 2-6 of csv using cut
+# translate the ; to “ “ using tr
+# remove the header row using tail
+# sort by sixth column, descending order
+# save to file
 
 ```
+
+to save changes made in nano without closing: `ctrl + o`, then `enter`
+
+Your screen in `nano` should look like this:
+
+![nano screen](Week02_files/nano_screen.png)
 
 ---
 
