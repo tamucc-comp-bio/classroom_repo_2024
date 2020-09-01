@@ -1,7 +1,5 @@
 # Week02 UNIX II
 
-# DOCUMENT PRESENTLY BEING UPDATED FOR FALL 2020, Refer to the Slides Below for Complete Treatment of the Rest of Ch 1
-
 ### [Assignment 1](https://github.com/tamucc-comp-bio-2020/classroom_repo/blob/master/assignments/assignment_1.md) is due at the beginning of this lecture
 
 ## [Lecture 02 Slides](Week02_files/Lecture02_WelcomeToTheMatrix.pdf)
@@ -732,6 +730,6 @@ The exercises in the online forms closely follow those in the book.  I do make m
 
 * [Exercise 1.10.3 Plant-Pollinator Networks](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMlpVSUQ0U1hTSFZERDE1WUdZWjRYUlhaWi4u)
 
-## Homework
+## Homework NEED TO UPDATE
 * [Assignment_2, Due 09/20](https://github.com/tamucc-comp-bio/fall_2019/blob/master/assignments/assignment_2.md)
 
