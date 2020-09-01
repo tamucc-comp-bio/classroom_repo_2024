@@ -576,7 +576,7 @@ Close `nano` and now you run the script as follows:
 </details>
 
 
-<details><summary>`for` Loops</summary>
+<details><summary>For Loops</summary>
 <p>
 
 ### `for [variableName] in [list]; do [something]; done` 
@@ -631,8 +631,8 @@ Let us make a longer list of files using a wildcard
 
 ```bash
 # display first two lines of all fastas
-$ for file in *.fasta
-> do head -n 2 $file
+$ for i in *.fasta
+> do head -n 2 $i
 > done
 
 ```
@@ -656,15 +656,66 @@ $ for miR in miR-208a miR-564 miR-3170
 
 ---
 
-### 
+</p>
+</details>
+
+
+<details><summary>Tips & Tricks</summary>
+<p>
+
+### The `$PATH`
+
+* A variable that holds all paths to directories where executable commands and scripts are located
+
+* When you type `ls`, `bash` looks at `$PATH` to find the `ls` command file
+
+* If you compile and install software manually (not with `apt`), you need to move it to a `$PATH` dir such as `/usr/local/bin`
+
 
 ```bash
+# show path variable
+$ echo $PATH
 
-
+# identify the path to the ls command
+$ which ls
+/bin/ls
 ```
 
 ---
 
+### Line Terminators - Use a Real Text Editor to View
+
+* There are invisible characters at the end of every line in a text document
+
+  * Carriage Return (CR or `\r`)
+  
+  * Line Feed (LF  or `\n`)
+  
+* Unix, Linux, Mac systems end lines with `LF`
+
+* Win systems end lines with `CR LF`
+
+* Make sure your remove CR from files made in Windows that will be used in Linux
+
+* This is one of many reasons why we use a Notepad++ or BBedit
+
+Showing line terminators in `Notepad ++`
+
+![](Week02_files/line_terminators.png)
+
+Finding CR and replacing with nothing in `Notepad ++`
+
+![](Week02_files/line_terminators2.png)
+
+---
+
+### Misc Useful Commands
+
+Note that some of these commands need to be installed on MacOS using `brew`
+
+![](Week02_files/misc_useful_commands.png)
+
+![](Week02_files/misc_useful_commands2.png)
 
 </p>
 </details>
