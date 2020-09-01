@@ -455,7 +455,7 @@ The script should look like this:
 
 ![](Week02_files/nano_screen_1.png)
 
-Close the script then run it as follows:
+Close the script `ctrl + x` then run it as follows:
 
 ```bash
 # run ExtractBodyM.sh script
@@ -485,14 +485,24 @@ Add the following comments to the script before the code using nano
 # remove the header row using tail
 # sort by sixth column, descending order
 # save to file
-
 ```
-
-to save changes made in nano without closing: `ctrl + o`, then `enter`
 
 Your screen in `nano` should look like this:
 
-![](Week02_files/nano_screen.png)
+![](Week02_files/nano_screen_2.png)
+
+To save changes made in nano without closing: `ctrl + o`, then `enter`.  Do not change the name of the script
+
+Now, let us organize the script so that each pipe in the pipeline occurs on one line by adding the escape character `\ ` after each pipe `|` and hitting enter. When complete, your screen should look like this:
+
+![](Week02_files/nano_screen_3.png)
+
+Now that each command is on one line, we can reorganize the comments to occur immediately before the correct line, as follows:
+
+![](Week02_files/nano_screen_4.png)
+
+_Note: `ctrl + k` will delete a line in `nano`_
+
 
 ---
 
