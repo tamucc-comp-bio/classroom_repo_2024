@@ -93,6 +93,8 @@ cut -d ";" -f 2-6 $1 | \
 
 ## [Week 02 Quiz](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMjIySEJCNFlSMVJRSUo0SU5HSFNKMVRHWC4u)
 
+After you log into the class and get your computer set up, please complete the quiz.
+
 
 ## Concise Review of Material Covered Up Through Assignment 1
 
