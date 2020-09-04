@@ -2,7 +2,7 @@
 
 ### [Assignment 1](https://github.com/tamucc-comp-bio-2020/classroom_repo/blob/master/assignments/assignment_1.md) is due at the beginning of this lecture
 
-## [Lecture 02 Slides](Week02_files/Lecture02_WelcomeToTheMatrix.pdf)
+## [QUIZ](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMjIySEJCNFlSMVJRSUo0SU5HSFNKMVRHWC4u)
 
 ## Computer Preparation
 
