@@ -116,9 +116,14 @@ cut -d ";" -f 2-6 $1 | \
 <p>
 
 #### [command] [options] [arguments]
+
 #### ls -ltrh CSB
 
-* `ls` is an example of a command
+#### a command is a simple app. 
+
+* `ls`
+
+#### an option is a command setting, like a check box
 
 * `-a` single letter options are immediately preceded by `-`,  `- a` will not work
 
@@ -128,9 +133,9 @@ cut -d ";" -f 2-6 $1 | \
 
   * there are no shortcuts for word options, i.e. `ls -ltrh --all` or ` ls --all -ltrh` or `ls -ltrha`
 
-* an argument is a value or string that is provided to the command
+#### an argument is a value or string that is provided to the command
 
-  * ex. a path, dir name, or file name
+* ex. a path, dir name, or file name
   
   * `ls data` will return the file and contents of directory named *data* if it exists in present dir
 
