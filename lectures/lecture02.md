@@ -92,7 +92,7 @@ cut -d ";" -f 2-6 $1 | \
 </p>
 </details>
 
-## New Material To Be Covered Prior to Lecture (CSB Section 1.6.3 - 1.9.3) 
+## New Material To Be Covered Prior to Lecture (CSB Section 1.6.3 - 1.6.7) 
 
 For the online version of this course, I am converting the ppt slides to a more screen-splitting friendly format here in GitHub.
 
