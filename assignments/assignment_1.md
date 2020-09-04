@@ -53,7 +53,13 @@
 
 We are also going to flip the classroom next week. Flipping the classroom means that you work on the material to be covered before we address it in lecture. Then we can spend time in lecture going over the most challenging topics, as identified by you. Then we will continue together in lecture through new material that builds upon this assignment.
 
-Work through the New Material below which is from section 1.6 in [**Chapter 1**](https://github.com/tamucc-comp-bio-2020/classroom_repo/blob/master/text_book_resources/ComputingSkillsforBiologists_Chapter1.pdf). Complete the mind expander(s) and the exercise(s) by answering the question(s) in the online form and submitting.  You must be logged into your TAMUCC email account to have your identity attached to your answers. 
+Work through the New Material below which is from section 1.6 in [**Chapter 1**](https://github.com/tamucc-comp-bio-2020/classroom_repo/blob/master/text_book_resources/ComputingSkillsforBiologists_Chapter1.pdf).  To help you learn `bash`, you are expected to type in the commands the
+
+```
+code blocks
+```
+
+ Complete the mind expander(s) and the exercise(s) by answering the question(s) in the online form and submitting.  You must be logged into your TAMUCC email account to have your identity attached to your answers. 
 
 * **_You can resubmit your answers as neccessary_**
 

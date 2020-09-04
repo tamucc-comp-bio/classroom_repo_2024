@@ -55,7 +55,7 @@ You are expected to start each lecture with your terminal window open and ready 
 </details>
 
 
-## Text Book Vs. Lecture Slides
+## Text Book Versus Online Materials
 
 <details><summary>click to expand</summary>
 <p>
