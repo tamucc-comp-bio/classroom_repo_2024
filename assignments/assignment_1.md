@@ -69,7 +69,8 @@ Continue working through [**Chapter 1**](https://github.com/tamucc-comp-bio-2020
 
 * **_You can resubmit your answers as neccessary_**
 
-## New Material To Be Covered Prior to Lecture (CSB Section 1.6.3 - 1.6.7) 
+
+## New Material To Be Covered Prior to Lecture (CSB Section 1.6) 
 
 For the online version of this course, I am converting the ppt slides to a more screen-splitting friendly format here in GitHub.
 
@@ -650,6 +651,17 @@ $ sudo chown -R $USER test_dir/
 
 </p>
 </details>
+
+
+<details><summary>Exercise 1.10.1 Next Generation Sequencing Data</summary>
+<p>
+
+[Exercise 1.10.1 Next Generation Sequencing Data](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMTVENFg0UjhFTzc3Wkc0NExRTjdLSjdGNi4u)
+
+</p>
+</details>
+
+
 
 
 ## Text Book Versus Online Materials
