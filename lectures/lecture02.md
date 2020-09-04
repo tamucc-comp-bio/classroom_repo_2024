@@ -92,7 +92,7 @@ cut -d ";" -f 2-6 $1 | \
 </p>
 </details>
 
-## New Material To Be Covered Prior to This Lecture (CSB Section 1.6) 
+## New Material Covered Prior to This Lecture (CSB Section 1.6) 
 
 For the online version of this course, I converted the [**Lecture_02 Slides**](https://github.com/tamucc-comp-bio-2020/classroom_repo/blob/master/lectures/Week02_files/Lecture02_WelcomeToTheMatrix.pdf)  to a more screen-splitting friendly format here in GitHub.
 
@@ -408,10 +408,14 @@ $ sudo chown -R $USER test_dir/
 </p>
 </details>
 
-<details><summary>Mind Expander 1.4</summary>
+<details><summary>Assignment 1 Review</summary>
 <p>
 
-[Link](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlURVhQUzBWODVKR0VJTTE2WjlZN05ZTjhMRi4u)
+[Mind Expander 1.3 Form](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUOThBNjZNVzlGQUtJUzhYREZVSE5UVVJMNS4u)
+
+[Mind Expander 1.4](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlURVhQUzBWODVKR0VJTTE2WjlZN05ZTjhMRi4u)
+
+[Exercise 1.10.1 Next Generation Sequencing Data](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMTVENFg0UjhFTzc3Wkc0NExRTjdLSjdGNi4u)
 
 </p>
 </details>
