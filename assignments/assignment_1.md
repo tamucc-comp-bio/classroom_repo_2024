@@ -60,7 +60,7 @@ Work through the New Material below which is from section 1.6 in [**Chapter 1**]
 The exercises in the online forms closely follow those in the book.  I do make minor modifications and provide tips in the online form.  To ensure that your work is saved, **_I highly recommend that you first record your answers in a text document in either [Notepad++ for Win10](https://notepad-plus-plus.org/downloads/) or [BBedit for Mac](https://www.barebones.com/products/bbedit/) and save them to your computer_**.  For an excellently formatted example, see the solutions provided by the book in `~/CSB/unix/solutions`.
 
 
-## New Material To Be Covered Prior to Lecture (CSB Section 1.6) 
+## New Material To Be Covered Prior to Next Lecture (CSB Section 1.6) 
 
 For the online version of this course, I converted the [**Lecture_02 Slides**](https://github.com/tamucc-comp-bio-2020/classroom_repo/blob/master/lectures/Week02_files/Lecture02_WelcomeToTheMatrix.pdf)  to a more screen-splitting friendly format here in GitHub.
 

@@ -92,9 +92,9 @@ cut -d ";" -f 2-6 $1 | \
 </p>
 </details>
 
-## New Material To Be Covered Prior to Lecture (CSB Section 1.6.3 - 1.6.7) 
+## New Material To Be Covered Prior to This Lecture (CSB Section 1.6) 
 
-For the online version of this course, I am converting the ppt slides to a more screen-splitting friendly format here in GitHub.
+For the online version of this course, I converted the [**Lecture_02 Slides**](https://github.com/tamucc-comp-bio-2020/classroom_repo/blob/master/lectures/Week02_files/Lecture02_WelcomeToTheMatrix.pdf)  to a more screen-splitting friendly format here in GitHub.
 
 <details><summary>Additional Important Commands</summary>
 <p>
