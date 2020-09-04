@@ -51,23 +51,13 @@
 
 ## Description of Assignment
 
-Complete the mind expander(s) and the exercise(s) by answering the question(s) in the online form and submitting.  You must be logged into your TAMUCC email account to have your identity attached to your answers. 
+We are also going to flip the classroom next week. Flipping the classroom means that you work on the material to be covered before we address it in lecture. Then we can spend time in lecture going over the most challenging topics, as identified by you. Then we will continue together in lecture through new material that builds upon this assignment.
+
+Work through the New Material below which is from section 1.6 in [**Chapter 1**](https://github.com/tamucc-comp-bio-2020/classroom_repo/blob/master/text_book_resources/ComputingSkillsforBiologists_Chapter1.pdf). Complete the mind expander(s) and the exercise(s) by answering the question(s) in the online form and submitting.  You must be logged into your TAMUCC email account to have your identity attached to your answers. 
+
+* **_You can resubmit your answers as neccessary_**
 
 The exercises in the online forms closely follow those in the book.  I do make minor modifications and provide tips in the online form.  To ensure that your work is saved, **_I highly recommend that you first record your answers in a text document in either [Notepad++ for Win10](https://notepad-plus-plus.org/downloads/) or [BBedit for Mac](https://www.barebones.com/products/bbedit/) and save them to your computer_**.  For an excellently formatted example, see the solutions provided by the book in `~/CSB/unix/solutions`.
-
-* [CSB Mind Expander 01.03](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUOThBNjZNVzlGQUtJUzhYREZVSE5UVVJMNS4u)
-
-* [Exercise 1.10.1 Next Generation Sequencing Data](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMTVENFg0UjhFTzc3Wkc0NExRTjdLSjdGNi4u)
-
-* **_You can resubmit your answers as neccessary_**
-
-We are also going to flip the classroom again next week. Flipping the classroom means that you work on the material to be covered before we address it in lecture. Then we can spend time in lecture going over the most challenging topics, as identified by you. Then we will continue together in lecture through new material that builds upon this assignment.
-
-Continue working through [**Chapter 1**](https://github.com/tamucc-comp-bio-2020/classroom_repo/blob/master/text_book_resources/ComputingSkillsforBiologists_Chapter1.pdf), and complete section 1.6, including mind expander 01.04. Note the differences between the book and lecture slides below.
-
-* [CSB Mind Expander 01.04](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlURVhQUzBWODVKR0VJTTE2WjlZN05ZTjhMRi4u)
-
-* **_You can resubmit your answers as neccessary_**
 
 
 ## New Material To Be Covered Prior to Lecture (CSB Section 1.6) 
