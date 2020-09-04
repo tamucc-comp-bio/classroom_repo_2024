@@ -115,8 +115,8 @@ cut -d ";" -f 2-6 $1 | \
 <details><summary>*Commands* have *options* and accept *arguments* to modify functionality </summary>
 <p>
 
-### [command] [options] [arguments]
-### ls -ltrh CSB
+#### [command] [options] [arguments]
+#### ls -ltrh CSB
 
 * `ls` is an example of a command
 
@@ -148,7 +148,7 @@ cut -d ";" -f 2-6 $1 | \
   
   * [command]          another way to display manual in some cases
   
-  * use web browser to search on *bash command *
+  * use web browser to search on *bash command* 
   
 
 </p>
@@ -157,15 +157,13 @@ cut -d ";" -f 2-6 $1 | \
 <details><summary>The address of a file or dir is a *path*: `/home/username`</summary>
 <p>
 
-The locations of files and dirs can be specified using *absolute* or *relative paths*, and these paths are used by the majority of commands because most commands manipulate files and dirs
-
-Absolute paths specify the same address regardless of the present working dir
+#### Absolute paths specify the same address regardless of the present working dir
 
   * `/`     root dir, top dir in directory tree
   
   * `~`     home dir
 
-Relative paths specify different addresses depending upon the present working dir
+#### Relative paths specify different addresses depending upon the present working dir
 
   * `-`     last directory your were in before the `pwd`
   
@@ -178,32 +176,40 @@ Relative paths specify different addresses depending upon the present working di
 </p>
 </details>
 
-<details><summary>Wildcards</summary>
+<details><summary>Wildcards can be used to specify several files with one word or paths</summary>
 <p>
 
-4. Wildcards can be used to specify several files with one word or paths
+#### `*` can be any character
 
-  * `*` can be any character
-  * example: `ls *.txt` will list all files ending in `.txt` 
+example: `ls *.txt` will list all files ending in `.txt` 
+
+#### `[AB]` means either character `A` or character `B` 
 
 </p>
 </details>
 
-<details><summary>Manipulating Data Files</summary>
+<details><summary>Many commands in the text book are important for manipulating biological data</summary>
 <p>
 
-5. There are several commands in the text book that are important for manipulating biological data.
+#### `echo`  prints text or convertes text into a text stream
 
-  * `echo`  prints text or convertes text into a text stream
-  * `head`  returns only first few lines of a file, or remove last lines (rows)
-  * `tail`  returns only last few lines of a file, or remove first lines (rows)
-  * `cut`   returns specified columns
-  * `cat`   combines files together by line (row)
-  * `uniq`  removes duplicates
-  * `sort`  changes the order of rows by column
-  * `grep`  returns lines (rows) that match a pattern
-  * `tr`    replaces one character with another, usually column delimiters
-  * `wc`    count words, characters, lines, etc
+#### `head`  returns only first few lines of a file, or remove last lines (rows)
+
+#### `tail`  returns only last few lines of a file, or remove first lines (rows)
+
+#### `cut`   returns specified columns
+
+#### `cat`   combines files together by line (row)
+
+#### `uniq`  removes duplicates
+
+#### `sort`  changes the order of rows by column
+
+#### `grep`  returns lines (rows) that match a pattern
+
+#### `tr`    replaces one character with another, usually column delimiters
+
+#### `wc`    count words, characters, lines, etc
 
 </p>
 </details>
@@ -211,10 +217,13 @@ Relative paths specify different addresses depending upon the present working di
 <details><summary>Unix commands are designed to pipe `|` and redirect `>` text streams to construct pipelines that link commands and create new files</summary>
 <p>
 
-6. Unix commands are designed to pipe `|` and redirect `>` text streams to construct pipelines that link commands and create new files
-  * `|`     takes standard output (*stdout*) from one command and pipes it to another command as *stdin*
-  * `>`     redirects *stdout* into a file of your naming, will overwrite existing file
-  * `>>`    redirects *stdout* into a file of your naming, will append existing file
+#### [command] [options] [arguments] | [command] [options] [arguments] > [output file]
+
+#### `|`     takes standard output (*stdout*) from one command and pipes it to another command as *stdin*
+
+#### `>`     redirects *stdout* into a file of your naming, will overwrite existing file
+
+#### `>>`    redirects *stdout* into a file of your naming, will append existing file
 
 </p>
 </details>
