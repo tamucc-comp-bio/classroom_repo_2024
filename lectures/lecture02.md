@@ -95,23 +95,6 @@ cut -d ";" -f 2-6 $1 | \
 
 ## Concise Review of Materials Up Through Assignment 1
 
-<details><summary>Commands for navigating and manipulating dirs & files </summary>
-<p>
-
-#### `cd`    change directories
-#### `pwd`   where am I?
-#### `ls`    show contents of `pwd`
-#### `cp`    copy files and directories from one location to another, could also rename copied file
-#### `mv`    move files and directories from one location to another, rename file or directories
-#### `rm`    delete file or dir, be careful, there is no undo
-#### `mkdir` make new directory, will not overwrite existing dir
-#### `less`  view a file without opening all of it, good for large files
-#### `nano`  word processor, edit text files
-#### `chmod` change file and dir permissions
-
-</p>
-</details>
-
 <details><summary>Commands have options and accept arguments to modify functionality </summary>
 <p>
 
@@ -138,6 +121,23 @@ cut -d ";" -f 2-6 $1 | \
 * ex. a path, dir name, or file name
   
   * `ls data` will return the file and contents of directory named *data* if it exists in present dir
+
+</p>
+</details>
+
+<details><summary>Commands for navigating and manipulating dirs & files </summary>
+<p>
+
+#### `cd`    change directories
+#### `pwd`   where am I?
+#### `ls`    show contents of `pwd`
+#### `cp`    copy files and directories from one location to another, could also rename copied file
+#### `mv`    move files and directories from one location to another, rename file or directories
+#### `rm`    delete file or dir, be careful, there is no undo
+#### `mkdir` make new directory, will not overwrite existing dir
+#### `less`  view a file without opening all of it, good for large files
+#### `nano`  word processor, edit text files
+#### `chmod` change file and dir permissions
 
 </p>
 </details>
