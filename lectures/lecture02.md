@@ -95,27 +95,28 @@ cut -d ";" -f 2-6 $1 | \
 
 ## Concise Review of Materials Up Through Assignment 1
 
-<details><summary>CLI Commands for Navigating and Manipulating Dirs & Files </summary>
+<details><summary>Commands for navigating and manipulating dirs & files </summary>
 <p>
 
-* `cd`    change directories
-* `pwd`   where am I?
-* `ls`    show contents of `pwd`
-* `cp`    copy files and directories from one location to another, could also rename copied file
-* `mv`    move files and directories from one location to another, rename file or directories
-* `rm`    delete file or dir, be careful, there is no undo
-* `mkdir` make new directory, will not overwrite existing dir
-* `less`  view a file without opening all of it, good for large files
-* `nano`  word processor, edit text files
-* `chmod` change file and dir permissions
+#### `cd`    change directories
+#### `pwd`   where am I?
+#### `ls`    show contents of `pwd`
+#### `cp`    copy files and directories from one location to another, could also rename copied file
+#### `mv`    move files and directories from one location to another, rename file or directories
+#### `rm`    delete file or dir, be careful, there is no undo
+#### `mkdir` make new directory, will not overwrite existing dir
+#### `less`  view a file without opening all of it, good for large files
+#### `nano`  word processor, edit text files
+#### `chmod` change file and dir permissions
 
 </p>
 </details>
 
-<details><summary>*Commands* have *options* and accept *arguments* to Modify Functionality </summary>
+<details><summary>*Commands* have *options* and accept *arguments* to modify functionality </summary>
 <p>
 
 ### [command] [options] [arguments]
+### ls -ltrh CSB
 
 * `ls` is an example of a command
 
@@ -133,25 +134,27 @@ cut -d ";" -f 2-6 $1 | \
   
   * `ls data` will return the file and contents of directory named *data* if it exists in present dir
 
-Getting Help
+</p>
+</details>
+
+<details><summary>Use `man`, `-h`, `--help`, or web search to get help </summary>
+<p>
 
   * `man` <command>    show manual for command
   
-  * <command>` -h`     if man does not work, this could show manual for command
+  * [command]` -h`     if man does not work, this could show manual for command
   
-  * <command>` --help` another way to display manual in some cases
+  * [command]` --help` another way to display manual in some cases
   
-  * <command>          another way to display manual in some cases
+  * [command]          another way to display manual in some cases
   
   * use web browser to search on *bash command *
   
-  * example of argument: `ls data` will return the file and contents of directory in pwd that are named *data* if they exist
-  * example of option:  `ls -ltrh` will return all files in `pwd` with details, in reverse chronological order with human-readable file sizes
 
 </p>
 </details>
 
-<details><summary>The Address of a File or Dir is a *Path*</summary>
+<details><summary>The address of a file or dir is a *path*: `/home/username`</summary>
 <p>
 
 The locations of files and dirs can be specified using *absolute* or *relative paths*, and these paths are used by the majority of commands because most commands manipulate files and dirs
