@@ -112,14 +112,14 @@ cut -d ";" -f 2-6 $1 | \
 </p>
 </details>
 
-<details><summary>*Commands* have *options* and accept *arguments* to modify functionality </summary>
+<details><summary>Commands have options and accept arguments to modify functionality </summary>
 <p>
 
 #### [command] [options] [arguments]
 
-#### ls -ltrh CSB
+* ls -ltrh CSB
 
-#### a command is a simple app. 
+#### a command is a simple app 
 
 * `ls`
 
@@ -145,15 +145,15 @@ cut -d ";" -f 2-6 $1 | \
 <details><summary>Use `man`, `-h`, `--help`, or web search to get help </summary>
 <p>
 
-  * `man` <command>    show manual for command
+#### `man` <command>    show manual for command
   
-  * [command]` -h`     if man does not work, this could show manual for command
+#### [command]` -h`     if man does not work, this could show manual for command
   
-  * [command]` --help` another way to display manual in some cases
+#### [command]` --help` another way to display manual in some cases
   
-  * [command]          another way to display manual in some cases
+#### [command]          another way to display manual in some cases
   
-  * use web browser to search on *bash command* 
+#### use web browser to search on *bash command* 
   
 
 </p>
@@ -186,9 +186,11 @@ cut -d ";" -f 2-6 $1 | \
 
 #### `*` can be any character
 
-example: `ls *.txt` will list all files ending in `.txt` 
+* `ls *.txt` will list all files ending in `.txt` 
 
 #### `[AB]` means either character `A` or character `B` 
+
+* `ls [bm]oat.txt` will list files named either `boat.txt` or `moat.txt`
 
 </p>
 </details>
