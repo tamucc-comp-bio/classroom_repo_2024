@@ -53,9 +53,6 @@ You are expected to start each lecture with your terminal window open and ready 
 </details>
 
 
-## [QUIZ](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMjIySEJCNFlSMVJRSUo0SU5HSFNKMVRHWC4u)
-
-
 ## Text Book Versus Online Materials
 
 <details><summary>click to expand</summary>
@@ -92,6 +89,9 @@ cut -d ";" -f 2-6 $1 | \
 
 </p>
 </details>
+
+
+## [QUIZ](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMjIySEJCNFlSMVJRSUo0SU5HSFNKMVRHWC4u)
 
 
 ## Concise Review of Material Covered Up Through Assignment 1
