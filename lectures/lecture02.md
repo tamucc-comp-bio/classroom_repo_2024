@@ -664,7 +664,7 @@ $ sudo chown -R $USER test_dir/
 ---
 
 
-##New Materials Covered During Lecture Today
+## New Material Covered During Lecture Today (CSB 1.7-1.9)
 
 <details><summary>Scripting</summary>
 <p>
