@@ -708,7 +708,7 @@ $ find ../data -type d
 
 ---
 
-### Change Permissions with `chmod [options] ### filename`
+### Change Permissions with `chmod [options] ### <filename>`
 
 * Three types of permissions
 
