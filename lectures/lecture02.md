@@ -91,7 +91,7 @@ cut -d ";" -f 2-6 $1 | \
 </details>
 
 
-## [QUIZ](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMjIySEJCNFlSMVJRSUo0SU5HSFNKMVRHWC4u)
+## [Week 02 Quiz](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMjIySEJCNFlSMVJRSUo0SU5HSFNKMVRHWC4u)
 
 
 ## Concise Review of Material Covered Up Through Assignment 1
