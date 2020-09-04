@@ -1115,7 +1115,7 @@ cd ../../sandbox
 
 ```
 
-These examples are a bit contrived, but you will quickly find that 
+These examples are a bit contrived, but you will quickly find that subshells are indispensable when automating
 
 </p>
 </details>
