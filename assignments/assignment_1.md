@@ -62,7 +62,7 @@ The exercises in the online forms closely follow those in the book.  I do make m
 
 ## New Material To Be Covered Prior to Lecture (CSB Section 1.6) 
 
-For the online version of this course, I am converting the ppt slides to a more screen-splitting friendly format here in GitHub.
+For the online version of this course, I converted the [**Lecture_02 Slides**](https://github.com/tamucc-comp-bio-2020/classroom_repo/blob/master/lectures/Week02_files/Lecture02_WelcomeToTheMatrix.pdf)  to a more screen-splitting friendly format here in GitHub.
 
 
 <details><summary>Advanced `bash` Commands</summary>
@@ -656,7 +656,7 @@ $ sudo chown -R $USER test_dir/
 
 ## Text Book Versus Online Materials
 
-The [**Lecture_02 Slides**](https://github.com/tamucc-comp-bio-2020/classroom_repo/blob/master/lectures/Week02_files/Lecture02_WelcomeToTheMatrix.pdf) closely follow the book but there is some additional information that is not provided in the book (and vice versa). In the lecture slides, the `code blocks` are represented by green text on a black background, mimicking the terminal.
+The _*New Material*_ closely follows the book but there is some additional information that is not provided in the book (and vice versa). In the lecture slides, the `code blocks` are represented by green text on a black background, mimicking the terminal.
 
 * Page 35 **Use `BodyMass.csv` (slides) rather than `BodyM.csv` (book)**. Files should always be given descriptive names.
 
