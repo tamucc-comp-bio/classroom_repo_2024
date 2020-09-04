@@ -115,7 +115,7 @@ cut -d ";" -f 2-6 $1 | \
 <details><summary>*Commands* have *options* and accept *arguments* to Modify Functionality </summary>
 <p>
 
-<command> <options> <arguments>
+### [command] [options] [arguments]
 
 * `ls` is an example of a command
 
