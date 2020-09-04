@@ -147,10 +147,22 @@ Relative paths specify different addresses depending upon the present working di
   
   * `./`    present working directory
 
+</p>
+</details>
+
+<details><summary>Wildcards</summary>
+<p>
+
 4. Wildcards can be used to specify several files with one word or paths
 
   * `*` can be any character
   * example: `ls *.txt` will list all files ending in `.txt` 
+
+</p>
+</details>
+
+<details><summary>Manipulating Data Files</summary>
+<p>
 
 5. There are several commands in the text book that are important for manipulating biological data.
 
@@ -165,10 +177,23 @@ Relative paths specify different addresses depending upon the present working di
   * `tr`    replaces one character with another, usually column delimiters
   * `wc`    count words, characters, lines, etc
 
+</p>
+</details>
+
+<details><summary>Unix commands are designed to pipe `|` and redirect `>` text streams to construct pipelines that link commands and create new files</summary>
+<p>
+
 6. Unix commands are designed to pipe `|` and redirect `>` text streams to construct pipelines that link commands and create new files
   * `|`     takes standard output (*stdout*) from one command and pipes it to another command as *stdin*
   * `>`     redirects *stdout* into a file of your naming, will overwrite existing file
   * `>>`    redirects *stdout* into a file of your naming, will append existing file
+
+</p>
+</details>
+
+<details><summary>The escape character `\ ` changes the meaning of the character that follows, including end of lines</summary>
+<p>
+
 
 7. The escape character `\ ` changes the meaning of the character that follows, including end of lines
   * at the end of a line, it means do not end line and continue on next line
@@ -177,10 +202,23 @@ Relative paths specify different addresses depending upon the present working di
   * `\r`   is a carriage return (*CR*), in windows every line concludes with CRLF, and causes compatibility issues with unix/linux/mac 
   * there are MANY more uses of `\ `
 
-8. We can assign values to variables
+</p>
+</details>
+
+<details><summary>We can assign values to variables</summary>
+<p>
+
+
+
   ```bash
   VARIABLE=1375
+  X=10
+  height=6.3
+  echo $VARIABLE $X $height
   ```
+  
+</p>
+</details>
 
 
 
