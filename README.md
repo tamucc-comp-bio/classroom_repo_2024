@@ -91,13 +91,17 @@ SECTION 1.  WELCOME TO THE MATRIX
   
 * [09/04  Week02 Unix II](lectures/lecture02.md)
 
+
+  * [Assignment_2,  Due 09/11](assignments/assignment_2.md)
+
+* [09/11  Week03 Unix III](lectures/lecture03.md)
+
 <!-- 
 
-  * [Assignment_2,  Due 09/20](https://github.com/tamucc-comp-bio/fall_2019/blob/master/assignments/assignment_2.md)
-
-* [09/20  Week03 Unix III](https://github.com/tamucc-comp-bio/fall_2019/blob/master/lectures/lecture03.md)
-  * [Assignment_3,  Due 09/27](https://github.com/tamucc-comp-bio/fall_2019/blob/master/assignments/assignment_3.md)
+  * [Assignment_3,  Due 09/27](assignments/assignment_3.md)
+  
   * [Request Account On TAMUCC Super Computer Due 9/27](http://hpc.tamucc.edu/)
+  
   * [Grad Student Course Project: Plan/Outline, Due 09/27](https://classroom.github.com/a/T1p9O1qg)
 
 * [09/27  Week04 Version Control w/ Git](https://github.com/tamucc-comp-bio/fall_2019/blob/master/lectures/lecture04.md)
