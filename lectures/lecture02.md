@@ -231,28 +231,31 @@ example: `ls *.txt` will list all files ending in `.txt`
 <details><summary>The escape character `\ ` changes the meaning of the character that follows, including end of lines</summary>
 <p>
 
+#### at the end of a line, `\ ` means do not end line and continue on next line
 
-7. The escape character `\ ` changes the meaning of the character that follows, including end of lines
-  * at the end of a line, it means do not end line and continue on next line
-  * `\t`   is a tab, but not all commands recognize this
-  * `\n`   is a line feed (*LF*), the unix end of line character (usually invisible)
-  * `\r`   is a carriage return (*CR*), in windows every line concludes with CRLF, and causes compatibility issues with unix/linux/mac 
-  * there are MANY more uses of `\ `
+#### `\t`   is a tab, but not all commands recognize this
+
+#### `\n`   is a line feed (*LF*), the unix end of line character (usually invisible)
+
+#### `\r`   is a carriage return (*CR*), in windows every line concludes with CRLF, and causes compatibility issues with unix/linux/mac 
+
+#### there are MANY more uses of `\ `, such as specifying a file with a space in the name: `my\ files`
 
 </p>
 </details>
 
-<details><summary>We can assign values to variables</summary>
+<details><summary>We can assign values to variables and recall them later</summary>
 <p>
 
 
+#### `VARIABLE=1375`
 
-  ```bash
-  VARIABLE=1375
-  X=10
-  height=6.3
-  echo $VARIABLE $X $height
-  ```
+####  `X=10`
+
+####  `height=6.3`
+
+####  `echo $VARIABLE $X $height`
+
   
 </p>
 </details>
