@@ -92,7 +92,111 @@ cut -d ";" -f 2-6 $1 | \
 </p>
 </details>
 
-## New Material Covered Prior to This Lecture (CSB Section 1.6) 
+
+## Concise Review of Materials Up Through Assignment 1
+
+<details><summary>CLI Commands for Navigating and Manipulating Dirs & Files </summary>
+<p>
+
+  * `cd`    change directories
+  * `pwd`   where am I?
+  * `ls`    show contents of `pwd`
+  * `cp`    copy files and directories from one location to another, could also rename copied file
+  * `mv`    move files and directories from one location to another, rename file or directories
+  * `rm`    delete file or dir, be careful, there is no undo
+  * `mkdir` make new directory, will not overwrite existing dir
+  * `less`  view a file without opening all of it, good for large files
+  * `nano`  word processor, edit text files
+  * `chmod` change file and dir permissions
+
+</p>
+</details>
+
+<details><summary>*Commands* have *options* and accept *arguments* to Modify Functionality </summary>
+<p>
+
+  * `man`   show manual for command
+  * command` -h` if man does not work, this could show manual for command
+  * command` --help` another way to display manual
+  * command   another way to display manual
+  * use web browser to search on *bash command man*
+  * example of argument: `ls data` will return the file and contents of directory in pwd that are named *data* if they exist
+  * example of option:  `ls -ltrh` will return all files in `pwd` with details, in reverse chronological order with human-readable file sizes
+
+</p>
+</details>
+
+<details><summary>The Address of a File or Dir is a *Path*</summary>
+<p>
+
+The locations of files and dirs can be specified using *absolute* or *relative paths*, and these paths are used by the majority of commands because most commands manipulate files and dirs
+
+Absolute paths specify the same address regardless of the present working dir
+
+  * `/`     root dir, top dir in directory tree
+  
+  * `~`     home dir
+
+Relative paths specify different addresses depending upon the present working dir
+
+  * `-`     last directory your were in before the `pwd`
+  
+  * `../`   parent directory, one directory up the tree from `pwd`
+  
+  * `../../` 2 directories up the tree from `pwd`
+  
+  * `./`    present working directory
+
+4. Wildcards can be used to specify several files with one word or paths
+
+  * `*` can be any character
+  * example: `ls *.txt` will list all files ending in `.txt` 
+
+5. There are several commands in the text book that are important for manipulating biological data.
+
+  * `echo`  prints text or convertes text into a text stream
+  * `head`  returns only first few lines of a file, or remove last lines (rows)
+  * `tail`  returns only last few lines of a file, or remove first lines (rows)
+  * `cut`   returns specified columns
+  * `cat`   combines files together by line (row)
+  * `uniq`  removes duplicates
+  * `sort`  changes the order of rows by column
+  * `grep`  returns lines (rows) that match a pattern
+  * `tr`    replaces one character with another, usually column delimiters
+  * `wc`    count words, characters, lines, etc
+
+6. Unix commands are designed to pipe `|` and redirect `>` text streams to construct pipelines that link commands and create new files
+  * `|`     takes standard output (*stdout*) from one command and pipes it to another command as *stdin*
+  * `>`     redirects *stdout* into a file of your naming, will overwrite existing file
+  * `>>`    redirects *stdout* into a file of your naming, will append existing file
+
+7. The escape character `\ ` changes the meaning of the character that follows, including end of lines
+  * at the end of a line, it means do not end line and continue on next line
+  * `\t`   is a tab, but not all commands recognize this
+  * `\n`   is a line feed (*LF*), the unix end of line character (usually invisible)
+  * `\r`   is a carriage return (*CR*), in windows every line concludes with CRLF, and causes compatibility issues with unix/linux/mac 
+  * there are MANY more uses of `\ `
+
+8. We can assign values to variables
+  ```bash
+  VARIABLE=1375
+  ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Review of New Material Covered Prior to This Lecture (CSB Section 1.6) 
 
 For the online version of this course, I converted the [**Lecture_02 Slides**](https://github.com/tamucc-comp-bio-2020/classroom_repo/blob/master/lectures/Week02_files/Lecture02_WelcomeToTheMatrix.pdf)  to a more screen-splitting friendly format here in GitHub.
 

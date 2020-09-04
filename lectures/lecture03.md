@@ -87,6 +87,7 @@ You are expected to start each lecture with your terminal window open and ready 
   * example of option:  `ls -ltrh` will return all files in `pwd` with details, in reverse chronological order with human-readable file sizes
 
 3. Locations of files and dirs can be specified using absolute or relative paths and these paths are used by the majority of commands because most commands manipulate files and dirs
+
   * `/`     root dir, top dir in directory tree
   * `~`     home dir
   * `-`     last directory your were in before the `pwd`
@@ -95,10 +96,12 @@ You are expected to start each lecture with your terminal window open and ready 
   * `./`    present working directory
 
 4. Wildcards can be used to specify several files with one word or paths
+
   * `*` can be any character
   * example: `ls *.txt` will list all files ending in `.txt` 
 
 5. There are several commands in the text book that are important for manipulating biological data.
+
   * `echo`  prints text or convertes text into a text stream
   * `head`  returns only first few lines of a file, or remove last lines (rows)
   * `tail`  returns only last few lines of a file, or remove first lines (rows)
