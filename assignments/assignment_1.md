@@ -73,6 +73,264 @@ Continue working through [**Chapter 1**](https://github.com/tamucc-comp-bio-2020
 
 For the online version of this course, I am converting the ppt slides to a more screen-splitting friendly format here in GitHub.
 
+
+<details><summary>Advanced `bash` Commands</summary>
+<p>
+
+### Redirection of output ([stdout](https://en.wikipedia.org/wiki/Standard_streams#Standard_output_(stdout))) to file `[command] > filename`
+### Append [stdout](https://en.wikipedia.org/wiki/Standard_streams#Standard_output_(stdout)) to file `[command] >> filename` 
+### Redirect contents of file to [stdin](https://en.wikipedia.org/wiki/Standard_streams#Standard_input_(stdin)) `[command] < filename` 
+
+```bash
+# let’s start by moving to our sandbox
+$ cd ~/CSB/unix/sandbox
+
+# print text to screen, then print to file, then print file to screen
+$ echo "My first line" 
+My first line
+
+$ echo "My first line" > test.txt
+$ cat test.txt
+My first line
+
+# append file with additional text, then print file to screen
+$ echo "My second line" >> test.txt
+$ cat test.txt
+My first line
+My second line
+```
+
+
+
+
+_use `Tab` key to autocomplete names, prevent spelling mistakes_
+
+---
+
+### Problem Solving Scenario
+
+A machine provides you with thousands of data files. There’s so many, it is breaking your file browser. How many files are there?
+
+We will use the dir `unix/data/Saavedra2013` as an example of a directory with many files
+
+```bash
+# start by moving to our sandbox if you are not already there
+$ cd ~/CSB/unix/sandbox
+
+# save file names to file in pwd
+$ ls ../data/Saavedra2013 > filelist.txt
+
+# look at the file
+$ cat filelist.txt
+
+# count lines in the file
+$ wc -l filelist.txt
+
+# remove the file
+$ rm filelist.txt
+```
+
+---
+
+### Piping Text Streams From One Command to the Next with `|`
+
+![Common Operating Systems](Week01_files/pipeline.png)
+
+![Common Operating Systems](Week01_files/pipeline2.png)
+
+A pipe `|` passes the [stdout](https://en.wikipedia.org/wiki/Standard_streams#Standard_output_(stdout)) from one command to the [stdin](https://en.wikipedia.org/wiki/Standard_streams#Standard_input_(stdin)) of another
+
+How many files are there?
+
+```bash
+# list file names
+$ ls ../data/Saavedra2013
+
+# list file names and pipe into wc
+$ ls ../data/Saavedra2013 | wc –l
+59
+
+```
+
+---
+
+### [TSV](https://en.wikipedia.org/wiki/Tab-separated_values) & [CSV](https://en.wikipedia.org/wiki/Comma-separated_values) Data Files
+
+In the tidy table below, columns are _*delimited*_ by tabs.  The first column has no column header but is the sample ID.  Ozone, Solar.R, Wind, Temp, Month, and Day are all pieces of data (dimensions) describing each of the 10 samples.
+
+![Common Operating Systems](Week01_files/tsv.png)
+
+* Tab Separated Values (TSV)
+
+  * Tabs denote columns
+
+* Comma Separated Values (CSV)
+
+  * Commas denote columns
+  
+* [Tidy data](https://en.wikipedia.org/wiki/Tidy_data)
+
+  * Each [row](https://en.wikipedia.org/wiki/Row_(database)) is one [unit of observation](https://en.wikipedia.org/wiki/Unit_of_observation)
+  
+  * Each [column](https://en.wikipedia.org/wiki/Column_(database)) is one dimension or aspect of the units of observation
+  
+* File extensions not always accurate, so it is important to view a file to be sure of the delimiter.
+
+Do not type in the following code blocks.  They are here to show you TSV and CSV formatting
+
+
+Tidy Table:
+| Column 1 Header | Column 2 Header | Column 3 Header |
+| --------------- | --------------- | --------------- |
+| Row 1 Column 1 | Row 1 Column 2 | Row 1 Column 3 |
+| Row 2 Column 1 | Row 2 Column 2 | Row 2 Column 3 |
+| Row 3 Column 1 | Row 3 Column 2 | Row 3 Column 3 |
+| Row 4 Column 1 | Row 4 Column 2 | Row 4 Column 3 |
+
+TSV
+```
+Column 1 Header	Column 2 Header	Column 3 Header
+Row 1 Column 1	Row 1 Column 2	Row 1 Column 3
+Row 2 Column 1	Row 2 Column 2	Row 2 Column 3
+Row 3 Column 1	Row 3 Column 2	Row 3 Column 3
+Row 4 Column 1	Row 4 Column 2	Row 4 Column 3
+```
+
+TSV File with tabs denoted by `\t`.  Note your text files will not contain `\t`.  I did this show where tabs were, versus spaces.
+```
+Column 1 Header\tColumn 2 Header\tColumn 3 Header
+Row 1 Column 1\tRow 1 Column 2\tRow 1 Column 3
+Row 2 Column 1\tRow 2 Column 2\tRow 2 Column 3
+Row 3 Column 1\tRow 3 Column 2\tRow 3 Column 3
+Row 4 Column 1\tRow 4 Column 2\tRow 4 Column 3
+```
+
+CSV
+```
+Column 1 Header, Column 2 Header, Column 3 Header
+Row 1 Column 1, Row 1 Column 2, Row 1 Column 3
+Row 2 Column 1, Row 2 Column 2, Row 2 Column 3
+Row 3 Column 1, Row 3 Column 2, Row 3 Column 3
+Row 4 Column 1, Row 4 Column 2, Row 4 Column 3
+```
+
+
+---
+
+### Convert Among Formats Using `tr "<old delimiter>" "<new delimiter>"`
+
+```bash
+# view contents of csv
+$ less -S ../data/Pacifici2013_data.csv 
+
+# replace semicolons with commas using tr [find] [replace]
+$ cat ../data/Pacifici2013_data.csv | tr “;” “,” | less –S
+
+# view as tsv
+# \t is the nearly universal symbol for tab
+$ cat ../data/Pacifici2013_data.csv | tr ";" "\t" | less -S
+
+```
+
+_`tr` is an abbreviation for translate_
+
+---
+
+### Using `cut` to retrieve columns and `head` to retrieve rows
+
+```bash
+# change directory
+$ cd ~/CSB/unix/data
+
+# display first line of file (i.e., header of CSV file)
+$ head -n 1 Pacifici2013_data.csv
+
+# display first column of file
+$ cut -d ";" –f 1 Pacifici2013_data.csv
+
+# display second through fourth columns
+$ cut -d ";" -f 2-4 Pacifici2013_data.csv
+
+# display first “cell” of data
+$ head -n 1 Pacifici2013_data.csv | cut -d ";" -f 1
+
+```
+
+_Note: cut assumes tab delimited files.  If a different delimiter is used in the file, the `-d` option is used to specify the delimiter.  It is very easy to mistake spaces for tabs, and that will make `cut` do odd things with your data if you do not set `-d " "`_
+
+---
+
+### Connecting `cut` `head` `tail` `sort` `uniq`
+
+```bash
+# select 2nd column, display first 5 elements
+$ cut -d ";" -f 2 Pacifici2013_data.csv | head -n 5
+
+# select 2nd and 8th columns, display first 3 elements
+$ cut -d ";" -f 2,8 Pacifici2013_data.csv | head -n 3
+
+# select 2nd column without header, show 5 first elements
+$ cut -d ";" -f 2 Pacifici2013_data.csv | tail -n +2 | head -n 5
+
+# identify the orders in csv
+# select 2nd column without header, unique sorted elements
+$ cut -d ";" -f 2 Pacifici2013_data.csv | tail -n +2 | sort | uniq
+
+# count how many records per order in csv
+$ cut -d ";" -f 2 Pacifici2013_data.csv | tail -n +2 | sort | uniq -c
+
+# output the order with the most records, including the number of records in csv
+$ cut -d";" -f2 ../data/Pacifici2013_data.csv |  tail -n +2 | sort | uniq -c | tr -s " " "\t" | cut -f2-3 | sort -n | tail -n1
+
+
+```
+
+_Note: `uniq` is a command that that removes consecutive duplicate lines (rows). For this reason, the input to `uniq` is almost always sorted beforehand.  Use `man uniq` to see the description of the `-c` option.  I use `uniq -c` all the time._
+
+_Note: `sort -t";"` specifies the delimiter character, also known as a field separator.  Try `man sort` and search `/field` to see the manual entry for this._
+
+_Note: `tr -s` can be used to easily convert files or text streams that have multiple spaces in between columns (such as the output of `uniq -c` into a tab separated format.  The `-s` means squish consecutive charcters to one character_
+
+---
+
+### Advanced Pipelining
+
+When constructing long pipelines like the last one in the code block above, you should build it step by step, testing the output as you go.  This strategy reduces the possibility of making a mistake.
+
+I like to use `less -S` or `head` to capture and view the output when it takes up many lines.  The `q` key closes the `less` viewer.
+
+```
+# here is an example of how to build the really long pipe above, from scratch
+$ cut -d";" -f2 ../data/Pacifici2013_data.csv | less -S
+$ cut -d";" -f2 ../data/Pacifici2013_data.csv | tail -n +2 | head
+$ cut -d";" -f2 ../data/Pacifici2013_data.csv | tail -n +2 | sort | head
+$ cut -d";" -f2 ../data/Pacifici2013_data.csv | tail -n +2 | sort | uniq -c | less -S
+$ cut -d";" -f2 ../data/Pacifici2013_data.csv | tail -n +2 | sort | uniq -c | tr -s " " "\t" | head
+$ cut -d";" -f2 ../data/Pacifici2013_data.csv | tail -n +2 | sort | uniq -c | tr -s " " "\t" | cut -f2-3 | head
+$ cut -d";" -f2 ../data/Pacifici2013_data.csv | tail -n +2 | sort | uniq -c | tr -s " " "\t" | cut -f2-3 | sort -n | less -S
+$ cut -d";" -f2 ../data/Pacifici2013_data.csv | tail -n +2 | sort | uniq -c | tr -s " " "\t" | cut -f2-3 | sort -n | tail -n1
+```
+
+</p>
+</details>
+
+
+<details><summary>Mind Expander 1.3</summary>
+<p>
+
+[Link](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUOThBNjZNVzlGQUtJUzhYREZVSE5UVVJMNS4u)
+
+</p>
+</details>
+
+
+
+
+
+
+
+
+
 <details><summary>Additional Important Commands</summary>
 <p>
 
