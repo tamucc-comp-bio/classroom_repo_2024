@@ -181,20 +181,6 @@ cut -d ";" -f 2-6 $1 | \
 </p>
 </details>
 
-<details><summary>Wildcards can be used to specify several files with one word or paths</summary>
-<p>
-
-#### `*` can be any character
-
-* `ls *.txt` will list all files ending in `.txt` 
-
-#### `[AB]` means either character `A` or character `B` 
-
-* `ls [bm]oat.txt` will list files named either `boat.txt` or `moat.txt`
-
-</p>
-</details>
-
 <details><summary>Many commands in the text book are important for manipulating biological data</summary>
 <p>
 
@@ -235,6 +221,20 @@ cut -d ";" -f 2-6 $1 | \
 </p>
 </details>
 
+<details><summary>Wildcards can be used to specify several files with one word or paths</summary>
+<p>
+
+#### `*` can be any character
+
+* `ls *.txt` will list all files ending in `.txt` 
+
+#### `[AB]` means either character `A` or character `B` 
+
+* `ls [bm]oat.txt` will list files named either `boat.txt` or `moat.txt`
+
+</p>
+</details>
+
 <details><summary>The escape character `\ ` changes the meaning of the character that follows, including end of lines</summary>
 <p>
 
@@ -250,35 +250,6 @@ cut -d ";" -f 2-6 $1 | \
 
 </p>
 </details>
-
-<details><summary>We can assign values to variables and recall them later</summary>
-<p>
-
-
-#### `VARIABLE=1375`
-
-####  `X=10`
-
-####  `height=6.3`
-
-####  `echo $VARIABLE $X $height`
-
-  
-</p>
-</details>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ## Review of New Material Covered Prior to This Lecture (CSB Section 1.6) 
@@ -1093,6 +1064,58 @@ $ for miR in miR-208a miR-564 miR-3170
 ![](Week02_files/forloop.png)
 
 ---
+
+</p>
+</details>
+
+<details><summary>User Defined Variables</summary>
+<p>
+
+We can assign values to variables and recall them later. Variables can have any name, but it is safe to stick with letters, rather than numbers or punctuation.  It can be common to use `.` and or `_` in variable names.
+
+When saving or creating a variable, you never precede it with a `$`.  
+
+When recalling a variable, it is always preceded by a `$` in `bash`
+
+```
+VARIABLE=1375
+X=10
+height=6.3
+echo $VARIABLE $X $height
+```
+
+</p>
+</details>
+
+<details><summary>Using Subshells </summary>
+<p>
+
+It is often useful to use a unix command to return an argument for another unix command or to generate a value to be saved into a variable.  But how?
+
+We can specify a subshell by wrapping a unix command or pipeline with`$()` 
+
+```bash
+VARIABLE=1375
+echo $VARIABLE
+echo 1375
+VARIABLE=$(echo 1375)
+echo $VARIABLE
+
+cd ~/CSB/unix/data/Saavedra2013/
+
+ls *txt
+FILES=$(ls *txt)
+echo $FILES
+echo $(ls *txt)
+
+cat *txt
+cat $(ls *txt)
+
+cd ../../sandbox
+
+```
+
+These examples are a bit contrived, but you will quickly find that 
 
 </p>
 </details>
