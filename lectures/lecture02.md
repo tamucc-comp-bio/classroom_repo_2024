@@ -420,6 +420,11 @@ $ sudo chown -R $USER test_dir/
 </p>
 </details>
 
+---
+
+
+##New Materials Covered During Lecture Today
+
 <details><summary>Scripting</summary>
 <p>
 
