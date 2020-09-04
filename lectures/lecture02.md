@@ -93,7 +93,7 @@ cut -d ";" -f 2-6 $1 | \
 </details>
 
 
-## Concise Review of Materials Up Through Assignment 1
+## Concise Review of Material Covered Up Through Assignment 1
 
 <details><summary>Commands have options and accept arguments to modify functionality </summary>
 <p>
@@ -1170,6 +1170,6 @@ The exercises in the online forms closely follow those in the book.  I do make m
 
 * [Exercise 1.10.3 Plant-Pollinator Networks](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMlpVSUQ0U1hTSFZERDE1WUdZWjRYUlhaWi4u)
 
-## Homework NEED TO UPDATE
-* [Assignment_2, Due 09/20](https://github.com/tamucc-comp-bio/fall_2019/blob/master/assignments/assignment_2.md)
+## Homework 
+* [Assignment_2, Due 09/11](https://github.com/tamucc-comp-bio-2020/classroom_repo/blob/master/assignments/assignment_2.md)
 
