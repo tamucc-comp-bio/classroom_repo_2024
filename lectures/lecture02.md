@@ -115,10 +115,20 @@ cut -d ";" -f 2-6 $1 | \
 <details><summary>*Commands* have *options* and accept *arguments* to Modify Functionality </summary>
 <p>
 
-  * `man`   show manual for command
-  * command` -h` if man does not work, this could show manual for command
-  * command` --help` another way to display manual
-  * command   another way to display manual
+###  <command> <options> <arguments>
+
+* `-a` single letter options are immediately preceded by a `-` . `- a` will not work
+
+  * shortcut for many single letter options: `ls -l -t -r -h` is the same as `ls -ltrh`
+
+* `--all` there are typically word versions of each option and they are preceded by `--`
+
+  * there are no shortcuts for word options, i.e. `ls -ltrh --all` or ` ls --all -ltrh` or `ls -ltrha`
+
+  * `man` <command>    show manual for command
+  * <command>` -h`     if man does not work, this could show manual for command
+  * <command>` --help` another way to display manual in some cases
+  * <command>          another way to display manual in some cases
   * use web browser to search on *bash command man*
   * example of argument: `ls data` will return the file and contents of directory in pwd that are named *data* if they exist
   * example of option:  `ls -ltrh` will return all files in `pwd` with details, in reverse chronological order with human-readable file sizes
