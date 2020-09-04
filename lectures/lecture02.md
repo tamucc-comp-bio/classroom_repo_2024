@@ -98,16 +98,16 @@ cut -d ";" -f 2-6 $1 | \
 <details><summary>CLI Commands for Navigating and Manipulating Dirs & Files </summary>
 <p>
 
-  * `cd`    change directories
-  * `pwd`   where am I?
-  * `ls`    show contents of `pwd`
-  * `cp`    copy files and directories from one location to another, could also rename copied file
-  * `mv`    move files and directories from one location to another, rename file or directories
-  * `rm`    delete file or dir, be careful, there is no undo
-  * `mkdir` make new directory, will not overwrite existing dir
-  * `less`  view a file without opening all of it, good for large files
-  * `nano`  word processor, edit text files
-  * `chmod` change file and dir permissions
+* `cd`    change directories
+* `pwd`   where am I?
+* `ls`    show contents of `pwd`
+* `cp`    copy files and directories from one location to another, could also rename copied file
+* `mv`    move files and directories from one location to another, rename file or directories
+* `rm`    delete file or dir, be careful, there is no undo
+* `mkdir` make new directory, will not overwrite existing dir
+* `less`  view a file without opening all of it, good for large files
+* `nano`  word processor, edit text files
+* `chmod` change file and dir permissions
 
 </p>
 </details>
@@ -115,9 +115,11 @@ cut -d ";" -f 2-6 $1 | \
 <details><summary>*Commands* have *options* and accept *arguments* to Modify Functionality </summary>
 <p>
 
-###  <command> <options> <arguments>
+<command> <options> <arguments>
 
-* `-a` single letter options are immediately preceded by a `-` . `- a` will not work
+* `ls` is an example of a command
+
+* `-a` single letter options are immediately preceded by `-`,  `- a` will not work
 
   * shortcut for many single letter options: `ls -l -t -r -h` is the same as `ls -ltrh`
 
@@ -125,11 +127,24 @@ cut -d ";" -f 2-6 $1 | \
 
   * there are no shortcuts for word options, i.e. `ls -ltrh --all` or ` ls --all -ltrh` or `ls -ltrha`
 
+* an argument is a value or string that is provided to the command
+
+  * ex. a path, dir name, or file name
+  
+  * `ls data` will return the file and contents of directory named *data* if it exists in present dir
+
+Getting Help
+
   * `man` <command>    show manual for command
+  
   * <command>` -h`     if man does not work, this could show manual for command
+  
   * <command>` --help` another way to display manual in some cases
+  
   * <command>          another way to display manual in some cases
-  * use web browser to search on *bash command man*
+  
+  * use web browser to search on *bash command *
+  
   * example of argument: `ls data` will return the file and contents of directory in pwd that are named *data* if they exist
   * example of option:  `ls -ltrh` will return all files in `pwd` with details, in reverse chronological order with human-readable file sizes
 
