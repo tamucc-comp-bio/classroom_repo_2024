@@ -664,6 +664,34 @@ $ sudo chown -R $USER test_dir/
 
 The _*New Material*_ closely follows the book but there is some additional information that is not provided in the book (and vice versa). In the lecture slides, the `code blocks` are represented by green text on a black background, mimicking the terminal.
 
-* Page 35 **Use `BodyMass.csv` (slides) rather than `BodyM.csv` (book)**. Files should always be given descriptive names.
+The material below closely follow the book but there is some additional information that is not provided in the book (and vice versa). If you choose to follow the lecture slides, the `code blocks` are represented by green text on a black background, mimicking the terminal.
+
+* Page 35 **Use _BodyMass.csv_ (slides) rather than _BodyM.csv_ (book)**
+
+* Page 46, the script on the bottom half of the page is poor form. Making a bunch of tmp files is a bad idea.  Do this instead:
+
+```
+#!/bin/bash
+
+# to run do this:
+# ./ExtractBodyM.sh [infile] [outfile]
+
+# isolate columns 2-6 of csv (first argument) using cut
+# translate the ; to “ “ using tr
+# remove the header row using tail
+# sort by sixth column, descending order
+# save to file (second argument)
+
+# isolate columns 2-6 of csv (first argument) using cut
+cut -d ";" -f 2-6 $1 | \
+ # translate the ; to “ “ using tr
+	tr ";" " " | \
+ # remove the header row using tail
+	tail -n+2 | \
+ # sort by sixth column, descending order
+ # save to file (second argument)
+	sort -nrk6 > $2
+```
+
 
 

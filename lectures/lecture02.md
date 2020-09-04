@@ -60,7 +60,7 @@ You are expected to start each lecture with your terminal window open and ready 
 <details><summary>click to expand</summary>
 <p>
 
-The [**Lecture_02 Slides**](https://github.com/tamucc-comp-bio/fall_2019/blob/master/lectures/Lecture02_WelcomeToTheMatrix.pdf) closely follow the book but there is some additional information that is not provided in the book (and vice versa). In the lecture slides, the `code blocks` are represented by green text on a black background, mimicking the terminal.
+The material below closely follow the book but there is some additional information that is not provided in the book (and vice versa). If you choose to follow the lecture slides, the `code blocks` are represented by green text on a black background, mimicking the terminal.
 
 * Page 35 **Use _BodyMass.csv_ (slides) rather than _BodyM.csv_ (book)**
 
