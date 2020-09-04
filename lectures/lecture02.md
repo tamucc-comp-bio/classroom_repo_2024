@@ -5,6 +5,7 @@
 ## [Lecture 02 Slides](Week02_files/Lecture02_WelcomeToTheMatrix.pdf)
 
 ## Computer Preparation
+
 You are expected to start each lecture with your terminal window open and ready to go.
 
 <details><summary>Win10</summary>
