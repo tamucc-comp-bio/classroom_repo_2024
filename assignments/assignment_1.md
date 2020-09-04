@@ -69,11 +69,6 @@ Continue working through [**Chapter 1**](https://github.com/tamucc-comp-bio-2020
 
 * **_You can resubmit your answers as neccessary_**
 
-## Text Book Vs. Lecture Slides
-The [**Lecture_02 Slides**](https://github.com/tamucc-comp-bio-2020/classroom_repo/blob/master/lectures/Week02_files/Lecture02_WelcomeToTheMatrix.pdf) closely follow the book but there is some additional information that is not provided in the book (and vice versa). In the lecture slides, the `code blocks` are represented by green text on a black background, mimicking the terminal.
-
-* Page 35 **Use `BodyMass.csv` (slides) rather than `BodyM.csv` (book)**. Files should always be given descriptive names.
-
 ## New Material To Be Covered Prior to Lecture (CSB Section 1.6.3 - 1.6.7) 
 
 For the online version of this course, I am converting the ppt slides to a more screen-splitting friendly format here in GitHub.
@@ -397,3 +392,12 @@ $ sudo chown -R $USER test_dir/
 
 </p>
 </details>
+
+
+## Text Book Versus Online Materials
+
+The [**Lecture_02 Slides**](https://github.com/tamucc-comp-bio-2020/classroom_repo/blob/master/lectures/Week02_files/Lecture02_WelcomeToTheMatrix.pdf) closely follow the book but there is some additional information that is not provided in the book (and vice versa). In the lecture slides, the `code blocks` are represented by green text on a black background, mimicking the terminal.
+
+* Page 35 **Use `BodyMass.csv` (slides) rather than `BodyM.csv` (book)**. Files should always be given descriptive names.
+
+
