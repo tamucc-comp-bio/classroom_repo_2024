@@ -63,7 +63,7 @@ The exercises in the online forms closely follow those in the book.  I do make m
 
 Complete Exercise 1.10.4 Data Explorer (data from Buzzard *et al.*, 2016), and submit script by updating your repository (see below). You may work in groups but each student must submit their own work.
 
-[Click on this Link to Initiate this Assignment](https://classroom.github.com/a/1id4ZoG_)
+[Click on this Link to Initiate this Assignment](https://classroom.github.com/a/KOJfQMtL)
 
 Hints:
 
