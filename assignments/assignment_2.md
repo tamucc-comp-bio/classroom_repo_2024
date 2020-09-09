@@ -90,7 +90,7 @@ Hints:
     * _*Win10 only*_, it is critical that you do not modify files in your Ubuntu directory structure with Win10
 	  * You can, however, move to your Win10 directory structure from the Win10-Ubunutu terminal and manipulate files as you wish `cd /mnt/c/Users/YOURUSERNAME`
 
-### To `push` your changes to your repository on GitHub, and thus submit the assigment, do the following
+### To `push` your changes to your repository on GitHub, and thus *_submit the assigment_*, do the following
 
 * change directories to the directory for this assignment
 
