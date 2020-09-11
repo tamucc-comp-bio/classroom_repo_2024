@@ -332,7 +332,6 @@ if [ 1 == 2 ]; then                # if 1 equals 2 then
 else                               # if 1 does not equal 2 then
   echo 1 does not equal 2          # print "1 does not equal 2" to screen
 fi                                 # end of if statement
-  1 does not equal 2
 ```
   
 In the if-then statement, the square brackets denote the condition to test.  Note that two equals signs are neccessary.  Also note below that we quotified the variables `$A` and `$B`.  I recommend that you consult a web resource when constructing if then statements in bash because the syntax can be tricky and I am not showing everything that is possible here.
@@ -345,25 +344,28 @@ if [ "$A" != "$B" ]; then
 else
   echo $A does equal $B 
 fi  
-  orangutang does not equal 100
 ```
+
 
 ## A function allows you to define a new customized command composed of several existing commands
 
-  A function is a lot like a script, except you can define and use it within a script itself. You should make a function when you find yourself repeatedly using the same code over and over. 
-  
-  Let us build upon the if-then-else logic in the last section to create a function that decides whether the two arguments passed to it are equal.
-  
-  * The name of the function is `DECIDER`
-  
-  * The `()` are there because other languages have the same structure, but they do not do anything
-  
-  	* you *_cannot_* define default input variable values in the parentheses `()`, like you would in `R`
-  
-  * The code passed to the function is wrapped in curly brackets `{}`
-  
-  	* everything else is just `bash` code
-  
+A function is a command that you can define and use in the terminal environment or a script. You should make a function when you find yourself repeatedly using the same code over and over. 
+
+Let us build upon the if-then-else logic in the last section to create a function that decides whether the two arguments passed to it are equal.
+
+* The name of the function is `DECIDER`
+
+* The `()` are there because other languages have the same structure, but they do not do anything
+
+* you *_cannot_* define default input variable values in the parentheses `()`, like you would in `R`
+
+* The code passed to the function is wrapped in curly brackets `{}`
+
+* everything else is just `bash` code
+
+Note that a function treats "arguments" just like a script.  The first argument becomes `$1`, the second `$2`, etc. It is good practice to convert the variables containing arguments into variables with more meaningful names in the first lines of the function. 
+
+Also note the indenting to make code readable and signify hierarchy
 
 ```bash
 DECIDER(){
@@ -377,17 +379,23 @@ fi
 }
   ```
 
-  After you enter the function, nothing will happen, but it has been stored into memory and can now be used.
-  
+After you enter the function, nothing will happen, but it has been stored into memory and can now be used.
+
 ```bash
 DECIDER 1 2
   ```
 
-### IV. Real World Application of Skills Learned: Fisheries-Induced Evolution
+ 
+
+# IV. Real World Application of Skills Learned: Fisheries-Induced Evolution
+
+My lab has been studying the evolution of limpets in Hawaii.  They are a local delicacy and are under intense harvesting pressure.  We are interested in the selective pressures applied by overharvesting and how it affects the evolution of phenotypes.  
+
+We found that shell surface area is associate with human harvesting and want to use 3d scans of the limpet shells to more precisely test of effects of harvesting on phenotype. Here are some views of a 3d scan:
 
 ![alt text](https://github.com/tamucc-comp-bio/fall_2019/blob/master/lectures/Week03_files/3Dscan_limpetShell.PNG) ![alt text](https://github.com/tamucc-comp-bio/fall_2019/blob/master/lectures/Week03_files/3Dscan_limpetShell_left.PNG) ![alt text](https://github.com/tamucc-comp-bio/fall_2019/blob/master/lectures/Week03_files/3Dscan_limpetShell_right.PNG) ![alt text](https://github.com/tamucc-comp-bio/fall_2019/blob/master/lectures/Week03_files/3Dscan_limpetShell_top.PNG) ![alt text](https://github.com/tamucc-comp-bio/fall_2019/blob/master/lectures/Week03_files/3Dscan_limpetShell_bottom.PNG)
 
-#### [Draft Manuscript](https://github.com/tamucc-comp-bio/LimpetShellEvolution/blob/master/draft_Proof_hi-2.pdf)
+#### [Related Publication](https://onlinelibrary.wiley.com/doi/abs/10.1111/jbi.13845?af=R)
 
 #### Clone [LimpetShell Evolution repo](https://github.com/tamucc-comp-bio/LimpetShellEvolution)
 ```bash
