@@ -54,11 +54,11 @@ You are expected to start each lecture with your terminal window open and ready 
 </details>
 
 
-## In Class Activities
+# In Class Activities
 
-### [I. Quiz](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUNEpSWTVNREU0N1IxUDNLU0tPMVYyUkpSRC4u)
+## [I. Quiz](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUNEpSWTVNREU0N1IxUDNLU0tPMVYyUkpSRC4u)
 
-### II. Review of What We Have Learned
+## II. Review of What We Have Learned
 
 1. There are several commands for navigating and manipulating a computer file directory.  I made a [linux cheat sheet](https://github.com/tamucc-comp-bio-2020/classroom_repo/blob/master/resources/CheatSheetLinux_8-12-2016.pdf) for students learning to use linux that you can print out on a single double sided sheet of paper and use as a desk reference. 
   * `cd`    change directories
@@ -155,7 +155,7 @@ You are expected to start each lecture with your terminal window open and ready 
   bash script.sh ../data.txt
   ```
 
-### III. Additional Important Unix Commands and Intro to Regular Expressions for Pattern Matching
+## III. Additional Important Unix Commands and Intro to Regular Expressions for Pattern Matching
 
 Let us all move to our `~/CSB/unix/sandbox` and copy the Marra and Dalziel data to the `sandbox` if it is not already there.
   ```bash
@@ -181,26 +181,39 @@ Let us all move to our `~/CSB/unix/sandbox` and copy the Marra and Dalziel data 
 This is an interleaved FASTA file.  Interleaved means that a single squence is spread across multiple lines, it make data manipulation difficult and there are tools to convert between an interleaved and non-interleaved format (but that is too specific right now).
 
 
-#### [`paste`](https://ss64.com/bash/paste.html) is used for combining files and text objects by *columns* or converting a file with one column into a file with several columns
+### [`paste`](https://ss64.com/bash/paste.html) is used for combining files and text objects by *columns* or converting a file with one column into a file with several columns
   
   Paste is very convenient for converting non-tidy data into tidy data.  An example is `Marra2014_data.fasta`.  There is only 1 column and each row contains different types of information about different observational units.  Because there are the same number of lines for each of the first two observational units, the file can be converted to a tidy format which is easier to modify.  
   
-
-<details><summary>Code</summary>
-<p>
 
   
   ```bash
   # we can use the paste command to take a single column of data and make it multi column
   $ head -n 20 Marra2014_data.fasta | paste - - - - - - - - - - | less -S
+  ```
+  
+<details><summary>Output</summary>
+<p>
+
+  
+  ```
   >contig00001  length=527  numreads=2  gene=isogroup00001  status=it_thresh      ATCCTAGCTACTCTGGAGACTGAGGATTGAAGTTCAAAGTCAGCTCAAGCAAGAGATTTG    TTTACAATTAACCCACAAAAGGCTGTTAC
   >contig00002  length=551  numreads=8  gene=isogroup00001  status=it_thresh      GAACCATCCTGCGCGGGAAAGATCTAGAAGCTGGCACGTCAAACTGCTGCCGAGTAACGA    CTGTGAAAATACAGAGCAGAACGTACAGG
   ```
+    </p>
+</details>
   
   ```bash
   # we can also use paste to join files by column, instead of by row (cat)
   # while you would not want to combine these two files, you can:
   $ paste Dalziel2016_data.csv Marra2014_data.fasta | head
+  ```
+  
+  <details><summary>Output</summary>
+<p>
+
+  
+  ```
   biweek,year,loc,cases,pop       >contig00001  length=527  numreads=2  gene=isogroup00001  status=it_thresh
   1,1906,BALTIMORE,NA,526822.1365 ATCCTAGCTACTCTGGAGACTGAGGATTGAAGTTCAAAGTCAGCTCAAGCAAGAGATTTG
   2,1906,BALTIMORE,NA,526995.246  TTTACAATTAACCCACAAAAGGCTGTTACTGAAGGTGTGGCTTAAGTGTCAGAGCAACAG
@@ -213,8 +226,9 @@ This is an interleaved FASTA file.  Interleaved means that a single squence is s
   9,1906,BALTIMORE,NA,528259.7712 CTAAAAATTGTATCAGTCAGATCTTCATGTGAAGTCCTGTGTGCCCA
   ```
 
-  </p>
+    </p>
 </details>
+
 
 
 #### [`sed`](https://ss64.com/bash/sed.html) can be used to find a pattern and replace it with text or a specified pattern
