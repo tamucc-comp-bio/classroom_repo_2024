@@ -1,7 +1,5 @@
 # Week03 UNIX III - Beyond the CSB Text Book
 
-# UPDATING FOR FALL 2020...
-
 ### [Assignment 2](https://github.com/tamucc-comp-bio-2020/classroom_repo/blob/master/assignments/assignment_2.md) is due at the beginning of this lecture
 
 
@@ -144,9 +142,13 @@ You are expected to start each lecture with your terminal window open and ready 
   ```
 
 11. Many lines of commands can be stored in file (script) and executed sequentially
+
   ```
   bash script.sh
   ```
+
+  Each "pipe line" is like a sentence in English.  It can stand on its own.  It tells the computer to do something and output the result.  The script will be composed of several pipelines.
+  
 
 12. Values can be passed into a script by listing them as argumnents which are stored sequentially into variables: `$1`, `$2`, `$3`, etc
   ```
@@ -172,10 +174,15 @@ Let us all move to our `~/CSB/unix/sandbox` and copy the Marra and Dalziel data 
   TGTAATTTACCCAAGTCTGAGAGGAGGCAGAGTTTTTCCCAATGGACTTTGGTTAAGTGA
   GATATGCTGGTCTGTAGAAGGAGGGAGTTCTAGGAAAACAGACACTTAAGTAGGGCCGAA
   CTAAAAATTGTATCAGTCAGATCTTCATGTGAAGTCCTGTGTGCCCA
+  
+  # use q to exit less
   ```
 
 
-#### Paste is used for combining files by columns or converting a file with one column into a file with several columns
+#### [`paste`](https://ss64.com/bash/paste.html) is used for combining files and text objects by *columns* or converting a file with one column into a file with several columns
+  
+  Paste is very convenient for converting non-tidy data into tidy data.  An example is `Marra2014_data.fasta`.  There is only 1 column
+  
   ```bash
   # we can use the paste command to take a single column of data and make it multi column
   $ head -n 20 Marra2014_data.fasta | paste - - - - - - - - - - | less -S
