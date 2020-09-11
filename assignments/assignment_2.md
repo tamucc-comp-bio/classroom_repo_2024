@@ -59,7 +59,7 @@ The exercises in the online forms closely follow those in the book.  I do make m
 * [Exercise 1.10.3 Plant-Pollinator Networks](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMlpVSUQ0U1hTSFZERDE1WUdZWjRYUlhaWi4u)
 
 
-### Extra Credit, worth 1 whole assignment (Due 09/11)  I NEED TO UPDATE THIS FOR 2020 CLASS
+### Extra Credit, worth 1 whole assignment (Due 09/11)  
 
 Complete Exercise 1.10.4 Data Explorer (data from Buzzard *et al.*, 2016), and submit script by updating your repository (see below). You may work in groups but each student must submit their own work.
 

@@ -2,10 +2,8 @@
 
 # UPDATING FOR FALL 2020...
 
-### [Assignment 2](https://github.com/tamucc-comp-bio/fall_2019/blob/master/assignments/assignment_2.md) is due at the beginning of this lecture
+### [Assignment 2](https://github.com/tamucc-comp-bio-2020/classroom_repo/blob/master/assignments/assignment_2.md) is due at the beginning of this lecture
 
-## Lecture 03 Slides
-* There are no slides this week
 
 ## Computer Preparation
 
@@ -58,14 +56,13 @@ You are expected to start each lecture with your terminal window open and ready 
 </details>
 
 
-
 ## In Class Activities
 
 ### [I. Quiz](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUNEpSWTVNREU0N1IxUDNLU0tPMVYyUkpSRC4u)
 
 ### II. Review of What We Have Learned
 
-1. There are several commands for navigating and manipulating a computer file directory 
+1. There are several commands for navigating and manipulating a computer file directory.  I made a [linux cheat sheet](https://github.com/tamucc-comp-bio-2020/classroom_repo/blob/master/resources/CheatSheetLinux_8-12-2016.pdf) for students learning to use linux that you can print out on a single double sided sheet of paper and use as a desk reference. 
   * `cd`    change directories
   * `pwd`   where am I?
   * `ls`    show contents of `pwd`
@@ -79,7 +76,7 @@ You are expected to start each lecture with your terminal window open and ready 
 
 2. Each command has *options* and accepts *arguments* to modify functionality and which can be viewed in the manual
   * `man`   show manual for command
-  * command` -h` if man does not work, this could show manual for command
+  * `_command_ -h` if man does not work, this could show manual for command
   * command` --help` another way to display manual
   * command   another way to display manual
   * use web browser to search on *bash command man*
