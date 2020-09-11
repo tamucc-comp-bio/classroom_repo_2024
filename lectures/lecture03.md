@@ -180,6 +180,7 @@ Let us all move to our `~/CSB/unix/sandbox` and copy the Marra and Dalziel data 
 
 This is an interleaved FASTA file.  Interleaved means that a single squence is spread across multiple lines, it make data manipulation difficult and there are tools to convert between an interleaved and non-interleaved format (but that is too specific right now).
 
+---
 
 ### [`paste`](https://ss64.com/bash/paste.html) is used for combining files and text objects by *columns* or converting a file with one column into a file with several columns
   
@@ -214,8 +215,9 @@ This is an interleaved FASTA file.  Interleaved means that a single squence is s
   </p>
 </details>
 
+---
 
-#### [`sed`](https://ss64.com/bash/sed.html) can be used to find a pattern and replace it with text or a specified pattern
+## [`sed`](https://ss64.com/bash/sed.html) can be used to find a pattern and replace it with text or a specified pattern
 
 `sed` is a very versatile tool and we will only scratch the surface of what it can do, but 99.9% of the time, you will use it to find and replace text.
 
@@ -242,12 +244,10 @@ GA@ATGCTGGTCTGTAGAAGGAGGGAGTTCTAGGAAAACAGACACTTAAGTAGGGCCGAA
 C@AAAAATTGTATCAGTCAGATCTTCATGTGAAGTCCTGTGTGCCCA
 ```
 
-
-
-```
+```bash
   # find the all T and replace with @
   $ sed 's/T/@/g' Marra2014_data.fasta | head
->contig00001  length=527  numreads=2  gene=isogroup00001  status=it_thresh
+  >contig00001  length=527  numreads=2  gene=isogroup00001  status=it_thresh
 A@CC@AGC@AC@C@GGAGAC@GAGGA@@GAAG@@CAAAG@CAGC@CAAGCAAGAGA@@@G
 @@@ACAA@@AACCCACAAAAGGC@G@@AC@GAAGG@G@GGC@@AAG@G@CAGAGCAACAG
 C@A@GAG@GGAGGAA@@@@C@A@@ACAA@A@AA@@@CA@C@C@GG@AAA@@GACCAA@@A
