@@ -63,7 +63,7 @@ The exercises in the online forms closely follow those in the book.  I do make m
 
 Complete Exercise 1.10.4 Data Explorer (data from Buzzard *et al.*, 2016), and submit script by updating your repository (see below). You may work in groups but each student must submit their own work.
 
-[Click on this Link to Initiate this Assignment](https://classroom.github.com/a/1id4ZoG_)
+[Click on this Link to Initiate this Assignment](https://classroom.github.com/a/KOJfQMtL)
 
 Hints:
 
@@ -90,7 +90,7 @@ Hints:
     * _*Win10 only*_, it is critical that you do not modify files in your Ubuntu directory structure with Win10
 	  * You can, however, move to your Win10 directory structure from the Win10-Ubunutu terminal and manipulate files as you wish `cd /mnt/c/Users/YOURUSERNAME`
 
-### To `push` your changes to your repository on GitHub, and thus submit the assigment, do the following
+### To `push` your changes to your repository on GitHub, and thus *_submit the assigment_*, do the following
 
 * change directories to the directory for this assignment
 
