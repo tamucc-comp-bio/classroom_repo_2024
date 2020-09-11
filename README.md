@@ -116,6 +116,8 @@ SECTION 1.  WELCOME TO THE MATRIX
 
 * [Quiz 0.0](https://forms.office.com/Pages/AnalysisPage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMlExSEtYN0pTTFVXUzJJUlpYRUNGQzU1Ti4u&AnalyzerToken=xEeP1kCHWBVvr2lUyEOtLJ63vGJEY4Nq)
 
+* [Quiz Wk 2](https://forms.office.com/Pages/AnalysisPage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMjIySEJCNFlSMVJRSUo0SU5HSFNKMVRHWC4u&AnalyzerToken=EoUZORmaO6qYwQJjsmmNDCGnDljXugop)
+
 </p>
 </details>
 
