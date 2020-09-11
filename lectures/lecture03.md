@@ -178,10 +178,12 @@ Let us all move to our `~/CSB/unix/sandbox` and copy the Marra and Dalziel data 
   # use q to exit less
   ```
 
+This is an interleaved FASTA file.  Interleaved means that a single squence is spread across multiple lines, it make data manipulation difficult and there are tools to convert between an interleaved and non-interleaved format (but that is too specific right now).
+
 
 #### [`paste`](https://ss64.com/bash/paste.html) is used for combining files and text objects by *columns* or converting a file with one column into a file with several columns
   
-  Paste is very convenient for converting non-tidy data into tidy data.  An example is `Marra2014_data.fasta`.  There is only 1 column
+  Paste is very convenient for converting non-tidy data into tidy data.  An example is `Marra2014_data.fasta`.  There is only 1 column and each row contains different types of information about different observational units.  Because there are the same number of lines for each of the first two observational units, the file can be converted to a tidy format which is easier to modify.  
   
   ```bash
   # we can use the paste command to take a single column of data and make it multi column
@@ -192,7 +194,8 @@ Let us all move to our `~/CSB/unix/sandbox` and copy the Marra and Dalziel data 
   
   ```bash
   # we can also use paste to join files by column, instead of by row (cat)
-  $ paste Dalziel2016_data.csv Marra2014_data.fasta | less -S
+  # while you would not want to combine these two files, you can:
+  $ paste Dalziel2016_data.csv Marra2014_data.fasta | head
   biweek,year,loc,cases,pop       >contig00001  length=527  numreads=2  gene=isogroup00001  status=it_thresh
   1,1906,BALTIMORE,NA,526822.1365 ATCCTAGCTACTCTGGAGACTGAGGATTGAAGTTCAAAGTCAGCTCAAGCAAGAGATTTG
   2,1906,BALTIMORE,NA,526995.246  TTTACAATTAACCCACAAAAGGCTGTTACTGAAGGTGTGGCTTAAGTGTCAGAGCAACAG
@@ -206,19 +209,36 @@ Let us all move to our `~/CSB/unix/sandbox` and copy the Marra and Dalziel data 
   ```
 
 
-#### Sed can be used to find a pattern and replace it with text or a specified pattern
+#### [`sed`](https://ss64.com/bash/sed.html) can be used to find a pattern and replace it with text or a specified pattern
+
+
+
   ```bash
-  $ sed 's/>/@/' Marra2014_data.fasta | less -S
-  @contig00001  length=527  numreads=2  gene=isogroup00001  status=it_thresh
-  ATCCTAGCTACTCTGGAGACTGAGGATTGAAGTTCAAAGTCAGCTCAAGCAAGAGATTTG
-  TTTACAATTAACCCACAAAAGGCTGTTACTGAAGGTGTGGCTTAAGTGTCAGAGCAACAG
-  CTATGAGTGGAGGAATTTTCTATTACAATATAATTTCATCTCTGGTAAATTGACCAATTA
-  ACTGGAACTTTTTCCAACTGAAATAAATGGTAAACTTTTTATCCACCATTCTGCCATCTG
-  ACTCACAAAGACCCATGGGAATGGGTGATGAAATCCAACATGCTTCTTTGTAGCAAAAAT
-  AAATAAAATCCCCAGAAGGGTGAGGTAAATGGAAAACTCCAAACTCGCCCCTCAGGTGGG
-  TGTAATTTACCCAAGTCTGAGAGGAGGCAGAGTTTTTCCCAATGGACTTTGGTTAAGTGA
-  GATATGCTGGTCTGTAGAAGGAGGGAGTTCTAGGAAAACAGACACTTAAGTAGGGCCGAA
-  CTAAAAATTGTATCAGTCAGATCTTCATGTGAAGTCCTGTGTGCCCA
+  # find the first T on each line and replace with @
+  $ sed 's/T/@/' Marra2014_data.fasta | head
+>contig00001  length=527  numreads=2  gene=isogroup00001  status=it_thresh
+A@CCTAGCTACTCTGGAGACTGAGGATTGAAGTTCAAAGTCAGCTCAAGCAAGAGATTTG
+@TTACAATTAACCCACAAAAGGCTGTTACTGAAGGTGTGGCTTAAGTGTCAGAGCAACAG
+C@ATGAGTGGAGGAATTTTCTATTACAATATAATTTCATCTCTGGTAAATTGACCAATTA
+AC@GGAACTTTTTCCAACTGAAATAAATGGTAAACTTTTTATCCACCATTCTGCCATCTG
+AC@CACAAAGACCCATGGGAATGGGTGATGAAATCCAACATGCTTCTTTGTAGCAAAAAT
+AAA@AAAATCCCCAGAAGGGTGAGGTAAATGGAAAACTCCAAACTCGCCCCTCAGGTGGG
+@GTAATTTACCCAAGTCTGAGAGGAGGCAGAGTTTTTCCCAATGGACTTTGGTTAAGTGA
+GA@ATGCTGGTCTGTAGAAGGAGGGAGTTCTAGGAAAACAGACACTTAAGTAGGGCCGAA
+C@AAAAATTGTATCAGTCAGATCTTCATGTGAAGTCCTGTGTGCCCA
+
+  # find the all T and replace with @
+  $ sed 's/T/@/g' Marra2014_data.fasta | head
+>contig00001  length=527  numreads=2  gene=isogroup00001  status=it_thresh
+A@CC@AGC@AC@C@GGAGAC@GAGGA@@GAAG@@CAAAG@CAGC@CAAGCAAGAGA@@@G
+@@@ACAA@@AACCCACAAAAGGC@G@@AC@GAAGG@G@GGC@@AAG@G@CAGAGCAACAG
+C@A@GAG@GGAGGAA@@@@C@A@@ACAA@A@AA@@@CA@C@C@GG@AAA@@GACCAA@@A
+AC@GGAAC@@@@@CCAAC@GAAA@AAA@GG@AAAC@@@@@A@CCACCA@@C@GCCA@C@G
+AC@CACAAAGACCCA@GGGAA@GGG@GA@GAAA@CCAACA@GC@@C@@@G@AGCAAAAA@
+AAA@AAAA@CCCCAGAAGGG@GAGG@AAA@GGAAAAC@CCAAAC@CGCCCC@CAGG@GGG
+@G@AA@@@ACCCAAG@C@GAGAGGAGGCAGAG@@@@@CCCAA@GGAC@@@GG@@AAG@GA
+GA@A@GC@GG@C@G@AGAAGGAGGGAG@@C@AGGAAAACAGACAC@@AAG@AGGGCCGAA
+C@AAAAA@@G@A@CAG@CAGA@C@@CA@G@GAAG@CC@G@G@GCCCA
   ```
 
 #### Regular Expressions (regex) are sequences of characters that define search patterns.  
