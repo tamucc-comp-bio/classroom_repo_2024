@@ -185,6 +185,11 @@ This is an interleaved FASTA file.  Interleaved means that a single squence is s
   
   Paste is very convenient for converting non-tidy data into tidy data.  An example is `Marra2014_data.fasta`.  There is only 1 column and each row contains different types of information about different observational units.  Because there are the same number of lines for each of the first two observational units, the file can be converted to a tidy format which is easier to modify.  
   
+
+<details><summary>Code</summary>
+<p>
+
+  
   ```bash
   # we can use the paste command to take a single column of data and make it multi column
   $ head -n 20 Marra2014_data.fasta | paste - - - - - - - - - - | less -S
@@ -207,6 +212,9 @@ This is an interleaved FASTA file.  Interleaved means that a single squence is s
   8,1906,BALTIMORE,NA,528073.3264 GATATGCTGGTCTGTAGAAGGAGGGAGTTCTAGGAAAACAGACACTTAAGTAGGGCCGAA
   9,1906,BALTIMORE,NA,528259.7712 CTAAAAATTGTATCAGTCAGATCTTCATGTGAAGTCCTGTGTGCCCA
   ```
+
+  </p>
+</details>
 
 
 #### [`sed`](https://ss64.com/bash/sed.html) can be used to find a pattern and replace it with text or a specified pattern
