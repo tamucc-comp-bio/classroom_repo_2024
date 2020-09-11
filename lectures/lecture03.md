@@ -190,30 +190,15 @@ This is an interleaved FASTA file.  Interleaved means that a single squence is s
   ```bash
   # we can use the paste command to take a single column of data and make it multi column
   $ head -n 20 Marra2014_data.fasta | paste - - - - - - - - - - | less -S
-  ```
-  
-<details><summary>Output</summary>
-<p>
 
-  
-  ```
   >contig00001  length=527  numreads=2  gene=isogroup00001  status=it_thresh      ATCCTAGCTACTCTGGAGACTGAGGATTGAAGTTCAAAGTCAGCTCAAGCAAGAGATTTG    TTTACAATTAACCCACAAAAGGCTGTTAC
   >contig00002  length=551  numreads=8  gene=isogroup00001  status=it_thresh      GAACCATCCTGCGCGGGAAAGATCTAGAAGCTGGCACGTCAAACTGCTGCCGAGTAACGA    CTGTGAAAATACAGAGCAGAACGTACAGG
   ```
-    </p>
-</details>
   
   ```bash
   # we can also use paste to join files by column, instead of by row (cat)
   # while you would not want to combine these two files, you can:
   $ paste Dalziel2016_data.csv Marra2014_data.fasta | head
-  ```
-  
-  <details><summary>Output</summary>
-<p>
-
-  
-  ```
   biweek,year,loc,cases,pop       >contig00001  length=527  numreads=2  gene=isogroup00001  status=it_thresh
   1,1906,BALTIMORE,NA,526822.1365 ATCCTAGCTACTCTGGAGACTGAGGATTGAAGTTCAAAGTCAGCTCAAGCAAGAGATTTG
   2,1906,BALTIMORE,NA,526995.246  TTTACAATTAACCCACAAAAGGCTGTTACTGAAGGTGTGGCTTAAGTGTCAGAGCAACAG
@@ -226,14 +211,21 @@ This is an interleaved FASTA file.  Interleaved means that a single squence is s
   9,1906,BALTIMORE,NA,528259.7712 CTAAAAATTGTATCAGTCAGATCTTCATGTGAAGTCCTGTGTGCCCA
   ```
 
-    </p>
+  </p>
 </details>
-
 
 
 #### [`sed`](https://ss64.com/bash/sed.html) can be used to find a pattern and replace it with text or a specified pattern
 
+`sed` is a very versatile tool and we will only scratch the surface of what it can do, but 99.9% of the time, you will use it to find and replace text.
 
+### `sed 's/FindThisPattern/ReplaceWithThis/g'`
+
+* the `s` triggers the search functionality of `sed`
+
+* The `/` divide the statement into its component parts
+
+* The `g` is optional and means global.  If present, all pattern matches will be replaced.  See below to observe what happens without the `g`
 
   ```bash
   # find the first T on each line and replace with @
@@ -248,7 +240,11 @@ AAA@AAAATCCCCAGAAGGGTGAGGTAAATGGAAAACTCCAAACTCGCCCCTCAGGTGGG
 @GTAATTTACCCAAGTCTGAGAGGAGGCAGAGTTTTTCCCAATGGACTTTGGTTAAGTGA
 GA@ATGCTGGTCTGTAGAAGGAGGGAGTTCTAGGAAAACAGACACTTAAGTAGGGCCGAA
 C@AAAAATTGTATCAGTCAGATCTTCATGTGAAGTCCTGTGTGCCCA
+```
 
+
+
+```
   # find the all T and replace with @
   $ sed 's/T/@/g' Marra2014_data.fasta | head
 >contig00001  length=527  numreads=2  gene=isogroup00001  status=it_thresh
