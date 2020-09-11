@@ -242,9 +242,7 @@ AAA@AAAATCCCCAGAAGGGTGAGGTAAATGGAAAACTCCAAACTCGCCCCTCAGGTGGG
 @GTAATTTACCCAAGTCTGAGAGGAGGCAGAGTTTTTCCCAATGGACTTTGGTTAAGTGA
 GA@ATGCTGGTCTGTAGAAGGAGGGAGTTCTAGGAAAACAGACACTTAAGTAGGGCCGAA
 C@AAAAATTGTATCAGTCAGATCTTCATGTGAAGTCCTGTGTGCCCA
-```
 
-```bash
   # find the all T and replace with @
   $ sed 's/T/@/g' Marra2014_data.fasta | head
   >contig00001  length=527  numreads=2  gene=isogroup00001  status=it_thresh
@@ -259,14 +257,21 @@ GA@A@GC@GG@C@G@AGAAGGAGGGAG@@C@AGGAAAACAGACAC@@AAG@AGGGCCGAA
 C@AAAAA@@G@A@CAG@CAGA@C@@CA@G@GAAG@CC@G@G@GCCCA
   ```
 
-#### Regular Expressions (regex) are sequences of characters that define search patterns.  
-There are different regex languages (POSIX, PERL, etc) that have slight differences in the meanings of different characters.  Regex is critical for `grep`, `sed`, and even `ls` and we will learn more regex later in the course.
-  * `^`     Beginning of line
-  * `$`     End of line
-  * `[]`    any of of the characters inside the square brackets are a match
-  * `.`     any character
-  * `*`     any number of repeats of the previous character
-  * `\ `     Escape character, 
+## Regular Expressions (regex) are sequences of characters that define search patterns.  
+
+There are different regex languages (POSIX, PERL, etc) that have slight differences in the meanings of different characters.  Regex is critical for `grep`, `sed`, and other commands associated with pattern matching and we will learn more regex later in the course.
+
+### `^`     Beginning of line
+
+### `$`     End of line
+
+### `[]`    Any of of the characters inside the square brackets are a match for a single character
+
+### `.`     Any character
+
+### `*`     Any number of repeats of the previous character, including zero  (meaning the absence of the previous character)
+
+### `\ `     Escape character 
   
   ```bash
   # return contig names for either isogroup00001 or isogroup00002 in Marra data
@@ -294,7 +299,10 @@ There are different regex languages (POSIX, PERL, etc) that have slight differen
   ```
 
 
-#### Basic addition and subtraction
+## Basic addition and subtraction
+
+We need to tell `bash` that we are asking for arithmetic by wrapping the equation with `$(())`.  No spaces should be used.
+
   ```bash
   # addition
   X=$((1+1))
@@ -303,48 +311,76 @@ There are different regex languages (POSIX, PERL, etc) that have slight differen
   # subtraction
   Y=$((10-5))
   echo $Y
+  
+  echo $((1+11-1))
+  
   ```
   
-#### Decision logic with if-then-else statements
-  ```bash
-  $ if [ 1 == 2 ]; then
-	  echo 1 does equal 2
-    else
-      echo 1 does not equal 2 
-    fi
-  1 does not equal 2
-  ```
-  
-  ```bash
-  $ A="YES"
-    B=100
-    if [ "$A" != "$B" ]; then
-	  echo $A does not equal $B
-    else
-      echo $A does equal $B 
-    fi  
-  YES does not equal 100
-  ```
+## Decision logic with if-then-else statements
 
-#### A function allows you to define a new customized command composed of several existing commands
+We can program a computer to make decisions.  
+
+* If something is true, then do "this", otherwise do "that".  
+
+* If X is true, then do Y; else if Z is true, then do W; else if A is true, then do B
+
+If-then statements have a standard multiline architecture with a distinct beginning (`if`) and end (`fi`) and spacing matters. There are no optional spaces, they are required where you see them
+
+```bash
+if [ 1 == 2 ]; then                # if 1 equals 2 then
+ echo 1 does equal 2               # print "1 does equal 2" to screen
+else                               # if 1 does not equal 2 then
+  echo 1 does not equal 2          # print "1 does not equal 2" to screen
+fi                                 # end of if statement
+  1 does not equal 2
+```
+  
+In the if-then statement, the square brackets denote the condition to test.  Note that two equals signs are neccessary.  Also note below that we quotified the variables `$A` and `$B`.  I recommend that you consult a web resource when constructing if then statements in bash because the syntax can be tricky and I am not showing everything that is possible here.
+  
+```bash
+A="orangutang"
+B=100
+if [ "$A" != "$B" ]; then
+  echo $A does not equal $B
+else
+  echo $A does equal $B 
+fi  
+  orangutang does not equal 100
+```
+
+## A function allows you to define a new customized command composed of several existing commands
+
   A function is a lot like a script, except you can define and use it within a script itself. You should make a function when you find yourself repeatedly using the same code over and over. 
+  
   Let us build upon the if-then-else logic in the last section to create a function that decides whether the two arguments passed to it are equal.
-  ```bash
-  $ DECIDER(){
-      A=$1
-	  B=$2
-      if [ "$A" != "$B" ]; then
-	    echo $A does not equal $B
-      else
-        echo $A does equal $B 
-      fi 
-    }
+  
+  * The name of the function is `DECIDER`
+  
+  * The `()` are there because other languages have the same structure, but they do not do anything
+  
+  	* you *_cannot_* define default input variable values in the parentheses `()`, like you would in `R`
+  
+  * The code passed to the function is wrapped in curly brackets `{}`
+  
+  	* everything else is just `bash` code
+  
+
+```bash
+DECIDER(){
+A=$1
+B=$2
+if [ "$A" != "$B" ]; then
+  echo $A does not equal $B
+else
+  echo $A does equal $B 
+fi 
+}
   ```
 
-  After you complete the function, nothing will happen, but it has been stored into memory and can now be used.
-  ```bash
-  $ DECIDER 1 2
-  1 does not equal 2
+  After you enter the function, nothing will happen, but it has been stored into memory and can now be used.
+  
+```bash
+DECIDER 1 2
   ```
 
 ### IV. Real World Application of Skills Learned: Fisheries-Induced Evolution
