@@ -211,6 +211,15 @@ This is an interleaved FASTA file.  Interleaved means that a single squence is s
   8,1906,BALTIMORE,NA,528073.3264 GATATGCTGGTCTGTAGAAGGAGGGAGTTCTAGGAAAACAGACACTTAAGTAGGGCCGAA
   9,1906,BALTIMORE,NA,528259.7712 CTAAAAATTGTATCAGTCAGATCTTCATGTGAAGTCCTGTGTGCCCA
   ```
+  
+  It is very common to use subshells to pass text streams to `paste` (and `cat`).  When doing this, we use the following syntax `<()`
+  
+  ```
+  paste <(echo Testing) <(echo 1) <(echo 2) <(echo 3)
+  
+  cat <(echo Testing) <(echo 1) <(echo 2) <(echo 3)
+  ```
+  
 
   </p>
 </details>
