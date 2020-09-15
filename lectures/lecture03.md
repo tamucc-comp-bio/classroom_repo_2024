@@ -2,6 +2,8 @@
 
 ### [Assignment 2](https://github.com/tamucc-comp-bio-2020/classroom_repo/blob/master/assignments/assignment_2.md) is due at the beginning of this lecture
 
+### [Lecture Stream](Computational Biology-20200911 1751-1
+https://tamucc.webex.com/recordingservice/sites/tamucc/recording/playback/6a211a99f35647608fc87002190fe1d4)
 
 ## Computer Preparation
 
