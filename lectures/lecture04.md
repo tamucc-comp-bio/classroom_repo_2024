@@ -385,12 +385,28 @@ Git can get confused if you are not dilligent in your pattern of adding and comi
   
 
 ![alt text](https://github.com/tamucc-comp-bio/fall_2019/blob/master/lectures/Week04_files/git_common_commands.png)
+---
 
 
+## [EXAM 1  Due 9/25](https://classroom.github.com/a/jp--K3BZ)  
 
+### Initializing Exam
 
+1. Clone your repository for this exam to your local computer. 
 
-
-## HOMEWORK
-[Exam 1  Due 9/25](https://github.com/tamucc-comp-bio-2020/classroom_repo/tree/master/assignments/exam_1.md)  
+	* If you have a Win10 computer, then I want you to clone your Exam 1 repo into the windows `Documents` directory. Here is pseudocode to help you get there in your terminal.
+		
+	```bash
+	# replace YOUR_WINDOWS_USERNAME with your actual user name
+	cd /mnt/c/Users/YOUR_WINDOWS_USERNAME/Documents
+	```
+	
+	* If you are unsure of your Win10 user name, hit tab twice after typing in the file path up to `Users/` to see the options.  You could alternatively right click on your `Documents` folder in the file explorer, select `Properties` and then the `Location` tab to see its file path.  Your Win10 user name is the name of the directory that `Documents` is inside of.
+	
+	* If you have a Mac computer, then I want you to clone your Exam 1 repo into your home dir.
+	
+	```bash
+	cd ~
+	```
+	
 
