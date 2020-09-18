@@ -79,8 +79,10 @@ ___
 
 Git is a version control tool and GitHub is a website that uses git.  Git is popular, free, open source, and GitHub is a paid service that is free for educational use.
 
-![alt text](https://github.com/tamucc-comp-bio/fall_2019/blob/master/lectures/Week04_files/gitlogo.jpg) git logo
-![alt text](https://github.com/tamucc-comp-bio/fall_2019/blob/master/lectures/Week04_files/githublogo.jpg) github logo
+##### git                        github
+
+![alt text](Week04_files/gitlogo.jpg)
+![alt text](Week04_files/githublogo.jpg)
 
 Git is *distributed*, with a full copy of the project history resides on every instance of the *repository*
 ![alt text](https://github.com/tamucc-comp-bio/fall_2019/blob/master/lectures/Week04_files/distributedvcs.png)
