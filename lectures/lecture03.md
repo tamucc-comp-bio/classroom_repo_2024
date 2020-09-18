@@ -417,6 +417,13 @@ cd ~
 git clone https://github.com/tamucc-comp-bio/LimpetShellEvolution.git
 ```
 
+### important: delete the `LimpetShellEvolution` repo we cloned in class before doing the homework. For the home work, you will clone your homework repo, which is very similar to `LimpetShellEvolution`, to your computer and complete you work there.
+
+```
+cd ~
+rm -rf LimpetShellEvolution
+```
+
 ## HOMEWORK
 [Assignment 3  Due 9/27](https://github.com/tamucc-comp-bio/fall_2019/blob/master/assignments/assignment_3.md)
 
