@@ -106,7 +106,7 @@ SECTION 1.  WELCOME TO THE MATRIX
 
   * [Exam_1,  Due 9/25](https://classroom.github.com/a/jp--K3BZ)
 
-  * [Grad Student Course Project: GitHub Repo w/ ReadMe, Due 10/04](https://classroom.github.com/a/hXodrcVf)
+  * [Grad Student Course Project: GitHub Repo w/ ReadMe, Due 9/25](https://classroom.github.com/a/hXodrcVf)
 
 
 <!-- 
@@ -149,7 +149,7 @@ SECTION 1.  WELCOME TO THE MATRIX
 ---
 
 
-<details><summary>SECTION 2. PROGRAMMING WITH PYTHON </summary>
+<details><summary>SECTION 3. PROGRAMMING WITH PYTHON </summary>
 <p>
 
 <!-- 
