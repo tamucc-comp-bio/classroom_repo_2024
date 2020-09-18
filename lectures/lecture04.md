@@ -126,7 +126,7 @@ $ man git
 
 ---
 
-#### Initializing a Local `git` Repository
+#### Initializing a Local `git` Repository 
 
 1. Initializing a repository only needs to be done once.  Any directory (dir) can become a `git` repository (repo). `git` cannot version control if you do not make a dir a repo.  Let us make the `~/CSB/git/sandbox/originspecies` directory a `git` repository:
 
@@ -151,12 +151,16 @@ Initial commit
 nothing to commit (create/copy files and use "git add" to track)
 ```
 
-3. Create a file called `origin.txt` in your repo as follows:
+#### Making and Tracking Changes In a `git` Repo
+
+1. Create a file called `origin.txt` in your repo as follows:
+
 ```bash
 $ echo "An Abstract of an Essay on the Origin of Species and Varieties Through Natural Selection" > origin.txt
 ```
 
-4. View file contents:
+2. View file contents:
+
 ```bash
 $ cat origin.txt
 
@@ -165,14 +169,14 @@ An Abstract of an Essay on the Origin of Species and Varieties Through Natural S
 
   So far, `git` has not tracked anything we did.  We need to tell it to record the changes. `git` will only track the files you tell it to track.
 
-5. Set `origin.txt` for `git` tracking then check the repo status:
+3. Set `origin.txt` for `git` tracking then check the repo status:
 ```bash
 $ git add origin.txt
 $ git status
 
 On branch master
 
-Initial commit
+No commits yet
 
 Changes to be committed:
   (use "git rm --cached <file>..." to unstage)
@@ -180,13 +184,9 @@ Changes to be committed:
         new file:   origin.txt
 ```
 
-It is important to note that `git` is made to track human-readable text files.  A human-readable text file will be readable by your text editor. Files that are binary (*docx, etc) cannot be tracked by `git` in the same way that text files can.
-
-6. Everybody use your text editor (notepad++ or bbedit) and try to open a MS Word doc
-
 We have yet to actually save a snapshot of our updates.  You should `git commit` your changes at the end of every session, when you have a working script, or when you can succinctly describe the changes you made.
 
-7. Creating a snapshot of the project:
+4. Creating a snapshot of the project:
 ```bash
 $ git commit -m "started the book"
 
@@ -197,7 +197,7 @@ $ git commit -m "started the book"
 
   The `-m` option stands for "message".  The message is there to help you know how this version is different than the previous one should you need to recover an older version in the future.  The message should be short but sufficiently descriptive.
 
-8. Show the repo history:
+5. Show the repo history:
 ```bash
 $ git log
 
@@ -208,7 +208,9 @@ Date:   Fri Sep 27 08:24:34 2019 -0500
     started the book
 ```
 
-9. Let us change the text in our tracked document
+#### Tracking a Change in a Text Document
+
+1. Let us change the text in our tracked document
 
 ```bash
 $ echo "On the Origin of Species, by Means of Natural Selection, or the Preservation of Favoured Races in the Struggle for Life" > origin.txt
@@ -224,7 +226,7 @@ Changes not staged for commit:
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
-10. Both add and commit need to be executed to update the repo
+2. Both add and commit need to be executed to update the repo
 
 ```bash
 $ git add .
@@ -234,7 +236,7 @@ $ git commit -m "Changed the title as suggested by Murray"
  1 file changed, 1 insertion(+), 1 deletion(-)
 ```
 
-11. View the log history again after the commit
+3. View the log history again after the commit
 
 ```bash
 $ git log
@@ -256,31 +258,56 @@ Notice that both commits are logged and each has the "fingerprint" id.
 
 That is the majority of the commands you will use in git: `git add`,  `git commit`
 
-12. Showing changes since last commit
+#### `git` Can Only Track Internal Changes Made to Text Documents
 
-  The argument `diff` will show all changes *since the last commit*
+It is important to note that `git` is made to track human-readable text files.  A human-readable text file will be readable by your text editor. Files that are binary (`docx`, etc) cannot be tracked by `git` in the same way that text files can.
+
+1. Everybody use your text editor (notepad++ or bbedit) and try to open a MS Word doc
+
+#### Showing Changes Since Last Commit
+
+   
+  We will use the `sed` command to find the ends of lines ( a `$` in regex) and replace them with a period (a `\.` in regex).  The `-i` argument tells `sed` to change the input file rather than outputting a text stream. 
+  
+  Then use the `git` argument `diff` to show all changes *since the last commit*.  
+
+  
   ```bash
+  $ sed -i 's/$/\./' origin.txt
   $ git diff
+  
+  # now change it back
+  $ sed -i 's/\.$//' origin.txt
   ```
-  If you do not see any differences, then change the repo by adding a file or changing the text in `origin.txt`
+  
+  If you do not see any differences, then you did not change the repo by adding a file or changing the text in `origin.txt`
 
   Note that the previous version is marked with an `a/` and the newer version is labeled `b`/.  The addition and subtraction of files are marked with `+` and `-`
 
-13. Moving and removing files
+#### Moving and Removing Files in a Repo
+
+you need to tell `git` when you remove or move version controlled files 
 
   ```bash
   $ git mv origin.txt origins.txt
-    git rm *.txt
+  $ git rm *.txt
+  
+  # note that you can skip git add and go straight to commit after this
+  $ git commit -m "deleted text files"
+  $ git log
   ```
-  you need to tell `git` when you remove or move version controlled files 
+  
+  
+#### Putting it All Together
 
-14.  Let us review what we have learned by making a new project in your sandbox and initializing the repo
+Let us review what we have learned by making a new project in your sandbox and initializing the repo
 
   ```bash
   $ cd ~/CSB/git/sandbox
+  $ rm originspcies
   $ mkdir newproject
   $ cd newproject
-  $ git init # initialize repository
+  $ git init 
   $ git status
   # make changes to repo, then track changes by:
   $ git add --all
@@ -288,6 +315,7 @@ That is the majority of the commands you will use in git: `git add`,  `git commi
   ```
 
 ---
+
 ### [Mind Expander 2.1](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMVJSRE4zRVpFOElBVTUzMTVVNFZBNkRGVy4u)
 
 ---
