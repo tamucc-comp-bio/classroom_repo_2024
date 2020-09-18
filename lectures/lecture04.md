@@ -115,6 +115,8 @@ $ git config --global user.email cbird808@gmail.com
 $ git config --global color.ui true
 ```
 
+---
+
 #### Getting Help with Git
 
 Besides a [duckduckgo](https://duckduckgo.com/) search, 
@@ -150,6 +152,8 @@ Initial commit
 
 nothing to commit (create/copy files and use "git add" to track)
 ```
+
+---
 
 #### Making and Tracking Changes In a `git` Repo
 
@@ -208,6 +212,8 @@ Date:   Fri Sep 27 08:24:34 2019 -0500
     started the book
 ```
 
+---
+
 #### Tracking a Change in a Text Document
 
 1. Let us change the text in our tracked document
@@ -258,11 +264,15 @@ Notice that both commits are logged and each has the "fingerprint" id.
 
 That is the majority of the commands you will use in git: `git add`,  `git commit`
 
+---
+
 #### `git` Can Only Track Internal Changes Made to Text Documents
 
 It is important to note that `git` is made to track human-readable text files.  A human-readable text file will be readable by your text editor. Files that are binary (`docx`, etc) cannot be tracked by `git` in the same way that text files can.
 
 1. Everybody use your text editor (notepad++ or bbedit) and try to open a MS Word doc
+
+---
 
 #### Showing Changes Since Last Commit
 
@@ -284,6 +294,8 @@ It is important to note that `git` is made to track human-readable text files.  
 
   Note that the previous version is marked with an `a/` and the newer version is labeled `b`/.  The addition and subtraction of files are marked with `+` and `-`
 
+---
+
 #### Moving and Removing Files in a Repo
 
 you need to tell `git` when you remove or move version controlled files 
@@ -297,6 +309,7 @@ you need to tell `git` when you remove or move version controlled files
   $ git log
   ```
   
+  ---
   
 #### Putting it All Together
 
