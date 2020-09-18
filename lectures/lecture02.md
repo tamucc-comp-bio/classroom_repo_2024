@@ -4,6 +4,8 @@
 
 ### [Assignment 1](https://github.com/tamucc-comp-bio-2020/classroom_repo/blob/master/assignments/assignment_1.md) is due at the beginning of this lecture
 
+### [Lecture Stream](https://tamucc.webex.com/recordingservice/sites/tamucc/recording/playback/66eac3301a3147828e9e1797d662a564)
+
 ## Computer Preparation
 
 You are expected to start each lecture with your terminal window open and ready to go.
