@@ -103,13 +103,15 @@ SECTION 1.  WELCOME TO THE MATRIX
   * [Grad Student Course Project: Plan/Outline, Due 09/18](https://classroom.github.com/a/VuB4iKjR)
 
 * [09/18  Week04 Version Control w/ Git](lectures/lecture04.md)
+
   * [Exam_1,  Due 9/25](https://classroom.github.com/a/jp--K3BZ)
+
+  * [Grad Student Course Project: GitHub Repo w/ ReadMe, Due 10/04](https://classroom.github.com/a/hXodrcVf)
+
 
 <!-- 
 
   * [Install Anaconda & Jupyter, Due 10/04](http://computingskillsforbiologists.com/setup/basic-programming/), Due 10/04
-  * [Grad Student Course Project: GitHub Repo w/ ReadMe, Due 10/04](https://github.com/tamucc-comp-bio/fall_2019/blob/master/assignments/gradproject_githubrep.md)
-
 -->
 
 <details><summary>Quiz Results and Answers</summary>
