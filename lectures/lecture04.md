@@ -333,12 +333,12 @@ Let us review what we have learned by making a new project in your sandbox and i
 
 ---
 
-###  Troubleshooting
+###  Troubleshooting `git`
 
 Git can get confused if you are not dilligent in your pattern of adding and comitting changes and it will be neccessary to troublshoot conflicts.
 
 #### Amending an Incomplete Commit
-  Incomplete commits can occur when file are not removed within git, changes are made but not added, etc..  The solution is to rectify these conflicts.
+  Incomplete commits can occur when files are not removed within git, changes are made but not added, etc..  The solution is to rectify these conflicts.
   
   ```bash
   # make file
@@ -354,7 +354,7 @@ Git can get confused if you are not dilligent in your pattern of adding and comi
   nothing added to commit but untracked files present
   
   # fix by adding then committing
-  $ git add *
+  $ git add barnacles.txt
   $ git commit -m "added barnacles.txt"
   ```
 
@@ -362,7 +362,7 @@ Git can get confused if you are not dilligent in your pattern of adding and comi
   You may have added files to the snapshot staging area by mistake.  To unstage them:
   (do not type this in, it is an example)
   ```bash
-  git reset HEAD filetounstage.py
+  git reset HEAD filetounstage.txt
   ```
 
 ---
@@ -378,7 +378,7 @@ Git can get confused if you are not dilligent in your pattern of adding and comi
 
 3. Push changes from local repository back to central repository on GitHub
   ```bash
-  git push origin master
+  git push
   ```
   
 
@@ -392,5 +392,5 @@ Git can get confused if you are not dilligent in your pattern of adding and comi
 
 
 ## HOMEWORK
-Exam 1  Due 10/04  
+[Exam 1  Due 9/25](https://github.com/tamucc-comp-bio-2020/classroom_repo/tree/master/assignments/exam_1.md)  
 
