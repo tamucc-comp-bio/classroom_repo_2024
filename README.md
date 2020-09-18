@@ -126,7 +126,30 @@ SECTION 1.  WELCOME TO THE MATRIX
 
 ---
 
-<details><summary>SECTION 2. PROGRAMMING THE MATRIX</summary>
+<details><summary>SECTION 2. DATA WRANGLING AND VISUALIZATION WITH R</summary>
+<p>
+
+<!-- 
+
+* [11/08  Week10 Statistical Computing I](https://github.com/tamucc-comp-bio/fall_2019/blob/master/lectures/lecture10.md)
+  * No Assignment
+
+* [11/15  Week11 Statistical Computing II](https://github.com/tamucc-comp-bio/fall_2019/blob/master/lectures/lecture10.md)
+  * [Assignment 11, Due 11/25](https://classroom.github.com/a/2ids3KFf)
+  
+* [11/22  Week11 Data Wrangling and Visualization with The Tidyverse](https://github.com/tamucc-comp-bio/fall_2019/blob/master/lectures/lecture12.md)
+  * [Assignment 12, Due 12/04](https://classroom.github.com/a/1cpXbLT8) *Undergrads Only*
+  * Graduate students, push your completed independent projects to GitHub on 12/04
+
+-->
+
+</p>
+</details>
+
+---
+
+
+<details><summary>SECTION 2. PROGRAMMING WITH PYTHON </summary>
 <p>
 
 <!-- 
@@ -147,28 +170,6 @@ SECTION 1.  WELCOME TO THE MATRIX
   
 * [11/01  Week09 Scientific Computing](https://github.com/tamucc-comp-bio/fall_2019/blob/master/lectures/lecture09.md)
   * [Exam 2, Due 11/08](https://classroom.github.com/a/VSNTwKf2)
-
--->
-
-</p>
-</details>
-
----
-
-<details><summary>SECTION 3. BECOMING "THE ONE"</summary>
-<p>
-
-<!-- 
-
-* [11/08  Week10 Statistical Computing I](https://github.com/tamucc-comp-bio/fall_2019/blob/master/lectures/lecture10.md)
-  * No Assignment
-
-* [11/15  Week11 Statistical Computing II](https://github.com/tamucc-comp-bio/fall_2019/blob/master/lectures/lecture10.md)
-  * [Assignment 11, Due 11/25](https://classroom.github.com/a/2ids3KFf)
-  
-* [11/22  Week11 Data Wrangling and Visualization with The Tidyverse](https://github.com/tamucc-comp-bio/fall_2019/blob/master/lectures/lecture12.md)
-  * [Assignment 12, Due 12/04](https://classroom.github.com/a/1cpXbLT8) *Undergrads Only*
-  * Graduate students, push your completed independent projects to GitHub on 12/04
 
 -->
 
