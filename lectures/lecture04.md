@@ -58,9 +58,13 @@ ___
 
 ## In Class Activities
 
-### I. Quiz(!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!)
+### I. [Quiz!](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUNU1IUUg4Nzc1SU9KQVNRTVc0TU0xMFI1Sy4u)
 
-### II. Version Control
+### II. Assignment 3 Triage
+
+We will review your burning questions about the assignment. 
+
+### III. Version Control
 
 #### What is version control?
 
