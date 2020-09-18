@@ -103,7 +103,7 @@ SECTION 1.  WELCOME TO THE MATRIX
   * [Grad Student Course Project: Plan/Outline, Due 09/18](https://classroom.github.com/a/VuB4iKjR)
 
 * [09/18  Week04 Version Control w/ Git](lectures/lecture04.md)
-  * [Exam_1,  Due 9/25](https://github.com/tamucc-comp-bio-2020/classroom_repo/blob/master/assignments/exam_1.md)
+  * [Exam_1,  Due 9/25](https://classroom.github.com/a/jp--K3BZ)
 
 <!-- 
 
