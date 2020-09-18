@@ -1,6 +1,6 @@
 # Week04 Version Control 
 
-### [Assignment 3](https://github.com/tamucc-comp-bio/fall_2019/blob/master/assignments/assignment_3.md) is due at the beginning of this lecture
+### [Assignment 3](https://github.com/tamucc-comp-bio-2020/classroom_repo/blob/master/assignments/assignment_3.md) is due at the beginning of this lecture
 
 ___
 
