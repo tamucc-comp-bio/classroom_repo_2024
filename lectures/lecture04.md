@@ -75,17 +75,22 @@ ___
 * Recover old versions of work (undo)
 * No need for 10 versions of each of your files
 
+---
+
 #### Getting Started with Git
 
 Git is a version control tool and GitHub is a website that uses git.  Git is popular, free, open source, and GitHub is a paid service that is free for educational use.
 
-##### git                        github
-
 ![alt text](Week04_files/gitlogo.jpg)
 ![alt text](Week04_files/githublogo.jpg)
 
-Git is *distributed*, with a full copy of the project history resides on every instance of the *repository*
+---
+
+Git is *distributed* and a full copy of the history of changes resides on every instance of the *repository*
+
 ![alt text](https://github.com/tamucc-comp-bio/fall_2019/blob/master/lectures/Week04_files/distributedvcs.png)
+
+---
 
 #### Configuring Git
 
