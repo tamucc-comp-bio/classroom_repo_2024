@@ -79,7 +79,7 @@ ___
 
 #### What is `git`?
 
-`git` is a version control tool and `GitHub` is a website that uses `git`.  `git` is popular, free, open source, and `GitHub` is a paid service that is free for educational use.  Fun fact, the [person who made linux os](https://en.wikipedia.org/wiki/Linus_Torvalds) created `git` to version control his work on linux.
+`git` is a version control tool and `GitHub` is a website that uses `git`.  `git` is popular, free, open source, and `GitHub` is a paid service that is free for educational use.  Fun fact, the [person who made linux os](https://en.wikipedia.org/wiki/Linus_Torvalds) created `git` to version control his and others work on linux.  Thus, `git` is in the "DNA" of linux.
 
 ![alt text](Week04_files/gitlogo.jpg)
 ![alt text](Week04_files/githublogo.jpg)
@@ -94,7 +94,7 @@ Git is *distributed* and a full copy of the history of changes resides on every 
 
 #### Configuring Git
 
-Viewing your current git settings:
+Viewing your current `git` settings:
 
 ```bash
 $ git config --list
@@ -117,21 +117,26 @@ $ git config --global color.ui true
 
 #### Getting Help with Git
 
+Besides a [duckduckgo](https://duckduckgo.com/) search, 
+
 ```bash
 $ git help
 $ man git
 ```
 
-#### Every Day Git: Local Repository
+---
 
-1. Initializing a repository only needs to be done once.  Any directory (dir) can become a git repository (repo)  Lets make the `~/CSB/git/sandbox/originspecies` directory a git repository:
+#### Initializing a Local `git` Repository
+
+1. Initializing a repository only needs to be done once.  Any directory (dir) can become a `git` repository (repo). `git` cannot version control if you do not make a dir a repo.  Let us make the `~/CSB/git/sandbox/originspecies` directory a `git` repository:
+
 ```bash
 $ cd ~/CSB/git/sandbox
 $ mkdir originspecies
 $ cd originspecies
 $ git init
 
-  Initialized empty Git repository in /home/cbird/CSB/git/sandbox/originspecies/.git/
+  Initialized empty git repository in /home/cbird/CSB/git/sandbox/originspecies/.git/
 ```
 
 2. Checking the status of a repo:
@@ -158,9 +163,9 @@ $ cat origin.txt
 An Abstract of an Essay on the Origin of Species and Varieties Through Natural Selection
 ```
 
-  So far, git has not tracked anything we did.  We need to tell it to record the changes. Git will only track the files you tell it to track.
+  So far, `git` has not tracked anything we did.  We need to tell it to record the changes. `git` will only track the files you tell it to track.
 
-5. Set `origin.txt` for git tracking then check the repo status:
+5. Set `origin.txt` for `git` tracking then check the repo status:
 ```bash
 $ git add origin.txt
 $ git status
@@ -175,7 +180,7 @@ Changes to be committed:
         new file:   origin.txt
 ```
 
-It is important to note that git is made to track human-readable text files.  A human-readable text file will be readable by your text editor. Files that are binary (*docx, etc) cannot be tracked by git in the same way that text files can.
+It is important to note that `git` is made to track human-readable text files.  A human-readable text file will be readable by your text editor. Files that are binary (*docx, etc) cannot be tracked by `git` in the same way that text files can.
 
 6. Everybody use your text editor (notepad++ or bbedit) and try to open a MS Word doc
 
@@ -249,7 +254,7 @@ Date:   Fri Sep 27 08:24:34 2019 -0500
 
 Notice that both commits are logged and each has the "fingerprint" id.
 
-That is the majority of the commands you will use in git: git add,  git commit
+That is the majority of the commands you will use in git: `git add`,  `git commit`
 
 12. Showing changes since last commit
 
@@ -267,7 +272,7 @@ That is the majority of the commands you will use in git: git add,  git commit
   $ git mv origin.txt origins.txt
     git rm *.txt
   ```
-  you need to tell git when you remove or move version controlled files 
+  you need to tell `git` when you remove or move version controlled files 
 
 14.  Let us review what we have learned by making a new project in your sandbox and initializing the repo
 
