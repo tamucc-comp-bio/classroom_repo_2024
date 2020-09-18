@@ -77,9 +77,9 @@ ___
 
 ---
 
-#### Getting Started with Git
+#### What is `git`?
 
-Git is a version control tool and GitHub is a website that uses git.  Git is popular, free, open source, and GitHub is a paid service that is free for educational use.
+`git` is a version control tool and `GitHub` is a website that uses `git`.  `git` is popular, free, open source, and `GitHub` is a paid service that is free for educational use.  Fun fact, the [person who made linux os](https://en.wikipedia.org/wiki/Linus_Torvalds) created `git` to version control his work on linux.
 
 ![alt text](Week04_files/gitlogo.jpg)
 ![alt text](Week04_files/githublogo.jpg)
