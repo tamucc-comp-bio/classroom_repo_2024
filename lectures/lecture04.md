@@ -2,9 +2,6 @@
 
 ### [Assignment 3](https://github.com/tamucc-comp-bio/fall_2019/blob/master/assignments/assignment_3.md) is due at the beginning of this lecture
 
-## Lecture 04 Slides
-* There are no slides this week
-
 ___
 
 ## Computer Preparation
