@@ -499,27 +499,134 @@ ___
 ### [Mind Expander 8.1](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMFpONVRLSkNYUU9VQ1RXVzhGODBPTFM1UC4u)
 
 
+___
 
+### Overview of R Data Structures
+
+A [data structure](https://en.wikipedia.org/wiki/Data_structure) is a container for data with a particular format.
+
+Element		-	a single value or string
+Vector		-	several elements of same data type
+Matrix		-	2-dimensional table of elements of same data type
+Array		-	3-dimensional table of elements of same data type
+Data frame	-	2-dimensional table of elements, different data types
+List		-	several elements or data structures of any type
+
+___
+
+### R Data Structures: Matrix
+
+matrix(v,r,c,byrow=FALSE)	
+create matrix, v=vector of values, r=#rows, c=#cols, if byrow=TRUE then values are filled in by row
+
+Matrix math
+	%*%		matrix product
+	solve()	matrix inverse
+	diag()	diagonal values
+	t()		transpose
+Matrix functions
+	dim()		dimensions, rows cols
+	nrow()	# rows
+	ncol()	# cols
+
+```R
+rm(list=ls())
+x <- c(1, 2, 3, 4)
+matrix(x, 2, 2)
+matrix(x, 2, 2, byrow=TRUE)
+A <- matrix(x, 2, 2)
+A %*% A
+solve(A)
+diag(A)
+B <- matrix(1,3,2)
+B
+t(B)
+B %*% t(B)
+dim(A)
+dim(B)
+nrow(B)
+ncol(B)
+```
 
 ___
 
 ###
 
+```R
+
+```
 
 ___
 
 ###
 
+```R
+
+```
 
 ___
 
 ###
 
+```R
+
+```
 
 ___
 
 ###
 
+```R
+
+```
+
+___
+
+###
+
+```R
+
+```
+
+___
+
+###
+
+```R
+
+```
+
+___
+
+###
+
+```R
+
+```
+
+___
+
+###
+
+```R
+
+```
+
+___
+
+###
+
+```R
+
+```
+
+___
+
+###
+
+```R
+
+```
 
 ___
 
