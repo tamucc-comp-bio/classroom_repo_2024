@@ -284,23 +284,23 @@ R can compare values and return either `TRUE` if the statement is true or `FALSE
 34>5 & 17>3
 ```
 
-==	Equal to
+`==`	Equal to
 
-!=	Not equal to
+`!=`	Not equal to
 
->	Greater than
+`>`	Greater than
 
-<	Less than
+`<`	Less than
 
->=	Greater than or equal
+`>=`	Greater than or equal
 
-<= 	Less than or equal
+`<=` 	Less than or equal
 
-&	And
+`&`	And
 
-|	Or
+`|`	Or
 
-!	Not
+`!`	Not
 
 ___
 
