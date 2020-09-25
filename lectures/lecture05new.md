@@ -244,7 +244,7 @@ The keys `ctrl+d` will exit the R shell. You will be prompted to save your sessi
 
 Now that you see how to enter and exit the R shell, enter the R shell again.
 
-```
+```bash
 $ R
 
 >
@@ -258,7 +258,7 @@ R is built for statistics and so has all of the mathematical operations that you
 
 To do arithmetic, simply type in the mathematical statement to calculate and hit enter.
 
-```
+```R
 > 34+5
 > 34 + 5
 > 34 - 5
@@ -289,7 +289,7 @@ ___
 
 R can compare values and return either `TRUE` if the statement is true or `FALSE`.  
 
-```
+```R
 34 == 5
 34 != 5
 34 >= 5
@@ -320,7 +320,7 @@ ___
 
 ### R Variables
 
-Variables hold data. There are different types of data that can be stored.
+Variables hold data. There are different types of data that can be stored. Here we start by discussing *_values_*.
 
 * *_Values_* are numbers or strings
 
@@ -328,7 +328,7 @@ Variables hold data. There are different types of data that can be stored.
 
 The name of a variable can be almost anything you want, but try to avoid punctuation other than `.` or `_` and do not begin a variable name with a number.
 
-```
+```R
 # put the value -1.2345 into a variable named 'x'
 > x <- -1.2345
 
@@ -340,7 +340,7 @@ The name of a variable can be almost anything you want, but try to avoid punctua
 Note that numbers should not be quotified, but character strings need to be quotified.
 
 You can view the contents of variables by simply typing their name
-```
+```R
 > x
 [1] -1.2345
 > greeting
@@ -354,27 +354,150 @@ rm(list=ls())
 
 ___
 
-###
+### R Data Types
+
+`integer`		Whole Numbers
+
+`numeric`		Real Numbers
+
+`complex`		Complex Numbers
+
+`logical`		TRUE or FALSE
+
+`character`	String
+
+You can specify a data type for a variable as follows where you replace "DataType" and "NameOfVariable" with the appropriate data type and variable name:
+
+```
+# do not type this, it is pseudo code
+as.DataType(NameOfVariable)
+```
+
+Try it out by creating the following variables
+
+```R
+> z <- as.numeric(x^2)
+> y <- as.character("Bye")
+> q <- as.complex(1+3i)
+> r <- 3==4
+```
+
+Note that R will automatically choose a data type if you do not specify one.  It usually gets the data type right, but not always.
+
+We can query the data type of a variable using `is.type(variable)`
+
+```R
+> is.numeric(x)
+> is.complex(x)
+> is.character(greeting)
+> is.complex(q)
+```
 
 
 ___
 
-###
+### Mathematical Functions in R
 
+`abs(x)`			absolute value
+`sqrt(x)`			square root
+`ceiling(x)`		round up
+`floor(x)`			round down
+`trunc(x)`			remove decimals
+`round(x,digits=n)` 	round x to n digits
+`cos(x)`, `sin(x)`, `tan(x)`, etc	trig
+`log(x)`			natural log
+`exp(x)`			ex
+`log10(x)`			base 10 log
+
+```R
+# delete all variables
+> rm(list=ls())
+
+> x <- -1.234
+
+> abs_x <- abs(x)
+> abs_x
+
+> sqrt_abs_x <- sqrt(abs_x)
+> sqrt_abs_x
+
+> floor(x)
+> floor(abs_x)
+
+> trunc(x)
+> trunc(abs_x)
+
+> y <- round(x,2)
+> y
+
+> cos_y <- cos(y)
+> cos_y
+
+> z <- log(abs(y))
+> z
+
+> exp_z <- exp(z)
+> exp_z
+```
 
 ___
 
-###
+### R Data Structures
 
+* Data structures store your data
+
+* Simplest data structure is a single element
+
+* A vector is a collection of elements
+
+ * 1, 2, 3, 4, 5, 6
+
+* Vectors can be specified using `c()` or `seq()` or `rep()`
+
+* Particular values in the vector can be specified by their index `[index_num]`
+
+```R
+rm(list=ls())
+1:6
+x <- c(1:6)
+y <- c("a", "B", "c", "D")
+y[3]
+z <- seq(1, 40, 4)
+z
+z[3:6]
+z[c(2,8,10)]
+```
 
 ___
 
-###
+### R Statistical Functions for Vectors
 
+A variety of statistical functions are available in R. Here are a few:
+
+`length(x)`	number of elements
+`min(x)`		minimum
+`max(x)`		maximum
+`sum(x)`		sum, +
+`prod(x)`		product, *
+`median(x)`	central value
+`mean(x)`	average
+`summary(x)`
+
+```R
+length(y)
+min(x); max(x)
+sum(x); prod(x)
+median(z)
+mean(z)
+var(z)
+summary(z)
+```
 
 ___
 
-###
+### [Mind Expander 8.1](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMFpONVRLSkNYUU9VQ1RXVzhGODBPTFM1UC4u)
+
+
 
 
 ___
