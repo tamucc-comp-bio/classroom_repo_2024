@@ -238,6 +238,20 @@ That is it, you are in an `R` shell, and `bash` commands will no longer work.  N
 
 ___
 
+### Exiting R Shell
+
+The keys `ctrl+d` will exit the R shell. You will be prompted to save your session.  If you say yes, all of your work will be saved and available when you open the R shell again.
+
+Now that you see how to enter and exit the R shell, enter the R shell again.
+
+```
+$ R
+
+>
+```
+
+___
+
 ### Arithmetic in R
 
 R is built for statistics and so has all of the mathematical operations that you would expect from a calculator, and much more.
@@ -327,11 +341,10 @@ Note that numbers should not be quotified, but character strings need to be quot
 
 You can view the contents of variables by simply typing their name
 ```
-
 > x
-
+[1] -1.2345
 > greeting
-```
+[1] "Hi"```
 
 Clear all variables:   
 
