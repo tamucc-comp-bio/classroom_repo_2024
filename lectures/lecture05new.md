@@ -506,28 +506,51 @@ ___
 A [data structure](https://en.wikipedia.org/wiki/Data_structure) is a container for data with a particular format.
 
 Element		-	a single value or string
+
 Vector		-	several elements of same data type
+
 Matrix		-	2-dimensional table of elements of same data type
+
 Array		-	3-dimensional table of elements of same data type
+
 Data frame	-	2-dimensional table of elements, different data types
+
 List		-	several elements or data structures of any type
 
 ___
 
 ### R Data Structures: Matrix
 
-matrix(v,r,c,byrow=FALSE)	
-create matrix, v=vector of values, r=#rows, c=#cols, if byrow=TRUE then values are filled in by row
+matrix(v,r,c,byrow=FALSE)
+	
+create matrix, 
+
+v=vector of values, 
+
+r=#rows, 
+
+c=#cols, 
+
+if `byrow=TRUE` then values are filled in by row
 
 Matrix math
+
 	%*%		matrix product
+	
 	solve()	matrix inverse
+	
 	diag()	diagonal values
+	
 	t()		transpose
+	
 Matrix functions
+
 	dim()		dimensions, rows cols
+	
 	nrow()	# rows
+	
 	ncol()	# cols
+	
 
 ```R
 rm(list=ls())
