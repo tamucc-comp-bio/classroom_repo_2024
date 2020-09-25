@@ -52,11 +52,14 @@ You are expected to start each lecture with your terminal window open and ready 
 </p>
 </details>
 
-___
+---
 
 
 
 ## [I. Lecture Slides](Week05new_files/Introduction%20to%20R%201.pptx)
+
+
+---
 
 ## II. Lecture Activities 
 
@@ -67,11 +70,11 @@ ___
 2. [RStudio](https://rstudio.com/products/rstudio/download/?utm_source=downloadrstudio&utm_medium=Site&utm_campaign=home-hero-cta#download)
 
 
----
+___
 
-### What is R?
+### What is [`R`](https://cran.revolutionanalytics.com/)?
 
-R is a statistical computing language
+[`R`](https://cran.revolutionanalytics.com/) is a powerful statistical computing language
 
 ![](Week05new_files/R.png)
 
@@ -84,12 +87,60 @@ R is a statistical computing language
 * Command line interface
 * Linux, Win, Mac
 
----
+___
 
 ### Running R from terminal
 
+R comes preinstalled on most linux systems and is simple to access, just type `R` and hit your enter/return key
 
+```
+$ R
+R version 3.6.3 (2020-02-29) -- "Holding the Windsock"
+Copyright (C) 2020 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu (64-bit)
 
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+>
+```
+
+That is it, you are now in R.  Notice the command prompt is now a `>` instead of a `$` or a `%` depending on your computer.
+
+___
+
+### Arithmetic in R
+
+R is built for statistics and so has all of the mathematical operations that you would expect from a calculator, and much more.
+
+To do arithmetic, simply type in the mathematical statement to calculate and hit enter.
+
+```
+> 17+3
+[1] 20
+> 17 + 3
+[1] 20
+>
+```
+
+`+`		Addition
+`-` 	Subtraction
+`*`		Multiplication
+`/`		Division
+`^`		Exponentiation
+`%%`	Modulo (remainder from division)
+`%/%`	Integer Division
 
 
 ## III. Mind Expanders
