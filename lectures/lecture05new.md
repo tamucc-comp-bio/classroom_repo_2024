@@ -89,6 +89,50 @@ ___
 
 ___
 
+### Installing R 
+
+Note that there are differences here if you have a Mac or Win10 computer.
+
+To check if you have `R`, goto your terminal window and enter the following command:
+
+```
+$ R
+```
+
+If you see this message (or something similar on a Mac) then you need to install `R`
+
+```
+Command 'R' not found, but can be installed with:
+```
+
+<details><summary>Win10-Ubuntu</summary>
+<p>
+
+Start by updating and upgrading your existing Ubuntu commands and apps:
+
+```
+sudo apt update
+sudo apt upgrade
+```
+
+</p>
+</details>
+
+<details><summary>Mac</summary>
+<p>
+
+Goto the [R download page](https://cran.revolutionanalytics.com/) and select the Mac OS X Download link. 
+
+Select the R-X.X.X.pkg download link
+
+![](Week05new_files/maxInstallR.png)
+
+If you have trouble with this, then consult the [CSB instructions](http://computingskillsforbiologists.com/setup/statistical-computing/)
+
+</p>
+</details>
+
+
 ### Running R from terminal
 
 R comes preinstalled on most linux systems and is simple to access, just type `R` and hit your enter/return key
