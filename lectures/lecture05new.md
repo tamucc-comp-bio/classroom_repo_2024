@@ -57,7 +57,7 @@ You are expected to start each lecture with your terminal window open and ready 
 
 ## [I. Lecture Slides](Week05new_files/Introduction%20to%20R%201.pptx)
 
-I converted the lecture slides into this markdown document. 
+I converted the lecture slides into this markdown document so you will not use them during class, but you can refer to them later as necessary. 
 
 ---
 
@@ -499,31 +499,25 @@ ___
 
 A [data structure](https://en.wikipedia.org/wiki/Data_structure) is a container for data with a particular format.
 
-Element		-	a single value or string
+* Element		-	a single value or string
 
-Vector		-	several elements of same data type
+* Vector		-	several elements of same data type
 
-Matrix		-	2-dimensional table of elements of same data type
+* Matrix		-	2-dimensional table of elements of same data type
 
-Array		-	3-dimensional table of elements of same data type
+* Array		-	3-dimensional table of elements of same data type
 
-Data frame	-	2-dimensional table of elements, different data types
+* Data frame	-	2-dimensional table of elements, different data types
 
-List		-	several elements or data structures of any type
+* List		-	several elements or data structures of any type
 
 ___
 
 ### R Data Structures: Matrix
 
-matrix(v,r,c,byrow=FALSE)
+`matrix(v,r,c,byrow=FALSE)`
 	
-create matrix, 
-
-v=vector of values, 
-
-r=#rows, 
-
-c=#cols, 
+create matrix, v=vector of values, r=#rows, c=#cols, 
 
 if `byrow=TRUE` then values are filled in by row
 
