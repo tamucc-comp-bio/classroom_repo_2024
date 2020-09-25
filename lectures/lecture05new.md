@@ -684,15 +684,34 @@ tolower(x)
 
 ___
 
-###
+### R Data Structures: Data Frame
+
+A data frame holds "tidy" data
+
+Like a spreadsheet, each column is a type of categorization or measurement and each row is a different sample.  
+
+Each column can have a different data type.
+
+We can load an example data frame included with R called trees.  
 
 ```R
-
+rm(list=ls())
+data(trees)   #load example data frame
+str(trees)    #structure of data frame
+ncol(trees)   #num cols
+nrow(trees)   #num rows
+head(trees)   #display first few rows
+trees$Girth   #get column
+trees$Girth[1:5] #get 1st 5 rows of col Girth
+trees[1:5,1]    #get 1st 5 rows of 1st col
+trees[1:5,]$Girth #get 1st 5 rows of col Girth
+colnames(trees) <- tolower(colnames(trees)) # change column names to all lowercase
+str(trees)
 ```
 
 ___
 
-###
+### [Mind Expander 8.2](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlURDZQWkY5U1VSWU84WDU5Sk1HWE80NjdVVy4u)
 
 ```R
 
