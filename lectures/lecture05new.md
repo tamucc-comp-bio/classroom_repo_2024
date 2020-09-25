@@ -55,19 +55,13 @@ You are expected to start each lecture with your terminal window open and ready 
 ---
 
 
-
 ## [I. Lecture Slides](Week05new_files/Introduction%20to%20R%201.pptx)
 
+I converted the lecture slides into this markdown document. 
 
 ---
 
 ## II. Lecture Activities 
-
-### Install R & RStudio (If you haven't already)
-
-1. [R](https://cran.revolutionanalytics.com/)
-
-2. [RStudio](https://rstudio.com/products/rstudio/download/?utm_source=downloadrstudio&utm_medium=Site&utm_campaign=home-hero-cta#download)
 
 
 ___
@@ -829,33 +823,8 @@ ___
 
 ### [Mind Expander 8.3](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUQTRGOTA5UDRZMzlPSjEwTUxCVzBIOEdKRi4u)
 
-```R
-
-```
-
 ___
 
-###
-
-```R
-
-```
-
-___
-
-
-
-## III. Mind Expanders
-
-[Mind Expander 8.1](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMFpONVRLSkNYUU9VQ1RXVzhGODBPTFM1UC4u)
-
-[Mind Expander 8.2](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlURDZQWkY5U1VSWU84WDU5Sk1HWE80NjdVVy4u)
-
-[Mind Expander 8.3](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUQTRGOTA5UDRZMzlPSjEwTUxCVzBIOEdKRi4u)
-
-[Mind Expander 8.4](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMlRGTE9aQVQ3QUtBQlBOUEtHN1g3QUVDOS4u)
-
-[Mind Expander 8.5](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMlIwMFNWME1IUVJCWktXWkZYSk1RV0pONC4u)
 
 ---
 
@@ -863,4 +832,20 @@ ___
 ## HOMEWORK
 
 TBA
+
+[Mind Expander 8.4](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMlRGTE9aQVQ3QUtBQlBOUEtHN1g3QUVDOS4u)
+
+[Mind Expander 8.5](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMlIwMFNWME1IUVJCWktXWkZYSk1RV0pONC4u)
+
+### Install R & RStudio In Windows (not Ubuntu) (If you haven't already)
+
+If you have a Mac, then you have already installed R in lecture, you only need to install R studio
+
+If you are tech saavy, the just use these links (do not pay money)
+
+1. [R](https://cran.revolutionanalytics.com/)
+
+2. [RStudio](https://rstudio.com/products/rstudio/download/?utm_source=downloadrstudio&utm_medium=Site&utm_campaign=home-hero-cta#download)
+
+You could also follow the [CSB textbook instructions](http://computingskillsforbiologists.com/setup/statistical-computing/)
 
