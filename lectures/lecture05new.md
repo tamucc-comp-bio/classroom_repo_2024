@@ -713,37 +713,121 @@ ___
 
 ### [Mind Expander 8.2](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlURDZQWkY5U1VSWU84WDU5Sk1HWE80NjdVVy4u)
 
+___
+
+
+### R Working Directory
+
+Before you start reading and writing files, it is important to know where the working directory is
+
+`getwd(“path”)`  shows where you are, like `pwd` in `bash`
+
+`setwd(“path”)`	changes where you are, like `cd` in `bash`
+
+Note, root in windows is `C:/` rather than `/`
+
 ```R
+rm(list=ls())
+
+# where ever you were in bash when you opened R is where you will be in R
+getwd()
+
+# change working directory to CSB/r/sandbox
+setwd("~/CSB/r/sandbox")
+getwd()
 
 ```
 
 ___
 
-###
+
+### R Reading in Data from File
+
+You will typically read in your data from a comma or tab delimited file.  It is read in as a data frame by default
+
+Comma delimited files: 
+
+	`read.csv(“MyFile.csv”)` 
+	
+	`read.csv(“MyFile.csv”, header=TRUE) #csv has col headers`
+	
+	`read.csv(“MyFile.csv”, sep=“;”) #separator is semicolon`
+	
+	`read.csv(“MyFile.csv”, skip=5)   #skip 1st 5 lines`
+	
+
+Tab delimited files: `read.table()`
+
+See the help pages for both `read.csv` and `read.table` for complete functionality
+
 
 ```R
+help(read.csv)
+# to exit type 'q'
+```
 
+We will read  `H938_Euro_chr6.geno` into a variable called `ch6` in R. 
+
+```R
+#read in data
+#make sure you use the correct path for your computer
+ch6 <- read.table("../data/H938_Euro_chr6.geno", header=TRUE)
+str(ch6)
+dim(ch6)
+head(ch6)
+tail(ch6)
+
+```
+
+* This file contains 7 columns
+
+ * CHR – chromosome
+ 
+ * SNP – single nucleotide polym
+ 
+ * A1 – allelic state 1
+ 
+ * A2 – allelic state 2
+ 
+ * nA1A1 - # homozyg A1
+ 
+ * nA1A2 - # heterozyg
+ 
+ * nA2A2 - # homozyg A2
+
+___
+
+### R Writing Data
+
+You will typically write a dataframe to a csv or tab delimited file.
+
+Comma delimited files:
+
+	`write.csv(MyDF, “MyFile.csv”) `
+	
+	#don’t overwrite
+	
+	`write.csv(MyDF, “MyFile.csv”, append=TRUE) `	
+	
+	#no header row
+	
+	`write.csv(MyDF, “MyFile.csv”, col.names=FALSE)`
+
+See documentation for write, write.csv, write.table for full functionality
+
+Here we will save the file we just read into the variable `ch6` as a new comma delimited file named `H938_Euro_chr6.csv`
+
+```R
+write.csv(ch6, "H938_Euro_chr6.csv")
+
+# view files in present working directory
+list.files()
 ```
 
 ___
 
-###
 
-```R
-
-```
-
-___
-
-###
-
-```R
-
-```
-
-___
-
-###
+### [Mind Expander 8.3](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUQTRGOTA5UDRZMzlPSjEwTUxCVzBIOEdKRi4u)
 
 ```R
 
