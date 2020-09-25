@@ -56,7 +56,7 @@ ___
 
 
 
-## [I. Lecture Slides](https://github.com/tamucc-comp-bio/fall_2019/blob/master/lectures/Week10_files/Introduction%20to%20R%201.pptx)
+## [I. Lecture Slides](Week05new_files/Introduction%20to%20R%201.pptx)
 
 ## II. Lecture Activities 
 
@@ -65,6 +65,32 @@ ___
 1. [R](https://cran.revolutionanalytics.com/)
 
 2. [RStudio](https://rstudio.com/products/rstudio/download/?utm_source=downloadrstudio&utm_medium=Site&utm_campaign=home-hero-cta#download)
+
+
+---
+
+### What is R?
+
+R is a statistical computing language
+
+![](Week05new_files/R.png)
+
+* Free
+* Open source
+* Popular among biologists
+* Almost any analysis is available for free
+* Easy to use
+* Flexible
+* Command line interface
+* Linux, Win, Mac
+
+---
+
+### Running R from terminal
+
+
+
+
 
 ## III. Mind Expanders
 
