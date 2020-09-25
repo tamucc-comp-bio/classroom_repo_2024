@@ -344,7 +344,8 @@ You can view the contents of variables by simply typing their name
 > x
 [1] -1.2345
 > greeting
-[1] "Hi"```
+[1] "Hi"
+```
 
 Clear all variables:   
 
