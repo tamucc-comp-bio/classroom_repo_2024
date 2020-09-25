@@ -99,46 +99,11 @@ To check if you have `R`, goto your terminal window and enter the following comm
 $ R
 ```
 
-If you see this message (or something similar on a Mac) then you need to install `R`
-
-```
-Command 'R' not found, but can be installed with:
-```
-
-<details><summary>Win10-Ubuntu</summary>
-<p>
-
-Start by updating and upgrading your existing Ubuntu commands and apps:
-
-```
-sudo apt update
-sudo apt upgrade
-```
-
-</p>
-</details>
-
-<details><summary>Mac</summary>
-<p>
-
-Goto the [R download page](https://cran.revolutionanalytics.com/) and select the Mac OS X Download link. 
-
-Select the R-X.X.X.pkg download link
-
-![](Week05new_files/maxInstallR.png)
-
-If you have trouble with this, then consult the [CSB instructions](http://computingskillsforbiologists.com/setup/statistical-computing/)
-
-</p>
-</details>
-
-
-### Running R from terminal
-
-R comes preinstalled on most linux systems and is simple to access, just type `R` and hit your enter/return key
+If you see this (or similar), then R is installed and you can proceed. 
 
 ```
 $ R
+
 R version 3.6.3 (2020-02-29) -- "Holding the Windsock"
 Copyright (C) 2020 The R Foundation for Statistical Computing
 Platform: x86_64-pc-linux-gnu (64-bit)
@@ -160,7 +125,72 @@ Type 'q()' to quit R.
 >
 ```
 
-That is it, you are now in R.  Notice the command prompt is now a `>` instead of a `$` or a `%` depending on your computer.
+If you see this message (or something similar) then you need to install `R`
+
+```
+Command 'R' not found, but can be installed with:
+```
+
+<details><summary>Install R on Win10-Ubuntu</summary>
+<p>
+
+Start by updating and upgrading your existing Ubuntu commands and apps:
+
+```
+# this may take some time to complete if you have not been running these commands regularly
+sudo apt update
+sudo apt upgrade
+```
+
+
+
+</p>
+</details>
+
+<details><summary>Install R on Mac</summary>
+<p>
+
+Goto the [R download page](https://cran.revolutionanalytics.com/) and select the Mac OS X Download link. 
+
+Select the R-X.X.X.pkg download link
+
+![](Week05new_files/maxInstallR.png)
+
+If you have trouble with this, then consult the [CSB instructions](http://computingskillsforbiologists.com/setup/statistical-computing/)
+
+</p>
+</details>
+
+
+### Running R from terminal
+
+To run `R`, just type `R` and hit your enter/return key
+
+```
+$ R
+
+R version 3.6.3 (2020-02-29) -- "Holding the Windsock"
+Copyright (C) 2020 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+>
+```
+
+That is it, you are in an `R` shell, and `bash` commands will no longer work.  Notice the command prompt is now a `>` instead of a `$` or a `%` depending on your computer.
 
 ___
 
@@ -179,11 +209,17 @@ To do arithmetic, simply type in the mathematical statement to calculate and hit
 ```
 
 `+`		Addition
+
 `-` 	Subtraction
+
 `*`		Multiplication
+
 `/`		Division
+
 `^`		Exponentiation
+
 `%%`	Modulo (remainder from division)
+
 `%/%`	Integer Division
 
 
