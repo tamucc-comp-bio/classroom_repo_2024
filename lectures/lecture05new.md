@@ -571,28 +571,115 @@ nrow(B)
 ncol(B)
 ```
 
-___
+Matrix elments are indexed by row and col.
 
-###
+* `matrixName[rowNum,colNum]` 
+
+Arithmetic functions are typically applied to all elements in matrix
+
+* `sum()`, `mean()`, etc…
 
 ```R
+Z <- matrix(1:9, 3, 3)
+Z     #whole matrix
+Z[1,] #vector with first row
+Z[,3] #vector with third column
+Z[1:2, 2:3] #submatrix
+Z[c(1,3), c(1,3)] #submatrix
+mean(Z)
+```
+
+___
+
+### R Data Structures: Array
+
+`array(v,dim=c(row,col,m))`
+
+* create array, v=vector of values, row=#rows, col=#cols, m=#matrices
+	
+Number of elements in `v` should equal `row*col*m`
+
+Most matrix functions work on arrays
+
+* `dim()`; `nrow()`; `ncol()`
+
+Subsetting arrays similar to matrices
+
+* `array[row,col,matrix]`
+
+
+```R
+rm(list=ls())
+M <- array(1:24, dim=c(4,3,2))
+M
+dim(M)
+#return first matrix as matrix
+M[,,1]  
+#return first matrix as array
+M[,,1, drop=FALSE]
+```
+
+___
+
+### R Data Structures: List
+
+Used to store elements of different types and structures, e.g. vectors, matrices, etc
+
+`list(x=v1, y=v2, …)`
+
+create list, x=name of 1st data structure, v1=value(s), y=name of 2nd data structure, v2=value(s)
+
+Referencing specific values is similar to vectors, matrices, and arrays, but names can be used as well as indices.  
+
+Number of brackets specifies hierarchical level of data
+
+* first set of brackets are top level in hierarchy
+
+
+```R
+rm(list=ls())
+list(1,"A",3000)
+mylist <- list(Names=c("a","b","c","d"),
+               Values=c(3,1,2))
+mylist
+mylist[[1]]       #first item in list
+mylist[["Names"]] #item named "Names"
+mylist$Values     #item named "Values"
+mylist[[1]][4]    #4th element of 1st item
 
 ```
 
 ___
 
-###
+### R String Manipulation
+
+There are several tools for manipulating text strings.  Here are a few examples
+
+`strsplit`   divide string into list
+
+`substr`        return part of string
+
+`sub`                substitute charcters
+
+`paste`           join strings into 1
+
+`nchar`           return number of characters
+
+`toupper`  change case
+
+`tolower`  change case
+
 
 ```R
-
-```
-
-___
-
-###
-
-```R
-
+rm(list=ls())
+x <- "Sample-36"
+strsplit(x,'-')
+substr(x, start=8, stop=9)
+sub("36", "39", x)
+paste(x, "is smaller", sep=" ")
+nchar(x)
+toupper(x)
+tolower(x)
 ```
 
 ___
