@@ -78,7 +78,8 @@ Project examples: automatically process data from experimental apparatus; image 
 
 ---
 
-SECTION 1.  WELCOME TO THE MATRIX
+<details><summary>SECTION 1.  WELCOME TO THE MATRIX</summary>
+<p>
 
 * [08/21  Week00  Introduction & Data](lectures/lecture00.md)
   * [Assignment_0  Due, 08/28](assignments/assignment_0.md)
@@ -114,6 +115,10 @@ SECTION 1.  WELCOME TO THE MATRIX
   * [Install Anaconda & Jupyter, Due 10/04](http://computingskillsforbiologists.com/setup/basic-programming/), Due 10/04
 -->
 
+</p>
+</details>
+
+
 <details><summary>Quiz Results and Answers</summary>
 <p>
 
@@ -126,9 +131,7 @@ SECTION 1.  WELCOME TO THE MATRIX
 
 ---
 
-<details><summary>SECTION 2. DATA WRANGLING AND VISUALIZATION WITH R</summary>
-<p>
-
+SECTION 2. DATA WRANGLING AND VISUALIZATION WITH R
 
 * [09/25  Week10 Statistical Computing I](lectures/lecture05new.md)
 
@@ -144,9 +147,6 @@ SECTION 1.  WELCOME TO THE MATRIX
   * Graduate students, push your completed independent projects to GitHub on 12/04
 
 -->
-
-</p>
-</details>
 
 ---
 
