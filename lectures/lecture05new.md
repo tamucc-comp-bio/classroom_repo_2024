@@ -63,6 +63,7 @@ I converted the lecture slides into this markdown document so you will not use t
 
 ## II. Lecture Activities 
 
+We will not use `R Studio` today.  I want you to use the terminal to run R for now.  I will introduce `R Studio` in a future lecture.
 
 ___
 

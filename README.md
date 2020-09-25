@@ -129,9 +129,11 @@ SECTION 1.  WELCOME TO THE MATRIX
 <details><summary>SECTION 2. DATA WRANGLING AND VISUALIZATION WITH R</summary>
 <p>
 
+
+* [09/25  Week10 Statistical Computing I](lectures/lecture05new.md)
+
 <!-- 
 
-* [11/08  Week10 Statistical Computing I](https://github.com/tamucc-comp-bio/fall_2019/blob/master/lectures/lecture10.md)
   * No Assignment
 
 * [11/15  Week11 Statistical Computing II](https://github.com/tamucc-comp-bio/fall_2019/blob/master/lectures/lecture10.md)
