@@ -134,7 +134,7 @@ Command 'R' not found, but can be installed with:
 <details><summary>Install R on Win10-Ubuntu</summary>
 <p>
 
-Start by updating and upgrading your existing Ubuntu commands and apps:
+1. Start by updating and upgrading your existing Ubuntu commands and apps:
 
 ```
 # this may take some time to complete if you have not been running these commands regularly
@@ -142,6 +142,50 @@ sudo apt update
 sudo apt upgrade
 ```
 
+2. Install the dependencies need to add a new `apt` repository
+
+```
+sudo apt install dirmngr gnupg apt-transport-https ca-certificates software-properties-common
+```
+
+3. Check your version of Ubuntu because this will affect what you enter for step 4.
+
+```
+lsb_release -a
+```
+
+4. Add the CRAN repository to your system sources list.  This assumes you have ubuntu 20.04, 'focal'. If you have another version of ubuntu, then the lines of code need to be altered. 
+
+```
+# ubuntu 20.04, focal
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
+sudo add-apt-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu focal-cran40/'
+```
+
+```
+# ubuntu 18.04, bionic
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
+sudo add-apt-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran40/'
+```
+
+5. Install R v4.XX.  
+
+```
+# if R was not on your system before starting this procedure then:
+sudo apt install R-base
+
+# else if R was on your system, but it was an older version, such as 3.6, then
+sudo apt update
+sudo apt upgrade
+```
+
+6. Verify that you have successfully installed R v 4.XX
+
+```
+R --version
+```
+
+If the above instructions did not work, you can consult this [how to](https://linuxize.com/post/how-to-install-r-on-ubuntu-20-04/).
 
 
 </p>
@@ -201,10 +245,13 @@ R is built for statistics and so has all of the mathematical operations that you
 To do arithmetic, simply type in the mathematical statement to calculate and hit enter.
 
 ```
-> 17+3
-[1] 20
-> 17 + 3
-[1] 20
+> 34+5
+> 34 + 5
+> 34 - 5
+> 34 * 5
+> 34 / 5
+> 34 %% 5
+> 34 %/% 5
 >
 ```
 
@@ -221,6 +268,124 @@ To do arithmetic, simply type in the mathematical statement to calculate and hit
 `%%`	Modulo (remainder from division)
 
 `%/%`	Integer Division
+
+___
+
+### Equalities & Logic in R
+
+R can compare values and return either `TRUE` if the statement is true or `FALSE`.  
+
+```
+34 == 5
+34 != 5
+34 >= 5
+34 <= 5
+34>5 | 34<5
+34>5 & 17>3
+```
+
+==	Equal to
+
+!=	Not equal to
+
+>	Greater than
+
+<	Less than
+
+>=	Greater than or equal
+
+<= 	Less than or equal
+
+&	And
+
+|	Or
+
+!	Not
+
+___
+
+### R Variables
+
+Variables hold data. There are different types of data that can be stored.
+
+* *_Values_* are numbers or strings
+
+* *_Values_* can be assigned to variables using <-
+
+The name of a variable can be almost anything you want, but try to avoid punctuation other than `.` or `_` and do not begin a variable name with a number.
+
+```
+# put the value -1.2345 into a variable named 'x'
+> x <- -1.2345
+
+# put the value "Hi" into a variable named 'greeting'
+> greeting <- "Hi"
+
+```
+
+Note that numbers should not be quotified, but character strings need to be quotified.
+
+You can view the contents of variables by simply typing their name
+```
+
+> x
+
+> greeting
+```
+
+Clear all variables:   
+
+```
+rm(list=ls())
+```
+
+___
+
+###
+
+
+___
+
+###
+
+
+___
+
+###
+
+
+___
+
+###
+
+
+___
+
+###
+
+
+___
+
+###
+
+
+___
+
+###
+
+
+___
+
+###
+
+
+___
+
+###
+
+
+___
+
 
 
 ## III. Mind Expanders
