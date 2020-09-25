@@ -535,21 +535,21 @@ if `byrow=TRUE` then values are filled in by row
 
 Matrix math
 
-	%*%		matrix product
+* %*%		matrix product
 	
-	solve()	matrix inverse
+* solve()	matrix inverse
 	
-	diag()	diagonal values
+* diag()	diagonal values
 	
-	t()		transpose
+* t()		transpose
 	
 Matrix functions
 
-	dim()		dimensions, rows cols
+* dim()		dimensions, rows cols
 	
-	nrow()	# rows
+* nrow()	# rows
 	
-	ncol()	# cols
+* ncol()	# cols
 	
 
 ```R
