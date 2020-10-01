@@ -847,29 +847,31 @@ getwd()
 ___
 
 
-###
+### Read in `H938_Euro_chr6.geno`
 
+This file contains 7 columns
 
-```R
+* CHR – chromosome
 
-```
+* SNP – single nucleotide polym
 
-___
+* A1 – allelic state 1
 
-###
+* A2 – allelic state 2
 
+* nA1A1 - # homozyg A1
 
-```R
+* nA1A2 - # heterozyg
 
-```
-
-___
-
-###
-
+* nA2A2 - # homozyg A2
 
 ```R
-
+#make sure you use the correct path for your computer
+ch6 <- read.table("../data/H938_Euro_chr6.geno", 
+                  header=TRUE)
+dim(ch6)
+head(ch6)
+tail(ch6)
 ```
 
 ___
