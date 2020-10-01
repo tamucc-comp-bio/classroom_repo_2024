@@ -790,17 +790,17 @@ ___
 
 You will typically write a dataframe to a csv or tab delimited file.
 
-Comma delimited files:
+Comma delimited files (this is pseudo code, do not type in):
 
-	`write.csv(MyDF, “MyFile.csv”) `
-	
-	#don’t overwrite
-	
-	`write.csv(MyDF, “MyFile.csv”, append=TRUE) `	
-	
-	#no header row
-	
-	`write.csv(MyDF, “MyFile.csv”, col.names=FALSE)`
+`write.csv(MyDF, “MyFile.csv”) `
+
+#don’t overwrite
+
+`write.csv(MyDF, “MyFile.csv”, append=TRUE) `	
+
+#no header row
+
+`write.csv(MyDF, “MyFile.csv”, col.names=FALSE)`
 
 See documentation for write, write.csv, write.table for full functionality
 
@@ -816,6 +816,57 @@ list.files()
 ___
 
 
+### R Working Directory
+
+Before you start reading and writing files, it’s important to know where the working directory is
+
+`getwd(“path”)`
+
+ * shows where you are
+
+`setwd(“path”)`
+
+ * changes where you are
+
+Note, root in windows is C:/ rather than /.  
+
+_Pro tip: "tab to autocomplete" works in both the `R` terminal and R Studio, just as in the the `bash` shell._
+
+
+```R
+
+```
+
+___
+
+
+###
+
+
+```R
+
+```
+
+___
+
+###
+
+
+```R
+
+```
+
+___
+
+###
+
+
+```R
+
+```
+
+___
+
 ### [Mind Expander 8.3](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUQTRGOTA5UDRZMzlPSjEwTUxCVzBIOEdKRi4u)
 
 ___
@@ -826,7 +877,7 @@ ___
 
 ## HOMEWORK
 
-TBA
+Complete the Mind Expanders up through 8.5.  You can use both the CSB text book (remember the Mind Expanders are based in the "intermezzos") and the slides that are linked at the top of this page to gain the context required to complete this assignment.
 
 [Mind Expander 8.4](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMlRGTE9aQVQ3QUtBQlBOUEtHN1g3QUVDOS4u)
 
