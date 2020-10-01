@@ -818,7 +818,7 @@ ___
 
 ### R Working Directory
 
-Before you start reading and writing files, it’s important to know where the working directory is
+Before you start reading and writing files, it is important to know where the working directory is
 
 `getwd(“path”)`
 
@@ -834,7 +834,14 @@ _Pro tip: "tab to autocomplete" works in both the `R` terminal and R Studio, jus
 
 
 ```R
+rm(list=ls())
 
+getwd()
+
+#use your own path below
+setwd("C:/Users/cbird/Documents/CloudStation/Teaching/Summer_2019/PhilippinesWorkshop/CSB/r/sandbox")
+
+getwd()
 ```
 
 ___
