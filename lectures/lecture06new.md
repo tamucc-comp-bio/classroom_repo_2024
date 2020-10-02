@@ -428,7 +428,7 @@ ___
 ---
 
 
-## III. New Material Not Previously Covered
+## III. New Material Not Previously Covered: R Studio
 
 ### [R Studio](https://rstudio.com/) is a [GUI](https://en.wikipedia.org/wiki/Graphical_user_interface) Integrated Development Environment ([IDE](https://en.wikipedia.org/wiki/RStudio)) for `R` 
 
@@ -451,7 +451,7 @@ If you have a windows computer, you will need to separately install `R` in the w
 
 *If you installed R a while ago (more than a month ago), you should do it again or else problems will start to crop up*
 
-1. [R](https://cran.revolutionanalytics.com/)
+1. [R Install](https://cran.revolutionanalytics.com/)
 
 Regardless of your operating system, if you have not already installed R studio, you need to do that now.  On windows computers, install R studio in Windows.  
 
@@ -460,16 +460,11 @@ Regardless of your operating system, if you have not already installed R studio,
 2. [RStudio Install](https://rstudio.com/products/rstudio/download/?utm_source=downloadrstudio&utm_medium=Site&utm_campaign=home-hero-cta#download)
 
 
-```R
-
-```
-
-
 ___
 
 
 
-### `R Studio Layout`
+### `R Studio` Layout
 
 R Studio is organized, by default, into 4 panels:
 
@@ -501,7 +496,7 @@ Note that there can be several tabs in the panels, allowing you to toggle betwee
 ___
 
 
-### Acclimating to the R Studio IDE
+### Acclimating to the `R Studio` IDE
 
 Follow the instructions in the following image to see the difference between the `text editor` panel and the `console` pane.
 
@@ -551,131 +546,11 @@ Global Environment (upper right)
 ___
 
 
-### 
+## IV. New Material Not Previously Covered: More R
 
+From here forward, I request that you please work in R Studio, unless otherwise specified, to reduce minor issues that might crop up between platforms. However, it is important to realize that everything we are learning will also work in the basic R terminal from the linux/unix command line and with minor exceptions, allmost nothing we cover will be only usable in R Studio.
 
-
-```R
-
-```
-
-
-___
-
-
-
-### 
-
-
-
-```R
-
-```
-
-
-___
-
-
-
-### 
-
-
-
-```R
-
-```
-
-
-___
-
-
-
-### 
-
-
-
-```R
-
-```
-
-
-___
-
-
-
-### 
-
-
-
-```R
-
-```
-
-
-___
-
-
-
-### 
-
-
-
-```R
-
-```
-
-
-___
-
-
-
-### 
-
-
-
-```R
-
-```
-
-
-___
-
-
-
-### 
-
-
-
-```R
-
-```
-
-
-___
-
-
-
-### 
-
-
-
-```R
-
-```
-
-
-___
-
-
-
-### 
-
-
-
-```R
-
-```
-
+You should type commands into the R Studio editor and then execute them from there using your mouse or arrow keys and `ctrl` + `enter`.
 
 ### R Functions
 
@@ -715,6 +590,132 @@ isTriangular(4)
 isTriangular(91)
 
 ```
+### 
+
+
+
+```R
+
+```
+
+
+___
+
+
+
+### 
+
+
+
+```R
+
+```
+
+
+___
+
+
+
+### 
+
+
+
+```R
+
+```
+
+
+___
+
+
+
+### 
+
+
+
+```R
+
+```
+
+
+___
+
+
+
+### 
+
+
+
+```R
+
+```
+
+
+___
+
+
+
+### 
+
+
+
+```R
+
+```
+
+
+___
+
+
+
+### 
+
+
+
+```R
+
+```
+
+
+___
+
+
+
+### 
+
+
+
+```R
+
+```
+
+
+___
+
+
+
+### 
+
+
+
+```R
+
+```
+
+
+___
+
+
+
+### 
+
+
+
+```R
+
+```
+
+
 
 
 ___
