@@ -425,15 +425,48 @@ ___
 ### [Mind Expander 8.5](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMlIwMFNWME1IUVJCWktXWkZYSk1RV0pONC4u)
 
 
-___
+---
 
 
+## III. New Material Not Previously Covered
 
-### 
 
+### R Functions
+
+Thus far we have used several built-in functions of R
+
+`seq`, `for`, `if`, `while`, `print`, `sample`, `dim`, `head`, `tail`, `getwd`, `setwd`, …
+
+It is also possible to define your own functions
+
+```R
+# this is pseudo code, do not type in
+MyFunction <- function (optional arguments){
+	Execute commands
+	return(data)   # optional
+}
+```
+
+Functions must be read into memory before you can use them.  Like Las Vegas, what happens in a function, stays in a function... except for the data you `return`
 
 
 ```R
+# enter the following function into your terminal
+rm(list=ls())
+
+#check whether number is triangular
+isTriangular <- function(y){
+  #triangular numbers (T) defined by n(n+1)/2, thus
+  #y is triangular if the following is an integer
+  n <- (sqrt((8*y)+1) - 1) / 2
+  if(as.integer(n) == n){
+    return(TRUE) # function will end here in n is integer
+  }
+  #if n is not integer, return FALSE
+  return(FALSE)
+}
+isTriangular(4)
+isTriangular(91)
 
 ```
 
