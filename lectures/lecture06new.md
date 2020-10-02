@@ -8,7 +8,7 @@ ___
 
 You are expected to start each lecture with your terminal window open and ready to go.
 
-*_Today, we are transitioning to R Studio, so the instructions have changed slightly.  Please make sure your computer is ready._* 
+### *_Today, we are transitioning to R Studio, so the instructions have changed slightly.  Please make sure your computer is ready._* 
 
 <details><summary>Win10</summary>
 <p>
