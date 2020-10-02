@@ -492,6 +492,8 @@ ___
 
 ### Installing `R Studio`
 
+_If you already did this when following the instructions to prep your computer at the top of this doc, then you do not have to do this again._
+
 If you have a Mac and you already installed `R` for use in your terminal, you do not need to reinstall it.
 
 If you have a windows computer, you will need to separately install `R` in the windows environment even if you already installed it in Ubuntu.  Go to the following link, download R for Windows and run the installer as you would for any other windows app.  
@@ -506,9 +508,7 @@ Regardless of your operating system, if you have not already installed R studio,
 
 2. [RStudio Install](https://rstudio.com/products/rstudio/download/?utm_source=downloadrstudio&utm_medium=Site&utm_campaign=home-hero-cta#download)
 
-
 ___
-
 
 
 ### `R Studio` Layout
@@ -602,6 +602,8 @@ You should type commands into the R Studio `text editor` (upper left panel) and 
 
 ### Required Housekeeping for Win10 Only, Clone CSB Dir Into Your Windows Home Dir
 
+_If you already did this when following the instructions to prep your computer at the top of this doc, then you do not have to do this again._
+
 For now, we should all be in the `sandbox` for the `r` chapter in `CSB`. An just to make things a little more tricky, if you have windows, you cannot access the `CSB` repo that you cloned to your home directory in ubuntu. So, we have to clone it again, but this time to your windows home dir (at least what R Studio recognizes as your windows home dir, `Documents`).
 
 Open your ubuntu terminal (mac folks can take a break) and navigate to your windows `Documents` directory, then clone the CSB repo to there.
@@ -616,15 +618,40 @@ You can now leave ubuntu.
 
 ### R Working Directories
 
-Never has specifying the present working directory been more critical than in R Studio.  This is one achilles heels of R Studio where the linux terminal is actually more convenient. 
+*Never has specifying the present working directory been more critical than in R Studio.*  This is one achilles heels of R Studio where the linux terminal is actually more convenient and intuitive. 
 
 *_You will need to be vigilent in setting your present working directory each time you open `R Studio` and every time you switch between scripts that are found in different directories._* 
 
-
+When you open R Studio, you will generally be in your home directory for the operating system you are running R Studio in.  It cannot hurt to check:
 
 ```R
-
+# view the present working dir
+getwd()
 ```
+
+If you are not in your home directory, you can easily navigate there:
+
+```R
+# set the present working dir to home
+setwd(~)
+
+# view the present working dir
+getwd()
+```
+
+Now let us move to the `sandbox` for the `r` chapter in `CSB`
+
+```R
+# Make sure your CSB repo has been cloned by viewing the dirs 
+list.dirs(recursive=FALSE)
+
+# change working directory to CSB/r/sandbox
+setwd("~/CSB/r/sandbox")
+
+# view the present working dir
+getwd()
+```
+
 
 ### R Functions
 
@@ -662,7 +689,7 @@ Let us make our first R function:
 # enter the following line of code and function into your text editor (upper left panel), which should be empty
 rm(list=ls())
 
-#check whether number is triangular
+# function to check whether number is triangular
 isTriangular <- function(y){
   #triangular numbers (T) defined by n(n+1)/2, thus
   #y is triangular if the following is an integer
@@ -679,6 +706,10 @@ Make sure that after you enter your function into the editor that you execute it
 
 * either highlight the whole function or place the cursor on the first or last line of the function and `ctrl`+`enter` 
 
+This function identifies numbers that are triangular.
+
+![](Week06_files/triangular.png)
+
 After the function is loaded into the enviroment, it can be used.  Try it out:
 
 ```R
@@ -686,60 +717,206 @@ isTriangular(4)
 isTriangular(91)
 ```
 
+![](Week06_files/rstudio_fuctions.png)
+
 ### Sourcing R Functions
 
-If there are functions that you use frequently across different projects, you can save them into their own script and `source` them in a different script.
+If there are functions that you use frequently across different projects, you can save them into their own script and `source()` them in a different script.
+
+You can open a new R script (use mouse), copy and paste the `isTriangular` function into new blank script, save it to `~/CSB/r/sandbox/` with the name `triangular.R`, and close it.
+
+Once you have done that, we can use the `source()` command to read in the `isTriangular` function from the `triangular.R` script.  When you "source" a script, its entire contents are executed.
 
 ```R
+# clear environment
+rm(list=ls())
 
+# now isTriangular is gone and will not work
+isTriangular(4)  #should return an Error
+
+# source the triangular.R script to load the isTriangular() function
+source("triangular.R") # note that file names have to be quotfied to distinguish from variables
+isTriangular(4)
+isTriangular(91)
 ```
 
+![](Week06_files/rstudio_source.png)
 
 ___
 
 
 
-### 
+### More Function Sourcing
 
+We are going to add another function to the `triangular.R` script (open it).  
 
+The function will be called `findTriangular` and will accept an argument that sets the upper limit on the numbers to search for triangular numbers (between 1 and `max_number`) and will pass it into the function under the variable name `max_number`. Copy and paste it into `triangular.R`
 
 ```R
+# function to find and store triangular numbers
+findTriangular <- function(max_number){
+  to_test <- 1:max_number
+  triangular_numbers <- numeric(0)
+  for(i in to_test){
+    if(isTriangular(i)){
+      triangular_numbers <- c(triangular_numbers, i)
+    }
+  }
+  print(paste("There are", 
+              length(triangular_numbers), 
+              "triangular numbers between 1 and ", 
+              max_number))
+  return(triangular_numbers)
+}
+```
+
+Then save and close the `triangular.R` script. Now, you can source the script to load the function and use it.
+
+```R
+rm(list=ls())
+source("triangular.R")
+isTriangular(91)
+findTriangular(1000)
+```
+
+___
+
+
+### Even More Functions
+
+Can have no arguments
+
+* `myFunc <- function(){commands}`
+
+Can have multiple arguments. Variables outside of the function must be read into the function
+
+* `myFunc <- function(a,b,c){commands}`
+
+Can have default arguments. When run, a will be 2 unless another value is specified
+
+* `myFunc <- function(a=2){commands}`
+
+Do not have to return values
+
+Variables outside of the function are only available by passing them into the function, and vice versa
+
+You can explore these features by trying the following code (do not modify the `triangular.R` script)
+
+```R
+#addtional functions
+rm(list=ls())
+
+tell_fortune <- function(){
+  if(runif(1) < 0.9){
+    print("Today is going to change your life!")
+  } else {
+    print("You should have stayed in bed :-|")
+  }
+}
+tell_fortune()
+
+order_3 <- function(x,y,z){
+  return(sort(c(x,y,z)))
+}
+order_3(10,7,9)
+
+order_3_list <- function(x,y,z){
+  ordered_numbers <- sort(c(x,y,z))
+  return(list("1st" = ordered_numbers[1],
+              "2nd" = ordered_numbers[2],
+              "3rd" = ordered_numbers[3]))
+}
+order_3_list(10,7,9)
+
+split_string <- function(s, separator = "_"){
+  return(strsplit(s, separator)[[1]])
+}
+split_string("I_get_it!")
+```
+
+![](Week06_files/rstudio_evenMoreFunctions.png)
+
+___
+
+
+### R Packages & Libraries
+
+A package is a collection of R code, data, and functions that have been made publicly available
+
+* There are over 14,000 R packages
+
+* Packages must be installed
+
+  * `install.packages(“name_of_pkg”)`
+
+* Once installed, packages must be loaded
+
+  * `library(name_of_pkg)`
+
+*Note that packages that are being installed need to be quotified, but after they are installed, the should not be quotified.  Why do you think that is?*
+
+Where to find packages specialized for your research questions
+
+* https://cran.r-project.org/web/views/
+
+* https://github.com/ 
+
+* https://www.bioconductor.org/ 
+
+
+Making packages
+
+* [R Studio](https://support.rstudio.com/hc/en-us/articles/200486488-Developing-Packages-with-RStudio)
+
+* http://r-pkgs.had.co.nz/ 
+
+When you add a package, you are adding commands and functionality.  Once installed, packages must be called to be available to you using `library()`. 
+
+```R
+# Search for Packages
+RSiteSearch("AMOVA")
+
+# install all packages related to a particular field
+install.packages("ctv")
+
+# load the ctv package commands
+library(ctv)
 
 ```
 
+You can learn more about `ctv` [here](https://cran.r-project.org/web/packages/ctv/index.html). Click on the pdf for the manual. This was an example given by the book, so do not read too much into this.
 
 ___
 
 
 
-### 
+### R Random Numbers
 
+Random numbers are useful for simulations and customized tests for statistical significance
 
+* Random number from uniform dist
 
-```R
+  * `runif(number_of_random_nums)`
 
-```
+* Random number from normal distribution
 
+  * `rnorm(num_rands, mean=x, sd=y)`
 
-___
+* Random number from binomial dist
 
+  * `rbinom(num_rands, num_trials, 	probabilty)`
 
+* Random number from Poisson distribution
 
-### 
+  * `rpois(num_rands, lambda=x)`
 
+* Permute 
 
+  * `sample(vector_or_list, 	num_samps)`
 
-```R
+* Bootstrap
 
-```
-
-
-___
-
-
-
-### 
-
+  * `sample(vector_or_list, 	num_samps, replace = 	TRUE)`
 
 
 ```R
