@@ -434,7 +434,7 @@ ___
 
 `R Studio` was completely free, but it has become a "dot com" when it was acquired by Microsoft (I think).  It is still free for academic use.  If/When they charge for it, academics will stop using it.  It is still open source and could be forked, just as R was forked from [S](https://en.wikipedia.org/wiki/S_%28programming_language%29).  
 
-Connections: the Chief Engineer of R Studio is [Hadley Wickham](https://en.wikipedia.org/wiki/Hadley_Wickham), who coined and codified "tidy data". He will come up again when we get into "the tidyverse", which essentially replaces almost all basic R functionality with a different philosophy, and R 2.0 if you will.
+Connections: the Chief Engineer of R Studio is [Hadley Wickham](https://en.wikipedia.org/wiki/Hadley_Wickham), who coined and codified "tidy data". He will come up again when we get into "the tidyverse", which essentially replaces almost all basic R functionality with a different philosophy. I think of it as essentially R 2.0. Realize, however, you do NOT need R Studio to use the "tidyverse".
 
 ![](Week06_files/rstudio.png)
 
@@ -443,7 +443,7 @@ ___
 
 
 
-### 
+### Installing `R Studio`
 
 
 
@@ -456,13 +456,21 @@ ___
 
 
 
-### 
+### `R Studio Layout`
 
+R Studio is organized, by default, into 4 panels:
 
+* A text or code editor (upper left)
 
-```R
+* The `console`/`command line`/`terminal` (lower left)
 
-```
+* The `global environment` (upper right)
+
+* The `plots`/`help` windows (lower right)
+
+Note that there can be several tabs in the panels, allowing you to toggle between different screens of information.
+
+![](Week06_files/rstudio_layout.png)
 
 
 ___
