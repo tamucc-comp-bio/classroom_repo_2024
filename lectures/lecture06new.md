@@ -8,6 +8,8 @@ ___
 
 You are expected to start each lecture with your terminal window open and ready to go.
 
+*_Today, we are transitioning to R Studio, so the instructions have changed slightly.  Please make sure your computer is ready._* 
+
 <details><summary>Win10</summary>
 <p>
 
@@ -35,6 +37,35 @@ You are expected to start each lecture with your terminal window open and ready 
     sudo apt upgrade
     ```
 
+### NEW INSTRUCTIONS FOR TODAY
+
+#### Install `R` and `R Studio`
+
+If you have a windows computer, you will need to separately install `R` in the windows environment even if you already installed it in Ubuntu.  Go to the following link below, download R for Windows and run the installer as you would for any other windows app.  
+
+*If you installed R a while ago (more than a month ago), you should do it again or else problems will start to crop up*
+
+1. [R Install](https://cran.revolutionanalytics.com/)
+
+Regardless of your operating system, if you have not already installed R studio, you need to do that now.  On windows computers, install R studio in Windows.  
+
+*If you installed R Studio a while ago, you should do it again to upate to the latest version.*
+
+2. [RStudio Install](https://rstudio.com/products/rstudio/download/?utm_source=downloadrstudio&utm_medium=Site&utm_campaign=home-hero-cta#download)
+
+
+#### Clone CSB Repo to Your Windows Home Dir
+
+Just to make things a little more tricky, if you have windows, you cannot access the `CSB` repo that you cloned to your home directory in ubuntu with R Studio. So, we have to clone the repo again, but this time to your windows home dir (at least what R Studio recognizes as your windows home dir, `Documents`).
+
+Open your ubuntu terminal and navigate to your windows `Documents` directory, then clone the CSB repo to there.
+
+```bash
+# make sure you are in ubuntu
+cd /mnt/c/Users/YourWinUserName/Documents 
+git clone https://github.com/CSB-book/CSB.git
+```
+
 </p>
 </details>
 
@@ -50,7 +81,24 @@ You are expected to start each lecture with your terminal window open and ready 
     ```bash
     git clone https://github.com/CSB-book/CSB.git
     ```
-    
+
+### NEW FOR TODAY
+
+#### Install `R` and `R Studio`
+
+If you have a Mac and you already installed `R` for use in your terminal, you do not need to reinstall it.
+
+*If you installed R a while ago (more than a month ago), you should do it again or else problems will start to crop up*
+
+1. [R Install](https://cran.revolutionanalytics.com/)
+
+Regardless of your operating system, if you have not already installed R studio, you need to do that now. 
+
+*If you installed R Studio a while ago, you should do it again to upate to the latest version.*
+
+2. [RStudio Install](https://rstudio.com/products/rstudio/download/?utm_source=downloadrstudio&utm_medium=Site&utm_campaign=home-hero-cta#download)
+
+
 </p>
 </details>
 
@@ -442,7 +490,6 @@ Connections: the Chief Engineer of R Studio is [Hadley Wickham](https://en.wikip
 ___
 
 
-
 ### Installing `R Studio`
 
 If you have a Mac and you already installed `R` for use in your terminal, you do not need to reinstall it.
@@ -546,11 +593,38 @@ Global Environment (upper right)
 ___
 
 
-## IV. New Material Not Previously Covered: More R
+## IV. New Material Not Previously Covered: More R, but now in R Studio
 
 From here forward, I request that you please work in R Studio, unless otherwise specified, to reduce minor issues that might crop up between platforms. However, it is important to realize that everything we are learning will also work in the basic R terminal from the linux/unix command line and with minor exceptions, allmost nothing we cover will be only usable in R Studio.
 
-You should type commands into the R Studio editor and then execute them from there using your mouse or arrow keys and `ctrl` + `enter`.
+You should type commands into the R Studio `text editor` (upper left panel) and then execute them from there using your mouse or arrow keys and `ctrl` + `enter`.  You can save your work as you would in other GUI apps.
+
+
+### Required Housekeeping for Win10 Only, Clone CSB Dir Into Your Windows Home Dir
+
+For now, we should all be in the `sandbox` for the `r` chapter in `CSB`. An just to make things a little more tricky, if you have windows, you cannot access the `CSB` repo that you cloned to your home directory in ubuntu. So, we have to clone it again, but this time to your windows home dir (at least what R Studio recognizes as your windows home dir, `Documents`).
+
+Open your ubuntu terminal (mac folks can take a break) and navigate to your windows `Documents` directory, then clone the CSB repo to there.
+
+```bash
+# make sure you are in ubuntu
+cd /mnt/c/Users/YourWinUserName/Documents 
+git clone https://github.com/CSB-book/CSB.git
+```
+
+You can now leave ubuntu. 
+
+### R Working Directories
+
+Never has specifying the present working directory been more critical than in R Studio.  This is one achilles heels of R Studio where the linux terminal is actually more convenient. 
+
+*_You will need to be vigilent in setting your present working directory each time you open `R Studio` and every time you switch between scripts that are found in different directories._* 
+
+
+
+```R
+
+```
 
 ### R Functions
 
@@ -568,11 +642,24 @@ MyFunction <- function (optional arguments){
 }
 ```
 
-Functions must be read into memory before you can use them.  Like Las Vegas, what happens in a function, stays in a function... except for the data you `return`
+* You specify the name of the function by replaceing `MyFunction` with a name of your choosing
 
+* Replace `optional arguments` with a comma delimited list of variables (you choose the their names) that will store values you specify when running the function.  
+
+  * this is how you pass data into the function
+  
+  * variables defined outside of the function are not available inside of the function unless they are passed in as arguments
+  
+* A function is usually meant to return information, the `stdout`, that is availble outside of the function
+
+  * you can specify the `stdout` with the `return` command 
+
+Remember, functions must be read into the environment before you can use them.  Like Las Vegas, what happens in a function, stays in a function... except for the data you `return`
+
+Let us make our first R function:
 
 ```R
-# enter the following function into your terminal
+# enter the following line of code and function into your text editor (upper left panel), which should be empty
 rm(list=ls())
 
 #check whether number is triangular
@@ -586,13 +673,22 @@ isTriangular <- function(y){
   #if n is not integer, return FALSE
   return(FALSE)
 }
+```
+
+Make sure that after you enter your function into the editor that you execute it to load it into the environment and make it available for use.
+
+* either highlight the whole function or place the cursor on the first or last line of the function and `ctrl`+`enter` 
+
+After the function is loaded into the enviroment, it can be used.  Try it out:
+
+```R
 isTriangular(4)
 isTriangular(91)
-
 ```
-### 
 
+### Sourcing R Functions
 
+If there are functions that you use frequently across different projects, you can save them into their own script and `source` them in a different script.
 
 ```R
 
