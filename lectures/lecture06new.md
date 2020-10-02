@@ -241,13 +241,13 @@ ___
 
 ### Writing Good Code
 
-Use descriptive names with CamelCase or words_separated_by underscores
+Use descriptive names with [camelCase](https://en.wikipedia.org/wiki/Camel_case) or words_separated_by underscores
 
-* Files 	– model_fitting.R   
+* Files 	– `model_fitting.R`   
 
-* Variables 	– body_mass
+* Variables 	– `body_mass`
 
-* Functions 	– calculate_cv
+* Functions 	– `calculate_cv`
 
 Be consistent in use of spaces
 
@@ -272,9 +272,25 @@ if (b == 5) {
 }
 ```
 
+Document your code so that it is easy to understand what you are trying to accomplish
+
+* After a shebang!, the first line(s) of your R script should describe what the R script does and how to use it
+
+* Provide descriptions of what your blocks of code do in the line(s) preceding the block of code
+
+* Use tabs to align comments
+
+Use empty lines to break up sections of code
+
+Load libraries and set hard-coded variables at the beginning in one location, rather than scattering them throughout the script
+
+![](Week06_files/formatted_code.png)
+
 ###########################################################
 
 Auto formatting in R Studio
+
+The `Code` drop down menu contains functions specific to code formatting
 
 * Code / Reformat Code
 
