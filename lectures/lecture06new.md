@@ -422,14 +422,8 @@ if(y%%2 == 0){
 ___
 
 
+### [Mind Expander 8.5](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMlIwMFNWME1IUVJCWktXWkZYSk1RV0pONC4u)
 
-### 
-
-
-
-```R
-
-```
 
 ___
 
