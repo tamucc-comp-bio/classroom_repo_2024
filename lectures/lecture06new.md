@@ -460,13 +460,21 @@ ___
 
 R Studio is organized, by default, into 4 panels:
 
-* A text or code editor (upper left)
+* A text editor (upper left)
 
-* The `console`/`command line`/`terminal` (lower left)
+  * this is where you view and edit your scripts
+
+* The `console`/`terminal` (lower left)
+
+  * this gives you access to the R command line, just as we have been using in our terminal windows
 
 * The `global environment` (upper right)
 
+  * here you can view your data containers (i.e. variables) and their attributes
+
 * The `plots`/`help` windows (lower right)
+
+  * here you can view plots or search for help
 
 Note that there can be several tabs in the panels, allowing you to toggle between different screens of information.
 
@@ -476,18 +484,47 @@ Note that there can be several tabs in the panels, allowing you to toggle betwee
 ___
 
 
+### Acclimating to the R Studio IDE
 
-### 
+Follow the instructions in the following image to see the difference between the `text editor` panel and the `console` pane.
 
+![](Week06_files/rstudio_acclimation.png)
 
+Text Editor (upper left)
 
-```R
+* Place to craft your code
 
-```
+  * To identify code to run, either highlight with mouse or place cursor anywhere on that line
+  
+  * To run code on line, use the following keystrokes: `Ctrl` + `Enter`
+  
+  * To run code on all lines: `Ctrl` + `Shift` + `S`
+  
+  * try it
 
+Console (lower left)
+
+* Native `R` interface
+
+  * Without R Studio, this is how you would interface with R
+
+  * this work exactly like R did when run in your terminals
+
+Type in the following code in your text editor to save values into variables `x` and `y`, then run it.  _Note that your line numbers in the text editor will not be exactly the same as in the image._
+
+![](Week06_files/rstudio_acclimation2.png)
+
+Global Environment (upper right)
+
+* Note that when you ran your code, the values for `x` and `y` showed up in the global environment
+
+  * this is where you can see all variables that have been defined
+  
+  * you can also see information about the variables that is equivalent to the `str(variable)` command
+  
+    * for example, now you can see that `x` is a "value", and not a "vector", "matrix", "array", "list", or "data frame"
 
 ___
-
 
 
 ### 
