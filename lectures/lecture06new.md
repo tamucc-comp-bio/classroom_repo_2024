@@ -599,6 +599,8 @@ From here forward, I request that you please work in R Studio, unless otherwise 
 
 You should type commands into the R Studio `text editor` (upper left panel) and then execute them from there using your mouse or arrow keys and `ctrl` + `enter`.  You can save your work as you would in other GUI apps.
 
+___
+
 
 ### Required Housekeeping for Win10 Only, Clone CSB Dir Into Your Windows Home Dir
 
@@ -615,6 +617,9 @@ git clone https://github.com/CSB-book/CSB.git
 ```
 
 You can now leave ubuntu. 
+
+___
+
 
 ### R Working Directories
 
@@ -652,6 +657,7 @@ setwd("~/CSB/r/sandbox")
 getwd()
 ```
 
+___
 
 ### R Functions
 
@@ -719,6 +725,9 @@ isTriangular(91)
 
 ![](Week06_files/rstudio_fuctions.png)
 
+___
+
+
 ### Sourcing R Functions
 
 If there are functions that you use frequently across different projects, you can save them into their own script and `source()` them in a different script.
@@ -743,7 +752,6 @@ isTriangular(91)
 ![](Week06_files/rstudio_source.png)
 
 ___
-
 
 
 ### More Function Sourcing
@@ -894,19 +902,19 @@ ___
 
 Random numbers are useful for simulations and customized tests for statistical significance
 
-* Random number from uniform dist
+* Random number from [uniform distribution](https://en.wikipedia.org/wiki/Uniform_distribution_(continuous))
 
   * `runif(number_of_random_nums)`
 
-* Random number from normal distribution
+* Random number from [normal distribution](https://en.wikipedia.org/wiki/Normal_distribution)
 
   * `rnorm(num_rands, mean=x, sd=y)`
 
-* Random number from binomial dist
+* Random number from [binomial distribution](https://en.wikipedia.org/wiki/Binomial_distribution), aka coin flipping
 
   * `rbinom(num_rands, num_trials, 	probabilty)`
 
-* Random number from Poisson distribution
+* Random number from [Poisson distribution](https://en.wikipedia.org/wiki/Poisson_distribution)
 
   * `rpois(num_rands, lambda=x)`
 
@@ -914,12 +922,23 @@ Random numbers are useful for simulations and customized tests for statistical s
 
   * `sample(vector_or_list, 	num_samps)`
 
-* Bootstrap
+* [Bootstrapping](https://en.wikipedia.org/wiki/Bootstrapping_%28statistics%29)
 
   * `sample(vector_or_list, 	num_samps, replace = 	TRUE)`
 
 
 ```R
+rm(list=ls())
+
+runif(3)            #random numbers from uniform distribution
+
+rnorm(5, 15, 5)     #random numbers from normal distribution, simulate quantitative phenotypes
+rbinom(1, 10, 0.5)  #random numbers from binomial distribution, simulate coin flipping, genetic drift, genotypes
+rpois(6, 10)        #random numbers from Poisson distribution, simulate count data
+
+x <- 1:10
+sample(x,10)              #permutation test, randomly assign individuals to treatments
+sample(x,10,replace=TRUE) #bootstrapping
 
 ```
 
@@ -928,52 +947,128 @@ ___
 
 
 
-### 
-
-
-
-```R
-
-```
+### Mind Expander 6
 
 
 ___
 
 
+### R Loops are Slow
 
-### 
+For and while loops in R are easy to use but are very slow because R runs commands 1 by 1 and does not know what is coming next.  
 
+In faster languages, like `C`, code is compiled and all commands are known before running, allowing for optimization.
+
+Here we use a for loop to calculate the mean of each row in a very large matrix filled with random numbers and record the length of time to complete the task
 
 
 ```R
+rm(list=ls())
 
+#make a matrix with 10000 rows and columns filled with uniform random numbers between 0 and 1
+M <- matrix(runif(10000*10000),10000,10000)
+
+#Function that calculates row means of M without vectorization
+get_row_means <- function(M){
+#set up vector to capture results
+row_means <- rep(1, nrow(M))
+#loop through rows, calc the mean of each,
+#and save into row_means vector
+for(i in 1:nrow(M)){
+  row_means[i] <- mean(M[i,])
+}
+return(row_means)
+}
+
+#measure time to complete get_row_means
+system.time(get_row_means(M))
 ```
 
+![](Week06_files/rstudio_slowloop.png)
 
 ___
 
 
 
-### 
+### Vectorized R Loops are Fast
 
+Vectorized functions can run loops much faster because R only has to figure out the flow for 1 element in the vector and the code runs much faster. 
 
+The built-in command, `rowMeans()`, is vectorized and does the same thing as the function we defined previously.
+
+Now we will vectorize the calculation of row means and measure how long it takes to complete the task
 
 ```R
-
+#measure time to complete vectorized rowMeans()
+system.time(rowMeans(M))
 ```
 
+![](Week06_files/rstudio_fastloop.png)
 
 ___
 
 
+### DIY Vectorization of Loops with `apply()`
 
-### 
+`lapply(list_of_values, function)`
 
+* applies a function to each element in list and returns a list of results
 
+* note that `unlist(list_of_vals)` changes the list into a vector
+
+`sapply(list_of_values, function)`
+
+* Just like lapply, but returns a vector
+
+Let us try it out.  
+
+In the example below, the user-defined function `count_nucl` accepts 2 arguments `(seq, nucl)`. The list `DNAlist` populates `seq`, the second argument is explicitly specified  in the `sapply` statement: , `nucl =  ‘A’`
 
 ```R
+rm(list=ls())
+
+#use lapply to create list of matrices and make list filled with NA
+Mlist <- as.list(rep(NA, length = 20))
+
+#function to generate small random matrices
+randMat <- function(x){
+  return(matrix(rnorm(25),5,5))
+}
+Mlist <- lapply(Mlist, randMat)
+
+
+#use lapply to find largest eigen val in each matrix
+Meig <- lapply(Mlist, function(x) return(eigen(x, only.values=TRUE)$values[1]))
+print(unlist(Meig))
+
+#use sapply to count nucleotides
+DNAlist <- list(A='GTTTCG',
+                B='GCCGCA',
+                C='TTATAG', 
+                D='CGACGA')
+				
+#function to count nucleotides
+count_nucl <- function(seq, nucl){
+
+  #return list of positions with match
+  pos <- gregexpr(pattern=nucl, text=seq)[[1]]
+  
+  #change -1, no match, to 0
+  if(pos[1] == "-1"){
+    return(0)
+  } else {
+    return(length(pos))
+  }
+}
+
+numAs <- sapply(DNAlist, count_nucl, nucl = 'A')
+print(numAs)
+numGs <- sapply(DNAlist, count_nucl, nucl = 'G')
+print(numGs)  
 
 ```
+
+![](Week06_files/rstudio_diyfastloop.png)
 
 
 ___
