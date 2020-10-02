@@ -1,6 +1,8 @@
-# Week05 R Boot Camp II: Statistical Computing Ch 8
+# Week06 R Boot Camp II: Statistical Computing Ch 8
 
 ###  Assignment 5 is due by beginning of class (complete Mind Expanders 8.2-8.5)
+
+___
 
 ## Computer Preparation
 
@@ -61,7 +63,7 @@ I converted the lecture slides into this markdown document so you will not use t
 
 ---
 
-## II. Review Material Covered 
+## II. Review Material Covered for Homework
 
 ### R Reading in Data from File
 
@@ -214,28 +216,75 @@ ___
 ___
 
 
-### 
+### R Scripts
 
+Scripts are text files that contain the commands you give to R and have many advantages in biological research.  Your text editor (Notepad ++ or BBedit) is used to write scripts and has many functions built in to aid in code writing.  R Studio a special development environment for writing, testing, and running R scripts that we will cover shortly, but not yet.
 
+* Recycling
 
-```R
+  * similar analyses can be adapted quickly
 
-```
+* Automation
+
+  * if you make a mistake, it’s easy to fix and redo analysis
+
+* Documentation
+
+  * analyses are precisely recorded for evaluation 
+
+* Share
+
+  * submit with your manuscript, review for errors
 
 ___
 
 
+### Writing Good Code
 
-### 
+Use descriptive names with CamelCase or words_separated_by underscores
 
+* Files 	– model_fitting.R   
 
+* Variables 	– body_mass
+
+* Functions 	– calculate_cv
+
+Be consistent in use of spaces
 
 ```R
+# poor formatting
+X<-5*7
 
+# good formatting
+X <- 5*7
+X <- 5 * 7
+M <- matrix(25, 5, 5)
+Z <- mean(m, na.rm == TRUE)
 ```
 
-___
+Use indenting to organize hierarchical code
 
+```R
+if (b == 5) {
+	do(something)
+} else {
+	do(something_else)
+}
+```
+
+###########################################################
+
+Auto formatting in R Studio
+
+* Code / Reformat Code
+
+* Code  / Reindent Lines 
+
+![](Week06_files/rstudio_codeformatting.png)
+
+##########################################################
+
+___
 
 
 ### 
