@@ -970,13 +970,13 @@ M <- matrix(runif(10000*10000),10000,10000)
 
 #Function that calculates row means of M without vectorization
 get_row_means <- function(M){
-#set up vector to capture results
-row_means <- rep(1, nrow(M))
-#loop through rows, calc the mean of each,
-#and save into row_means vector
-for(i in 1:nrow(M)){
-  row_means[i] <- mean(M[i,])
-}
+	#set up vector to capture results
+	row_means <- rep(1, nrow(M))
+	
+	#loop through rows, calc the mean of each, and save into row_means vector
+	for(i in 1:nrow(M)){
+		row_means[i] <- mean(M[i,])
+	}
 return(row_means)
 }
 
@@ -1041,12 +1041,14 @@ Mlist <- lapply(Mlist, randMat)
 Meig <- lapply(Mlist, function(x) return(eigen(x, only.values=TRUE)$values[1]))
 print(unlist(Meig))
 
+
 #use sapply to count nucleotides
 DNAlist <- list(A='GTTTCG',
                 B='GCCGCA',
                 C='TTATAG', 
                 D='CGACGA')
-				
+
+
 #function to count nucleotides
 count_nucl <- function(seq, nucl){
 
@@ -1063,6 +1065,7 @@ count_nucl <- function(seq, nucl){
 
 numAs <- sapply(DNAlist, count_nucl, nucl = 'A')
 print(numAs)
+
 numGs <- sapply(DNAlist, count_nucl, nucl = 'G')
 print(numGs)  
 
@@ -1075,244 +1078,244 @@ ___
 
 
 
-### 
+### R Debugging
 
+Errors in the code (bugs) are common
+
+* Some errors elicit warning messages or cause code to stop
+
+* Silent errors can be hard to detect, thus it is important to test your code 
+
+  * Use test data with known answer
+  
+  * Check values in data structures (in the global environment, upper right panel)
+  
+* You can also pause your code using `browser()`
 
 
 ```R
+#Debugging
+rm(list=ls())
 
+myfun <- function(i,x){
+	for(z in 1:i){
+		x <- x*2
+		browser()
+}
+return(x)
+}
+myfun(3,4)
 ```
 
+![](Week06_files/rstudio_debugging.png)
 
+After you run the code, you enter debugging mode at the line of `browser()` command in your script
+
+* View local variables with `ls()`
+
+* Check values of variables
+
+* Press n to execute next statement
+
+* Check value of `x` again
+
+* Press Q to exit browser and function
+
+* Press c to continue function and exit browser
+
+![](Week06_files/rstudio_debugging2.png)
 
 
 ___
 
 
+### Basic R Statistics
 
-### 
-
+R is a stats language and has many statistical functions built-in
 
 
 ```R
+rm(list=ls())
+data(iris)    #load built-in iris dataset
+
+#useful commands for exploring data
+str(iris)     #show columns in data
+summary(iris) #show summary stats
+table(iris$Species) #number of observations by spp
+table(iris$Species, iris$Petal.Width) #number of observations by species and petal width
+range(iris$Petal.Length)  #min and max
+by(iris$Sepal.Length, iris$Species, mean) #mean by group
+cor(iris$Sepal.Length,iris$Petal.Length) #correlation
+pairs(iris) #matrix scatterplot to visualize correlations
+rank(iris$Sepal.Length) #return rank of each observation from smallest to largest
+
+#extract rows of data frame based on value match
+noSetosa <- subset(iris, iris$Species != "setosa")
+
+#return row num based on condition match
+which(iris$Petal.Length > 6)
+which.max(iris$Petal.Length)
 
 ```
+
+![](Week06_files/rstudio_stats.png)
+
+
+t-test:  compare two samples
+
+* `t.test(vector1, vector2)`
+
+* `t.test(dataVector ~ groupVector)`
+
+Linear regression
+
+* `lm(responseVector ~ predictorVector)`
+
+ANOVA
+
+* `lm(responseVector ~ predictorVector)`
+
+* `anova()`
+
+let us try some of these:
+
+```R
+#t-test   compare two samples
+t.test(Sepal.Width[Species == "setosa"], 
+	 Sepal.Width[Species == "versicolor"],
+	 data=iris)
+
+t.test(Sepal.Width ~ Species, data=noSetosa)
+
+#linear regression
+linear_model <- lm(Sepal.Width ~ Sepal.Length, data=iris)
+summary(linear_model)
+
+#anova   compare many samples
+petalL_ANOVA <- lm(Petal.Length ~ Species, data=iris)
+anova(petalL_ANOVA)
+summary(petalL_ANOVA)
+
+```
+
+![](Week06_files/rstudio_stats2.png)
 
 ___
 
 
-
-### 
-
-
-
-```R
-
-```
+### Mind Expander 8.7
 
 ___
 
 
+### R Basic Plotting
 
-### 
+R also has built in commands for plotting results
 
+* [Scatter Plots](https://en.wikipedia.org/wiki/Scatter_plot)
+
+  * `plot(responseVctr ~ predictorVctr)`
+
+* Draw line on plot
+
+  * `abline(c(y-intercept,slope))`
+
+* [Histograms](https://en.wikipedia.org/wiki/Histogram)
+
+  * `hist(vector)`
+
+* [Bar plots](https://en.wikipedia.org/wiki/Bar_chart)
+
+  * barplot(vector)
+
+* [Box plots](https://en.wikipedia.org/wiki/Box_plot)
+
+  * `boxplot(responseVctr ~ predictorVctr)`
 
 
 ```R
+rm(list=ls())
+data(iris)    #load built-in iris dataset
 
+#scatter plot
+plot(Petal.Length ~ Petal.Width, data=iris)
+plot(Petal.Length ~ Petal.Width, data=iris, pch=4)
+plot(Petal.Length ~ Petal.Width, data=iris, pch=4,
+   col="blue")
+abline(c(0,1))
+plot(Petal.Length ~ Petal.Width + Species, 
+   data=iris, col=Species)
+
+#histogram
+hist(Petal.Length, data=iris)
+hist(Petal.Length, data=iris, breaks=7)
+hist(Petal.Length, data=iris, breaks=c(1,2,5,9),
+   freq=FALSE)
+
+#bar plots
+barplot(height = iris$Petal.Width, 
+	  beside=TRUE, col=iris$Species)
+
+#box plots
+boxplot(Petal.Width ~ Species, data=iris,
+	  col=c("red","green","blue"))
 ```
+
+![](Week06_files/rstudio_plots.png)
 
 ___
 
 
+### Running R Script from Linux Command Line
 
-### 
+You may want to run your r script on a super computer or use it in a bash script
 
+* `Rscript my_script.R`
+
+You can pass arguments from bash into R
+
+* `Rscript my_script.R arg1 arg2`
+
+In your rscript you must pass the arguments into a variable
+
+* `args <- commandArgs(TRUE)`
+
+It is a best practice to define default values and order the arguments so the optional follow the required
+
+Print the variable values to document what settings were used
 
 
 ```R
+#capturing arguments from the command line in an r script 
+args <- commandArgs(TRUE) #read the arguments
+num_args <- length(args)  #count the arguments
 
+#set default values
+input_file <- "test.txt"
+num_reps <- 10
+start_point <- 3.14
+
+#change default value if argument given 
+if(num_args >= 1){
+input_file <- args[1]
+}
+if(num_args >= 2){
+num_reps <- args[2]
+}
+if(num_args >= 3){
+start_point <- args[3]
+}
+
+print(c(input_file, num_reps, start_point))
 ```
+
+![](Week06_files/Rscript.png)
 
 ___
 
 
+## V. Homework
 
-### 
+Complete exercise 8.23.3 in the text - I will link a github repo for this assignment
 
-
-
-```R
-
-```
-
-___
-
-
-
-### 
-
-
-
-```R
-
-```
-
-___
-
-
-
-### 
-
-
-
-```R
-
-```
-
-___
-
-
-
-### 
-
-
-
-```R
-
-```
-
-___
-
-
-
-### 
-
-
-
-```R
-
-```
-
-___
-
-
-
-### 
-
-
-
-```R
-
-```
-
-___
-
-
-
-### 
-
-
-
-```R
-
-```
-
-___
-
-
-
-### 
-
-
-
-```R
-
-```
-
-___
-
-
-
-### 
-
-
-
-```R
-
-```
-
-___
-
-
-
-### 
-
-
-
-```R
-
-```
-
-___
-
-
-
-### 
-
-
-
-```R
-
-```
-
-___
-
-
-
-### 
-
-
-
-```R
-
-```
-
-___
-
-
-
-### 
-
-
-
-```R
-
-```
-
-___
-
-
-
-### 
-
-
-
-```R
-
-```
-
-___
-
-
-
-### 
-
-
-
-```R
-
-```
-
-___
 
