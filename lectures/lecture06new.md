@@ -430,7 +430,7 @@ ___
 
 ## III. New Material Not Previously Covered
 
-### [R Studio](https://rstudio.com/) is a [GUI](https://en.wikipedia.org/wiki/Graphical_user_interface) [Integrated Development Environment](https://en.wikipedia.org/wiki/RStudio) for `R` 
+### [R Studio](https://rstudio.com/) is a [GUI](https://en.wikipedia.org/wiki/Graphical_user_interface) Integrated Development Environment ([IDE]](https://en.wikipedia.org/wiki/RStudio)) for `R` 
 
 `R Studio` was completely free, but it has become a "dot com" when it was acquired by Microsoft (I think).  It is still free for academic use.  If/When they charge for it, academics will stop using it.  It is still open source and could be forked, just as R was forked from [S](https://en.wikipedia.org/wiki/S_%28programming_language%29).  
 
