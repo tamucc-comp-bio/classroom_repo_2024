@@ -303,36 +303,120 @@ The `Code` drop down menu contains functions specific to code formatting
 ___
 
 
-### 
+### R `for` and `while` Loops
 
+Allows you to perform repetitive tasks in a few lines of code. A `for` loop has a predetermined number of cycles where as a `while` loop will cycle continuously until a condition is met.  Be careful with `while` loops because they could run infinitely if the condition is never met.
 
+Anatomy of the `for` loop
 
 ```R
+# pseudo code, do not type in
+for(i in list_or_vector){
+	Do something with i
+}
+```
+
+Anatomy of  the `while` loop
+
+```R
+# pseudo code, do not type in
+while(condition is TRUE){
+	Execute commands
+	Update condition
+}
+```
+
+Exit a loop using `break`
+
+```R
+if(i >7){break}
+```
+
+Try out the code below that demonstrates how `for` and `while` loops work differently by performing the same task.
+
+```R
+rm(list=ls())
+myvec <- 1:10     #make vector from 1 to 10
+for(i in myvec){  #for each value in myvec
+  a <- i^2        #square it
+  print(a)        #and print the square
+}                 #goto next value in myvec
+
+i <- 1            #set i = 1
+while(i <= 10){   #while i <= 10 
+  a <- i^2        #square i
+  print(a)        #print the square
+  i <- i + 1      #increase i by 1
+}                 #goto while line
 
 ```
 
 ___
 
 
+### [Mind Expander 8.4](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMlRGTE9aQVQ3QUtBQlBOUEtHN1g3QUVDOS4u)
 
-### 
-
-
-
-```R
-
-```
 
 ___
 
 
+### R `if`-`then` Logic Statements
 
-### 
+Run code conditionally, only if something is true or false.
 
-
+Anatomy of the if statement
 
 ```R
+# this is pseudocode, do not type in
+if(a condition is TRUE){    
+	execute these commands
+} 
+```
 
+```R
+# this is pseudocode, do not type in
+if(a condition is TRUE){    
+	execute these commands
+} else {
+	execute these other commands
+}
+```
+
+For multiple conditions, replace 
+
+```R
+# this is pseudocode, do not type in
+if(a condition is TRUE){    
+	execute these commands
+} else if(2nd condition is TRUE){
+	execute these other commands
+}
+else {
+	execute these other commands
+}
+```
+
+Try out this code to see how `if`-`then` statements work
+
+```R
+#if statements
+rm(list=ls())
+x <- seq(1,50,3)
+y <- sample(x, size=1, replace = TRUE) #randomly sample 1 value from vector x
+
+if(y%%2 == 0){
+  print(paste(y, "is even"))
+} else {
+  print(paste(y, "is odd"))
+}
+
+# copy this code and paste it into R terminal a few times.  What is happening?
+y <- sample(x, size=1, replace = TRUE) #randomly sample 1 value from vector x
+if(y%%2 == 0){
+  print(paste(y, "is even"))
+} else if(y%%2 != 0) {
+  print(paste(y, "is odd"))
+}
 ```
 
 ___
