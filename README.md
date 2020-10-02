@@ -135,11 +135,12 @@ SECTION 2. DATA WRANGLING AND VISUALIZATION WITH R
 
 * [09/25  Week10 Statistical Computing I](lectures/lecture05new.md)
 
+  * Assignment 5 (Mind Expanders 8.3-8.5) Due 10/02
+
+* [11/15  Week11 Statistical Computing II](lectures/lecture06new.md)
+
 <!-- 
 
-  * No Assignment
-
-* [11/15  Week11 Statistical Computing II](https://github.com/tamucc-comp-bio/fall_2019/blob/master/lectures/lecture10.md)
   * [Assignment 11, Due 11/25](https://classroom.github.com/a/2ids3KFf)
   
 * [11/22  Week11 Data Wrangling and Visualization with The Tidyverse](https://github.com/tamucc-comp-bio/fall_2019/blob/master/lectures/lecture12.md)
