@@ -445,6 +445,19 @@ ___
 
 ### Installing `R Studio`
 
+If you have a Mac and you already installed `R` for use in your terminal, you do not need to reinstall it.
+
+If you have a windows computer, you will need to separately install `R` in the windows environment even if you already installed it in Ubuntu.  Go to the following link, download R for Windows and run the installer as you would for any other windows app.  
+
+*If you installed R a while ago (more than a month ago), you should do it again or else problems will start to crop up*
+
+1. [R](https://cran.revolutionanalytics.com/)
+
+Regardless of your operating system, if you have not already installed R studio, you need to do that now.  On windows computers, install R studio in Windows.  
+
+*If you installed R Studio a while ago, you should do it again to upate to the latest version.*
+
+2. [RStudio Install](https://rstudio.com/products/rstudio/download/?utm_source=downloadrstudio&utm_medium=Site&utm_campaign=home-hero-cta#download)
 
 
 ```R
@@ -518,7 +531,7 @@ Console (lower left)
 
     * the `console` is the `R` command line
 
-    *  the `terminal` is a rudimentary `bash` command line
+    *  the `terminal` is a rudimentary `bash` command line (try using `ls` in the `terminal` tab in the lower left panel)
 
 
 Type in the following code in your text editor to save values into variables `x` and `y`, then run it.  _Note that your line numbers in the text editor will not be exactly the same as in the image._
@@ -527,7 +540,7 @@ Type in the following code in your text editor to save values into variables `x`
 
 Global Environment (upper right)
 
-* Note that when you ran your code, not only did it show up in the console, but the values for `x` and `y` showed up in the global environment
+* Note that when you ran your code, not only did it show up in the `console` (make sure you select the `console` tab, but the values for `x` and `y` showed up in the `global environment`
 
   * this is where you can see all variables that have been defined
   
