@@ -466,7 +466,11 @@ R Studio is organized, by default, into 4 panels:
 
 * The `console`/`terminal` (lower left)
 
-  * this gives you access to the R command line, just as we have been using in our terminal windows
+  * this gives you access to the R or bash command line, just as we have been using in our terminal windows
+  
+    * the `console` is the `R` command line
+
+    *  the `terminal` is a rudimentary `bash` command line
 
 * The `global environment` (upper right)
 
@@ -510,13 +514,20 @@ Console (lower left)
 
   * this work exactly like R did when run in your terminals
 
+  * the difference between the `console` and the `terminal` is 
+
+    * the `console` is the `R` command line
+
+    *  the `terminal` is a rudimentary `bash` command line
+
+
 Type in the following code in your text editor to save values into variables `x` and `y`, then run it.  _Note that your line numbers in the text editor will not be exactly the same as in the image._
 
 ![](Week06_files/rstudio_acclimation2.png)
 
 Global Environment (upper right)
 
-* Note that when you ran your code, the values for `x` and `y` showed up in the global environment
+* Note that when you ran your code, not only did it show up in the console, but the values for `x` and `y` showed up in the global environment
 
   * this is where you can see all variables that have been defined
   
