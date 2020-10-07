@@ -133,16 +133,16 @@ Project examples: automatically process data from experimental apparatus; image 
 
 SECTION 2. DATA WRANGLING AND VISUALIZATION WITH R
 
-* [09/25  Week10 Statistical Computing I](lectures/lecture05new.md)
+* [09/25  Week05 Statistical Computing I](lectures/lecture05new.md)
 
   * Assignment 5 (Mind Expanders 8.3-8.5) Due 10/02
 
-* [11/15  Week11 Statistical Computing II](lectures/lecture06new.md)
+* [10/02  Week06 Statistical Computing II](lectures/lecture06new.md)
 
-<!-- 
+  * [Assignment 06, Due 10/07](https://classroom.github.com/a/ATshIvd8)
 
-  * [Assignment 11, Due 11/25](https://classroom.github.com/a/2ids3KFf)
-  
+<!--
+
 * [11/22  Week11 Data Wrangling and Visualization with The Tidyverse](https://github.com/tamucc-comp-bio/fall_2019/blob/master/lectures/lecture12.md)
   * [Assignment 12, Due 12/04](https://classroom.github.com/a/1cpXbLT8) *Undergrads Only*
   * Graduate students, push your completed independent projects to GitHub on 12/04
