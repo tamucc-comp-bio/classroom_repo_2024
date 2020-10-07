@@ -1316,6 +1316,6 @@ ___
 
 ## V. Homework
 
-Complete exercise 8.23.3 in the text - I will link a github repo for this assignment
+[Complete exercise 8.23.3 in the text - I will link a github repo for this assignment](https://classroom.github.com/a/ATshIvd8)
 
 
