@@ -277,6 +277,8 @@ abline(c(0,1)) # add the 1-to-1 line
 
 *_Tidyverse to the rescue!_*
 
+We will learn more about how this all works, for now, marvel at the power of the tidyverse
+
 ```r 
 results %>%                                   # the %>% is a pipe, in bash it was |
   select(-JPG) %>%                            # remove the JPG column, we have to remove this col for the next command to work
