@@ -201,11 +201,15 @@ Continuing from the bioconductor website, with an eye on the pseudocode hints, w
 BiocManager::install("EBImage")
 ```
 
+To review, the following lines should be in your text editor panel
 
 ```R
-
+install.packages("BiocManager")
+library(BiocManager)
+BiocManager::install("EBIimage")
 ```
 
+Note that we prefixed the `install` command with `BiocManager::`.  We did this because `install` could be a function in another R package.  When this is a concern, you can add the name of the package for the command you want to run to make sure the correct function is run. 5% of mysterious R behavior is caused by different packages having functions with the same name but the user does not realize it.
 
 ```R
 
