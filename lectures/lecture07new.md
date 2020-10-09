@@ -274,14 +274,17 @@ abline(c(0,1)) # add the 1-to-1 line
 tidyverse to the rescue!
 
 ```r 
-results %>%                       # start a data pipeline from results, the %>% is a pipe, in bash it was |
-  select(-JPG) %>%                # remove the JPG column, we have to remove this col for the next command to work
+results %>%                                   # the %>% is a pipe, in bash it was |
+  select(-JPG) %>%                            # remove the JPG column, we have to remove this col for the next command to work
   pivot_wider(names_from = tp, values_from = area) %>% # pivot_wider makes columns named according to the unique names in the tp col and fills them with the values from the area column
-  ggplot(aes(x=t1, y=t2)) +       # assign data to plot elements
-  geom_point() +                  # visualize the data with points
-  geom_abline() +                 # add y=x line
-  labs(y="Projected leaf area, tp2",  # add axis labels
-       x="Projected leaf area, tp1")
+  ggplot(aes(x=t1, y=t2)) +                   # assign data to plot elements, in ggplot, the + means more ggplot settings follow on next line
+    geom_point(color="red4") +                # visualize the data with points
+    geom_abline(linetype = "dashed") +        # draw y=x line
+    labs(y="Projected leaf area (time 2)",    # edit the labels
+       x="Projected leaf area (time 1)",
+       title = "Change in Leaf Area",
+       subtitle = "Tidyverse >> Base R") +
+    theme_classic()                           # make it pretty
 ```
 
 
