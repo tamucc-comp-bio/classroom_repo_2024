@@ -141,6 +141,9 @@ SECTION 2. DATA WRANGLING AND VISUALIZATION WITH R
 
   * [Assignment 06, Due 10/07](https://classroom.github.com/a/ATshIvd8)
 
+* [10/07  Week07 Data Wrangling](lectures/lecture07new.md)
+
+
 <!--
 
 * [11/22  Week11 Data Wrangling and Visualization with The Tidyverse](https://github.com/tamucc-comp-bio/fall_2019/blob/master/lectures/lecture12.md)
