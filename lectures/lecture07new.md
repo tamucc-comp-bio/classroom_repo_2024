@@ -310,4 +310,21 @@ mean of the differences
 
 ## III. Tidyverse Data Visualization w/ `ggplot`
 
+Today, I am going to project a ppt slide show.  I would like you to set up R Studio as follows:
 
+* [download the `data_visualization_ggplot2.R` script which has the code from the ppt slides](Week07_files/data_visualization_ggplot2.R)
+
+  * move `data_visualization_ggplot2.R` into your `CSB/data_wrangling/sandbox` dir
+  
+  * open `data_visualization_ggplot2.R` in R Studio, and execute the lines as we go in the ppt.
+
+[Mind Expander 9.5](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUOE9LM0ZWOUZWVlZTUzBKQkZaUkcwRVg4Qy4u)
+
+[Mind Expander 9.6](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlURDFBNlc2UFFEOVJVMEpaWVZJWkJJNEc1US4u)
+
+---
+
+
+## HOMEWORK
+
+TBA

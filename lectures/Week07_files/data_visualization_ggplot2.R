@@ -5,6 +5,8 @@ rm(list=ls())
 getwd()
 #set working directory to location of this script
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+
+# if this does not return a dir that ends with `CSB/data_wrangling/sandbox` then save this script to your data_wrangling text box and re run the previous lines of code
 getwd()
 
 # This file contains all commands of the Chapter 9, "Data Wrangling and Visualisation"
