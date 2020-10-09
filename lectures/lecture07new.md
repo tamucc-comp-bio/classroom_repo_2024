@@ -277,7 +277,7 @@ abline(c(0,1)) # add the 1-to-1 line
 
 *_[`Tidyverse`](https://www.tidyverse.org/) to the rescue!_*
 
-We will learn more about how this all works, for now, marvel at the power of the `Tidyverse`](https://www.tidyverse.org/)
+We will learn more about how this all works, for now, marvel at the power of the [`Tidyverse`](https://www.tidyverse.org/)
 
 ```r 
 results %>%                                   # the %>% is a pipe, in bash it was |
@@ -310,7 +310,7 @@ mean of the differences
               -7096.227
 ```
 
-## III. `Tidyverse`](https://www.tidyverse.org/) Data Visualization w/ `ggplot2`
+## III. [`Tidyverse`](https://www.tidyverse.org/) Data Visualization w/ `ggplot2`
 
  R packages for data science
 
