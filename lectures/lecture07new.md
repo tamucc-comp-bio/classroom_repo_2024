@@ -163,6 +163,8 @@ results <- data.frame(JPG = character(), area = numeric(), stringsAsFactors = FA
 
 ---
 
+Following the hint given above, we run the following
+
 ```R
 > source("http://bioconductor.org/biocLite.R")
 Error: With R version 3.5 or greater, install Bioconductor packages using BiocManager; 
@@ -185,14 +187,18 @@ The downloaded binary packages are in
 	C:\Users\cbird\AppData\Local\Temp\RtmpOGXlUN\downloaded_packages
 ```
 
+And then we can load the package using `library`
 
 ```R
-
+> library(BiocManager)
+Bioconductor version 3.11 (BiocManager 1.30.10),
+  ?BiocManager::install for help
 ```
 
+Continuing from the bioconductor website, with an eye on the pseudocode hints, we see that there is a new way to load the `EBImage` bioconductor library. biocLite has been depricated (scroll to bottom of bioconductor page to see)
 
 ```R
-
+BiocManager::install("EBImage")
 ```
 
 
