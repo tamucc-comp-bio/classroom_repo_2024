@@ -312,6 +312,10 @@ mean of the differences
 
 ## III. `Tidyverse`](https://www.tidyverse.org/) Data Visualization w/ `ggplot2`
 
+ R packages for data science
+
+The tidyverse is an opinionated collection of R packages designed for data science. All packages share an underlying design philosophy, grammar, and data structures.
+
 Today, I am going to project a ppt slide show.  I would like you to set up R Studio as follows:
 
 * download the [`data_visualization_ggplot2.R`](Week07_files/data_visualization_ggplot2.R) script which has the code from the ppt slides
