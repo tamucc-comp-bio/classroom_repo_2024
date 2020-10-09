@@ -119,9 +119,11 @@ Regardless of your operating system, if you have not already installed R studio,
 
 The first key to completing the exercise is using the information provided to you in the `CSB/r/solutions` repository
 
-#### `WilmesUnpub_pseudo.md`
+---
 
-## Hints and pseudo code for Exercise 8.23.3 (Wilmes, unpublished)
+### `WilmesUnpub_pseudo.md`
+
+#### Hints and pseudo code for Exercise 8.23.3 (Wilmes, unpublished)
 
 1. Write a `for` loop that processes all images using the function `getArea` that is provided in `CSB/r/solutions/getArea.R`. The function accepts a single file name as argument, and returns the projected leaf area, measured in pixels. Your loop should record the leaf area for each image, and store it in the data frame `results`. To loop over all files, you can use the function `list.files` along with its pattern matching option, to produce a list of all the files with extension `.JPG` in the directory `CSB/r/data/leafarea/`. Work in your `sandbox` or change paths in the `getArea.R` function accordingly.
 
@@ -159,3 +161,46 @@ results <- data.frame(JPG = character(), area = numeric(), stringsAsFactors = FA
 
 - to run a t-test in `R`, simply call `t.test`
 
+---
+
+```R
+> source("http://bioconductor.org/biocLite.R")
+Error: With R version 3.5 or greater, install Bioconductor packages using BiocManager; 
+see https://bioconductor.org/install
+```
+
+If you follow the instructions given in the error message, you will find that bioconductor can now be installed with the package manager
+
+```R
+> install.packages("BiocManager")
+Installing package into ‘C:/Users/cbird/Documents/R/win-library/4.0’
+(as ‘lib’ is unspecified)
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.0/BiocManager_1.30.10.zip'
+Content type 'application/zip' length 100063 bytes (97 KB)
+downloaded 97 KB
+
+package ‘BiocManager’ successfully unpacked and MD5 sums checked
+
+The downloaded binary packages are in
+	C:\Users\cbird\AppData\Local\Temp\RtmpOGXlUN\downloaded_packages
+```
+
+
+```R
+
+```
+
+
+```R
+
+```
+
+
+```R
+
+```
+
+
+```R
+
+```
