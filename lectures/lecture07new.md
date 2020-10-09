@@ -275,9 +275,9 @@ plot(tp2 ~ tp1, xlab = "Projected leaf area, tp1", ylab = "Projected leaf area, 
 abline(c(0,1)) # add the 1-to-1 line
 ```
 
-*_Tidyverse to the rescue!_*
+*_[`Tidyverse`](https://www.tidyverse.org/) to the rescue!_*
 
-We will learn more about how this all works, for now, marvel at the power of the tidyverse
+We will learn more about how this all works, for now, marvel at the power of the `Tidyverse`](https://www.tidyverse.org/)
 
 ```r 
 results %>%                                   # the %>% is a pipe, in bash it was |
@@ -310,7 +310,7 @@ mean of the differences
               -7096.227
 ```
 
-## III. Tidyverse Data Visualization w/ `ggplot`
+## III. `Tidyverse`](https://www.tidyverse.org/) Data Visualization w/ `ggplot2`
 
 Today, I am going to project a ppt slide show.  I would like you to set up R Studio as follows:
 
