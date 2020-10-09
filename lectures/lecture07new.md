@@ -115,9 +115,11 @@ Regardless of your operating system, if you have not already installed R studio,
 
 ---
 
-## II. Review Material Covered for Homework
+## I. Review Material Covered for Homework
 
 The first key to completing the exercise is using the information provided to you in the `CSB/r/solutions` repository
+
+#### `WilmesUnpub_pseudo.md`
 
 ```
 ## Hints and pseudo code for Exercise 8.23.3 (Wilmes, unpublished)
