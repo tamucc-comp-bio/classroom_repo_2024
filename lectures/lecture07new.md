@@ -121,7 +121,6 @@ The first key to completing the exercise is using the information provided to yo
 
 #### `WilmesUnpub_pseudo.md`
 
-```
 ## Hints and pseudo code for Exercise 8.23.3 (Wilmes, unpublished)
 
 1. Write a `for` loop that processes all images using the function `getArea` that is provided in `CSB/r/solutions/getArea.R`. The function accepts a single file name as argument, and returns the projected leaf area, measured in pixels. Your loop should record the leaf area for each image, and store it in the data frame `results`. To loop over all files, you can use the function `list.files` along with its pattern matching option, to produce a list of all the files with extension `.JPG` in the directory `CSB/r/data/leafarea/`. Work in your `sandbox` or change paths in the `getArea.R` function accordingly.
@@ -160,4 +159,3 @@ results <- data.frame(JPG = character(), area = numeric(), stringsAsFactors = FA
 
 - to run a t-test in `R`, simply call `t.test`
 
-```
