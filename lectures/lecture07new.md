@@ -19,11 +19,11 @@ rm(list = ls())
 # RUN THE FOLLOWING LINE IN THE CONSOLE (LOWER LEFT PANEL)
 install.packages("tidyverse")
 
-# ADD THE FOLLOWING LINE TO YOUR TEXT DOCUMENT (UPPER LEFT PANEL)
+# ADD THE FOLLOWING LINE TO YOUR TEXT DOCUMENT (UPPER LEFT PANEL), THEN EXECUTE IT (CTRL-ENTER)
 library(tidyverse)
 ```
 
-### *_Today, we are transitioning to R Studio, so the instructions have changed slightly.  Please make sure your computer is ready._* 
+### *_GENERAL COMPUTER SETUP (SHOULD ALREADY BE DONE)_* 
 
 <details><summary>Win10</summary>
 <p>
