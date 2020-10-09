@@ -195,22 +195,93 @@ Bioconductor version 3.11 (BiocManager 1.30.10),
   ?BiocManager::install for help
 ```
 
-Continuing from the bioconductor website, with an eye on the pseudocode hints, we see that there is a new way to load the `EBImage` bioconductor library. biocLite has been depricated (scroll to bottom of bioconductor page to see)
+Continuing from the bioconductor website, with an eye on the pseudocode hints, we see that there is a new way to load the `EBImage` bioconductor library. biocLite has been depricated (scroll to bottom of bioconductor page to see).
+
+_Note that we prefix the `install` command with `BiocManager::`.  We did this because `install` could be a function in another R package.  When this is a concern, you can add the name of the package for the command you want to run to make sure the correct function is run. 5% of mysterious R behavior is caused by different packages having functions with the same name but the user does not realize it._
 
 ```R
 BiocManager::install("EBImage")
 ```
 
-To review, the following lines should be in your text editor panel
+#### To review, the following lines should be in your text editor panel, documenting how you installed the `EBImage` library from bioconductor.
 
 ```R
 install.packages("BiocManager")
 library(BiocManager)
 BiocManager::install("EBIimage")
+library("EBImage")
 ```
 
-Note that we prefixed the `install` command with `BiocManager::`.  We did this because `install` could be a function in another R package.  When this is a concern, you can add the name of the package for the command you want to run to make sure the correct function is run. 5% of mysterious R behavior is caused by different packages having functions with the same name but the user does not realize it.
+#### Now we can continue addressing the question. By building the data frame of results from the images
 
 ```R
+# make sure you are in the right working diretory
+setwd("C:/Users/cbird/Documents/CSB/r/sandbox")
 
+# source the getArea.R function
+source("../solutions/getArea.R")
+
+# make list of files to processes
+files <- list.files("../data/leafarea", pattern = ".JPG")
+
+# create a data frame to record results
+results <- data.frame(JPG = character(), area = numeric(), stringsAsFactors = FALSE)
+
+# run function getArea on all images
+for (f in files) {
+	area <- getArea(f)
+	results[nrow(results) + 1, ] <- c(f, area)
+}
+
+# convert the area column in the results data frame to numeric data
+results$area <- as.numeric(results$area)
 ```
+
+_Note that it is poor form to write a function with dependencies, like `EBImage`, without including the code to install and load the package in the script.  This is the fault of the script author, but you will find that the onus falls on you to solve these types of issues with open source software. Imagine if you had to write the function from scratch; it is usually easier to troubleshoot an existing script that is theoretically function with a little tweaking._
+
+#### Next we extract information from the file names to rearrange the data frame
+
+Let us break down what is about to happen.  The function `substr()`, which is short for substring, is being applied to the `JPG` column in `results`.  If you type `substr` into the help panel (lower right) you will see what the 1 and 2 mean.
+
+```R
+# extract time point information and save into new column called tp then make the tp datatype be a factor
+results$tp <- substr(results$JPG, 1, 2)
+results$tp <- as.factor(results$tp)
+```
+
+The `sapply` function is fast for loop.  The vector given to the loop is column `JPG`. One by one, each value in the column is stored into the variable `x` and then the commands `unlist(strsplit(x, "[_]|[.]"))[2])` are run on `x`.  
+
+A function called `strsplit` can be used to break up the file names by delimiters (characters that signify a column break). Here we use the `_` and `.` to break up the name and then select the second "column" to keep.  `strsplit()` outputs a list, so the `unlist()` command is used to convert that list to a vector, and then we grab the second element in the vector `[2]`, which is the plant information
+
+```R
+# extract plant information
+results$plant <- sapply(results$JPG, function(x) unlist(strsplit(x, "[_]|[.]"))[2])
+results$plant <- as.factor(results$plant)
+```
+
+#### And then we can plot the results
+
+Here, we will use base R to make a plot, and then we will give you a taste of "the tidyverse" by using `ggplot` to make the figure.
+
+```r 
+# rearrange data into vectors for plotting
+tp1 <- results[results$tp == "t1", ]$area
+tp2 <- results[results$tp == "t2", ]$area
+plot(tp2 ~ tp1, xlab = "Projected leaf area, tp1", ylab = "Projected leaf area, tp2")
+abline(c(0,1)) # add the 1-to-1 line
+```
+
+tidyverse to the rescue!
+
+```r 
+results %>%                       # start a data pipeline from results, the %>% is a pipe, in bash it was |
+  select(-JPG) %>%                # remove the JPG column, we have to remove this col for the next command to work
+  pivot_wider(names_from = tp, values_from = area) %>% # pivot_wider makes columns named according to the unique names in the tp col and fills them with the values from the area column
+  ggplot(aes(x=t1, y=t2)) +       # assign data to plot elements
+  geom_point() +                  # visualize the data with points
+  geom_abline() +                 # add y=x line
+  labs(y="Projected leaf area, tp2",  # add axis labels
+       x="Projected leaf area, tp1")
+```
+
+
