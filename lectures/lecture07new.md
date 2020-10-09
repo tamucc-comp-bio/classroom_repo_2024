@@ -1,4 +1,4 @@
-# Week07 R Data Wrangling w/ Tidyverse R Package Ch 9
+# Week07 R Data Visualization w/ Tidyverse R Package Ch 9
 
 ###  Assignment 6 is due by beginning of class (complete Mind Expanders 8.2-8.5)
 
@@ -115,7 +115,11 @@ Regardless of your operating system, if you have not already installed R studio,
 
 ---
 
-## I. Review Material Covered for Homework
+## [I. Lecture Slides](Week07_files/ggplot2_1.pptx)
+
+---
+
+## II. Review Material Covered for Homework
 
 The first key to completing the exercise is using the information provided to you in the `CSB/r/solutions` repository
 
@@ -271,7 +275,7 @@ plot(tp2 ~ tp1, xlab = "Projected leaf area, tp1", ylab = "Projected leaf area, 
 abline(c(0,1)) # add the 1-to-1 line
 ```
 
-tidyverse to the rescue!
+*_Tidyverse to the rescue!_*
 
 ```r 
 results %>%                                   # the %>% is a pipe, in bash it was |
@@ -286,5 +290,24 @@ results %>%                                   # the %>% is a pipe, in bash it wa
        subtitle = "Tidyverse >> Base R") +
     theme_classic()                           # make it pretty
 ```
+
+#### Lastly, run the statistical test, using Base R
+
+```r 
+> t.test(tp1, tp2, paired = TRUE, alternative = "less")
+
+	Paired t-test
+
+data:  tp1 and tp2
+t = -20.01, df = 21, p-value = 1.856e-15
+alternative hypothesis: true difference in means is less than 0
+95 percent confidence interval:
+      -Inf -6486.002
+sample estimates:
+mean of the differences 
+              -7096.227
+```
+
+## III. Tidyverse Data Visualization w/ `ggplot`
 
 
