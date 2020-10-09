@@ -6,7 +6,22 @@ ___
 
 ## Computer Preparation
 
-You are expected to start each lecture with your terminal window open and ready to go.
+You are expected to start this lecture with R Studio open with a fresh and empty text document in the upper left panel and a clean environment.
+
+```R
+# clear all variables from environment
+rm(list = ls())
+```
+
+### *_PLEASE INSTALL TIDYVERSE IN R STUDIO AS SOON AS YOU READ THIS_*
+
+```
+# RUN THE FOLLOWING LINE IN THE CONSOLE (LOWER LEFT PANEL)
+install.packages("tidyverse")
+
+# ADD THE FOLLOWING LINE TO YOUR TEXT DOCUMENT (UPPER LEFT PANEL)
+library(tidyverse)
+```
 
 ### *_Today, we are transitioning to R Studio, so the instructions have changed slightly.  Please make sure your computer is ready._* 
 
