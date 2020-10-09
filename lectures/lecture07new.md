@@ -1,6 +1,6 @@
-# Week06 R Boot Camp II: Statistical Computing Ch 8
+# Week07 R Data Wrangling w/ Tidyverse R Package Ch 9
 
-###  Assignment 5 is due by beginning of class (complete Mind Expanders 8.2-8.5)
+###  Assignment 6 is due by beginning of class (complete Mind Expanders 8.2-8.5)
 
 ___
 
@@ -36,8 +36,6 @@ You are expected to start each lecture with your terminal window open and ready 
     sudo apt update
     sudo apt upgrade
     ```
-
-### NEW INSTRUCTIONS FOR TODAY
 
 #### Install `R` and `R Studio`
 
@@ -81,8 +79,6 @@ git clone https://github.com/CSB-book/CSB.git
     ```bash
     git clone https://github.com/CSB-book/CSB.git
     ```
-
-### NEW FOR TODAY
 
 #### Install `R` and `R Studio`
 
