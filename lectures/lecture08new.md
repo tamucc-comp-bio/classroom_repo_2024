@@ -1,4 +1,4 @@
-# Week07 R Data Visualization w/ Tidyverse R Package Ch 9
+# Week08 R Data Wrangling w/ Tidyverse R Package Ch 9
 
 ###  Assignment 6 is due by beginning of class (complete Mind Expanders 8.2-8.5)
 
