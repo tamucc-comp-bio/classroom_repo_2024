@@ -8,12 +8,14 @@ ___
 
 You are expected to start this lecture with R Studio open with a fresh and empty text document in the upper left panel and a clean environment.
 
+### *_GENERAL COMPUTER SETUP (SHOULD ALREADY BE DONE)_* 
+
+<details><summary>Tidyverse Install</summary>
+<p>
 ```R
 # clear all variables from environment
 rm(list = ls())
 ```
-
-### *_PLEASE INSTALL TIDYVERSE IN R STUDIO AS SOON AS YOU READ THIS_*
 
 ```
 # RUN THE FOLLOWING LINE IN THE CONSOLE (LOWER LEFT PANEL)
@@ -23,7 +25,8 @@ install.packages("tidyverse")
 library(tidyverse)
 ```
 
-### *_GENERAL COMPUTER SETUP (SHOULD ALREADY BE DONE)_* 
+</p>
+</details>
 
 <details><summary>Win10</summary>
 <p>
