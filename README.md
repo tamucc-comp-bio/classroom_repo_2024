@@ -141,7 +141,11 @@ SECTION 2. DATA WRANGLING AND VISUALIZATION WITH R
 
   * [Assignment 06, Due 10/07](https://classroom.github.com/a/ATshIvd8)
 
-* [10/07  Week07 Data Visualization w/ Tidyverses `ggplot2` R Package](lectures/lecture07new.md)
+* [10/07  Week07 Data Visualization w/ Tidyverse](lectures/lecture07new.md)
+
+  * [Assignment 07, Due 10/16](assignments/assignment_7new.md)
+
+* [10/16  Week08 Data Wrangling w/ Tidyverse](lectures/lecture08new.md)
 
 
 <!--
