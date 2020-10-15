@@ -228,21 +228,28 @@ We have already covered reading in data, but `tidyverse` has its own commands fo
   * `read_csv` - specialized version of `read_delim`
   * `read_tsv` - specialized version of `read_delim`
 
-Here, we are going to use `read_excel` which is from the `readxl` package that we installed and loaded above.
+You do not have to use the `tidyverse` commands for reading in files, but if you are committing to using the `tidyverse` philosophy, then you might as well use them.
+
+Here, we are going to use `read_excel` which is from the `readxl` package that we installed and loaded above.  `readxl` is just one of several extended libraries in the tidyverse and is not included when you load `tidyverse`.  This is why we had to install and load it separately above.
 
 ```r
-
+covid_cases_zip <- read_excel("../data/zip_count_2020-08-18_2020-10-11.xlsx")
 ```
+
+_Note that `tidyverse` commands use `_` rather than `.` like base `R` commands._
+
 
 ___
 
 
-###
+### Tibbles, A Dataframe by Any Other Name...
 
+The `tidyverse` version of a dataframe (the most common data structure for working with data sets) is called a Tibble.  Again, when using `tidyverse` commands, a dataframe will work, but you should use a tibble to ensure full compatibility and functionality.
 
+When we read in `zip_count_2020-08-18_2020-10-11.xlsx` it was saved into a tibble called `covid_cases_zip`.  Let us take a look at it:
 
 ```r
-
+covid_cases_zip
 ```
 
 ___
