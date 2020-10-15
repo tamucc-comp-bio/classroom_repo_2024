@@ -187,6 +187,9 @@ ls()
 rm(list = ls())
 ```
 
+___
+
+
 ### Installing Required Packages and Loading Libraries
 
 The next step is to install and load the packages you will use. In the interest of organization and usability, you should load all packages/libraries in one place near the beginning of the script.  If you realize later on that you need more packages, add them here.
