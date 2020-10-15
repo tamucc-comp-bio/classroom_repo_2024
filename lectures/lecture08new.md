@@ -236,7 +236,9 @@ Here, we are going to use `read_excel` which is from the `readxl` package that w
 covid_cases_zip <- read_excel("../data/zip_count_2020-08-18_2020-10-11.xlsx")
 ```
 
-_Note that `tidyverse` commands use `_` rather than `.` like base `R` commands._
+As with all commands, there are many options available in `read_excel`, but the defaults worked well here.
+
+_Note that `tidyverse` commands use `_` rather than the `.` used in base `R` commands._
 
 
 ___
@@ -249,30 +251,85 @@ The `tidyverse` version of a dataframe (the most common data structure for worki
 When we read in `zip_count_2020-08-18_2020-10-11.xlsx` it was saved into a tibble called `covid_cases_zip`.  Let us take a look at it:
 
 ```r
-covid_cases_zip
+> covid_cases_zip
+# A tibble: 6,202 x 2
+   LABDATE               zip
+   <dttm>              <dbl>
+ 1 2020-08-18 00:00:00 78413
+ 2 2020-08-18 00:00:00 78417
+ 3 2020-08-18 00:00:00 78405
+ 4 2020-08-18 00:00:00 78405
+ 5 2020-08-19 00:00:00 78413
+ 6 2020-08-19 00:00:00 78412
+ 7 2020-08-19 00:00:00 78408
+ 8 2020-08-22 00:00:00 78380
+ 9 2020-08-22 00:00:00 78411
+10 2020-08-22 00:00:00 78380
+# ... with 6,192 more rows
+
+> str(covid_cases_zip)
+tibble [6,202 x 2] (S3: tbl_df/tbl/data.frame)
+ $ LABDATE: POSIXct[1:6202], format: "2020-08-18" "2020-08-18" "2020-08-18" "2020-08-18" ...
+ $ zip    : num [1:6202] 78413 78417 78405 78405 78413 ...
+
+
 ```
 
 ___
 
 
-###
+### [Tidyverse Cheat Sheet](../resources/CheatSheetTidyverse.pdf)
 
+I had two students from the 2019 Computational Biology Course make a cheat sheet for tidyverse.  It translates english to tidyverse for the most commonly used commands.  You should be able to print this out on two sides of a single sheet of paper and keep as a desk reference.  Once you know the command you want to use, you can look it up in the R Studio help panel (lower right) for specific instructions on its application.
 
+Use the Tidyverse Cheat Sheet](../resources/CheatSheetTidyverse.pdf) to find the command to clean up the column names in a tibble, then apply it to the `covid_cases_zip` tibble
 
 ```r
+# clean up the column names in the covid_cases_zip tibble
+>
 
 ```
 
 ___
 
 
-###
+### Pipelines
 
+Tidyverse commands are designed to be used in pipelines that generally follow the Unix Philosophy. This is not the case for all base R commands, so I generally use the pipelines to wrangle and manipulate data that is saved into a tibble (or appropriate data structure) for downstream statistical analysis.
 
+The following code blocks show different ways of reading in data and cleaning up the column names in our `covid_cases_zip` tibble.
 
 ```r
-
+# step by step
+covid_cases_zip <- read_excel("../data/zip_count_2020-08-18_2020-10-11.xlsx")
+covid_cases_zip <- clean_names(covid_cases_zip)
 ```
+
+```r
+# nested, the most common base R formatting type
+covid_cases_zip <- clean_names(read_excel("../data/zip_count_2020-08-18_2020-10-11.xlsx"))
+```
+
+```r
+# nested & formatted for humans
+covid_cases_zip <- clean_names(
+  read_excel("../data/zip_count_2020-08-18_2020-10-11.xlsx")
+  )
+```
+
+```r
+# pipelined
+covid_cases_zip <- read_excel("../data/zip_count_2020-08-18_2020-10-11.xlsx") %>% clean_names()
+```
+
+```r
+# pipelined and formatted for human readability on a single screen
+covid_cases_zip <- read_excel("../data/zip_count_2020-08-18_2020-10-11.xlsx") %>%
+  clean_names()
+```
+
+All these work and accomplish the same task, but I will be teaching you the last option, pipelined and formatted.  
+
 
 ___
 
