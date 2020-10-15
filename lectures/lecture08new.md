@@ -311,24 +311,29 @@ covid_cases_zip <- clean_names(read_excel("../data/zip_count_2020-08-18_2020-10-
 ```
 
 ```r
-# nested & formatted for humans
+# nested & formatted for human readability on a single screen
 covid_cases_zip <- clean_names(
   read_excel("../data/zip_count_2020-08-18_2020-10-11.xlsx")
   )
 ```
 
 ```r
-# pipelined
+# pipelined in linux/bash style
+read_excel("../data/zip_count_2020-08-18_2020-10-11.xlsx") %>% clean_names() -> covid_cases_zip 
+```
+
+```r
+# pipelined in R style
 covid_cases_zip <- read_excel("../data/zip_count_2020-08-18_2020-10-11.xlsx") %>% clean_names()
 ```
 
 ```r
-# pipelined and formatted for human readability on a single screen
+# pipelined in R style and formatted for human readability on a single screen
 covid_cases_zip <- read_excel("../data/zip_count_2020-08-18_2020-10-11.xlsx") %>%
   clean_names()
 ```
 
-All these work and accomplish the same task, but I will be teaching you the last option, pipelined and formatted.  
+All these work and accomplish the same task, but I will be teaching you the last option, pipelined and formatted in the `R` style.  So the variable where the output of the pipeline is saved is listed on the first line, regardless of how long the pipeline is.  
 
 
 ___
