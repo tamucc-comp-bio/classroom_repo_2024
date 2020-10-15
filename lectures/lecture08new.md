@@ -1,6 +1,6 @@
 # Week08 R Data Wrangling w/ Tidyverse R Package Ch 9
 
-###  Assignment 6 is due by beginning of class (complete Mind Expanders 8.2-8.5)
+###  Assignment 7 is due by beginning of class (complete Mind Expanders 9.5-9.6)
 
 ___
 
