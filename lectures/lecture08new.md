@@ -809,19 +809,6 @@ covid_cases_zip_pop <- covid_cases_zip %>%
 
 ___
 
-### Create New Column With Standardized Number of Cases
-
-We have learned how to use `mutate()`.  Here is another example:
-
-```r 
-# create column with number of new_cases per 100 individuals to standarize across zip codes
-covid_cases_zip_pop <- covid_cases_zip_pop %>%
-  mutate(new_cases_per100 = 100 * new_cases / population)
-```
-
-___
-
-
 ###
 
 Now we can see if some zip codes have more cases than others.  We will use the `covid_cases_zip_pop` tibble, group by both "zip" and "population" (if we do not include population, summarise will remove that column).  I will remove the zip codes that had only 1 or 2 days of data, as we did previously.  I will also remove any zip codes with a population size of zero. Our standardized case metric will be number of cases in 100 individuals and we will create this using the `mutate()` command.
@@ -869,20 +856,11 @@ Formatting is critical to human-readability when you pipe and nest this many com
 ___
 
 
-###
-
-
-
-```r 
-
-```
-
-___
-
-
 ### Concatenate Two or More Identically Formatted Data Files with `bind_rows`
 
-Thus far, we have read in a single file, but what happens when your data is in multiple files?  If the files have the same columns and the same "smallest unit of observation" in the rows, then `bind_rows` can be used. `bind_rows` works very similarly to the `bash` command `cat` but is a little smarter.  
+There are other ways to read in multiple files besides join.  If the files have the same columns and the same "smallest unit of observation" in the rows, then `bind_rows` can be used. `bind_rows` works very similarly to the `bash` command `cat`.  
+
+The 
 
 ```r 
 
