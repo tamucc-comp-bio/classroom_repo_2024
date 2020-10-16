@@ -726,7 +726,7 @@ ___
 
 ### Concatenate Two or More Identically Formatted Data Files with `bind_rows`
 
-
+Thus far, we have read in a single file, but what happens when your data is in multiple files?  If the files have the same columns and the same "smallest unit of observation" in the rows, then `bind_rows` can be used. `bind_rows` works very similarly to the `bash` command `cat` but is a little smarter.  
 
 ```r 
 
