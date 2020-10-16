@@ -627,7 +627,7 @@ ___
 
 ### Plot Two Different Tibbles in 1 Scatterplot
 
-Here we make a scatter plot of a single zip code compared to the mean of all zip codes in the same plot.  To do this, we need to provide two different sets of aesthetics `aes()`.  There are several ways to accomplish this.  Here we define the `aes()` as we normally would, but then we define a new `aes()` for the second `geom_point()` and `geom_smooth()` geometries.
+Here we make a scatter plot of a single zip code compared to the mean of all zip codes in the same plot.  To do this, we need to provide two different sets of aesthetics `aes()`.  There are several ways to accomplish this.  Here we define the `aes()` as we normally would, but then we define both a new data tibble and `aes()` for the second `geom_point()` and `geom_smooth()` geometries. If you want to get technical, this used three tibbles, but two of them were identical.
 
 ```r
 # SCATTERPLOT: new cases per day by zip code, compare to mean
@@ -647,8 +647,174 @@ covid_cases_zip %>%
 
 ![](Week08_files/scatterplot_newcases-date-1zip-mean.png)
 
+Is red associated with the cases from a single zip code or the mean of all zip codes?
+
 ___
 
+
+### Concatenate Two or More Identically Formatted Data Files with `bind_rows`
+
+
+
+```r 
+
+```
+
+___
+
+
+### Join Two Data Files With Different Columns using `join`
+
+
+
+```r 
+
+```
+
+___
+
+
+### Reshape a Tibble Using `pivot` (replaces `gather` and `spread` in CSB text)
+
+
+
+```r 
+
+```
+
+___
+
+
+###
+
+
+
+```r 
+
+```
+
+___
+
+
+###
+
+
+
+```r 
+
+```
+
+___
+
+
+###
+
+
+
+```r 
+
+```
+
+___
+
+
+###
+
+
+
+```r 
+
+```
+
+___
+
+
+###
+
+
+
+```r 
+
+```
+
+___
+
+
+###
+
+
+
+```r 
+
+```
+
+___
+
+
+###
+
+
+
+```r 
+
+```
+
+___
+
+
+###
+
+
+
+```r 
+
+```
+
+___
+
+
+###
+
+
+
+```r 
+
+```
+
+___
+
+
+###
+
+
+
+```r 
+
+```
+
+___
+
+
+###
+
+
+
+```r 
+
+```
+
+___
+
+
+###
+
+
+
+```r 
+
+```
+
+___
 
 
 ## HOMEWORK
