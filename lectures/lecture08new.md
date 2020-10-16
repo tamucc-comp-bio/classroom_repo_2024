@@ -724,6 +724,162 @@ covid_cases_zip %>%
 ___
 
 
+### Read In Population Data by Zip Code
+
+Given that different zip codes have different popualtion sizes, we are interested in how many COVID cases there are given the population size for a zip code.  We will read in data that I found on the internet from the 2010 censu
+
+```r 
+#### read in census data by zip code####
+> pop_zip <- read_excel("../data/zip_2010census-pop.xlsx") 
+> str(pop_zip)  
+tibble [38 x 6] (S3: tbl_df/tbl/data.frame)
+ $ ZIP Code      : chr [1:38] "ZIP Code 78330" "ZIP Code 78339" "ZIP Code 78343" "ZIP Code 78347" ...
+ $ Classification: chr [1:38] "General" "P.O. Box" "General" "P.O. Box" ...
+ $ City          : chr [1:38] "Agua Dulce" "Banquete" "Bishop" "Chapman Ranch" ...
+ $ Population    : num [1:38] 878 632 4525 0 621 ...
+ $ Timezone      : chr [1:38] "Central" "Central" "Central" "Central" ...
+ $ Area Code(s)  : num [1:38] 361 361 361 361 361 361 361 361 361 361 ...
+```
+
+___
+
+
+### Isolate Numeric Zip Code Using `separate()`
+
+As you can probably see, the data needs a little bit of massaging before we can join it with our `covid_cases_zip` tibble. For example, the `ZIP Code` column has the words "ZIP Code" and the numerical zip code. Let us isolate the numeric zip code and save it into a column named "zip" so that it has same name the`zip` column in `covid_cases_zip`. We will use `separate()` to divide the original column into three columns named "x1", "x2", and "zip".  I plan to get rid of the columns beginning with "x" later.
+
+```r 
+# isolate numeric zip code
+> read_excel("../data/zip_2010census-pop.xlsx") %>%
++   clean_names() %>%
++   separate(col=zip_code, into=c('x1', 'x2', 'zip'))
+# A tibble: 38 x 8
+   x1    x2    zip   classification city           population timezone area_code_s
+   <chr> <chr> <chr> <chr>          <chr>               <dbl> <chr>          <dbl>
+ 1 ZIP   Code  78330 General        Agua Dulce            878 Central          361
+ 2 ZIP   Code  78339 P.O. Box       Banquete              632 Central          361
+ 3 ZIP   Code  78343 General        Bishop               4525 Central          361
+ 4 ZIP   Code  78347 P.O. Box       Chapman Ranch           0 Central          361
+ 5 ZIP   Code  78351 P.O. Box       Driscoll              621 Central          361
+ 6 ZIP   Code  78373 General        Port Aransas         3585 Central          361
+ 7 ZIP   Code  78380 General        Robstown            23141 Central          361
+ 8 ZIP   Code  78383 General        Sandia               4211 Central          361
+ 9 ZIP   Code  78401 General        Corpus Christi       5391 Central          361
+10 ZIP   Code  78402 General        Corpus Christi        536 Central          361
+# ... with 28 more rows
+```
+
+___
+
+
+### Clean Up the `pop_zip` Tibble and Save It
+
+Now we can finish polishing the `pop_zip` tibble
+
+```r 
+# isolate numeric zip code & polish tibble
+pop_zip <- read_excel("../data/zip_2010census-pop.xlsx") %>%
+  clean_names() %>%
+  separate(col=zip_code, into=c('x1', 'x2', 'zip')) %>%
+  select(zip, city, population)
+```
+
+___
+
+
+### Join Two Data Files With Different Columns using `join`
+
+Now we can join the `covid_cases_zip` and `pop_zip` files together.  There are 4 different join commands depending upon your situation. 
+
+* `inner_join()`: includes all rows in x and y.
+
+* `left_join()`: includes all rows in x.
+
+* `right_join()`: includes all rows in y.
+
+* `full_join()`: includes all rows in x or y.
+
+In this situation, I want to keep all data in `covid_cases_zip` and add the city and population information from `pop_zip` using only the zip codes found in `covid_cases_zip`.  This is a `left_join()`, where `covid_cases_zip` is the "left" tibble, refered to as `x` above.  That makes `pop_zip` "y".  
+
+```r 
+# left join covid_cases_zip and pop_zip, creating new tibble
+covid_cases_zip_pop <- covid_cases_zip %>%
+  left_join(pop_zip, by = "zip")
+```
+
+___
+
+### Create New Column With Standardized Number of Cases
+
+We have learned how to use `mutate()`.  Here is another example:
+
+```r 
+# create column with number of new_cases per 100 individuals to standarize across zip codes
+covid_cases_zip_pop <- covid_cases_zip_pop %>%
+  mutate(new_cases_per100 = 100 * new_cases / population)
+```
+
+___
+
+
+###
+
+Now we can see if some zip codes have more cases than others.  We will use the `covid_cases_zip_pop` tibble, group by both "zip" and "population" (if we do not include population, summarise will remove that column).  I will remove the zip codes that had only 1 or 2 days of data, as we did previously.  I will also remove any zip codes with a population size of zero. Our standardized case metric will be number of cases in 100 individuals and we will create this using the `mutate()` command.
+
+```r 
+# COLUMNPLOT: Total Cases Per Capita by Zip Code
+covid_cases_zip_pop %>%
+  filter(!zip %in% c("78469", "78402"),
+         population > 0) %>%
+  group_by(zip, population) %>%
+  summarize(total_cases = sum(new_cases)) %>%
+  mutate(cases_per100 = 100 * total_cases / population) %>%
+  ggplot(aes(x=zip, y=cases_per100)) +
+  geom_col()
+```
+
+![](Week08_files/columnplot_totcases-percap-zip.png)
+
+___
+
+
+### Mega Pipeline
+
+We could have created the `covid_cases_zip_pop` tibble with 1 pipeline.  Here is what it looks like:
+
+```r 
+#### Read In Data ####
+covid_cases_zip_pop <- read_excel("../data/zip_count_2020-08-18_2020-10-11.xlsx") %>%
+  clean_names() %>%
+  mutate(zip = as_factor(zip),
+         date = ymd(labdate)) %>%
+  select(-labdate) %>%
+  group_by(date, zip) %>%
+  summarise(new_cases = n()) %>%
+  
+  left_join(read_excel("../data/zip_2010census-pop.xlsx") %>%
+              clean_names() %>%
+              separate(col=zip_code, into=c('x1', 'x2', 'zip')) %>%
+              select(zip, city, population), 
+            by = "zip")
+```
+
+Formatting is critical to human-readability when you pipe and nest this many commands together.  
+
+___
+
+
+###
+
+
+
+```r 
+
+```
+
+___
+
+
 ### Concatenate Two or More Identically Formatted Data Files with `bind_rows`
 
 Thus far, we have read in a single file, but what happens when your data is in multiple files?  If the files have the same columns and the same "smallest unit of observation" in the rows, then `bind_rows` can be used. `bind_rows` works very similarly to the `bash` command `cat` but is a little smarter.  
@@ -735,29 +891,7 @@ Thus far, we have read in a single file, but what happens when your data is in m
 ___
 
 
-### Join Two Data Files With Different Columns using `join`
-
-
-
-```r 
-
-```
-
-___
-
-
 ### Reshape a Tibble Using `pivot` (replaces `gather` and `spread` in CSB text)
-
-
-
-```r 
-
-```
-
-___
-
-
-###
 
 
 
