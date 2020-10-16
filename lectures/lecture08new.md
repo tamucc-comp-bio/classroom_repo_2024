@@ -556,7 +556,7 @@ covid_cases_zip %>%
   geom_smooth(se = FALSE)
 ```
 
-![](lectures/Week08_files/heatmap.png)
+![](Week08_files/heatmap.png)
 
 ___
 
