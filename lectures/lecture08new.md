@@ -347,10 +347,7 @@ We are going to start teaching you data wrangling with a real data set.  The fol
 
 ```r
 # check previous data format
-> str(covid_cases_zip)
-tibble [6,202 x 2] (S3: tbl_df/tbl/data.frame)
- $ labdate: POSIXct[1:6202], format: "2020-08-18" "2020-08-18" "2020-08-18" "2020-08-18" ...
- $ zip    : num [1:6202] 78413 78417 78405 78405 78413 ...
+> view(covid_cases_zip)
 
 # read in data, count up occurences of each zip code on each day, make each row a unique combination of date and zip code
 > covid_cases_zip <- read_excel("../data/zip_count_2020-08-18_2020-10-11.xlsx") %>%
@@ -362,18 +359,17 @@ tibble [6,202 x 2] (S3: tbl_df/tbl/data.frame)
 +   summarise(new_cases = n())
 
 # check data format again
-> str(covid_cases_zip)
+> view(covid_cases_zip)
 
 ```
 
-How does the `covid_cases_zip` tibble look now?
 
-___
+---
 
 
 ### Adding and Modifying Tibble Columns with `mutate`
 
-Let us break down what happened in the pipeline above, starting from the line that begins with `mutate`.
+Let us break down what happened in the pipeline above, starting from the line that begins with `mutate`. Note that the `lubridate` package from the extended tidyverse is required for the manipulation of the date.  We already loaded it above.
 
 ```r
 # tibble before mutate
@@ -394,7 +390,7 @@ Let us break down what happened in the pipeline above, starting from the line th
 10 2020-08-22 00:00:00 78380
 # ... with 6,192 more rows
 
-# convert the zip column to a factor
+# convert the zip column to a factor using mutate and as_factor
 > read_excel("../data/zip_count_2020-08-18_2020-10-11.xlsx") %>%
 +   clean_names() %>%
 +   mutate(zip = as_factor(zip))
@@ -413,7 +409,7 @@ Let us break down what happened in the pipeline above, starting from the line th
 10 2020-08-22 00:00:00 78380
 # ... with 6,192 more rows
 
-# convert the zip column to a factor and make a date column that is formatted as a tidyverse date
+# additionally make a date column that is formatted as a tidyverse date using mutate and ymd
 > read_excel("../data/zip_count_2020-08-18_2020-10-11.xlsx") %>%
 +   clean_names() %>%
 +   mutate(zip = as_factor(zip),
@@ -434,37 +430,100 @@ Let us break down what happened in the pipeline above, starting from the line th
 # ... with 6,192 more rows
 ```
 
+_Note that a factor is a categorical data type that allows you to control the order of the categories in downstream figures and tables. There are several functions dedicated to creating factors and ordering their categories.  Here, we are satisfied with the the default numerical sorting of the zip codes._
+
 ___
 
 
-###
-
-
+### Remove and Reorder Columns with `select`
 
 ```r
-
+# remove the labdate column
+> read_excel("../data/zip_count_2020-08-18_2020-10-11.xlsx") %>%
++   clean_names() %>%
++   mutate(zip = as_factor(zip),
++          date = ymd(labdate)) %>%
++   select(-labdate)
+# A tibble: 6,202 x 2
+   zip   date      
+   <fct> <date>    
+ 1 78413 2020-08-18
+ 2 78417 2020-08-18
+ 3 78405 2020-08-18
+ 4 78405 2020-08-18
+ 5 78413 2020-08-19
+ 6 78412 2020-08-19
+ 7 78408 2020-08-19
+ 8 78380 2020-08-22
+ 9 78411 2020-08-22
+10 78380 2020-08-22
+# ... with 6,192 more rows
 ```
 
 ___
 
 
-###
+### Group Tibble Rows by Column Values
 
-
+The first step in combining rows and/or performing calculations on groups of rows is defining the grouping using `group_by`.  Note the line beginning with `# Groups:` below in the output. 
 
 ```r
-
+# group rows by both date and zip code
+> read_excel("../data/zip_count_2020-08-18_2020-10-11.xlsx") %>%
++   clean_names() %>%
++   mutate(zip = as_factor(zip),
++          date = ymd(labdate)) %>%
++   select(-labdate) %>%
++   group_by(date, zip)
+# A tibble: 6,202 x 2
+# Groups:   date, zip [1,142]
+   zip   date      
+   <fct> <date>    
+ 1 78413 2020-08-18
+ 2 78417 2020-08-18
+ 3 78405 2020-08-18
+ 4 78405 2020-08-18
+ 5 78413 2020-08-19
+ 6 78412 2020-08-19
+ 7 78408 2020-08-19
+ 8 78380 2020-08-22
+ 9 78411 2020-08-22
+10 78380 2020-08-22
+# ... with 6,192 more rows
 ```
 
 ___
 
 
-###
+### Performing Row-wise Calculations Based Upon the Groupings
 
-
+Using the `summarise` command, we can perform row-wise calculations based upon their groupings. We effectively are changing the smallest unit of observation with this command, and thus it wil produce a tibble with fewer rows.  Before this command, the smallest unit of observation was a single person who tested postitive for COVID in a particular zip code on a particular date.  After this, the unit of observation will be the number of people that tested positive for COVID in a particular zip code on a particular date.
 
 ```r
-
+# count the number of COVID cases by the groupings (cate x zip) using summarise() and n()
+> read_excel("../data/zip_count_2020-08-18_2020-10-11.xlsx") %>%
++   clean_names() %>%
++   mutate(zip = as_factor(zip),
++          date = ymd(labdate)) %>%
++   select(-labdate) %>%
++   group_by(date, zip) %>%
++   summarise(new_cases = n())
+`summarise()` regrouping output by 'date' (override with `.groups` argument)
+# A tibble: 1,142 x 3
+# Groups:   date [91]
+   date       zip   new_cases
+   <date>     <fct>     <int>
+ 1 2020-07-13 78339         2
+ 2 2020-07-13 78343         2
+ 3 2020-07-13 78380        20
+ 4 2020-07-13 78401         1
+ 5 2020-07-13 78404         2
+ 6 2020-07-13 78405         7
+ 7 2020-07-13 78406         1
+ 8 2020-07-13 78407         2
+ 9 2020-07-13 78408         5
+10 2020-07-13 78409         6
+# ... with 1,132 more rows
 ```
 
 ___
