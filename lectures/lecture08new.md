@@ -863,7 +863,50 @@ There are other ways to read in multiple files besides join.  If the files have 
 The 
 
 ```r 
+#### Read In Demographic Data ####
+> bind_rows(read_excel('../data/age_count_2020-07-13_2020-10-11.xlsx', sheet = "Jul"),
++           read_excel('../data/age_count_2020-07-13_2020-10-11.xlsx', sheet = "Aug"),
++           read_excel('../data/age_count_2020-07-13_2020-10-11.xlsx', sheet = "Sep"),
++           read_excel('../data/age_count_2020-07-13_2020-10-11.xlsx', sheet = "Oct"))
+# A tibble: 14,577 x 2
+   LABDATE             AGE_YEARS
+   <dttm>                  <dbl>
+ 1 2020-07-13 00:00:00        10
+ 2 2020-07-13 00:00:00        17
+ 3 2020-07-13 00:00:00         0
+ 4 2020-07-13 00:00:00         4
+ 5 2020-07-13 00:00:00         1
+ 6 2020-07-13 00:00:00        17
+ 7 2020-07-13 00:00:00        58
+ 8 2020-07-13 00:00:00         1
+ 9 2020-07-13 00:00:00        12
+10 2020-07-13 00:00:00        13
+# ... with 14,567 more rows```
 
+___
+
+
+### Recode Ages into Age Classes using `mutate()` and `case_when()`
+
+At this point, you have seen most of the functionality you need to get started manipulating tibbles.  Here, we want to convert the ages of the people testing positive for COVID into 20 yr age classes. We also polish the tibble.
+
+```r 
+#### Read In Demographic Data ####
+covid_cases_age <- bind_rows(read_excel('../data/age_count_2020-07-13_2020-10-11.xlsx', sheet = "Jul"),
+          read_excel('../data/age_count_2020-07-13_2020-10-11.xlsx', sheet = "Aug"),
+          read_excel('../data/age_count_2020-07-13_2020-10-11.xlsx', sheet = "Sep"),
+          read_excel('../data/age_count_2020-07-13_2020-10-11.xlsx', sheet = "Oct")) %>%
+  clean_names() %>%
+  mutate(date = ymd(labdate)) %>%
+  select(-labdate) %>%
+  mutate(age_class = case_when(
+    age_years < 20 ~ "0-19",
+    age_years >= 20 & age_years < 40 ~ "20-39",
+    age_years >= 40 & age_years < 60 ~ "40-59",
+    age_years >= 60 & age_years < 80 ~ "60-79",
+    age_years >= 80 ~ "80+")) %>%
+  group_by(date, age_class) %>%
+  summarise(new_cases = n())
 ```
 
 ___
@@ -871,7 +914,7 @@ ___
 
 ### Reshape a Tibble Using `pivot` (replaces `gather` and `spread` in CSB text)
 
-
+The `covid_cases_age` is [stacked](https://simple.wikipedia.org/wiki/Stack_(data_structure)). It is impossible to collapse it to any fewer columns because every column has a different type and class of data. We can unstack it by making 1 column for each age class using `pivot_wider()`.  More columns make a wider tibble, which is where the name comes from.
 
 ```r 
 
@@ -992,4 +1035,4 @@ ___
 
 ## HOMEWORK
 
-TBA
+Exam 2
