@@ -917,8 +917,12 @@ ___
 The `covid_cases_age` is [stacked](https://simple.wikipedia.org/wiki/Stack_(data_structure)). It is impossible to collapse it to any fewer columns because every column has a different type and class of data. We can unstack it by making 1 column for each age class using `pivot_wider()`.  More columns make a wider tibble, which is where the name comes from.
 
 ```r 
-
+# unstack data by age class
+covid_cases_age %>%
+  pivot_wider(names_from = "age_class", values_from = "new_cases")
 ```
+
+To go from unstacked to stacked, you can similarly use `pivot_longer()`.  More rows = longer tibble.
 
 ___
 
