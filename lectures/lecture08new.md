@@ -588,14 +588,12 @@ Let us make a scatter plot of the total number of new cases per day across all z
 # ... with 81 more rows
 
 # SCATTERPLOT: new cases per day
-> covid_cases_zip %>%
-+   summarise(new_cases = sum(new_cases)) %>%
-+   ggplot(aes(x = date, y = new_cases)) +
-+   geom_point() +
-+   geom_smooth() +
-+   theme_classic()
-`summarise()` ungrouping output (override with `.groups` argument)
-`geom_smooth()` using method = 'loess' and formula 'y ~ x'
+covid_cases_zip %>%
+   summarise(new_cases = sum(new_cases)) %>%
+   ggplot(aes(x = date, y = new_cases)) +
+   geom_point() +
+   geom_smooth() +
+   theme_classic()
 ```
 
 ![](Week08_files/scatterplot_newcases-date.png)
@@ -611,14 +609,13 @@ The `filter` command allows you to remove rows from the tibble.  Filters can be 
 
 ```r
 # SCATTERPLOT: new cases per day by zip code
-> # here we remove the zip codes with too little data to make this figure
-> covid_cases_zip %>%
-+   filter(!zip %in% c("78469", "78402")) %>%
-+   ggplot(aes(x = date, y = new_cases, color = zip)) +
-+   geom_point() +
-+   geom_smooth(se = FALSE)  +
-+   theme_classic()
-`geom_smooth()` using method = 'loess' and formula 'y ~ x'
+# here we remove the zip codes with too little data to make this figure
+covid_cases_zip %>%
+   filter(!zip %in% c("78469", "78402")) %>%
+   ggplot(aes(x = date, y = new_cases, color = zip)) +
+   geom_point() +
+   geom_smooth(se = FALSE)  +
+   theme_classic()
 ```
 
 This will yield several warning messages. They occur because there are too few data points in some of the zip codes.
@@ -628,13 +625,27 @@ This will yield several warning messages. They occur because there are too few d
 ___
 
 
-###
+### Plot Two Different Tibbles in 1 Scatterplot
 
-
+Here we make a scatter plot of a single zip code compared to the mean of all zip codes in the same plot.  To do this, we need to provide two different sets of aesthetics `aes()`.  There are several ways to accomplish this.  Here we define the `aes()` as we normally would, but then we define a new `aes()` for the second `geom_point()` and `geom_smooth()` geometries.
 
 ```r
-
+# SCATTERPLOT: new cases per day by zip code, compare to mean
+covid_cases_zip %>%
+  filter(zip == "78412") %>%
+  ggplot(aes(x = date, y = new_cases)) +
+  geom_point(color="red4") +
+  geom_smooth(se = FALSE, color="red4") +
+  geom_point(data = covid_cases_zip %>%
+               summarise(mean_new_cases = mean(new_cases)), 
+             aes(x = date, y = mean_new_cases), color="black") +
+  geom_smooth(data = covid_cases_zip %>%
+                summarise(mean_new_cases = mean(new_cases)), 
+              aes(x = date, y = mean_new_cases), color="black") +
+  theme_classic()
 ```
+
+![](Week08_files/scatterplot_newcases-date-1zip-mean.png)
 
 ___
 
