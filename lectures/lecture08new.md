@@ -558,6 +558,48 @@ covid_cases_zip %>%
 
 ![](Week08_files/heatmap.png)
 
+The empty tiles represent zip code x date combinations where nobody tested positive for COVID.  Note that some zip codes have very view data points. We will remove some of these for some of the figure that follow because they break they cause the `ggplot` code to break otherwise.
+
+---
+
+Let us make a scatter plot of the total number of new cases per day across all zip codes. Note that we take advantage of the grouping we applied to the tibble previously and use `summarise` to sum up all new cases on each date.
+
+```r 
+> covid_cases_zip %>%
++   summarise(new_cases = sum(new_cases))
+`summarise()` ungrouping output (override with `.groups` argument)
+# A tibble: 91 x 2
+   date       new_cases
+   <date>         <int>
+ 1 2020-07-13       179
+ 2 2020-07-14       265
+ 3 2020-07-15       331
+ 4 2020-07-16       192
+ 5 2020-07-17       218
+ 6 2020-07-18       179
+ 7 2020-07-19       109
+ 8 2020-07-20       149
+ 9 2020-07-21       170
+10 2020-07-22       299
+# ... with 81 more rows
+
+# SCATTERPLOT: new cases per day
+> covid_cases_zip %>%
++   summarise(new_cases = sum(new_cases)) %>%
++   ggplot(aes(x = date, y = new_cases)) +
++   geom_point() +
++   geom_smooth() +
++   theme_classic()
+`summarise()` ungrouping output (override with `.groups` argument)
+`geom_smooth()` using method = 'loess' and formula 'y ~ x'
+```
+
+![](Week08_files/scatterplot_newcases-date.png)
+
+```r 
+
+```
+
 ___
 
 
