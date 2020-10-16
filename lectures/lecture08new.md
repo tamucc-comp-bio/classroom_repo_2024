@@ -562,6 +562,10 @@ The empty tiles represent zip code x date combinations where nobody tested posit
 
 ---
 
+
+### More Visual Exploration With a Scatterplot
+
+
 Let us make a scatter plot of the total number of new cases per day across all zip codes. Note that we take advantage of the grouping we applied to the tibble previously and use `summarise` to sum up all new cases on each date.
 
 ```r 
@@ -596,20 +600,30 @@ Let us make a scatter plot of the total number of new cases per day across all z
 
 ![](Week08_files/scatterplot_newcases-date.png)
 
-```r 
-
-```
+_Note that the high numbers of cases between Sep and Oct are backlogged cases from over the summer that were newly reported in Sep and Oct._
 
 ___
 
 
-###
+### Use `filter` To Remove Rows and Create Scatterplot for All But Two Zip Codes
 
-
+The `filter` command allows you to remove rows from the tibble.  Filters can be defined using typical equalities `filter(zip == 78412)`  or  `filter(zip >= 78412)`.  You can also use "and" `&` and "or" `|`: `filter(zip == 78411 | zip == 78412)`. Another way is displayed below, using `!` for "not" and `%in%` which compares the values in the column to the values in the provided vector. See the filter manual for all of the ways that filters can be constructed and applied.
 
 ```r
-
+# SCATTERPLOT: new cases per day by zip code
+> # here we remove the zip codes with too little data to make this figure
+> covid_cases_zip %>%
++   filter(!zip %in% c("78469", "78402")) %>%
++   ggplot(aes(x = date, y = new_cases, color = zip)) +
++   geom_point() +
++   geom_smooth(se = FALSE)  +
++   theme_classic()
+`geom_smooth()` using method = 'loess' and formula 'y ~ x'
 ```
+
+This will yield several warning messages. They occur because there are too few data points in some of the zip codes.
+
+![](Week08_files/scatterplot_newcases-date-zip.png)
 
 ___
 
