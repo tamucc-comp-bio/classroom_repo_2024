@@ -132,12 +132,19 @@ The tidyverse is an opinionated collection of R packages designed for data scien
 Today, we are going to process COVID-19 data from the Coastal Bend of Texas (here). You will need to grab some data and save it to your `CSB/data_wrangling/data` dir.
 
 ###############################
-* download the [`data_visualization_ggplot2.R`](Week07_files/data_visualization_ggplot2.R) script which has the code from the ppt slides
+* download the [`zipCovidSummary_lecture.R`](Week08_files/zipCovidSummary_lecture.R) script which has the code for today
 
-  * move `data_visualization_ggplot2.R` into your `CSB/data_wrangling/sandbox` dir
+  * move `zipCovidSummary_lecture.R` into your `CSB/data_wrangling/sandbox` dir
   
-  * open `data_visualization_ggplot2.R` in R Studio, and execute the lines as we go in the ppt.
+  * open `zipCovidSummary_lecture.R` in R Studio, and execute the lines as we go in the ppt.
 
+* additionally download the data for the lecture and move them to `CSB/data_wrangling/data`: 
+
+  * [zip_count_2020-08-18_2020-10-11.xlsx](Week08_files/)
+  
+  * [zip_2010census-pop.xlsx](Week08_files/zip_2010census-pop.xlsx)
+  
+  * [age_count_2020-07-13_2020-10-11.xlsx](Week08_files/age_count_2020-07-13_2020-10-11.xlsx)
 ################################
 
 
