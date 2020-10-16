@@ -463,7 +463,7 @@ ___
 ___
 
 
-### Group Tibble Rows by Column Values
+### Group Tibble Rows by Column Values with `group_by`
 
 The first step in combining rows and/or performing calculations on groups of rows is defining the grouping using `group_by`.  Note the line beginning with `# Groups:` below in the output. 
 
@@ -495,7 +495,7 @@ The first step in combining rows and/or performing calculations on groups of row
 ___
 
 
-### Performing Row-wise Calculations Based Upon the Groupings
+### Performing Row-wise Calculations Based Upon the Groupings with `summarise`
 
 Using the `summarise` command, we can perform row-wise calculations based upon their groupings. We effectively are changing the smallest unit of observation with this command, and thus it wil produce a tibble with fewer rows.  Before this command, the smallest unit of observation was a single person who tested postitive for COVID in a particular zip code on a particular date.  After this, the unit of observation will be the number of people that tested positive for COVID in a particular zip code on a particular date.
 
@@ -529,13 +529,34 @@ Using the `summarise` command, we can perform row-wise calculations based upon t
 ___
 
 
-###
+### Explore the Data Visually With a Heat Map
 
+Above, we watched the tibble as it changed, pipe by pipe.  We were confirming that our code did what we were trying to do, but we cannot see the whole data set.  It is always a good idea to explore the data set visually.
 
+As we do this we will use pipes to feed the data to `ggplot` and manipulate it without changing the tibble `covid_cases_zip`
 
 ```r
-
+# this should already be done, but just in case, save the tibble into covid_cases_zip
+covid_cases_zip <- read_excel("../data/zip_count_2020-08-18_2020-10-11.xlsx") %>%
+  clean_names() %>%
+  mutate(zip = as_factor(zip),
+         date = ymd(labdate)) %>%
+  select(-labdate) %>%
+  group_by(date, zip) %>%
+  summarise(new_cases = n())
 ```
+
+```r
+#### Plot covid_cases_zip Data ####
+
+# HEATMAP: new cases per day by zip code
+covid_cases_zip %>%
+  ggplot(aes(x = date, y = zip, fill = new_cases)) +
+  geom_tile() +
+  geom_smooth(se = FALSE)
+```
+
+![](lectures/Week08_files/heatmap.png)
 
 ___
 
