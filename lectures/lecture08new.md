@@ -652,6 +652,78 @@ Is red associated with the cases from a single zip code or the mean of all zip c
 ___
 
 
+### `lubridate` - The Extended Tidyverse Package for Date Data Types
+
+We already used the `lubridate` package when we used the `labdate` column to create the new column called `date` when creating the `covid_cases_zip` tibble. We specifically made the `date` column a "date" data type with `ymd()`, a `lubridate` command.  
+
+There are many other `lubridate` commands for conveniently handling date data.  Here we demonstrate converting yyyy-mm-dd dates to the names of the days of the week with `wday()` and months with `month()`.
+
+```r 
+# add columns for the day of the week and month, then 
+# change unit of observation (rows) to the number of covid cases by day of week and month
+> covid_cases_zip %>%
++   mutate(day = wday(date, label=TRUE, abbr=TRUE),
++          month = month(date, label=TRUE, abbr=TRUE)) %>%
++   group_by(day, month) %>%
++   summarise(new_cases = sum(new_cases))
+`summarise()` regrouping output by 'day' (override with `.groups` argument)
+# A tibble: 28 x 3
+# Groups:   day [7]
+   day   month new_cases
+   <ord> <ord>     <int>
+ 1 Sun   Jul         130
+ 2 Sun   Aug         191
+ 3 Sun   Sep         270
+ 4 Sun   Oct          15
+ 5 Mon   Jul         469
+ 6 Mon   Aug         220
+ 7 Mon   Sep         188
+ 8 Mon   Oct          10
+ 9 Tue   Jul         558
+10 Tue   Aug         308
+# ... with 18 more rows
+```
+
+Then we use this information to make a plot that shows the number of cases by the day of the week and month.
+
+```r
+# COLUMNPLOT: total new cases per day of week with facet rows for each month
+covid_cases_zip %>%
+  mutate(day = wday(date, label=TRUE, abbr=TRUE),
+         month = month(date, label=TRUE, abbr=TRUE)) %>%
+  group_by(day, month) %>%
+  summarise(new_cases = sum(new_cases)) %>%
+  ggplot(aes(x = day, y = new_cases)) +
+  geom_col() +
+  geom_smooth() +
+  theme_classic() +
+  facet_grid(month ~ .)
+```
+
+![](Week08_files/columnplot_newcases-day-monthrow.png)
+
+
+In the last line, `facet_grid(month ~ .)`, we control the panel faceting.  To facet by columns instead of rows: 
+
+```r 
+# COLUMNPLOT: total new cases per day of week with facet columns for each month
+covid_cases_zip %>%
+  mutate(day = wday(date, label=TRUE, abbr=TRUE),
+         month = month(date, label=TRUE, abbr=TRUE)) %>%
+  group_by(day, month) %>%
+  summarise(new_cases = sum(new_cases)) %>%
+  ggplot(aes(x = day, y = new_cases)) +
+  geom_col() +
+  geom_smooth() +
+  theme_classic() +
+  facet_grid(. ~ month)
+```
+
+![](Week08_files/columnplot_newcases-day-monthcol.png)
+
+___
+
+
 ### Concatenate Two or More Identically Formatted Data Files with `bind_rows`
 
 
@@ -675,17 +747,6 @@ ___
 
 
 ### Reshape a Tibble Using `pivot` (replaces `gather` and `spread` in CSB text)
-
-
-
-```r 
-
-```
-
-___
-
-
-###
 
 
 
