@@ -233,6 +233,7 @@ You do not have to use the `tidyverse` commands for reading in files, but if you
 Here, we are going to use `read_excel` which is from the `readxl` package that we installed and loaded above.  `readxl` is just one of several extended libraries in the tidyverse and is not included when you load `tidyverse`.  This is why we had to install and load it separately above.
 
 ```r
+#### Read In Data ####
 covid_cases_zip <- read_excel("../data/zip_count_2020-08-18_2020-10-11.xlsx")
 ```
 
@@ -335,27 +336,102 @@ covid_cases_zip <- read_excel("../data/zip_count_2020-08-18_2020-10-11.xlsx") %>
 
 All these work and accomplish the same task, but I will be teaching you the last option, pipelined and formatted in the `R` style.  So the variable where the output of the pipeline is saved is listed on the first line, regardless of how long the pipeline is.  
 
+_Pro tip: every command name is followed by `(` and `)`. Arguments are given between the `()` and are separated by commas `,`. The command does not end until the `)`_
 
 ___
 
 
-###
+### Advanced Pipelines
 
-
+We are going to start teaching you data wrangling with a real data set.  The following is the pipeline required to make our first complete tibble for analysis.  Let us compare how the tibble changes 
 
 ```r
+# check previous data format
+> str(covid_cases_zip)
+tibble [6,202 x 2] (S3: tbl_df/tbl/data.frame)
+ $ labdate: POSIXct[1:6202], format: "2020-08-18" "2020-08-18" "2020-08-18" "2020-08-18" ...
+ $ zip    : num [1:6202] 78413 78417 78405 78405 78413 ...
+
+# read in data, count up occurences of each zip code on each day, make each row a unique combination of date and zip code
+> covid_cases_zip <- read_excel("../data/zip_count_2020-08-18_2020-10-11.xlsx") %>%
++   clean_names() %>%
++   mutate(zip = as_factor(zip),
++          date = ymd(labdate)) %>%
++   select(-labdate) %>%
++   group_by(date, zip) %>%
++   summarise(new_cases = n())
+
+# check data format again
+> str(covid_cases_zip)
 
 ```
 
+How does the `covid_cases_zip` tibble look now?
+
 ___
 
 
-###
+### Adding and Modifying Tibble Columns with `mutate`
 
-
+Let us break down what happened in the pipeline above, starting from the line that begins with `mutate`.
 
 ```r
+# tibble before mutate
+> read_excel("../data/zip_count_2020-08-18_2020-10-11.xlsx") %>%
++   clean_names() 
+# A tibble: 6,202 x 2
+   labdate               zip
+   <dttm>              <dbl>
+ 1 2020-08-18 00:00:00 78413
+ 2 2020-08-18 00:00:00 78417
+ 3 2020-08-18 00:00:00 78405
+ 4 2020-08-18 00:00:00 78405
+ 5 2020-08-19 00:00:00 78413
+ 6 2020-08-19 00:00:00 78412
+ 7 2020-08-19 00:00:00 78408
+ 8 2020-08-22 00:00:00 78380
+ 9 2020-08-22 00:00:00 78411
+10 2020-08-22 00:00:00 78380
+# ... with 6,192 more rows
 
+# convert the zip column to a factor
+> read_excel("../data/zip_count_2020-08-18_2020-10-11.xlsx") %>%
++   clean_names() %>%
++   mutate(zip = as_factor(zip))
+# A tibble: 6,202 x 2
+   labdate             zip  
+   <dttm>              <fct>
+ 1 2020-08-18 00:00:00 78413
+ 2 2020-08-18 00:00:00 78417
+ 3 2020-08-18 00:00:00 78405
+ 4 2020-08-18 00:00:00 78405
+ 5 2020-08-19 00:00:00 78413
+ 6 2020-08-19 00:00:00 78412
+ 7 2020-08-19 00:00:00 78408
+ 8 2020-08-22 00:00:00 78380
+ 9 2020-08-22 00:00:00 78411
+10 2020-08-22 00:00:00 78380
+# ... with 6,192 more rows
+
+# convert the zip column to a factor and make a date column that is formatted as a tidyverse date
+> read_excel("../data/zip_count_2020-08-18_2020-10-11.xlsx") %>%
++   clean_names() %>%
++   mutate(zip = as_factor(zip),
++          date = ymd(labdate))
+# A tibble: 6,202 x 3
+   labdate             zip   date      
+   <dttm>              <fct> <date>    
+ 1 2020-08-18 00:00:00 78413 2020-08-18
+ 2 2020-08-18 00:00:00 78417 2020-08-18
+ 3 2020-08-18 00:00:00 78405 2020-08-18
+ 4 2020-08-18 00:00:00 78405 2020-08-18
+ 5 2020-08-19 00:00:00 78413 2020-08-19
+ 6 2020-08-19 00:00:00 78412 2020-08-19
+ 7 2020-08-19 00:00:00 78408 2020-08-19
+ 8 2020-08-22 00:00:00 78380 2020-08-22
+ 9 2020-08-22 00:00:00 78411 2020-08-22
+10 2020-08-22 00:00:00 78380 2020-08-22
+# ... with 6,192 more rows
 ```
 
 ___
