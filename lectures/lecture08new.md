@@ -140,7 +140,7 @@ Today, we are going to process COVID-19 data from the Coastal Bend of Texas (her
 
 * additionally download the data for the lecture and move them to `CSB/data_wrangling/data`: 
 
-  * [zip_count_2020-08-18_2020-10-11.xlsx](Week08_files/)
+  * [zip_count_2020-08-18_2020-10-11.xlsx](Week08_files/zip_count_2020-08-18_2020-10-11.xlsx)
   
   * [zip_2010census-pop.xlsx](Week08_files/zip_2010census-pop.xlsx)
   
