@@ -1,4 +1,4 @@
-# Week09 Data Wrangling Exercises & R Markdown (Lite) Ch 7,9
+# Week09 R Markdown (Lite) & Data Wrangling Exercises  Ch 7,9
 
 ###  No assignments were due today
 
