@@ -120,14 +120,18 @@ Regardless of your operating system, if you have not already installed R studio,
 
 R Markdown is a typesetting language that allows you to also incorporate R code chunks.  If you did not notice yet, the solutions for the Data Wrangling chapter are written in R Markdown.  There are a variety of applications of R Markdown.  The one I have used the most is making a report where the data changes through time, but the layout of figures and text does not change.
 
-For R Markdown to work properly, you need some additional packages installed in R Studio. Realize that R can also process R Markdown scripts from terminal without R Studio.
+1. For R Markdown to work properly, you need some additional packages installed in R Studio. Realize that R can also process R Markdown scripts from terminal without R Studio.
 
 ```r 
 install.packages("rmarkdown")
 install.packages("knitr", dependencies=TRUE)
 ```
 
-You should also install `pandoc` on your computer following the instructions [here](https://pandoc.org/installing.html).
+2. You should also install `pandoc` on your computer following the instructions [here](https://pandoc.org/installing.html).
+
+3. Finally, you should install scientific typesetting software `LaTeX` that operates independently of R and RStudio. Like `Linux`, there are several flavors of `LaTeX`.  Follow the instructions [here](http://computingskillsforbiologists.com/setup/scientific-typesetting/).  
+
+> For Windows, after running the setup.exe file, you have to click install on the `MiKTeX` and `TeXstudio` buttons.  The install takes a while, just let it run in the background and check on it periodically until it is done.
 
 ---
 
