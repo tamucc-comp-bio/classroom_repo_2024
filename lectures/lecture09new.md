@@ -125,6 +125,8 @@ R Markdown is a typesetting language that allows you to also incorporate R code 
 ```r 
 install.packages("rmarkdown")
 install.packages("knitr", dependencies=TRUE)
+library(rmarkdown)
+library(knitr)
 ```
 
 2. You should also install `pandoc` on your computer following the instructions [here](https://pandoc.org/installing.html).
@@ -134,7 +136,7 @@ install.packages("knitr", dependencies=TRUE)
 <details><summary>Win10 *IMPORTANT* </summary>
 <p>
 
-> For Windows (follow this exactly as written), extract/unzip the files first, before running `setup.exe`. Right click `setup.exe` and `run as administrator`. After running the setup.exe file, you have to click install on the `MiKTeX` and `TeXstudio` buttons. Install for all users  The install takes a while, just let it run in the background and check on it periodically until it is done. After that, `MiKTeX` will have to be exited and restarted so you can run it as a `MiKTeX` administrator.  Search for `MiKTeX` in your windows search (magnifying glass next to start button).  Then expand your "system tray" (the > and collection of icons on the right side of your task bar), right click and exit `MiKTeX`.  Then search for `MiKTeX` again, right click it, run as administrator, make sure that you are a `MiKTeX` administrator by selecting the option in the window, and search for updates. Click the `updates page` link after search is done and click `update now`. My updates errored out once. So make sure to recheck for updates and restart the updates as necessary. If you cannot get it to update completely, it should not inhibit your ability to complete most everything that follows.
+> Follow this exactly as written. Download the `protex.zip` file as directed above. Next, extract/unzip the files first, before running `setup.exe`. Right click `setup.exe` and `run as administrator`. After running the setup.exe file, you have to click install on the `MiKTeX` and `TeXstudio` buttons. Install for all users  The install takes a while, just let it run in the background and check on it periodically until it is done. After that, `MiKTeX` will have to be exited and restarted so you can run it as a `MiKTeX` administrator.  Search for `MiKTeX` in your windows search (magnifying glass next to start button).  Then expand your "system tray" (the > and collection of icons on the right side of your task bar), right click and exit `MiKTeX`.  Then search for `MiKTeX` again, right click it, run as administrator, make sure that you are a `MiKTeX` administrator by selecting the option in the window, and search for updates. Click the `updates page` link after search is done and click `update now`. My updates errored out once. So make sure to recheck for updates and restart the updates as necessary. If you cannot get it to update completely, it should not inhibit your ability to complete most everything that follows.
 
 ![](Week09new_files/miktex-updates.png)
 
@@ -160,7 +162,7 @@ May the force be with you.  Let me know if I should add anything here.
 
 In R Studio, open a new R Markdown document
 
-* name it `lesson-1`
+* name it `lesson-0`
 
 * use default settings
 
@@ -168,9 +170,59 @@ If you were successful, your document will already be populated with several lin
 
 ![](Week09new_files/rmd_layout.png)
 
+Make sure you save the file as lesson-0 into your `CSB/data_wrangling/sandbox` and make sure that you use `setwd()` to set your present working directory to `CSB/data_wrangling/sandbox`.
+
+___
+
+
+## Run `lesson-0.rmd` With `knitr`
+
+As is our custom in Computational Biology, jump in head first and click the `knit` button above the upper left panel. It will run the Rmd and create an `html` report in a new window.
+
+Next, we will cover the primary sections of the Rmd file.
+
+___
+
+
 ### YAML Header
 
-Lines 1-4
+YAML stands for YAML Aint Markup Language.
+
+Lines 1-4 in the Rmd are the YAML header, which contains the title of the document and the default output format.  `html` is hyper text markup language, i.e. web pages.  The YAML header is always at the beginning of an Rmd.
+
+Several other characteristics of the Rmd document can be set in the YAML header.  This [tutorial](https://zsmith27.github.io/rmarkdown_crash-course/lesson-4-yaml-headers.html) is pretty good.
+
+___
+
+
+### Code Chunks
+
+Lines 6-8, 16-18, and 24-26 are code chunks.  They start with three tick marks (the key in the upper left of you keyboard) and you can specify the language (r and other languages like python are possible), as well as basic settings of how the output from the code should be handled. For example, you can suppress warnings, error messages, etc.
+
+The output of the code chunks are included in the resulting document.
+
+
+### Markdown Text 
+
+Everything else in the Rmd is markdown text if it is not code or YAML.  
+
+For example, line 10 is the first line of text.  The `##` indicates that the text `R Markdown` should be a secondary heading.
+
+Markdown is a class of typesetting languages.  There are broad similarities across markdown languages but there can also be small differences.  This lecture is written in markdown and I make sure it works on GitHub.  The markdown in an Rmd can be slightly different. 
+
+You can consult the 
+
+#### [R Markdown Reference Guide](https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf) 
+
+and 
+
+[R Markdown Cheatsheet](https://www.rstudio.com/wp-content/uploads/2016/03/rmarkdown-cheatsheet-2.0.pdf) 
+
+for all of the different formatting options.
+
+___
+
+
 
 
 
