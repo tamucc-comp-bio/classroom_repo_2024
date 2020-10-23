@@ -116,6 +116,19 @@ Regardless of your operating system, if you have not already installed R studio,
 </p>
 </details>
 
+### *_ADDITIONAL COMPUTER SETUP (NEW FOR TODAY)_* 
+
+R Markdown is a typesetting language written for RStudio that allows you to also incorporate R code.  
+
+![](https://vimeo.com/178485416)
+
+For R Markdown to work properly, you need some additional packages installed
+
+```r 
+install.packages
+install.packages("knitr")
+```
+
 ---
 
 ## I. Exercise 9.8.1
