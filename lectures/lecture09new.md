@@ -138,9 +138,25 @@ install.packages("knitr", dependencies=TRUE)
 
 ## I. R Markdown
 
-R Markdown has a very nice lesson plan that we will use to review its features.  We will link to the lesson below and then work within the R Markdown website.
+R Markdown has a very nice lesson plan that we will use to review its features.  We will link to the lesson below and then work within the R Markdown website. You will work in R Studio
 
 ### [Lesson 1](https://rmarkdown.rstudio.com/lesson-1.html)
+
+### Creating an R Markdown Document
+
+In R Studio, open a new R Markdown document
+
+* name it `lesson-1`
+
+* use default settings
+
+If you were successful, your document will already be populated with several lines of text and code.
+
+![](Week09new_files/rmd_layout.png)
+
+### YAML Header
+
+Lines 1-4
 
 
 ## II. Exercise 9.8.1
