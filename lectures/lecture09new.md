@@ -131,18 +131,16 @@ install.packages("knitr", dependencies=TRUE)
 
 3. Finally, you should install scientific typesetting software `LaTeX` that operates independently of R and RStudio. Like `Linux`, there are several flavors of `LaTeX`.  Follow the instructions [here](http://computingskillsforbiologists.com/setup/scientific-typesetting/).  
 
-> For Windows (follow this exactly as written), extract/unzip the files first, before running `setup.exe`. Right click `setup.exe` and `run as administrator`. After running the setup.exe file, you have to click install on the `MiKTeX` and `TeXstudio` buttons. Install for all users  The install takes a while, just let it run in the background and check on it periodically until it is done. After that, `MiKTeX` will have to be exited and restarted.  Search for `MiKTeX` in your windows search (magnifying glass next to start button).  Then expand your "system tray" (the > and collection of icons on your task bar), right click and exit `MiKTeX`.  Then search for `MiKTeX` again, right click it, run as administrator, and search for updates. Goto updates page after search is done and click `update now`. My updates errored out a few times. So make sure to recheck for updates and update as necessary. If you cannot get it to update completely, it should not inhibit your ability to complete most everything that follows.
+> For Windows (follow this exactly as written), extract/unzip the files first, before running `setup.exe`. Right click `setup.exe` and `run as administrator`. After running the setup.exe file, you have to click install on the `MiKTeX` and `TeXstudio` buttons. Install for all users  The install takes a while, just let it run in the background and check on it periodically until it is done. After that, `MiKTeX` will have to be exited and restarted so you can run it as a `MiKTeX` administrator.  Search for `MiKTeX` in your windows search (magnifying glass next to start button).  Then expand your "system tray" (the > and collection of icons on the right side of your task bar), right click and exit `MiKTeX`.  Then search for `MiKTeX` again, right click it, run as administrator, make sure that you are a `MiKTeX` administrator by selecting the option in the window, and search for updates. Click the `updates page` link after search is done and click `update now`. My updates errored out once. So make sure to recheck for updates and restart the updates as necessary. If you cannot get it to update completely, it should not inhibit your ability to complete most everything that follows.
 
 ![](Week09new_files/miktex-updates.png)
+
+If you are 
 
 ---
 
 
 ## I. R Markdown
-
-R Markdown has a very nice lesson plan that we will use to review its features.  We will link to the lesson below and then work within the R Markdown website. You will work in R Studio
-
-### [Lesson 1](https://rmarkdown.rstudio.com/lesson-1.html)
 
 ### Creating an R Markdown Document
 
@@ -159,6 +157,12 @@ If you were successful, your document will already be populated with several lin
 ### YAML Header
 
 Lines 1-4
+
+
+
+### [Lesson 1](https://rmarkdown.rstudio.com/lesson-1.html)
+
+R Markdown has a very nice lesson plan that we will use to review its features.  We will link to the lesson below and then work within the R Markdown website. You will work in R Studio
 
 
 ## II. Exercise 9.8.1
