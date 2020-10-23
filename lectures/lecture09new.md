@@ -131,7 +131,9 @@ install.packages("knitr", dependencies=TRUE)
 
 3. Finally, you should install scientific typesetting software `LaTeX` that operates independently of R and RStudio. Like `Linux`, there are several flavors of `LaTeX`.  Follow the instructions [here](http://computingskillsforbiologists.com/setup/scientific-typesetting/).  
 
-> For Windows, after running the setup.exe file, you have to click install on the `MiKTeX` and `TeXstudio` buttons.  The install takes a while, just let it run in the background and check on it periodically until it is done.
+> For Windows (follow this exactly as written), extract/unzip the files first, before running `setup.exe`. Right click `setup.exe` and `run as administrator`. After running the setup.exe file, you have to click install on the `MiKTeX` and `TeXstudio` buttons. Install for all users  The install takes a while, just let it run in the background and check on it periodically until it is done. After that, `MiKTeX` will have to be exited and restarted.  Search for `MiKTeX` in your windows search (magnifying glass next to start button).  Then expand your "system tray" (the > and collection of icons on your task bar), right click and exit `MiKTeX`.  Then search for `MiKTeX` again, right click it, run as administrator, and search for updates. Goto updates page after search is done and click `update now`. My updates errored out a few times. So make sure to recheck for updates and update as necessary. If you cannot get it to update completely, it should not inhibit your ability to complete most everything that follows.
+
+![](Week09new_files/miktex-updates.png)
 
 ---
 
@@ -150,7 +152,7 @@ In R Studio, open a new R Markdown document
 
 * use default settings
 
-If you were successful, your document will already be populated with several lines of text and code.
+If you were successful, your document will already be populated with several lines of text and code that fall into three categories.
 
 ![](Week09new_files/rmd_layout.png)
 
