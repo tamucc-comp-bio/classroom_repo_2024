@@ -147,6 +147,8 @@ SECTION 2. DATA WRANGLING AND VISUALIZATION WITH R
 
 * [10/16  Week08 Data Wrangling w/ Tidyverse](lectures/lecture08new.md)
 
+  * No Assignment
+
 * [10/23  Week09 R Markdown (Lite) & Data Wrangling Exercises](lectures/lecture09new.md)
 
 <!--
