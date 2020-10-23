@@ -120,7 +120,7 @@ Regardless of your operating system, if you have not already installed R studio,
 
 R Markdown is a typesetting language written for RStudio that allows you to also incorporate R code.  
 
-![](https://vimeo.com/178485416)
+[Brief Video On R Markdown](https://vimeo.com/178485416)
 
 For R Markdown to work properly, you need some additional packages installed
 
