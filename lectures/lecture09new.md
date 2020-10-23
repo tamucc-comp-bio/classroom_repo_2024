@@ -201,6 +201,8 @@ Lines 6-8, 16-18, and 24-26 are code chunks.  They start with three tick marks (
 
 The output of the code chunks are included in the resulting document.
 
+___
+
 
 ### Markdown Text 
 
@@ -223,22 +225,26 @@ for all of the different formatting options.
 ___
 
 
-
-
-
 ### [Lesson 1](https://rmarkdown.rstudio.com/lesson-1.html)
 
-R Markdown has a very nice lesson plan that we will use to review its features.  We will link to the lesson below and then work within the R Markdown website. You will work in R Studio
+R Markdown has a very nice lesson plan that we will use to review its features.  We will link to the lesson below and then work within the R Markdown website. There is also the very thorough [R Markdown Crash Course](https://zsmith27.github.io/rmarkdown_crash-course/index.html) by Zachary M. Smith (I love `open source`) which goes beyond the scope of this class.
 
 
 ## II. Exercise 9.8.1
 
+Let us review the solution provided for this exercise by opening `CSB/data_wrangling/solutions/Martin2015_solution.Rmd`.  If you successfully installed everything above, you should be able to click the `knit` button and have it regenerate the pdf solution (do not worry if this does not work, it just means that either `pandoc` or `LaTeX` installation was not completed. 
+
+_Note, if you were working in the terminal and not R Studio, you could knit the file using the `render(PathToRmdFile)` command. _
+
+We will run the `R` code line by line in the Rmd, skipping the YAML and markdown to understand the solution here.
 
 ---
 
-## II. Exercise 9.8.2
-
-
----
 
 ## III. Exercise 9.8.3
+
+Each of you should complete exercise 9.8.3 in the remain class time.
+
+## HOME WORK
+
+Exam 2
