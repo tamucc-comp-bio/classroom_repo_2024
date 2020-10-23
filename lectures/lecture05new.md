@@ -2,6 +2,8 @@
 
 ###  Exam 1 is due by beginning of class
 
+### [Lecture Stream](https://tamucc.webex.com/recordingservice/sites/tamucc/recording/playback/26ce51da1d52456b883c976dd1986dfe)
+
 ## Computer Preparation
 
 You are expected to start each lecture with your terminal window open and ready to go.

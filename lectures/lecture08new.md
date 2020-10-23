@@ -2,6 +2,8 @@
 
 ###  Assignment 7 is due by beginning of class (complete Mind Expanders 9.5-9.6)
 
+### [Lecture Stream](https://tamucc.webex.com/recordingservice/sites/tamucc/recording/playback/38a16a8943df40739f8ddf009d363997)
+
 ___
 
 ## Computer Preparation
