@@ -118,20 +118,28 @@ Regardless of your operating system, if you have not already installed R studio,
 
 ### *_ADDITIONAL COMPUTER SETUP (NEW FOR TODAY)_* 
 
-R Markdown is a typesetting language written for RStudio that allows you to also incorporate R code.  
+R Markdown is a typesetting language that allows you to also incorporate R code chunks.  If you did not notice yet, the solutions for the Data Wrangling chapter are written in R Markdown.  There are a variety of applications of R Markdown.  The one I have used the most is making a report where the data changes through time, but the layout of figures and text does not change.
 
-[Brief Video On R Markdown](https://vimeo.com/178485416)
-
-For R Markdown to work properly, you need some additional packages installed
+For R Markdown to work properly, you need some additional packages installed in R Studio. Realize that R can also process R Markdown scripts from terminal without R Studio.
 
 ```r 
-install.packages
-install.packages("knitr")
+install.packages("rmarkdown")
+install.packages("knitr", dependencies=TRUE)
 ```
+
+You should also install `pandoc` on your computer following the instructions [here](https://pandoc.org/installing.html).
 
 ---
 
-## I. Exercise 9.8.1
+
+## I. R Markdown
+
+R Markdown has a very nice lesson plan that we will use to review its features.  We will link to the lesson below and then work within the R Markdown website.
+
+### [Lesson 1](https://rmarkdown.rstudio.com/lesson-1.html)
+
+
+## II. Exercise 9.8.1
 
 
 ---
