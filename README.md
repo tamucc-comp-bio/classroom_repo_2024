@@ -151,6 +151,9 @@ SECTION 2. DATA WRANGLING AND VISUALIZATION WITH R
 
 * [10/23  Week09 R Markdown (Lite) & Data Wrangling Exercises](lectures/lecture09new.md)
 
+  * [Exam 2 Part 1, Due 11/02](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMk1SV05WNTUzOVZGR0ZDNkhBNDk4SVJYWS4u)
+  
+  * [Exam 2 Part 2, Due 11/02](https://classroom.github.com/a/dIIyk6Xd)
 <!--
 
 * [11/22  Week11 Data Wrangling and Visualization with The Tidyverse](https://github.com/tamucc-comp-bio/fall_2019/blob/master/lectures/lecture12.md)
