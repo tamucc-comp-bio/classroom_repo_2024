@@ -60,6 +60,11 @@ Restart ubunutu terminal
 
 ```bash
 cd ~
+
+# make sure you have folder anaconda3
+ls -d */
+
+# set permissions
 sudo chmod -R 777 anaconda3
 conda install jupyter
 ```
