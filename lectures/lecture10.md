@@ -513,6 +513,8 @@ Python provides built-in [data structures](https://docs.python.org/3/tutorial/da
 
 * _Lists_ contain ordered sequences of values, termed *elements*
 
+* _Dictionaries_ contain `key:value` pairs 
+
 * _Tuples_ are lists where the elements cannot be changed or reordered
 
 * _Sets_ are collections of distinct objects
@@ -767,6 +769,9 @@ Tuples can also be used as keys in a dictionary
 {('trial', 62): 4829}
 ```
 
+___
+
+
 ### [Sets](https://docs.python.org/3/tutorial/datastructures.html#sets)
 
 Sets are lists without diplicated entries and have special operators.
@@ -777,100 +782,108 @@ Sets are lists without diplicated entries and have special operators.
 
 * Difference - values unshared between set 1 and 2
 
-  ```python
-  # create a list
-  >>> a = [5, 6, 7, 7, 7, 8, 9, 9]
-  
-  # make a set from the list
-  >>> b = set(a)
-  >>> b
-  {5, 6, 7, 8, 9}
+```python
+# create a list
+>>> a = [5, 6, 7, 7, 7, 8, 9, 9]
 
-  # intersection 
-  >>> c = {3, 4, 5, 6}
-  >>> b & c
-  {5, 6}
+# make a set from the list
+>>> b = set(a)
+>>> b
+{5, 6, 7, 8, 9}
 
-  # union
-  >>> b | c
-  {3, 4, 5, 6, 7, 8, 9}
+# intersection 
+>>> c = {3, 4, 5, 6}
+>>> b & c
+{5, 6}
 
-  # difference
-  >>> b ^ c
-  {3, 4, 7, 8, 9}
-  ```
+# union
+>>> b | c
+{3, 4, 5, 6, 7, 8, 9}
 
-The union, intersection, and difference operators also exist as *methods*. You can also test whether a set is a *subset* or a *superset*. 
-  ```python
-  # create sets using {}
-  >>> s1 = {1, 2, 3, 4}
-  >>> s2 = {4, 5, 6}
-  
-  # intersection
-  >>> s1.intersection(s2)
-  {4}
-  
-  # union
-  >>> s1.union(s2)
-  {1, 2, 3, 4, 5, 6}
-  
-  # symmetric difference
-  >>> s1.symmetric_difference(s2)
-  {1, 2, 3, 5, 6}
-  
-  # difference
-  >>> s1.difference(s2)
-  {1, 2, 3}
-  
-  #subset
-  >>> s1.issubset(s2)
-  False
-  
-  #superset
-  >>> s1.issuperset(s2)
-  False
-  
-  >>> s1.issubset(s1.union(s2))
-  True
-  ```
+# difference
+>>> b ^ c
+{3, 4, 7, 8, 9}
+```
 
-Note that calling `a = {}` creates and empty dictionary, not an empty set. `a = ([])` initializes an empty set.
+The union, intersection, and difference operators also exist as *methods*. You can also test whether a set is a [subset](https://en.wikipedia.org/wiki/Subset) or a [superset](https://en.wikipedia.org/wiki/Subset). 
 
-#### Summary of Data Structures
+```python
+# create sets using {}
+>>> s1 = {1, 2, 3, 4}
+>>> s2 = {4, 5, 6}
 
-  ```python
-  # round brackets -> tuple
-  >>> type((1, 2))
-  <class 'tuple'>
+# intersection
+>>> s1.intersection(s2)
+{4}
 
-  # square brackets -> list
-  >>> type([1, 2])
-  <class 'list'>
+# union
+>>> s1.union(s2)
+{1, 2, 3, 4, 5, 6}
 
-  # curly brackets, seq of vals -> set
-  >>> type({1, 2})
-  <class 'set'>
+# symmetric difference
+>>> s1.symmetric_difference(s2)
+{1, 2, 3, 5, 6}
 
-  # curly brackets, key:value pairs -> dictionary
-  >>> type({1: "a", 2: "b"})
-  <class 'dict'>
-  >>> one = (1, 2, "tuple")
-  >>> two = [3, 4, "list"]
-  >>> three = {5: ["value1"], 6: ["value2"]}   # a dictionary
-  ```
+# difference
+>>> s1.difference(s2)
+{1, 2, 3}
+
+#subset
+>>> s1.issubset(s2)
+False
+
+#superset
+>>> s1.issuperset(s2)
+False
+
+>>> s1.issubset(s1.union(s2))
+True
+```
+
+*_Note that calling `a = {}` creates and empty dictionary, not an empty set. `a = ([])` initializes an empty set._*
+
+___
+
+
+### Summary of Data Structures
+
+```python
+# round brackets -> tuple
+>>> type((1, 2))
+<class 'tuple'>
+
+# square brackets -> list
+>>> type([1, 2])
+<class 'list'>
+
+# curly brackets, seq of vals -> set
+>>> type({1, 2})
+<class 'set'>
+
+# curly brackets, key:value pairs -> dictionary
+>>> type({1: "a", 2: "b"})
+<class 'dict'>
+>>> one = (1, 2, "tuple")
+>>> two = [3, 4, "list"]
+>>> three = {5: ["value1"], 6: ["value2"]}   # a dictionary
+```
 
 The next level: Lists can also contain other lists, tuples, dictionaries.  If you think about it, a table is a list of lists.
-  ```python
-  # create a list containing a tuple, list, and dictionary
-  >>> container = [one, two, three]
-  >>> container
-  [(1, 2, 'tuple'), [3, 4, 'list'], {5: ['value1'], 6: ['value2']}]
 
-  # add a value to the list within the dictionary within the list
-  >>> container[2][5].append("value3")
-  >>> container
-  [(1, 2, 'tuple'), [3, 4, 'list'], {5: ['value1', 'value3'], 6: ['value2']}]
-  ```
+```python
+# create a list containing a tuple, list, and dictionary
+>>> container = [one, two, three]
+>>> container
+[(1, 2, 'tuple'), [3, 4, 'list'], {5: ['value1'], 6: ['value2']}]
+
+# add a value to the list within the dictionary within the list
+>>> container[2][5].append("value3")
+>>> container
+[(1, 2, 'tuple'), [3, 4, 'list'], {5: ['value1', 'value3'], 6: ['value2']}]
+```
+
+___
+
 
 ### [Mind Expander 3.2](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMzdVVkQwTlRQMENSVTQ5S0dUT0c1NFgwRi4u)
 
@@ -878,5 +891,5 @@ The next level: Lists can also contain other lists, tuples, dictionaries.  If yo
 
 
 ## HOMEWORK
-Assignment 5  Due 10/04  
+Assignment 5  Due 11/06  
 
