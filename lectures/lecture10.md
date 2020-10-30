@@ -46,6 +46,8 @@ Log into your TAMUCC email account
   * In Win10-Ubuntu terminal, `Anaconda` installation is a bit more challenging than just simply following `Anaconda` [download instructions](http://computingskillsforbiologists.com/setup/basic-programming/).  Here is how to make it work:
 
 ```bash
+sudo apt update
+sudo apt upgrade
 cd ~
 mkdir downloads
 cd downloads
