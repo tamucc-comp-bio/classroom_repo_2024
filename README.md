@@ -167,8 +167,8 @@ Project examples: automatically process data from experimental apparatus; image 
 SECTION 3. PROGRAMMING WITH PYTHON
 
 
-* [10/30  Week10 Basic Python Programming I](lectures/lecture10new.md)
-  * [Assignment_5, Due 11/06](https://github.com/tamucc-comp-bio/fall_2019/blob/master/assignments/assignment_5.md)
+* [10/30  Week10 Basic Python Programming I](lectures/lecture10.md)
+  * [Assignment_5, Due 11/06](assignments/assignment_10.md)
 
 <!-- 
 
