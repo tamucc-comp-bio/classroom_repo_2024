@@ -110,11 +110,6 @@ Project examples: automatically process data from experimental apparatus; image 
   * [Grad Student Course Project: GitHub Repo w/ ReadMe, Due 9/25](https://classroom.github.com/a/hXodrcVf)
 
 
-<!-- 
-
-  * [Install Anaconda & Jupyter, Due 10/04](http://computingskillsforbiologists.com/setup/basic-programming/), Due 10/04
--->
-
 </p>
 </details>
 
@@ -131,7 +126,8 @@ Project examples: automatically process data from experimental apparatus; image 
 
 ---
 
-SECTION 2. DATA WRANGLING AND VISUALIZATION WITH R
+<details><summary>SECTION 2. DATA WRANGLING AND VISUALIZATION WITH R</summary>
+<p>
 
 * [09/25  Week05 Base R Bootcamp I](lectures/lecture05new.md)
 
@@ -154,6 +150,17 @@ SECTION 2. DATA WRANGLING AND VISUALIZATION WITH R
   * [Exam 2 Part 1, Due 11/02](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMk1SV05WNTUzOVZGR0ZDNkhBNDk4SVJYWS4u)
   
   * [Exam 2 Part 2, Due 11/02](https://classroom.github.com/a/dIIyk6Xd)
+
+</p>
+</details>
+
+<!-- 
+
+  * [Install Anaconda & Jupyter, Due 10/04](http://computingskillsforbiologists.com/setup/basic-programming/), Due 10/04
+-->
+
+
+
 <!--
 
 * [11/22  Week11 Data Wrangling and Visualization with The Tidyverse](https://github.com/tamucc-comp-bio/fall_2019/blob/master/lectures/lecture12.md)
