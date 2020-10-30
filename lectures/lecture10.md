@@ -124,10 +124,23 @@ Confirm that conda is running by checking for `(base)` before command prompt
 (base) cbird@XPS15:~$
 ```
 
+To update to latest version:
+
 ```bash
 # this will take a while
-conda update --prefix ~/anaconda3 anaconda
+conda update --all
 ```
+
+To update to a specific version ([see list of versions](https://repo.anaconda.com/archive/)): 
+
+```bash
+# this will take a while
+conda install anaconda=VERSIONNAME
+```
+
+You can also consult the [official documentation](https://docs.anaconda.com/anaconda/install/update-version/)
+
+And also see [Keeping Anaconda Up To Date](https://www.anaconda.com/blog/keeping-anaconda-date)
 
 </p>
 </details>
@@ -163,7 +176,7 @@ conda activate
 You can also turn `conda` off:
 
 ```bash
-source deactivate
+conda deactivate
 ```
 
 ___
@@ -186,13 +199,29 @@ cbird@XPS15:~$ conda activate
 (base) cbird@XPS15:~$
 ```
 
+___
+
 
 ## III. Python Activities
 
+### How to Run Python
+
+We will work in `python3`. There are also legacy apps that require `python2` although `python2` is being phased out.
+
+```bash
+(base) cbird@XPS15:~$ python3
+Python 3.7.3 (default, Mar 27 2019, 22:11:17)
+[GCC 7.3.0] :: Anaconda, Inc. on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>>
+```
+
 ### How to Get Help
 
-  [docs.python.org](https://docs.python.org/3/)
-  [stackoverflow.com](https://stackoverflow.com/)
+* [docs.python.org](https://docs.python.org/3/)
+  
+* [stackoverflow.com](https://stackoverflow.com/)
+
   ```python
   help()
   help("My_COMMAND")  #pseudocode, replace My_COMMAND with the command you need help with
