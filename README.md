@@ -147,12 +147,14 @@ Project examples: automatically process data from experimental apparatus; image 
 
 * [10/23  Week09 R Markdown (Lite) & Data Wrangling Exercises](lectures/lecture09new.md)
 
+</p>
+</details>
+
   * [Exam 2 Part 1, Due 11/02](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMk1SV05WNTUzOVZGR0ZDNkhBNDk4SVJYWS4u)
   
   * [Exam 2 Part 2, Due 11/02](https://classroom.github.com/a/dIIyk6Xd)
 
-</p>
-</details>
+
 
 <!-- 
 
