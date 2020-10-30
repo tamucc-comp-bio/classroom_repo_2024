@@ -7,9 +7,9 @@ ___
 
 ## Computer Preparation
 
-* Log into your TAMUCC email account
+Log into your TAMUCC email account
 
-<details><summary>Win10 - Ubuntu Setup (already done)</summary>
+<details><summary>Win10 - Ubuntu Setup (should already be done)</summary>
 <p>
 
   * If the Ubuntu app is not installed, then follow [these instructions](https://github.com/cbirdlab/wlsUBUNTU_settings/blob/master/InstallLinuxOnWindows_Automated.pdf)
@@ -38,18 +38,18 @@ ___
 </p>
 </details>
 
-<details><summary>Win10 Python Setup (NEW!!)</summary>
+<details><summary>Win10 Anaconda Setup (NEW!!)</summary>
 <p>
 
-  *`Anaconda` should be [installed](http://computingskillsforbiologists.com/setup/basic-programming/)
-    * In Win10-Ubuntu terminal, installation is a bit more challenging here is how to make it work
-    * Following `Anaconda` [download instructions](http://computingskillsforbiologists.com/setup/basic-programming/) with some modifications:
-    
+[Anaconda](https://www.anaconda.com/products/individual) is a free distribution of Python and R that includes preinstalled packages.  When you run `conda`, it is almost invisible but you will use its installations of Python and R rather than those that are already on your system.  While this may seem a bit confusing at first, the point of Anaconda is to make using Python easier.
+
+  * In Win10-Ubuntu terminal, `Anaconda` installation is a bit more challenging than just simply following `Anaconda` [download instructions](http://computingskillsforbiologists.com/setup/basic-programming/).  Here is how to make it work:
+
 ```bash
 cd ~
 mkdir downloads
 cd downloads
-wget https://repo.anaconda.com/archive/Anaconda3-2019.07-Linux-x86_64.sh
+wget https://repo.anaconda.com/archive/Anaconda3-2020.07-Linux-x86_64.sh
 sudo bash Anaconda3-2019.07-Linux-x86_64.sh
 exit
 ```
@@ -62,24 +62,27 @@ sudo chmod -R 777 anaconda3
 conda install jupyter
 ```
 
-  * Jupyter Notebook  (DONT USE JUPYTER NOTEBOOK)
-    * In Win10, goto start menu and select `Jupyter Notebook (Anaconda3)`
-    * In Win10-Ubunutu Terminal
+  * Using *Python*
+  
+    * open ubuntu terminal and type `python3`
+	
+  * Using Jupyter Notebook  (DONT USE JUPYTER NOTEBOOK FOR LECTURE)
+  
+    * In Win10-Ubunutu Terminal, first make sure the win10 `xming` app is running, then:
     
       ```bash
       #navigate to directory where you want to launch programming/
       jupyter notebook
       ```
       
-    * In both, click `new` button in upper right corner, then `python3`
-  
-  * *Python*
-    * open ubuntu terminal and type `python3`
+    * If you installed anaconda in Win10, goto start menu and select `Jupyter Notebook (Anaconda3)`
 	
+    * In either, click `new` button in upper right corner, then `python3`
+  
 </p>
 </details>
 
-<details><summary>MacOS Terminal Setup (already done)</summary>
+<details><summary>MacOS Terminal Setup (should already be done)</summary>
 <p>
  
   * Open a terminal window
@@ -95,23 +98,95 @@ conda install jupyter
 </p>
 </details>
 
-<details><summary>MacOS Python Setup (New!!)</summary>
+<details><summary>MacOS Anaconda Setup (New!!)</summary>
 <p>
 
-  *`Anaconda` should be [installed](http://computingskillsforbiologists.com/setup/basic-programming/)
-  * Launch jupyter notebook (DONT USE JUPYTER NOTEBOOK)
+[Anaconda](https://www.anaconda.com/products/individual) is a free distribution of Python and R that includes preinstalled packages.  When you run `conda`, it is almost invisible but you will use its installations of Python and R rather than those that are already on your system.  While this may seem a bit confusing at first, the point of Anaconda is to make using Python easier.
+
+  *`Anaconda` should be installed following [instructions here](http://computingskillsforbiologists.com/setup/basic-programming/)
+  
   * open terminal and type `python3`
+  
+  * To launch jupyter notebook (DONT USE JUPYTER NOTEBOOK FOR LECTURE)
+  
 
 </p>
 </details>
 
+
+
+<details><summary>Updating Older Anaconda Installation on MacOS/Ubuntu</summary>
+<p>
+
+Confirm that conda is running by checking for `(base)` before command prompt
+
+```bash
+(base) cbird@XPS15:~$
+```
+
+```bash
+# this will take a while
+conda update --prefix ~/anaconda3 anaconda
+```
+
+</p>
+</details>
 
 ___
 
 
 ## [I. Lecture Slides](https://github.com/tamucc-comp-bio/fall_2019/blob/master/lectures/Week05_files/Lecture05_BasicProgramming.pdf)
 
-## II. Python Activities
+## II. Anaconda
+
+### What is Anaconda?
+
+[Anaconda](https://www.anaconda.com/products/individual) is a free distribution of Python and R that includes preinstalled packages.  When you run `conda`, it is almost invisible but you will use its installations of Python and R rather than those that are already on your system.  While this may seem a bit confusing at first, the point of Anaconda is to make using Python easier.
+
+
+___
+
+### Activating & Deactivating Anaconda
+
+After you install Anaconda and restart, confirm that conda is running by checking for `(base)` before command prompt
+
+```bash
+(base) cbird@XPS15:~$
+```
+
+If conda is not on, you can turn it on:
+
+```bash
+conda activate
+```
+
+You can also turn `conda` off:
+
+```bash
+source deactivate
+```
+
+___
+
+
+### One More Time, What is Anaconda?
+
+When `conda` is turned on, your default `python` will be that installed by `anaconda` and will include all the packages that `anaconda` preinstalls. You are not in a "conda command prompt", rather, `bash` is altered when `conda` is running.
+
+You know that `conda` is running if your have `(base)` or something similar prior to your command prompt:
+
+```bash
+(base) cbird@XPS15:~$
+```
+
+Make sure `conda` is on for lectures and when completing assignments.
+
+```bash
+conda activate
+```
+
+
+## III. Python Activities
 
 ### How to Get Help
 
