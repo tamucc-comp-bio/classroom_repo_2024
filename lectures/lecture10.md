@@ -309,7 +309,7 @@ Like `R`, `python` code obeys the standard order of mathematical operations, but
 ___
 
 
-#### Variable Assignment
+### Variable Assignment
 
 Variable assignment is similar to `R`
 
