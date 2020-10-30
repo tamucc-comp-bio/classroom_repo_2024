@@ -216,66 +216,86 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>>
 ```
 
+_*Note: you can exit `python3` enviroment with `ctrl+d`*_
+
+___
+
+
 ### How to Get Help
 
 * [docs.python.org](https://docs.python.org/3/)
   
 * [stackoverflow.com](https://stackoverflow.com/)
 
-  ```python
-  help()
-  help("My_COMMAND")  #pseudocode, replace My_COMMAND with the command you need help with
-  ```
-  Note: ctrl+d exits the help environment if you are using python (without jupyter notebook)
+```python
+help()
+help("My_COMMAND")  #pseudocode, replace My_COMMAND with the command you need help with
+```
+
+*_Note: `ctrl+d` exits the help environment if you are using python (without jupyter notebook)_*
+
+___
+
 
 ### Simple Calculations and Basic Data Types
 
-Math is much easier to code in `python` than `bash`.  The following code gives examples of some of the `python` data types
-  * Integers    round numbers
-  * Floats    decimal numbers
-  * Booleans    TRUE, FALSE
-  * Strings    text
+Math is much easier to code in `python` than `bash`.  The following code gives examples of some of the `python` data types:
+
+* Integers    round numbers
+
+* Floats    decimal numbers
+
+* Booleans    TRUE, FALSE
+
+* Strings    text
   
-  ```python
-  # Math
-  >>> 2 + 2
-  4
-  >>> 2 - 1.5
-  >>> 2 * 2
-  >>> 3 / 2
-  >>> 3 // 2    #integer division
-  >>> 3 % 2    #modulo, or remainder of integer division
-  
-  # Equalities
-  >>> 2 > 3
-  >>> 3 > 2
-  >>> 2 == 2
-  >>> 2 != 2    "not equal"
-  >>> 2 <= 2
-  >>> 2 >= 2
-  
-  # Logical operations
-  >>> 1 < 2 & 2 < 3    "and"
-  >>> 1 < 2 | 2 > 3    "or"
-  >>> 1 < 2 ! 2 > 3    "not"
-  
-  # Print text string
-  >>> "my string"
-  ```
+```python
+# Math
+>>> 2 + 2
+4
+>>> 2 - 1.5
+>>> 2 * 2
+>>> 3 / 2
+>>> 3 // 2    #integer division
+>>> 3 % 2    #modulo, or remainder of integer division
+
+# Equalities
+>>> 2 > 3
+>>> 3 > 2
+>>> 2 == 2
+>>> 2 != 2    "not equal"
+>>> 2 <= 2
+>>> 2 >= 2
+
+# Logical operations
+>>> 1 < 2 & 2 < 3    "and"
+>>> 1 < 2 | 2 > 3    "or"
+>>> 1 < 2 ! 2 > 3    "not"
+
+# Print text string
+>>> "my string"
+```
 
 When text strings have single and double quotes, encapsulate the string in 3 additional pairs of quotes
-  ```python
-  >>> """The tree's height is 6'2"."""
-  'The tree\'s height is 6\'2".'                  #' ignore this comment
-  ```
 
-`python` code obeys the standard order of mathematical operations, but using parentheses makes code more readable
-  *_P_*arentheses before
-  *_E_*xponents before
-  *_M_*ulitpy or 
-  *_D_*ivide before
-  *_A_*ddition or
-  *_S_*ubtraction
+```python
+>>> """The tree's height is 6'2"."""
+'The tree\'s height is 6\'2".'                  #' ignore this comment
+```
+
+Like `R`, `python` code obeys the standard order of mathematical operations, but using parentheses makes code more readable
+
+*_P_*arentheses before
+
+*_E_*xponents before
+
+*_M_*ulitpy or 
+
+*_D_*ivide before
+
+*_A_*ddition or
+
+*_S_*ubtraction
 
   ```python
   >>> 2 * 3 ** 3
