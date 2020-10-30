@@ -115,7 +115,7 @@ conda install jupyter
 
 
 
-<details><summary>Updating Older Anaconda Installation on MacOS/Ubuntu</summary>
+<details><summary>Updating Anaconda Installation on MacOS/Ubuntu</summary>
 <p>
 
 Confirm that conda is running by checking for `(base)` before command prompt
@@ -182,7 +182,8 @@ You know that `conda` is running if your have `(base)` or something similar prio
 Make sure `conda` is on for lectures and when completing assignments.
 
 ```bash
-conda activate
+cbird@XPS15:~$ conda activate
+(base) cbird@XPS15:~$
 ```
 
 
