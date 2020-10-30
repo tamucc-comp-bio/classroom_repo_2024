@@ -162,26 +162,17 @@ Project examples: automatically process data from experimental apparatus; image 
 -->
 
 
-
-<!--
-
-* [11/22  Week11 Data Wrangling and Visualization with The Tidyverse](https://github.com/tamucc-comp-bio/fall_2019/blob/master/lectures/lecture12.md)
-  * [Assignment 12, Due 12/04](https://classroom.github.com/a/1cpXbLT8) *Undergrads Only*
-  * Graduate students, push your completed independent projects to GitHub on 12/04
-
--->
-
 ---
 
 
-<details><summary>SECTION 3. PROGRAMMING WITH PYTHON </summary>
-<p>
+SECTION 3. PROGRAMMING WITH PYTHON
+
+
+* [10/30  Week10 Basic Python Programming I](lectures/lecture10new.md)
+  * [Assignment_5, Due 10/11](https://github.com/tamucc-comp-bio/fall_2019/blob/master/assignments/assignment_5.md)
 
 <!-- 
 
-* [10/04  Week05 Basic Python Programming I](https://github.com/tamucc-comp-bio/fall_2019/blob/master/lectures/lecture05.md)
-  * [Assignment_5, Due 10/11](https://github.com/tamucc-comp-bio/fall_2019/blob/master/assignments/assignment_5.md)
-  * Grad Student Course Project: Commit at least 1 working function to your GitHub project repo, Due 10/11
 
 * [10/11  Week06 Basic Python Programming II](https://github.com/tamucc-comp-bio/fall_2019/blob/master/lectures/lecture06.md)
   * [Assignment 6, Due 10/18](https://github.com/tamucc-comp-bio/fall_2019/blob/master/assignments/assignment_6.md)
