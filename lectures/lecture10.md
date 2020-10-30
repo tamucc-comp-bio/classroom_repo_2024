@@ -52,7 +52,34 @@ cd ~
 mkdir downloads
 cd downloads
 wget https://repo.anaconda.com/archive/Anaconda3-2020.07-Linux-x86_64.sh
+
+# check data integrity
+sha256sum Anaconda3-2020.07-Linux-x86_64.sh
+
+# install
 sudo bash Anaconda3-2020.07-Linux-x86_64.sh
+```
+
+If you see this message:
+
+```bash
+Anaconda3 will now be installed into this location:
+/root/anaconda3
+
+    - Press ENTER to confirm the location
+    - Press CTRL-C to abort the installation
+    - Or specify a different location below
+```
+
+then type 
+
+```bash
+~/anaconda3
+```
+
+Finish install
+
+```bash
 exit
 ```
 
