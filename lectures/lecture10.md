@@ -202,7 +202,7 @@ cbird@XPS15:~$ conda activate
 ___
 
 
-## III. Python Activities
+## III. Getting Started in Python (Ch 3.3)
 
 ### How to Run Python
 
@@ -297,183 +297,209 @@ Like `R`, `python` code obeys the standard order of mathematical operations, but
 
 *_S_*ubtraction
 
-  ```python
-  >>> 2 * 3 ** 3
-  54
-  >>> 2 * (3 ** 3)
-  54
-  >>> (2 * 3) ** 3
-  216
-  ```
+```python
+>>> 2 * 3 ** 3
+54
+>>> 2 * (3 ** 3)
+54
+>>> (2 * 3) ** 3
+216
+```
+
+___
+
 
 #### Variable Assignment
 
-Variable assignment works much like `bash`
-  ```python
-  >>> x = 5
-  >>> x
-  5
-  >>> who   #show user-defined variables, jupyter notebook only
-  x
-  >>> vars()   #works in python, not jupyter. others: globals(), locals(), dir()
-  {'__name__': '__main__', '__doc__': None, '__package__': None, '__loader__': <class '_frozen_importlib.BuiltinImporter'>, '__spec__': None, '__annotations__': {}, '__builtins__': <module 'builtins' (built-in)>, 'x': 5}
-  ```
+Variable assignment is similar to `R`
+
+```python
+>>> x = 5
+>>> x
+5
+>>> who   #show user-defined variables, jupyter notebook only
+x
+>>> vars()   #works in python, not jupyter. others: globals(), locals(), dir()
+{'__name__': '__main__', '__doc__': None, '__package__': None, '__loader__': <class '_frozen_importlib.BuiltinImporter'>, '__spec__': None, '__annotations__': {}, '__builtins__': <module 'builtins' (built-in)>, 'x': 5}
+```
+
+*_Note: the output of `vars()` is in pairs.  Each item in a pair is delimited by `:`.  Each pair is delimited by `,`.*_
 
 Math with variables
 
-  ```python
-  >>> x + 3
-  8
-  >>> y = 8
-  >>> x + y
-  13
-  ```
+```python
+>>> x + 3
+8
+>>> y = 8
+>>> x + y
+13
+```
 
-Variables can also store text, but unlike bash, you must use quotes in python. further, mathematical operators can be used to paste text together, but variable data types must be the same
+Variables can also store text, and like `R`, you must use quotes in `python3`. Further, mathematical operators can be used to paste text together, but variable data types must be the same
 
-  ```python
-  >>> x = "The cell grew"
-  >>> x + " and is now larger"
-  ```
+```python
+>>> x = "The cell grew"
+>>> x + " and is now larger"
+```
 
 You can not add a number and text together, unless the number is stored as a string or converted to a string
 
-  ```python
-  >>> x + y
-  Traceback (most recent call last):
-    File "<stdin>", line 1, in <module>
-  NameError: name 'y' is not defined
-  >>> y=" 8 nm"
-  >>> x + y
-  'The cell grew 8 nm'
-  >>> y=8
-  >>> x + " " + str(y) + " nm"
-  'The cell grew 8 nm'
-  ```
+```python
+>>> x + y
+Traceback (most recent call last):
+File "<stdin>", line 1, in <module>
+NameError: name 'y' is not defined
+>>> y=" 8 nm"
+>>> x + y
+'The cell grew 8 nm'
+>>> y=8
+>>> x + " " + str(y) + " nm"
+'The cell grew 8 nm'
+```
 
-As you can see, str() changes the datatype to string.  Obviously, datatype is important in python
+As you can see, `str()` changes the datatype to string.  Obviously, datatype is important in `python3`
 
-  ```python
-  >>> z="88"
-  >>> type(z)
-  >>> y + int(z)    #change z datatype to integer
-  96
-  ```
+```python
+>>> z="88"
+>>> type(z)
+>>> y + int(z)    #change z datatype to integer
+96
+```
 
-#### Built-in Functions
+___
 
-In `python`, each buitin function name is following by parentheses that encapsulate the arguments passed to the function
 
-  ```python
-  >>> s = "a long string"
-  >>> len(s)          #length, number of characters
-  13
-  >>> abs(-3.14)        #absolute value
-  3.14
-  >>> pow(3, 6)        #power, 3^6
-  729
-  >>> print(s)        #print variable to screen
-  a long string
-  >>> round(3.1415926535, 3)  #round to 3 decimals
-  3.142
-  >>> help(round)        #get help on round function
-  ```
+### Built-in Functions (a.k.a. Commands)
 
-#### Strings
+In `python3`, like `R`, each builtin function name is followed by parentheses that encapsulate the arguments passed to the function
 
-Python is has many useful functions for string manipulation.  We will start by making a string
+```python
+>>> s = "a long string"
+>>> len(s)          #length, number of characters
+13
+>>> abs(-3.14)        #absolute value
+3.14
+>>> pow(3, 6)        #power, 3^6
+729
+>>> print(s)        #print variable to screen
+a long string
+>>> round(3.1415926535, 3)  #round to 3 decimals
+3.142
+>>> help(round)        #get help on round function
+```
 
-  ```python
-  >>> astring = "ATGCATG"
-  >>> len(astring)
-  7
-  ```
+___
+
+
+### Strings
+
+Python has many useful functions for string manipulation.  We will start by making a string an counting the number of characters using `len()`
+
+```python
+>>> astring = "ATGCATG"
+>>> len(astring)
+7
+```
   
-Python is "*object-oriented*", which means that each *object*, such as a *string variable*, has a set a functions specific to that *object*, called *methods*.  
+Unlike `R`, `python3` is "*object-oriented*".  This means that each *object*, such as a *string variable*, has a set a functions specific to that *object*, called *methods*.  
 
-  ```python
-  #Press tab after the period to list methods
-  >>> astring.
-  astring.capitalize(    astring.isdigit(       astring.rfind(
-  astring.casefold(      astring.isidentifier(  astring.rindex(
-  astring.center(        astring.islower(       astring.rjust(
-  astring.count(         astring.isnumeric(     astring.rpartition(
-  astring.encode(        astring.isprintable(   astring.rsplit(
-  astring.endswith(      astring.isspace(       astring.rstrip(
-  astring.expandtabs(    astring.istitle(       astring.split(
-  astring.find(          astring.isupper(       astring.splitlines(
-  astring.format(        astring.join(          astring.startswith(
-  astring.format_map(    astring.ljust(         astring.strip(
-  astring.index(         astring.lower(         astring.swapcase(
-  astring.isalnum(       astring.lstrip(        astring.title(
-  astring.isalpha(       astring.maketrans(     astring.translate(
-  astring.isascii(       astring.partition(     astring.upper(
-  astring.isdecimal(     astring.replace(       astring.zfill(
-  ```
+```python
+#Press tab twice after the period to list methods
+>>> astring.
+astring.capitalize(    astring.isdigit(       astring.rfind(
+astring.casefold(      astring.isidentifier(  astring.rindex(
+astring.center(        astring.islower(       astring.rjust(
+astring.count(         astring.isnumeric(     astring.rpartition(
+astring.encode(        astring.isprintable(   astring.rsplit(
+astring.endswith(      astring.isspace(       astring.rstrip(
+astring.expandtabs(    astring.istitle(       astring.split(
+astring.find(          astring.isupper(       astring.splitlines(
+astring.format(        astring.join(          astring.startswith(
+astring.format_map(    astring.ljust(         astring.strip(
+astring.index(         astring.lower(         astring.swapcase(
+astring.isalnum(       astring.lstrip(        astring.title(
+astring.isalpha(       astring.maketrans(     astring.translate(
+astring.isascii(       astring.partition(     astring.upper(
+astring.isdecimal(     astring.replace(       astring.zfill(
+```
   
 To learn more about a method, use `help`
 
-  ```python
-  >>> help(astring.find)
-  ```
+```python
+>>> help(astring.find)
+```
+  
+*_Note: `q` will exit you from the help screen._*
 
 Here are some examples of the string-specific methods
 
-  ```python
-  >>> astring.replace("T", "U")
-  'AUGCAUG'
-  >>> astring.find("C")    #first position of C
-  3
-  >>> astring.count("G")
-  2
-  >>> newstring = " Mus musculus "
-  # split string with , 
-  >>> newstring.split()
-  ['Mus', 'musculus']
-  # replace value with ,    similar to the bash command: tr "u" ","
-  >>> newstring.split("u")
-  [' M', 's m', 'sc', 'l', 's ']
-  # remove leading and trailig whitespace
-  >>> newstring.strip()        
-  'Mus musculus'
-  ```
+```python
+>>> astring.replace("T", "U")
+'AUGCAUG'
+
+>>> astring.find("C")    #first position of C
+3
+
+>>> astring.count("G")
+2
+
+>>> newstring = " Mus musculus "
+
+# split string with , 
+>>> newstring.split()
+['Mus', 'musculus']
+
+# replace value with ,    similar to the bash command: tr "u" ","
+>>> newstring.split("u")
+[' M', 's m', 'sc', 'l', 's ']
+
+# remove leading and trailig whitespace
+>>> newstring.strip()        
+'Mus musculus'
+```
+
+*_Note: two methods can be used in succession `astring.upper().find("C")`_*
 
 String methods can also be applied to strings that are not stored in variables
 
-  ```python
-  >>> "atgc".upper()
-  'ATGC'
-  >>> "TGCA".lower()
-  'tgca'
-  ```
+```python
+>>> "atgc".upper()
+'ATGC'
+>>> "TGCA".lower()
+'tgca'
+```
   
 Concatenate strings with + (slow) or `join` (fast)
 
-  ```python
-  >>> genus = "Rattus"
-  >>> species = "norvegicus"
-  >>> genus + " " + species
-  'Rattus norvegicus'
-  >>> human = ["Homo", "sapiens"]
-  >>> " ".join(human)
-  'Homo sapiens'
-  >>> "->".join(["one", "leads", "2", "the", "other"])
-  'one->leads->2->the->other'
-  ```
+```python
+>>> genus = "Rattus"
+>>> species = "norvegicus"
+>>> genus + " " + species
+'Rattus norvegicus'
+
+>>> human = ["Homo", "sapiens"]
+>>> " ".join(human)
+'Homo sapiens'
+
+>>> "->".join(["one", "leads", "2", "the", "other"])
+'one->leads->2->the->other'
+```
   
 Be careful not to confuse built-in *functions* with object-specific *methods*
 
-  ```python
-  >>> s = "ATGC"
-  #call built in function print
-  >>> print(s)
-  ATGC
-  #there is no print method, so if you try to call it, it fails
-  >>> s.print()
-  Traceback (most recent call last):
-    File "<stdin>", line 1, in <module>
-  AttributeError: 'str' object has no attribute 'print'
-  ```
+```python
+>>> s = "ATGC"
+
+#call built in function print
+>>> print(s)
+ATGC
+
+#there is no print method, so if you try to call it, it fails
+>>> s.print()
+Traceback (most recent call last):
+File "<stdin>", line 1, in <module>
+AttributeError: 'str' object has no attribute 'print'
+```
 
 ---
 
@@ -481,7 +507,7 @@ Be careful not to confuse built-in *functions* with object-specific *methods*
 
 ---
 
-### 3.4 Data Structures
+## IV. Python Data Structures (ch 3.4)
 
 Python provides built-in data structures which are special types of objects that store data that is organized in a particular manner. It is important to learn to choose the right data structure for a particular task. 
 * Lists contain ordered sequences of values, termed *elements*
