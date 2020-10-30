@@ -1,4 +1,4 @@
-# Week05 Python Boot Camp I: Basic Programming 
+# Week10 Python Boot Camp I: Basic Programming 
 
 ### Exam 1 is due on 11/02
 
