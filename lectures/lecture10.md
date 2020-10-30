@@ -507,223 +507,247 @@ AttributeError: 'str' object has no attribute 'print'
 
 ---
 
-## IV. Python Data Structures (ch 3.4)
+## IV. Python [Data Structures](https://docs.python.org/3/tutorial/datastructures.html) (ch 3.4)
 
-Python provides built-in data structures which are special types of objects that store data that is organized in a particular manner. It is important to learn to choose the right data structure for a particular task. 
-* Lists contain ordered sequences of values, termed *elements*
-* Tuples are list where the elements cannot be changed or reordered
-* Set are collections of distinct objects
+Python provides built-in [data structures](https://docs.python.org/3/tutorial/datastructures.html) that are special types of objects that store data that is organized in a particular manner. It is important to learn to choose the right data structure for a particular task. 
+
+* _Lists_ contain ordered sequences of values, termed *elements*
+
+* _Tuples_ are lists where the elements cannot be changed or reordered
+
+* _Sets_ are collections of distinct objects
+
+___
+
+### [Lists](https://docs.python.org/3/tutorial/datastructures.html#more-on-lists)
+
 
 Defining lists
-  ```python
-  # create an empty list 
-  >>> new_list = []
-  
-  # create a list with elements, note that different data types can be used
-  >>> my_list = [3, 2.44, "green", True]
-  
-  # the `list` function can be used to create a list
-  >>> a = list("0123456789")
-  >>> a
-  ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
-  ```
+
+```python
+# create an empty list 
+>>> new_list = []
+
+# create a list with elements, note that different data types can be used
+>>> my_list = [3, 2.44, "green", True]
+
+# the `list` function can be used to create a list
+>>> a = list("0123456789")
+>>> a
+['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+```
+
 
 Each element in a list is indexed, [starting at 0](http://python-history.blogspot.com/2013/10/why-python-uses-0-based-indexing.html), and elements can be retrieved by their index.
-  ```python
-  # retrieve second value in `my_list`
-  >>> my_list[1]
-  2.44
-  
-  # retrieve first value in `my_list`
-  >>> my_list[0]
-  3
-  
-  # you will trigger an error if there is no element at the specified index
-  >>> my_list[4]
-  Traceback (most recent call last):
-    File "<stdin>", line 1, in <module>
-  IndexError: list index out of range
-  ```
+
+```python
+# retrieve second value in `my_list`
+>>> my_list[1]
+2.44
+
+# retrieve first value in `my_list`
+>>> my_list[0]
+3
+
+# you will trigger an error if there is no element at the specified index
+>>> my_list[4]
+Traceback (most recent call last):
+File "<stdin>", line 1, in <module>
+IndexError: list index out of range
+```
 
 You can also set values of particular elements using the index
-  ```python
-  # change first element of `my_list` to "blue"
-  >>> my_list[0] = "blue"
-  >>> my_list
-  ['blue', 2.44, 'green', True]
-  
-  # retrieve elements 0 to 1, not including 1
-  >>> my_list[0:1]
-  ['blue']
-  
-  # retrieve elements 1 to 3, not including 3
-  >>> my_list[1:3]
-  [2.44, 'green']
-  
-  # retrieve all elements
-  >>> my_list[:]
-  ['blue', 2.44, 'green', True]
-  
-  # retrieve all elements before 3
-  >>> my_list[:3]
-  ['blue', 2.44, 'green']
-  
-  # retrieve all elements from three to the end of the list
-  >>> my_list[3:]
-  [True]
-  
-  # retrieve the 2nd to last element
-  >>> my_list[-2]
-  'green'
-  ```
+
+```python
+# change first element of `my_list` to "blue"
+>>> my_list[0] = "blue"
+>>> my_list
+['blue', 2.44, 'green', True]
+
+# retrieve elements 0 to 1, not including 1
+>>> my_list[0:1]
+['blue']
+
+# retrieve elements 1 to 3, not including 3
+>>> my_list[1:3]
+[2.44, 'green']
+
+# retrieve all elements
+>>> my_list[:]
+['blue', 2.44, 'green', True]
+
+# retrieve all elements before 3
+>>> my_list[:3]
+['blue', 2.44, 'green']
+
+# retrieve all elements from three to the end of the list
+>>> my_list[3:]
+[True]
+
+# retrieve the 2nd to last element
+>>> my_list[-2]
+'green'
+```
 
 The most useful methods for lists are:
 ```python
-  #`append` an element to the end of a list
-  >>> my_list.append(25)
-  >>> my_list
-  ['blue', 2.44, 'green', True, 25]
+#`append` an element to the end of a list
+>>> my_list.append(25)
+>>> my_list
+['blue', 2.44, 'green', True, 25]
 
-  #`copy` the list to a new list
-  >>> new_list = my_list.copy()
-  >>> new_list
-  ['blue', 2.44, 'green', True, 25]
+#`copy` the list to a new list
+>>> new_list = my_list.copy()
+>>> new_list
+['blue', 2.44, 'green', True, 25]
 
-  # `clear` all elements from a list
-  >>> my_list.clear()
-  >>> my_list
-  []
+# `clear` all elements from a list
+>>> my_list.clear()
+>>> my_list
+[]
 
-  #`count` occurences of a specified element in the list
-  >>> seq = list("TKAAVVNFT")
-  >>> seq.count("V")
-  2
+#`count` occurences of a specified element in the list
+>>> seq = list("TKAAVVNFT")
+>>> seq.count("V")
+2
 
-  #`index`, return the index of the first matching element
-  >>> seq.index("V")
-  4
+#`index`, return the index of the first matching element
+>>> seq.index("V")
+4
 
-  #`pop` remove last element of a list an return it
-  >>> seq2 = seq.pop()
-  >>> seq
-  ['T', 'K', 'A', 'A', 'V', 'V', 'N', 'F']
-  >>> seq2
-  'T'
+#`pop` remove last element of a list an return it
+>>> seq2 = seq.pop()
+>>> seq
+['T', 'K', 'A', 'A', 'V', 'V', 'N', 'F']
+>>> seq2
+'T'
 
-  #`sort` the elements in the list, best for numbers or characters
-  >>> a = [1, 5, 2, 42, 14, 132]
-  >>> a.sort()
-  >>> a
-  [1, 2, 5, 14, 42, 132]
+#`sort` the elements in the list, best for numbers or characters
+>>> a = [1, 5, 2, 42, 14, 132]
+>>> a.sort()
+>>> a
+[1, 2, 5, 14, 42, 132]
 
-  #`reverse` the order of the elements in the list
-  >>> a.reverse()
-  >>> a
-  [132, 42, 14, 5, 2, 1]
+#`reverse` the order of the elements in the list
+>>> a.reverse()
+>>> a
+[132, 42, 14, 5, 2, 1]
 
-  #`del` an element or series of elements
-  >>> del(a[2:3])
-  >>> a
-  [132, 42, 5, 2, 1]
-  ```
+#`del` an element or series of elements
+>>> del(a[2:3])
+>>> a
+[132, 42, 5, 2, 1]
+```
 
-#### Dictionaries
+___
+
+
+### [Dictionaries](https://docs.python.org/3/tutorial/datastructures.html#dictionaries)
 
 In an English dictionary, *definitions* are indexed by *words*.
+
 In a  Python  dictionary, *elements*    are indexed by *keys*.
+
 Syntax: `key:value, key2:value, key3:value ...`
-  ```python
-  # Make an empty dictionary
-  >>> my_dict = {}
 
-  # like lists, dictionaries can contain several datatypes, not just 1
-  >>> my_dict = {"a": "test", "b": 3.14, "c": [1, 2, 3, 4]}
-  >>> my_dict
-  {'a': 'test', 'b': 3.14, 'c': [1, 2, 3, 4]}
+```python
+# Make an empty dictionary
+>>> my_dict = {}
 
-  # the order of the key:values do not matter in dictionaries
-  >>> GenomeSize = {"Homo sapiens": 3200.0, "Escherichia coli": 4.6, "Arabidopsis thaliana": 157.0}
-  >>> GenomeSize
-  {'Homo sapiens': 3200.0, 'Escherichia coli': 4.6, 'Arabidopsis thaliana': 157.0}
+# like lists, dictionaries can contain several datatypes, not just 1
+>>> my_dict = {"a": "test", "b": 3.14, "c": [1, 2, 3, 4]}
+>>> my_dict
+{'a': 'test', 'b': 3.14, 'c': [1, 2, 3, 4]}
 
-  # call a specific key
-  >>> GenomeSize["Arabidopsis thaliana"]
-  157.0
+# the order of the key:values do not matter in dictionaries
+>>> GenomeSize = {"Homo sapiens": 3200.0, "Escherichia coli": 4.6, "Arabidopsis thaliana": 157.0}
+>>> GenomeSize
+{'Homo sapiens': 3200.0, 'Escherichia coli': 4.6, 'Arabidopsis thaliana': 157.0}
 
-  # add a new value using a novel key
-  >>> GenomeSize["Saccharomyces cerevisiae"] = 12.1
-  >>> GenomeSize
-  {'Homo sapiens': 3200.0, 'Escherichia coli': 4.6, 'Arabidopsis thaliana': 157.0, 'Saccharomyces cerevisiae': 12.1}
+# call a specific key
+>>> GenomeSize["Arabidopsis thaliana"]
+157.0
 
-  # nothing happens if the key:value exists
-  >>> GenomeSize["Escherichia coli"] = 4.6
-  >>> GenomeSize
-  {'Homo sapiens': 3200.0, 'Escherichia coli': 4.6, 'Arabidopsis thaliana': 157.0, 'Saccharomyces cerevisiae': 12.1}
+# add a new value using a novel key
+>>> GenomeSize["Saccharomyces cerevisiae"] = 12.1
+>>> GenomeSize
+{'Homo sapiens': 3200.0, 'Escherichia coli': 4.6, 'Arabidopsis thaliana': 157.0, 'Saccharomyces cerevisiae': 12.1}
 
-  # the value is replaced if the key exists by the value is different
-  >>> GenomeSize["Homo sapiens"] = 3201.1
-  >>> GenomeSize
-  {'Homo sapiens': 3201.1, 'Escherichia coli': 4.6, 'Arabidopsis thaliana': 157.0, 'Saccharomyces cerevisiae': 12.1}
-  ```
+# nothing happens if the key:value exists
+>>> GenomeSize["Escherichia coli"] = 4.6
+>>> GenomeSize
+{'Homo sapiens': 3200.0, 'Escherichia coli': 4.6, 'Arabidopsis thaliana': 157.0, 'Saccharomyces cerevisiae': 12.1}
+
+# the value is replaced if the key exists by the value is different
+>>> GenomeSize["Homo sapiens"] = 3201.1
+>>> GenomeSize
+{'Homo sapiens': 3201.1, 'Escherichia coli': 4.6, 'Arabidopsis thaliana': 157.0, 'Saccharomyces cerevisiae': 12.1}
+```
 
 Useful dictionary methods
-  ```python
-  # `copy` the dictionary
-  >>> GS = GenomeSize.copy()
-  >>> GS
-  {'Homo sapiens': 3201.1, 'Escherichia coli': 4.6, 'Arabidopsis thaliana': 157.0, 'Saccharomyces cerevisiae': 12.1}
 
-  # `clear` all elements 
-  >>> GenomeSize.clear()
-  >>> GenomeSize
-  {}
+```python
+# `copy` the dictionary
+>>> GS = GenomeSize.copy()
+>>> GS
+{'Homo sapiens': 3201.1, 'Escherichia coli': 4.6, 'Arabidopsis thaliana': 157.0, 'Saccharomyces cerevisiae': 12.1}
 
-  # `get` a value from a key, if the key doesn't exist then return a default value
-  >>> GS.get("Mus musculus", -10)
-  -10
+# `clear` all elements 
+>>> GenomeSize.clear()
+>>> GenomeSize
+{}
 
-  # `keys`, create a list containing the keys in a dictionary
-  # useful to initialize a dictionary or return a special value when a key is not present
-  >>> GS.keys()
-  dict_keys(['Homo sapiens', 'Escherichia coli', 'Arabidopsis thaliana', 'Saccharomyces cerevisiae'])
+# `get` a value from a key, if the key doesn't exist then return a default value
+>>> GS.get("Mus musculus", -10)
+-10
 
-  # `values`, create a list containing the values in a dictionary
-  >>> GS.values()
-  dict_values([3201.1, 4.6, 157.0, 12.1])
+# `keys`, create a list containing the keys in a dictionary
+# useful to initialize a dictionary or return a special value when a key is not present
+>>> GS.keys()
+dict_keys(['Homo sapiens', 'Escherichia coli', 'Arabidopsis thaliana', 'Saccharomyces cerevisiae'])
 
-  #`pop`, remove the specified key from dictionary and return value
-  >>> GS.pop("Homo sapiens")
-  3201.1
-  >>> GS
-  {'Escherichia coli': 4.6, 'Arabidopsis thaliana': 157.0, 'Saccharomyces cerevisiae': 12.1}
+# `values`, create a list containing the values in a dictionary
+>>> GS.values()
+dict_values([3201.1, 4.6, 157.0, 12.1])
 
-  # `update`, simplest way to join 2 dictionaries, order matters, keys in common will be overwritten. ' 
-  >>> D1 = {"a": 1, "b": 2, "c": 3}
-  >>> D2 = {"a": 2, "d": 4, "e": 5}
-  >>> D1.update(D2)
-  >>> D1
-  {'a': 2, 'b': 2, 'c': 3, 'd': 4, 'e': 5}
-  ```
+#`pop`, remove the specified key from dictionary and return value
+>>> GS.pop("Homo sapiens")
+3201.1
+>>> GS
+{'Escherichia coli': 4.6, 'Arabidopsis thaliana': 157.0, 'Saccharomyces cerevisiae': 12.1}
 
-#### Tuples 
+# `update`, simplest way to join 2 dictionaries, order matters, keys in common will be overwritten. ' 
+>>> D1 = {"a": 1, "b": 2, "c": 3}
+>>> D2 = {"a": 2, "d": 4, "e": 5}
+>>> D1.update(D2)
+>>> D1
+{'a': 2, 'b': 2, 'c': 3, 'd': 4, 'e': 5}
+```
+
+___
+
+
+### [Tuples](https://docs.python.org/3/tutorial/datastructures.html#tuples-and-sequences) 
 
 Tuples are like lists, but can not be changed (write protection) and are faster.
-  ```python
-  # define a tuple
-  >>> my_tuple = (1, "two", 3)
 
-  # return elements by indexing or slicing
-  >>> my_tuple[0]
-  1
+```python
+# define a tuple
+>>> my_tuple = (1, "two", 3)
 
-  # tuples cannot be changed
-  >>> my_tuple[0] = 33
-  Traceback (most recent call last):
-    File "<stdin>", line 1, in <module>
-  TypeError: 'tuple' object does not support item assignment
-  ```
+# return elements by indexing or slicing
+>>> my_tuple[0]
+1
+
+# tuples cannot be changed
+>>> my_tuple[0] = 33
+Traceback (most recent call last):
+File "<stdin>", line 1, in <module>
+TypeError: 'tuple' object does not support item assignment
+```
 
 There are only 2 methods for tuples
+
   ```python
   # `count` elements in tuple
   >>> tt = (1, 1, 1, 1, 2, 2, 4)
@@ -736,17 +760,21 @@ There are only 2 methods for tuples
   ```
 
 Tuples can also be used as keys in a dictionary
-  ```python
-  >>> D3 = {("trial", 62): 4829}
-  >>> D3
-  {('trial', 62): 4829}
-  ```
 
-#### Sets
+```python
+>>> D3 = {("trial", 62): 4829}
+>>> D3
+{('trial', 62): 4829}
+```
+
+### [Sets](https://docs.python.org/3/tutorial/datastructures.html#sets)
 
 Sets are lists without diplicated entries and have special operators.
+
 * Union - values in set 1 *or* set 2
+
 * Intersection - values in set 1 *and* set 2
+
 * Difference - values unshared between set 1 and 2
 
   ```python
