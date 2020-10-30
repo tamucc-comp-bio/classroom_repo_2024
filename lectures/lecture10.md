@@ -1,16 +1,46 @@
 # Week05 Python Boot Camp I: Basic Programming 
 
-### [Exam 1](https://github.com/tamucc-comp-bio/fall_2019/blob/master/assignments/exam_1.md) is due at the beginning of this lecture
+### Exam 1 is due on 11/02
 
-## Lecture 05 Slides
-* There are no slides this week
 
 ___
 
 ## Computer Preparation
 
 * Log into your TAMUCC email account
-* Win10
+
+<details><summary>Win10 - Ubuntu Setup (already done)</summary>
+<p>
+
+  * If the Ubuntu app is not installed, then follow [these instructions](https://github.com/cbirdlab/wlsUBUNTU_settings/blob/master/InstallLinuxOnWindows_Automated.pdf)
+  
+  * Log into your Ubuntu terminal.  _We will not use `gitbash` unless you can not get Ubuntu running._ After logging in, You are in your home directory. 
+  
+  * If you are using an Ubuntu terminal that has not been setup (you will know because it will ask you to create a new user name and password) or you notice odd cursor behavior when editing text in the terminal, then run the following code:
+  
+    ```bash
+    git clone https://github.com/cbirdlab/wlsUBUNTU_settings.git
+    . ./wlsUBUNTU_settings/updateSettings.bash
+    rm -rf wlsUBUNTU_settings
+    ```
+    
+  * If the `CSB` directory does not exist in your home directory (check with `ls`), then run the following code to clone the `CSB` repository into your home directory:
+  
+    ```bash
+    git clone https://github.com/CSB-book/CSB.git
+    ```
+
+  * It is always a good idea to keep your apps in `Ubuntu` up to date. _The first time you do this, it could take a long time to finish. After that, if you do this when you log in, it should go quickly._
+    ```bash
+    sudo apt update
+    sudo apt upgrade
+    ```
+</p>
+</details>
+
+<details><summary>Win10 Python Setup (NEW!!)</summary>
+<p>
+
   *`Anaconda` should be [installed](http://computingskillsforbiologists.com/setup/basic-programming/)
     * In Win10-Ubuntu terminal, installation is a bit more challenging here is how to make it work
     * Following `Anaconda` [download instructions](http://computingskillsforbiologists.com/setup/basic-programming/) with some modifications:
@@ -45,26 +75,36 @@ conda install jupyter
   
   * *Python*
     * open ubuntu terminal and type `python3`
+	
+</p>
+</details>
 
-  * If you are using an Ubuntu terminal that hasn't been setup (you'll know because it will ask you to create a new user name and password) or you notice odd cursor behavior when editing text in the terminal, then run the following code:
-    ```bash
-    git clone https://github.com/cbirdlab/wlsUBUNTU_settings.git
-    ../wlsUBUNTU_settings/updateSettings.bash
-    rm -rf wlsUBUNTU_settings
-    ```
+<details><summary>MacOS Terminal Setup (already done)</summary>
+<p>
+ 
+  * Open a terminal window
+  
+  * Consider installing [homebrew](https://brew.sh/).  You will be able to use homebrew to install linux software, such as `tree`, which is used in the slide show.
+  
   * If the `CSB` directory does not exist in your home directory (check with `ls`), then run the following code to clone the `CSB` repository into your home directory:
+  
     ```bash
     git clone https://github.com/CSB-book/CSB.git
     ```
-* MacOS
+
+</p>
+</details>
+
+<details><summary>MacOS Python Setup (New!!)</summary>
+<p>
+
   *`Anaconda` should be [installed](http://computingskillsforbiologists.com/setup/basic-programming/)
   * Launch jupyter notebook (DONT USE JUPYTER NOTEBOOK)
   * open terminal and type `python3`
 
-* If the `CSB` directory does not exist in your home directory (check with `ls`), then run the following code to clone the `CSB` repository into your home directory:
-  ```bash
-  git clone https://github.com/CSB-book/CSB.git
-  ```
+</p>
+</details>
+
 
 ___
 
