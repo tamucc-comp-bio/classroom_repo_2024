@@ -1,4 +1,4 @@
-# Week06 Python Boot Camp I: Basic Programming II
+# Week11 Python Boot Camp I: Basic Programming II
 
 ### [Assignment10](../assignments/assignment_10.md) is due at the beginning of this lecture
 
