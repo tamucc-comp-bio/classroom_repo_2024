@@ -1,6 +1,6 @@
 # Week06 Python Boot Camp I: Basic Programming II
 
-### [Assignment5](https://github.com/tamucc-comp-bio/fall_2019/blob/master/assignments/assignment_5.md) is due at the beginning of this lecture
+### [Assignment10](../assignments/assignment_10.md) is due at the beginning of this lecture
 
 
 ## Computer Preparation
@@ -26,11 +26,19 @@ No lecture slides this week
 
 ## II. Review of Python Activities for HW
 
+Mind Expander 3.2
+
+## III. Work through the rest of the chapter, sections 3.5-3.7
+
+[Work through the rest of the chapter, sections 3.5-3.7](https://classroom.github.com/a/hAEY-izo)
+* [Mind Expander (Intermezzo) 3.3] (https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMVNZOFAzOU0yUEQ0OFlaRDE5VjJCV0ZJSS4u)
+* [Mind Expander (intermezzo) 3.4](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMDc0M1pYUUc4T0xFUFVMWEVPRjA0QlcwTC4u)
+
 ### Common, General Functions
 
 The following is an overview of some of the many useful functions built into `python`
 
-* max and min; use on string, list, tuple; returns largest or smallest number or character with largest or smallest associated numerical value
+* `max` and `min`; use on string, list, tuple; returns largest or smallest number or character with largest or smallest associated numerical value
 
 	```python
 	#make set a
@@ -52,7 +60,7 @@ The following is an overview of some of the many useful functions built into `py
 	>>> ord('Z')
 	90
 	```
-* sum; use on list or set; adds up values
+* `sum`; use on list or set; adds up values
 
 	```python
 	>>> sum(a)
@@ -61,7 +69,7 @@ The following is an overview of some of the many useful functions built into `py
 	19
 	```
 
-* in; use on strings, lists, tuples, dictionaries, and sets; tests for membership
+* `in`; use on strings, lists, tuples, dictionaries, and sets; tests for membership
 
 	```python
 	>>> "s" in "string"
@@ -76,12 +84,16 @@ The following is an overview of some of the many useful functions built into `py
 	True
   ```
 
+___
+
+
 ### Program Flow
 
 #### If Then Statements
 
 If then statements are used to conditionally run code (make decisions about which code should be run)
-Note that the `...` are shown in your terminal and should not be typed.
+
+*_Note that the `...` are shown in your terminal and should not be typed.*_
 
 ```python
 # pseudo code describing basic structure of if then statments, do not type
@@ -97,7 +109,7 @@ else:
 
 ```python
 >>> x = 4
-... if x % 2 == 0:
+>>> if x % 2 == 0:
 ...     print("Divisible by 2")
 ...
 Divisible by 2
@@ -123,11 +135,15 @@ Divisible by 2
 Not divisible by 2, 3, 5, 7
 ```
 
+___
+
+
 #### While and For Loops
 
 Loops are used to repeat a block of code several times, often with slight variations.
 
 While loops continue to run until a condition is met.  Again, indentation and empty lines are necessary syntax features
+
 ```python
 #set x equal to zero
 >>> x = 0
@@ -175,8 +191,12 @@ While we are printing out the values of variables, this is for your edification.
 10946
 ```
 
+___
+
+
 It is very possible to create an infinite loop, so before running you want to be sure that the loop will end.
-Use ctrl+c to stop an infinite loop
+
+Use `ctrl+c` to stop an infinite loop
 
 ```python
 >>> a = True
@@ -186,7 +206,11 @@ Use ctrl+c to stop an infinite loop
 Infinite loop
 ```
 
+___
+
+
 Loops can be combined with If Then logic statements and `break` will end a loop
+
 Here we search for the first value above 15000 and below 19000 that is divisible by 19
 
 ```python
@@ -200,7 +224,11 @@ x = 15000
 15010 is divisible by 19
 ```
 
+___
+
+
 `continue` skips the remaining code in 1 cycle of the loop
+
 Here, we print out the first 100 even numbers, counting from 0.  Note that it really matters where the line `found = found + 1` is placed
 
 ```python
@@ -220,7 +248,10 @@ x = 0
 200
 ```
 
-For loops work very similarly to those in `bash` but the syntax is slightly different.  Here we print all of the values in a list
+___
+
+
+For loops work very similarly to those in `R` and `bash` but the syntax is slightly different.  Here we print all of the values in a list
 
 ```python
 >>> z = [1, 5, "mystring", True]
@@ -232,6 +263,9 @@ For loops work very similarly to those in `bash` but the syntax is slightly diff
 mystring
 True
 ```
+
+___
+
 
 When a string is presented to the For loop, it will iterate character by character
 
@@ -256,6 +290,9 @@ n
 g
 ```
 
+___
+
+
 To print the key:value pairs in a dictionary, we can use the `dictionary.items()` method which returns a list of tuples in conjuction with a for loop to iterate through the list
 
 ```python
@@ -271,6 +308,9 @@ dict_items([(0, 'a'), (1, 'b'), (2, 'c')])
 1 -> b
 2 -> c
 ```
+
+___
+
 
 The `range` function is useful to create a list of numbers for a For loop.  Note the non-intuitive behavior with the final value in the range.
 
@@ -296,6 +336,9 @@ The `range` function is useful to create a list of numbers for a For loop.  Note
 64
 81
 ```
+
+___
+
 
 Recall that each element in a list has an index value.  `enumerate()` can be used to show the index and value associate with each element
 
@@ -329,6 +372,9 @@ element: 2 value: mystring
 element: 3 value: True
 ```
 
+___
+
+
 You can apply the same function to all elements of list using _list comprehension_ 
 
 ```python
@@ -341,7 +387,7 @@ You can apply the same function to all elements of list using _list comprehensio
 
 ___
 
-#### Mind Expander (Intermezzo) 3.3
+#### [Mind Expander (Intermezzo) 3.3](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUNkFQTTUwVVRHWVBFVDFXUkhUWThHTFlCVy4u)
 
 Hint: you can self check by modifying the for loops to calculate the number of loops
 
