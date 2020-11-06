@@ -590,7 +590,7 @@ You should figure out where your python executable is and add a shebang! to your
 Thus, the shebang! is `/usr/local/bin/python3`
 
 
-## [III.  Group Excercise](https://classroom.github.com/g/AjcPKTDS)
+## [IV.  Group Excercise](https://classroom.github.com/g/AjcPKTDS)
 
 Break up into groups of 3 or 4 and complete exercise 3.8.2.  The reward for the team that submits a working script first is 10 pts per person extra credit on the next exam.
 
