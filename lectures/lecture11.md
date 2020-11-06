@@ -78,7 +78,9 @@ We do not want to save to `/root/anaconda3`.  We want to save to `~/anaconda3`, 
 /home/YOURUSERNAME/anaconda3
 ```
 
-Hit enter and finish install
+Hit enter and finish install.
+
+When asked to initialize conda, do it.
 
 ```bash
 exit
@@ -94,6 +96,12 @@ ls -d */
 
 # set permissions
 sudo chmod -R 777 anaconda3
+
+# if it is still not on, you will see a (base) before your command prompt if it is on, then do this:
+export PATH=~/anaconda3/bin:$PATH
+conda init
+
+# lastly, you can install jupiter notebook if you want, but we wont be using it
 conda install jupyter
 ```
 
