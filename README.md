@@ -150,8 +150,8 @@ Project examples: automatically process data from experimental apparatus; image 
 </p>
 </details>
 
-  * [Exam 2 Part 1, Due 11/02](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMk1SV05WNTUzOVZGR0ZDNkhBNDk4SVJYWS4u)
-  * [Exam 2 Part 2, Due 11/02](https://classroom.github.com/a/dIIyk6Xd)
+  * [Exam 2 Part 1, Due 11/04](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMk1SV05WNTUzOVZGR0ZDNkhBNDk4SVJYWS4u)
+  * [Exam 2 Part 2, Due 11/04](https://classroom.github.com/a/dIIyk6Xd)
 
 
 
