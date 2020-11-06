@@ -169,7 +169,7 @@ SECTION 3. PROGRAMMING WITH PYTHON
 * [10/30  Week10 Basic Python Programming I](lectures/lecture10.md)
   * [Assignment_10, Due 11/06](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMzdVVkQwTlRQMENSVTQ5S0dUT0c1NFgwRi4u)
 
-* [11/06  Week06 Basic Python Programming II](https://github.com/tamucc-comp-bio/fall_2019/blob/master/lectures/lecture06.md)
+* [11/06  Week11 Basic Python Programming II](lectures/lecture11.md)
 
   * [Assignment 11, Due 11/13](https://classroom.github.com/a/UBC9jm2D)
 
