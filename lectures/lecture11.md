@@ -5,18 +5,182 @@
 
 ## Computer Preparation
 
-* Log into your TAMUCC email account
-* Win10
-	* open ubuntu terminal and type `python3`
+Log into your TAMUCC email account
 
-	* If you are using an Ubuntu terminal that hasn't been setup (you'll know because it will ask you to create a new user name and password) or you notice odd cursor behavior when editing text in the terminal, then run the following code:
-		```bash
-		git clone https://github.com/cbirdlab/wlsUBUNTU_settings.git
-		../wlsUBUNTU_settings/updateSettings.bash
-		rm -rf wlsUBUNTU_settings
-		```
-* MacOS
-	* open terminal and type `python3`
+<details><summary>Win10 - Ubuntu Setup (should already be done)</summary>
+<p>
+
+  * If the Ubuntu app is not installed, then follow [these instructions](https://github.com/cbirdlab/wlsUBUNTU_settings/blob/master/InstallLinuxOnWindows_Automated.pdf)
+  
+  * Log into your Ubuntu terminal.  _We will not use `gitbash` unless you can not get Ubuntu running._ After logging in, You are in your home directory. 
+  
+  * If you are using an Ubuntu terminal that has not been setup (you will know because it will ask you to create a new user name and password) or you notice odd cursor behavior when editing text in the terminal, then run the following code:
+  
+    ```bash
+    git clone https://github.com/cbirdlab/wlsUBUNTU_settings.git
+    . ./wlsUBUNTU_settings/updateSettings.bash
+    rm -rf wlsUBUNTU_settings
+    ```
+    
+  * If the `CSB` directory does not exist in your home directory (check with `ls`), then run the following code to clone the `CSB` repository into your home directory:
+  
+    ```bash
+    git clone https://github.com/CSB-book/CSB.git
+    ```
+
+  * It is always a good idea to keep your apps in `Ubuntu` up to date. _The first time you do this, it could take a long time to finish. After that, if you do this when you log in, it should go quickly._
+    ```bash
+    sudo apt update
+    sudo apt upgrade
+    ```
+</p>
+</details>
+
+<details><summary>Win10 Anaconda Setup (NEW!!)</summary>
+<p>
+
+[Anaconda](https://www.anaconda.com/products/individual) is a free distribution of Python and R that includes preinstalled packages.  When you run `conda`, it is almost invisible but you will use its installations of Python and R rather than those that are already on your system.  While this may seem a bit confusing at first, the point of Anaconda is to make using Python easier.
+
+  * In Win10-Ubuntu terminal, `Anaconda` installation is a bit more challenging than just simply following `Anaconda` [download instructions](http://computingskillsforbiologists.com/setup/basic-programming/).  Here is how to make it work:
+
+```bash
+sudo apt update
+sudo apt upgrade
+cd ~
+mkdir downloads
+cd downloads
+wget https://repo.anaconda.com/archive/Anaconda3-2020.07-Linux-x86_64.sh
+
+# check data integrity
+sha256sum Anaconda3-2020.07-Linux-x86_64.sh
+
+# install
+sudo bash Anaconda3-2020.07-Linux-x86_64.sh
+```
+
+Review the license agreement.  Note that the `d` key allows you to go down page by page.
+
+If you see this message:
+
+```bash
+Anaconda3 will now be installed into this location:
+/root/anaconda3
+
+    - Press ENTER to confirm the location
+    - Press CTRL-C to abort the installation
+    - Or specify a different location below
+```
+
+We do not want to save to `/root/anaconda3`.  We want to save to `~/anaconda3`, but the installer does not recognize the ~. 
+
+```bash
+# if your installer is not pointed to ~/anaconda3, type the following
+/home/YOURUSERNAME/anaconda3
+```
+
+Hit enter and finish install
+
+```bash
+exit
+```
+
+Restart ubunutu terminal
+
+```bash
+cd ~
+
+# make sure you have folder anaconda3
+ls -d */
+
+# set permissions
+sudo chmod -R 777 anaconda3
+conda install jupyter
+```
+
+  * Using *Python*
+  
+    * open ubuntu terminal and type `python3`
+	
+  * Using Jupyter Notebook  (DONT USE JUPYTER NOTEBOOK FOR LECTURE)
+  
+    * In Win10-Ubunutu Terminal, first make sure the win10 `xming` app is running, then:
+    
+      ```bash
+      #navigate to directory where you want to launch programming/
+      jupyter notebook
+      ```
+      
+    * If you installed anaconda in Win10, goto start menu and select `Jupyter Notebook (Anaconda3)`
+	
+    * In either, click `new` button in upper right corner, then `python3`
+  
+</p>
+</details>
+
+<details><summary>MacOS Terminal Setup (should already be done)</summary>
+<p>
+ 
+  * Open a terminal window
+  
+  * Consider installing [homebrew](https://brew.sh/).  You will be able to use homebrew to install linux software, such as `tree`, which is used in the slide show.
+  
+  * If the `CSB` directory does not exist in your home directory (check with `ls`), then run the following code to clone the `CSB` repository into your home directory:
+  
+    ```bash
+    git clone https://github.com/CSB-book/CSB.git
+    ```
+
+</p>
+</details>
+
+<details><summary>MacOS Anaconda Setup (New!!)</summary>
+<p>
+
+[Anaconda](https://www.anaconda.com/products/individual) is a free distribution of Python and R that includes preinstalled packages.  When you run `conda`, it is almost invisible but you will use its installations of Python and R rather than those that are already on your system.  While this may seem a bit confusing at first, the point of Anaconda is to make using Python easier.
+
+  *`Anaconda` should be installed following [instructions here](http://computingskillsforbiologists.com/setup/basic-programming/)
+  
+  * open terminal and type `python3`
+  
+  * To launch jupyter notebook (DONT USE JUPYTER NOTEBOOK FOR LECTURE)
+  
+
+</p>
+</details>
+
+
+
+<details><summary>Updating Anaconda Installation on MacOS/Ubuntu</summary>
+<p>
+
+Confirm that conda is running by checking for `(base)` before command prompt
+
+```bash
+(base) cbird@XPS15:~$
+```
+
+To update to latest version:
+
+```bash
+# this will take a while
+conda update --all
+```
+
+To update to a specific version ([see list of versions](https://repo.anaconda.com/archive/)): 
+
+```bash
+# this will take a while
+conda install anaconda=VERSIONNAME
+```
+
+You can also consult the [official documentation](https://docs.anaconda.com/anaconda/install/update-version/)
+
+And also see [Keeping Anaconda Up To Date](https://www.anaconda.com/blog/keeping-anaconda-date)
+
+</p>
+</details>
+
+
 ___
 
 
@@ -590,15 +754,9 @@ You should figure out where your python executable is and add a shebang! to your
 Thus, the shebang! is `/usr/local/bin/python3`
 
 
-## [IV.  Group Excercise](https://classroom.github.com/g/AjcPKTDS)
-
-Break up into groups of 3 or 4 and complete exercise 3.8.2.  The reward for the team that submits a working script first is 10 pts per person extra credit on the next exam.
-
-Submit work by 3:30 pm
-
 ---
 
 
 ## HOMEWORK
-[Assignment 6  Due 10/18  Excercise 3.8.1](https://github.com/tamucc-comp-bio/fall_2019/blob/master/assignments/assignment_6.md)
+[Assignment 11  Due 11/13  Excercise 3.8.1 & 2](https://classroom.github.com/a/UBC9jm2D)
 
