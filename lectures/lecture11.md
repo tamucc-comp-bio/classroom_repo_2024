@@ -435,6 +435,9 @@ Python is capable of opening, creating, and editing text files
 >>> f.close()
 ```
 
+___
+
+
 To avoid forgetting to close a file, `with` can be employed which both opens and closes the file
 
 ```
@@ -452,6 +455,9 @@ B
 C
 ```
 
+___
+
+
 With can also be used to make a copy of a file.
 
 ```python
@@ -467,6 +473,9 @@ With can also be used to make a copy of a file.
 2
 2
 ```
+
+___
+
 
 Realize that when you read a file, it is done progressively, after you read a line, you are taken to the next line
 
@@ -487,16 +496,21 @@ Realize that when you read a file, it is done progressively, after you read a li
 >>> f.close
 ```
 
-### Character-Delimited Files
+___
+
+
+### Tidy Character-Delimited Files (CSV, etc...)
 
 We will goto the `~/CSB/python/sandbox` dir to demonstrate how to interface with tidy data files
 
 ```python
->>> import os
+>>> import os                       # this is like the library() command in R, we are opening the os package for use
 >>> os.chdir("CSB/python/sandbox")  # CSB must be in the pwd for this to work
+>>> os.getcwd()                     # check current working directory
+'/home/cbird/CSB/python/sandbox'
 ```
 
-You can also exit python, move to the `~/CSB/python/sandbox` dir in bash, then run python again
+You can also exit python `ctrl-d`, move to the `~/CSB/python/sandbox` dir in bash, then run python again
 
 To view the first few lines of a file:
 
@@ -513,15 +527,18 @@ biweek,year,loc,cases,pop
 3,1906,BALTIMORE,NA,527170.1981
 ```
 
+___
+
+
 Python includes special modules for handling tidy data.  We need to _import_ the _csv_ module to do this. Then we can use the .DictReader() method to convert each line of the tidy file into a dictionary
 
 ```python
 >>> import csv
 # open the file
 >>> with open("../data/Dalziel2016_data.csv") as f:
-		# convert file to format where each line is a dictionary
+        # convert file to format where each line is a dictionary
 ...     reader = csv.DictReader(f)
-		# read first 4 lines of convertd file
+        # read first 4 lines of convertd file
 ...     for i, row in enumerate(reader):
 ...             print(dict(row))
 ...             if i > 2:
@@ -532,6 +549,9 @@ Python includes special modules for handling tidy data.  We need to _import_ the
 {'biweek': '3', 'year': '1906', 'loc': 'BALTIMORE', 'cases': 'NA', 'pop': '527170.1981'}
 {'biweek': '4', 'year': '1906', 'loc': 'BALTIMORE', 'cases': 'NA', 'pop': '527347.0136'}
 ```
+
+___
+
 
 As a demonstration of how the csv module can be used, we can write all entries for *WASHINGTON* to a new file
 
@@ -552,6 +572,8 @@ As a demonstration of how the csv module can be used, we can write all entries f
 ___
 
 #### Mind Expander (Intermezzo) 3.4
+
+Let us work together (in that you tell me what to type) to write a code block that prints the `loc` and `pop` for all the rows in `Dalziel2016_data.csv`
 
 ___
 
