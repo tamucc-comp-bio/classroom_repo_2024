@@ -60,6 +60,8 @@ sha256sum Anaconda3-2020.07-Linux-x86_64.sh
 sudo bash Anaconda3-2020.07-Linux-x86_64.sh
 ```
 
+Review the license agreement.  Note that the `d` key allows you to go down page by page.
+
 If you see this message:
 
 ```bash
@@ -71,13 +73,14 @@ Anaconda3 will now be installed into this location:
     - Or specify a different location below
 ```
 
-then type 
+We do not want to save to `/root/anaconda3`.  We want to save to `~/anaconda3`, but the installer does not recognize the ~. 
 
 ```bash
-~/anaconda3
+# if your installer is not pointed to ~/anaconda3, type the following
+/home/YOURUSERNAME/anaconda3
 ```
 
-Finish install
+Hit enter and finish install
 
 ```bash
 exit
