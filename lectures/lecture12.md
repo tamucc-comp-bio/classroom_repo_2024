@@ -198,8 +198,6 @@ Does anybody want to go over assignment 11?
 
 Which exercise?
 
-___
-
 ### Python Problem Solving 101
 
 * Think through problem
@@ -217,27 +215,21 @@ ___
 ### 4.1 Basic Coding Principles for Science
 
 * *Minimize errors by minimizing optimization*
-
 	* working code is better than fastest code
 	
 * *Make code readable by applying consistent formatting*
-
 	* python forces you to do this
 	
 * *Complex tasks should be broken down into simple tasks or building blocks, i.e. functions*
-
 	* this concept applies to all challenges you will face, not just coding
 
 * *Use premade packages that do what you want to accomplish*
-
 	* do not reinvent wheel
 
 * *Use debugger and employ _unit testing_*
-
 	* we will learn about this
 
 * *Use a profiler to identify code that needs optimizing*
-
 	* identify code that is too slow and needs to be sped up
 
 ___
@@ -247,17 +239,23 @@ ___
 
 #### 4.2.1 Writing Functions
 
+As with most other coding languages, `python` allows you to create [functions](https://en.wikipedia.org/wiki/Subroutine). 
+
 When dividing the complex task of making a program into steps, it is important to avoid over and underdividing.
 * Too many user-defined functions are hard to track
 * Too few user-defined functions makes bloated code (too many lines)
 
 My rule of thumb is to create functions for repetative tasks.  If you find yourself copying and pasting blocks of code multiple times within a script, you should make a function out of it.
 
-We have been using built in functions, but we can also make our own.
-* Define your custom function
-* Use the function
+We have been using built in `python` functions, but we can also make our own. Remember, you need to define your custom function before you can use it.
 
 Let us write a function that that calculates the GC content of a DNA sequence.  I want you to type the function into `notepad++` or `bbedit` then test it by copying and pasting it into a `python` terminal
+
+```bash
+# move to the sandbox for this chapter, and start python
+cd ~/CSB/good_code/sandbox
+python3
+```
 
 ```python
 #this is the function to calc GC content, type this into your text editor
