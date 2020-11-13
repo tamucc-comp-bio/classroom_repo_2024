@@ -170,17 +170,16 @@ SECTION 3. PROGRAMMING WITH PYTHON
   * [Assignment_10, Due 11/06](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMzdVVkQwTlRQMENSVTQ5S0dUT0c1NFgwRi4u)
 
 * [11/06  Week11 Basic Python Programming II](lectures/lecture11.md)
-
   * [Assignment 11, Due 11/13](https://classroom.github.com/a/UBC9jm2D)
 
 * [11/13  Week12 Writing Good Code](lectures/lecture12.md)
+  * [Assignment 12, Due 11/20](https://classroom.github.com/a/CkLJC57S)
 
 <!-- 
   * Grad Student Course Project: Commit at least 1 additional working function to your GitHub project repo, Due 10/18
 
 
 
-  * [Assignment 7, Due 10/25](https://github.com/tamucc-comp-bio/fall_2019/blob/master/assignments/assignment_7.md)
   
 * [10/25  Week08 Writing Good Code](https://github.com/tamucc-comp-bio/fall_2019/blob/master/lectures/lecture08.md)
   * [Assignment 8, Due 11/01](https://github.com/tamucc-comp-bio/fall_2019/blob/master/assignments/assignment_8.md)

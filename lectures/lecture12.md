@@ -778,5 +778,5 @@ Refer to ch 4.3.  here is where I disagree:
 
 
 ## HOMEWORK
-Assignment 12  Due 11/13  Finish Ch 4 and intermezzos
+[Assignment 12  Due 11/13](https://classroom.github.com/a/CkLJC57S)  
 
