@@ -1,6 +1,6 @@
-# Week07 Python Boot Camp II: Writing Good Code
+# Week12 Python Boot Camp III: Writing Good Code
 
-### Assignment6 is due at the beginning of this lecture
+### Assignment 11 is due at the beginning of this lecture
 
 
 ## Computer Preparation
