@@ -258,7 +258,8 @@ python3
 ```
 
 ```python
-#this is the function to calc GC content, type this into your text editor
+# this is the function to calc GC content of a DNA sequence, 
+# copy and paste this into your text editor
 def GCcontent(dna):
 	dna = dna.upper()
 	numG = dna.count("G")
@@ -266,8 +267,10 @@ def GCcontent(dna):
 	numA = dna.count("A")
 	numT = dna.count("T")
 	return (numG + numC) / (numG + numC + numT + numA)
+```
 
-# copy and paste the above code into your python terminal.  It should look like this if it works:
+```python
+# It should look like this if it works:
 >>> def GCcontent(dna):
 ...     dna = dna.upper()
 ...     numG = dna.count("G")
