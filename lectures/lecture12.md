@@ -200,36 +200,54 @@ Which exercise?
 
 ___
 
+### Python Problem Solving 101
+
+* Think through problem
+* Break down complex tasks into simple steps
+* Write steps in english as comments
+* Trouble shoot with subset of large data sets
+* Use modules (like `os` and `csv`)
+* Use reference materials (book, google search, stack exchange, etc)
+
+___
+
 
 ## II. Lecture Activities 
 
-### 4.1 Writing Code for Science
+### 4.1 Basic Coding Principles for Science
 
 * *Minimize errors by minimizing optimization*
 
-	* working is better than fastest
+	* working code is better than fastest code
 	
 * *Make code readable by applying consistent formatting*
 
 	* python forces you to do this
 	
-* *Complex tasks should be broken down into simple building blocks, i.e. functions*
+* *Complex tasks should be broken down into simple tasks or building blocks, i.e. functions*
 
-* *Use premade packages that do what you want to accomplish
+	* this concept applies to all challenges you will face, not just coding
+
+* *Use premade packages that do what you want to accomplish*
+
+	* do not reinvent wheel
 
 * *Use debugger and employ _unit testing_*
+
+	* we will learn about this
 
 * *Use a profiler to identify code that needs optimizing*
 
 	* identify code that is too slow and needs to be sped up
+
+___
 
 
 ### 4.2 Modules and Program Structure
 
 #### 4.2.1 Writing Functions
 
-When dividing the complex task of making a program, it is important to avoid over and underdividing.
-
+When dividing the complex task of making a program into steps, it is important to avoid over and underdividing.
 * Too many user-defined functions are hard to track
 * Too few user-defined functions makes bloated code (too many lines)
 
