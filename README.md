@@ -173,12 +173,13 @@ SECTION 3. PROGRAMMING WITH PYTHON
 
   * [Assignment 11, Due 11/13](https://classroom.github.com/a/UBC9jm2D)
 
+* [11/13  Week12 Writing Good Code](lectures/lecture12.md)
+
 <!-- 
   * Grad Student Course Project: Commit at least 1 additional working function to your GitHub project repo, Due 10/18
 
 
 
-* [10/18  Week07 Writing Good Code](https://github.com/tamucc-comp-bio/fall_2019/blob/master/lectures/lecture07.md)
   * [Assignment 7, Due 10/25](https://github.com/tamucc-comp-bio/fall_2019/blob/master/assignments/assignment_7.md)
   
 * [10/25  Week08 Writing Good Code](https://github.com/tamucc-comp-bio/fall_2019/blob/master/lectures/lecture08.md)
