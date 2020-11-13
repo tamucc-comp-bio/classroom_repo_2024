@@ -301,7 +301,7 @@ After loading the function, you can now see it in your lists of variables
 ___
 
 
-#### Anatomy of the `GCcontent()` function:
+#### Anatomy of the `GCcontent()` Function:
 
 * Line 1: define the function with `def GCcontent(dna):`
 	* `def` means define.  this has to be used
@@ -320,7 +320,7 @@ ___
 ___
 
 
-#### Using the `GCcontent()` function:
+#### Using the `GCcontent()` Function:
 
 Use the `GCcontent()` function in your terminal.  Note that the DNA sequence you specify is loaded into the `dna` variable
 
@@ -330,6 +330,11 @@ Use the `GCcontent()` function in your terminal.  Note that the DNA sequence you
 >>> GCcontent("ATGCATGCATGC")
 0.5
 ```
+
+___
+
+
+#### Concept Reinforcement - Make Two More Functions
 
 Let us define more functions in your text editor, then copy and paste these new functions into your python3 terminal.  Fix any errors that occur in your text editor and try again.
 
@@ -349,13 +354,16 @@ def squared(start = 1, end = 10):
 
 ```
 
-Now we can test the functions
+Now we can test the functions.  Note that `squared()` has default values which are overruled by user-defined values.
 
 ```python
 >>> print_dictionary({"a": 3.4, "b": [1, 2, 3, 4], "c": "astring"})
 key:  a  value:  3.4
 key:  b  value:  [1, 2, 3, 4]
 key:  c  value:  astring
+
+>>> squared()
+[1, 4, 9, 16, 25, 36, 49, 64, 81]
 
 >>> squared(start = 3, end = 10)
 [9, 16, 25, 36, 49, 64, 81]
@@ -366,11 +374,14 @@ key:  c  value:  astring
 >>> squared(end = 3)
 [1, 4]
 
->>> squared()
-[1, 4, 9, 16, 25, 36, 49, 64, 81]
 ```
 
+___
+
+
 #### [Mind Expander 4.1](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMExGOVA0TUROVklLUlhKSUtaN0ZKS1UzNS4u)
+
+Answer the questions in the above link while referring to the following code blocks (you are expected to run them in `python`):
 
 ```python
 def foo1(x = 7):
@@ -442,6 +453,8 @@ def foo7(x = 100):
 			myp.append(i)
 	return myp
 ```
+
+___
 
 
 #### 4.2.2 Importing Packages and Modules
