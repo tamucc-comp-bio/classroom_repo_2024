@@ -204,7 +204,7 @@ Which exercise?
 * Break down complex tasks into simple steps
 * Write steps in english as comments
 * Trouble shoot with subset of large data sets
-* Use modules (like `os` and `csv`)
+* Use packages (like `os` and `csv`)
 * Use reference materials (book, google search, stack exchange, etc)
 
 ___
@@ -235,9 +235,7 @@ ___
 ___
 
 
-### 4.2 Modules and Program Structure
-
-#### 4.2.1 Writing Functions
+### 4.2.1 Writing Functions
 
 As with most other coding languages, `python` allows you to create [functions](https://en.wikipedia.org/wiki/Subroutine). 
 
@@ -457,18 +455,18 @@ def foo7(x = 100):
 ___
 
 
-#### 4.2.2 Importing Packages and Modules
+### 4.2.2 Importing Packages and Modules
 
 *Modules* are single files that contain multiple functions.
 
-*Packages* are collections of modules and can be imported into python to save you a lot of time. Last week we used the csv package.
+*Packages* are collections of modules and can be imported into python to save you a lot of time. Last week we used the `csv` and `os` packages.
 
-There are 4 different ways to to load a module. Below we will use generic terms like themodule, thefunction 
-	* `import themodule`
-	* `from themodule import thefunction`
-	* `import themodule as mm`
-		* gives the module the name mm
-	* `from themodule import *`
+There are 4 different ways to to load a module. Below we will use generic terms like *theModule*, *theFunction* 
+* `import theModule`
+* `from theModule import theFunction`
+* `import theModule as mm`
+	* gives the module the name mm
+* `from theModule import *`
 
 You should definitely create your own modules to save you time.
 
