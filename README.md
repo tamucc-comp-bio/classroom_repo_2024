@@ -197,8 +197,6 @@ SECTION 3. PROGRAMMING WITH PYTHON
 <details><summary>FINAL EXAM: "Welcome to the Desert of the Real"</summary>
 <p>
 
-<!-- 
-
 We have spent the semester learning: 
 * the philosophy of data science and linux
 * how to control a computer from the command line
@@ -210,12 +208,10 @@ We have spent the semester learning:
 * distributing our work using GitHub
 
 #### Undergraduates:  
-I will issue a Final Exam in much the same way I have issued assignments. It will be due Wed Dec 13.
+I will issue a Final Exam in much the same way I have issued assignments. It will be due Fri Dec 4 by 4:15 PM.
 
 #### Graduates
-Your "final" is completing your independent project (repo due 12/04, presentations Wed 12/13 at noon location TBA) where you automate the processing, analysis, and/or visualization of data
-
--->
+Your "final" is completing your independent project (repo due 12/04, presentations Fri 12/04 at 2 pm location WEBEX) where you automate the processing, analysis, and/or visualization of data
 
 </p>
 </details>
