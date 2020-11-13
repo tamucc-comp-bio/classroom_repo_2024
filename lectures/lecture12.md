@@ -482,7 +482,7 @@ We are going to simulate changes in a population of *N* monoecious, diploid orga
 * At the end of each generation, individuals will randomly mate and die after reproducing.  
 * The population size will remain stable and there will be no mutations.
 
-Once it is made, we can use the simulation to investigate [genetic drift](https://en.wikipedia.org/wiki/Genetic_drift).
+Once it is made, we can use the simulation to investigate [genetic drift](https://en.wikipedia.org/wiki/Genetic_drift). This is essentially a forward time [Wright-Fisher simulation](https://en.wikipedia.org/wiki/Genetic_drift#Wright.E2.80.93Fisher_model)
 
 ![](https://www.lds.org/bc/content/ldsorg/topics/book-of-mormon-dna/drift[1].png)
 
@@ -496,12 +496,12 @@ ___
 The first step is not coding, it is strategizing and developing a plan of attack in plain English
 
 * Need a function to build the population
-	* inputs: the population size (`*N*`), probabilty of `A` (`*p*`)
-	* returns: `population` each diploid indiviudal in next generation, e.g `AA,AA,Aa,aa`
+	* inputs: the population size (`N`), probabilty of *A* (`p`)
+	* returns: `population` of diploid indiviudals, e.g `AA,AA,Aa,aa`
 	
 * Need a function to compute [genotypic](https://en.wikipedia.org/wiki/Genotype) frequencies 
 	* Inputs: the `population`
-	* Outputs: the count for each genotype
+	* Outputs: the count for each [genotype](https://en.wikipedia.org/wiki/Genotype)
 	
 * Need a reproduction function that 
 	* Inputs: current generation 
@@ -523,7 +523,9 @@ The third step is identifying modules that can be useful
 ___
 
 
-We begin by building the population initialization function in our text editor, then test it in the python3 terminal
+#### Step 4: Build 1st Function
+
+We begin by building the population creation function (in our text editor), then test it in the python3 terminal
 
 ```python
 # import scipy
@@ -557,7 +559,11 @@ Test the function by copying it from text editor and pasting it into python3 ter
 [('A', 'A'), ('A', 'A'), ('a', 'A'), ('A', 'A'), ('A', 'a'), ('a', 'a'), ('a', 'a'), ('A', 'a'), ('A', 'a'), ('A', 'a')]
 ```
 
-Next we build the function that computes genotype frequencies 
+___
+
+#### Step 5: Build 2nd Function
+
+Next we build the function that computes genotype frequencies.  AA, Aa, aA, and aa are the possible genotypes. Aa and aA differ according to which allele was maternally vs. paternally inherited. The frequencies are the counts of each genotype.
 
 ```python
 def compute_frequencies(population):
@@ -585,7 +591,12 @@ Test the genotype function
 {'AA': 2, 'aa': 1, 'Aa': 1, 'aA': 2}
 ```
 
-Build the reproduction fuction
+___
+
+
+#### Step 6: Build 3rd Function
+
+This function accepts the current population of reproductive adults and outputs the next generation with the same size as the previous generation.
 
 ```python
 def reproduce_population(population):
@@ -616,9 +627,14 @@ And test it
 
 *Phew!!!  (out of breath)  *
 
-Save your module (the file with the functions we just made) into a file called `drift.py`. There is also a copy of this file in `~/CSB/good_code/solutions`.  
+___
 
-Exit python and copy drift.py to your sandbox.
+
+#### Step 7: Save Functions in a Module & Import
+
+Save your module (a file with the 3 functions we just made) into a file called `drift.py`. There is also a copy of this file in `~/CSB/good_code/solutions`.  
+
+Exit `python` (`ctrl-d`) and copy `drift.py` to your sandbox.
 
 ```bash
 cd ~/CSB/good_code/sandbox
@@ -626,22 +642,19 @@ cp ../solutions/drift.py .
 python3
 ```
 
-In your text editor, open a new document for making the master program that uses the functions we just made to simulate the population.
+Import the module and test that it was imported successfully
 
-Now we begin by importing our drift.py module
-
-```python
-import drift
-```
-
-and test that it worked
 
 ```python
 >>> import drift
 >>> help(drift)
+# type q to exit help
 ```
 
-Write the main code:
+___
+
+
+#### Step 8: Build 4th Function that Controls the First 3 Functions
 
 ```python
 import drift
