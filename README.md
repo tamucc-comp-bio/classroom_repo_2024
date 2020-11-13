@@ -211,7 +211,7 @@ We have spent the semester learning:
 I will issue a Final Exam in much the same way I have issued assignments. It will be due Fri Dec 4 by 4:15 PM.
 
 #### Graduates
-Your "final" is completing your independent project (repo due 12/04, presentations Fri 12/04 at 2 pm location WEBEX) where you automate the processing, analysis, and/or visualization of data
+Your "final" is completing your independent project (repo due 12/04, presentations Fri 12/04 at 2:30 pm location WEBEX) where you automate the processing, analysis, and/or visualization of data
 
 </p>
 </details>
