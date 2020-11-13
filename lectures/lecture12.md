@@ -249,6 +249,11 @@ My rule of thumb is to create functions for repetative tasks.  If you find yours
 
 We have been using built in `python` functions, but we can also make our own. Remember, you need to define your custom function before you can use it.
 
+___
+
+
+#### Example Function - Calculate GC Content of DNA
+
 Let us write a function that that calculates the GC content of a DNA sequence.  I want you to type the function into `notepad++` or `bbedit` then test it by copying and pasting it into a `python` terminal
 
 ```bash
@@ -282,26 +287,40 @@ def GCcontent(dna):
 >>>
 ```
 
-Anatomy of the `GCcontent()` function:
-* Line 1: define the function with `def GCcontent(dna):`
-	* `def` means define.  this has to be used
-	* `GCcontent()` is the name of the function you are creating
-	* `dna` is a variable that allows a dna sequence to be passed into the function for processing
-* Lines 2-6: code to do calculate GC content
-	* make all bases uppercase in sequence `dna = dna.upper()`
-	* Count the number of G `numG = dna.count("G")`
-	* Count C, A, and T also
-* Line 7: define the output of the function `return (numG + numC) / (numG + numC + numT + numA)`
-	* `return` tells the function to output, or return, the result of the following code
-	* `numG + numC) / (numG + numC + numT + numA)` calculates the proportion of bases that are either G or C
+After loading the function, you can now see it in your lists of variables
 
 ```python
 # show variables and functions in enviroment
 >>> globals()
 {'__name__': '__main__', '__doc__': None, '__package__': None, '__loader__': <class '_frozen_importlib.BuiltinImporter'>, '__spec__': None, '__annotations__': {}, '__builtins__': <module 'builtins' (built-in)>, 'GCcontent': <function GCcontent at 0x7fc203307bf8>}
+
 >>> locals()
 {'__name__': '__main__', '__doc__': None, '__package__': None, '__loader__': <class '_frozen_importlib.BuiltinImporter'>, '__spec__': None, '__annotations__': {}, '__builtins__': <module 'builtins' (built-in)>, 'GCcontent': <function GCcontent at 0x7fc203307bf8>}
 ```
+
+___
+
+
+#### Anatomy of the `GCcontent()` function:
+
+* Line 1: define the function with `def GCcontent(dna):`
+	* `def` means define.  this has to be used
+	* `GCcontent()` is the name of the function you are creating
+	* `dna` is a variable that contains the dna sequence passed into the function for processing
+	
+* Lines 2-6: code to calculate GC content
+	* make all bases uppercase in sequence `dna = dna.upper()`
+	* Count the number of G `numG = dna.count("G")`
+	* Count C, A, and T also
+	
+* Line 7: define the output of the function `return (numG + numC) / (numG + numC + numT + numA)`
+	* `return` tells the function to output, or return, the result of the following code
+	* `(numG + numC) / (numG + numC + numT + numA)` calculates the proportion of bases that are either G or C
+
+___
+
+
+#### Using the `GCcontent()` function:
 
 Use the `GCcontent()` function in your terminal.  Note that the DNA sequence you specify is loaded into the `dna` variable
 
