@@ -461,28 +461,37 @@ ___
 
 *Packages* are collections of modules and can be imported into python to save you a lot of time. Last week we used the `csv` and `os` packages.
 
-There are 4 different ways to to load a module. Below we will use generic terms like *theModule*, *theFunction* 
+There are 4 different ways to to load a module. Below we will use generic terms *theModule* and *theFunction* which should be replaced with real module and function names, respectively.
 * `import theModule`
 * `from theModule import theFunction`
 * `import theModule as mm`
 	* gives the module the name mm
 * `from theModule import *`
 
-You should definitely create your own modules to save you time.
+You should definitely create your own modules to save you time. They would contain fuctions that you use frequently.
+
+___
 
 
-#### 4.2.3 Program Structure
+### 4.2.3 Program Structure: Making a Program
 
-When writing more complex programs, it is imperative to break them down into managable pieces that can be easily debugged, tested, and maintained.
+When writing more complex programs, *it is imperative to break them down into managable pieces* that can be easily debugged, tested, and maintained.
 
-We are going to simulate population of N monoecious, diploid, organisms.  We will focus on a gene with two alleles, A and a. 
-* To initialize the population, each individual will be assigned an A with probability p and a with probability of 1-p. 
+We are going to simulate changes in a population of *N* monoecious, diploid organisms through time.  We will focus on a gene with two alleles, `A` and `a`. 
+* To initialize the population, each individual will be assigned an `A` with probability *p* and `a` with probability of `1-p`. 
 * At the end of each generation, individuals will randomly mate and die after reproducing.  
-* The popualtion size will remain stable and there will be no mutations.
+* The population size will remain stable and there will be no mutations.
+
+![](https://www.lds.org/bc/content/ldsorg/topics/book-of-mormon-dna/drift[1].png)
 
 Once it is made, we can use the simulation to investigate genetic drift.
 
-To make the simulation, we will create functions, then use a "master" program to call the functions and orchestrate the simulation.
+To make the simulation, we will create *functions*, then use a "master" program to call the *functions* and orchestrate the simulation.
+
+___
+
+
+#### Step 1: 
 
 The first step is not coding, it is strategizing and developing a plan of attack in plain English
 * Need a function to initialize the population
