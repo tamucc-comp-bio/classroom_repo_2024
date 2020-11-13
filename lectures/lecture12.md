@@ -482,33 +482,47 @@ We are going to simulate changes in a population of *N* monoecious, diploid orga
 * At the end of each generation, individuals will randomly mate and die after reproducing.  
 * The population size will remain stable and there will be no mutations.
 
-![](https://www.lds.org/bc/content/ldsorg/topics/book-of-mormon-dna/drift[1].png)
+Once it is made, we can use the simulation to investigate [genetic drift](https://en.wikipedia.org/wiki/Genetic_drift).
 
-Once it is made, we can use the simulation to investigate genetic drift.
+![](https://www.lds.org/bc/content/ldsorg/topics/book-of-mormon-dna/drift[1].png)
 
 To make the simulation, we will create *functions*, then use a "master" program to call the *functions* and orchestrate the simulation.
 
 ___
 
 
-#### Step 1: 
+#### Step 1: Plan of Attack
 
 The first step is not coding, it is strategizing and developing a plan of attack in plain English
+
 * Need a function to initialize the population
-	* inputs: popsize, prob of A
-	* returns: a list containing each diploid indiviudal.  e.g, [AA,AA,Aa,aa]
-* Need a function to compute genotypic frequencies 
-	* Inputs: the population
+	* inputs: `popsize`, prob of `A` (`*p*`)
+	* returns: a list containing each diploid indiviudal.  e.g, `[AA,AA,Aa,aa]`
+	
+* Need a function to compute [genotypic](https://en.wikipedia.org/wiki/Genotype) frequencies 
+	* Inputs: the `population`
 	* Outputs: the count for each genotype
+	
 * Need a reproduction function that 
 	* Inputs: current generation 
 	* Outputs: the next generation
 
+#### Step 2: Choose Data Structures
+
 The second step is choosing data structures.
-* Population: list of tuples [("A", "a"), ("A", "A")]
+* `population`: *list* of *tuples* [("A", "a"), ("A", "A")]
+
+___
+
+
+#### Step 3: Find Modules
 
 The third step is identifying modules that can be useful
+
 * `SciPy`
+
+___
+
 
 We begin by building the population initialization function in our text editor, then test it in the python3 terminal
 
