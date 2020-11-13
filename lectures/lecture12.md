@@ -507,6 +507,9 @@ The first step is not coding, it is strategizing and developing a plan of attack
 	* Inputs: current generation 
 	* Outputs: the next generation
 
+___
+
+
 #### Step 2: Choose Data Structures
 
 * `population`: *list* of *tuples* `[("A", "a"), ("A", "A")]`
@@ -596,7 +599,14 @@ ___
 
 #### Step 6: Build 3rd Function
 
-This function accepts the current population of reproductive adults and outputs the next generation with the same size as the previous generation.
+This function accepts the current population of reproductive adults and outputs the next generation with the same size as the previous generation. 
+
+Assumptions:
+
+* Adults produce an infinite pool of gametes
+* Random mating
+
+We draw alleles from the infinite pool of gametes at random to create the next generation of diploids.
 
 ```python
 def reproduce_population(population):
@@ -656,6 +666,10 @@ ___
 
 #### Step 8: Build 4th Function that Controls the First 3 Functions
 
+We will simulate a population from generation to generation until an allele is fixed (p = 0 or 1; all A or all a alleles)
+
+*Be careful, if you make the population too large, fixation may not be reached, and the program will keep running like an infinite loop.*
+
 ```python
 import drift
 def simulate_drift(N, p):
@@ -690,23 +704,21 @@ The genotype counts are
 {'AA': 100, 'aa': 0, 'Aa': 0, 'aA': 0}
 ```
 
-### 4.3 Writing Style
-
-Code is read more than it is written, and you should be thinking about the reader when writing your code (as well as your assignments for your courses and theses, and publications)
-
-Read ch 4.3.  here is where I disagree:
-
-* Use tabs for indenting (I know this is the opposite of the book), it will reduce variation in size of indents
+___
 
 
-### 4.4 Python from Command Line
+#### Step 9. Save 4th Function to Module 
 
 Let us make our pop sim program executable. First save it to a file called simulate_drift.py in your sandbox.
+
+```bash
+nano simulate_drift.py
+```
 
 Next modify it as follows
 
 ```python
-#!/usr/bin/python3
+#!/home/cbird/anaconda3/bin/python3
 
 import sys
 import drift
@@ -727,11 +739,14 @@ def simulate_drift(N, p):
                 my_pop = drift.reproduce_population(my_pop)
                 num_generations = num_generations + 1
 
+# this allows arguments to be passed in from the command line
 if __name__ == "__main__":
         N = int(sys.argv[1])
         p = float(sys.argv[2])
         simulate_drift(N, p)
 ```
+
+*Note that the shebang! must have the correct path to `python3` in your `anaconda3` dir, or else the script will not work.  Also note that if you point your shebang at `/usr/bin/python3` or `/usr/local/bin/python3`, these are different installations of `python` and probably will not have the `scipy` package.  You would have to separately install `scipy` and this is why we are using anaconda.*
 
 Make simulate_drift.py executable
 
@@ -745,6 +760,19 @@ and then test it
 ./simulate_drift.py 1000 0.1
 python simulate_drift.py 1000 0.1
 ```
+
+___
+
+
+### 4.3 Writing Style
+
+Code is read more than it is written, and you should be thinking about the reader when writing your code (as well as your assignments for your courses and theses, and publications)
+
+Refer to ch 4.3.  here is where I disagree:
+
+* You should use tabs for indenting (I know this is the opposite of the book), but it will reduce variation in size of indents
+
+
 
 ---
 
