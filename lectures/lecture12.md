@@ -36,7 +36,7 @@ Log into your TAMUCC email account
 </p>
 </details>
 
-<details><summary>Win10 Anaconda Setup (NEW!!)</summary>
+<details><summary>Win10 Anaconda Setup (Should already be done)</summary>
 <p>
 
 [Anaconda](https://www.anaconda.com/products/individual) is a free distribution of Python and R that includes preinstalled packages.  When you run `conda`, it is almost invisible but you will use its installations of Python and R rather than those that are already on your system.  While this may seem a bit confusing at first, the point of Anaconda is to make using Python easier.
@@ -141,7 +141,7 @@ conda install jupyter
 </p>
 </details>
 
-<details><summary>MacOS Anaconda Setup (New!!)</summary>
+<details><summary>MacOS Anaconda Setup (Should already be done)</summary>
 <p>
 
 [Anaconda](https://www.anaconda.com/products/individual) is a free distribution of Python and R that includes preinstalled packages.  When you run `conda`, it is almost invisible but you will use its installations of Python and R rather than those that are already on your system.  While this may seem a bit confusing at first, the point of Anaconda is to make using Python easier.
@@ -192,23 +192,37 @@ And also see [Keeping Anaconda Up To Date](https://www.anaconda.com/blog/keeping
 ___
 
 
-## I. Lecture Slides
+## I. Review Assignment 11
 
-No lecture slides this week
+Does anybody want to go over assignment 11? 
+
+Which exercise?
+
+___
+
 
 ## II. Lecture Activities 
 
 ### 4.1 Writing Code for Science
 
 * *Minimize errors by minimizing optimization*
+
 	* working is better than fastest
+	
 * *Make code readable by applying consistent formatting*
+
 	* python forces you to do this
+	
 * *Complex tasks should be broken down into simple building blocks, i.e. functions*
+
 * *Use premade packages that do what you want to accomplish
+
 * *Use debugger and employ _unit testing_*
+
 * *Use a profiler to identify code that needs optimizing*
+
 	* identify code that is too slow and needs to be sped up
+
 
 ### 4.2 Modules and Program Structure
 
