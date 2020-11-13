@@ -2,6 +2,7 @@
 
 ### Exam 1 is due on 11/02
 
+### [Lecture Stream](https://tamucc.webex.com/recordingservice/sites/tamucc/recording/playback/1c4324d948ef4a69a1aa5e0149981468)
 
 ___
 
