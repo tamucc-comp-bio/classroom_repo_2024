@@ -495,9 +495,9 @@ ___
 
 The first step is not coding, it is strategizing and developing a plan of attack in plain English
 
-* Need a function to initialize the population
-	* inputs: `popsize`, prob of `A` (`*p*`)
-	* returns: a list containing each diploid indiviudal.  e.g, `[AA,AA,Aa,aa]`
+* Need a function to build the population
+	* inputs: the population size (`*N*`), probabilty of `A` (`*p*`)
+	* returns: `population` each diploid indiviudal in next generation, e.g `AA,AA,Aa,aa`
 	
 * Need a function to compute [genotypic](https://en.wikipedia.org/wiki/Genotype) frequencies 
 	* Inputs: the `population`
@@ -509,8 +509,7 @@ The first step is not coding, it is strategizing and developing a plan of attack
 
 #### Step 2: Choose Data Structures
 
-The second step is choosing data structures.
-* `population`: *list* of *tuples* [("A", "a"), ("A", "A")]
+* `population`: *list* of *tuples* `[("A", "a"), ("A", "A")]`
 
 ___
 
