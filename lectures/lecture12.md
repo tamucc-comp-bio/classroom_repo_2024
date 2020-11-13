@@ -746,7 +746,7 @@ if __name__ == "__main__":
         simulate_drift(N, p)
 ```
 
-*Note that the shebang! must have the correct path to `python3` in your `anaconda3` dir, or else the script will not work.  Also note that if you point your shebang at `/usr/bin/python3` or `/usr/local/bin/python3`, these are different installations of `python` and probably will not have the `scipy` package.  You would have to separately install `scipy` and this is why we are using anaconda.*
+*Note that the shebang! must have the correct path to `python3` in your `anaconda3` dir, or else the script will not work.  Also note that if you point your shebang at `/usr/bin/python3` or `/usr/local/bin/python3`, these are different installations of `python` and probably will not have the `scipy` package.  You would have to separately install `scipy`, and this is why we are using anaconda.*
 
 Make simulate_drift.py executable
 
@@ -758,8 +758,9 @@ and then test it
 
 ```python
 ./simulate_drift.py 1000 0.1
-python simulate_drift.py 1000 0.1
 ```
+
+*Note again that we all have multiple `python` installations on our computer.  If you have the shebang! right, even if you turn off anaconda `conda deactivate`, this will still use the anaconda python installation.
 
 ___
 
@@ -773,10 +774,9 @@ Refer to ch 4.3.  here is where I disagree:
 * You should use tabs for indenting (I know this is the opposite of the book), but it will reduce variation in size of indents
 
 
-
 ---
 
 
 ## HOMEWORK
-Assignment 7  Due 10/25  Finish Ch 4 and intermezzos
+Assignment 12  Due 11/13  Finish Ch 4 and intermezzos
 
