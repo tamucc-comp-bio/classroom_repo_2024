@@ -565,6 +565,11 @@ _Fig 1. D. melanogaster medicates offspring with alcohol after exposure to wasps
 
 _Fig 2. Sight and NPF signaling control fly ability to sense and respond to wasps. Proportion eggs laid on ethanol dishes by (A) smell and sight mutants, (B) NPF and NPFR1 over-expression mutants, and (C) NPF and NPFR1 knockdown mutants in the presence and absence of wasps. For (A to C), y-axis is the same; error bars represent 95% confidence intervals (*P < 0.05, ***P < 0.001, n = 4). (D) NPF immunostain of an unexposed fly brain. * = NPF-expressing neurons, FSB = fan-shaped body, Lat = lateral regions, SEG = subesophageal ganglion, OL = optic lobes. (E to H) NPF immunostained fan-shaped bodies from control and sight mutant flies unexposed or exposed to wasps._
 
+___
+
+
+### Getting Working Dir and Packages Set Up
+
 Here we use `NumPy` for image processing.  An image is typically stored as a 3d numerical array:  
 
 * height (y)
@@ -585,13 +590,21 @@ $ cd ~/CSB/scientific/sandbox
 $ python3
 ```
 
+Windows-unbuntu folks should turn on the windows app, `Xming` for the next lines of code to work.  Recall that we installed this in lecture 0
+
 Now let us start working in python:
 
 ```python
 >>> import numpy as np
 >>> import skimage.io as io
 >>> import matplotlib as mpl
+```
 
+___
+
+### Read in Image From Kascoh 2013
+
+```python
 # read in image, and note that it is an array
 >>> image = io.imread("../data/Kacsoh2013_Drosobrain.png")
 >>> type(image)
@@ -602,7 +615,10 @@ The image below is the file you just loaded into python.
 
 ![](Week13_files/Kacsoh2013_Drosobrain.png)
 
-Windows-unbuntu folks should turn on the windows app, `Xming` for the next lines of code to work.  Recall that we installed this in lecture 0
+___
+
+
+### Viewing Image from Within Python
 
 ```python
 # load image, this will cause quite a bit of error output
@@ -619,6 +635,9 @@ failed to get the current screen resources
 
 ![](Week13_files/Capture.PNG "image 1")
 
+___
+
+### Image Properties
 
 ```python
 #note the dimensions of the image, the first two numbers represent the height and width, in pixels, respectively
@@ -654,6 +673,10 @@ Array([[ 9,  4,  6, ..., 24,  9,  4],
 
 The images only contain red coloration because of the filters on the confocal microscope.
 
+___
+
+### Counting Red Pixels
+
 We can count the number of red pixels, ie those exhibiting NPF and NPFR1 expression. While there are sophisticated methods to determine the background of an image, here we take the simplest approach and choose an arbitrary threshold of 100 (i.e., intensities below 100 are considered noise, all pixels with a value above this threshold are considered "red" or "expressed"). We can visually inspect how this threshold compares to the rest of the image by setting a part of our picture to 100:
 
 ```python
@@ -666,7 +689,7 @@ We can count the number of red pixels, ie those exhibiting NPF and NPFR1 express
 >>> mpl.pyplot.show()
 ```
 
-![alt text](https://github.com/tamucc-comp-bio/fall_2019/tree/master/lectures/Week09_files/Capture2.PNG "image 2")
+![alt text](Week13_files/Capture2.PNG "image 2")
 
 We now create a new array where we select only pixels that exceed the threshold, and then count their number:
 
