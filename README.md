@@ -175,6 +175,9 @@ SECTION 3. PROGRAMMING WITH PYTHON
 * [11/13  Week12 Writing Good Code](lectures/lecture12.md)
   * [Assignment 12, Due 11/20](https://classroom.github.com/a/CkLJC57S)
 
+* [11/20  Week13 Scientific Computing](lectures/lecture13.md)
+  * No Assignment
+
 <!-- 
   * Grad Student Course Project: Commit at least 1 additional working function to your GitHub project repo, Due 10/18
 

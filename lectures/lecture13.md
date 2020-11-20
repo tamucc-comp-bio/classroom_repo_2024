@@ -1005,9 +1005,11 @@ ___
 
 The Biopython project provides many standardized bioinformatics tools which, for example, facilitate the analysis and visualization of sequence data, the interface with data repositories, the parsing of popular file formats, and the integration of programs such as BLAST or Primer3.
 
-Biopython is not part of the standard Python library and needs to be installed. You can find instructions in `~/CSB/scientiftc/installation/install.md`. We should have accomplished this last week.
+Biopython is not part of the standard Python library and needs to be installed. You can find instructions in `~/CSB/scientiftc/installation/install.md`. 
 
-### 6.4.1 Retrieving Sequences from NCBI
+___
+
+### 6.4.1 Retrieving DNA Sequences from NCBI
 
 Many of the popular biological databases offer an application programming interface (API) that allows information to be accessed programmatically. Instead of manually accessing the website, entering search terms, and clicking your way to the desired data set, you can write a script that automatically queries the database and retrieves the data. The data are downloaded in a structured format, such as Extensible Markup Language (XML), making it both human readable and machine readable. Using APis automates your work flow, making it easy to scale up your analysis and facilitating the analysis within the Python environment.
 
@@ -1022,7 +1024,7 @@ The National Center for Biotechnology Information (NCBI) not only offers an exte
 >>> handle = Entrez.esearch(db = "nuccore", term = ("Uropsilus investigator[Organism]"))
 ```
 
-The function Entrez. esearch allows us to search any of the databases hosted by N CBI, returning a handle to the results. A handle is a standardized "wrapper" around text information. Handles are useful for reading information incrementally, which is important for large data files. Handles are often used to pass information to a parser, such as the function Entrez. read:
+The function `Entrez.esearch` allows us to search any of the databases hosted by NCBI, returning a handle to the results. A handle is a standardized "wrapper" around text information. Handles are useful for reading information incrementally, which is important for large data files. Handles are often used to pass information to a parser, such as the function `Entrez.read`:
 
 ```python
 >>> record = Entrez.read(handle)
@@ -1036,11 +1038,11 @@ dict_keys(['Count', 'RetMax', 'RetStart', 'IdList', 'TranslationSet', 'Translati
 # dictionaries have no natural order
 ```
 
-The Entrez. read parser breaks the retrieved XML data down into individual parts, and transforms them into Python objects that can be accessed individually. Let us see how many sequences are available in the nucleotide database for our search term, and access the record IDs:
+The `Entrez.read` parser breaks the retrieved XML data down into individual parts, and transforms them into Python objects that can be accessed individually. Let us see how many sequences are available in the nucleotide database for our search term, and access the record IDs:
 
 ```python
 >>> record["Count"]
-'118'
+'126'
 # retrieve list of GenBank identifiers
 >>> id_list = record["IdList"]
 >>> print(id_list)
@@ -1049,179 +1051,38 @@ The Entrez. read parser breaks the retrieved XML data down into individual parts
 
 Note that your counts and IDs might differ if more information about the inquisitive shrew mole has been uploaded since we ran our query.
 
-Now that we know what is available (using Entrez. search) we can fetch our sequence data using Entrez. efetch. We retrieve the first 100 sequences in FASTA format and save them to a file:
+___
+
+### Fetch Sequences and Save to File
+
+Now that we know what is available (using `Entrez.search`) we can fetch our sequence data using `Entrez.efetch`. We retrieve the first 100 sequences in FASTA format and save them to a file:
 
 ```python
 # always tell NCBI who you are
->>> Entrez.email = "me@bigu.edu"
->>> handle = Entrez.efetch(db = "nuccore",
-...     rettype = "fasta",
-...     retmode = "text",
-...     id = id_list[:100])
+Entrez.email = "me@bigu.edu"
+handle = Entrez.efetch(db = "nuccore",
+    rettype = "fasta",
+    retmode = "text",
+    id = id_list[:100])
 
 #setup a handle to an output file
->>> out_handle = open("Uropsilus_seq.fasta", "w")
+out_handle = open("Uropsilus_seq.fasta", "w")
+
 # write obtained sequence data to file
->>> for line in handle:
-...     out_handle.write(line)
-...
+for line in handle:
+    out_handle.write(line)
+
 
 88
 71
 71
-71
-71
-71
-71
-71
-71
-71
-71
-71
-71
-71
-31
-1
-86
-71
-71
-71
-71
-71
-71
-71
-71
-71
-71
-71
-71
-71
-31
-1
-86
-71
-71
-71
-71
-71
-71
-71
-71
-71
-71
-71
-71
-71
-31
-1
-87
-71
-71
-71
-71
-71
-71
-71
-71
-71
-71
-71
-71
-71
-31
-1
-87
-71
-71
-71
-71
-71
-71
-71
-71
-71
-71
-71
-71
-71
-31
-1
-87
-71
-71
-71
-71
-71
-71
-71
-71
-71
-71
-71
-71
-71
-31
-1
-87
-71
-71
-71
-71
-71
-71
-71
-71
-71
-71
-71
-71
-71
-31
-1
-87
-71
-71
-71
-71
-71
-71
-71
-71
-71
-71
-71
-71
-71
-31
-1
-118
-71
-71
-71
-71
-71
-71
-71
-71
-71
+...
 71
 2
 1
-117
-71
-71
-71
-71
-71
-71
-71
-71
-71
-71
-2
-1
->>> out_handle.close()
->>> handle.close()
+
+out_handle.close()
+handle.close()
 ```
 
 
