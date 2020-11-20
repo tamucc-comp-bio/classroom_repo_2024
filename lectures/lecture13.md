@@ -557,7 +557,7 @@ ___
 [Kacsoh et al. (2013)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3760715/) investigated a behavioral immune response
 in Drosophila melanogaster. Female flies lay their eggs in alcohol-laden food when confronted with parasitic wasps so that their offspring are protected from infection by the wasps. This change in oviposition behavior is mediated by neuropeptide F (NPF) and its receptor (NPFRl) in fly brains. Coupled to a reporter gene, NPF and NPFRl can be visualized by confocal microscopy.
 
-![alt text](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3760715/figure/F1/?report=objectonly)
+![](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3760715/figure/F1/?report=objectonly)
 
 
 Here we use `NumPy` for image processing.  An image is typically stored as a 3d numerical array:  
