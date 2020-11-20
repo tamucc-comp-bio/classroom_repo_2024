@@ -559,6 +559,11 @@ in Drosophila melanogaster. Female flies lay their eggs in alcohol-laden food wh
 
 ![](Week13_files/fruitflies.jpg)
 
+*Fig 1. D. melanogaster medicates offspring with alcohol after exposure to wasps. (A) Standard oviposition preference setup. (B) Proportion eggs laid on 6% ethanol dishes for three wasp treatments, at two time points. ***P < 0.001. (C) Proportion eggs laid on dishes with increasing ethanol (EtOH) concentrations, depending on wasp presence. P < 0.001 for distribution comparisons at both time points. (D) Proportion wasp-exposed fly offspring that eclose when laid in cages with different combinations of oviposition dishes. (E) Proportion unexposed offspring that eclose. For (D to E), letters indicate significance groups at P < 0.01. For (B to E), error bars represent 95% confidence intervals (n = 4).*
+
+![](Week13_files/Kacsoh2013_fig2.jpg)
+
+*Fig 2. Sight and NPF signaling control fly ability to sense and respond to wasps. Proportion eggs laid on ethanol dishes by (A) smell and sight mutants, (B) NPF and NPFR1 over-expression mutants, and (C) NPF and NPFR1 knockdown mutants in the presence and absence of wasps. For (A to C), y-axis is the same; error bars represent 95% confidence intervals (*P < 0.05, ***P < 0.001, n = 4). (D) NPF immunostain of an unexposed fly brain. * = NPF-expressing neurons, FSB = fan-shaped body, Lat = lateral regions, SEG = subesophageal ganglion, OL = optic lobes. (E to H) NPF immunostained fan-shaped bodies from control and sight mutant flies unexposed or exposed to wasps.*
 
 Here we use `NumPy` for image processing.  An image is typically stored as a 3d numerical array:  
 
