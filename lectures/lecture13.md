@@ -1085,6 +1085,8 @@ out_handle.close()
 handle.close()
 ```
 
+___
+
 
 ### 6.4.2 Input and Output of Sequence Data Using SeqIO
 
