@@ -367,7 +367,7 @@ array([1.00000000e+00, 2.71828183e+00, 7.38905610e+00, 2.00855369e+01,
 ___
 
 
-### Convert Other Data Structures To Arrays
+### Convert Other Data Structures To Arrays with NumPy
 
 ```python
 # convert list to one-dimensional array (aka a vector)
@@ -397,7 +397,10 @@ array([[1, 2],
 >>>
 ```
 
-Arrays can be created, or initialized with set properties
+___
+
+
+### Arrays can be created, or initialized with set properties
 
 ```python
 # create 3x2 array filled with 0.0 (floating-point)
@@ -432,6 +435,11 @@ array([[0.75076835, 0.91614084, 0.81553323],
 >>>
 ```
 
+___
+
+
+### Array Elements & Indexing
+
 The elements of arrays are indexed, just like lists, allowing you to interact with specific values in the array
 
 ```python
@@ -445,6 +453,11 @@ array([0, 1, 2, 3])
 array([6, 7, 8])
 >>>
 ```
+
+___
+
+
+### Working With 2D Arrays (a.k.a. Matrices)
 
 Here is an example with a 2d array
 
@@ -467,11 +480,15 @@ array([[ 1,  2,  3],
 >>> m[1]
 array([4, 5, 6, 7])
 
-# this is the second column
+# this is the second column, you need the colon (:) which represents all rows
 >>> m[:, 1]
 array([ 1,  5,  9, 13])
 >>>
 ```
+
+___
+
+### Matrix Math
 
 With 2d arrays arithmetic functions can be applied by row or column
 
@@ -490,13 +507,20 @@ array([ 6, 22, 38, 54])
 >>>
 ```
 
+___
+
+
+### Read In Data From File With NumPy
+
 The `NumPy` function `loadtxt` can be used to read in data from a file, such as a csv
 
 ```python
 # this is pseudocode, do not type it in
 m = np.loadtxt("my_matrix_file.csv", delimiter = ",")
+```
 
-# as always, you can use the help function to learn more about other functions, such as `loadtxt`
+As always, you can use the help function to learn more about other functions, such as `loadtxt`
+```python
 >>> help(np.loadtxt)
 Help on function loadtxt in module numpy:
 
@@ -522,6 +546,11 @@ loadtxt(fname, dtype=<class 'float'>, comments='#', delimiter=None, converters=N
         comment. None implies no comments. For backwards compatibility, byte
         strings will be decoded as 'latin1'. The default is '#'.
 ```
+
+`q` to exit the help
+
+___
+
 
 ### Example: Image processing with NumPy
 
