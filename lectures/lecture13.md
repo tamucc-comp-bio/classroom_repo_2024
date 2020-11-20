@@ -722,13 +722,19 @@ Using the mask (i.e., setting every pixel to either 0 or 1), we lost the informa
 
 We have developed a quantitative measure of NPF/NPFR1 expression from confocal images and this can now be easily automated and applied to many images.  This could be used to compare expression in different treatments.
 
+___
+
 
 ## 6.3 Working with `pandas`
 
-`pandas` is the Python Data Analysis Library, introducing a data structure simi-11lar to the data. frame in R. `pandas` provides two main data structures: 
-* Series, meant to store a one-dimensional array, and 
-* DataFrame, which contains data organized in rows and columns, as in a spreadsheet. 
+`pandas` is the Python Data Analysis Library, introducing a data structure similar to the data frame in R. `pandas` provides two main data structures: 
+* _Series_, meant to store a one-dimensional array, and 
+* _DataFrame_, which contains data organized in rows and columns, as in a spreadsheet. 
 The data stored in a Series are all of the same type; in a Data Frame, each column can be of a different type. `pandas` provides useful functions to manipulate data sets, calculate statistics, and plot results.
+
+___
+
+### Read in CSV as Data Frame with Pandas
 
 For our testing, we are going to import a . csv file containing a "plumage score" for male and female birds of several species. The method and the data are from Dale et al. (2015). Using pandas, we are going to import the file (start Jupyter from your `~CSB/scientific/sandbox` directory):
 
@@ -740,6 +746,10 @@ For our testing, we are going to import a . csv file containing a "plumage score
 
 This function creates a DataFrame object, made of rows and columns.
 You can specify the delimiter ( e.g., sep = ";" for semicolon), change the text encoding (e.g., encoding = "latin1"), etc. The function `pandas.read_excel` allows you to import Excel files directly into Python. 
+
+___
+
+### Attributes and Methods of Data Frame
 
 Use the attribute shape to determine the numbers of rows and columns of the Data Frame:
 
@@ -758,7 +768,13 @@ Index(['Scientific_name', 'English_name', 'TipLabel', 'Female_plumage_score',
 >>>
 ```
 
-which returns an Index object with the column labels. You can combine columns to create new columns:
+which returns an Index object with the column labels. 
+
+___
+
+### Add Column To Data Frame
+
+You can combine columns to create new columns:
 
 ```python
 >>> data["Sum_scores"] = data["Female_plumage_score"] + data["Male_plumage_score"]
@@ -803,7 +819,12 @@ You can also create a new column with a single operation:
 [5 rows x 8 columns]
 ```
 
-To remove columns from the data, use del or drop:
+___
+
+
+### Removing Columns from Data Frame
+
+To remove columns from the data, use `del` or `drop`:
 
 ```python
 # remove a single column
@@ -815,8 +836,12 @@ To remove columns from the data, use del or drop:
 >>> data.head()
 ```
 
-A method with option axis = 1 will act along columns, while axis = 0 acts along rows. The argument inplace = True means that the columns are removed directly and irrevocably from the data.
-There are several ways of accessing data in a DataF rame: by column label, row index number, or specific x,y locations:
+___
+
+### Selecting Data In Data Frame
+
+A method with option `axis = 1` will act along columns, while `axis = 0` acts along rows. The argument `inplace = True` means that the columns are removed directly and irrevocably from the data.
+There are several ways of accessing data in a Data Frame: by column label, row index number, or specific x,y locations:
 
 ```python
 # select data by column label
@@ -879,6 +904,11 @@ We can even select rows based on only part of the cell content:
 Name: Scientific_name, dtype: object
 ```
 
+___
+
+
+### Filtering Data Frame with Pandas
+
 Having shown how to select particular columns, we show how to filter rows based on their content:
 
 ```python
@@ -891,6 +921,10 @@ You can also concatenate multiple conditions with Boolean operators; for example
 ```python
 >>> highly_dimorphic = data[(data.Male_plumage_score > 70) & (data.Female_plumage_score < 40)]
 ```
+
+___
+
+### Selecting Data to Analyze: View vs Copy of Data
 
 One important feature of pandas is that many commands return a view, as opposed to a copy of the data. A simple example:
 
@@ -910,7 +944,7 @@ pandas raises a warning because high_male_score is not a new Data Frame, indepen
 >>> high_male_score["Qualitative_score"] = "High"
 ```
 
-The reason behind this behavior is that pandas can be used to analyze large data sets. In most cases, you want to take a subset to perform some operations that do not alter the data-in which case copying the data by default would be costly in terms of memory. Unsurprisingly, the idea of views is taken from databases (covered in chapter 10), where it arises for the exact same reason.
+The reason behind this behavior is that pandas can be used to analyze large data sets. In most cases, you want to take a subset to perform some operations that do not alter the data.  In which case, copying the data by default would be costly in terms of memory. Unsurprisingly, the idea of views is taken from databases (covered in chapter 10), where it arises for the exact same reason.
 
 Once you have selected your data, it is easy to calculate summary
 statistics:
@@ -924,6 +958,11 @@ statistics:
 8.200662934673714
 ```
 
+___
+
+
+### Visualizing Data with Pandas
+
 A useful feature is that you can produce nice plots for exploratory analysis. If you have not done it already, load the Matplotlib library and type
 
 ```python
@@ -934,7 +973,8 @@ A useful feature is that you can produce nice plots for exploratory analysis. If
 ```
 
 Hopefully, you see this:
-![alt text](https://github.com/tamucc-comp-bio/fall_2019/tree/master/lectures/Week09_files/Capture5.PNG "image 5")
+
+![alt text](Week13_files/Capture5.PNG "image 5")
 
 Similarly, to produce a scatter plot, use
 
