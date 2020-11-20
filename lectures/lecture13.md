@@ -573,10 +573,11 @@ We will use functions from `NumPy`, 2 image analysis functions from the `scikit-
 * `io.imshow` - visualize an image
 , and the matplotlib to visualize the images.  
 
-Before we start, you should navigate to the sandbox for this chapter.
+Before we start, you should navigate to the sandbox for this chapter. Exit python with `ctrl-d`
 
 ```bash
 $ cd ~/CSB/scientific/sandbox
+$ python3
 ```
 
 Now let us start working in python:
@@ -590,9 +591,13 @@ Now let us start working in python:
 >>> image = io.imread("../data/Kacsoh2013_Drosobrain.png")
 >>> type(image)
 <class 'imageio.core.util.Array'>
+```
 
-# for windows-unbuntu folks, turn on the windows app, `Xming` for the next lines of code to work.  Recall that we installed this in lecture 0
+![](Week13_files/Kacsoh2013_Drosobrain.png)
 
+Windows-unbuntu folks should turn on the windows app, `Xming` for the next lines of code to work.  Recall that we installed this in lecture 0
+
+```python
 # load image, this will cause quite a bit of error output
 >>> io.imshow(image)
 QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-cbird'
