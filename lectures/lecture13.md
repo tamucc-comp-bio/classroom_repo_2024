@@ -278,6 +278,10 @@ NumPy and SciPy are typically used in concert and imported together.  Here we wi
 array([0, 1, 2, 3, 4, 5, 6, 7, 8])
 ```
 
+___
+
+### Arrays are Different Than Lists
+
 While arrays look superficially similar to lists, they behave very differently when used in arithmetic expressions:
 
 ```python
@@ -302,7 +306,12 @@ Traceback (most recent call last):
 TypeError: unsupported operand type(s) for +: 'int' and 'list'
 ```
 
-Arrays have many attributes and functions.  Here are some:
+___
+
+
+### Array Methods
+
+Arrays have many attributes and methods.  Here are some:
 
 ```python
 # length along each dimension
