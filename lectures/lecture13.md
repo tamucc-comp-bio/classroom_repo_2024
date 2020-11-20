@@ -704,7 +704,8 @@ We now create a new array where we select only pixels that exceed the threshold,
 ```
 
 There are 37,037 pixels above the threshold and that the expression of NPF and NPFR1 is spatially localized
-![alt text](https://github.com/tamucc-comp-bio/fall_2019/tree/master/lectures/Week09_files/Capture3.PNG "image 3")
+
+![alt text](Week13_files/Capture3.PNG "image 3")
 
 Using the mask (i.e., setting every pixel to either 0 or 1), we lost the information on the intensity of individual pixels (i.e., strength of expression signal). However, we can show the pixels above the threshold along with their intensity by calling
 
@@ -717,7 +718,7 @@ Using the mask (i.e., setting every pixel to either 0 or 1), we lost the informa
 >>> mpl.pyplot.show()
 ```
 
-![alt text](Week13_files/Capture3.PNG "image 3")
+![alt text](Week13_files/Capture4.PNG "image 4")
 
 We have developed a quantitative measure of NPF/NPFR1 expression from confocal images and this can now be easily automated and applied to many images.  This could be used to compare expression in different treatments.
 
