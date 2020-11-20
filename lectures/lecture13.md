@@ -1,11 +1,221 @@
-# Lecture 9: Scientific Computing, Ch 6
+# Lecture 13: Scientific Computing, Ch 6
 
-While we will not cover this chapter in completely, you may want to review all of it for your project or research.  It reviews numpy, scipy, pandas, and biopython.  
+### Assignment 12 is due at the beginning of this lecture
 
-* NumPy: adds vector and matrix data structures
-* SciPy: adds algebra, integration, differential equations, stats, and simulations
-* Pandas: manipulation, analysis, and visualization of data sets
-* Biopython: bioinformatics, connection to biological databases
+
+## Computer Preparation
+
+Log into your TAMUCC email account
+
+<details><summary>Win10 - Ubuntu Setup (should already be done)</summary>
+<p>
+
+  * If the Ubuntu app is not installed, then follow [these instructions](https://github.com/cbirdlab/wlsUBUNTU_settings/blob/master/InstallLinuxOnWindows_Automated.pdf)
+  
+  * Log into your Ubuntu terminal.  _We will not use `gitbash` unless you can not get Ubuntu running._ After logging in, You are in your home directory. 
+  
+  * If you are using an Ubuntu terminal that has not been setup (you will know because it will ask you to create a new user name and password) or you notice odd cursor behavior when editing text in the terminal, then run the following code:
+  
+    ```bash
+    git clone https://github.com/cbirdlab/wlsUBUNTU_settings.git
+    . ./wlsUBUNTU_settings/updateSettings.bash
+    rm -rf wlsUBUNTU_settings
+    ```
+    
+  * If the `CSB` directory does not exist in your home directory (check with `ls`), then run the following code to clone the `CSB` repository into your home directory:
+  
+    ```bash
+    git clone https://github.com/CSB-book/CSB.git
+    ```
+
+  * It is always a good idea to keep your apps in `Ubuntu` up to date. _The first time you do this, it could take a long time to finish. After that, if you do this when you log in, it should go quickly._
+    ```bash
+    sudo apt update
+    sudo apt upgrade
+    ```
+</p>
+</details>
+
+<details><summary>Win10 Anaconda Setup (Should already be done)</summary>
+<p>
+
+[Anaconda](https://www.anaconda.com/products/individual) is a free distribution of Python and R that includes preinstalled packages.  When you run `conda`, it is almost invisible but you will use its installations of Python and R rather than those that are already on your system.  While this may seem a bit confusing at first, the point of Anaconda is to make using Python easier.
+
+  * In Win10-Ubuntu terminal, `Anaconda` installation is a bit more challenging than just simply following `Anaconda` [download instructions](http://computingskillsforbiologists.com/setup/basic-programming/).  Here is how to make it work:
+
+```bash
+sudo apt update
+sudo apt upgrade
+cd ~
+mkdir downloads
+cd downloads
+wget https://repo.anaconda.com/archive/Anaconda3-2020.07-Linux-x86_64.sh
+
+# check data integrity
+sha256sum Anaconda3-2020.07-Linux-x86_64.sh
+
+# install
+sudo bash Anaconda3-2020.07-Linux-x86_64.sh
+```
+
+Review the license agreement.  Note that the `d` key allows you to go down page by page.
+
+If you see this message:
+
+```bash
+Anaconda3 will now be installed into this location:
+/root/anaconda3
+
+    - Press ENTER to confirm the location
+    - Press CTRL-C to abort the installation
+    - Or specify a different location below
+```
+
+We do not want to save to `/root/anaconda3`.  We want to save to `~/anaconda3`, but the installer does not recognize the ~. 
+
+```bash
+# if your installer is not pointed to ~/anaconda3, type the following
+/home/YOURUSERNAME/anaconda3
+```
+
+Hit enter and finish install.
+
+When asked to initialize conda, do it.
+
+```bash
+exit
+```
+
+Restart ubunutu terminal
+
+```bash
+cd ~
+
+# make sure you have folder anaconda3
+ls -d */
+
+# set permissions
+sudo chmod -R 777 anaconda3
+
+# if it is still not on, you will see a (base) before your command prompt if it is on, then do this:
+export PATH=~/anaconda3/bin:$PATH
+conda init
+
+# lastly, you can install jupiter notebook if you want, but we wont be using it
+conda install jupyter
+```
+
+  * Using *Python*
+  
+    * open ubuntu terminal and type `python3`
+	
+  * Using Jupyter Notebook  (DONT USE JUPYTER NOTEBOOK FOR LECTURE)
+  
+    * In Win10-Ubunutu Terminal, first make sure the win10 `xming` app is running, then:
+    
+      ```bash
+      #navigate to directory where you want to launch programming/
+      jupyter notebook
+      ```
+      
+    * If you installed anaconda in Win10, goto start menu and select `Jupyter Notebook (Anaconda3)`
+	
+    * In either, click `new` button in upper right corner, then `python3`
+  
+</p>
+</details>
+
+<details><summary>MacOS Terminal Setup (should already be done)</summary>
+<p>
+ 
+  * Open a terminal window
+  
+  * Consider installing [homebrew](https://brew.sh/).  You will be able to use homebrew to install linux software, such as `tree`, which is used in the slide show.
+  
+  * If the `CSB` directory does not exist in your home directory (check with `ls`), then run the following code to clone the `CSB` repository into your home directory:
+  
+    ```bash
+    git clone https://github.com/CSB-book/CSB.git
+    ```
+
+</p>
+</details>
+
+<details><summary>MacOS Anaconda Setup (Should already be done)</summary>
+<p>
+
+[Anaconda](https://www.anaconda.com/products/individual) is a free distribution of Python and R that includes preinstalled packages.  When you run `conda`, it is almost invisible but you will use its installations of Python and R rather than those that are already on your system.  While this may seem a bit confusing at first, the point of Anaconda is to make using Python easier.
+
+  *`Anaconda` should be installed following [instructions here](http://computingskillsforbiologists.com/setup/basic-programming/)
+  
+  * open terminal and type `python3`
+  
+  * To launch jupyter notebook (DONT USE JUPYTER NOTEBOOK FOR LECTURE)
+  
+
+</p>
+</details>
+
+
+
+<details><summary>Updating Anaconda Installation on MacOS/Ubuntu</summary>
+<p>
+
+Confirm that conda is running by checking for `(base)` before command prompt
+
+```bash
+(base) cbird@XPS15:~$
+```
+
+To update to latest version:
+
+```bash
+# this will take a while
+conda update --all
+```
+
+To update to a specific version ([see list of versions](https://repo.anaconda.com/archive/)): 
+
+```bash
+# this will take a while
+conda install anaconda=VERSIONNAME
+```
+
+You can also consult the [official documentation](https://docs.anaconda.com/anaconda/install/update-version/)
+
+And also see [Keeping Anaconda Up To Date](https://www.anaconda.com/blog/keeping-anaconda-date)
+
+</p>
+</details>
+
+
+___
+
+
+## I. Review Assignment 11
+
+Does anybody want to go over assignment 11? 
+
+Which exercise?
+
+### Python Problem Solving 101
+
+* Think through problem
+* Break down complex tasks into simple steps
+* Write steps in english as comments
+* Trouble shoot with subset of large data sets
+* Use packages (like `os` and `csv`)
+* Use reference materials (book, google search, stack exchange, etc)
+
+___
+
+
+While we will not cover this chapter in completely, you may want to review all of it if you are using python in your research.  It reviews `numpy`, `scipy`, `pandas`, and `biopython`.  
+
+* *NumPy*: adds vector and matrix data structures
+* *SciPy*: adds algebra, integration, differential equations, stats, and simulations
+* *Pandas*: manipulation, analysis, and visualization of data sets
+* *Biopython8: bioinformatics, connection to biological databases
 
 The are installation details in `~/CSB/scientific/installation`.  You can also consult the official [python package installation tutorial](https://packaging.python.org/tutorials/installing-packages/)
 
