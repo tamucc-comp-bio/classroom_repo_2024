@@ -192,13 +192,11 @@ And also see [Keeping Anaconda Up To Date](https://www.anaconda.com/blog/keeping
 ___
 
 
-## I. Review Assignment 11
+## I. Review Assignment 12
 
-Does anybody want to go over assignment 11? 
+Does anybody want to go over assignment 12? 
 
-Which exercise?
-
-### Python Problem Solving 101
+### Review: Python Problem Solving 101
 
 * Think through problem
 * Break down complex tasks into simple steps
@@ -209,13 +207,19 @@ Which exercise?
 
 ___
 
+## II. Lecture Activities
 
-While we will not cover this chapter in completely, you may want to review all of it if you are using python in your research.  It reviews `numpy`, `scipy`, `pandas`, and `biopython`.  
+While we will not completely cover this whole chapter, you may want to review all of it if you are using python in your research.  It reviews `numpy`, `scipy`, `pandas`, and `biopython`.  
+
+These are packages that extend the functionality of `python`, making it easier to perform common data manipulation, visualization, and analysis tasks.
 
 * *NumPy*: adds vector and matrix data structures
 * *SciPy*: adds algebra, integration, differential equations, stats, and simulations
 * *Pandas*: manipulation, analysis, and visualization of data sets
-* *Biopython8: bioinformatics, connection to biological databases
+* *Biopython8*: bioinformatics, connection to biological databases
+
+
+### Installation of Packages
 
 The are installation details in `~/CSB/scientific/installation`.  You can also consult the official [python package installation tutorial](https://packaging.python.org/tutorials/installing-packages/)
 
@@ -223,11 +227,16 @@ I did the following in the bash shell to install biopython, given that we should
 
 ```bash
 cd ~
-# list inatalled packages
+# list installed packages
 conda list
-# I have numpy, scipy, and pandas
-# install biopython
+
+# list numpy scipy pandas biopython
+conda list | grep 'numpy\|scipy\|pandas\|biopython'
+
+# I had numpy, scipy, and pandas
+# to install biopython
 conda install biopython
+
 ```
 
 Confirm installation of biopython in python3 terminal
@@ -237,9 +246,19 @@ Confirm installation of biopython in python3 terminal
 >>>
 ```
 
-## 6.2 Programming with `NumPy` & `SciPy`
+You can also update packages that are already installed.
 
-These packages are typically used in concert and imported together.  Here we will start by importing `NumPy` and name it `np`
+```bash
+# if you want to update a package
+conda update pandas
+
+```
+
+___
+
+### Numpy Arrays (Ch 6.2)
+
+NumPy and SciPy are typically used in concert and imported together.  Here we will start by importing `NumPy` and name it `np`
 
 ```python
 >>> import numpy as np
@@ -270,6 +289,9 @@ While arrays look superficially similar to lists, they behave very differently w
 [0, 1, 2, 3, 4, 5, 6, 7, 8, 0, 1, 2, 3, 4, 5, 6, 7, 8]
 
 #array
+>>> a * 2
+array([ 0,  2,  4,  6,  8, 10, 12, 14, 16])
+
 >>> 2 + a
 array([ 2,  3,  4,  5,  6,  7,  8,  9, 10])
 
@@ -333,7 +355,10 @@ array([1.00000000e+00, 2.71828183e+00, 7.38905610e+00, 2.00855369e+01,
 >>>
 ```
 
+___
 
+
+### Convert Other Data Structures To Arrays
 
 ```python
 # convert list to one-dimensional array (aka a vector)
