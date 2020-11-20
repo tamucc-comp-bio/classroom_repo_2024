@@ -593,6 +593,8 @@ Now let us start working in python:
 <class 'imageio.core.util.Array'>
 ```
 
+The image below is the file you just loaded into python.
+
 ![](Week13_files/Kacsoh2013_Drosobrain.png)
 
 Windows-unbuntu folks should turn on the windows app, `Xming` for the next lines of code to work.  Recall that we installed this in lecture 0
@@ -610,7 +612,7 @@ failed to get the current screen resources
 >>> mpl.pyplot.show()
 ```
 
-![alt text](https://github.com/tamucc-comp-bio/fall_2019/tree/master/lectures/Week09_files/Capture.PNG "image 1")
+![](Week13_files/Capture.PNG "image 1")
 
 
 ```python
