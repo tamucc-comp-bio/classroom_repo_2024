@@ -984,7 +984,7 @@ Similarly, to produce a scatter plot, use
 >>> mpl.pyplot.show()
 ```
 
-![alt text](https://github.com/tamucc-comp-bio/fall_2019/tree/master/lectures/Week09_files/Capture6.PNG "image 6")
+![alt text](Week13_files/Capture6.PNG "image 6")
 
 To draw a box plot displaying the distributions of plumage scores for males and females, type
 
@@ -994,11 +994,14 @@ To draw a box plot displaying the distributions of plumage scores for males and 
 >>> mpl.pyplot.show()
 ```
 
-![alt text](https://github.com/tamucc-comp-bio/fall_2019/tree/master/lectures/Week09_files/Capture7.PNG "image 7")
+![alt text](Week13_files/Capture7.PNG "image 7")
 
 This introduction presents only a few functions of the quite comprehensive pandas library. If you want to perform exploratory analysis of large data sets in Python, we recommend that you master this package. Section 6. 7 provides pointers to resources to further your understanding. Many of the ideas behind the pandas package are taken from R, which we will explore in chapters 8 and 9.
 
-## 6.4 Biopython
+___
+
+
+### 6.4 Biopython
 
 The Biopython project provides many standardized bioinformatics tools which, for example, facilitate the analysis and visualization of sequence data, the interface with data repositories, the parsing of popular file formats, and the integration of programs such as BLAST or Primer3.
 
