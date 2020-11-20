@@ -197,8 +197,7 @@ SECTION 3. PROGRAMMING WITH PYTHON
 
 ---
 
-<details><summary>FINAL EXAM: "Welcome to the Desert of the Real"</summary>
-<p>
+FINAL EXAM: "Welcome to the Desert of the Real"
 
 We have spent the semester learning: 
 * the philosophy of data science and linux
