@@ -1,5 +1,7 @@
 # Lecture 13: Scientific Computing, Ch 6
 
+[Lecture Stream](https://tamucc.webex.com/recordingservice/sites/tamucc/recording/playback/746845f6bd1e436da6944d0164c39259)
+
 ### Assignment 12 is due at the beginning of this lecture
 
 
