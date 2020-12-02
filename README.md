@@ -213,7 +213,7 @@ We have spent the semester learning:
 I will issue a Final Exam in much the same way I have issued assignments. It will be due Fri Dec 4 by 4:15 PM.
 
 * [20% of course grade: Final Exam Due 12/4 4:15 pm](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUREhWMzNMMjFXS1RISjlNU1gySEs5VVVDWC4u)
-* [additional 20% of course grade: Final Exam Extra Credit Due 12/6 11:59 pm]](https://classroom.github.com/a/HTYwxIku)
+* [additional 20% of course grade: Final Exam Extra Credit Due 12/6 11:59 pm](https://classroom.github.com/a/HTYwxIku)
 
 
 
