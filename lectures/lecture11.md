@@ -205,7 +205,7 @@ Mind Expander 3.2
 
 [Work through the rest of the chapter, sections 3.5-3.7](https://classroom.github.com/a/hAEY-izo)
 * [Mind Expander (Intermezzo) 3.3] (https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMVNZOFAzOU0yUEQ0OFlaRDE5VjJCV0ZJSS4u)
-* [Mind Expander (intermezzo) 3.4](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMDc0M1pYUUc4T0xFUFVMWEVPRjA0QlcwTC4u)
+
 
 ### Common, General Functions
 
