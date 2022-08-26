@@ -4,8 +4,6 @@
 
 ## [Lecture_00 Slides](Week00_files/Lecture00_Overview_BigData.pdf)
 
-This link will download the lecture slides to your computer.
-
 We will begin the lecture with the ppt presentation.  At the conclusion of the presentation, we will complete the following exercises prior to the end of the class period to get your computers set up for next week.  You should not leave the class until you have completed these exercises because if you have trouble, I can help you now and we will not spend time on this next week.
 
 ---
