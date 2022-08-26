@@ -7,7 +7,7 @@
 
 [FULL SYLLABUS](syllabi)
 
-This is a 3 credit course for upper-level undergraduates and graduate students that introduces the powerful open-source computing tools that are used in biological research for the creation, organization, manipulation, processing, analysis, and archiving of “big data”. This course is designed to prepare and enable students to use computational tools for bioinformatic applications in advanced courses and independent research projects. The primary topics covered are: data formats and repositories, command line Linux computing and scripting, regular expressions, super-computing, computer programming with PYTHON and R, data visualization with R, version control and dissemination of scripts and programs with GIT, typesetting with LATEX, and organizing data with SQL relational databases. 
+This is a 3-credit course for graduate students that introduces the powerful open-source computing tools that are used in biological research for the creation, organization, manipulation, processing, analysis, and archiving of both small data sets and “big data”. This course is designed to prepare and enable students to use computational tools for biological applications in advanced courses and independent research projects. The primary topics covered are: data formats and repositories, command line Linux computing and scripting, regular expressions, super-computing, data wrangling and visualization with R (tidyverse), computer programming with PYTHON, version control and dissemination of scripts and programs with git and GitHub, and typesetting with markdown.
 
 </p>
 </details>
@@ -15,7 +15,7 @@ This is a 3 credit course for upper-level undergraduates and graduate students t
 <details><summary>RESOURCES</summary>
 <p>
 
-Text Book: [Computing Skills for Biologists](https://computingskillsforbiologists.com/)
+Reference Book (not required): [Computing Skills for Biologists](https://computingskillsforbiologists.com/)
 
 [R for Data Science](https://r4ds.had.co.nz/)
 
