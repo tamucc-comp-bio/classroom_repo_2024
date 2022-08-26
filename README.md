@@ -19,7 +19,7 @@ Reference Book (not required): [Computing Skills for Biologists](https://computi
 
 [R for Data Science](https://r4ds.had.co.nz/)
 
-[CSB Guide to Downloading Software](http://computingskillsforbiologists.com/setup/)
+[CSB Guide to Downloading Software](https://computingskillsforbiologists.com/setup/)
 
 [CSB Text Book Resource Downloads](https://computingskillsforbiologists.com/downloads/)
 
