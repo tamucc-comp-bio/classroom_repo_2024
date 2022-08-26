@@ -84,8 +84,6 @@ Project examples: automatically process data from experimental apparatus; image 
 * [08/26  Week00  Introduction & Data](lectures/lecture00.md)
   * [Assignment_0  Due, 08/28](assignments/assignment_0.md)
 
-  <!-- 
-
 * [09/02  Week01 Unix I](lectures/lecture01.md)
 
   * [Assignment_1,  Due 09/04](assignments/assignment_1.md)
@@ -122,8 +120,6 @@ Project examples: automatically process data from experimental apparatus; image 
 * [Quiz 0.0](https://forms.office.com/Pages/AnalysisPage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMlExSEtYN0pTTFVXUzJJUlpYRUNGQzU1Ti4u&AnalyzerToken=xEeP1kCHWBVvr2lUyEOtLJ63vGJEY4Nq)
 
 * [Quiz Wk 2](https://forms.office.com/Pages/AnalysisPage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMjIySEJCNFlSMVJRSUo0SU5HSFNKMVRHWC4u&AnalyzerToken=EoUZORmaO6qYwQJjsmmNDCGnDljXugop)
-
--->
  
 </p>
 </details>
