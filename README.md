@@ -79,22 +79,22 @@ Project examples: automatically process data from experimental apparatus; image 
 SECTION 1.  WELCOME TO THE MATRIX
  
 * [08/26  Week00  Introduction & Data](lectures/lecture00.md)
-  * [Assignment_0  Due, 08/28](assignments/assignment_0.md)
+  * [Assignment_0  Due, 09/02](assignments/assignment_0.md)
 
 * [09/02  Week01 Unix I](lectures/lecture01.md)
 
-  * [Assignment_1,  Due 09/04](assignments/assignment_1.md)
+  * [Assignment_1,  Due 09/09](assignments/assignment_1.md)
   
-  * [Grad Student Course Project: Ideas, Due 09/04](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUOUo2UVRUMVgwTUlQMlpUQzUzOTIzME9LNi4u)
+  * [Grad Student Course Project: Ideas, Due 09/09](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUOUo2UVRUMVgwTUlQMlpUQzUzOTIzME9LNi4u)
   
 * [09/09  Week02 Unix II](lectures/lecture02.md)
 
 
-  * [Assignment_2,  Due 09/11](assignments/assignment_2.md)
+  * [Assignment_2,  Due 09/16](assignments/assignment_2.md)
 
 * [09/16  Week03 Unix III](lectures/lecture03.md)
 
-  * [Assignment_3,  Due 09/18](assignments/assignment_3.md)
+  * [Assignment_3,  Due 09/23](assignments/assignment_3.md)
   
   * [Request Account On TAMUCC Super Computer Due 9/18](http://hpc.tamucc.edu/)
   
@@ -104,7 +104,7 @@ SECTION 1.  WELCOME TO THE MATRIX
 
   * [Exam_1,  Due 9/30](https://classroom.github.com/a/jp--K3BZ)
 
-  * [Grad Student Course Project: GitHub Repo w/ ReadMe, Due 9/25](https://classroom.github.com/a/hXodrcVf)
+  * [Grad Student Course Project: GitHub Repo w/ ReadMe, Due 9/30](https://classroom.github.com/a/hXodrcVf)
 
 
 </p>
