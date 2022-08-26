@@ -58,12 +58,12 @@ Project examples: automatically process data from experimental apparatus; image 
 </p>
 </details>
 
-<details><summary>VIRTUAL CLASSROOM & OFFICE LOCATIONS</summary>
+<details><summary>CLASSROOM & OFFICE LOCATIONS</summary>
 <p>
 
-[Lectures](https://tamucc.webex.com/tamucc/j.php?MTID=m04b44c32e11f93d46fd985947052e0d0) are F 1-3:30. 
+[Lectures](https://tamucc.webex.com/tamucc/j.php?MTID=m04b44c32e11f93d46fd985947052e0d0) are F 2-4:30 CCH 206 
 
-[Office hours](https://tamucc.webex.com/meet/cbird) are W-Th 3-5 & F 3:30-5
+[Office hours](https://tamucc.zoom.us/my/cbird808?pwd=V1Baa0p3YzBHaHMyTzkrQ25FZyswZz09) are W-Th 2:30-5 on Zoom or TH234
 
 [Grades](https://bb9.tamucc.edu) will be maintained on black board.
 
@@ -161,9 +161,9 @@ Project examples: automatically process data from experimental apparatus; image 
 ---
 
 
-SECTION 3. PROGRAMMING WITH PYTHON
-
-
+<details><summary>SECTION 3. PROGRAMMING WITH PYTHON</summary>
+<p>
+ 
 * [10/30  Week10 Basic Python Programming I](lectures/lecture10.md)
   * [Assignment_10, Due 11/06](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMzdVVkQwTlRQMENSVTQ5S0dUT0c1NFgwRi4u)
 
