@@ -113,7 +113,7 @@ Project examples: automatically process data from experimental apparatus; image 
 </p>
 </details>
 
-
+ <!--  
 <details><summary>Quiz Results and Answers</summary>
 <p>
 
@@ -124,6 +124,7 @@ Project examples: automatically process data from experimental apparatus; image 
 </p>
 </details>
 
+-->
 
 ---
 
