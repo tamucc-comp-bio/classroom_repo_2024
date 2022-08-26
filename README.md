@@ -87,12 +87,12 @@ SECTION 1.  WELCOME TO THE MATRIX
   
   * [Grad Student Course Project: Ideas, Due 09/04](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUOUo2UVRUMVgwTUlQMlpUQzUzOTIzME9LNi4u)
   
-* [09/04  Week02 Unix II](lectures/lecture02.md)
+* [09/09  Week02 Unix II](lectures/lecture02.md)
 
 
   * [Assignment_2,  Due 09/11](assignments/assignment_2.md)
 
-* [09/11  Week03 Unix III](lectures/lecture03.md)
+* [09/16  Week03 Unix III](lectures/lecture03.md)
 
   * [Assignment_3,  Due 09/18](assignments/assignment_3.md)
   
@@ -100,9 +100,9 @@ SECTION 1.  WELCOME TO THE MATRIX
   
   * [Grad Student Course Project: Plan/Outline, Due 09/18](https://classroom.github.com/a/VuB4iKjR)
 
-* [09/18  Week04 Version Control w/ Git](lectures/lecture04.md)
+* [09/23  Week04 Version Control w/ Git](lectures/lecture04.md)
 
-  * [Exam_1,  Due 9/25](https://classroom.github.com/a/jp--K3BZ)
+  * [Exam_1,  Due 9/30](https://classroom.github.com/a/jp--K3BZ)
 
   * [Grad Student Course Project: GitHub Repo w/ ReadMe, Due 9/25](https://classroom.github.com/a/hXodrcVf)
 
