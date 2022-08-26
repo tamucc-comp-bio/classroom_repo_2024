@@ -205,6 +205,8 @@ Project examples: automatically process data from experimental apparatus; image 
 
 ---
 
+ <!-- 
+
 FINAL EXAM: "Welcome to the Desert of the Real"
 
 We have spent the semester learning: 
@@ -230,5 +232,7 @@ Your "final" is completing your independent project (repo due 12/04, presentatio
 
 </p>
 </details>
+
+-->
 
 ---
