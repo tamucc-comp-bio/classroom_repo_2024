@@ -78,11 +78,15 @@ Project examples: automatically process data from experimental apparatus; image 
 
 <details><summary>SECTION 1.  WELCOME TO THE MATRIX</summary>
 <p>
+ 
 
-* [08/21  Week00  Introduction & Data](lectures/lecture00.md)
+
+* [08/26  Week00  Introduction & Data](lectures/lecture00.md)
   * [Assignment_0  Due, 08/28](assignments/assignment_0.md)
 
-* [08/28  Week01 Unix I](lectures/lecture01.md)
+  <!-- 
+
+* [09/02  Week01 Unix I](lectures/lecture01.md)
 
   * [Assignment_1,  Due 09/04](assignments/assignment_1.md)
   
@@ -122,10 +126,14 @@ Project examples: automatically process data from experimental apparatus; image 
 </p>
 </details>
 
+-->
+
 ---
 
 <details><summary>SECTION 2. DATA WRANGLING AND VISUALIZATION WITH R</summary>
 <p>
+
+ <!-- 
 
 * [09/25  Week05 Base R Bootcamp I](lectures/lecture05new.md)
 
@@ -152,7 +160,7 @@ Project examples: automatically process data from experimental apparatus; image 
 </details>
 
 
-<!-- 
+
 
   * [Install Anaconda & Jupyter, Due 10/04](http://computingskillsforbiologists.com/setup/basic-programming/), Due 10/04
 -->
@@ -163,7 +171,9 @@ Project examples: automatically process data from experimental apparatus; image 
 
 <details><summary>SECTION 3. PROGRAMMING WITH PYTHON</summary>
 <p>
- 
+
+ <!-- 
+
 * [10/30  Week10 Basic Python Programming I](lectures/lecture10.md)
   * [Assignment_10, Due 11/06](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMzdVVkQwTlRQMENSVTQ5S0dUT0c1NFgwRi4u)
 
@@ -176,7 +186,7 @@ Project examples: automatically process data from experimental apparatus; image 
 * [11/20  Week13 Scientific Computing](lectures/lecture13.md)
   * No Assignment
 
-<!-- 
+
   * Grad Student Course Project: Commit at least 1 additional working function to your GitHub project repo, Due 10/18
 
 
