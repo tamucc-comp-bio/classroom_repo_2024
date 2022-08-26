@@ -19,7 +19,7 @@ Create an Account if You Do Not Have One
 During most lectures we will take a few minutes at least once and ask you to apply the concepts addressed in lecture. You will be expected to have the class's GitHub repository open in a web browser to follow the links to the questions.  You must be logged into [TAMUCC's webmail](https://outlook.tamucc.edu)
 
 
-### If you have a Win10 computer, [set up the Windows Linux Subsystem and install the Ubuntu App *_**Now With Automation**_*](https://github.com/cbirdlab/wlsUBUNTU_settings/blob/master/InstallLinuxOnWindows_Automated.pdf)
+### If you have a Win10/11 computer, [set up the Windows Linux Subsystem and install the Ubuntu App *_**Now With Automation**_*](https://github.com/cbirdlab/wlsUBUNTU_settings)
 For those of you with windows, we will install an Ubuntu terminal that interfaces with the Linux kernel build into Win10.  Software installed in windows is not accessible in Ubuntu and vice versa.  You will be able to navigate the same files and directories with both. 
 
 This should have already been done on the computers in the lab.
