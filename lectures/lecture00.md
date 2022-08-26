@@ -13,7 +13,7 @@ We will begin the lecture with the ppt presentation.  At the conclusion of the p
 Do not begin these until we complete the lecture. You need to complete them in order.
 
 ### Log into GitHub
-Create an Account if You Do Not Have One. Git is a version control software and github is a cloudstorage server that serves as the hub of collaborative projects and it is where the master copy of your data and data analysis scripts lie. https://www.freecodecamp.org/news/git-and-github-for-beginners/ .
+Create an Account if You Do Not Have One. Git is a version control software and github is a cloudstorage server that serves as the hub of collaborative projects and it is where the master copy of your data and data analysis scripts lie. Github makes following core data science philosophy easy. The philosophy is, after data is digitized, all manipulations of the data should be documented and executed in code. This facilitates transparency, reproduction of methods, and we are progressing toward a day when you’re scientific research papers will be rejected if you don’t provide the scripts used to process your data. https://www.freecodecamp.org/news/git-and-github-for-beginners/ .
 
 ### [In Lecture Quiz 0.0](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMlExSEtYN0pTTFVXUzJJUlpYRUNGQzU1Ti4u)
 During most lectures we will take a few minutes at least once and ask you to apply the concepts addressed in lecture. You will be expected to have the class's GitHub repository open in a web browser to follow the links to the questions.  You must be logged into [TAMUCC's webmail](https://outlook.tamucc.edu)
