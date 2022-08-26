@@ -25,8 +25,6 @@ Reference Book (not required): [Computing Skills for Biologists](https://computi
 
 [CSB Text Book GitHub Repository](https://github.com/CSB-book/CSB)
 
-[Apply Win10 Ubuntu Settings To New Computer](https://github.com/cbirdlab/wlsUBUNTU_settings/blob/master/README.md)
-
 [Linux Cheat Sheet](resources/CheatSheetLinux_8-12-2016.pdf)
 
 </p>
