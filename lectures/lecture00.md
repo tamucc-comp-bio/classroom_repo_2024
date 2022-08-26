@@ -25,7 +25,6 @@ For those of you with windows, we will install an Ubuntu terminal that interface
 ### [Install git on your computer](https://computingskillsforbiologists.com/setup/)
 For Win10 laptops, follow the instructions for both Windows and Linux (Ubuntu Terminal)
 
-This should have already been done on the computers in the lab.
 
  <!-- 
 ### [Clone the text book's repository to your computer](https://computingskillsforbiologists.com/setup/)
@@ -39,9 +38,7 @@ Win10: [notepad++](https://notepad-plus-plus.org/downloads/)
 
 MacOSX: [BBEdit](https://www.barebones.com/products/textwrangler/download.html)
 
-This should have already been done on the computers in the lab.
-
-These text editors are very handy for viewing and editing code
+These text editors are very handy for viewing and editing code. Text editors edit human readable text files, such as ASCII (.txt). Most likely, the text editor you've been using is insufficient for this course. MS Word is not a text editor; it is a word processor and should not be used.
 
 ---
 
