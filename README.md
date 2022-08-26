@@ -205,10 +205,10 @@ Project examples: automatically process data from experimental apparatus; image 
 
 ---
 
- <!-- 
+<details><summary>FINAL EXAM: "Welcome to the Desert of the Real"</summary>
+<p>
 
-FINAL EXAM: "Welcome to the Desert of the Real"
-
+  <!-- 
 We have spent the semester learning: 
 * the philosophy of data science and linux
 * how to control a computer from the command line
@@ -230,9 +230,11 @@ I will issue a Final Exam in much the same way I have issued assignments. It wil
 #### Graduates
 Your "final" is completing your independent project (repo due 12/04, presentations Fri 12/04 at 2:30 pm location WEBEX) where you automate the processing, analysis, and/or visualization of data
 
+-->
+ 
 </p>
 </details>
 
--->
+
 
 ---
