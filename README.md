@@ -154,11 +154,13 @@ Project examples: automatically process data from experimental apparatus; image 
   * [Exam 2 Part 1, Due 11/04](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMk1SV05WNTUzOVZGR0ZDNkhBNDk4SVJYWS4u)
   * [Exam 2 Part 2, Due 11/04](https://classroom.github.com/a/dIIyk6Xd)
 
+-->
+ 
 </p>
 </details>
 
 
-
+ <!-- 
 
   * [Install Anaconda & Jupyter, Due 10/04](http://computingskillsforbiologists.com/setup/basic-programming/), Due 10/04
 -->
