@@ -54,7 +54,7 @@ wget https://swcarpentry.github.io/shell-novice/data/shell-lesson-data.zip
 unzip shell-lesson-data.zip
 ```
 
-_If you are having trouble copying and pasting in Ubuntu on windows, make sure that you are using the [Windows Terminal App](https://docs.microsoft.com/en-us/windows/terminal/install) which was specified in the [Week 00 Lecture In Class Exercises](../lectures/lecture00.md) to run Ubuntu. With terminal, copying and pasting should work as you're accustomed to.  For those with Macs, there should be no issues with copying and pasting._
+_If you are having trouble copying and pasting in Ubuntu on windows, make sure that you are using the [Windows Terminal App](https://docs.microsoft.com/en-us/windows/terminal/install) to run Ubuntu.  You were asked to install the terminal app in the [Week 00 Lecture In Class Exercises](../lectures/lecture00.md). With terminal, copying and pasting should work as you're accustomed to.  For those with Macs, there should be no issues with copying and pasting._
 
 In the code above, `wget` is a command to download files with a https web address and `https://swcarpentry.github.io/shell-novice/data/shell-lesson-data.zip` is the web address of the data file.  Notice that it is zipped.  You can use the `unzip` command to unzip it.  Once you have executed the commands above, the data will be in your present directory in the directory named `shell-lesson-data`
 
