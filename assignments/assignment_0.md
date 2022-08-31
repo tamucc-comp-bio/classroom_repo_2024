@@ -47,14 +47,16 @@ We have a steep learning curve to traverse, so we are going to "flip" the classr
 
 Your assignment is to work through [Software Carpentry's The Unix Shell](https://swcarpentry.github.io/shell-novice/) from Introducing the Shell through Working with files and directories.
 
-You will need to download the data file for the lesson.  Copy and paste the following code block into your terminal. _If you are having trouble copying and pasting in Ubuntu on windows, make sure that you are using the [Windows Terminal App](https://docs.microsoft.com/en-us/windows/terminal/install) to run Ubuntu.  You were asked to install the terminal app in the [Week 00 Lecture In Class Exercises](../lectures/lecture00.md). With terminal, copying and pasting should work as you're accustomed to.  For those with Macs, there should be no issues with copying and pasting._
+You will need to **download the data file for the lesson**.  Copy and paste the following code block into your terminal. _If you are having trouble copying and pasting in Ubuntu on windows, make sure that you are using the [Windows Terminal App](https://docs.microsoft.com/en-us/windows/terminal/install) to run Ubuntu.  You were asked to install the terminal app in the [Week 00 Lecture In Class Exercises](../lectures/lecture00.md). With terminal, copying and pasting should work as you're accustomed to.  For those with Macs, there should be no issues with copying and pasting._
 
 ```bash
 wget https://swcarpentry.github.io/shell-novice/data/shell-lesson-data.zip
 unzip shell-lesson-data.zip
+mkdir Desktop
+mv shell-lesson-data Desktop
 ```
 
-In the code above, `wget` is a command to download files with a https web address and `https://swcarpentry.github.io/shell-novice/data/shell-lesson-data.zip` is the web address of the data file.  Notice that it is zipped.  You can use the `unzip` command to unzip it.  Once you have executed the commands above, the data will be in your present directory in the directory named `shell-lesson-data`
+In the code above, `wget` is a command to download files with a https web address and `https://swcarpentry.github.io/shell-novice/data/shell-lesson-data.zip` is the web address of the data file.  Notice that it is zipped.  You can use the `unzip` command to unzip it.  Once you have executed the commands above, the data will be in your present directory in the directory named `shell-lesson-data`. The last two lines will make your directory have the same structure as assumed in the lesson.  Those with macs might see an error after `mkdir Desktop`.  That's ok, it just means that the desktop dir was already there. Those with Ubuntu on windows, the `Desktop` dir will be created.  Then for everybody `mv` will move the `shell-lesson-data` dir inside of the `Desktop` dir
 
 ---
 
@@ -77,8 +79,7 @@ Nothing to note
   * `ls -ltrh` list all file details (`l`) with human readable file sizes (`h`) in reverse (`r`) chronological order (`t`)
   * `ls -lh`  list all file details (`l`) with human readable file sizes (`h`)
   * `ls -lhd */` list all file details (`l`) with human readable file sizes (`h`), but only directories (`d`) not files
-* those with Ubuntu running in windows won't have a `Desktop` dir. `shell-lesson-data` will be in your home dir
-  * `ls shell-lesson-data`
+* those with Ubuntu running in windows won't have a `Desktop` dir unless you follow the data download instructions above. 
  
 
 
