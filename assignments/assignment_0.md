@@ -83,10 +83,13 @@ Nothing to note
   * `ls -ltrh` list all file details (`l`) with human readable file sizes (`h`) in reverse (`r`) chronological order (`t`)
   * `ls -lh`  list all file details (`l`) with human readable file sizes (`h`)
   * `ls -lhd */` list all file details (`l`) with human readable file sizes (`h`), but only directories (`d`) not files
+  * I've never used the `-F` flag, frankly you don't need it
 * those with Ubuntu running in windows won't have a `Desktop` dir unless you follow the data download instructions above. 
 * realize that you will have your own home directory with your username.  It won't be named `nelle`
 
 ### 3. [Working With Files and Directories](https://swcarpentry.github.io/shell-novice/03-create/index.html)
- 
+
+* realize that the orange boxes don't always pertain to the directory structure in you lesson data.  For example, the 2nd one (Moving Files to a new folder) does not refer to our directory structure, but rather a hypothetical directory structure on Jamie's computer.  Who's Jamie?  idk
+
 
 
