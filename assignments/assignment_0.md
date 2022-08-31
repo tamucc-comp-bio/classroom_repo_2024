@@ -47,6 +47,15 @@ We have a steep learning curve to traverse, so we are going to "flip" the classr
 
 Your assignment is to work through [Software Carpentry's The Unix Shell](https://swcarpentry.github.io/shell-novice/) from Introducing the Shell through Working with files and directories.
 
+You will need to download the data file for the lesson.  From your terminal, type the following
+
+```bash
+wget https://swcarpentry.github.io/shell-novice/data/shell-lesson-data.zip
+unzip shell-lesson-data.zip
+```
+
+`wget` is a command to download files with a https web address and `https://swcarpentry.github.io/shell-novice/data/shell-lesson-data.zip` is the web address of the data file.  Notice that it is zipped.  You can use the `unzip` command to unzip it.  Once you have executed the commands above, the data will be in your present directory in the directory named `shell-lesson-data`
+
 ## Resources to Help You
 
 I highly recommend that you print out the [Linux Cheat Sheet](../resources/CheatSheetLinux_8-12-2016.pdf) which I created for myself and my students when I was learning `bash`.  It's unique because it translates english into `bash`.
