@@ -56,9 +56,29 @@ unzip shell-lesson-data.zip
 
 In the code above, `wget` is a command to download files with a https web address and `https://swcarpentry.github.io/shell-novice/data/shell-lesson-data.zip` is the web address of the data file.  Notice that it is zipped.  You can use the `unzip` command to unzip it.  Once you have executed the commands above, the data will be in your present directory in the directory named `shell-lesson-data`
 
+---
+
 ## Resources to Help You
 
 I highly recommend that you print out the [Linux Cheat Sheet](../resources/CheatSheetLinux_8-12-2016.pdf) which I created for myself and my students when I was learning `bash`.  It's unique because it translates english into `bash`.
 
 ---
+
+## Hints and Addiitions to The Unix Shell Lesson
+
+### 1. [Introducing the Shell](https://swcarpentry.github.io/shell-novice/01-intro/index.html)
+
+Nothing to note
+
+### 2. [Navigating Files and Directories](https://swcarpentry.github.io/shell-novice/02-filedir/index.html)
+
+* use `ctrl+l` keystroke to clear the terminal (those with macs, try `command+l`).  that's a lower case `L`
+* my favorite `ls` flags
+  * `ls -ltrh` list all file details (`l`) with human readable file sizes (`h`) in reverse (`r`) chronological order (`t`)
+  * `ls -lh`  list all file details (`l`) with human readable file sizes (`h`)
+  * `ls -lhd */` list all file details (`l`) with human readable file sizes (`h`), but only directories (`d`) not files
+* those with Ubuntu running in windows won't have a `Desktop` dir. `shell-lesson-data` will be in your home dir
+  * `ls shell-lesson-data`
+ 
+
 
