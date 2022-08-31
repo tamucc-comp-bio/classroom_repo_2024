@@ -47,7 +47,7 @@ We have a steep learning curve to traverse, so we are going to "flip" the classr
 
 Your assignment is to work through [Software Carpentry's The Unix Shell](https://swcarpentry.github.io/shell-novice/) from Introducing the Shell through Working with files and directories.
 
-You will need to download the data file for the lesson.  From your terminal, type the following
+You will need to download the data file for the lesson.  Copy and paste the following code block into your terminal. If you are having trouble copying and pasting in Ubuntu on windows, make sure that you are using the [Windows Terminal App](https://docs.microsoft.com/en-us/windows/terminal/install) which was specified in the [Week 00 Lecture In Class Exercises](../lectures/lecture00.md) to run Ubuntu. With terminal, copying and pasting should work as you're accustomed to.  For those with Macs, there should be no issues with copying and pasting.
 
 ```bash
 wget https://swcarpentry.github.io/shell-novice/data/shell-lesson-data.zip
