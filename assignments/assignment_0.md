@@ -79,11 +79,14 @@ Nothing to note
 ### 2. [Navigating Files and Directories](https://swcarpentry.github.io/shell-novice/02-filedir/index.html)
 
 * use `ctrl+l` keystroke to clear the terminal (those with macs, try `command+l`).  that's a lower case `L`
-* my favorite `ls` flags
+* my favorite `ls` flags, aka options
   * `ls -ltrh` list all file details (`l`) with human readable file sizes (`h`) in reverse (`r`) chronological order (`t`)
   * `ls -lh`  list all file details (`l`) with human readable file sizes (`h`)
   * `ls -lhd */` list all file details (`l`) with human readable file sizes (`h`), but only directories (`d`) not files
 * those with Ubuntu running in windows won't have a `Desktop` dir unless you follow the data download instructions above. 
+* realize that you will have your own home directory with your username.  It won't be named `nelle`
+
+### 3. [Working With Files and Directories](https://swcarpentry.github.io/shell-novice/03-create/index.html)
  
 
 
