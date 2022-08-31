@@ -44,4 +44,4 @@ These text editors are very handy for viewing and editing code. Text editors edi
 ---
 
 ## HOMEWORK
-[Assignment_0](https://github.com/tamucc-comp-bio-2020/classroom_repo/blob/master/assignments/assignment_0.md) complete before the next class
+[Assignment_0](../assignments/assignment_0.md) complete before the next class
