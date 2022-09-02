@@ -572,6 +572,7 @@ $ rm shell-lesson-data.zip
 ```
 # you should be in ~/comp_bio/lecture_01
 $ cd ~/comp_bio/lecture_01
+$ pwd
 
 # view the present dir
 $ ls
@@ -599,18 +600,18 @@ _Note:  `-r` means [recursive](https://en.wikipedia.org/wiki/Recursion_(computer
 ### Move or rename with `mv <from> <to>`
 
 ```bash
-# make sure you are still in sandbox, if not then 
-$ cd ~/CSB/unix/sandbox
+# you should be in ~/comp_bio/lecture_01
+$ cd ~/comp_bio/lecture_01
 $ pwd
 
-# move the file to the data directory
-$ mv Buzzard2015_about2.txt ../data
+# move Haiku.txt to the `writing` dir inside the copy of the `exercise-data` dir in the `north-pacific-gyre` dir to the data directory
+$ mv Haiku.txt shell-lesson-data/north-pacific-gyre/exercise-data/writing/
 
-# rename a file that isn’t in your pwd
-$ mv ../data/Buzzard2015_about2.txt ../data/Buzzard2015_about_new.txt 
+# rename the file you just moved to be `HAIKU.txt` rather than `Haiku.txt`
+$ mv shell-lesson-data/north-pacific-gyre/exercise-data/writing/Haiku.txt shell-lesson-data/north-pacific-gyre/exercise-data/writing/HAIKU.txt
 
 # check your work
-$ ls ../data
+$ tree .
 
 ```
 
@@ -622,8 +623,8 @@ _Note:  `bash` gives no positive feedback, only negative if something is wrong. 
 ### Create file with touch <filename>
 
 ```bash
-# make sure you are still in sandbox, if not then 
-$ cd ~/CSB/unix/sandbox
+# let's move to shell-lesson-data
+$ cd ~/comp_bio/lecture_01/shell-lesson-data/exercise-data
 $ pwd
 
 # inspect the current contents of the directory
@@ -639,6 +640,10 @@ $ ls -l
 $ touch new_file.txt
 $ ls -l
 
+# create a new file in the `shell-lesson-data` dir (the parent dir of the present dir), then view the 
+$ touch ../another_new_file.txt
+$ ls ..
+
 ```
 
 _Note:  `bash` gives no positive feedback, only negative if something is wrong.  I will do my best to make up for the callousness of `bash`_
@@ -649,22 +654,28 @@ _Note:  `bash` gives no positive feedback, only negative if something is wrong. 
 ### Make dirs with `mkdir <name>`
 
 ```bash
-# make sure you are still in sandbox, if not then 
-$ cd ~/CSB/unix/sandbox
+# make sure you are still in the original exercise-data dir 
+$ cd ~/comp_bio/lecture_01/shell-lesson-data/exercise-data
 $ pwd
 
-# delete new_file.txt in sandbox, the –i requests confirmation
+# delete new_file.txt, the –i requests confirmation, enter `y` to confirm the deletion
 $ rm -i new_file.txt
 
-# make dir d1 in present dir, d2 in d1, and d3 in d2; if you have tree try it
+# delete another_new_file.txt, there is no "undo" option
+$ rm ../another_new_file.txt
+
+# make dir `d1` in present dir, `d2` in `d1`, and `d3` in `d2`; if you have tree try it
 $ mkdir -p d1/d2/d3
 $ tree d1
 d1
 └── d2
     └── d3
 
-# remove the d1,d2,& d3 dirs recursively
+# remove the `d1`,`d2`,& `d3` dirs recursively with a "one-liner"
 $ rm -rf d1
+
+# remove the copy of the `exercise-data` dir in `north-pacific-gyre`
+$ rm -rf ../north-pacific-gyre/exercise-data/
 ```
 
 _be careful with rm, you could delete your whole computer and there is no undo_
@@ -677,22 +688,23 @@ _be careful with rm, you could delete your whole computer and there is no undo_
 
 
 ```bash
-# move to the data dir
-$ cd ~/CSB/unix/data
+# make sure you are still in the original exercise-data dir 
+$ cd ~/comp_bio/lecture_01/shell-lesson-data/exercise-data
 
-# look at DNA alignment file, try duckduckgo search on “bash less commands”
-$ less –S Marra2014_data.fasta
+# look at the `NENE01751B.txt` file in `north-pacific-gyre`, try duckduckgo search on “bash less commands”
+$ less ../north-pacific-gyre/NENE01751B.txt
 
-# type /ATCG inside of less to search; u=up, d=down, G=end, g=begin, q=exit
+# type /10 inside of less to search; u=up, d=down, G=end, g=begin, q=exit
 
 # concatenate files and/or print to screen
-$ cat Marra2014_about.txt Gesquiere2011_about.txt Buzzard2015_about.txt
+$ cat numbers.txt ../north-pacific-gyre/goodiff.sh proteins/cubane.pdb
 
 # print the sorted lines of a file
-$ sort Gesquiere2011_data.csv
+$ sort ../north-pacific-gyre/NENE01751B.txt
 
-# sort numerically by column 2 in reverse order and view in less
-$ sort –n –k2 –r Gesquiere2011_data.csv | less
+# first view, then sort a comma delimited file numerically by column 3 in reverse order and view in less
+$ cat animal-counts/animals.csv
+$ sort -nrk3,3 -t "," animal-counts/animals.csv | less
 ```
 
 _Note: in the last command we used a pipe `|` to direct the text stream from `sort` to `less`.  Remember the [Unix Philosophy](https://en.wikipedia.org/wiki/Unix_philosophy)_
