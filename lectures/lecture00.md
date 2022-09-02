@@ -22,7 +22,7 @@ During most lectures we will take a few minutes at least once and ask you to app
 ### If you have a Win10/11 computer, [set up the Windows Linux Subsystem and install the Ubuntu App *_**Now With Automation**_*](https://github.com/cbirdlab/wlsUBUNTU_settings)
 For those of you with windows, we will install an Ubuntu terminal that interfaces with the Linux kernel build into Win10.  Software installed in windows is not accessible in Ubuntu and vice versa.  You will be able to navigate the same files and directories with both. 
 
-### If you have a Mac, then [install HomeBrew](https://docs.brew.sh/Installation)
+### If you have a Mac, then [install HomeBrew](https://brew.sh/)
 
 ### [Install git on your computer](https://computingskillsforbiologists.com/setup/)
 For Win10 laptops, follow the instructions for both Windows and Linux (Ubuntu Terminal)
