@@ -25,7 +25,7 @@ Reference Book (not required): [Computing Skills for Biologists](https://computi
 
 [CSB Text Book GitHub Repository](https://github.com/CSB-book/CSB)
 
-[Linux Cheat Sheet](resources/CheatSheetLinux_8-12-2016.pdf)
+[Linux Cheat Sheet](resources/CheatSheetLinux_2022-09-02.pdf)
 
 </p>
 </details>
