@@ -308,7 +308,7 @@ tree ~/Desktop/shell-lesson-data
 
 It should look like this:
 
-![](assignment_0_dirtree.png)
+![](Week01_files/assignment_0_dirtree.png)
 
 
 ---
@@ -716,14 +716,14 @@ _Note: in the last command we used a pipe `|` to direct the text stream from `so
 
 ```bash
 # count lines, words, and characters
-$ wc Gesquiere2011_about.txt
+$ wc writing/LittleWomen.txt
 
 # count lines only
-$ wc -l Marra2014_about.txt
+$ wc -l ../north-pacific-gyre/NENE01751B.txt
 
 # determine file type, ASCII is a type of human-readable text file
-$ file Marra2014_about.txt
-Marra2014_about.txt: ASCII English text
+$ file proteins/cubane.pdb
+proteins/cubane.pdb: ASCII text
 
 ```
 
@@ -736,17 +736,17 @@ _Do not forget to use `Tab` key to autocomplete directory names and prevent spel
 
 ```bash
 # display first two lines of a file
-$ head -n 2 Gesquiere2011_data.csv
+$ head -n 2 creatures/unicorn.dat
 
 # display last two lines of file
-$ tail -n 2 Gesquiere2011_data.csv
+$ tail -n 2 creatures/unicorn.dat
 
 # display from line 2 onward
 # (i.e., removing the header of the file)
-$ tail -n +2 Gesquiere2011_data.csv
+$ tail -n +2 creatures/unicorn.dat
 
 # display all but the last line
-$ head -n -1 Gesquiere2011_data.csv
+$ head -n -1 creatures/unicorn.dat
 ```
 
 _Do not forget to use `Tab` key to autocomplete file names and prevent spelling mistakes_
@@ -757,7 +757,7 @@ _Do not forget to use `Tab` key to autocomplete file names and prevent spelling 
 </details>
 
 
-<details><summary>Intermezzo/Mind Expander 1.2</summary>
+<details><summary>Mind Expander 1.2</summary>
 <p>
 
 ### [Mind Expander 1.2](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUM0VSMlJZMFg2VzlNNjZVUTJINk9TRlBSOC4u)
