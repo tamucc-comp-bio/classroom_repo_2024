@@ -532,7 +532,7 @@ It is best not to used spaces in dir and file names, but you can wrap file names
 </details>
 
 
-<details><summary>Intermezzo/Mind Expander 1.1</summary>
+<details><summary>Mind Expander 1.1</summary>
 <p>
 
 ### [Mind Expander 1.1](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUM1FFUUZLT01LR0ZGODU2WVNSV1c0NEpWMi4u)
@@ -544,24 +544,52 @@ It is best not to used spaces in dir and file names, but you can wrap file names
 <details><summary>Commands to Remember</summary>
 <p>
 
-### Copy with `cp <from> <to>`
+---
 
-From here forward, we will adopt the code block syntax used in the CSB text book.  The `$` represents the command prompt and you are expected to type in the commands that follow it, but _*do not start any command with the `$`*_.
+
+### Set Up Data to Experiment With
+
+From here forward, we will adopt a standardized code block syntax.  The `$` represents the command prompt and you are expected to type in the commands that follow it, but _*do not start any command with the `$`*_.  The `#` is a comment to explain to you what is happening next
 
 ```bash
-# goto sandbox
-$ cd ~/CSB/unix/sandbox
+# goto your home dir
+$ cd ~
 
-# copy the following file to the present directory
-$ cp ../data/Buzzard2015_about.txt .
+# make a directory called comp_bio with a dir called lecture_01 inside of it and move into lecture_01
+$ mkdir -p ~/comp_bio/lecture_01
+$ cd ~/comp_bio/lecture_01
 
-# copy file and rename it in present dir
-$ cp ../data/Buzzard2015_about.txt ./Buzzard2015_about2.txt
+# dowload the software carpentry data set for the Unix Shell lesson and unzip it and delete the zipped file
+$ wget https://swcarpentry.github.io/shell-novice/data/shell-lesson-data.zip
+$ unzip shell-lesson-data.zip
+$ rm shell-lesson-data.zip
+```
 
-# copy whole data dir to present dir, then view present dir
-$ cp –rf ../data .
+--- 
 
+### Copy with `cp <from> <to>`
+
+```
+# you should be in ~/comp_bio/lecture_01
+$ cd ~/comp_bio/lecture_01
+
+# view the present dir
 $ ls
+
+# copy `haiku.txt` to the present directory
+$ cp shell-lesson-data/exercise-data/writing/haiku.txt .
+
+# copy `haiku.txt` to the present directory and rename the copy to be `Haiku.txt`
+$ cp shell-lesson-data/exercise-data/writing/haiku.txt ./Haiku.txt
+$ ls
+
+# view tree of shell-lesson-data, 
+$ tree shell-lesson-data
+
+#then copy the whole `exercise-data` dir to the north-pacific-gyre dir, then view dir tree again
+$ cp -rf shell-lesson-data/exercise-data/ ./shell-lesson-data/north-pacific-gyre/
+$ tree shell-lesson-data
+
 ```
 
 _Note:  `-r` means [recursive](https://en.wikipedia.org/wiki/Recursion_(computer_science)), `-f` means force_
