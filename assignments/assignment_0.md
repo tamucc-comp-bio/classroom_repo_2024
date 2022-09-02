@@ -107,7 +107,7 @@ sudo brew install tree
 sudo apt install tree
 ```
 
-Then you can create your assignment directory tree with the following code:
+Then you can create your assignment directory tree with the following command and argument:
 ```bash
 tree ~/Desktop/shell-lesson-data
 ```
