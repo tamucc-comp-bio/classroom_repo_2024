@@ -157,9 +157,19 @@ Windows:  Search Windows Terminal
 
 ![](Week01_files/open_ubuntu-terminal.png)
 
-Make Ubuntu the default terminal app
+<details><summary>Adjusting Windows Terminal Settings</summary>
+<p>
+
+Windows: Make Ubuntu the default terminal app
+
+![](Week01_files/terminal_default.png)
+
+Windows: Ubuntu settings can be adjusted, such as startup dir
 
 ![](Week01_files/terminal_settings.png)
+
+</p>
+</details>
 
 MacOS: Search Terminal
 
