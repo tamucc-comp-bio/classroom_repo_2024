@@ -307,6 +307,7 @@ tree ~/Desktop/shell-lesson-data
 ```
 
 It should look like this:
+
 ![](assignment_0_dirtree.png)
 
 
@@ -384,7 +385,7 @@ The rest is not important right now, but if you are dying to know, the `(base)` 
 
 Go ahead and try some of these in your terminal. 
 
-Note that I have created a [Linux Cheat Sheet](https://github.com/tamucc-comp-bio-2020/classroom_repo/blob/master/resources/CheatSheetLinux_8-12-2016.pdf) to help you with common `bash` commands and keyboard shortcuts.  I encourage you to print this out on a single sheet of paper, both sides, for your reference.
+Note that I have created a [Linux Cheat Sheet](resources/CheatSheetLinux_2022-09-02.pdf) to help you with common `bash` commands and keyboard shortcuts.  I encourage you to print this out on a single sheet of paper, both sides, for your reference.
 
 ---
 
@@ -497,9 +498,9 @@ And the permissions can be further broken down.  The first column indicates whet
 
 ---
 
-### Paths
+### [Paths](https://en.wikipedia.org/wiki/Path_(computing))
 
-A _*path*_ is the address of file or directory
+A [_*path*_](https://en.wikipedia.org/wiki/Path_(computing)) is the address of file or directory
 
 An _*[absolute path](https://en.wikipedia.org/wiki/Path_(computing)#Absolute_and_relative_paths)*_ is complete and starts with root `/` or a variable that starts with root.  For example, the following return the same result regardless of pwd
 
