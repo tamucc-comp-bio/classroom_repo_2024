@@ -91,5 +91,27 @@ Nothing to note
 
 * realize that the orange boxes don't always pertain to the directory structure in you lesson data.  For example, the 2nd one (Moving Files to a new folder) does not refer to our directory structure, but rather a hypothetical directory structure on Jamie's computer.  Who's Jamie?  idk
 
+---
+
+## Self Check on Assignment 0
+
+If you did everything correctly, then the directory structure of your `shell-lesson-data` directory should look like that below.
+
+You probably need to install `tree` as follows:
+
+```
+#mac 
+sudo brew install tree
+
+#ubuntu
+sudo apt install tree
+```
+
+Then you can create your assignment directory tree with the following code:
+```bash
+tree ~/Desktop/shell-lesson-data
+```
+
+![](assignment_0_answer.png)
 
 
