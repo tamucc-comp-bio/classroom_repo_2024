@@ -153,7 +153,7 @@ Comparison of [GUI](https://en.wikipedia.org/wiki/Graphical_user_interface) and 
 
 ### Open A Terminal Window
 
-Windows:  Search Windows Terminal
+Windows:  Search Windows Terminal and Open
 
 ![](Week01_files/open_ubuntu-terminal.png)
 
@@ -171,7 +171,7 @@ Windows: Ubuntu settings can be adjusted, such as startup dir
 </p>
 </details>
 
-MacOS: Search Terminal
+MacOS: Search Terminal and Open
 
 ![](Week01_files/open_mac-terminal.png)
 
