@@ -254,6 +254,8 @@ ls /tmp
   * `$HOME` is an environmental variable created by the operating system and `bash`
   
   * a shortcut for `$HOME` is the `~` character located at the upper left of your keyboard
+  
+  * the `echo` command can be used to show the contents of a variable, such as `$HOME`
 
 ```bash
 echo $HOME
@@ -275,6 +277,10 @@ If you have Ubuntu or a Mac with `homebrew` or some other linux package manger, 
 
 ```bash
 # this is a comment, as indicated by the # at the beginning of the line.  Do not type it into your terminal
+
+# change directories 
+
+
 # Ubuntu Only
 sudo apt install tree
 
@@ -296,7 +302,7 @@ man tree
 The `man` command is nearly universal in displaying the manual for "commands" such as `tree`. Use the `q` keystroke to exit the manual for tree.
 
 ---
-
+<!--  
 ### The `CSB/unix` [Repository](https://en.wikipedia.org/wiki/Repository_(version_control))
 
 Our primary text book, [Computing Skills for Biologists](https://computingskillsforbiologists.com/), provides a rich assortment of resources for you.  Most of these resources are contained in a GitHub repository that you have cloned into your home directory.  This is the `CSB` directory. 
@@ -322,6 +328,8 @@ ls CSB/unix/solutions
 ```
 
 ---
+
+-->
 
 </p>
 </details>

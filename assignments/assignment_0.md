@@ -4,7 +4,7 @@
 
 ## Computer Preparation
 
-<details><summary>Win10</summary>
+<details><summary>Ubuntu on Windows</summary>
 <p>
 
   * If the Ubuntu app is not installed, then follow [these instructions](https://github.com/cbirdlab/wlsUBUNTU_settings/blob/master/README.md)
@@ -30,13 +30,8 @@
  
   * Open a terminal window
 
-  * Consider installing [homebrew](https://brew.sh/).  You will be able to use homebrew to install linux software, such as `tree`, which is used in the slide show.
-  
-  * If the `CSB` directory does not exist in your home directory (check with `ls`), then run the following code to clone the `CSB` repository into your home directory:
-  
-    ```bash
-    git clone https://github.com/CSB-book/CSB.git
-    ```
+  * If you haven't already, install [homebrew](https://brew.sh/).  You will be able to use homebrew to install linux software, such as `tree`, which is used in the slide show.
+
  </p>
 </details>
 
