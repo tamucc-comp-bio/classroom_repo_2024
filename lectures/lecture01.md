@@ -293,13 +293,22 @@ We just installed the `tree` command (or app) from the internet to your computer
 ```bash
 # this will only work if you have tree installed, it is just an example so do not worry if you do not have it
 cd ~
-tree CSB
-tree -L 1 CSB
-tree -L 2 CSB
+tree 
+tree -L 1 
+tree -L 2 
 man tree
 ```
 
 The `man` command is nearly universal in displaying the manual for "commands" such as `tree`. Use the `q` keystroke to exit the manual for tree.
+
+```bash
+# check your directory structure for assignment_0
+tree ~/Desktop/shell-lesson-data
+```
+
+It should look like this:
+![](assignment_0_dirtree.png)
+
 
 ---
 <!--  
@@ -393,11 +402,11 @@ _Note: `ctrl + c` will stop a command if it is taking too long to complete_
 
 * Bash _*commands*_ like `cal` are programs that follow the UNIX philosophy.
 
-* _*Arguments*_ like `2020` are essentially options, order usually matters and some commands require particular arguments. For example, `cp` or copy requires at least which file to copy and where to copy it, in that order
+* [_*Arguments*_](https://en.wikipedia.org/wiki/Command-line_interface#Arguments) like `2020` can be accepted by some commands, order can matter and some commands require particular arguments. For example, `cp` or copy requires at least which file to copy and where to copy it, in that order
 
-* `-j` is an _*option*_, in this case it means Julian calendar
+* `-j` is an [_*option*_](https://en.wikipedia.org/wiki/Command-line_interface#Command-line_option), in this case it means Julian calendar
 
-  * if an option is preceded by a single `-`, it is customary for that option to be represented by a single letter.  If an option is preceded by two dashes `--julian` it is typically a word.  In this case, `cal` has been updated and all word options have been removed, so `--julian` is no longer recognized.  Realize that it is up to the developer ( the person who writes the software ) to enforce formats, so you will find commands that do not follow convention as you get into more "boutique" commands and apps.
+  * if an option is preceded by a single `-`, it is customary for that option to be represented by a single letter.  If an option is preceded by two dashes `--julian` it is typically a word.  In this case, `cal` has been updated and all word options have been removed, so `--julian` is no longer recognized.  Realize that it is up to the developer ( the person who writes the software ) to enforce formats, so you will find commands that do not follow convention as you get into more "boutique" commands and apps - especially those written by biologists.
 
 ---
 
