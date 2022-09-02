@@ -153,9 +153,13 @@ Comparison of [GUI](https://en.wikipedia.org/wiki/Graphical_user_interface) and 
 
 ### Open A Terminal Window
 
-WIN10:  Search Windows Terminal
+Windows:  Search Windows Terminal
 
 ![](Week01_files/open_ubuntu-terminal.png)
+
+Make Ubuntu the default terminal app
+
+![](Week01_files/terminal_settings.png)
 
 MacOS: Search Terminal
 
