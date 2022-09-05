@@ -768,8 +768,10 @@ _Do not forget to use `Tab` key to autocomplete file names and prevent spelling 
 
 ## Homework
 
-* [Assignment_1, Due 09/04](https://github.com/tamucc-comp-bio-2020/classroom_repo/blob/master/assignments/assignment_1.md)
 
-* [Graduate Student Course Project Ideas, Due 09/04](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUOUo2UVRUMVgwTUlQMlpUQzUzOTIzME9LNi4u)
+
+* [Assignment_1, Due 09/09](../assignments/assignment_1.md)
+
+* [Graduate Student Course Project Ideas, Due 09/09](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUOUo2UVRUMVgwTUlQMlpUQzUzOTIzME9LNi4u)
 
 
