@@ -52,13 +52,14 @@ Complete [Mindexpander 01.02](https://forms.office.com/Pages/ResponsePage.aspx?i
 
 * **_You can resubmit your answers as neccessary_**
 
- **_I highly recommend that you first record your answers in a text document in either [Notepad++ for Win](https://notepad-plus-plus.org/downloads/) or [BBedit for Mac](https://www.barebones.com/products/bbedit/) and save them to your computer_**. 
+* **_I highly recommend that you first record your answers in a text document in either [Notepad++ for Win](https://notepad-plus-plus.org/downloads/) or [BBedit for Mac](https://www.barebones.com/products/bbedit/) and save them to your computer_**. 
 
 
-## New Material To Be Covered Prior to Next Lecture (CSB Section 1.6) 
+## New Material To Be Covered Prior to Next Lecture  
 
-I converted the [**Lecture_02 Slides**](../lectures/Week02_files/Lecture02_WelcomeToTheMatrix.pdf)  to a more screen-splitting friendly format here in GitHub.
+Complete the [Pipes & Filters](https://swcarpentry.github.io/shell-novice/04-pipefilter/index.html) tutorial on sofware carpentry
 
+Work through the following tutorial
 
 <details><summary>Advanced `bash` Commands</summary>
 <p>
