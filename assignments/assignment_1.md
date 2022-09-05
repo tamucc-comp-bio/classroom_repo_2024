@@ -57,12 +57,36 @@ Complete [Mindexpander 01.02](https://forms.office.com/Pages/ResponsePage.aspx?i
 
 ## New Material To Be Covered Prior to Next Lecture  
 
-Complete the [Pipes & Filters](https://swcarpentry.github.io/shell-novice/04-pipefilter/index.html) tutorial on sofware carpentry
+1. Complete the [Pipes & Filters](https://swcarpentry.github.io/shell-novice/04-pipefilter/index.html) tutorial on sofware carpentry
+
+2. Complete the [Finding Things](https://swcarpentry.github.io/shell-novice/07-find/index.html) tutorial on sofware carpentry
 
 Work through the following tutorial
 
 <details><summary>Advanced `bash` Commands</summary>
 <p>
+
+Download data from Saavedra, Serguei; Stouffer, Daniel B. (2013) "Disentangling nestedness".  It's in [datadryad.org](https://datadryad.org).
+
+```bash
+# If you haven't yet, move to your home dir and create a `comp_bio` dir with an `assignment_01` dir inside of it
+cd ~
+mkdir -p comp_bio/assignment_01/data
+
+# Move to the data dir you just made
+cd ~/comp_bio/assignment_01/data
+
+# Download the data from datadryad.org
+# I searched datadryad.org for Saavedra 2013, and copied the download link
+wget https://datadryad.org/stash/downloads/file_stream/52937 -O saavedra2013.zip
+unzip unzip saavedra2013.zip
+
+wget https://datadryad.org/stash/downloads/file_stream/52938 -O readme.txt
+
+# move to the `assignment_01` dir
+cd ~/comp_bio/assignment_01
+
+```
 
 ### Redirection of output ([stdout](https://en.wikipedia.org/wiki/Standard_streams#Standard_output_(stdout))) to file `[command] > filename`
 ### Append [stdout](https://en.wikipedia.org/wiki/Standard_streams#Standard_output_(stdout)) to file `[command] >> filename` 
