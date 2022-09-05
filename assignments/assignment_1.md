@@ -66,6 +66,8 @@ Work through the following tutorial
 <details><summary>Advanced `bash` Commands</summary>
 <p>
 
+### Download Required Data from Dryad
+
 Download data from Saavedra, Serguei; Stouffer, Daniel B. (2013) "Disentangling nestedness".  It's in [datadryad.org](https://datadryad.org).
 
 ```bash
@@ -87,6 +89,8 @@ wget https://datadryad.org/stash/downloads/file_stream/52938 -O readme.txt
 cd ~/comp_bio/assignment_01
 
 ```
+
+---
 
 ### Redirection of output ([stdout](https://en.wikipedia.org/wiki/Standard_streams#Standard_output_(stdout))) to file `[command] > filename`
 ### Append [stdout](https://en.wikipedia.org/wiki/Standard_streams#Standard_output_(stdout)) to file `[command] >> filename` 
@@ -111,25 +115,23 @@ My first line
 My second line
 ```
 
-
-
-
 _use `Tab` key to autocomplete names, prevent spelling mistakes_
 
 ---
+
 
 ### Problem Solving Scenario
 
 A machine provides you with thousands of data files. There’s so many, it is breaking your file browser. How many files are there?
 
-We will use the dir `unix/data/Saavedra2013` as an example of a directory with many files
+We will use the dir `assignment_01/data/networks` as an example of a directory with many files, but not quite thousands.
 
 ```bash
-# start by moving to our sandbox if you are not already there
-$ cd ~/CSB/unix/sandbox
+# start by moving to your assignment dir if you are not already there
+$ cd ~/comp_bio/assignment_01
 
-# save file names to file in pwd
-$ ls ../data/Saavedra2013 > filelist.txt
+# save file names in the Saavedra 2013 networks dir to file in the present working directory
+$ ls ./data/networks > filelist.txt
 
 # look at the file
 $ cat filelist.txt
@@ -151,14 +153,14 @@ $ rm filelist.txt
 
 A pipe `|` passes the [stdout](https://en.wikipedia.org/wiki/Standard_streams#Standard_output_(stdout)) from one command to the [stdin](https://en.wikipedia.org/wiki/Standard_streams#Standard_input_(stdin)) of another
 
-How many files are there?
+How many network files are there in Saavedra 2013?
 
 ```bash
 # list file names
-$ ls ../data/Saavedra2013
+$ ls ./data/networks
 
 # list file names and pipe into wc
-$ ls ../data/Saavedra2013 | wc –l
+$ ls ./data/networks | wc -l
 59
 
 ```
