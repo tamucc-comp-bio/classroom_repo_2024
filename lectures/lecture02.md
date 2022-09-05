@@ -1,41 +1,31 @@
 # Week02 UNIX II
 
-## [Lecture_02 Stream](https://tamucc.webex.com/recordingservice/sites/tamucc/recording/playback/66eac3301a3147828e9e1797d662a564)
+### [Assignment 1](../assignments/assignment_1.md) is due at the beginning of this lecture
 
-### [Assignment 1](https://github.com/tamucc-comp-bio-2020/classroom_repo/blob/master/assignments/assignment_1.md) is due at the beginning of this lecture
-
-### [Lecture Stream](https://tamucc.webex.com/recordingservice/sites/tamucc/recording/playback/66eac3301a3147828e9e1797d662a564)
+### [Lecture Stream]()
 
 ## Computer Preparation
 
 You are expected to start each lecture with your terminal window open and ready to go.
 
-<details><summary>Win10</summary>
+<details><summary>Ubuntu on Windows</summary>
 <p>
 
-  * If the Ubuntu app is not installed, then follow [these instructions](https://github.com/cbirdlab/wlsUBUNTU_settings/blob/master/InstallLinuxOnWindows_Automated.pdf)
+  * If the Ubuntu app is not installed, then follow [these instructions](https://github.com/cbirdlab/wlsUBUNTU_settings/blob/master/README.md)
   
-  * Log into your Ubuntu terminal.  _We will not use `gitbash` unless you can not get Ubuntu running._ After logging in, You are in your home directory. 
-  
-  * If you are using an Ubuntu terminal that has not been setup (you will know because it will ask you to create a new user name and password) or you notice odd cursor behavior when editing text in the terminal, then run the following code:
-  
-    ```bash
-    git clone https://github.com/cbirdlab/wlsUBUNTU_settings.git
-    . ./wlsUBUNTU_settings/updateSettings.bash
-    rm -rf wlsUBUNTU_settings
-    ```
-    
+  * Log into your Ubuntu terminal.  _We will not use `gitbash` unless you can't get Ubuntu running._ After logging in, You are in your home directory. 
+     
   * If the `CSB` directory does not exist in your home directory (check with `ls`), then run the following code to clone the `CSB` repository into your home directory:
   
     ```bash
     git clone https://github.com/CSB-book/CSB.git
     ```
-
-  * It is always a good idea to keep your apps in `Ubuntu` up to date. _The first time you do this, it could take a long time to finish. After that, if you do this when you log in, it should go quickly._
+  * It's always a good idea to keep your apps in `Ubuntu` up to date. _The first time you do this, it could take a long time to finish. After that, if you do this when you log in, it should go quickly._
     ```bash
     sudo apt update
     sudo apt upgrade
     ```
+    
 
 </p>
 </details>
@@ -45,14 +35,9 @@ You are expected to start each lecture with your terminal window open and ready 
  
   * Open a terminal window
   
-  * Consider installing [homebrew](https://brew.sh/).  You will be able to use homebrew to install linux software, such as `tree`, which is used in the slide show.
+  * If you haven't already, install [homebrew](https://brew.sh/).  You will be able to use homebrew to install linux software, such as `tree`, which is used in the slide show.
   
-  * If the `CSB` directory does not exist in your home directory (check with `ls`), then run the following code to clone the `CSB` repository into your home directory:
-  
-    ```bash
-    git clone https://github.com/CSB-book/CSB.git
-    ```
-    
+
 </p>
 </details>
 

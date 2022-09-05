@@ -4,32 +4,25 @@
 
 ## Computer Preparation
 
-<details><summary>Win10</summary>
+<details><summary>Ubuntu on Windows</summary>
 <p>
 
-  * If the Ubuntu app is not installed, then follow [these instructions](https://github.com/cbirdlab/wlsUBUNTU_settings/blob/master/InstallLinuxOnWindows_Automated.pdf)
+  * If the Ubuntu app is not installed, then follow [these instructions](https://github.com/cbirdlab/wlsUBUNTU_settings/blob/master/README.md)
   
-  * Log into your Ubuntu terminal.  _We will not use `gitbash` unless you can not get Ubuntu running._ After logging in, You are in your home directory. 
-  
-  * If you are using an Ubuntu terminal that has not been setup (you will know because it will ask you to create a new user name and password) or you notice odd cursor behavior when editing text in the terminal, then run the following code:
-  
-    ```bash
-    git clone https://github.com/cbirdlab/wlsUBUNTU_settings.git
-    . ./wlsUBUNTU_settings/updateSettings.bash
-    rm -rf wlsUBUNTU_settings
-    ```
-    
+  * Log into your Ubuntu terminal.  _We will not use `gitbash` unless you can't get Ubuntu running._ After logging in, You are in your home directory. 
+     
   * If the `CSB` directory does not exist in your home directory (check with `ls`), then run the following code to clone the `CSB` repository into your home directory:
   
     ```bash
     git clone https://github.com/CSB-book/CSB.git
     ```
-  * It is always a good idea to keep your apps in `Ubuntu` up to date. _The first time you do this, it could take a long time to finish. After that, if you do this when you log in, it should go quickly._
+  * It's always a good idea to keep your apps in `Ubuntu` up to date. _The first time you do this, it could take a long time to finish. After that, if you do this when you log in, it should go quickly._
     ```bash
     sudo apt update
     sudo apt upgrade
     ```
     
+
 </p>
 </details>
 
@@ -37,15 +30,11 @@
 <p>
  
   * Open a terminal window
+  
+  * If you haven't already, install [homebrew](https://brew.sh/).  You will be able to use homebrew to install linux software, such as `tree`, which is used in the slide show.
+  
 
-  * Consider installing [homebrew](https://brew.sh/).  You will be able to use homebrew to install linux software, such as `tree`, which is used in the slide show.
-  
-  * If the `CSB` directory does not exist in your home directory (check with `ls`), then run the following code to clone the `CSB` repository into your home directory:
-  
-    ```bash
-    git clone https://github.com/CSB-book/CSB.git
-    ```
- </p>
+</p>
 </details>
 
 
@@ -53,22 +42,22 @@
 
 We are also going to flip the classroom next week. Flipping the classroom means that you work on the material to be covered before we address it in lecture. Then we can spend time in lecture going over the most challenging topics, as identified by you. Then we will continue together in lecture through new material that builds upon this assignment.
 
-Work through the New Material below which is from section 1.6 in [**Chapter 1**](https://github.com/tamucc-comp-bio-2020/classroom_repo/blob/master/text_book_resources/ComputingSkillsforBiologists_Chapter1.pdf).  To help you learn `bash`, you are expected to type in the commands the
+Work through the remainder of [lecture 1](../lectures/lecture01.md).  To help you learn `bash`, you are expected to type in or copy and paste the commands in the
 
 ```
 code blocks
 ```
 
- Complete the mind expander(s) and the exercise(s) by answering the question(s) in the online form and submitting.  You must be logged into your TAMUCC email account to have your identity attached to your answers. 
+Complete [Mindexpander 01.02](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUOUo2UVRUMVgwTUlQMlpUQzUzOTIzME9LNi4u) by answering the question(s) in the online form and submitting.  You must be logged into your TAMUCC email account to have your identity attached to your answers. 
 
 * **_You can resubmit your answers as neccessary_**
 
-The exercises in the online forms closely follow those in the book.  I do make minor modifications and provide tips in the online form.  To ensure that your work is saved, **_I highly recommend that you first record your answers in a text document in either [Notepad++ for Win10](https://notepad-plus-plus.org/downloads/) or [BBedit for Mac](https://www.barebones.com/products/bbedit/) and save them to your computer_**.  For an excellently formatted example, see the solutions provided by the book in `~/CSB/unix/solutions`.
+ **_I highly recommend that you first record your answers in a text document in either [Notepad++ for Win](https://notepad-plus-plus.org/downloads/) or [BBedit for Mac](https://www.barebones.com/products/bbedit/) and save them to your computer_**. 
 
 
 ## New Material To Be Covered Prior to Next Lecture (CSB Section 1.6) 
 
-For the online version of this course, I converted the [**Lecture_02 Slides**](https://github.com/tamucc-comp-bio-2020/classroom_repo/blob/master/lectures/Week02_files/Lecture02_WelcomeToTheMatrix.pdf)  to a more screen-splitting friendly format here in GitHub.
+I converted the [**Lecture_02 Slides**](../lectures/Week02_files/Lecture02_WelcomeToTheMatrix.pdf)  to a more screen-splitting friendly format here in GitHub.
 
 
 <details><summary>Advanced `bash` Commands</summary>
