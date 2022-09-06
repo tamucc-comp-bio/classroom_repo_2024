@@ -41,17 +41,35 @@ For Win10 laptops, follow the instructions for both Windows and Linux (Ubuntu Te
 ---
 
 
-### [Clone the text book's repository to your computer](https://computingskillsforbiologists.com/setup/)
-Complete steps 2 and 3 in the instructions linked above. 
-
-For Win10 laptops, use Ubuntu Terminal
-
-The repository is named CSB, and it contains all of the example files and directories necessary to conduct the exercises in the text book.
+### [Set Up SSH Permissions Key](../resources/Github_SSH.pdf) And Say Goodbye to Passwords
 
 ---
 
 
-### [Set Up SSH Permissions Key](../resources/Github_SSH.pdf) And Say Goodbye to Passwords
+### Clone the text book's repository to your computer
+
+We will use the open source files that accompany the CSB text book in lectures and assignments.
+
+1. Open a terminal window
+	* For Win laptops, use `Windows Terminal` to open Ubunutu.  
+	* For Mac laptops, open your `Terminal`.
+	
+2. Run the code in the code block below 
+```bash
+# check that you're in home dir, you should be there when you log in
+pwd
+
+# if you are not in your home dir, then move there
+cd ~
+
+# if pwd does not return `/home/yourusername` then let Dr. Bird know
+pwd
+
+# clone the CSB repository to your home dir
+git clone git@github.com:tamucc-comp-bio-2022/CSB.git
+```
+
+The repository is named CSB, and it contains all of the example files and directories necessary to conduct the exercises in the text book.
 
 ---
 
