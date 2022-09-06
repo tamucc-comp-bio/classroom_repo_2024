@@ -64,10 +64,15 @@ The repository is named CSB, and it contains all of the example files and direct
 </p>
 </details>
 
+---
+
 
 ## Description of Assignment
 
 We are also going to flip the classroom next week. Flipping the classroom means that you work on the material to be covered before we address it in lecture. Then we can spend time in lecture going over the most challenging topics, as identified by you. Then we will continue together in lecture through new material that builds upon this assignment.
+
+<details><summary>Work through remainder of Lecture 01 & Complete Mind Expander 01.02</summary>
+<p>
 
 Work through the remainder of [lecture 1](../lectures/lecture01.md).  To help you learn `bash`, you are expected to type in or copy and paste the commands in the
 
@@ -75,18 +80,21 @@ Work through the remainder of [lecture 1](../lectures/lecture01.md).  To help yo
 code blocks
 ```
 
+
 Complete [Mindexpander 01.02](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUOUo2UVRUMVgwTUlQMlpUQzUzOTIzME9LNi4u) by answering the question(s) in the online form and submitting.  You must be logged into your TAMUCC email account to have your identity attached to your answers. 
 
 * **_You can resubmit your answers as neccessary_**
 
 * **_I highly recommend that you first record your answers in a text document in either [Notepad++ for Win](https://notepad-plus-plus.org/downloads/) or [BBedit for Mac](https://www.barebones.com/products/bbedit/) and save them to your computer_**. 
 
+</p>
+</details>
 
-## New Material To Be Covered Prior to Next Lecture  
+
+<details><summary>New Material To Be Covered Prior to Next Lecture</summary>
+<p>
 
 1. Complete the [Pipes & Filters](https://swcarpentry.github.io/shell-novice/04-pipefilter/index.html) tutorial on sofware carpentry
-
-2. Complete the [Finding Things](https://swcarpentry.github.io/shell-novice/07-find/index.html) tutorial on sofware carpentry
 
 Work through the following tutorial
 
