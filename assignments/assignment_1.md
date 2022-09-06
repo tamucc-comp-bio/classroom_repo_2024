@@ -103,7 +103,7 @@ Complete the [Pipes & Filters](https://swcarpentry.github.io/shell-novice/04-pip
 <details><summary>Advanced `bash` Commands</summary>
 <p>
 
-Work through the following tutorial. Note the instructions to clone the CSB repo in the [Computer Preparation instructions](#Computer Preparation) above
+Work through the following tutorial. Note the instructions to clone the CSB repo in the [Computer Preparation instructions](#computer-preparation) above
 
 
 ---
