@@ -91,8 +91,7 @@ Complete [Mindexpander 01.02](https://forms.office.com/Pages/ResponsePage.aspx?i
 </details>
 
 
-<details><summary>New Material To Be Covered Prior to Next Lecture</summary>
-<p>
+
 
 1. Complete the [Pipes & Filters](https://swcarpentry.github.io/shell-novice/04-pipefilter/index.html) tutorial on sofware carpentry
 
