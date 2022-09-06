@@ -54,7 +54,7 @@ We will use the open source files that accompany the CSB text book in lectures a
 	* For Win laptops, use `Windows Terminal` to open Ubunutu.  
 	* For Mac laptops, open your `Terminal`.
 	
-2. Run the code in the code block below 
+2. Run the code line by line in the code block below 
 ```bash
 # check that you're in home dir, you should be there when you log in
 pwd

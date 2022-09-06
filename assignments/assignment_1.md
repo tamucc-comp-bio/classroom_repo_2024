@@ -11,11 +11,6 @@
   
   * Log into your Ubuntu terminal.  _We will not use `gitbash` unless you can't get Ubuntu running._ After logging in, You are in your home directory. 
      
-  * If the `CSB` directory does not exist in your home directory (check with `ls`), then run the following code to clone the `CSB` repository into your home directory:
-  
-    ```bash
-    git clone https://github.com/CSB-book/CSB.git
-    ```
   * It's always a good idea to keep your apps in `Ubuntu` up to date. _The first time you do this, it could take a long time to finish. After that, if you do this when you log in, it should go quickly._
     ```bash
     sudo apt update
@@ -36,6 +31,35 @@
 
 </p>
 </details>
+
+  * If the `CSB` directory does not exist in your home directory (check with `ls`), then run the following code to clone the `CSB` repository into your home directory:
+  
+### Clone the text book's repository to your computer
+
+We will use the open source files that accompany the CSB text book in lectures and assignments.
+
+1. Open a terminal window
+	* For Win laptops, use `Windows Terminal` to open Ubunutu.  
+	* For Mac laptops, open your `Terminal`.
+	
+2. Run the code line by line in the code block below 
+```bash
+# check that you're in home dir, you should be there when you log in
+pwd
+
+# if you are not in your home dir, then move there
+cd ~
+
+# if pwd does not return `/home/yourusername` then let Dr. Bird know
+pwd
+
+# clone the CSB repository to your home dir
+git clone git@github.com:tamucc-comp-bio-2022/CSB.git
+```
+
+The repository is named CSB, and it contains all of the example files and directories necessary to conduct the exercises in the text book.
+
+---
 
 
 ## Description of Assignment
