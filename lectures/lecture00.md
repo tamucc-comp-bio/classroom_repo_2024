@@ -42,7 +42,9 @@ For Win10 laptops, follow the instructions for both Windows and Linux (Ubuntu Te
 
 
 ### [Clone the text book's repository to your computer](https://computingskillsforbiologists.com/setup/)
-Complete steps 2 and 3. For Win10 laptops, use Ubuntu Terminal
+Complete steps 2 and 3 in the instructions linked above. 
+
+For Win10 laptops, use Ubuntu Terminal
 
 The repository is named CSB, and it contains all of the example files and directories necessary to conduct the exercises in the text book.
 
