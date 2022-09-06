@@ -69,7 +69,7 @@ The repository is named CSB, and it contains all of the example files and direct
 
 ## Description of Assignment
 
-We are also going to flip the classroom next week. Flipping the classroom means that you work on the material to be covered before we address it in lecture. Then we can spend time in lecture going over the most challenging topics, as identified by you. Then we will continue together in lecture through new material that builds upon this assignment.
+We are also going to flip the classroom next week. Flipping the classroom means that you work on the material to be covered before we address it in lecture. Then we can spend time in lecture going over the most challenging topics, as identified by you. Then we will continue together in lecture through new material that builds upon this assignment.  This material is covered in ch 1.6 of the CSB book.
 
 <details><summary>Work through remainder of Lecture 01 & Complete Mind Expander 01.02</summary>
 <p>
@@ -355,9 +355,9 @@ $ cut -d";" -f2 ../data/Pacifici2013_data.csv | tail -n +2 | sort | uniq -c | tr
 ---
 
 
-## Text Book Versus Online Materials
+## CSB Book Versus Online Materials
 
-While the text book is not required, I include this to help those that do use it.
+While the CSB book is not required, I include this to help those that do use it.
 
 The _*New Material*_ closely follows the book but there is some additional information that is not provided in the book (and vice versa). In the lecture slides, the `code blocks` are represented by green text on a black background, mimicking the terminal.
 
