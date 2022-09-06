@@ -792,7 +792,7 @@ $ sudo chown -R $USER test_dir/
 </p>
 </details>
 
-<details><summary>Many commands in the text book are important for manipulating biological data</summary>
+<details><summary>Many bash commands are important for manipulating biological data</summary>
 <p>
 
 #### `echo`  prints text or convertes text into a text stream
