@@ -35,6 +35,7 @@
   
 <details><summary>Clone the CSB repository to your home dir</summary>
 <p>
+
 We will use the [open source files that accompany the CSB text book](https://github.com/tamucc-comp-bio-2022/CSB) in lectures and assignments.
 
 If the `CSB` directory does not exist in your home directory (check with `ls`), then run the following code to clone the [`CSB` repository](https://github.com/tamucc-comp-bio-2022/CSB) into your home directory:
