@@ -7,9 +7,9 @@
 <details><summary>Ubuntu on Windows</summary>
 <p>
 
-  * If the Ubuntu app is not installed, then follow [these instructions](https://github.com/cbirdlab/wlsUBUNTU_settings/blob/master/README.md)
+  * If the Windows Terminal or Ubuntu app are not installed, then follow [these instructions](https://github.com/cbirdlab/wlsUBUNTU_settings/blob/master/README.md)
   
-  * Log into your Ubuntu terminal.  _We will not use `gitbash` unless you can't get Ubuntu running._ After logging in, You are in your home directory. 
+  * Open an Ubuntu window in Windows Terminal.  _We will not use `gitbash` unless you can't get Ubuntu running._ After logging in, You are in your home directory. 
      
   * It's always a good idea to keep your apps in `Ubuntu` up to date. _The first time you do this, it could take a long time to finish. After that, if you do this when you log in, it should go quickly._
     ```bash
@@ -32,11 +32,12 @@
 </p>
 </details>
 
-  * If the `CSB` directory does not exist in your home directory (check with `ls`), then run the following code to clone the `CSB` repository into your home directory:
   
-### Clone the text book's repository to your computer
-
+<details><summary>Clone the text book's repository to your computer</summary>
+<p>
 We will use the open source files that accompany the CSB text book in lectures and assignments.
+
+If the `CSB` directory does not exist in your home directory (check with `ls`), then run the following code to clone the `CSB` repository into your home directory:
 
 1. Open a terminal window
 	* For Win laptops, use `Windows Terminal` to open Ubunutu.  
@@ -59,7 +60,8 @@ git clone git@github.com:tamucc-comp-bio-2022/CSB.git
 
 The repository is named CSB, and it contains all of the example files and directories necessary to conduct the exercises in the text book.
 
----
+</p>
+</details>
 
 
 ## Description of Assignment
