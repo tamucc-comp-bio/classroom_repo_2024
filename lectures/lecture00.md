@@ -27,12 +27,11 @@ For those of you with windows, we will install an Ubuntu terminal that interface
 ### [Install git on your computer](https://computingskillsforbiologists.com/setup/)
 For Win10 laptops, follow the instructions for both Windows and Linux (Ubuntu Terminal)
 
- <!-- 
 ### [Clone the text book's repository to your computer](https://computingskillsforbiologists.com/setup/)
 Complete steps 2 and 3. For Win10 laptops, use Ubuntu Terminal
 
 The repository is named CSB, and it contains all of the example files and directories necessary to conduct the exercises in the text book.
--->
+
 
 ### [Set Up SSH Permissions Key](../resources/Github_SSH.pdf) And Say Goodbye to Passwords
 
