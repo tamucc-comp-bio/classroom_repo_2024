@@ -140,14 +140,14 @@ _use `Tab` key to autocomplete names, prevent spelling mistakes_
 
 A machine provides you with thousands of data files. There’s so many, it is breaking your file browser. How many files are there?
 
-We will use the dir `assignment_01/data/networks` as an example of a directory with many files, but not quite thousands.
+We will use the dir `unix/data/Saavedra2013` as an example of a directory with many files
 
 ```bash
-# start by moving to your assignment dir if you are not already there
-$ cd ~/comp_bio/assignment_01
+# start by moving to our sandbox if you are not already there
+$ cd ~/CSB/unix/sandbox
 
-# save file names in the Saavedra 2013 networks dir to file in the present working directory
-$ ls ./data/networks > filelist.txt
+# save file names to file in pwd
+$ ls ../data/Saavedra2013 > filelist.txt
 
 # look at the file
 $ cat filelist.txt
@@ -169,14 +169,14 @@ $ rm filelist.txt
 
 A pipe `|` passes the [stdout](https://en.wikipedia.org/wiki/Standard_streams#Standard_output_(stdout)) from one command to the [stdin](https://en.wikipedia.org/wiki/Standard_streams#Standard_input_(stdin)) of another
 
-How many network files are there in Saavedra 2013?
+How many files are there?
 
 ```bash
 # list file names
-$ ls ./data/networks
+$ ls ../data/Saavedra2013
 
 # list file names and pipe into wc
-$ ls ./data/networks | wc -l
+$ ls ../data/Saavedra2013 | wc –l
 59
 
 ```
@@ -351,10 +351,6 @@ $ cut -d";" -f2 ../data/Pacifici2013_data.csv | tail -n +2 | sort | uniq -c | tr
 
 </p>
 </details>
-
-
-
-
 
 
 
