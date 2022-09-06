@@ -866,7 +866,7 @@ $ sudo chown -R $USER test_dir/
 
 ---
 
-## New Material Covered During Lecture Today (CSB 1.7-1.9)
+## Computer Programming with `bash` (CSB 1.7-1.9)
 
 <details><summary>Scripting</summary>
 <p>
