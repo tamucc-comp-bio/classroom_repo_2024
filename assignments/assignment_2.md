@@ -1,33 +1,25 @@
 # Assignment 2 
 
-## Due 09/11
+## Due 09/16
 
-<details><summary>Win10</summary>
+---
+
+## Computer Preparation
+
+<details><summary>Ubuntu on Windows</summary>
 <p>
 
-  * If the Ubuntu app is not installed, then follow [these instructions](https://github.com/cbirdlab/wlsUBUNTU_settings/blob/master/InstallLinuxOnWindows_Automated.pdf)
+  * If the Windows Terminal or Ubuntu app are not installed, then follow [these instructions](https://github.com/cbirdlab/wlsUBUNTU_settings/blob/master/README.md)
   
-  * Log into your Ubuntu terminal.  _We will not use `gitbash` unless you can not get Ubuntu running._ After logging in, You are in your home directory. 
-  
-  * If you are using an Ubuntu terminal that has not been setup (you will know because it will ask you to create a new user name and password) or you notice odd cursor behavior when editing text in the terminal, then run the following code:
-  
-    ```bash
-    git clone https://github.com/cbirdlab/wlsUBUNTU_settings.git
-    . ./wlsUBUNTU_settings/updateSettings.bash
-    rm -rf wlsUBUNTU_settings
-    ```
-    
-  * If the `CSB` directory does not exist in your home directory (check with `ls`), then run the following code to clone the `CSB` repository into your home directory:
-  
-    ```bash
-    git clone https://github.com/CSB-book/CSB.git
-    ```
-  * It is always a good idea to keep your apps in `Ubuntu` up to date. _The first time you do this, it could take a long time to finish. After that, if you do this when you log in, it should go quickly._
+  * Open an Ubuntu window in Windows Terminal.  _We will not use `gitbash` unless you can't get Ubuntu running._ After logging in, You are in your home directory. 
+     
+  * It's always a good idea to keep your apps in `Ubuntu` up to date. _The first time you do this, it could take a long time to finish. After that, if you do this when you log in, it should go quickly._
     ```bash
     sudo apt update
     sudo apt upgrade
     ```
     
+
 </p>
 </details>
 
@@ -35,20 +27,51 @@
 <p>
  
   * Open a terminal window
+  
+  * If you haven't already, install [homebrew](https://brew.sh/).  You will be able to use homebrew to install linux software, such as `tree`, which is used in the slide show.
+  
 
-  * Consider installing [homebrew](https://brew.sh/).  You will be able to use homebrew to install linux software, such as `tree`, which is used in the slide show.
-  
-  * If the `CSB` directory does not exist in your home directory (check with `ls`), then run the following code to clone the `CSB` repository into your home directory:
-  
-    ```bash
-    git clone https://github.com/CSB-book/CSB.git
-    ```
- </p>
+</p>
 </details>
 
+  
+<details><summary>Clone the CSB repository to your home dir</summary>
+<p>
 
+We will use the [open source files that accompany the CSB text book](https://github.com/tamucc-comp-bio-2022/CSB) in lectures and assignments.
+
+If the `CSB` directory does not exist in your home directory (check with `ls`), then run the following code to clone the [`CSB` repository](https://github.com/tamucc-comp-bio-2022/CSB) into your home directory:
+
+1. Open a terminal window
+	* For Win laptops, use `Windows Terminal` to open Ubunutu.  
+	* For Mac laptops, open your `Terminal`.
+	
+2. Run the code line by line in the code block below 
+```bash
+# check that you're in home dir, you should be there when you log in
+pwd
+
+# if you are not in your home dir, then move there
+cd ~
+
+# if pwd does not return `/home/yourusername` then let Dr. Bird know
+pwd
+
+# clone the CSB repository to your home dir
+git clone git@github.com:tamucc-comp-bio-2022/CSB.git
+```
+
+The repository is named CSB, and it contains all of the example files and directories necessary to conduct the exercises in the text book.
+
+</p>
+</details>
+
+---
 ## Description of Assignment
-Complete the exercise(s) by answering the question(s) in the online form and submitting.  You must be logged into your TAMUCC email account to have your identity attached to your answers. 
+
+In Software Carpentry, complete The [Unix Shell Sections 5-7](https://swcarpentry.github.io/shell-novice/)
+
+Then, complete the exercise(s) below by answering the question(s) in the online form and submitting.  You must be logged into your TAMUCC email account to have your identity attached to your answers. 
 
 You may work in groups, but each person must fill out the online answer form.
 
@@ -59,7 +82,7 @@ The exercises in the online forms closely follow those in the book.  I do make m
 * [Exercise 1.10.3 Plant-Pollinator Networks](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMlpVSUQ0U1hTSFZERDE1WUdZWjRYUlhaWi4u)
 
 
-### Extra Credit, worth 1 whole assignment (Due 09/11)  
+### Extra Credit, worth 1 whole assignment (Due 09/16)  
 
 Complete Exercise 1.10.4 Data Explorer (data from Buzzard *et al.*, 2016), and submit script by updating your repository (see below). You may work in groups but each student must submit their own work.
 
