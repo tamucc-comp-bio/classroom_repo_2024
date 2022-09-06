@@ -91,9 +91,13 @@ Complete [Mindexpander 01.02](https://forms.office.com/Pages/ResponsePage.aspx?i
 </details>
 
 
+<details><summary>Software Carpentry: Unix, Pipes & Filters</summary>
+<p>
 
+Complete the [Pipes & Filters](https://swcarpentry.github.io/shell-novice/04-pipefilter/index.html) tutorial on sofware carpentry
 
-1. Complete the [Pipes & Filters](https://swcarpentry.github.io/shell-novice/04-pipefilter/index.html) tutorial on sofware carpentry
+</p>
+</details>
 
 Work through the following tutorial
 
