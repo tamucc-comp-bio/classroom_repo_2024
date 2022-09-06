@@ -99,34 +99,12 @@ Complete the [Pipes & Filters](https://swcarpentry.github.io/shell-novice/04-pip
 </p>
 </details>
 
-Work through the following tutorial
 
 <details><summary>Advanced `bash` Commands</summary>
 <p>
 
-### Download Required Data from Dryad
+Work through the following tutorial. Note the instructions to clone the CSB repo in the [Computer Preparation instructions](#Computer Preparation) above
 
-Download data from Saavedra, Serguei; Stouffer, Daniel B. (2013) "Disentangling nestedness".  It's in [datadryad.org](https://datadryad.org).
-
-```bash
-# If you haven't yet, move to your home dir and create a `comp_bio` dir with an `assignment_01` dir inside of it
-cd ~
-mkdir -p comp_bio/assignment_01/data
-
-# Move to the data dir you just made
-cd ~/comp_bio/assignment_01/data
-
-# Download the data from datadryad.org
-# I searched datadryad.org for Saavedra 2013, and copied the download link
-wget https://datadryad.org/stash/downloads/file_stream/52937 -O saavedra2013.zip
-unzip unzip saavedra2013.zip
-
-wget https://datadryad.org/stash/downloads/file_stream/52938 -O readme.txt
-
-# move to the `assignment_01` dir
-cd ~/comp_bio/assignment_01
-
-```
 
 ---
 
@@ -135,7 +113,7 @@ cd ~/comp_bio/assignment_01
 ### Redirect contents of file to [stdin](https://en.wikipedia.org/wiki/Standard_streams#Standard_input_(stdin)) `[command] < filename` 
 
 ```bash
-# let’s start by moving to our sandbox
+# let’s start by moving to our sandbox in the unix dir of the CSB repo
 $ cd ~/CSB/unix/sandbox
 
 # print text to screen, then print to file, then print file to screen
