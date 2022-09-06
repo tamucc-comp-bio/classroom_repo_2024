@@ -33,7 +33,7 @@
 </details>
 
   
-<details><summary>Clone the text book's repository to your computer</summary>
+<details><summary>Clone the [CSB repository](https://github.com/tamucc-comp-bio-2022/CSB) to your home dir</summary>
 <p>
 We will use the open source files that accompany the CSB text book in lectures and assignments.
 
