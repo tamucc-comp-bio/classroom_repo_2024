@@ -33,11 +33,11 @@
 </details>
 
   
-<details><summary>Clone the [CSB repository](https://github.com/tamucc-comp-bio-2022/CSB) to your home dir</summary>
+<details><summary>Clone the CSB repository to your home dir</summary>
 <p>
-We will use the open source files that accompany the CSB text book in lectures and assignments.
+We will use the [open source files that accompany the CSB text book](https://github.com/tamucc-comp-bio-2022/CSB) in lectures and assignments.
 
-If the `CSB` directory does not exist in your home directory (check with `ls`), then run the following code to clone the `CSB` repository into your home directory:
+If the `CSB` directory does not exist in your home directory (check with `ls`), then run the following code to clone the [`CSB` repository](https://github.com/tamucc-comp-bio-2022/CSB) into your home directory:
 
 1. Open a terminal window
 	* For Win laptops, use `Windows Terminal` to open Ubunutu.  
