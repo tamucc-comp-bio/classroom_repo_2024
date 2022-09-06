@@ -677,7 +677,7 @@ $ sudo chown -R $USER test_dir/
 ---
 
 
-## Concise Review of Material Covered Up Through Assignment 1
+## Concise Review of Material Covered Up Through Now
 
 <details><summary>Commands have options and accept arguments to modify functionality </summary>
 <p>
@@ -1201,6 +1201,7 @@ Note that some of these commands need to be installed on MacOS using `brew`
 
 [Exercise 1.10.1 Next Generation Sequencing Data](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMTVENFg0UjhFTzc3Wkc0NExRTjdLSjdGNi4u)
 
+Software Carpentry: The Unix Shell Sections 5-7
 
-* [Assignment_2, Due 09/11](https://github.com/tamucc-comp-bio-2020/classroom_repo/blob/master/assignments/assignment_2.md)
+* [Assignment_2, Due 09/16](../assignments/assignment_2.md)
 

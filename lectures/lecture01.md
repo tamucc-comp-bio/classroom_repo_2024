@@ -532,10 +532,10 @@ It is best not to used spaces in dir and file names, but you can wrap file names
 </details>
 
 
-<details><summary>Mind Expander 1.1</summary>
+<details><summary>Mind Expander 01.01</summary>
 <p>
 
-### [Mind Expander 1.1](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUM1FFUUZLT01LR0ZGODU2WVNSV1c0NEpWMi4u)
+### [Mind Expander 01.01](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUM1FFUUZLT01LR0ZGODU2WVNSV1c0NEpWMi4u)
 
 </p>
 </details>
@@ -757,10 +757,10 @@ _Do not forget to use `Tab` key to autocomplete file names and prevent spelling 
 </details>
 
 
-<details><summary>Mind Expander 1.2</summary>
+<details><summary>Mind Expander 01.02</summary>
 <p>
 
-### [Mind Expander 1.2](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUM0VSMlJZMFg2VzlNNjZVUTJINk9TRlBSOC4u)
+### [Mind Expander 01.02](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUM0VSMlJZMFg2VzlNNjZVUTJINk9TRlBSOC4u)
 
 </p>
 </details>
