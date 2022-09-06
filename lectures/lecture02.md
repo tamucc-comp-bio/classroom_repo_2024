@@ -50,6 +50,8 @@ You are expected to start each lecture with your terminal window open and ready 
 <details><summary>click to expand</summary>
 <p>
 
+While the CSB text book is not required, this info provides context for those that choose to use it.
+
 The material below closely follow the book but there is some additional information that is not provided in the book (and vice versa). If you choose to follow the lecture slides, the `code blocks` are represented by green text on a black background, mimicking the terminal.
 
 * Page 35 **Use _BodyMass.csv_ (slides) rather than _BodyM.csv_ (book)**
@@ -90,9 +92,9 @@ After you log into the class and get your computer set up, please complete the q
 
 ---
 
-## Review of New Material Covered Prior to This Lecture (CSB Section 1.6) 
+## Additional Advanced Bash Commands (CSB Section 1.6) 
 
-For the online version of this course, I converted the [**Lecture_02 Slides**](https://github.com/tamucc-comp-bio-2020/classroom_repo/blob/master/lectures/Week02_files/Lecture02_WelcomeToTheMatrix.pdf)  to a more screen-splitting friendly format here in GitHub.
+I converted the [**Lecture_02 Slides**](https://github.com/tamucc-comp-bio-2020/classroom_repo/blob/master/lectures/Week02_files/Lecture02_WelcomeToTheMatrix.pdf)  to a more screen-splitting friendly format here in GitHub.
 
 <details><summary>Advanced `bash` Commands</summary>
 <p>
