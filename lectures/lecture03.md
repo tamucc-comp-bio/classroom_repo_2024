@@ -1,39 +1,29 @@
 # Week03 UNIX III - Beyond the CSB Text Book
 
-### [Assignment 2](https://github.com/tamucc-comp-bio-2020/classroom_repo/blob/master/assignments/assignment_2.md) is due at the beginning of this lecture
+### [Assignment 2](../assignments/assignment_2.md) is due at the beginning of this lecture
 
 ### [Lecture Stream](https://tamucc.webex.com/recordingservice/sites/tamucc/recording/playback/6a211a99f35647608fc87002190fe1d4) 
+
+---
+
 
 ## Computer Preparation
 
 You are expected to start each lecture with your terminal window open and ready to go.
 
-<details><summary>Win10</summary>
+<details><summary>Ubuntu on Windows</summary>
 <p>
 
-  * If the Ubuntu app is not installed, then follow [these instructions](https://github.com/cbirdlab/wlsUBUNTU_settings/blob/master/InstallLinuxOnWindows_Automated.pdf)
+  * If the Windows Terminal or Ubuntu app are not installed, then follow [these instructions](https://github.com/cbirdlab/wlsUBUNTU_settings/blob/master/README.md)
   
-  * Log into your Ubuntu terminal.  _We will not use `gitbash` unless you can not get Ubuntu running._ After logging in, You are in your home directory. 
-  
-  * If you are using an Ubuntu terminal that has not been setup (you will know because it will ask you to create a new user name and password) or you notice odd cursor behavior when editing text in the terminal, then run the following code:
-  
-    ```bash
-    git clone https://github.com/cbirdlab/wlsUBUNTU_settings.git
-    . ./wlsUBUNTU_settings/updateSettings.bash
-    rm -rf wlsUBUNTU_settings
-    ```
-    
-  * If the `CSB` directory does not exist in your home directory (check with `ls`), then run the following code to clone the `CSB` repository into your home directory:
-  
-    ```bash
-    git clone https://github.com/CSB-book/CSB.git
-    ```
-
-  * It is always a good idea to keep your apps in `Ubuntu` up to date. _The first time you do this, it could take a long time to finish. After that, if you do this when you log in, it should go quickly._
+  * Open an Ubuntu window in Windows Terminal.  _We will not use `gitbash` unless you can't get Ubuntu running._ After logging in, You are in your home directory. 
+     
+  * It's always a good idea to keep your apps in `Ubuntu` up to date. _The first time you do this, it could take a long time to finish. After that, if you do this when you log in, it should go quickly._
     ```bash
     sudo apt update
     sudo apt upgrade
     ```
+    
 
 </p>
 </details>
@@ -43,25 +33,57 @@ You are expected to start each lecture with your terminal window open and ready 
  
   * Open a terminal window
   
-  * Consider installing [homebrew](https://brew.sh/).  You will be able to use homebrew to install linux software, such as `tree`, which is used in the slide show.
+  * If you haven't already, install [homebrew](https://brew.sh/).  You will be able to use homebrew to install linux software, such as `tree`, which is used in the slide show.
   
-  * If the `CSB` directory does not exist in your home directory (check with `ls`), then run the following code to clone the `CSB` repository into your home directory:
-  
-    ```bash
-    git clone https://github.com/CSB-book/CSB.git
-    ```
-    
+
 </p>
 </details>
+
+  
+<details><summary>If it's not already there, clone the CSB repository to your home dir</summary>
+<p>
+
+We will use the [open source files that accompany the CSB text book](https://github.com/tamucc-comp-bio-2022/CSB) in lectures and assignments.
+
+If the `CSB` directory does not exist in your home directory (check with `ls`), then run the following code to clone the [`CSB` repository](https://github.com/tamucc-comp-bio-2022/CSB) into your home directory:
+
+1. Open a terminal window
+	* For Win laptops, use `Windows Terminal` to open Ubunutu.  
+	* For Mac laptops, open your `Terminal`.
+	
+2. Run the code line by line in the code block below 
+```bash
+# check that you're in home dir, you should be there when you log in
+pwd
+
+# if you are not in your home dir, then move there
+cd ~
+
+# if pwd does not return `/home/yourusername` then let Dr. Bird know
+pwd
+
+# clone the CSB repository to your home dir
+git clone git@github.com:tamucc-comp-bio-2022/CSB.git
+```
+
+The repository is named CSB, and it contains all of the example files and directories necessary to conduct the exercises in the text book.
+
+</p>
+</details>
+
+---
 
 
 # In Class Activities
 
 ## [I. Quiz](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUNEpSWTVNREU0N1IxUDNLU0tPMVYyUkpSRC4u)
 
+---
+
+
 ## II. Review of What We Have Learned
 
-1. There are several commands for navigating and manipulating a computer file directory.  I made a [linux cheat sheet](https://github.com/tamucc-comp-bio-2020/classroom_repo/blob/master/resources/CheatSheetLinux_8-12-2016.pdf) for students learning to use linux that you can print out on a single double sided sheet of paper and use as a desk reference. 
+1. There are several commands for navigating and manipulating a computer file directory.  I made a [linux cheat sheet](../resources/CheatSheetLinux_2022-09-02.pdf) for students learning to use linux that you can print out on a single double sided sheet of paper and use as a desk reference. 
   * `cd`    change directories
   * `pwd`   where am I?
   * `ls`    show contents of `pwd`
@@ -155,6 +177,9 @@ You are expected to start each lecture with your terminal window open and ready 
   ```
   bash script.sh ../data.txt
   ```
+
+---
+
 
 ## III. Additional Important Unix Commands and Intro to Regular Expressions for Pattern Matching
 
@@ -308,6 +333,8 @@ There are different regex languages (POSIX, PERL, etc) that have slight differen
   AGGTTCCCCGGGGTGCCCGGCCCCACCACGTATGTGCACTCCGACTTCTCTGCAAACTTC
   ```
 
+---
+
 
 ## Basic addition and subtraction
 
@@ -325,7 +352,9 @@ We need to tell `bash` that we are asking for arithmetic by wrapping the equatio
   echo $((1+11-1))
   
   ```
-  
+
+---
+
 ## Decision logic with if-then-else statements
 
 We can program a computer to make decisions.  
@@ -355,6 +384,8 @@ else
   echo $A does equal $B 
 fi  
 ```
+
+---
 
 
 ## A function allows you to define a new customized command composed of several existing commands
@@ -395,6 +426,7 @@ After you enter the function, nothing will happen, but it has been stored into m
 DECIDER 1 2
   ```
 
+ ---
  
 
 # IV. Real World Application of Skills Learned: Fisheries-Induced Evolution
@@ -424,6 +456,9 @@ cd ~
 rm -rf LimpetShellEvolution
 ```
 
+---
+
+
 ## HOMEWORK
-[Assignment 3  Due 9/27](https://github.com/tamucc-comp-bio/fall_2019/blob/master/assignments/assignment_3.md)
+[Assignment 3  Due 9/23](https://github.com/tamucc-comp-bio/fall_2019/blob/master/assignments/assignment_3.md)
 
