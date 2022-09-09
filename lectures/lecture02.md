@@ -132,13 +132,8 @@ After you log into the class and get your computer set up, please complete the q
 
 [Exercise 1.10.1 Next Generation Sequencing Data](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMTVENFg0UjhFTzc3Wkc0NExRTjdLSjdGNi4u)
 
-
----
-
 </p>
 </details>
-
-
 
 ---
 
