@@ -39,7 +39,7 @@ You are expected to start each lecture with your terminal window open and ready 
 </details>
 
   
-<details><summary>Clone the CSB repository to your home dir</summary>
+<details><summary>If it's not already there, clone the CSB repository to your home dir</summary>
 <p>
 
 We will use the [open source files that accompany the CSB text book](https://github.com/tamucc-comp-bio-2022/CSB) in lectures and assignments.
