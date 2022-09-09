@@ -119,26 +119,9 @@ After you log into the class and get your computer set up, please complete the q
 
 ---
 
+
+
 ## Review Assignment Due Today 
-
-<details><summary>Mind Expander & Exercise Review</summary>
-<p>
-
-[Mind Expander 01.01](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUM1FFUUZLT01LR0ZGODU2WVNSV1c0NEpWMi4u)
-
-[Mind Expander 01.02](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUOUo2UVRUMVgwTUlQMlpUQzUzOTIzME9LNi4u)
-
-[Mind Expander 01.03](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUOThBNjZNVzlGQUtJUzhYREZVSE5UVVJMNS4u)
-
-[Exercise 1.10.1 Next Generation Sequencing Data](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMTVENFg0UjhFTzc3Wkc0NExRTjdLSjdGNi4u)
-
-</p>
-</details>
-
----
-
-
-## Additional Advanced Bash Commands (CSB Section 1.6) 
 
 I converted the [**Lecture_02 Slides**](https://github.com/tamucc-comp-bio-2020/classroom_repo/blob/master/lectures/Week02_files/Lecture02_WelcomeToTheMatrix.pdf)  to a more screen-splitting friendly format here in GitHub.
 
@@ -382,6 +365,24 @@ $ cut -d";" -f2 ../data/Pacifici2013_data.csv | tail -n +2 | sort | uniq -c | tr
 </p>
 </details>
 
+<details><summary>Mind Expander & Exercise Review</summary>
+<p>
+
+[Mind Expander 01.01](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUM1FFUUZLT01LR0ZGODU2WVNSV1c0NEpWMi4u)
+
+[Mind Expander 01.02](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUOUo2UVRUMVgwTUlQMlpUQzUzOTIzME9LNi4u)
+
+[Mind Expander 01.03](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUOThBNjZNVzlGQUtJUzhYREZVSE5UVVJMNS4u)
+
+[Exercise 1.10.1 Next Generation Sequencing Data](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMTVENFg0UjhFTzc3Wkc0NExRTjdLSjdGNi4u)
+
+</p>
+</details>
+
+---
+
+
+## Additional Important Commands (rest of CSB Section 1.6)
 
 <details><summary>Additional Important Commands</summary>
 <p>
