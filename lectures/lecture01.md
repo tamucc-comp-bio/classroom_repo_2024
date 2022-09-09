@@ -760,7 +760,7 @@ _Do not forget to use `Tab` key to autocomplete file names and prevent spelling 
 <details><summary>Mind Expander 01.02</summary>
 <p>
 
-### [Mind Expander 01.02](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUM0VSMlJZMFg2VzlNNjZVUTJINk9TRlBSOC4u)
+### [Mind Expander 01.02](https://forms.office.com/r/M9XnBAtiUw)
 
 </p>
 </details>
