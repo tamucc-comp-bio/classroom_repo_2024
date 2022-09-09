@@ -69,11 +69,11 @@ The repository is named CSB, and it contains all of the example files and direct
 ---
 ## Description of Assignment
 
-Complete [Mind Expander 01.04](https://forms.office.com/r/uvi6cGMSMJ)
+1. Complete [Mind Expander 01.04](https://forms.office.com/r/uvi6cGMSMJ)
 
-*OPTIONAL*: In Software Carpentry, complete The [Unix Shell Sections 5-6](https://swcarpentry.github.io/shell-novice/)
+2. *OPTIONAL*: In Software Carpentry, complete The [Unix Shell Sections 5-6](https://swcarpentry.github.io/shell-novice/)
 
-
+3. Work through *Computer Programming with `bash` (CSB 1.7-1.9) in [Lecture_02](../lectures/lecture02.md)
 
 Then, complete the exercise(s) below by answering the question(s) in the online form and submitting.  You must be logged into your TAMUCC email account to have your identity attached to your answers. 
 
@@ -87,6 +87,8 @@ The exercises in the online forms closely follow those in the book.  I do make m
 
 
 ### Extra Credit, worth 1 whole assignment (Due 09/16)  
+
+Please try to at least click the link and let me know in the next class if you couldn't get the repo because Assignment 3 will be issued this way
 
 Complete Exercise 1.10.4 Data Explorer (data from Buzzard *et al.*, 2016), and submit script by updating your repository (see below). You may work in groups but each student must submit their own work.
 

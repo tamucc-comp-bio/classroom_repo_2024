@@ -422,7 +422,7 @@ bbbb
 
 # remove consecutive duplicate occurrences of a
 $ echo "aaaaabbbb" | tr -s a
-Abbbb
+abbbb
 
 ```
 
