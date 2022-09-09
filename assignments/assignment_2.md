@@ -88,7 +88,7 @@ The exercises in the online forms closely follow those in the book.  I do make m
 
 ### Extra Credit, worth 1 whole assignment (Due 09/16)  
 
-Please try to at least click the link and let me know in the next class if you couldn't get the repo because Assignment 3 will be issued this way
+Please try to at least click the link and let me know in the next class if you couldn't get the repo because Assignment 3 will be issued this way.  For those of you that do this, I'll extend the due date to 9/23 (let's see if anybody reads this :-).
 
 Complete Exercise 1.10.4 Data Explorer (data from Buzzard *et al.*, 2016), and submit script by updating your repository (see below). You may work in groups but each student must submit their own work.
 
