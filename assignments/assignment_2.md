@@ -35,7 +35,7 @@
 </details>
 
   
-<details><summary>Clone the CSB repository to your home dir</summary>
+<details><summary>If you have not already, clone the CSB repository to your home dir</summary>
 <p>
 
 We will use the [open source files that accompany the CSB text book](https://github.com/tamucc-comp-bio-2022/CSB) in lectures and assignments.

@@ -120,8 +120,7 @@ After you log into the class and get your computer set up, please complete the q
 ---
 
 
-
-## Review Assignment Due Today 
+## Review `assignment_01` Due Today 
 
 I converted the [**Lecture_02 Slides**](https://github.com/tamucc-comp-bio-2020/classroom_repo/blob/master/lectures/Week02_files/Lecture02_WelcomeToTheMatrix.pdf)  to a more screen-splitting friendly format here in GitHub.
 
