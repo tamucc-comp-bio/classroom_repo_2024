@@ -872,6 +872,13 @@ $ sudo chown -R $USER test_dir/
 
 See the lecture 2 slides and chapter 1 for this material
 
+### NOTE: While the examples I use here show you how to edit a script in `nano` the best way to construct/edit a script is to 
+ to:
+
+* use a GUI text editor (NotePad++ or bbEdit) to edit the code, 
+* troubleshoot lines by copying and pasting into the terminal,
+* then add tested code to your script in Ubuntu by copying from your GUI text editor to `nano`
+
 ### What are [scripts](https://en.wikipedia.org/wiki/Scripting_language)?
 
 A script is a file with a list of commands which are executed sequentially from the first line to the last.

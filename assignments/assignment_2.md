@@ -69,7 +69,11 @@ The repository is named CSB, and it contains all of the example files and direct
 ---
 ## Description of Assignment
 
-In Software Carpentry, complete The [Unix Shell Sections 5-7](https://swcarpentry.github.io/shell-novice/)
+Complete [Mind Expander 01.04](https://forms.office.com/r/uvi6cGMSMJ)
+
+*OPTIONAL*: In Software Carpentry, complete The [Unix Shell Sections 5-6](https://swcarpentry.github.io/shell-novice/)
+
+
 
 Then, complete the exercise(s) below by answering the question(s) in the online form and submitting.  You must be logged into your TAMUCC email account to have your identity attached to your answers. 
 
