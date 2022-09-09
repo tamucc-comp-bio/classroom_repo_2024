@@ -75,6 +75,9 @@ The repository is named CSB, and it contains all of the example files and direct
 
 3. Work through *Computer Programming with `bash` (CSB 1.7-1.9) in [Lecture_02](../lectures/lecture02.md)
 
+<details><summary>4. Complete exercises 1.10.2 and 1.10.3</summary>
+<p>
+
 Then, complete the exercise(s) below by answering the question(s) in the online form and submitting.  You must be logged into your TAMUCC email account to have your identity attached to your answers. 
 
 You may work in groups, but each person must fill out the online answer form.
@@ -85,6 +88,8 @@ The exercises in the online forms closely follow those in the book.  I do make m
 
 * [Exercise 1.10.3 Plant-Pollinator Networks](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMlpVSUQ0U1hTSFZERDE1WUdZWjRYUlhaWi4u)
 
+</p>
+</details>
 
 ### Extra Credit, worth 1 whole assignment (Due 09/16)  
 
