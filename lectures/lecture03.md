@@ -199,6 +199,9 @@ The repository is named CSB, and it contains all of the example files and direct
 
 ## III. Additional Important Unix Commands and Intro to Regular Expressions for Pattern Matching
 
+<details><summary>Click to expand</summary>
+<p>
+
 Let us all move to our `~/CSB/unix/sandbox` and copy the Marra and Dalziel data to the `sandbox` if it is not already there.
   ```bash
   $ cd ~/CSB/unix/sandbox
@@ -442,7 +445,11 @@ After you enter the function, nothing will happen, but it has been stored into m
 DECIDER 1 2
   ```
 
- ---
+---
+
+</p>
+</details>
+
  
 
 # IV. Real World Application of Skills Learned: Fisheries-Induced Evolution
