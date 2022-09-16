@@ -81,7 +81,13 @@ The repository is named CSB, and it contains all of the example files and direct
 
 ## [I. Quiz](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUNEpSWTVNREU0N1IxUDNLU0tPMVYyUkpSRC4u)
 
-## II. Review of What We Have Learned
+## II. Go Over Assignment 02
+
+* [Mind Expander 01.04](https://forms.office.com/r/uvi6cGMSMJ)
+* [Exercise 1.10.2 Hormone Levels in Baboons](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUQldJQTVHMTlYMFVYTkhZSDBZR1A0Q1E2Ny4u)
+* [Exercise 1.10.3 Plant-Pollinator Networks](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMlpVSUQ0U1hTSFZERDE1WUdZWjRYUlhaWi4u)
+
+## III. Review of What We Have Learned
 <details><summary>Click to expand</summary>
 <p>
 
@@ -197,7 +203,7 @@ The repository is named CSB, and it contains all of the example files and direct
 </details>
 
 
-## III. Additional Important Unix Commands and Intro to Regular Expressions for Pattern Matching
+## IV. Additional Important Unix Commands and Intro to Regular Expressions for Pattern Matching
 
 <details><summary>Click to expand</summary>
 <p>
@@ -456,7 +462,7 @@ DECIDER 1 2
 </details>
 
 
-## IV. Real World Application of Skills Learned: Fisheries-Induced Evolution
+## V. Real World Application of Skills Learned: Fisheries-Induced Evolution
 
 My lab has been studying the evolution of limpets in Hawaii.  They are a local delicacy and are under intense harvesting pressure.  We are interested in the selective pressures applied by overharvesting and how it affects the evolution of phenotypes.  
 
