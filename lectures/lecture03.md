@@ -462,7 +462,7 @@ My lab has been studying the evolution of limpets in Hawaii.  They are a local d
 
 We found that shell surface area is associateD with human harvesting and want to use 3d scans of the limpet shells to more precisely test of effects of harvesting on phenotype. Here are some views of a 3d scan:
 
-![alt text](Week03_files/3Dscan_limpetShell.PNG) ![alt text](https://github.com/tamucc-comp-bio-2020/classroom_repo/blob/master/lectures/Week03_files/3Dscan_limpetShell_left.PNG) ![alt text](https://github.com/tamucc-comp-bio-2020/classroom_repo/blob/master/lectures/Week03_files/3Dscan_limpetShell_right.PNG) ![alt text](https://github.com/tamucc-comp-bio-2020/classroom_repo/blob/master/lectures/Week03_files/3Dscan_limpetShell_top.PNG) ![alt text](https://github.com/tamucc-comp-bio-2020/classroom_repo/blob/master/lectures/Week03_files/3Dscan_limpetShell_bottom.PNG)
+![alt text](Week03_files/3Dscan_limpetShell.PNG) ![alt text](Week03_files/3Dscan_limpetShell_left.PNG) ![alt text](Week03_files/3Dscan_limpetShell_right.PNG) ![alt text](Week03_files/3Dscan_limpetShell_top.PNG) ![alt text](Week03_files/3Dscan_limpetShell_bottom.PNG)
 
 #### [Related Publication from my Research Group](https://onlinelibrary.wiley.com/doi/abs/10.1111/jbi.13845?af=R)
 
