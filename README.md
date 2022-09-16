@@ -96,9 +96,9 @@ SECTION 1.  WELCOME TO THE MATRIX
 
   * [Assignment_3,  Due 09/23](assignments/assignment_3.md)
   
-  * [Request Account On TAMUCC Super Computer Due 9/18](http://hpc.tamucc.edu/)
+  * [Request Account On TAMUCC Super Computer Due 9/23](http://hpc.tamucc.edu/)
   
-  * [Grad Student Course Project: Plan/Outline, Due 09/18](https://classroom.github.com/a/VuB4iKjR)
+  * [Grad Student Course Project: Plan/Outline, Due 09/23](https://classroom.github.com/a/VuB4iKjR)
 
 * [09/23  Week04 Version Control w/ Git](lectures/lecture04.md)
 
