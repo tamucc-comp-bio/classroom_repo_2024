@@ -1,4 +1,4 @@
-# [Assignment 3]()
+# [Assignment 3](https://classroom.github.com/a/q5PkCvK7)
 
 ## Due 09/23
 
@@ -76,7 +76,7 @@ The repository is named CSB, and it contains all of the example files and direct
 
 You will be working in bash to manipulate the 3d scans of limpet shells we discussed in class.  
 
-### [Click on this Link to Initiate this Assignment]()
+### [Click on this Link to Initiate this Assignment](https://classroom.github.com/a/q5PkCvK7)
 
 * I recommend testing functions and troubleshooting as necessary after each change you make to the script
 
