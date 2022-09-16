@@ -82,7 +82,7 @@ The repository is named CSB, and it contains all of the example files and direct
 ## [I. Quiz](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUNEpSWTVNREU0N1IxUDNLU0tPMVYyUkpSRC4u)
 
 ## II. Review of What We Have Learned
-	<details><summary>Click to expand</summary>
+<details><summary>Click to expand</summary>
 <p>
 
 1. There are several commands for navigating and manipulating a computer file directory.  I made a [linux cheat sheet](../resources/CheatSheetLinux_2022-09-02.pdf) for students learning to use linux that you can print out on a single double sided sheet of paper and use as a desk reference. 
