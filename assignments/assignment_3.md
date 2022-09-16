@@ -1,6 +1,6 @@
-# [Assignment 3](https://classroom.github.com/a/GzvR1gG5)
+# [Assignment 3]()
 
-## Due 09/18
+## Due 09/23
 
 ## Computer Preparation
 
@@ -72,27 +72,28 @@ The repository is named CSB, and it contains all of the example files and direct
 
 * Make sure you are logged into github.
 
-## Description of Assignment (Due 09/18)
+## Description of Assignment 
 
 You will be working in bash to manipulate the 3d scans of limpet shells we discussed in class.  
 
-### [Click on this Link to Initiate this Assignment](https://classroom.github.com/a/GzvR1gG5)
+### [Click on this Link to Initiate this Assignment]()
 
-* I recommend testing function and troubleshooting as necessary after each change you make to the script
+* I recommend testing functions and troubleshooting as necessary after each change you make to the script
 
 * You may work in groups but each student must submit their own work.
 
 
 ### To `push` your changes to your repository on GitHub, and thus submit the assigment, do the following
 
-* change directories to the directory for this assignment
+* change directories to the repo for this assignment
 * type the following:
+
 ```
-git add *
+git add --all
 git commit -m "updating my assignment"
-git push origin master
+git push
 ```
 
 Note that 
-* you can change the `commit` message to whatever you want (the part in quotations, but keep it brief
-* you will have to provide your github username and password for the `push` to `origin master`
+* you can change the `commit` message to whatever you want (the part in quotations, but keep it brief)
+* you will have to provide your github username and password for the `push` to `origin master` if you did not set up the ssh key in lecture_0
