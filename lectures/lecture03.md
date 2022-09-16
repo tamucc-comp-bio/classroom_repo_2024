@@ -2,7 +2,9 @@
 
 ### [Assignment 2](../assignments/assignment_2.md) is due at the beginning of this lecture
 
-### [Lecture Stream](https://tamucc.webex.com/recordingservice/sites/tamucc/recording/playback/6a211a99f35647608fc87002190fe1d4) 
+<!-- 
+### [Lecture Stream]() 
+-->
 
 ---
 
@@ -71,14 +73,13 @@ The repository is named CSB, and it contains all of the example files and direct
 </p>
 </details>
 
+
 ---
 
 
 # In Class Activities
 
 ## [I. Quiz](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUNEpSWTVNREU0N1IxUDNLU0tPMVYyUkpSRC4u)
-
----
 
 
 ## II. Review of What We Have Learned
@@ -104,7 +105,7 @@ The repository is named CSB, and it contains all of the example files and direct
   * example of argument: `ls data` will return the file and contents of directory in pwd that are named *data* if they exist
   * example of option:  `ls -ltrh` will return all files in `pwd` with details, in reverse chronological order with human-readable file sizes
 
-3. Locations of files and dirs can be specified using absolute or relative paths and these paths are used by the majority of commands because most commands manipulate files and dirs
+3. Locations of files and dirs can be specified using absolute or relative *paths* and these *paths* are used by the majority of commands because most commands manipulate files and dirs
 
   * `/`     root dir, top dir in directory tree
   * `~`     home dir
@@ -113,14 +114,14 @@ The repository is named CSB, and it contains all of the example files and direct
   * `../../` 2 directories up the tree from `pwd`
   * `./`    present working directory
 
-4. Wildcards can be used to specify several files with one word or paths
+4. Wildcards can be used to specify several files with one word or path
 
   * `*` can be any character
   * example: `ls *.txt` will list all files ending in `.txt` 
 
-5. There are several commands in the text book that are important for manipulating biological data.
+5. There are several commands we have learned that are important for manipulating biological data.
 
-  * `echo`  prints text or convertes text into a text stream
+  * `echo`  prints text or converts text and the contents of variables into a text stream
   * `head`  returns only first few lines of a file, or remove last lines (rows)
   * `tail`  returns only last few lines of a file, or remove first lines (rows)
   * `cut`   returns specified columns
@@ -128,7 +129,7 @@ The repository is named CSB, and it contains all of the example files and direct
   * `uniq`  removes duplicates
   * `sort`  changes the order of rows by column
   * `grep`  returns lines (rows) that match a pattern
-  * `tr`    replaces one character with another, usually column delimiters
+  * `tr`    replaces one character with another, usually column delimiters (aka field separators)
   * `wc`    count words, characters, lines, etc
 
 6. Unix commands are designed to pipe `|` and redirect `>` text streams to construct pipelines that link commands and create new files
