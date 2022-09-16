@@ -116,14 +116,14 @@ The repository is named CSB, and it contains all of the example files and direct
 
 4. Wildcards can be used to specify several files with one word or path
 
-  * `*` can be any character
-  * example: `ls *.txt` will list all files ending in `.txt` 
+	* `*` can be any character
+	* example: `ls *.txt` will list all files ending in `.txt` 
 
 5. There are several commands we have learned that are important for manipulating biological data.
 
-  * `echo`  prints text or converts text and the contents of variables into a text stream
-  * `head`  returns only first few lines of a file, or remove last lines (rows)
-  * `tail`  returns only last few lines of a file, or remove first lines (rows)
+	* `echo`  prints text or converts text and the contents of variables into a text stream
+	* `head`  returns only first few lines of a file, or remove last lines (rows)
+	* `tail`  returns only last few lines of a file, or remove first lines (rows)
   * `cut`   returns specified columns
   * `cat`   combines files together by line (row)
   * `uniq`  removes duplicates
