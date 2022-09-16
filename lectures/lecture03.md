@@ -474,14 +474,14 @@ The output of admesh is not tidy and I had to make a tool to tame it, `admesh2ta
 ```bash
 mkdir ~/comp_bio  
 cd ~/comp_bio
-git clone https://github.com/tamucc-comp-bio/LimpetShellEvolution.git
+git clone git@github.com:comp-bio-master/admesh2tsv.git
 ```
 
-### IMPORTANT: delete the `LimpetShellEvolution` repo we cloned in class before doing the homework. For the home work, you will clone your homework repo, which is very similar to `LimpetShellEvolution`, to your computer and complete you work there.
+### IMPORTANT: delete the `admesh2tsv` repo we cloned in class before doing the homework. For the home work, you will clone your homework repo, which is very similar to `LimpetShellEvolution`, to your computer and complete you work there.
 
 ```
 cd ~/comp_bio
-rm -rf LimpetShellEvolution
+rm -rf admesh2tsv
 ```
 
 ---
