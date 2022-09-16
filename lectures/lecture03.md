@@ -387,7 +387,7 @@ We can program a computer to make decisions.
 
 If-then statements have a standard multiline architecture with a distinct beginning (`if`) and end (`fi`) and internal spacing matters. There are no optional internal spaces, they are required where you see them
 
-In a script, it is a good practice to indent the code between `if`, `else`, and `fi`, HOWEVER IF YOU ARE COPYING AND PASTING CODE TO THE COMMAND LINE, YOU HAVE TO REMOVE THE INDENTS (LEADING TABS OR SPACES)
+In a script, it is a good practice to indent the code between `if`, `else`, and `fi`
 
 ```bash
 if [ 1 == 2 ]; then                # if 1 equals 2 then
@@ -460,9 +460,9 @@ DECIDER 1 2
 
 My lab has been studying the evolution of limpets in Hawaii.  They are a local delicacy and are under intense harvesting pressure.  We are interested in the selective pressures applied by overharvesting and how it affects the evolution of phenotypes.  
 
-We found that shell surface area is associate with human harvesting and want to use 3d scans of the limpet shells to more precisely test of effects of harvesting on phenotype. Here are some views of a 3d scan:
+We found that shell surface area is associateD with human harvesting and want to use 3d scans of the limpet shells to more precisely test of effects of harvesting on phenotype. Here are some views of a 3d scan:
 
-![alt text](https://github.com/tamucc-comp-bio-2020/classroom_repo/blob/master/lectures/Week03_files/3Dscan_limpetShell.PNG) ![alt text](https://github.com/tamucc-comp-bio-2020/classroom_repo/blob/master/lectures/Week03_files/3Dscan_limpetShell_left.PNG) ![alt text](https://github.com/tamucc-comp-bio-2020/classroom_repo/blob/master/lectures/Week03_files/3Dscan_limpetShell_right.PNG) ![alt text](https://github.com/tamucc-comp-bio-2020/classroom_repo/blob/master/lectures/Week03_files/3Dscan_limpetShell_top.PNG) ![alt text](https://github.com/tamucc-comp-bio-2020/classroom_repo/blob/master/lectures/Week03_files/3Dscan_limpetShell_bottom.PNG)
+![alt text](Week03_files/3Dscan_limpetShell.PNG) ![alt text](https://github.com/tamucc-comp-bio-2020/classroom_repo/blob/master/lectures/Week03_files/3Dscan_limpetShell_left.PNG) ![alt text](https://github.com/tamucc-comp-bio-2020/classroom_repo/blob/master/lectures/Week03_files/3Dscan_limpetShell_right.PNG) ![alt text](https://github.com/tamucc-comp-bio-2020/classroom_repo/blob/master/lectures/Week03_files/3Dscan_limpetShell_top.PNG) ![alt text](https://github.com/tamucc-comp-bio-2020/classroom_repo/blob/master/lectures/Week03_files/3Dscan_limpetShell_bottom.PNG)
 
 #### [Related Publication from my Research Group](https://onlinelibrary.wiley.com/doi/abs/10.1111/jbi.13845?af=R)
 
