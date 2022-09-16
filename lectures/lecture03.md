@@ -86,34 +86,34 @@ The repository is named CSB, and it contains all of the example files and direct
 <p>
 
 1. There are several commands for navigating and manipulating a computer file directory.  I made a [linux cheat sheet](../resources/CheatSheetLinux_2022-09-02.pdf) for students learning to use linux that you can print out on a single double sided sheet of paper and use as a desk reference. 
-  * `cd`    change directories
-  * `pwd`   where am I?
-  * `ls`    show contents of `pwd`
-  * `cp`    copy files and directories from one location to another, could also rename copied file
-  * `mv`    move files and directories from one location to another, rename file or directories
-  * `rm`    delete file or dir, be careful, there is no undo
-  * `mkdir` make new directory, will not overwrite existing dir
-  * `less`  view a file without opening all of it, good for large files
-  * `nano`  word processor, edit text files
-  * `chmod` change file and dir permissions
+	  * `cd`    change directories
+	  * `pwd`   where am I?
+	  * `ls`    show contents of `pwd`
+	  * `cp`    copy files and directories from one location to another, could also rename copied file
+	  * `mv`    move files and directories from one location to another, rename file or directories
+	  * `rm`    delete file or dir, be careful, there is no undo
+	  * `mkdir` make new directory, will not overwrite existing dir
+	  * `less`  view a file without opening all of it, good for large files
+	  * `nano`  word processor, edit text files
+	  * `chmod` change file and dir permissions
 
 2. Each command has *options* and accepts *arguments* to modify functionality and which can be viewed in the manual
-  * `man`   show manual for command
-  * `_command_ -h` if man does not work, this could show manual for command
-  * command` --help` another way to display manual
-  * command   another way to display manual
-  * use web browser to search on *bash command man*
-  * example of argument: `ls data` will return the file and contents of directory in pwd that are named *data* if they exist
-  * example of option:  `ls -ltrh` will return all files in `pwd` with details, in reverse chronological order with human-readable file sizes
+	  * `man`   show manual for command
+	  * `_command_ -h` if man does not work, this could show manual for command
+	  * command` --help` another way to display manual
+	  * command   another way to display manual
+	  * use web browser to search on *bash command man*
+	  * example of argument: `ls data` will return the file and contents of directory in pwd that are named *data* if they exist
+	  * example of option:  `ls -ltrh` will return all files in `pwd` with details, in reverse chronological order with human-readable file sizes
 
 3. Locations of files and dirs can be specified using absolute or relative *paths* and these *paths* are used by the majority of commands because most commands manipulate files and dirs
 
-  * `/`     root dir, top dir in directory tree
-  * `~`     home dir
-  * `-`     last directory your were in before the `pwd`
-  * `../`   parent directory, one directory up the tree from `pwd`
-  * `../../` 2 directories up the tree from `pwd`
-  * `./`    present working directory
+	  * `/`     root dir, top dir in directory tree
+	  * `~`     home dir
+	  * `-`     last directory your were in before the `pwd`
+	  * `../`   parent directory, one directory up the tree from `pwd`
+	  * `../../` 2 directories up the tree from `pwd`
+	  * `./`    present working directory
 
 4. Wildcards can be used to specify several files with one word or path
 
@@ -125,55 +125,55 @@ The repository is named CSB, and it contains all of the example files and direct
 	* `echo`  prints text or converts text and the contents of variables into a text stream
 	* `head`  returns only first few lines of a file, or remove last lines (rows)
 	* `tail`  returns only last few lines of a file, or remove first lines (rows)
-  * `cut`   returns specified columns
-  * `cat`   combines files together by line (row)
-  * `uniq`  removes duplicates
-  * `sort`  changes the order of rows by column
-  * `grep`  returns lines (rows) that match a pattern
-  * `tr`    replaces one character with another, usually column delimiters (aka field separators)
-  * `wc`    count words, characters, lines, etc
+	  * `cut`   returns specified columns
+	  * `cat`   combines files together by line (row)
+	  * `uniq`  removes duplicates
+	  * `sort`  changes the order of rows by column
+	  * `grep`  returns lines (rows) that match a pattern
+	  * `tr`    replaces one character with another, usually column delimiters (aka field separators)
+	  * `wc`    count words, characters, lines, etc
 
 6. Unix commands are designed to pipe `|` and redirect `>` text streams to construct pipelines that link commands and create new files
-  * `|`     takes standard output (*stdout*) from one command and pipes it to another command as *stdin*
-  * `>`     redirects *stdout* into a file of your naming, will overwrite existing file
-  * `>>`    redirects *stdout* into a file of your naming, will append existing file
+	  * `|`     takes standard output (*stdout*) from one command and pipes it to another command as *stdin*
+	  * `>`     redirects *stdout* into a file of your naming, will overwrite existing file
+	  * `>>`    redirects *stdout* into a file of your naming, will append existing file
 
 7. The escape character `\ ` changes the meaning of the character that follows, including end of lines
-  * at the end of a line, it means do not end line and continue on next line
-  * `\t`   is a tab, but not all commands recognize this
-  * `\n`   is a line feed (*LF*), the unix end of line character (usually invisible)
-  * `\r`   is a carriage return (*CR*), in windows every line concludes with CRLF, and causes compatibility issues with unix/linux/mac 
-  * there are MANY more uses of `\ `
+	  * at the end of a line, it means do not end line and continue on next line
+	  * `\t`   is a tab, but not all commands recognize this
+	  * `\n`   is a line feed (*LF*), the unix end of line character (usually invisible)
+	  * `\r`   is a carriage return (*CR*), in windows every line concludes with CRLF, and causes compatibility issues with unix/linux/mac 
+	  * there are MANY more uses of `\ `
 
 8. We can assign values to variables
-  ```bash
-  VARIABLE=1375
-  ```
+	  ```bash
+	  VARIABLE=1375
+	  ```
 
 9. We have learned how to use unix commands within a line of code to return a value with `$()` 
 
-  ```bash
-  VARIABLE=$(echo 1375)
-  cat <(ls *)
-  FILES=$(ls *)
-  ```
+	  ```bash
+	  VARIABLE=$(echo 1375)
+	  cat <(ls *)
+	  FILES=$(ls *)
+	  ```
 
 10. Repetative tasks can be automated using `for` loops
 
-  ```bash
-  for i in $VARIABLE; do
-  	echo $i
-  done
-  ```
+	  ```bash
+	  for i in $VARIABLE; do
+		echo $i
+	  done
+	  ```
 
 11. Many lines of commands can be stored in file (script) and executed sequentially
 
-  ```
-  bash script.sh
-  ```
+	  ```
+	  bash script.sh
+	  ```
 
-  Each "pipe line" is like a sentence in English.  It can stand on its own.  It tells the computer to do something and output the result.  The script will be composed of several pipelines.
-  
+	  Each "pipe line" is like a sentence in English.  It can stand on its own.  It tells the computer to do something and output the result.  The script will be composed of several pipelines.
+	  
 
 12. Values can be passed into a script by listing them as argumnents which are stored sequentially into variables: `$1`, `$2`, `$3`, etc
 	```
