@@ -154,7 +154,7 @@ The repository is named CSB, and it contains all of the example files and direct
 
   ```bash
   VARIABLE=$(echo 1375)
-  cat $(ls *)
+  cat <(ls *)
   FILES=$(ls *)
   ```
 
@@ -177,7 +177,18 @@ The repository is named CSB, and it contains all of the example files and direct
 
 12. Values can be passed into a script by listing them as argumnents which are stored sequentially into variables: `$1`, `$2`, `$3`, etc
   ```
+  # run script with the argument "../data.txt" 
   bash script.sh ../data.txt
+  ```
+  
+  The argument `../data.txt` is represented by `$1` inside script
+  
+  ```
+  #!/bin/bash
+  
+  inFilePath=$1
+  
+  cat $inFilePath
   ```
 
 ---
