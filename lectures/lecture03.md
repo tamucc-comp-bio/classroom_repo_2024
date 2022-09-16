@@ -478,7 +478,8 @@ git clone https://github.com/tamucc-comp-bio/LimpetShellEvolution.git
 ```
 
 ### important: 
-![delete the `LimpetShellEvolution` repo we cloned in class before doing the homework. For the home work, you will clone your homework repo, which is very similar to `LimpetShellEvolution`, to your computer and complete you work there.](http://placehold.it/size/background-hex/foreground-hex?text=a123)
+
+! delete the `LimpetShellEvolution` repo we cloned in class before doing the homework. For the home work, you will clone your homework repo, which is very similar to `LimpetShellEvolution`, to your computer and complete you work there.
 
 ```
 cd ~
