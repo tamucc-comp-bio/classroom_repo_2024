@@ -266,8 +266,6 @@ This is an interleaved FASTA file.  Interleaved means that a single squence is s
   ```
   
 
-  </p>
-</details>
 
 ---
 
