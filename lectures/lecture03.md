@@ -276,7 +276,7 @@ This is an interleaved FASTA file.  Interleaved means that a single squence is s
 
 `sed` is a very versatile tool and we will only scratch the surface of what it can do, but 99.9% of the time, you will use it to find and replace text.
 
-### `sed 's/_FindThisPattern_/ReplaceWithThis/g'`
+### `sed 's/FindThisRegExPattern/ReplaceWithThis/g'`
 
 * the `s` triggers the *search* functionality of `sed`, its essentially an option
 
@@ -311,6 +311,8 @@ This is an interleaved FASTA file.  Interleaved means that a single squence is s
   GA@A@GC@GG@C@G@AGAAGGAGGGAG@@C@AGGAAAACAGACAC@@AAG@AGGGCCGAA
   C@AAAAA@@G@A@CAG@CAGA@C@@CA@G@GAAG@CC@G@G@GCCCA
   ```
+
+---
 
 ## Regular Expressions (regex) are sequences of characters that define search patterns.  
 
@@ -369,7 +371,7 @@ We need to tell `bash` that we are asking for arithmetic by wrapping the equatio
   Y=$((10-5))
   echo $Y
   
-  echo $((1+11-1))
+  echo $((1+11-2))
   
   ```
 
@@ -383,11 +385,13 @@ We can program a computer to make decisions.
 
 * If X is true, then do Y; else if Z is true, then do W; else if A is true, then do B
 
-If-then statements have a standard multiline architecture with a distinct beginning (`if`) and end (`fi`) and spacing matters. There are no optional spaces, they are required where you see them
+If-then statements have a standard multiline architecture with a distinct beginning (`if`) and end (`fi`) and internal spacing matters. There are no optional internal spaces, they are required where you see them
+
+In a script, it is a good practice to indent the code between `if`, `else`, and `fi`, HOWEVER IF YOU ARE COPYING AND PASTING CODE TO THE COMMAND LINE, YOU HAVE TO REMOVE THE INDENTS (LEADING TABS OR SPACES)
 
 ```bash
 if [ 1 == 2 ]; then                # if 1 equals 2 then
- echo 1 does equal 2               # print "1 does equal 2" to screen
+  echo 1 does equal 2               # print "1 does equal 2" to screen
 else                               # if 1 does not equal 2 then
   echo 1 does not equal 2          # print "1 does not equal 2" to screen
 fi                                 # end of if statement
