@@ -180,10 +180,10 @@ The repository is named CSB, and it contains all of the example files and direct
   bash script.sh ../data.txt
   ```
 
+---
+
 </p>
 </details>
-
----
 
 
 ## III. Additional Important Unix Commands and Intro to Regular Expressions for Pattern Matching
