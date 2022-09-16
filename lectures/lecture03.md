@@ -206,7 +206,7 @@ Let us all move to our `~/CSB/unix/sandbox` and copy the Marra and Dalziel data 
   ```bash
   $ cd ~/CSB/unix/sandbox
   $ cp ../data/Marra2014_data.fasta .
-  $ cp ../data/Dalziel2016_data.csv .
+  $ cp ../../python/data/Dalziel2016_data.csv .
   $ less -S Marra2014_data.fasta
   
   >contig00001  length=527  numreads=2  gene=isogroup00001  status=it_thresh
@@ -244,7 +244,10 @@ This is an interleaved FASTA file.  Interleaved means that a single squence is s
   ```bash
   # we can also use paste to join files by column, instead of by row (cat)
   # while you would not want to combine these two files, you can:
-  $ paste Dalziel2016_data.csv Marra2014_data.fasta | head
+  $ paste Dalziel2016_data.csv Marra2014_data.fasta | less -S
+  ```
+  
+  ```bash
   biweek,year,loc,cases,pop       >contig00001  length=527  numreads=2  gene=isogroup00001  status=it_thresh
   1,1906,BALTIMORE,NA,526822.1365 ATCCTAGCTACTCTGGAGACTGAGGATTGAAGTTCAAAGTCAGCTCAAGCAAGAGATTTG
   2,1906,BALTIMORE,NA,526995.246  TTTACAATTAACCCACAAAAGGCTGTTACTGAAGGTGTGGCTTAAGTGTCAGAGCAACAG
@@ -273,13 +276,13 @@ This is an interleaved FASTA file.  Interleaved means that a single squence is s
 
 `sed` is a very versatile tool and we will only scratch the surface of what it can do, but 99.9% of the time, you will use it to find and replace text.
 
-### `sed 's/FindThisPattern/ReplaceWithThis/g'`
+### `sed 's/_FindThisPattern_/ReplaceWithThis/g'`
 
-* the `s` triggers the search functionality of `sed`
+* the `s` triggers the *search* functionality of `sed`, its essentially an option
 
-* The `/` divide the statement into its component parts
+* The `/` divides the statement into its component arguments
 
-* The `g` is optional and means global.  If present, all pattern matches will be replaced.  See below to observe what happens without the `g`
+* The `g` is optional and means *global*.  If present, all pattern matches will be replaced.  If there is no `g`, then only the first match on each line is replaced. See below to observe what happens without the `g`
 
   ```bash
   # find the first T on each line and replace with @
@@ -448,9 +451,8 @@ DECIDER 1 2
 </p>
 </details>
 
- 
 
-# IV. Real World Application of Skills Learned: Fisheries-Induced Evolution
+## IV. Real World Application of Skills Learned: Fisheries-Induced Evolution
 
 My lab has been studying the evolution of limpets in Hawaii.  They are a local delicacy and are under intense harvesting pressure.  We are interested in the selective pressures applied by overharvesting and how it affects the evolution of phenotypes.  
 
