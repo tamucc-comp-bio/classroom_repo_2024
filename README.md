@@ -98,7 +98,8 @@ SECTION 1.  WELCOME TO THE MATRIX
   
   * [Request Account On TAMUCC Super Computer Due 9/23](http://hpc.tamucc.edu/)
   
-  * [Grad Student Course Project: Plan/Outline, Due 09/23](https://classroom.github.com/a/XeWhIJ3W)  [Old Link To Grad Student Course Project](https://classroom.github.com/a/VuB4iKjR)
+  * [Grad Student Course Project: Plan/Outline, Due 09/23](https://classroom.github.com/a/XeWhIJ3W)  
+    * [Old Link To Grad Student Course Project](https://classroom.github.com/a/VuB4iKjR).  If you started with this link, then just click the link above, clone the 2022 version of this repo, and copy your work from the old repo to the new one.
 
 * [09/23  Week04 Version Control w/ Git](lectures/lecture04.md)
 
