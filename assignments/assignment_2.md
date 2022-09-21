@@ -105,6 +105,11 @@ Please try to at least click the link and let me know if you run into any proble
 Hints:
 
 * Start by cloning this repository to your computer
+	* make sure you copy the "ssh" link from your repo (green button, upper right).
+	```bash
+	git clone InsertSshLinkHere
+	```
+	* recall that in [lecture 0](../lectures/lecture00.md) we set up an ssh security key between your computer and github.  This makes it so that you don't need usernames, passwords, and tokens to interface with github.  
 
 * **_I highly recommend that you create your script in a text document in either Notepad++ or BBedit_**.  
 
