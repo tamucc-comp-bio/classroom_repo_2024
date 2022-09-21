@@ -78,6 +78,12 @@ You will be working in bash to manipulate the 3d scans of limpet shells we discu
 
 ### [Click on this Link to Initiate this Assignment](https://classroom.github.com/a/q5PkCvK7)
 
+* Begin by cloning your repo to your computer
+	* make sure you copy the "ssh" link from your repo (green button, upper right).
+	```bash
+	git clone InsertSshLinkHere
+	```
+	* recall that in [lecture 0](../lectures/lecture00.md) we set up an ssh security key between your computer 
 * I recommend testing functions and troubleshooting as necessary after each change you make to the script
 
 * You may work in groups but each student must submit their own work.
