@@ -110,15 +110,14 @@ We will review your burning questions about the assignment.
 ![alt text](Week04_files/gitlogo.jpg)
 ![alt text](Week04_files/githublogo.jpg)
 
----
-</p>
-</details>
 
 Git is *distributed* and a full copy of the history of changes resides on every instance of the *repository*
 
 ![alt text](https://github.com/tamucc-comp-bio/fall_2019/blob/master/lectures/Week04_files/distributedvcs.png)
 
 ---
+</p>
+</details>
 
 <details><summary>Configuring Git</summary>
 
