@@ -465,6 +465,62 @@ Git can get confused if you are not dilligent in your pattern of adding and comi
     ```
 
 ![alt text](https://github.com/tamucc-comp-bio/fall_2019/blob/master/lectures/Week04_files/git_common_commands.png)
+
+---
+</p>
+</details>
+
+
+<details><summary>GitHub Repo Philosophy</summary>
+
+* You should be conducting your work in this repo, not somewhere else. If you are doing some things on the supercomputer (or a remote server) you should clone this repo there and run the scripts in this repo.
+	* see `.gitignore` below
+
+* Do not change the same document in your repo in different locations at the same time
+	* for example, don't edit the readme on GitHub and on your laptop without syncing the changes between them
+
+* Every time you pull up to a computer to work on your repo, `pull` the latest version:
+
+	```
+	cd path/to/your/repo
+	git pull
+	```
+
+* As you make progress during a single session, `add` and `commit` your changes.
+
+* Every time you walk away from a computer after working on your repo,`push` your changes
+
+* When you don't follow this philosophy, your repo will not sync with github, and you'll see errors
+	* To solve, "burn it down" and start over.  Make a new repo, and copy the contents of your old repo to the new one.
+
+  ---
+  </p>
+  </details>
+
+<details><summary>Directory Organization Philosophy</summary>
+
+* Every directory should have a descriptive name
+
+* Every directory should contain a descriptive `README.md`
+	* this file is automatically displayed when navigating directories on GitHub.
+	* yes, part of the intention here is to discourage you from making too many dirs.  Ask yourself, is this new dir I'm thinking of worth writing a `README.md` for?  The answer is usually no.
+
+* No "rabbit holes".  
+	* A "rabbit hole" is a dir in a dir in a dir in a dir
+	* Try to minimize nested directories
+
+  ---
+  </p>
+  </details>
+
+<details><summary>Large files (>100MB) and `.gitignore`</summary>
+
+If you are working with large files, GitHub will not accept them and it will cause problems with git. You should add large files to the `.gitignore` file.
+
+The `.gitignore` file is a list of files and dirs (wildcards work too) that should not be tracked by `git`. The file is invisible (all files and dirs that start with a `.` are invisible).  To list invisible files, `ls -a`.
+
+I've included a `.gitignore` that lists common files that should not be tracked if using R.  If you are processing large DNA files, then you should add them to the `.gitignore`.
+
 ---
 </p>
 </details>
