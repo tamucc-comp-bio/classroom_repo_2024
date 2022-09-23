@@ -505,8 +505,10 @@ Git can get confused if you are not dilligent in your pattern of adding and comi
 	* this file is automatically displayed when navigating directories on GitHub.
 	* yes, part of the intention here is to discourage you from making too many dirs.  Ask yourself, is this new dir I'm thinking of worth writing a `README.md` for?  The answer is usually no.
 
+* Fewer directories is more (better)
+
 * No "rabbit holes".  
-	* A "rabbit hole" is a dir in a dir in a dir in a dir
+	* A "rabbit hole" is a dir in a dir in a dir in a dir in a...
 	* Try to minimize nested directories
 
   ---
