@@ -120,7 +120,7 @@ Git is *distributed* and a full copy of the history of changes resides on every 
 
 ---
 
-#### Configuring Git
+<details><summary>Configuring Git</summary>
 
 Viewing your current `git` settings:
 
@@ -144,8 +144,10 @@ $ git config --global color.ui true
 ```
 
 ---
+</p>
+</details>
 
-#### Getting Help with Git
+<details><summary>Getting Help with Git</summary>
 
 Besides a [duckduckgo](https://duckduckgo.com/) search,
 
@@ -155,8 +157,10 @@ $ man git
 ```
 
 ---
+</p>
+</details>
 
-#### Initializing a Local `git` Repository
+<details><summary>Initializing a Local `git` Repository</summary>
 
 1. Initializing a repository only needs to be done once.  Any directory (dir) can become a `git` repository (repo). `git` cannot version control if you do not make a dir a repo.  Let us make the `~/CSB/git/sandbox/originspecies` directory a `git` repository:
 
@@ -182,8 +186,10 @@ nothing to commit (create/copy files and use "git add" to track)
 ```
 
 ---
+</p>
+</details>
 
-#### Making and Tracking Changes In a `git` Repo
+<details><summary>Making and Tracking Changes In a `git` Repo</summary>
 
 1. Create a file called `origin.txt` in your repo as follows:
 
@@ -241,8 +247,10 @@ Date:   Fri Sep 27 08:24:34 2019 -0500
 ```
 
 ---
+</p>
+</details>
 
-#### Tracking a Change in a Text Document
+<details><summary>Tracking a Change in a Text Document</summary>
 
 1. Let us change the text in our tracked document
 
@@ -293,16 +301,20 @@ Notice that both commits are logged and each has the "fingerprint" id.
 That is the majority of the commands you will use in git: `git add`,  `git commit`
 
 ---
+</p>
+</details>
 
-#### `git` Can Only Track Internal Changes Made to Text Documents
+<details><summary>`git` Can Only Track Internal Changes Made to Text Documents</summary>
 
 It is important to note that `git` is made to track human-readable text files.  A human-readable text file will be readable by your text editor. Files that are binary (`docx`, etc) cannot be tracked by `git` in the same way that text files can.
 
 1. Everybody use your text editor (notepad++ or bbedit) and try to open a MS Word doc
 
 ---
+</p>
+</details>
 
-#### Showing Changes Since Last Commit
+<details><summary>Showing Changes Since Last Commit</summary>
 
 
   We will use the `sed` command to find the ends of lines ( a `$` in regex) and replace them with a period (a `\.` in regex).  The `-i` argument tells `sed` to change the input file rather than outputting a text stream.
@@ -323,8 +335,10 @@ It is important to note that `git` is made to track human-readable text files.  
   Note that the previous version is marked with an `a/` and the newer version is labeled `b`/.  The addition and subtraction of files are marked with `+` and `-`
 
 ---
+</p>
+</details>
 
-#### Moving and Removing Files in a Repo
+<details><summary>Moving and Removing Files in a Repo</summary>
 
 you need to tell `git` when you remove or move version controlled files
 
@@ -338,8 +352,10 @@ you need to tell `git` when you remove or move version controlled files
   ```
 
   ---
+</p>
+</details>
 
-#### Putting it All Together
+<details><summary>Putting it All Together</summary>
 
 Let us review what we have learned by making a new project in your sandbox and initializing the repo
 
@@ -356,16 +372,18 @@ Let us review what we have learned by making a new project in your sandbox and i
   ```
 
 ---
+</p>
+</details>
 
 ### [Mind Expander 2.1](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMVJSRE4zRVpFOElBVTUzMTVVNFZBNkRGVy4u)
 
 ---
 
-###  Troubleshooting `git`
+<details><summary> Troubleshooting `git`</summary>
 
 Git can get confused if you are not dilligent in your pattern of adding and comitting changes and it will be neccessary to troublshoot conflicts.
 
-#### Amending an Incomplete Commit
+<details><summary>Amending an Incomplete Commit
   Incomplete commits can occur when files are not removed within git, changes are made but not added, etc..  The solution is to rectify these conflicts.
 
   ```bash
@@ -386,7 +404,7 @@ Git can get confused if you are not dilligent in your pattern of adding and comi
   $ git commit -m "added barnacles.txt"
   ```
 
-#### Unstaging Files
+<details><summary>Unstaging Files</summary>
   You may have added files to the snapshot staging area by mistake.  To unstage them:
   (do not type this in, it is an example)
   ```bash
@@ -394,8 +412,10 @@ Git can get confused if you are not dilligent in your pattern of adding and comi
   ```
 
 ---
+</p>
+</details>
 
-### Remote Repositories (GitHub)
+<details><summary>Remote Repositories (GitHub)</summary>
 
 1. Cloning a repository:
   ```bash
@@ -414,6 +434,8 @@ Git can get confused if you are not dilligent in your pattern of adding and comi
 
 ![alt text](https://github.com/tamucc-comp-bio/fall_2019/blob/master/lectures/Week04_files/git_common_commands.png)
 ---
+</p>
+</details>
 
 
 ## [EXAM 1  Due 9/25](https://classroom.github.com/a/jp--K3BZ)  
