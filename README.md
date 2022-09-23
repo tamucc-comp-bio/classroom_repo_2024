@@ -130,9 +130,9 @@ SECTION 1.  WELCOME TO THE MATRIX
 
 
 
-* [09/25  Week05 Base R Bootcamp I](lectures/lecture05new.md)
+* [09/30  Week05 Base R Bootcamp I](lectures/lecture05new.md)
 
-  * Assignment 5 (Mind Expanders 8.3-8.5) Due 10/02
+  * Assignment 5 (Mind Expanders 8.3-8.5) Due 10/07
 
  <!--
 
