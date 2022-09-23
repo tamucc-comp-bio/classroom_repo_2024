@@ -83,6 +83,8 @@ We will review your burning questions about the assignment.
 
 <details><summary>What is version control?</summary>
 
+
+
 * A tool to record changes to your files and directory structure
   * additions, deletions, changes, etc
 
@@ -92,6 +94,8 @@ We will review your burning questions about the assignment.
   </details>
 
 <details><summary>Why use version control?</summary>
+
+
 
 * Organize project, especially with multiple people
   * e.g., student, advisor, committee members, collaborators
@@ -105,6 +109,8 @@ We will review your burning questions about the assignment.
 
 <details><summary>What is Git?</summary>
 
+
+
 `git` is a version control tool and [`GitHub`](https://github.com) is a website that uses `git`.  `git` is popular, free, open source, and [`GitHub`](https://github.com) is a paid service that is free for educational use.  Fun fact, the [person who made linux os](https://en.wikipedia.org/wiki/Linus_Torvalds) created `git` to version control his and others work on linux.  Thus, `git` is in the "DNA" of linux.
 
 ![alt text](Week04_files/gitlogo.jpg)
@@ -116,6 +122,8 @@ We will review your burning questions about the assignment.
 
 <details><summary>Schematic diagram of how Git is used</summary>
 
+
+
 Git is *distributed* and a full copy of the history of changes resides on every instance of the *repository*
 
 ![alt text](https://github.com/tamucc-comp-bio/fall_2019/blob/master/lectures/Week04_files/distributedvcs.png)
@@ -126,32 +134,36 @@ Git is *distributed* and a full copy of the history of changes resides on every 
 
 <details><summary>Configuring Git</summary>
 
+
+
 Viewing your current `git` settings:
 
-```bash
-$ git config --list
+    ```bash
+    $ git config --list
 
-user.name=Chris Bird
-user.email=cbird808@gmail.com
-core.repositoryformatversion=0
-core.filemode=true
-core.bare=false
-core.logallrefupdates=true
-```
+    user.name=Chris Bird
+    user.email=cbird808@gmail.com
+    core.repositoryformatversion=0
+    core.filemode=true
+    core.bare=false
+    core.logallrefupdates=true
+    ```
 
 Updating your user.name, email, etc...
 
-```bash
-$ git config --global user.name "Chris Bird"
-$ git config --global user.email cbird808@gmail.com
-$ git config --global color.ui true
-```
+    ```bash
+    $ git config --global user.name "Chris Bird"
+    $ git config --global user.email cbird808@gmail.com
+    $ git config --global color.ui true
+    ```
 
 ---
 </p>
 </details>
 
 <details><summary>Getting Help with Git</summary>
+
+
 
 Besides a [duckduckgo](https://duckduckgo.com/) search,
 
@@ -166,6 +178,8 @@ $ man git
 
 <details><summary>Initializing a Local Git Repository</summary>
 
+
+
 1. Initializing a repository only needs to be done once.  Any directory (dir) can become a `git` repository (repo). `git` cannot version control if you do not make a dir a repo.  Let us make the `~/CSB/git/sandbox/originspecies` directory a `git` repository:
 
     ```bash
@@ -179,15 +193,15 @@ $ man git
 
 2. Checking the status of a repo:
 
-```bash
-$ git status
+    ```bash
+    $ git status
 
-On branch master
+    On branch master
 
-Initial commit
+    Initial commit
 
-nothing to commit (create/copy files and use "git add" to track)
-```
+    nothing to commit (create/copy files and use "git add" to track)
+    ```
 
 ---
 </p>
@@ -195,60 +209,65 @@ nothing to commit (create/copy files and use "git add" to track)
 
 <details><summary>Making and Tracking Changes In a `git` Repo</summary>
 
+
+
 1. Create a file called `origin.txt` in your repo as follows:
 
-```bash
-$ echo "An Abstract of an Essay on the Origin of Species and Varieties Through Natural Selection" > origin.txt
-```
+    ```bash
+    $ echo "An Abstract of an Essay on the Origin of Species and Varieties Through Natural Selection" > origin.txt
+    ```
 
 2. View file contents:
 
-```bash
-$ cat origin.txt
+    ```bash
+    $ cat origin.txt
 
-An Abstract of an Essay on the Origin of Species and Varieties Through Natural Selection
-```
+    An Abstract of an Essay on the Origin of Species and Varieties Through Natural Selection
+    ```
 
-  So far, `git` has not tracked anything we did.  We need to tell it to record the changes. `git` will only track the files you tell it to track.
+    So far, `git` has not tracked anything we did.  We need to tell it to record the changes. `git` will only track the files you tell it to track.
 
 3. Set `origin.txt` for `git` tracking then check the repo status:
-```bash
-$ git add origin.txt
-$ git status
 
-On branch master
+    ```bash
+    $ git add origin.txt
+    $ git status
 
-No commits yet
+    On branch master
 
-Changes to be committed:
-  (use "git rm --cached <file>..." to unstage)
+    No commits yet
 
-        new file:   origin.txt
-```
+    Changes to be committed:
+      (use "git rm --cached <file>..." to unstage)
 
-We have yet to actually save a snapshot of our updates.  You should `git commit` your changes at the end of every session, when you have a working script, or when you can succinctly describe the changes you made.
+            new file:   origin.txt
+    ```
+
+    We have yet to actually save a snapshot of our updates.  You should `git commit` your changes at the end of every session, when you have a working script, or when you can succinctly describe the changes you made.
 
 4. Creating a snapshot of the project:
-```bash
-$ git commit -m "started the book"
 
-[master (root-commit) a90fea2] started the book
- 1 file changed, 1 insertion(+)
- create mode 100644 origin.txt
-```
+    ```bash
+    $ git commit -m "started the book"
 
-  The `-m` option stands for "message".  The message is there to help you know how this version is different than the previous one should you need to recover an older version in the future.  The message should be short but sufficiently descriptive.
+    [master (root-commit) a90fea2] started the book
+     1 file changed, 1 insertion(+)
+     create mode 100644 origin.txt
+    ```
+
+    The `-m` option stands for "message".  The message is there to help you know how this version is different than the previous one should you need to recover an older version in the future.  The message should be short but sufficiently descriptive.
 
 5. Show the repo history:
-```bash
-$ git log
 
-commit a90fea2df1a59e635fba3c09a0cc0f1dfe78b2d9   #this number is the fingerprint of the commit
-Author: Chris Bird <cbird808@gmail.com>
-Date:   Fri Sep 27 08:24:34 2019 -0500
+    ```bash
+    $ git log
 
-    started the book
-```
+    commit a90fea2df1a59e635fba3c09a0cc0f1dfe78b2d9   #this number is the fingerprint of the commit
+    Author: Chris Bird <cbird808@gmail.com>
+    Date:   Fri Sep 27 08:24:34 2019 -0500
+
+        started the book
+    ```
 
 ---
 </p>
@@ -256,51 +275,53 @@ Date:   Fri Sep 27 08:24:34 2019 -0500
 
 <details><summary>Tracking a Change in a Text Document</summary>
 
+
+
 1. Let us change the text in our tracked document
 
-```bash
-$ echo "On the Origin of Species, by Means of Natural Selection, or the Preservation of Favoured Races in the Struggle for Life" > origin.txt
-$ git status
+    ```bash
+    $ echo "On the Origin of Species, by Means of Natural Selection, or the Preservation of Favoured Races in the Struggle for Life" > origin.txt
+    $ git status
 
-On branch master
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git checkout -- <file>..." to discard changes in working directory)
+    On branch master
+    Changes not staged for commit:
+      (use "git add <file>..." to update what will be committed)
+      (use "git checkout -- <file>..." to discard changes in working directory)
 
-        modified:   origin.txt
+            modified:   origin.txt
 
-no changes added to commit (use "git add" and/or "git commit -a")
-```
+    no changes added to commit (use "git add" and/or "git commit -a")
+    ```
 
 2. Both add and commit need to be executed to update the repo
 
-```bash
-$ git add .
-$ git commit -m "Changed the title as suggested by Murray"
+    ```bash
+    $ git add .
+    $ git commit -m "Changed the title as suggested by Murray"
 
-[master 5b762fe] Changed the title as suggested by Murray
- 1 file changed, 1 insertion(+), 1 deletion(-)
-```
+    [master 5b762fe] Changed the title as suggested by Murray
+     1 file changed, 1 insertion(+), 1 deletion(-)
+    ```
 
 3. View the log history again after the commit
 
-```bash
-$ git log
+    ```bash
+    $ git log
 
-commit 5b762fec87bd70db9bdd0d54620b8e4728927a36
-Author: Chris Bird <cbird808@gmail.com>
-Date:   Fri Sep 27 08:36:22 2019 -0500
+    commit 5b762fec87bd70db9bdd0d54620b8e4728927a36
+    Author: Chris Bird <cbird808@gmail.com>
+    Date:   Fri Sep 27 08:36:22 2019 -0500
 
-    Changed the title as suggested by Murray
+        Changed the title as suggested by Murray
 
-commit a90fea2df1a59e635fba3c09a0cc0f1dfe78b2d9
-Author: Chris Bird <cbird808@gmail.com>
-Date:   Fri Sep 27 08:24:34 2019 -0500
+    commit a90fea2df1a59e635fba3c09a0cc0f1dfe78b2d9
+    Author: Chris Bird <cbird808@gmail.com>
+    Date:   Fri Sep 27 08:24:34 2019 -0500
 
-    started the book
-```
+        started the book
+    ```
 
-Notice that both commits are logged and each has the "fingerprint" id.
+    Notice that both commits are logged and each has the "fingerprint" id.
 
 That is the majority of the commands you will use in git: `git add`,  `git commit`
 
@@ -309,6 +330,8 @@ That is the majority of the commands you will use in git: `git add`,  `git commi
 </details>
 
 <details><summary>`git` Can Only Track Internal Changes Made to Text Documents</summary>
+
+ 
 
 It is important to note that `git` is made to track human-readable text files.  A human-readable text file will be readable by your text editor. Files that are binary (`docx`, etc) cannot be tracked by `git` in the same way that text files can.
 
