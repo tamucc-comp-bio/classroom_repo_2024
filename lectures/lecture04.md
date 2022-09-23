@@ -470,7 +470,7 @@ Git can get confused if you are not dilligent in your pattern of adding and comi
 </details>
 
 
-## [EXAM 1  Due 9/30](https://classroom.github.com/a/jp--K3BZ)  
+## [EXAM 1  Due 9/30](https://classroom.github.com/a/OyEVhNNT)  
 
 ### Initializing Exam
 
