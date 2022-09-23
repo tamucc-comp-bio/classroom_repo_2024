@@ -104,7 +104,7 @@ SECTION 1.  WELCOME TO THE MATRIX
 
   * [Exam_1,  Due 9/30](https://classroom.github.com/a/OyEVhNNT)
 
-  * [Grad Student Course Project: GitHub Repo w/ ReadMe, Due 9/30](https://classroom.github.com/a/hXodrcVf)
+  * [Grad Student Course Project: GitHub Repo w/ ReadMe, Due 9/30](https://classroom.github.com/a/6-NgG7z6)
 
 
 </p>
@@ -128,11 +128,13 @@ SECTION 1.  WELCOME TO THE MATRIX
 <details><summary>SECTION 2. DATA WRANGLING AND VISUALIZATION WITH R</summary>
 <p>
 
- <!--
+
 
 * [09/25  Week05 Base R Bootcamp I](lectures/lecture05new.md)
 
   * Assignment 5 (Mind Expanders 8.3-8.5) Due 10/02
+
+ <!--
 
 * [10/02  Week06 Base R Bootcamp II](lectures/lecture06new.md)
 
