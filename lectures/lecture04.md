@@ -581,22 +581,3 @@ This is an example `.gitignore` that includes files created when working with R 
 
 
 ## [EXAM 1  Due 9/30](https://classroom.github.com/a/OyEVhNNT)  
-
-### Initializing Exam
-
-1. Clone your repository for this exam to your local computer.
-
-	* If you have a Windows computer, then I want you to clone your Exam 1 repo into the windows `Downloads` directory. Here is pseudocode to help you get there in your terminal.
-
-	```bash
-	# replace YOUR_WINDOWS_USERNAME with your actual user name
-	cd /mnt/c/Users/YOUR_WINDOWS_USERNAME/Downloads
-	```
-
-	* If you are unsure of your Win10 user name, hit tab twice after typing in the file path up to `Users/` to see the options.  You could alternatively right click on your `Downloads` folder in the file explorer, select `Properties` and then the `Location` tab to see its file path.  Your Windows user name is the name of the directory that `Downloads` is inside of.
-
-	* If you have a Mac computer, then I want you to clone your Exam 1 repo into your home dir or wherever your want.
-
-	```bash
-	cd ~
-	```
