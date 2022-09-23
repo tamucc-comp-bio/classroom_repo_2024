@@ -12,19 +12,19 @@ You are expected to start each lecture with your terminal window open and ready 
 <p>
 
   * If the Ubuntu app is not installed, then follow [these instructions](https://github.com/cbirdlab/wlsUBUNTU_settings/blob/master/InstallLinuxOnWindows_Automated.pdf)
-  
-  * Log into your Ubuntu terminal.  _We will not use `gitbash` unless you can not get Ubuntu running._ After logging in, You are in your home directory. 
-  
+
+  * Log into your Ubuntu terminal.  _We will not use `gitbash` unless you can not get Ubuntu running._ After logging in, You are in your home directory.
+
   * If you are using an Ubuntu terminal that has not been setup (you will know because it will ask you to create a new user name and password) or you notice odd cursor behavior when editing text in the terminal, then run the following code:
-  
+
     ```bash
     git clone https://github.com/cbirdlab/wlsUBUNTU_settings.git
     . ./wlsUBUNTU_settings/updateSettings.bash
     rm -rf wlsUBUNTU_settings
     ```
-    
+
   * If the `CSB` directory does not exist in your home directory (check with `ls`), then run the following code to clone the `CSB` repository into your home directory:
-  
+
     ```bash
     git clone https://github.com/CSB-book/CSB.git
     ```
@@ -40,17 +40,17 @@ You are expected to start each lecture with your terminal window open and ready 
 
 <details><summary>MacOS</summary>
 <p>
- 
+
   * Open a terminal window
-  
+
   * Consider installing [homebrew](https://brew.sh/).  You will be able to use homebrew to install linux software, such as `tree`, which is used in the slide show.
-  
+
   * If the `CSB` directory does not exist in your home directory (check with `ls`), then run the following code to clone the `CSB` repository into your home directory:
-  
+
     ```bash
     git clone https://github.com/CSB-book/CSB.git
     ```
-    
+
 </p>
 </details>
 
@@ -59,11 +59,11 @@ You are expected to start each lecture with your terminal window open and ready 
 
 ## [I. Lecture Slides](Week05new_files/Introduction%20to%20R%201.pptx)
 
-I converted the lecture slides into this markdown document so you will not use them during class, but you can refer to them later as necessary. 
+I converted the lecture slides into this markdown document so you will not use them during class, but you can refer to them later as necessary.
 
 ---
 
-## II. Lecture Activities 
+## II. Lecture Activities
 
 We will not use `R Studio` today.  I want you to use the terminal to run R for now.  I will introduce `R Studio` in a future lecture.
 
@@ -86,9 +86,9 @@ ___
 
 ___
 
-### Installing R 
+### Installing R
 
-Note that there are differences here if you have a Mac or Win10 computer.
+Note that there are differences here if you have a Mac or Windows computer.
 
 To check if you have `R`, goto your terminal window and enter the following command:
 
@@ -96,13 +96,13 @@ To check if you have `R`, goto your terminal window and enter the following comm
 $ R
 ```
 
-If you see this (or similar), then R is installed and you can proceed. 
+If you see this (or similar), then R is installed and you can proceed.
 
 ```
 $ R
 
-R version 3.6.3 (2020-02-29) -- "Holding the Windsock"
-Copyright (C) 2020 The R Foundation for Statistical Computing
+R version 4.2.1 (2022-06-23) -- "Funny-Looking Kid"
+Copyright (C) 2022 The R Foundation for Statistical Computing
 Platform: x86_64-pc-linux-gnu (64-bit)
 
 R is free software and comes with ABSOLUTELY NO WARRANTY.
@@ -120,6 +120,9 @@ Type 'demo()' for some demos, 'help()' for on-line help, or
 Type 'q()' to quit R.
 
 >
+
+
+>
 ```
 
 If you see this message (or something similar) then you need to install `R`
@@ -128,8 +131,10 @@ If you see this message (or something similar) then you need to install `R`
 Command 'R' not found, but can be installed with:
 ```
 
-<details><summary>Install R on Win10-Ubuntu</summary>
+<details><summary>Install R on Windows-Ubuntu</summary>
 <p>
+
+[Official Instructions](https://cloud.r-project.org/bin/linux/ubuntu/)
 
 1. Start by updating and upgrading your existing Ubuntu commands and apps:
 
@@ -139,50 +144,44 @@ sudo apt update
 sudo apt upgrade
 ```
 
-2. Install the dependencies need to add a new `apt` repository
+2. Install the dependencies needed
 
 ```
-sudo apt install dirmngr gnupg apt-transport-https ca-certificates software-properties-common
+# update indices
+sudo apt update -qq
+
+# install two helper packages we need
+sudo apt install --no-install-recommends software-properties-common dirmngr
+
+# add the signing key (by Michael Rutter) for these repos
+# To verify key, run gpg --show-keys /etc/apt/trusted.gpg.d/cran_ubuntu_key.asc
+# Fingerprint: E298A3A825C0D65DFD57CBB651716619E084DAB9
+wget -qO- https://cloud.r-project.org/bin/linux/ubuntu/marutter_pubkey.asc | sudo tee -a /etc/apt/trusted.gpg.d/cran_ubuntu_key.asc
+
+# add the R 4.0 repo from CRAN -- adjust 'focal' to 'groovy' or 'bionic' as needed
+sudo add-apt-repository "deb https://cloud.r-project.org/bin/linux/ubuntu $(lsb_release -cs)-cran40/"
 ```
 
-3. Check your version of Ubuntu because this will affect what you enter for step 4.
-
-```
-lsb_release -a
-```
-
-4. Add the CRAN repository to your system sources list.  This assumes you have ubuntu 20.04, 'focal'. If you have another version of ubuntu, then the lines of code need to be altered. 
-
-```
-# ubuntu 20.04, focal
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
-sudo add-apt-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu focal-cran40/'
-```
-
-```
-# ubuntu 18.04, bionic
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
-sudo add-apt-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran40/'
-```
-
-5. Install R v4.XX.  
+3. Install R v4.XX.  
 
 ```
 # if R was not on your system before starting this procedure then:
-sudo apt install R-base
+sudo apt install --no-install-recommends r-base
+sudo apt-get install r-base-dev
 
 # else if R was on your system, but it was an older version, such as 3.6, then
+sudo apt-get install r-base-dev
 sudo apt update
 sudo apt upgrade
 ```
 
-6. Verify that you have successfully installed R v 4.XX
+4. Verify that you have successfully installed R v 4.XX
 
 ```
 R --version
 ```
 
-If the above instructions did not work, you can consult this [how to](https://linuxize.com/post/how-to-install-r-on-ubuntu-20-04/).
+If the above instructions did not work, you can consult the [full README](https://cloud.r-project.org/bin/linux/ubuntu/fullREADME.html).
 
 
 </p>
@@ -191,7 +190,7 @@ If the above instructions did not work, you can consult this [how to](https://li
 <details><summary>Install R on Mac</summary>
 <p>
 
-Goto the [R download page](https://cran.revolutionanalytics.com/) and select the Mac OS X Download link. 
+Goto the [R download page](https://cran.revolutionanalytics.com/) and select the Mac OS X Download link.
 
 Select the R-X.X.X.pkg download link
 
@@ -519,29 +518,29 @@ ___
 ### R Data Structures: Matrix
 
 `matrix(v,r,c,byrow=FALSE)`
-	
-create matrix, v=vector of values, r=#rows, c=#cols, 
+
+create matrix, v=vector of values, r=#rows, c=#cols,
 
 if `byrow=TRUE` then values are filled in by row
 
 Matrix math
 
 * %*%		matrix product
-	
+
 * solve()	matrix inverse
-	
+
 * diag()	diagonal values
-	
+
 * t()		transpose
-	
+
 Matrix functions
 
 * dim()		dimensions, rows cols
-	
+
 * nrow()	# rows
-	
+
 * ncol()	# cols
-	
+
 
 ```R
 rm(list=ls())
@@ -564,7 +563,7 @@ ncol(B)
 
 Matrix elments are indexed by row and col.
 
-* `matrixName[rowNum,colNum]` 
+* `matrixName[rowNum,colNum]`
 
 Arithmetic functions are typically applied to all elements in matrix
 
@@ -587,7 +586,7 @@ ___
 `array(v,dim=c(row,col,m))`
 
 * create array, v=vector of values, row=#rows, col=#cols, m=#matrices
-	
+
 Number of elements in `v` should equal `row*col*m`
 
 Most matrix functions work on arrays
@@ -736,16 +735,16 @@ ___
 
 You will typically read in your data from a comma or tab delimited file.  It is read in as a data frame by default
 
-Comma delimited files: 
+Comma delimited files:
 
-	`read.csv(“MyFile.csv”)` 
-	
+	`read.csv(“MyFile.csv”)`
+
 	`read.csv(“MyFile.csv”, header=TRUE) #csv has col headers`
-	
+
 	`read.csv(“MyFile.csv”, sep=“;”) #separator is semicolon`
-	
+
 	`read.csv(“MyFile.csv”, skip=5)   #skip 1st 5 lines`
-	
+
 
 Tab delimited files: `read.table()`
 
@@ -757,7 +756,7 @@ help(read.csv)
 # to exit type 'q'
 ```
 
-We will read  `H938_Euro_chr6.geno` into a variable called `ch6` in R. 
+We will read  `H938_Euro_chr6.geno` into a variable called `ch6` in R.
 
 ```R
 #read in data
@@ -773,17 +772,17 @@ tail(ch6)
 * This file contains 7 columns
 
  * CHR – chromosome
- 
+
  * SNP – single nucleotide polym
- 
+
  * A1 – allelic state 1
- 
+
  * A2 – allelic state 2
- 
+
  * nA1A1 - # homozyg A1
- 
+
  * nA1A2 - # heterozyg
- 
+
  * nA2A2 - # homozyg A2
 
 ___
@@ -798,7 +797,7 @@ Comma delimited files (this is pseudo code, do not type in):
 
 #don’t overwrite
 
-`write.csv(MyDF, “MyFile.csv”, append=TRUE) `	
+`write.csv(MyDF, “MyFile.csv”, append=TRUE) `
 
 #no header row
 
@@ -869,7 +868,7 @@ This file contains 7 columns
 
 ```R
 #make sure you use the correct path for your computer
-ch6 <- read.table("../data/H938_Euro_chr6.geno", 
+ch6 <- read.table("../data/H938_Euro_chr6.geno",
                   header=TRUE)
 dim(ch6)
 head(ch6)
@@ -905,4 +904,3 @@ If you are tech saavy, the just use these links (do not pay money)
 2. [RStudio](https://rstudio.com/products/rstudio/download/?utm_source=downloadrstudio&utm_medium=Site&utm_campaign=home-hero-cta#download)
 
 You could also follow the [CSB textbook instructions](http://computingskillsforbiologists.com/setup/statistical-computing/)
-
