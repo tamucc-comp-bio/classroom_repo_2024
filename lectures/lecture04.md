@@ -75,18 +75,23 @@ ___
 
 ### I. [Quiz!](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUNU1IUUg4Nzc1SU9KQVNRTVc0TU0xMFI1Sy4u)
 
-### II. Assignment 3 Triage
+### II. [Assignment 3](../assignments/assignment_3.md) Triage
 
 We will review your burning questions about the assignment.
 
 ### III. Version Control
 
-#### What is version control?
+<details><summary>What is version control?</summary>
 
 * A tool to record changes to your files and directory structure
   * additions, deletions, changes, etc
 
-#### Why use version control?
+---
+
+  </p>
+  </details>
+
+<details><summary>Why use version control?</summary>
 
 * Organize project, especially with multiple people
   * e.g., student, advisor, committee members, collaborators
@@ -95,8 +100,10 @@ We will review your burning questions about the assignment.
 * No need for 10 versions of each of your files
 
 ---
+</p>
+</details>
 
-#### What is `git`?
+<details><summary>What is `git`?</summary>
 
 `git` is a version control tool and `GitHub` is a website that uses `git`.  `git` is popular, free, open source, and `GitHub` is a paid service that is free for educational use.  Fun fact, the [person who made linux os](https://en.wikipedia.org/wiki/Linus_Torvalds) created `git` to version control his and others work on linux.  Thus, `git` is in the "DNA" of linux.
 
@@ -104,6 +111,8 @@ We will review your burning questions about the assignment.
 ![alt text](Week04_files/githublogo.jpg)
 
 ---
+</p>
+</details>
 
 Git is *distributed* and a full copy of the history of changes resides on every instance of the *repository*
 
