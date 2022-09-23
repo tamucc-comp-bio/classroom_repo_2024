@@ -33,12 +33,12 @@ Reference Book (not required): [Computing Skills for Biologists](https://computi
 <details><summary>STUDENT LEARNING OUTCOMES</summary>
 <p>
 
-Upon the successful completion of this course, students should be able to: 
+Upon the successful completion of this course, students should be able to:
 1.	Recognize, describe, and organize data into standard biological data structures
 2.	Locate scientific data repositories and extract data
 3.	Operate UNIX/LINUX computers from command line
 4.	Construct and modify computer programming/scripting logic structures for processing biological data (`bash`, `R`, `python`)
-5.	Use version control software (`git`) 
+5.	Use version control software (`git`)
 6.	Describe and use regular expressions to query data
 7.	Typeset with `LaTeX` or `MarkDown` variants
 8.	Use the most popular open-source tools for biological data manipulation
@@ -53,7 +53,7 @@ Computation for 21st Century Biologists will convene on Fridays for 2.5 hours.  
 
 Rather than having a final exam, graduate students are expected to complete a Final Project involving the automation of the manipulation and/or analysis of data, The code should be archived on GitHub.  A report written in Latex or Markdown will be due during the final exam period.   The report should be concise in stating what the problem is, describing the strategy used for the solution, and describing how the code works (be sure to include a flow-chart or outline describing what code does).  Each student will give a 10-minute presentation during the Final period on their project.
 
-Project examples: automatically process data from experimental apparatus; image analysis; automated reporting of experimental results; downloading and organizing data from online repositories; etc… 
+Project examples: automatically process data from experimental apparatus; image analysis; automated reporting of experimental results; downloading and organizing data from online repositories; etc…
 
 </p>
 </details>
@@ -61,7 +61,7 @@ Project examples: automatically process data from experimental apparatus; image 
 <details><summary>CLASSROOM & OFFICE LOCATIONS</summary>
 <p>
 
-[Lectures](https://tamucc.webex.com/tamucc/j.php?MTID=m04b44c32e11f93d46fd985947052e0d0) are F 2-4:30 CCH 206 
+[Lectures](https://tamucc.webex.com/tamucc/j.php?MTID=m04b44c32e11f93d46fd985947052e0d0) are F 2-4:30 CCH 206
 
 [Office hours](https://tamucc.zoom.us/my/cbird808?pwd=V1Baa0p3YzBHaHMyTzkrQ25FZyswZz09) are W-Th 2:30-5 on Zoom or TH234
 
@@ -77,27 +77,26 @@ Project examples: automatically process data from experimental apparatus; image 
 ---
 
 SECTION 1.  WELCOME TO THE MATRIX
- 
+
 * [08/26  Week00  Introduction & Data](lectures/lecture00.md)
   * [Assignment_0  Due, 09/02](assignments/assignment_0.md)
 
 * [09/02  Week01 Unix I](lectures/lecture01.md)
 
   * [Assignment_1,  Due 09/09](assignments/assignment_1.md)
-  
-  * [Grad Student Course Project: Ideas, Due 09/09](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUOUo2UVRUMVgwTUlQMlpUQzUzOTIzME9LNi4u)
-  
-* [09/09  Week02 Unix II](lectures/lecture02.md)
 
+  * [Grad Student Course Project: Ideas, Due 09/09](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUOUo2UVRUMVgwTUlQMlpUQzUzOTIzME9LNi4u)
+
+* [09/09  Week02 Unix II](lectures/lecture02.md)
 
   * [Assignment_2,  Due 09/16](assignments/assignment_2.md)
 
 * [09/16  Week03 Unix III](lectures/lecture03.md)
 
   * [Assignment_3,  Due 09/23](assignments/assignment_3.md)
-  
+
   * [Request Account On TAMUCC Super Computer Due 9/23](http://hpc.tamucc.edu/)
-  
+
   * [Grad Student Course Project: Plan/Outline, Due 09/23](https://classroom.github.com/a/XeWhIJ3W)  
     * [Old Link To Grad Student Course Project](https://classroom.github.com/a/VuB4iKjR).  If you started with this link, then just click the link above, clone the 2022 version of this repo, and copy your work from the old repo to the new one.
 
@@ -118,7 +117,7 @@ SECTION 1.  WELCOME TO THE MATRIX
 * [Quiz 0.0](https://forms.office.com/Pages/AnalysisPage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMlExSEtYN0pTTFVXUzJJUlpYRUNGQzU1Ti4u&AnalyzerToken=xEeP1kCHWBVvr2lUyEOtLJ63vGJEY4Nq)
 
 * [Quiz Wk 2](https://forms.office.com/Pages/AnalysisPage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMjIySEJCNFlSMVJRSUo0SU5HSFNKMVRHWC4u&AnalyzerToken=EoUZORmaO6qYwQJjsmmNDCGnDljXugop)
- 
+
 </p>
 </details>
 
@@ -129,7 +128,7 @@ SECTION 1.  WELCOME TO THE MATRIX
 <details><summary>SECTION 2. DATA WRANGLING AND VISUALIZATION WITH R</summary>
 <p>
 
- <!-- 
+ <!--
 
 * [09/25  Week05 Base R Bootcamp I](lectures/lecture05new.md)
 
@@ -153,12 +152,12 @@ SECTION 1.  WELCOME TO THE MATRIX
   * [Exam 2 Part 2, Due 11/04](https://classroom.github.com/a/dIIyk6Xd)
 
 -->
- 
+
 </p>
 </details>
 
 
- <!-- 
+ <!--
 
   * [Install Anaconda & Jupyter, Due 10/04](http://computingskillsforbiologists.com/setup/basic-programming/), Due 10/04
 -->
@@ -170,7 +169,7 @@ SECTION 1.  WELCOME TO THE MATRIX
 <details><summary>SECTION 3. PROGRAMMING WITH PYTHON</summary>
 <p>
 
- <!-- 
+ <!--
 
 * [10/30  Week10 Basic Python Programming I](lectures/lecture10.md)
   * [Assignment_10, Due 11/06](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMzdVVkQwTlRQMENSVTQ5S0dUT0c1NFgwRi4u)
@@ -189,10 +188,10 @@ SECTION 1.  WELCOME TO THE MATRIX
 
 
 
-  
+
 * [10/25  Week08 Writing Good Code](https://github.com/tamucc-comp-bio/fall_2019/blob/master/lectures/lecture08.md)
   * [Assignment 8, Due 11/01](https://github.com/tamucc-comp-bio/fall_2019/blob/master/assignments/assignment_8.md)
-  
+
 * [11/01  Week09 Scientific Computing](https://github.com/tamucc-comp-bio/fall_2019/blob/master/lectures/lecture09.md)
   * [Exam 2, Due 11/08](https://classroom.github.com/a/VSNTwKf2)
 
@@ -206,8 +205,8 @@ SECTION 1.  WELCOME TO THE MATRIX
 <details><summary>FINAL EXAM: "Welcome to the Desert of the Real"</summary>
 <p>
 
-  <!-- 
-We have spent the semester learning: 
+  <!--
+We have spent the semester learning:
 * the philosophy of data science and linux
 * how to control a computer from the command line
 * the basics of 3 computer languages that are critical in processing, analyzing, and visualizing biological data
@@ -229,7 +228,7 @@ I will issue a Final Exam in much the same way I have issued assignments. It wil
 Your "final" is completing your independent project (repo due 12/04, presentations Fri 12/04 at 2:30 pm location WEBEX) where you automate the processing, analysis, and/or visualization of data
 
 -->
- 
+
 </p>
 </details>
 

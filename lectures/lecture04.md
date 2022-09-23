@@ -103,7 +103,7 @@ We will review your burning questions about the assignment.
 </p>
 </details>
 
-<details><summary>What is `git`?</summary>
+<details><summary>What is Git?</summary>
 
 `git` is a version control tool and [`GitHub`](https://github.com) is a website that uses `git`.  `git` is popular, free, open source, and [`GitHub`](https://github.com) is a paid service that is free for educational use.  Fun fact, the [person who made linux os](https://en.wikipedia.org/wiki/Linus_Torvalds) created `git` to version control his and others work on linux.  Thus, `git` is in the "DNA" of linux.
 
@@ -114,7 +114,7 @@ We will review your burning questions about the assignment.
 </p>
 </details>
 
-<details><summary>Schematic diagram of how `git` is used</summary>
+<details><summary>Schematic diagram of how Git is used</summary>
 
 Git is *distributed* and a full copy of the history of changes resides on every instance of the *repository*
 
@@ -164,18 +164,18 @@ $ man git
 </p>
 </details>
 
-<details><summary>Initializing a Local `git` Repository</summary>
+<details><summary>Initializing a Local Git Repository</summary>
 
 1. Initializing a repository only needs to be done once.  Any directory (dir) can become a `git` repository (repo). `git` cannot version control if you do not make a dir a repo.  Let us make the `~/CSB/git/sandbox/originspecies` directory a `git` repository:
 
-```bash
-$ cd ~/CSB/git/sandbox
-$ mkdir originspecies
-$ cd originspecies
-$ git init
+  ```bash
+  $ cd ~/CSB/git/sandbox
+  $ mkdir originspecies
+  $ cd originspecies
+  $ git init
 
-  Initialized empty git repository in /home/cbird/CSB/git/sandbox/originspecies/.git/
-```
+    Initialized empty git repository in /home/cbird/CSB/git/sandbox/originspecies/.git/
+  ```
 
 2. Checking the status of a repo:
 
