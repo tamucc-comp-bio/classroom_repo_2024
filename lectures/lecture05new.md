@@ -131,7 +131,7 @@ If you see this message (or something similar) then you need to install `R`
 Command 'R' not found, but can be installed with:
 ```
 
-<details><summary>Install R on Windows-Ubuntu</summary>
+<details><summary>Install R on Ubuntu</summary>
 <p>
 
 [Official Instructions](https://cloud.r-project.org/bin/linux/ubuntu/)
@@ -187,14 +187,16 @@ If the above instructions did not work, you can consult the [full README](https:
 </p>
 </details>
 
-<details><summary>Install R on Mac</summary>
+<details><summary>Install R on Win or Mac</summary>
 <p>
 
-Goto the [R download page](https://cran.revolutionanalytics.com/) and select the Mac OS X Download link.
+1. Goto the [R download page](https://cran.revolutionanalytics.com/) and select the Win or Mac OS X Download link.
 
-Select the R-X.X.X.pkg download link
+2. MacOS: Select the R-X.X.X.pkg download link for your OS and computer setup
+    * the choice depends on whether you have a M1/2 chip, or intel.
 
-![](Week05new_files/maxInstallR.png)
+2. Windows: select "install R for the first time"
+
 
 If you have trouble with this, then consult the [CSB instructions](http://computingskillsforbiologists.com/setup/statistical-computing/)
 
