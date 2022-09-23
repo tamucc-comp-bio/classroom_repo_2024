@@ -434,7 +434,7 @@ Amending an Incomplete Commit
   $ git commit -m "added barnacles.txt"
   ```
 
-<details><summary>Unstaging Files</summary>
+Unstaging Files
   You may have added files to the snapshot staging area by mistake.  To unstage them:
   (do not type this in, it is an example)
   ```bash
