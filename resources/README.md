@@ -4,4 +4,10 @@ This directory contains resources that will help you with your assignments that 
 
 ---
 
-## [SSH Keys](howto_sshkeys.md)
+* [How To: SSH Keys For Easy Access to Remote Servers & GitHub](howto_sshkeys.md)
+
+* [Cheat Sheet: Unix/Linux/BASH](CheatSheetLinux_2022-09-02.pdf)
+
+* [Cheat Sheet: Unix/Linux/BASH Data Wrangling](CheatSheetLinuxDataWrangling.pdf)
+
+* [Cheat Sheet: R Tidyverse](CheatSheetTidyverse.pdf)
