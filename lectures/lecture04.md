@@ -473,8 +473,8 @@ Git can get confused if you are not dilligent in your pattern of adding and comi
 
 <details><summary>GitHub Repo Philosophy</summary>
 
-* You should be conducting your work in this repo, not somewhere else. If you are doing some things on the supercomputer (or a remote server) you should clone this repo there and run the scripts in this repo.
-	* see `.gitignore` below
+* You should be conducting your work in your repo, not somewhere else.
+  * If you are doing some things for the project on the supercomputer (or a remote server) you should clone your repo there and run the scripts in/from it.
 
 * Do not change the same document in your repo in different locations at the same time
 	* for example, don't edit the readme on GitHub and on your laptop without syncing the changes between them
@@ -519,7 +519,59 @@ If you are working with large files, GitHub will not accept them and it will cau
 
 The `.gitignore` file is a list of files and dirs (wildcards work too) that should not be tracked by `git`. The file is invisible (all files and dirs that start with a `.` are invisible).  To list invisible files, `ls -a`.
 
-I've included a `.gitignore` that lists common files that should not be tracked if using R.  If you are processing large DNA files, then you should add them to the `.gitignore`.
+This is an example `.gitignore` that includes files created when working with R and RStudio that should not be tracked:
+
+    ```
+    # History files
+    .Rhistory
+    .Rapp.history
+
+    # Session Data files
+    .RData
+    .RDataTmp
+
+    # User-specific files
+    .Ruserdata
+
+    # Example code in package build process
+    *-Ex.R
+
+    # Output files from R CMD build
+    /*.tar.gz
+
+    # Output files from R CMD check
+    /*.Rcheck/
+
+    # RStudio files
+    .Rproj.user/
+
+    # produced vignettes
+    vignettes/*.html
+    vignettes/*.pdf
+
+    # OAuth2 token, see https://github.com/hadley/httr/releases/tag/v0.3
+    .httr-oauth
+
+    # knitr and R markdown default cache directories
+    *_cache/
+    /cache/
+
+    # Temporary files created by R markdown
+    *.utf8.md
+    *.knit.md
+
+    # R Environment Variables
+    .Renviron
+
+    # pkgdown site
+    docs/
+
+    # translation temp files
+    po/*~
+
+    # RStudio Connect folder
+    rsconnect/
+    ```
 
 ---
 </p>
