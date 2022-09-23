@@ -476,16 +476,16 @@ Git can get confused if you are not dilligent in your pattern of adding and comi
 
 1. Clone your repository for this exam to your local computer.
 
-	* If you have a Win10 computer, then I want you to clone your Exam 1 repo into the windows `Documents` directory. Here is pseudocode to help you get there in your terminal.
+	* If you have a Windows computer, then I want you to clone your Exam 1 repo into the windows `Downloads` directory. Here is pseudocode to help you get there in your terminal.
 
 	```bash
 	# replace YOUR_WINDOWS_USERNAME with your actual user name
-	cd /mnt/c/Users/YOUR_WINDOWS_USERNAME/Documents
+	cd /mnt/c/Users/YOUR_WINDOWS_USERNAME/Downloads
 	```
 
-	* If you are unsure of your Win10 user name, hit tab twice after typing in the file path up to `Users/` to see the options.  You could alternatively right click on your `Documents` folder in the file explorer, select `Properties` and then the `Location` tab to see its file path.  Your Win10 user name is the name of the directory that `Documents` is inside of.
+	* If you are unsure of your Win10 user name, hit tab twice after typing in the file path up to `Users/` to see the options.  You could alternatively right click on your `Downloads` folder in the file explorer, select `Properties` and then the `Location` tab to see its file path.  Your Windows user name is the name of the directory that `Downloads` is inside of.
 
-	* If you have a Mac computer, then I want you to clone your Exam 1 repo into your home dir.
+	* If you have a Mac computer, then I want you to clone your Exam 1 repo into your home dir or wherever your want.
 
 	```bash
 	cd ~
