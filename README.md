@@ -102,7 +102,7 @@ SECTION 1.  WELCOME TO THE MATRIX
 
 * [09/23  Week04 Version Control w/ Git](lectures/lecture04.md)
 
-  * [Exam_1,  Due 9/30](https://classroom.github.com/a/jp--K3BZ)
+  * [Exam_1,  Due 9/30](https://classroom.github.com/a/OyEVhNNT)
 
   * [Grad Student Course Project: GitHub Repo w/ ReadMe, Due 9/30](https://classroom.github.com/a/hXodrcVf)
 
