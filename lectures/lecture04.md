@@ -4,6 +4,8 @@
 
 ___
 
+## Computer Preparation
+
 You are expected to start each lecture with your terminal window open and ready to go.
 
 <details><summary>Ubuntu on Windows</summary>
