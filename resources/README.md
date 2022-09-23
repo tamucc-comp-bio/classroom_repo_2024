@@ -4,4 +4,4 @@ This directory contains resources that will help you with your assignments that 
 
 ---
 
-## [SSH Keys](jowto_sshkeys.md)
+## [SSH Keys](howto_sshkeys.md)
