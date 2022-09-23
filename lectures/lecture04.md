@@ -519,7 +519,7 @@ Git can get confused if you are not dilligent in your pattern of adding and comi
 
 If you are working with large files, GitHub will not accept them and it will cause problems with git. You should add large files to the `.gitignore` file.
 
-The `.gitignore` file is a list of files and dirs (wildcards work too) that should not be tracked by `git`. The file is invisible (all files and dirs that start with a `.` are invisible).  To list invisible files, `ls -a`.
+The `.gitignore` file in the top level of your repo that is a list of files and dirs (wildcards work too) that should not be tracked by `git`. The file is invisible (all files and dirs that start with a `.` are invisible).  To list invisible files, `ls -a`.
 
 This is an example `.gitignore` that includes files created when working with R and RStudio that should not be tracked:
 
