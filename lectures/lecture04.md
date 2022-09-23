@@ -331,7 +331,7 @@ That is the majority of the commands you will use in git: `git add`,  `git commi
 
 <details><summary>Git Can Only Track Internal Changes Made to Text Documents</summary>
 
- 
+
 
   It is important to note that `git` is made to track human-readable text files.  A human-readable text file will be readable by your text editor. Files that are binary (`docx`, etc) cannot be tracked by `git` in the same way that text files can.
 
@@ -345,7 +345,7 @@ That is the majority of the commands you will use in git: `git add`,  `git commi
 
 
 
-  We will use the `sed` command to find the ends of lines ( a `$` in regex) and replace them with a period (a `\.` in regex).  The `-i` argument tells `sed` to change the input file rather than outputting a text stream.
+  We will use the `sed` command to find the ends of lines (represented by `$` in regex) and replace them with a period (represented by `\.` in regex).  The `-i` argument tells `sed` to change the input file rather than outputting a text stream.
 
   Then use the `git` argument `diff` to show all changes *since the last commit*.  
 
@@ -354,7 +354,7 @@ That is the majority of the commands you will use in git: `git add`,  `git commi
     $ sed -i 's/$/\./' origin.txt
     $ git diff
 
-    # now change it back
+    # now change it back by removing periods at the ends of lines
     $ sed -i 's/\.$//' origin.txt
     ```
 
@@ -370,14 +370,14 @@ That is the majority of the commands you will use in git: `git add`,  `git commi
 
 you need to tell `git` when you remove or move version controlled files
 
-  ```bash
-  $ git mv origin.txt origins.txt
-  $ git rm *.txt
+    ```bash
+    $ git mv origin.txt origins.txt
+    $ git rm *.txt
 
-  # note that you can skip git add and go straight to commit after this
-  $ git commit -m "deleted text files"
-  $ git log
-  ```
+    # note that you can skip git add and go straight to commit after this
+    $ git commit -m "deleted text files"
+    $ git log
+    ```
 
   ---
 </p>
@@ -403,6 +403,8 @@ Let us review what we have learned by making a new project in your sandbox and i
 </p>
 </details>
 
+---
+
 ### [Mind Expander 2.1](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMVJSRE4zRVpFOElBVTUzMTVVNFZBNkRGVy4u)
 
 ---
@@ -411,7 +413,7 @@ Let us review what we have learned by making a new project in your sandbox and i
 
 Git can get confused if you are not dilligent in your pattern of adding and comitting changes and it will be neccessary to troublshoot conflicts.
 
-<details><summary>Amending an Incomplete Commit
+Amending an Incomplete Commit
   Incomplete commits can occur when files are not removed within git, changes are made but not added, etc..  The solution is to rectify these conflicts.
 
   ```bash
