@@ -413,33 +413,37 @@ Let us review what we have learned by making a new project in your sandbox and i
 
 Git can get confused if you are not dilligent in your pattern of adding and comitting changes and it will be neccessary to troublshoot conflicts.
 
-Amending an Incomplete Commit
+1. Amending an Incomplete Commit
+
   Incomplete commits can occur when files are not removed within git, changes are made but not added, etc..  The solution is to rectify these conflicts.
 
-  ```bash
-  # make file
-  $ touch barnacles.txt
+    ```bash
+    # make file
+    $ touch barnacles.txt
 
-  # mistakenly commit changes without adding
-  $ git commit -m "added barnacles.txt"
+    # mistakenly commit changes without adding
+    $ git commit -m "added barnacles.txt"
 
-  On branch master
-  Untracked files:
-          barnacles.txt
+    On branch master
+    Untracked files:
+            barnacles.txt
 
-  nothing added to commit but untracked files present
+    nothing added to commit but untracked files present
 
-  # fix by adding then committing
-  $ git add barnacles.txt
-  $ git commit -m "added barnacles.txt"
-  ```
+    # fix by adding then committing
+    $ git add barnacles.txt
+    $ git commit -m "added barnacles.txt"
+    ```
 
-Unstaging Files
+2. Unstaging Files
+
   You may have added files to the snapshot staging area by mistake.  To unstage them:
   (do not type this in, it is an example)
-  ```bash
-  git reset HEAD filetounstage.txt
-  ```
+
+    ```bash
+    #do not type this into your terminal
+    $ git reset HEAD filetounstage.txt
+    ```
 
 ---
 </p>
@@ -449,18 +453,16 @@ Unstaging Files
 
 1. Cloning a repository:
   ```bash
-  git clone ADD YOUR HOMEWORK REPO LINK HERE
+  git clone ADD_YOUR_HOMEWORK_REPO_LINK_HERE
   ```
 
 2. Move into your repository, change it, add and commit the changes
 
 3. Push changes from local repository back to central repository on GitHub
-  ```bash
-  git push
-  ```
 
-
-
+    ```bash
+    git push
+    ```
 
 ![alt text](https://github.com/tamucc-comp-bio/fall_2019/blob/master/lectures/Week04_files/git_common_commands.png)
 ---
@@ -468,7 +470,7 @@ Unstaging Files
 </details>
 
 
-## [EXAM 1  Due 9/25](https://classroom.github.com/a/jp--K3BZ)  
+## [EXAM 1  Due 9/30](https://classroom.github.com/a/jp--K3BZ)  
 
 ### Initializing Exam
 
