@@ -329,9 +329,9 @@ That is the majority of the commands you will use in git: `git add`,  `git commi
 </p>
 </details>
 
-<details><summary>`git` Can Only Track Internal Changes Made to Text Documents</summary>
+<details><summary>Git Can Only Track Internal Changes Made to Text Documents</summary>
 
- 
+
 
 It is important to note that `git` is made to track human-readable text files.  A human-readable text file will be readable by your text editor. Files that are binary (`docx`, etc) cannot be tracked by `git` in the same way that text files can.
 
@@ -344,18 +344,19 @@ It is important to note that `git` is made to track human-readable text files.  
 <details><summary>Showing Changes Since Last Commit</summary>
 
 
+
   We will use the `sed` command to find the ends of lines ( a `$` in regex) and replace them with a period (a `\.` in regex).  The `-i` argument tells `sed` to change the input file rather than outputting a text stream.
 
   Then use the `git` argument `diff` to show all changes *since the last commit*.  
 
 
-  ```bash
-  $ sed -i 's/$/\./' origin.txt
-  $ git diff
+    ```bash
+    $ sed -i 's/$/\./' origin.txt
+    $ git diff
 
-  # now change it back
-  $ sed -i 's/\.$//' origin.txt
-  ```
+    # now change it back
+    $ sed -i 's/\.$//' origin.txt
+    ```
 
   If you do not see any differences, then you did not change the repo by adding a file or changing the text in `origin.txt`
 
