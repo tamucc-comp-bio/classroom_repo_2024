@@ -104,7 +104,7 @@ ___
 </details>
 
 
-### Checking to see if you have R</summary>
+<details><summary>Checking to see if you have R</summary>
 <p>
 
 Note that there are differences here if you have a Mac or Windows computer.
@@ -239,7 +239,7 @@ If you have trouble with this, then consult the [CSB instructions](http://comput
 </details>
 
 
-### Running R from terminal</summary>
+<details><summary>Running R from terminal</summary>
 <p>
 
 To run `R`, just type `R` and hit your enter/return key
@@ -274,7 +274,7 @@ That is it, you are in an `R` shell, and `bash` commands will no longer work.  N
 </p>
 </details>
 
-### Exiting R Shell</summary>
+<details><summary>Exiting R Shell</summary>
 <p>
 
 The keys `ctrl+d` will exit the R shell. You will be prompted to save your session.  If you say yes, all of your work will be saved and available when you open the R shell again.
@@ -291,7 +291,7 @@ $ R
 </p>
 </details>
 
-### Arithmetic in R</summary>
+<details><summary>Arithmetic in R</summary>
 <p>
 
 R is built for statistics and so has all of the mathematical operations that you would expect from a calculator, and much more.
@@ -327,7 +327,7 @@ To do arithmetic, simply type in the mathematical statement to calculate and hit
 </p>
 </details>
 
-### Equalities & Logic in R</summary>
+<details><summary>Equalities & Logic in R</summary>
 <p>
 
 R can compare values and return either `TRUE` if the statement is true or `FALSE`.  
@@ -363,7 +363,7 @@ R can compare values and return either `TRUE` if the statement is true or `FALSE
 </p>
 </details>
 
-### R Variables</summary>
+<details><summary>R Variables</summary>
 <p>
 
 Variables hold data. There are different types of data that can be stored. Here we start by discussing *_values_*.
@@ -403,7 +403,7 @@ rm(list=ls())
 </p>
 </details>
 
-### R Data Types</summary>
+<details><summary>R Data Types</summary>
 <p>
 
 `integer`		Whole Numbers
@@ -448,7 +448,7 @@ We can query the data type of a variable using `is.type(variable)`
 </p>
 </details>
 
-### Mathematical Functions in R</summary>
+<details><summary>Mathematical Functions in R</summary>
 <p>
 
 `abs(x)`			absolute value
@@ -497,7 +497,7 @@ We can query the data type of a variable using `is.type(variable)`
 </p>
 </details>
 
-### R Data Structures</summary>
+<details><summary>R Data Structures</summary>
 <p>
 
 * Data structures store your data
@@ -528,7 +528,7 @@ z[c(2,8,10)]
 </p>
 </details>
 
-### R Statistical Functions for Vectors</summary>
+<details><summary>R Statistical Functions for Vectors</summary>
 <p>
 
 A variety of statistical functions are available in R. Here are a few:
@@ -558,7 +558,7 @@ ___
 
 ___
 
-### Overview of R Data Structures</summary>
+Overview of R Data Structures</summary>
 <p>
 
 A [data structure](https://en.wikipedia.org/wiki/Data_structure) is a container for data with a particular format.
@@ -579,7 +579,7 @@ A [data structure](https://en.wikipedia.org/wiki/Data_structure) is a container 
 </p>
 </details>
 
-### R Data Structures: Matrix</summary>
+R Data Structures: Matrix</summary>
 <p>
 
 `matrix(v,r,c,byrow=FALSE)`
@@ -648,7 +648,7 @@ mean(Z)
 </p>
 </details>
 
-### R Data Structures: Array</summary>
+R Data Structures: Array</summary>
 <p>
 
 `array(v,dim=c(row,col,m))`
@@ -681,7 +681,7 @@ M[,,1, drop=FALSE]
 </p>
 </details>
 
-### R Data Structures: List</summary>
+R Data Structures: List</summary>
 <p>
 
 Used to store elements of different types and structures, e.g. vectors, matrices, etc
@@ -714,7 +714,7 @@ mylist[[1]][4]    #4th element of 1st item
 </p>
 </details>
 
-### R String Manipulation</summary>
+R String Manipulation</summary>
 <p>
 
 There are several tools for manipulating text strings.  Here are a few examples
@@ -750,7 +750,7 @@ tolower(x)
 </p>
 </details>
 
-### R Data Structures: Data Frame</summary>
+R Data Structures: Data Frame</summary>
 <p>
 
 A data frame holds "tidy" data
@@ -785,7 +785,7 @@ str(trees)
 ___
 
 
-### R Working Directory</summary>
+R Working Directory</summary>
 <p>
 
 Before you start reading and writing files, it is important to know where the working directory is
@@ -813,7 +813,7 @@ getwd()
 </details>
 
 
-### R Reading in Data from File</summary>
+R Reading in Data from File</summary>
 <p>
 
 You will typically read in your data from a comma or tab delimited file.  It is read in as a data frame by default
@@ -872,7 +872,7 @@ tail(ch6)
  </p>
  </details>
 
-### R Writing Data</summary>
+R Writing Data</summary>
 <p>
 
 You will typically write a dataframe to a csv or tab delimited file.
@@ -905,7 +905,7 @@ list.files()
 </details>
 
 
-### R Working Directory</summary>
+R Working Directory</summary>
 <p>
 
 Before you start reading and writing files, it is important to know where the working directory is
@@ -939,7 +939,7 @@ getwd()
 </details>
 
 
-### Read in `H938_Euro_chr6.geno`</summary>
+Read in `H938_Euro_chr6.geno`</summary>
 <p>
 
 This file contains 7 columns
