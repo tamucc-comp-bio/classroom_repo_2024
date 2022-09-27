@@ -8,28 +8,14 @@
 
 You are expected to start each lecture with your terminal window open and ready to go.
 
-<details><summary>Win10</summary>
+<details><summary>Ubuntu on Windows</summary>
 <p>
 
-  * If the Ubuntu app is not installed, then follow [these instructions](https://github.com/cbirdlab/wlsUBUNTU_settings/blob/master/InstallLinuxOnWindows_Automated.pdf)
+  * If the Windows Terminal or Ubuntu app are not installed, then follow [these instructions](https://github.com/cbirdlab/wlsUBUNTU_settings/blob/master/README.md)
 
-  * Log into your Ubuntu terminal.  _We will not use `gitbash` unless you can not get Ubuntu running._ After logging in, You are in your home directory.
+  * Open an Ubuntu window in Windows Terminal.  _We will not use `gitbash` unless you can't get Ubuntu running._ After logging in, You are in your home directory.
 
-  * If you are using an Ubuntu terminal that has not been setup (you will know because it will ask you to create a new user name and password) or you notice odd cursor behavior when editing text in the terminal, then run the following code:
-
-    ```bash
-    git clone https://github.com/cbirdlab/wlsUBUNTU_settings.git
-    . ./wlsUBUNTU_settings/updateSettings.bash
-    rm -rf wlsUBUNTU_settings
-    ```
-
-  * If the `CSB` directory does not exist in your home directory (check with `ls`), then run the following code to clone the `CSB` repository into your home directory:
-
-    ```bash
-    git clone https://github.com/CSB-book/CSB.git
-    ```
-
-  * It is always a good idea to keep your apps in `Ubuntu` up to date. _The first time you do this, it could take a long time to finish. After that, if you do this when you log in, it should go quickly._
+  * It's always a good idea to keep your apps in `Ubuntu` up to date. _The first time you do this, it could take a long time to finish. After that, if you do this when you log in, it should go quickly._
     ```bash
     sudo apt update
     sudo apt upgrade
@@ -43,18 +29,46 @@ You are expected to start each lecture with your terminal window open and ready 
 
   * Open a terminal window
 
-  * Consider installing [homebrew](https://brew.sh/).  You will be able to use homebrew to install linux software, such as `tree`, which is used in the slide show.
+  * If you haven't already, install [homebrew](https://brew.sh/).  You will be able to use homebrew to install linux software, such as `tree`, which is used in the slide show.
 
-  * If the `CSB` directory does not exist in your home directory (check with `ls`), then run the following code to clone the `CSB` repository into your home directory:
-
-    ```bash
-    git clone https://github.com/CSB-book/CSB.git
-    ```
 
 </p>
 </details>
 
----
+
+<details><summary>If it's not already there, clone the CSB repository to your home dir</summary>
+<p>
+
+We will use the [open source files that accompany the CSB text book](https://github.com/tamucc-comp-bio-2022/CSB) in lectures and assignments.
+
+If the `CSB` directory does not exist in your home directory (check with `ls`), then run the following code to clone the [`CSB` repository](https://github.com/tamucc-comp-bio-2022/CSB) into your home directory:
+
+1. Open a terminal window
+	* For Win laptops, use `Windows Terminal` to open Ubunutu.  
+	* For Mac laptops, open your `Terminal`.
+
+2. Run the code line by line in the code block below
+```bash
+# check that you're in home dir, you should be there when you log in
+pwd
+
+# if you are not in your home dir, then move there
+cd ~
+
+# if pwd does not return `/home/yourusername` then let Dr. Bird know
+pwd
+
+# clone the CSB repository to your home dir
+git clone git@github.com:tamucc-comp-bio-2022/CSB.git
+```
+
+The repository is named CSB, and it contains all of the example files and directories necessary to conduct the exercises in the text book.
+
+</p>
+</details>
+
+
+___
 
 
 ## [I. Lecture Slides](Week05new_files/Introduction%20to%20R%201.pptx)
@@ -69,7 +83,8 @@ We will not use `R Studio` today.  I want you to use the terminal to run R for n
 
 ___
 
-### What is [`R`](https://cran.revolutionanalytics.com/)?
+<details><summary>What is [`R`](https://cran.revolutionanalytics.com/)?</summary>
+<p>
 
 [`R`](https://cran.revolutionanalytics.com/) is a powerful statistical computing language
 
@@ -84,6 +99,8 @@ ___
 * Command line interface
 * Linux, Win, Mac
 
+</p>
+</details>
 ___
 
 ### Installing R
