@@ -977,25 +977,11 @@ tail(ch6)
 ___
 
 
----
-
 
 ## HOMEWORK
 
-Complete the Mind Expanders up through 8.5.  You can use both the CSB text book (remember the Mind Expanders are based in the "intermezzos") and the slides that are linked at the top of this page to gain the context required to complete this assignment.
+Complete the Mind Expanders up through 8.5.  You can use the resources in this markdown document, google searches, and/or the CSB text book (the Mind Expanders are based in the "intermezzos") to gain the context required to complete this assignment.
 
 [Mind Expander 8.4](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMlRGTE9aQVQ3QUtBQlBOUEtHN1g3QUVDOS4u)
 
 [Mind Expander 8.5](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMlIwMFNWME1IUVJCWktXWkZYSk1RV0pONC4u)
-
-### Install R & RStudio In Windows (not Ubuntu) (If you haven't already)
-
-If you have a Mac, then you have already installed R in lecture, you only need to install R studio
-
-If you are tech saavy, the just use these links (do not pay money)
-
-1. [R](https://cran.revolutionanalytics.com/)
-
-2. [RStudio](https://rstudio.com/products/rstudio/download/?utm_source=downloadrstudio&utm_medium=Site&utm_campaign=home-hero-cta#download)
-
-You could also follow the [CSB textbook instructions](http://computingskillsforbiologists.com/setup/statistical-computing/)
