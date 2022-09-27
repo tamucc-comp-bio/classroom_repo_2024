@@ -125,8 +125,8 @@ SECTION 1.  WELCOME TO THE MATRIX
 
 ---
 
-<details><summary>SECTION 2. DATA WRANGLING AND VISUALIZATION WITH R</summary>
-<p>
+SECTION 2. DATA WRANGLING AND VISUALIZATION WITH R
+
 
 
 
@@ -134,11 +134,13 @@ SECTION 1.  WELCOME TO THE MATRIX
 
   * Assignment 5 (Mind Expanders 8.3-8.5) Due 10/07
 
- <!--
+
 
 * [10/02  Week06 Base R Bootcamp II](lectures/lecture06new.md)
 
   * [Assignment 06, Due 10/07](https://classroom.github.com/a/ATshIvd8)
+
+ <!--
 
 * [10/07  Week07 Data Visualization w/ Tidyverse](lectures/lecture07new.md)
 
@@ -155,8 +157,7 @@ SECTION 1.  WELCOME TO THE MATRIX
 
 -->
 
-</p>
-</details>
+
 
 
  <!--
