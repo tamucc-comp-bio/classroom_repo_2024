@@ -99,11 +99,13 @@ ___
 * Command line interface
 * Linux, Win, Mac
 
+___
 </p>
 </details>
-___
 
-### Installing R
+
+### Checking to see if you have R</summary>
+<p>
 
 Note that there are differences here if you have a Mac or Windows computer.
 
@@ -113,7 +115,7 @@ To check if you have `R`, goto your terminal window and enter the following comm
 $ R
 ```
 
-If you see this (or similar), then R is installed and you can proceed.
+If you see this (or similar), then R is installed and you can proceed.  You should a version at least as new as that listed below.
 
 ```
 $ R
@@ -137,9 +139,6 @@ Type 'demo()' for some demos, 'help()' for on-line help, or
 Type 'q()' to quit R.
 
 >
-
-
->
 ```
 
 If you see this message (or something similar) then you need to install `R`
@@ -147,6 +146,10 @@ If you see this message (or something similar) then you need to install `R`
 ```
 Command 'R' not found, but can be installed with:
 ```
+
+___
+</p>
+</details>
 
 <details><summary>Install R on Ubuntu</summary>
 <p>
@@ -200,28 +203,44 @@ R --version
 
 If the above instructions did not work, you can consult the [full README](https://cloud.r-project.org/bin/linux/ubuntu/fullREADME.html).
 
-
+---
 </p>
 </details>
 
-<details><summary>Install R on Win or Mac</summary>
+<details><summary>Install R on Win</summary>
 <p>
 
 1. Goto the [R download page](https://cran.revolutionanalytics.com/) and select the Win or Mac OS X Download link.
 
-2. MacOS: Select the R-X.X.X.pkg download link for your OS and computer setup
-    * the choice depends on whether you have a M1/2 chip, or intel.
-
-2. Windows: select "install R for the first time"
+2. Select "install R for the first time"
 
 
 If you have trouble with this, then consult the [CSB instructions](http://computingskillsforbiologists.com/setup/statistical-computing/)
 
+---
+</p>
+</details>
+
+<details><summary>Install R on Mac</summary>
+<p>
+
+1. Goto the [R download page](https://cran.revolutionanalytics.com/) and select the Win or Mac OS X Download link.
+
+2. [Determine if you have an Intel or Apple cpu.](https://www.howtogeek.com/706226/how-to-check-if-your-mac-is-using-an-intel-or-apple-silicon-processor/)
+
+3. MacOS: Select the R-X.X.X.pkg download link for your OS and computer setup
+    * the choice depends on whether you have a M1/2 chip, or intel.
+
+
+If you have trouble with this, then consult the [CSB instructions](http://computingskillsforbiologists.com/setup/statistical-computing/)
+
+---
 </p>
 </details>
 
 
-### Running R from terminal
+### Running R from terminal</summary>
+<p>
 
 To run `R`, just type `R` and hit your enter/return key
 
@@ -251,9 +270,12 @@ Type 'q()' to quit R.
 
 That is it, you are in an `R` shell, and `bash` commands will no longer work.  Notice the command prompt is now a `>` instead of a `$` or a `%` depending on your computer.
 
-___
+---
+</p>
+</details>
 
-### Exiting R Shell
+### Exiting R Shell</summary>
+<p>
 
 The keys `ctrl+d` will exit the R shell. You will be prompted to save your session.  If you say yes, all of your work will be saved and available when you open the R shell again.
 
@@ -265,9 +287,12 @@ $ R
 >
 ```
 
-___
+---
+</p>
+</details>
 
-### Arithmetic in R
+### Arithmetic in R</summary>
+<p>
 
 R is built for statistics and so has all of the mathematical operations that you would expect from a calculator, and much more.
 
@@ -298,9 +323,12 @@ To do arithmetic, simply type in the mathematical statement to calculate and hit
 
 `%/%`	Integer Division
 
-___
+---
+</p>
+</details>
 
-### Equalities & Logic in R
+### Equalities & Logic in R</summary>
+<p>
 
 R can compare values and return either `TRUE` if the statement is true or `FALSE`.  
 
@@ -331,9 +359,12 @@ R can compare values and return either `TRUE` if the statement is true or `FALSE
 
 `!`	Not
 
-___
+---
+</p>
+</details>
 
-### R Variables
+### R Variables</summary>
+<p>
 
 Variables hold data. There are different types of data that can be stored. Here we start by discussing *_values_*.
 
@@ -368,9 +399,12 @@ Clear all variables:
 rm(list=ls())
 ```
 
-___
+---
+</p>
+</details>
 
-### R Data Types
+### R Data Types</summary>
+<p>
 
 `integer`		Whole Numbers
 
@@ -410,9 +444,12 @@ We can query the data type of a variable using `is.type(variable)`
 ```
 
 
-___
+---
+</p>
+</details>
 
-### Mathematical Functions in R
+### Mathematical Functions in R</summary>
+<p>
 
 `abs(x)`			absolute value
 `sqrt(x)`			square root
@@ -456,9 +493,12 @@ ___
 > exp_z
 ```
 
-___
+---
+</p>
+</details>
 
-### R Data Structures
+### R Data Structures</summary>
+<p>
 
 * Data structures store your data
 
@@ -484,9 +524,12 @@ z[3:6]
 z[c(2,8,10)]
 ```
 
-___
+---
+</p>
+</details>
 
-### R Statistical Functions for Vectors
+### R Statistical Functions for Vectors</summary>
+<p>
 
 A variety of statistical functions are available in R. Here are a few:
 
@@ -513,10 +556,10 @@ ___
 
 ### [Mind Expander 8.1](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMFpONVRLSkNYUU9VQ1RXVzhGODBPTFM1UC4u)
 
-
 ___
 
-### Overview of R Data Structures
+### Overview of R Data Structures</summary>
+<p>
 
 A [data structure](https://en.wikipedia.org/wiki/Data_structure) is a container for data with a particular format.
 
@@ -532,9 +575,12 @@ A [data structure](https://en.wikipedia.org/wiki/Data_structure) is a container 
 
 * List		-	several elements or data structures of any type
 
-___
+---
+</p>
+</details>
 
-### R Data Structures: Matrix
+### R Data Structures: Matrix</summary>
+<p>
 
 `matrix(v,r,c,byrow=FALSE)`
 
@@ -598,9 +644,12 @@ Z[c(1,3), c(1,3)] #submatrix
 mean(Z)
 ```
 
-___
+---
+</p>
+</details>
 
-### R Data Structures: Array
+### R Data Structures: Array</summary>
+<p>
 
 `array(v,dim=c(row,col,m))`
 
@@ -628,9 +677,12 @@ M[,,1]
 M[,,1, drop=FALSE]
 ```
 
-___
+---
+</p>
+</details>
 
-### R Data Structures: List
+### R Data Structures: List</summary>
+<p>
 
 Used to store elements of different types and structures, e.g. vectors, matrices, etc
 
@@ -658,9 +710,12 @@ mylist[[1]][4]    #4th element of 1st item
 
 ```
 
-___
+---
+</p>
+</details>
 
-### R String Manipulation
+### R String Manipulation</summary>
+<p>
 
 There are several tools for manipulating text strings.  Here are a few examples
 
@@ -691,9 +746,12 @@ toupper(x)
 tolower(x)
 ```
 
-___
+---
+</p>
+</details>
 
-### R Data Structures: Data Frame
+### R Data Structures: Data Frame</summary>
+<p>
 
 A data frame holds "tidy" data
 
@@ -718,14 +776,17 @@ colnames(trees) <- tolower(colnames(trees)) # change column names to all lowerca
 str(trees)
 ```
 
-___
+---
+</p>
+</details>
 
 ### [Mind Expander 8.2](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlURDZQWkY5U1VSWU84WDU5Sk1HWE80NjdVVy4u)
 
 ___
 
 
-### R Working Directory
+### R Working Directory</summary>
+<p>
 
 Before you start reading and writing files, it is important to know where the working directory is
 
@@ -747,10 +808,13 @@ getwd()
 
 ```
 
-___
+---
+</p>
+</details>
 
 
-### R Reading in Data from File
+### R Reading in Data from File</summary>
+<p>
 
 You will typically read in your data from a comma or tab delimited file.  It is read in as a data frame by default
 
@@ -804,9 +868,12 @@ tail(ch6)
 
  * nA2A2 - # homozyg A2
 
-___
+ ---
+ </p>
+ </details>
 
-### R Writing Data
+### R Writing Data</summary>
+<p>
 
 You will typically write a dataframe to a csv or tab delimited file.
 
@@ -833,10 +900,13 @@ write.csv(ch6, "H938_Euro_chr6.csv")
 list.files()
 ```
 
-___
+---
+</p>
+</details>
 
 
-### R Working Directory
+### R Working Directory</summary>
+<p>
 
 Before you start reading and writing files, it is important to know where the working directory is
 
@@ -864,10 +934,13 @@ setwd("C:/Users/cbird/Documents/CloudStation/Teaching/Summer_2019/PhilippinesWor
 getwd()
 ```
 
-___
+---
+</p>
+</details>
 
 
-### Read in `H938_Euro_chr6.geno`
+### Read in `H938_Euro_chr6.geno`</summary>
+<p>
 
 This file contains 7 columns
 
@@ -894,7 +967,9 @@ head(ch6)
 tail(ch6)
 ```
 
-___
+---
+</p>
+</details>
 
 ### [Mind Expander 8.3](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUQTRGOTA5UDRZMzlPSjEwTUxCVzBIOEdKRi4u)
 
