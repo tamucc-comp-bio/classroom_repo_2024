@@ -552,13 +552,15 @@ var(z)
 summary(z)
 ```
 
-___
+---
+</p>
+</details>
 
 ### [Mind Expander 8.1](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMFpONVRLSkNYUU9VQ1RXVzhGODBPTFM1UC4u)
 
 ___
 
-Overview of R Data Structures</summary>
+<details><summary>Overview of R Data Structures</summary>
 <p>
 
 A [data structure](https://en.wikipedia.org/wiki/Data_structure) is a container for data with a particular format.
@@ -579,7 +581,7 @@ A [data structure](https://en.wikipedia.org/wiki/Data_structure) is a container 
 </p>
 </details>
 
-R Data Structures: Matrix</summary>
+<details><summary>R Data Structures: Matrix</summary>
 <p>
 
 `matrix(v,r,c,byrow=FALSE)`
@@ -648,7 +650,7 @@ mean(Z)
 </p>
 </details>
 
-R Data Structures: Array</summary>
+<details><summary>R Data Structures: Array</summary>
 <p>
 
 `array(v,dim=c(row,col,m))`
@@ -681,7 +683,7 @@ M[,,1, drop=FALSE]
 </p>
 </details>
 
-R Data Structures: List</summary>
+<details><summary>R Data Structures: List</summary>
 <p>
 
 Used to store elements of different types and structures, e.g. vectors, matrices, etc
@@ -714,7 +716,7 @@ mylist[[1]][4]    #4th element of 1st item
 </p>
 </details>
 
-R String Manipulation</summary>
+<details><summary>R String Manipulation</summary>
 <p>
 
 There are several tools for manipulating text strings.  Here are a few examples
@@ -750,7 +752,7 @@ tolower(x)
 </p>
 </details>
 
-R Data Structures: Data Frame</summary>
+<details><summary>R Data Structures: Data Frame</summary>
 <p>
 
 A data frame holds "tidy" data
@@ -785,7 +787,7 @@ str(trees)
 ___
 
 
-R Working Directory</summary>
+<details><summary>R Working Directory</summary>
 <p>
 
 Before you start reading and writing files, it is important to know where the working directory is
@@ -813,7 +815,7 @@ getwd()
 </details>
 
 
-R Reading in Data from File</summary>
+<details><summary>R Reading in Data from File</summary>
 <p>
 
 You will typically read in your data from a comma or tab delimited file.  It is read in as a data frame by default
@@ -872,7 +874,7 @@ tail(ch6)
  </p>
  </details>
 
-R Writing Data</summary>
+<details><summary>R Writing Data</summary>
 <p>
 
 You will typically write a dataframe to a csv or tab delimited file.
@@ -905,7 +907,7 @@ list.files()
 </details>
 
 
-R Working Directory</summary>
+<details><summary>R Working Directory</summary>
 <p>
 
 Before you start reading and writing files, it is important to know where the working directory is
@@ -939,7 +941,7 @@ getwd()
 </details>
 
 
-Read in `H938_Euro_chr6.geno`</summary>
+<details><summary>Read in `H938_Euro_chr6.geno`</summary>
 <p>
 
 This file contains 7 columns
