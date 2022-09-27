@@ -67,7 +67,6 @@ The repository is named CSB, and it contains all of the example files and direct
 </p>
 </details>
 
-
 ___
 
 
@@ -83,7 +82,7 @@ We will not use `R Studio` today.  I want you to use the terminal to run R for n
 
 ___
 
-<details><summary>What is [`R`](https://cran.revolutionanalytics.com/)?</summary>
+<details><summary>What is R?</summary>
 <p>
 
 [`R`](https://cran.revolutionanalytics.com/) is a powerful statistical computing language
