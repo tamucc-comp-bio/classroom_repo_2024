@@ -857,7 +857,7 @@ tail(ch6)
 
  * CHR – chromosome
 
- * SNP – single nucleotide polym
+ * SNP – single nucleotide polymorphism
 
  * A1 – allelic state 1
 
