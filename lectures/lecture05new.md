@@ -906,40 +906,6 @@ list.files()
 </details>
 
 
-<details><summary>R Working Directory</summary>
-<p>
-
-Before you start reading and writing files, it is important to know where the working directory is
-
-`getwd(“path”)`
-
- * shows where you are
-
-`setwd(“path”)`
-
- * changes where you are
-
-Note, root in windows is C:/ rather than /.  
-
-_Pro tip: "tab to autocomplete" works in both the `R` terminal and R Studio, just as in the the `bash` shell._
-
-
-```R
-rm(list=ls())
-
-getwd()
-
-#use your own path below
-setwd("C:/Users/cbird/Documents/CloudStation/Teaching/Summer_2019/PhilippinesWorkshop/CSB/r/sandbox")
-
-getwd()
-```
-
----
-</p>
-</details>
-
-
 <details><summary>Read in `H938_Euro_chr6.geno`</summary>
 <p>
 
