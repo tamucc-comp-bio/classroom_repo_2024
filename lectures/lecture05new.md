@@ -496,7 +496,7 @@ We can query the data type of a variable using `is.type(variable)`
 </p>
 </details>
 
-<details><summary>R Data Structures</summary>
+<details><summary>R Data Structures: Vectors</summary>
 <p>
 
 * Data structures store your data
