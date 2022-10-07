@@ -437,36 +437,38 @@ Global Environment (upper right)
 
 ## IV. New Material Not Previously Covered: More R, but now in R Studio
 
-From here forward, I request that you please work in R Studio, unless otherwise specified, to reduce minor issues that might crop up between platforms. However, it is important to realize that everything we are learning will also work in the basic R terminal from the linux/unix command line and with minor exceptions, allmost nothing we cover will be only usable in R Studio.
+From here forward, I request that you please work in R Studio, unless otherwise specified, to reduce minor issues that might crop up between platforms. However, it is important to realize that everything we are learning will also work in the R terminal from the linux/unix command line and with minor exceptions, _almost_ nothing we cover will be only usable in R Studio.
 
 You should type commands into the R Studio `text editor` (upper left panel) and then execute them from there using your mouse or arrow keys and `ctrl` + `enter`.  You can save your work as you would in other GUI apps.
 
 ---
 
 
-<details><summary>Required Housekeeping for Win10 Only, Clone CSB Dir Into Your Windows Home Dir</summary>
+<details><summary>Required Housekeeping for Windows Only, Clone CSB Dir Into Your Windows Home Dir</summary>
 <p>
 
 _If you already did this when following the instructions to prep your computer at the top of this doc, then you do not have to do this again._
 
-For now, we should all be in the `sandbox` for the `r` chapter in `CSB`. An just to make things a little more tricky, if you have windows, you cannot access the `CSB` repo that you cloned to your home directory in ubuntu. So, we have to clone it again, but this time to your windows home dir (at least what R Studio recognizes as your windows home dir, `Documents`).
+For now, we should all be in the `sandbox` for the `r` chapter in `CSB`. 
 
-Open your ubuntu terminal (mac folks can take a break) and navigate to your windows `Documents` directory, then clone the CSB repo to there.
+Just to make things a little more tricky, if you have windows, it is not easy to access the `CSB` repo that you cloned to your home directory in Ubuntu from RStudio. So, we have to clone the repo again, but this time to the `Downloads` dir inside your windows home dir.
+
+Open your ubuntu terminal and navigate to your windows `Downloads` directory, then clone the CSB repo to there.
 
 ```bash
 # make sure you are in ubuntu
-cd /mnt/c/Users/YourWinUserName/Documents 
-git clone https://github.com/CSB-book/CSB.git
+cd /mnt/c/Users/YourWinUserName/Downloads
+git clone git@github.com:tamucc-comp-bio-2022/CSB.git
 ```
 
-You can now leave ubuntu. 
+You can now close the ubuntu terminal. (single tear)
 
 ---
 
 </p>
 </details>
 
-<details><summary>R Working Directories</summary>
+<details><summary>RStudio Working Directories</summary>
 <p>
 
 *Never has specifying the present working directory been more critical than in R Studio.*  This is one of the achilles heels of R Studio, and the linux terminal is actually more convenient and intuitive. 
@@ -509,7 +511,7 @@ getwd()
 </details>
 
 
-<details><summary>R Working Directories - Pro Solution</summary>
+<details><summary>RStudio Working Directories - Pro Solution</summary>
 <p>
 
 There is a "magic" line of code that will solve all of your working directory issues in R.
@@ -519,6 +521,8 @@ You must have the `rstudioapi` package installed
 ```r
 install.packages("rstudioapi")
 ```
+
+And your script in the code editor panel of RStudio must be saved on your computer, or else you will get an error because the document does not exist in the directory structure.
 
 ```r
 # You're welcome, and remember this moment when you're evaluating the course ;-)
