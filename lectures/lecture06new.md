@@ -1,4 +1,4 @@
-# Week06 R Boot Camp II: Statistical Computing Ch 8
+# Week06 R Boot Camp II: Statistical Computing 
 
 ###  Assignment 5 is due by beginning of class (complete Mind Expanders 8.2-8.5)
 
@@ -85,126 +85,11 @@ I converted the lecture slides into this markdown document so you will not use t
 
 ## II. Review Material Covered for Homework
 
-### R Working Directory
-
-Before you start reading and writing files, it is important to know where the working directory is
-
-`getwd(“path”)`
-
- * shows where you are
-
-`setwd(“path”)`
-
- * changes where you are
-
-Note, root in windows is C:/ rather than /.  
-
-_Pro tip: "tab to autocomplete" works in both the `R` terminal and R Studio, just as in the the `bash` shell._
+<details><summary>R Scripts</summary>
+<p>
 
 
-```R
-rm(list=ls())
-
-getwd()
-
-#use your own path below
-setwd("C:/Users/cbird/Documents/CloudStation/Teaching/Summer_2019/PhilippinesWorkshop/CSB/r/sandbox")
-
-getwd()
-```
-
-___
-
-
-### R Reading in Data from File
-
-You will typically read in your data from a comma or tab delimited file.  It is read in as a data frame by default
-
-Comma delimited files: 
-
-	`read.csv(“MyFile.csv”)` 
-	
-	`read.csv(“MyFile.csv”, header=TRUE) #csv has col headers`
-	
-	`read.csv(“MyFile.csv”, sep=“;”) #separator is semicolon`
-	
-	`read.csv(“MyFile.csv”, skip=5)   #skip 1st 5 lines`
-	
-
-Tab delimited files: `read.table()`
-
-See the help pages for both `read.csv` and `read.table` for complete functionality
-
-
-```R
-help(read.csv)
-# to exit type 'q'
-```
-
-We will read  `H938_Euro_chr6.geno` into a variable called `ch6` in R. 
-
-```R
-#read in data
-#make sure you use the correct path for your computer
-ch6 <- read.table("../data/H938_Euro_chr6.geno", header=TRUE)
-str(ch6)
-dim(ch6)
-head(ch6)
-tail(ch6)
-
-```
-
-* This file contains 7 columns
-
- * CHR – chromosome
- 
- * SNP – single nucleotide polym
- 
- * A1 – allelic state 1
- 
- * A2 – allelic state 2
- 
- * nA1A1 - # homozyg A1
- 
- * nA1A2 - # heterozyg
- 
- * nA2A2 - # homozyg A2
-
-___
-
-### R Writing Data
-
-You will typically write a dataframe to a csv or tab delimited file.
-
-Comma delimited files (this is pseudo code, do not type in):
-
-`write.csv(MyDF, “MyFile.csv”) `
-
-#don’t overwrite
-
-`write.csv(MyDF, “MyFile.csv”, append=TRUE) `	
-
-#no header row
-
-`write.csv(MyDF, “MyFile.csv”, col.names=FALSE)`
-
-See documentation for write, write.csv, write.table for full functionality
-
-Here we will save the file we just read into the variable `ch6` as a new comma delimited file named `H938_Euro_chr6.csv`
-
-```R
-write.csv(ch6, "H938_Euro_chr6.csv")
-
-# view files in present working directory
-list.files()
-```
-
-___
-
-
-### R Scripts
-
-Scripts are text files that contain the commands you give to R and have many advantages in biological research.  Your text editor (Notepad ++ or BBedit) is used to write scripts and has many functions built in to aid in code writing.  R Studio a special development environment for writing, testing, and running R scripts that we will cover shortly, but not yet.
+Scripts are text files that contain the commands you give to R and have many advantages in biological research.  Your text editor (Notepad ++ or BBedit) is used to write scripts and has many functions built in to aid in code writing.  R Studio is a special development environment for writing, testing, and running R scripts that we will cover shortly, but not yet.
 
 * Recycling
 
@@ -222,12 +107,15 @@ Scripts are text files that contain the commands you give to R and have many adv
 
   * submit with your manuscript, review for errors
 
-___
+---
+</p>
+</details>
+
+<details><summary>Writing Good Code</summary>
+<p>
 
 
-### Writing Good Code
-
-Use descriptive names with [camelCase](https://en.wikipedia.org/wiki/Camel_case) or words_separated_by underscores
+#### Use descriptive names with [camelCase](https://en.wikipedia.org/wiki/Camel_case) or words_separated_by_underscores
 
 * Files 	– `model_fitting.R`   
 
@@ -235,7 +123,7 @@ Use descriptive names with [camelCase](https://en.wikipedia.org/wiki/Camel_case)
 
 * Functions 	– `calculate_cv`
 
-Be consistent in use of spaces
+#### Be consistent in use of spaces
 
 ```R
 # poor formatting
@@ -248,7 +136,7 @@ M <- matrix(25, 5, 5)
 Z <- mean(m, na.rm == TRUE)
 ```
 
-Use indenting to organize hierarchical code
+#### Use indenting to organize hierarchical code
 
 ```R
 if (b == 5) {
@@ -258,7 +146,7 @@ if (b == 5) {
 }
 ```
 
-Document your code so that it is easy to understand what you are trying to accomplish
+#### Document your code so that it is easy to understand what you are trying to accomplish
 
 * After a shebang!, the first line(s) of your R script should describe what the R script does and how to use it
 
@@ -266,17 +154,22 @@ Document your code so that it is easy to understand what you are trying to accom
 
 * Use tabs to align comments
 
-Use empty lines to break up sections of code
+#### Use empty lines to break up sections of code
 
-Load libraries and set hard-coded variables at the beginning in one location, rather than scattering them throughout the script
+#### Load libraries and set hard-coded variables at the beginning in one location, rather than scattering them throughout the script
 
 ![](Week06_files/formatted_code.png)
 
-###########################################################
+---
+</p>
+</details>
 
-Auto formatting in R Studio
+<details><summary>Auto formatting in R Studio</summary>
+<p>
 
-The `Code` drop down menu contains functions specific to code formatting
+In RStudio, a lot of formatting is done automatically for you, making it very convenient for developing R code.
+
+Further, the `Code` drop down menu contains functions specific to code formatting
 
 * Code / Reformat Code
 
@@ -284,12 +177,13 @@ The `Code` drop down menu contains functions specific to code formatting
 
 ![](Week06_files/rstudio_codeformatting.png)
 
-##########################################################
 
-___
+---
+</p>
+</details>
 
-
-### R `for` and `while` Loops
+<details><summary>R `for` and `while` Loops</summary>
+<p>
 
 Allows you to perform repetitive tasks in a few lines of code. A `for` loop has a predetermined number of cycles where as a `while` loop will cycle continuously until a condition is met.  Be careful with `while` loops because they could run infinitely if the condition is never met.
 
@@ -337,16 +231,19 @@ while(i <= 10){   #while i <= 10
 
 ```
 
-___
+---
+</p>
+</details>
 
 
 ### [Mind Expander 8.4](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMlRGTE9aQVQ3QUtBQlBOUEtHN1g3QUVDOS4u)
 
 
-___
+---
 
 
-### R `if`-`then` Logic Statements
+<details><summary>R `if`-`then` Logic Statements</summary>
+<p>
 
 Run code conditionally, only if something is true or false.
 
@@ -416,40 +313,43 @@ ___
 
 ## III. New Material Not Previously Covered: R Studio
 
-### [R Studio](https://rstudio.com/) is a [GUI](https://en.wikipedia.org/wiki/Graphical_user_interface) Integrated Development Environment ([IDE](https://en.wikipedia.org/wiki/RStudio)) for `R` 
 
-`R Studio` was completely free, but it has become a "dot com" when it was acquired by Microsoft (I think).  It is still free for academic use.  If/When they charge for it, academics will stop using it.  It is still open source and could be forked, just as R was forked from [S](https://en.wikipedia.org/wiki/S_%28programming_language%29).  
+<details><summary>R Studio</summary>
+<p>
+
+#### [R Studio](https://rstudio.com/) is a [GUI](https://en.wikipedia.org/wiki/Graphical_user_interface) Integrated Development Environment ([IDE](https://en.wikipedia.org/wiki/RStudio)) for `R` 
+
+`R Studio` was completely free, but it has become a "dot com" when it was acquired by Microsoft (I think).  It is still free for academic use.  If/When they charge for it, academics will stop using it.  It is still open source and could be forked.  Fun fact, `R` was made to be an opensource version of of [`S`](https://en.wikipedia.org/wiki/S_%28programming_language%29), just like `linux` is an opensource version of `unix`.  
 
 Connections: the Chief Engineer of R Studio is [Hadley Wickham](https://en.wikipedia.org/wiki/Hadley_Wickham), who coined and codified "tidy data". He will come up again when we get into "the tidyverse", which essentially replaces almost all basic R functionality with a different philosophy. I think of it as essentially R 2.0. Realize, however, you do NOT need R Studio to use the "tidyverse".
 
 ![](Week06_files/rstudio.png)
 
+---
 
-___
+</p>
+</details>
 
-
-### Installing `R Studio`
+<details><summary>Installing `R Studio`</summary>
+<p>
 
 _If you already did this when following the instructions to prep your computer at the top of this doc, then you do not have to do this again._
 
 If you have a Mac and you already installed `R` for use in your terminal, you do not need to reinstall it.
 
-If you have a windows computer, you will need to separately install `R` in the windows environment even if you already installed it in Ubuntu.  Go to the following link, download R for Windows and run the installer as you would for any other windows app.  
+If you have a windows computer, you will need to separately install `R` in the windows environment even if you already installed it in Ubuntu.  
 
-*If you installed R a while ago (more than a month ago), you should do it again or else problems will start to crop up*
+[Install R](../resources/install_r.md)
 
-1. [R Install](https://cran.revolutionanalytics.com/)
+[Install RStudio]()
 
-Regardless of your operating system, if you have not already installed R studio, you need to do that now.  On windows computers, install R studio in Windows.  
+---
 
-*If you installed R Studio a while ago, you should do it again to upate to the latest version.*
+</p>
+</details>
 
-2. [RStudio Install](https://rstudio.com/products/rstudio/download/?utm_source=downloadrstudio&utm_medium=Site&utm_campaign=home-hero-cta#download)
-
-___
-
-
-### `R Studio` Layout
+<details><summary>`R Studio` Layout</summary>
+<p>
 
 R Studio is organized, by default, into 4 panels:
 
@@ -478,10 +378,13 @@ Note that there can be several tabs in the panels, allowing you to toggle betwee
 ![](Week06_files/rstudio_layout.png)
 
 
-___
+---
 
+</p>
+</details>
 
-### Acclimating to the `R Studio` IDE
+<details><summary>Acclimating to the `R Studio` IDE</summary>
+<p>
 
 Follow the instructions in the following image to see the difference between the `text editor` panel and the `console` pane.
 
@@ -528,7 +431,10 @@ Global Environment (upper right)
   
     * for example, now you can see that `x` is a "value", and not a "vector", "matrix", "array", "list", or "data frame"
 
-___
+---
+
+</p>
+</details>
 
 
 ## IV. New Material Not Previously Covered: More R, but now in R Studio
@@ -537,10 +443,11 @@ From here forward, I request that you please work in R Studio, unless otherwise 
 
 You should type commands into the R Studio `text editor` (upper left panel) and then execute them from there using your mouse or arrow keys and `ctrl` + `enter`.  You can save your work as you would in other GUI apps.
 
-___
+---
 
 
-### Required Housekeeping for Win10 Only, Clone CSB Dir Into Your Windows Home Dir
+<details><summary>Required Housekeeping for Win10 Only, Clone CSB Dir Into Your Windows Home Dir</summary>
+<p>
 
 _If you already did this when following the instructions to prep your computer at the top of this doc, then you do not have to do this again._
 
@@ -556,10 +463,13 @@ git clone https://github.com/CSB-book/CSB.git
 
 You can now leave ubuntu. 
 
-___
+---
 
+</p>
+</details>
 
-### R Working Directories
+<details><summary>R Working Directories</summary>
+<p>
 
 *Never has specifying the present working directory been more critical than in R Studio.*  This is one achilles heels of R Studio where the linux terminal is actually more convenient and intuitive. 
 
@@ -595,9 +505,13 @@ setwd("~/CSB/r/sandbox")
 getwd()
 ```
 
-___
+---
 
-### R Functions
+</p>
+</details>
+
+<details><summary>R Functions</summary>
+<p>
 
 Thus far we have used several built-in functions of R
 
@@ -663,10 +577,13 @@ isTriangular(91)
 
 ![](Week06_files/rstudio_fuctions.png)
 
-___
+---
 
+</p>
+</details>
 
-### Sourcing R Functions
+<details><summary>Sourcing R Functions</summary>
+<p>
 
 If there are functions that you use frequently across different projects, you can save them into their own script and `source()` them in a different script.
 
@@ -689,10 +606,13 @@ isTriangular(91)
 
 ![](Week06_files/rstudio_source.png)
 
-___
+---
 
+</p>
+</details>
 
-### More Function Sourcing
+<details><summary>More Function Sourcing</summary>
+<p>
 
 We are going to add another function to the `triangular.R` script (open it).  
 
@@ -725,10 +645,13 @@ isTriangular(91)
 findTriangular(1000)
 ```
 
-___
+---
 
+</p>
+</details>
 
-### Even More Functions
+<details><summary>Even More Functions</summary>
+<p>
 
 Can have no arguments
 
@@ -782,10 +705,13 @@ split_string("I_get_it!")
 
 ![](Week06_files/rstudio_evenMoreFunctions.png)
 
-___
+---
 
+</p>
+</details>
 
-### R Packages & Libraries
+<details><summary>R Packages & Libraries</summary>
+<p>
 
 A package is a collection of R code, data, and functions that have been made publicly available
 
@@ -833,10 +759,13 @@ library(ctv)
 You can learn more about `ctv` [here](https://cran.r-project.org/web/packages/ctv/index.html). Click on the pdf for the manual. This was an example given by the book, so do not read too much into this.
 
 ___
+---
 
+</p>
+</details>
 
-
-### R Random Numbers
+<details><summary>R Random Numbers</summary>
+<p>
 
 Random numbers are useful for simulations and customized tests for statistical significance
 
@@ -881,17 +810,19 @@ sample(x,10,replace=TRUE) #bootstrapping
 ```
 
 
-___
+---
 
+</p>
+</details>
 
 
 ### Mind Expander 6
 
 
-___
+---
 
-
-### R Loops are Slow
+<details><summary>R Loops are Slow</summary>
+<p>
 
 For and while loops in R are easy to use but are very slow because R runs commands 1 by 1 and does not know what is coming next.  
 
@@ -924,11 +855,13 @@ system.time(get_row_means(M))
 
 ![](Week06_files/rstudio_slowloop.png)
 
-___
+---
 
+</p>
+</details>
 
-
-### Vectorized R Loops are Fast
+<details><summary>Vectorized R Loops are Fast</summary>
+<p>
 
 Vectorized functions can run loops much faster because R only has to figure out the flow for 1 element in the vector and the code runs much faster. 
 
@@ -943,10 +876,13 @@ system.time(rowMeans(M))
 
 ![](Week06_files/rstudio_fastloop.png)
 
-___
+---
 
+</p>
+</details>
 
-### DIY Vectorization of Loops with `apply()`
+<details><summary>DIY Vectorization of Loops with `apply()`</summary>
+<p>
 
 `lapply(list_of_values, function)`
 
@@ -1012,11 +948,13 @@ print(numGs)
 ![](Week06_files/rstudio_diyfastloop.png)
 
 
-___
+---
 
+</p>
+</details>
 
-
-### R Debugging
+<details><summary>R Debugging</summary>
+<p>
 
 Errors in the code (bugs) are common
 
@@ -1064,10 +1002,13 @@ After you run the code, you enter debugging mode at the line of `browser()` comm
 ![](Week06_files/rstudio_debugging2.png)
 
 
-___
+---
 
+</p>
+</details>
 
-### Basic R Statistics
+<details><summary>Basic R Statistics</summary>
+<p>
 
 R is a stats language and has many statistical functions built-in
 
@@ -1138,15 +1079,20 @@ summary(petalL_ANOVA)
 
 ![](Week06_files/rstudio_stats2.png)
 
-___
+---
 
+</p>
+</details>
 
 ### Mind Expander 8.7
 
-___
+---
 
+</p>
+</details>
 
-### R Basic Plotting
+<details><summary>R Basic Plotting</summary>
+<p>
 
 R also has built in commands for plotting results
 
@@ -1201,10 +1147,13 @@ boxplot(Petal.Width ~ Species, data=iris,
 
 ![](Week06_files/rstudio_plots.png)
 
-___
+---
 
+</p>
+</details>
 
-### Running R Script from Linux Command Line
+<details><summary>Running R Script from Linux Command Line</summary>
+<p>
 
 You may want to run your r script on a super computer or use it in a bash script
 
@@ -1249,7 +1198,10 @@ print(c(input_file, num_reps, start_point))
 
 ![](Week06_files/Rscript.png)
 
-___
+---
+
+</p>
+</details>
 
 
 ## V. Homework
