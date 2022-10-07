@@ -138,7 +138,7 @@ SECTION 2. DATA WRANGLING AND VISUALIZATION WITH R
 
 * [10/02  Week06 Base R Bootcamp II](lectures/lecture06new.md)
 
-  * [Assignment 06, Due 10/07](https://classroom.github.com/a/ATshIvd8)
+  * [Assignment 06, Due 10/07](https://classroom.github.com/a/O8hMJ5r0)
 
 
 

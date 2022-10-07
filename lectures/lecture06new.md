@@ -809,7 +809,7 @@ Library conflicts occur when you load two libraries that have at least one comma
 Library conflicts are a primary reason why R code breaks. You can avoid this by using the library name when you call the command.  In the example below, the library is `dplyr` and the command is `select`
 
 ```r
-# don't type this in
+# don't type this in right now
 dplyr::select()
 ```
 
@@ -875,7 +875,7 @@ sample(x,10,replace=TRUE) #bootstrapping
 </details>
 
 
-### Mind Expander 6
+### [Mind Expander 8.6](https://forms.office.com/r/qSCU9G4MNM)
 
 
 ---
@@ -1099,7 +1099,7 @@ which.max(iris$Petal.Length)
 ![](Week06_files/rstudio_stats.png)
 
 
-t-test:  compare two samples
+[t-test](https://en.wikipedia.org/wiki/Student%27s_t-test):  compare two samples and determine the probability that the differences are due to random chance.  _Fun fact: the t-test was developed in the Guinness Brewery._ 
 
 * `t.test(vector1, vector2)`
 
@@ -1265,6 +1265,6 @@ print(c(input_file, num_reps, start_point))
 
 ## V. Homework
 
-[Complete exercise 8.23.3 in the text - I will link a github repo for this assignment](https://classroom.github.com/a/ATshIvd8)
+[Complete exercise 8.23.3 in the text - I will link a github repo for this assignment](https://classroom.github.com/a/O8hMJ5r0)
 
 
