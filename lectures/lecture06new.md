@@ -469,7 +469,7 @@ You can now leave ubuntu.
 <details><summary>R Working Directories</summary>
 <p>
 
-*Never has specifying the present working directory been more critical than in R Studio.*  This is one achilles heels of R Studio where the linux terminal is actually more convenient and intuitive. 
+*Never has specifying the present working directory been more critical than in R Studio.*  This is one of the achilles heels of R Studio, and the linux terminal is actually more convenient and intuitive. 
 
 *_You will need to be vigilent in setting your present working directory each time you open `R Studio` and every time you switch between scripts that are found in different directories._* 
 
@@ -507,6 +507,31 @@ getwd()
 
 </p>
 </details>
+
+
+<details><summary>R Working Directories - Pro Solution</summary>
+<p>
+
+There is a "magic" line of code that will solve all of your working directory issues in R.
+
+You must have the `rstudioapi` package installed 
+
+```r
+install.packages("rstudioapi")
+```
+
+```r
+# You're welcome, and remember this moment when you're evaluating the course ;-)
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+```
+
+There is one caveat.  This line will break your code if it is not run in RStudio.  Consequently, you should comment it out when not using RStudio.  If you want to be super slick, you could put it inside of a logic statement that determines whether the code is being run in R Studio.  When you're running a script from command line, it sets the working dir to the dir the script is in, so this line or `setwd()` should not be needed.
+
+---
+
+</p>
+</details>
+
 
 <details><summary>R Functions</summary>
 <p>
