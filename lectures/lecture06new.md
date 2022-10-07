@@ -434,14 +434,13 @@ Global Environment (upper right)
 </p>
 </details>
 
+---
 
 ## IV. New Material Not Previously Covered: More R, but now in R Studio
 
 From here forward, I request that you please work in R Studio, unless otherwise specified, to reduce minor issues that might crop up between platforms. However, it is important to realize that everything we are learning will also work in the R terminal from the linux/unix command line and with minor exceptions, _almost_ nothing we cover will be only usable in R Studio.
 
 You should type commands into the R Studio `text editor` (upper left panel) and then execute them from there using your mouse or arrow keys and `ctrl` + `enter`.  You can save your work as you would in other GUI apps.
-
----
 
 
 <details><summary>Required Housekeeping for Windows Only, Clone CSB Dir Into Your Windows Home Dir</summary>
