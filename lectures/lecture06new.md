@@ -202,41 +202,6 @@ list.files()
 ___
 
 
-
-### Read in `H938_Euro_chr6.geno`
-
-This file contains 7 columns
-
-* CHR – chromosome
-
-* SNP – single nucleotide polym
-
-* A1 – allelic state 1
-
-* A2 – allelic state 2
-
-* nA1A1 - # homozyg A1
-
-* nA1A2 - # heterozyg
-
-* nA2A2 - # homozyg A2
-
-```R
-#make sure you use the correct path for your computer
-ch6 <- read.table("../data/H938_Euro_chr6.geno", 
-                  header=TRUE)
-dim(ch6)
-head(ch6)
-tail(ch6)
-```
-
-___
-
-### [Mind Expander 8.3](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUQTRGOTA5UDRZMzlPSjEwTUxCVzBIOEdKRi4u)
-
-___
-
-
 ### R Scripts
 
 Scripts are text files that contain the commands you give to R and have many advantages in biological research.  Your text editor (Notepad ++ or BBedit) is used to write scripts and has many functions built in to aid in code writing.  R Studio a special development environment for writing, testing, and running R scripts that we will cover shortly, but not yet.
