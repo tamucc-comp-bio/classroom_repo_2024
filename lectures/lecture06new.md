@@ -524,7 +524,7 @@ install.packages("rstudioapi")
 And your script in the code editor panel of RStudio must be saved on your computer, or else you will get an error because the document does not exist in the directory structure.  Use the GUI to save a blank script to `CSB/r/sandbox/lecture_06.R`
 
 ```r
-# check your working dir by running this in the 'console'
+# check your working dir by running this in the 'console' (lower left panel)
 getwd()
 ```
 
@@ -534,7 +534,7 @@ Then, copy the magic line of code below into your script and run it.
 # this line of code is the first line in every R script I make.
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 
-# Now witness the magic
+# Now witness the magic by typing this into the "console" (lower left panel)
 getwd()
 
 # You're welcome, and remember this moment when you're evaluating the course ;-)
@@ -608,7 +608,7 @@ This function identifies numbers that are triangular.
 
 ![](Week06_files/triangular.png)
 
-After the function is loaded into the enviroment, it can be used.  Try it out:
+After the function is loaded into the environment (upper right panel of RStudio), it can be used.  Try it out in the console (lower left panel):
 
 ```R
 isTriangular(4)
@@ -693,21 +693,19 @@ findTriangular(1000)
 <details><summary>Even More Functions</summary>
 <p>
 
-Can have no arguments
+#### Can have no arguments
 
 * `myFunc <- function(){commands}`
 
-Can have multiple arguments. Variables outside of the function must be read into the function
+#### Can have multiple arguments. Variables outside of the function must be read into the function
 
 * `myFunc <- function(a,b,c){commands}`
 
-Can have default arguments. When run, a will be 2 unless another value is specified
+#### Can have default arguments. When run, `a` will be 2 unless another value is specified
 
 * `myFunc <- function(a=2){commands}`
 
-Do not have to return values
-
-Variables outside of the function are only available by passing them into the function, and vice versa
+#### Variables outside of the function are only available by passing them into the function, and vice versa
 
 You can explore these features by trying the following code (do not modify the `triangular.R` script)
 
@@ -782,7 +780,7 @@ Making packages
 
 * http://r-pkgs.had.co.nz/ 
 
-When you add a package, you are adding commands and functionality.  Once installed, packages must be called to be available to you using `library()`. 
+When you add a package, you are adding commands and functionality.  Once installed, packages must be called using `library()` to allow you to use them. 
 
 ```R
 # Search for Packages
@@ -798,7 +796,28 @@ library(ctv)
 
 You can learn more about `ctv` [here](https://cran.r-project.org/web/packages/ctv/index.html). Click on the pdf for the manual. This was an example given by the book, so do not read too much into this.
 
-___
+---
+
+</p>
+</details>
+
+<details><summary>Avoiding Library Conflicts</summary>
+<p>
+
+Library conflicts occur when you load two libraries that have at least one command with the same name.  For example, many packages have a `select` command.  These commands only share the same name, but they are, in fact, different.
+
+Library conflicts are a primary reason why R code breaks. You can avoid this by using the library name when you call the command.  In the example below, the library is `dplyr` and the command is `select`
+
+```r
+# don't type this in
+dplyr::select()
+```
+
+
+The order that libraries are loaded affects which library takes precidence over another library. If another library with a `select` command is loaded after `dplyr`, it's `select` command will take precidence unless the package and command are specified, as in the code block above.
+
+When you are loading libraries, you will be notified of these conflicts in the "console" (lower left panel)
+
 ---
 
 </p>
