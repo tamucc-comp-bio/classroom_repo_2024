@@ -4,9 +4,6 @@ It is important that you keep R Studio up to date on your computer.  If you do n
 
 _Note: you will not be installing R Studio on Ubuntu. If you have a Windows computer, you'll be working in windows._
 
-<details><summary>Installing RStudio on Windows</summary>
-<p>
-
 <details><summary>Install `R`</summary>
 <p>
 
