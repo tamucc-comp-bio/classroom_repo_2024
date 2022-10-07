@@ -69,6 +69,11 @@ The repository is named CSB, and it contains all of the example files and direct
 </p>
 </details>
 
+[If you have not already, install R](../resources/install_r.md)
+
+[If you have not already, install RStudio](../resources/install_rstudio.md)
+
+
 ---
 
 
