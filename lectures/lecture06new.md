@@ -85,6 +85,37 @@ I converted the lecture slides into this markdown document so you will not use t
 
 ## II. Review Material Covered for Homework
 
+### R Working Directory
+
+Before you start reading and writing files, it is important to know where the working directory is
+
+`getwd(“path”)`
+
+ * shows where you are
+
+`setwd(“path”)`
+
+ * changes where you are
+
+Note, root in windows is C:/ rather than /.  
+
+_Pro tip: "tab to autocomplete" works in both the `R` terminal and R Studio, just as in the the `bash` shell._
+
+
+```R
+rm(list=ls())
+
+getwd()
+
+#use your own path below
+setwd("C:/Users/cbird/Documents/CloudStation/Teaching/Summer_2019/PhilippinesWorkshop/CSB/r/sandbox")
+
+getwd()
+```
+
+___
+
+
 ### R Reading in Data from File
 
 You will typically read in your data from a comma or tab delimited file.  It is read in as a data frame by default
@@ -170,36 +201,6 @@ list.files()
 
 ___
 
-
-### R Working Directory
-
-Before you start reading and writing files, it is important to know where the working directory is
-
-`getwd(“path”)`
-
- * shows where you are
-
-`setwd(“path”)`
-
- * changes where you are
-
-Note, root in windows is C:/ rather than /.  
-
-_Pro tip: "tab to autocomplete" works in both the `R` terminal and R Studio, just as in the the `bash` shell._
-
-
-```R
-rm(list=ls())
-
-getwd()
-
-#use your own path below
-setwd("C:/Users/cbird/Documents/CloudStation/Teaching/Summer_2019/PhilippinesWorkshop/CSB/r/sandbox")
-
-getwd()
-```
-
-___
 
 
 ### Read in `H938_Euro_chr6.geno`
