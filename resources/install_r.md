@@ -1,3 +1,9 @@
+# Installing R
+
+It is critically important that you keep R up to date on your computer.  If you do not, you will start to run into compatibility issues between R and R packages, and your code will stop working, and you will spend hours trying to figure out why. So, even if you have R already, it's a good idea to make sure it's the newest version.
+
+_Note: when you reinstall R, you generally lose all of your packages from the old version, and you will have to install them again.  While this is arduous, it does ensure a match between your packages and your R version._
+
 <details><summary>Checking to see if you have R</summary>
 <p>
 
