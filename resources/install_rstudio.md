@@ -7,13 +7,16 @@ _Note: you will not be installing R Studio on Ubuntu. If you have a Windows comp
 <details><summary>Installing RStudio on Windows</summary>
 <p>
 
-#### Install `R` 
+<details><summary>Install `R`</summary>
+<p>
 
-If you have a windows computer, you will need to separately install `R` in the windows environment even if you already installed it in Ubuntu.  [You can find R install instructions here](../resources/install_r.md)
+[You can find R install instructions here](../resources/install_r.md). If you have a windows computer, you will need to separately install `R` in the windows environment even if you already installed it in Ubuntu. 
 
 ---
+</p>
+</details>
 
-#### Install `R Studio`
+<details><summary>Install `R Studio`</summary>
 Regardless of your operating system, if you have not already installed R studio, you need to do that now.  On windows computers, install R studio in Windows.  
 
 *If you installed R Studio a while ago, you should do it again to upate to the latest version.*
@@ -23,8 +26,10 @@ Regardless of your operating system, if you have not already installed R studio,
 Make sure you install "RStudio Desktop Open Source Edition".  An install package will be downloaded to your computer and then you double click that file to install.
 
 ---
+</p>
+</details>
 
-#### Clone CSB Repo to Your Windows Home Dir
+<details><summary>Clone CSB Repo to Your Windows Home Dir</summary>
 
 Just to make things a little more tricky, if you have windows, it is not easy to access the `CSB` repo that you cloned to your home directory in Ubuntu from RStudio. So, we have to clone the repo again, but this time to the `Downloads` dir inside your windows home dir.
 
@@ -36,5 +41,8 @@ cd /mnt/c/Users/YourWinUserName/Downloads
 git clone git@github.com:tamucc-comp-bio-2022/CSB.git
 ```
 
+---
 </p>
 </details>
+
+
