@@ -239,9 +239,6 @@ while(i <= 10){   #while i <= 10
 ### [Mind Expander 8.4](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMlRGTE9aQVQ3QUtBQlBOUEtHN1g3QUVDOS4u)
 
 
----
-
-
 <details><summary>R `if`-`then` Logic Statements</summary>
 <p>
 
