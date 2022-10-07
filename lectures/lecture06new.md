@@ -521,11 +521,23 @@ You must have the `rstudioapi` package installed
 install.packages("rstudioapi")
 ```
 
-And your script in the code editor panel of RStudio must be saved on your computer, or else you will get an error because the document does not exist in the directory structure.
+And your script in the code editor panel of RStudio must be saved on your computer, or else you will get an error because the document does not exist in the directory structure.  Use the GUI to save a blank script to `CSB/r/sandbox/lecture_06.R`
 
 ```r
-# You're welcome, and remember this moment when you're evaluating the course ;-)
+# check your working dir by running this in the 'console'
+getwd()
+```
+
+Then, copy the magic line of code below into your script and run it.
+
+```r
+# this line of code is the first line in every R script I make.
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+
+# Now witness the magic
+getwd()
+
+# You're welcome, and remember this moment when you're evaluating the course ;-)
 ```
 
 There is one caveat.  This line will break your code if it is not run in RStudio.  Consequently, you should comment it out when not using RStudio.  If you want to be super slick, you could put it inside of a logic statement that determines whether the code is being run in R Studio.  When you're running a script from command line, it sets the working dir to the dir the script is in, so this line or `setwd()` should not be needed.
@@ -561,11 +573,13 @@ MyFunction <- function (optional arguments){
   
   * variables defined outside of the function are not available inside of the function unless they are passed in as arguments
   
-* A function is usually meant to return information, the `stdout`, that is availble outside of the function
+* A function is usually meant to return information, the `stdout`, that is available outside of the function
 
   * you can specify the `stdout` with the `return` command 
+  
+* When you make a function, try to make it follow the [Unix Philosophy](https://en.wikipedia.org/wiki/Unix_philosophy)
 
-Remember, functions must be read into the environment before you can use them.  Like Las Vegas, what happens in a function, stays in a function... except for the data you `return`
+Remember, functions must be read into the environment before you can use them.  Like Las Vegas, what happens in a function, stays in a function... except for the data it `return`s
 
 Let us make our first R function:
 
