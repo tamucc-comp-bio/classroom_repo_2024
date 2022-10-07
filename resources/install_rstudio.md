@@ -26,7 +26,7 @@ Make sure you install "RStudio Desktop Open Source Edition".  An install package
 </p>
 </details>
 
-<details><summary>Clone CSB Repo to Your Windows Home Dir</summary>
+<details><summary>Clone CSB Repo to Your Windows Home Dir (Win Only)</summary>
 
 Just to make things a little more tricky, if you have windows, it is not easy to access the `CSB` repo that you cloned to your home directory in Ubuntu from RStudio. So, we have to clone the repo again, but this time to the `Downloads` dir inside your windows home dir.
 
