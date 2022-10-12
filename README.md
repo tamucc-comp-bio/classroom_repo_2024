@@ -138,13 +138,13 @@ SECTION 2. DATA WRANGLING AND VISUALIZATION WITH R
 
 * [10/07  Week06 Base R Bootcamp II](lectures/lecture06new.md)
 
-  * [Assignment 06, Due 10/07](https://classroom.github.com/a/O8hMJ5r0)
+  * [Assignment 06, Due 10/14](https://classroom.github.com/a/O8hMJ5r0)
 
 
 
 * [10/14  Week07 Data Visualization w/ Tidyverse](lectures/lecture07new.md)
 
-  * [Assignment 07, Due 10/16](assignments/assignment_7new.md)
+  * [Assignment 07, Due 10/21](assignments/assignment_7new.md)
 
  <!--
  
