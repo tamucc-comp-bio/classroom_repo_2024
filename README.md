@@ -12,23 +12,7 @@ This is a 3-credit course for graduate students that introduces the powerful ope
 </p>
 </details>
 
-<details><summary>RESOURCES</summary>
-<p>
-
-Reference Book (not required): [Computing Skills for Biologists](https://computingskillsforbiologists.com/)
-
-[R for Data Science](https://r4ds.had.co.nz/)
-
-[CSB Guide to Downloading Software](https://computingskillsforbiologists.com/setup/)
-
-[CSB Text Book Resource Downloads](https://computingskillsforbiologists.com/downloads/)
-
-[CSB Text Book GitHub Repository](https://github.com/CSB-book/CSB)
-
-[Linux Cheat Sheet](resources/CheatSheetLinux_2022-09-02.pdf)
-
-</p>
-</details>
+[RESOURCES](resources/README.md)
 
 <details><summary>STUDENT LEARNING OUTCOMES</summary>
 <p>
