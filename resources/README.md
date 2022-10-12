@@ -38,7 +38,7 @@ This directory contains resources that will help you with your assignments .
 
 ---
 
-## Repositories
+## Repositories Used in Class
 
 * [CSB](https://github.com/tamucc-comp-bio-2022/CSB)
 
