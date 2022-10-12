@@ -136,23 +136,23 @@ SECTION 2. DATA WRANGLING AND VISUALIZATION WITH R
 
 
 
-* [10/02  Week06 Base R Bootcamp II](lectures/lecture06new.md)
+* [10/07  Week06 Base R Bootcamp II](lectures/lecture06new.md)
 
   * [Assignment 06, Due 10/07](https://classroom.github.com/a/O8hMJ5r0)
 
 
 
-* [10/07  Week07 Data Visualization w/ Tidyverse](lectures/lecture07new.md)
+* [10/14  Week07 Data Visualization w/ Tidyverse](lectures/lecture07new.md)
 
   * [Assignment 07, Due 10/16](assignments/assignment_7new.md)
 
  <!--
  
-* [10/16  Week08 Data Wrangling w/ Tidyverse](lectures/lecture08new.md)
+* [10/21  Week08 Data Wrangling w/ Tidyverse](lectures/lecture08new.md)
 
   * No Assignment
 
-* [10/23  Week09 R Markdown (Lite) & Data Wrangling Exercises](lectures/lecture09new.md)
+* [10/28  Week09 R Markdown (Lite) & Data Wrangling Exercises](lectures/lecture09new.md)
 
   * [Exam 2 Part 1, Due 11/04](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMk1SV05WNTUzOVZGR0ZDNkhBNDk4SVJYWS4u)
   * [Exam 2 Part 2, Due 11/04](https://classroom.github.com/a/dIIyk6Xd)
