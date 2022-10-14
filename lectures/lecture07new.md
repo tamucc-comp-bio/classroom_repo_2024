@@ -309,9 +309,9 @@ results %>%                                   # the %>% is a pipe, in bash it wa
 
 ```r 
 > t.test(tp1, 
-		 tp2, 
-		 paired = TRUE, 
-		 alternative = "less")
+         tp2, 
+         paired = TRUE, 
+         alternative = "less")
 
 	Paired t-test
 
