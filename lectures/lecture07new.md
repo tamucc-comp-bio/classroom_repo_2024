@@ -229,17 +229,17 @@ source("../solutions/getArea.R")
 
 # make list of files to processes
 files <- list.files("../data/leafarea", 
-					pattern = ".JPG")
+                    pattern = ".JPG")
 
 # create a data frame to record results
 results <- data.frame(JPG = character(), 
-					  area = numeric(), 
-					  stringsAsFactors = FALSE)
+                      area = numeric(), 
+                      stringsAsFactors = FALSE)
 
 # run function getArea on all images
 for (f in files) {
-	area <- getArea(f)
-	results[nrow(results) + 1, ] <- c(f, area)
+    area <- getArea(f)
+    results[nrow(results) + 1, ] <- c(f, area)
 }
 
 # convert the area column in the results data frame to numeric data
@@ -265,7 +265,7 @@ A function called `strsplit` can be used to break up the file names by delimiter
 ```R
 # extract plant information
 results$plant <- sapply(results$JPG, 
-						function(x) unlist(strsplit(x, "[_]|[.]"))[2])
+                        function(x) unlist(strsplit(x, "[_]|[.]"))[2])
 results$plant <- as.factor(results$plant)
 ```
 
@@ -279,8 +279,8 @@ tp1 <- results[results$tp == "t1", ]$area
 tp2 <- results[results$tp == "t2", ]$area
 
 plot(tp2 ~ tp1, 
-	 xlab = "Projected leaf area, tp1", 
-	 ylab = "Projected leaf area, tp2")
+     xlab = "Projected leaf area, tp1", 
+     ylab = "Projected leaf area, tp2")
 abline(c(0,1)) # add the 1-to-1 line
 ```
 
@@ -293,15 +293,15 @@ library(tidyverse)
 results %>%                                   # the %>% is a pipe, in bash it was |
   select(-JPG) %>%                            # remove the JPG column, we have to remove this col for the next command to work
   pivot_wider(names_from = tp, 
-			  values_from = area) %>% # pivot_wider makes columns named according to the unique names in the tp col and fills them with the values from the area column
+              values_from = area) %>% # pivot_wider makes columns named according to the unique names in the tp col and fills them with the values from the area column
   ggplot(aes(x=t1, 
-			 y=t2)) +                   # assign data to plot elements, in ggplot, the + means more ggplot settings follow on next line
+             y=t2)) +                   # assign data to plot elements, in ggplot, the + means more ggplot settings follow on next line
     geom_point(color="red4") +                # visualize the data with points
     geom_abline(linetype = "dashed") +        # draw y=x line
     labs(y="Projected leaf area (time 2)",    # edit the labels
-		 x="Projected leaf area (time 1)",
-		 title = "Change in Leaf Area",
-		 subtitle = "Tidyverse >> Base R") +
+         x="Projected leaf area (time 1)",
+         title = "Change in Leaf Area",
+         subtitle = "Tidyverse >> Base R") +
     theme_classic()                           # make it pretty
 ```
 
