@@ -1,6 +1,12 @@
-#Intro to ggplot2
-#Computing Skills for Biologists Ch 9.6 - end
+# Intro to ggplot2
+# Computing Skills for Biologists Ch 9.6 - end
 
+# It is assumed that this script has been saved to `CSB/data_wrangling/sandbox`
+
+# You can collapse the code sections with alt-o
+# You can expand the sections by clicking on triangles next to section headings
+
+#### INITIALIZE ####
 rm(list=ls())
 getwd()
 #set working directory to location of this script
@@ -9,20 +15,31 @@ setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 # if this does not return a dir that ends with `CSB/data_wrangling/sandbox` then save this script to your data_wrangling text box and re run the previous lines of code
 getwd()
 
-# This file contains all commands of the Chapter 9, "Data Wrangling and Visualisation"
+# This file contains all commands of the Chapter 9, "Data Wrangling and Visualization"
 
 # load the library
 library(tidyverse)
+
+
+#### USER DEFINED VARIABLES / READ IN DATA ####
+
 # read the data
 popsize <- read_tsv("../data/FauchaldEtAl2017/pop_size.csv")
 ndvi <- read_tsv("../data/FauchaldEtAl2017/ndvi.csv")
 seaice <- read_tsv("../data/FauchaldEtAl2017/sea_ice.csv")
 snow <- read_tsv("../data/FauchaldEtAl2017/snow.csv")
 
+#### READ IN DATA ####
+
 # bring data into long format
 #look at seaice before and after running the next line
 seaice
-seaice <- seaice %>% gather(Month, Cover, 3:14)
+
+seaice <- 
+  seaice %>% 
+  pivot_longer(cols = Jan:Dec,
+               names_to = "Month",
+               values_to = "Cover")
 seaice
 
 # build the first plot

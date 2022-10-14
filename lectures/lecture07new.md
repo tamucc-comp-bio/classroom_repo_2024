@@ -1,14 +1,14 @@
-# Week07 R Data Visualization w/ Tidyverse R Package Ch 9
+# Week07 R Data Visualization w/ Tidyverse R Package
 
 ###  Assignment 6 is due by beginning of class (complete Mind Expanders 8.2-8.5)
 
-### [Lecture Stream](https://tamucc.webex.com/recordingservice/sites/tamucc/recording/playback/fb0c58dd70954bde9d0e3b2b4889883c)
+### [Lecture Stream]()
 
 ___
 
 ## Computer Preparation
 
-You are expected to start this lecture with R Studio open with a fresh and empty text document in the upper left panel and a clean environment.
+You are expected to start this lecture with R Studio open with a fresh and empty text document in the upper left panel and an empty environment.  If R Studio was open on your computer, close it and open it again.
 
 ```R
 # clear all variables from environment
@@ -228,10 +228,13 @@ setwd("C:/Users/cbird/Documents/CSB/r/sandbox")
 source("../solutions/getArea.R")
 
 # make list of files to processes
-files <- list.files("../data/leafarea", pattern = ".JPG")
+files <- list.files("../data/leafarea", 
+					pattern = ".JPG")
 
 # create a data frame to record results
-results <- data.frame(JPG = character(), area = numeric(), stringsAsFactors = FALSE)
+results <- data.frame(JPG = character(), 
+					  area = numeric(), 
+					  stringsAsFactors = FALSE)
 
 # run function getArea on all images
 for (f in files) {
@@ -261,7 +264,8 @@ A function called `strsplit` can be used to break up the file names by delimiter
 
 ```R
 # extract plant information
-results$plant <- sapply(results$JPG, function(x) unlist(strsplit(x, "[_]|[.]"))[2])
+results$plant <- sapply(results$JPG, 
+						function(x) unlist(strsplit(x, "[_]|[.]"))[2])
 results$plant <- as.factor(results$plant)
 ```
 
@@ -273,7 +277,10 @@ Here, we will use base R to make a plot, and then we will give you a taste of "t
 # rearrange data into vectors for plotting
 tp1 <- results[results$tp == "t1", ]$area
 tp2 <- results[results$tp == "t2", ]$area
-plot(tp2 ~ tp1, xlab = "Projected leaf area, tp1", ylab = "Projected leaf area, tp2")
+
+plot(tp2 ~ tp1, 
+	 xlab = "Projected leaf area, tp1", 
+	 ylab = "Projected leaf area, tp2")
 abline(c(0,1)) # add the 1-to-1 line
 ```
 
@@ -282,23 +289,29 @@ abline(c(0,1)) # add the 1-to-1 line
 We will learn more about how this all works, for now, marvel at the power of the [`Tidyverse`](https://www.tidyverse.org/)
 
 ```r 
+library(tidyverse)
 results %>%                                   # the %>% is a pipe, in bash it was |
   select(-JPG) %>%                            # remove the JPG column, we have to remove this col for the next command to work
-  pivot_wider(names_from = tp, values_from = area) %>% # pivot_wider makes columns named according to the unique names in the tp col and fills them with the values from the area column
-  ggplot(aes(x=t1, y=t2)) +                   # assign data to plot elements, in ggplot, the + means more ggplot settings follow on next line
+  pivot_wider(names_from = tp, 
+			  values_from = area) %>% # pivot_wider makes columns named according to the unique names in the tp col and fills them with the values from the area column
+  ggplot(aes(x=t1, 
+			 y=t2)) +                   # assign data to plot elements, in ggplot, the + means more ggplot settings follow on next line
     geom_point(color="red4") +                # visualize the data with points
     geom_abline(linetype = "dashed") +        # draw y=x line
     labs(y="Projected leaf area (time 2)",    # edit the labels
-       x="Projected leaf area (time 1)",
-       title = "Change in Leaf Area",
-       subtitle = "Tidyverse >> Base R") +
+		 x="Projected leaf area (time 1)",
+		 title = "Change in Leaf Area",
+		 subtitle = "Tidyverse >> Base R") +
     theme_classic()                           # make it pretty
 ```
 
 #### Lastly, run the statistical test, using Base R
 
 ```r 
-> t.test(tp1, tp2, paired = TRUE, alternative = "less")
+> t.test(tp1, 
+		 tp2, 
+		 paired = TRUE, 
+		 alternative = "less")
 
 	Paired t-test
 

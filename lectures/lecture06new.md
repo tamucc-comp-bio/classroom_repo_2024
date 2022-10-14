@@ -1267,4 +1267,10 @@ print(c(input_file, num_reps, start_point))
 
 [Complete exercise 8.23.3 in the text ](https://classroom.github.com/a/O8hMJ5r0)
 
+Install tidyverse in RStudio
+
+```r
+install.packages("tidyverse")
+install.packages("janitor")
+```
 
