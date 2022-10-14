@@ -324,31 +324,42 @@ pl <-
 
 # default
 show(pl)
+
 # move legend        
 pl + theme(legend.position = "bottom")
 pl + theme(legend.position = "top")
+
 # remove legend
 pl + theme(legend.position = "none")
 
-# legend guides
-pl <- ggplot(data = popsize) + 
-  aes(x = Year, y = Pop_Size, colour = Herd, 
+#legend guides
+pl <- 
+  popsize %>%
+  ggplot() + 
+  aes(x = Year, 
+      y = Pop_Size, 
+      color = Herd, 
       alpha = sqrt(Pop_Size)) + 
   geom_point()
 show(pl)
-pl + guides(colour = guide_legend(nrow = 4, 
-                              title = "herd"), 
-  alpha = guide_legend(direction = "horizontal", 
-                              title =  "al"))
-# suppress only one legend
-pl + guides(colour = "none")
 
-# themes
-pl <- ggplot(data = snow %>% 
-               filter(Herd == "CAH"),
-             aes(y = Week_snowmelt, 
-                 x = Perc_snowcover)) + 
+pl + 
+  guides(color = guide_legend(nrow = 4, 
+                              title = "HERD"), 
+         alpha = guide_legend(direction = "horizontal", 
+                              title =  "ALPHA"))
+# suppress only one legend
+pl + guides(color = "none")
+
+#### themes ####
+pl <- 
+  snow %>% 
+  filter(Herd == "CAH") %>%
+  ggplot() +
+  aes(y = Week_snowmelt, 
+      x = Perc_snowcover) + 
   geom_point()
+
 # default theme with grey background and white gridlines
 show(pl)
 # black and white (light background)
@@ -360,113 +371,55 @@ pl + theme_minimal()
 # my favorite theme
 pl + theme_classic()
 
-# load additional themes, use install.packages 
-#if need be
+# load additional themes, use install.packages if need be
+#install.packages(ggthemes)
 library(ggthemes)
 # Wall Street Journal
 show(pl + theme_wsj())
 # Five thirty-eight
 show(pl + theme_fivethirtyeight())
 
-# setting features
+#### setting features ####
 # use color as an aesthetic mapping, associated with Herd
-pl <- ggplot(data = popsize) + 
-  aes(x = Year, y = Pop_Size, colour = Herd) + 
+popsize %>%
+  ggplot() + 
+  aes(x = Year, 
+      y = Pop_Size, 
+      color = Herd) + 
   geom_point()
-pl
-# set color to be red for all points
-pl <- ggplot(data = popsize) + 
-  aes(x = Year, y = Pop_Size) + 
-  geom_point(colour = "red")
-pl
 
-# saving plot as test.pdf in the sandbox
-ggsave(filename = "test.pdf", plot = pl, 
-       width = 3, height = 4)
-ggsave(filename = "test2.pdf", plot = last_plot(), 
-       width = 3, height = 4)
+# set color to be red for all points
+popsize %>%
+  ggplot() + 
+  aes(x = Year, 
+      y = Pop_Size) + 
+  geom_point(colour = "red")
+
+#### saving particular plot as .pdf in the sandbox ####
+ggsave(filename = "week-snowmelt_vs_pct-snowcover.pdf", 
+       plot = pl, 
+       width = 3, 
+       height = 4)
+
+# saving last plot as .pdf in the sandbox
+ggsave(filename = "popsize_vs_year.pdf", 
+       plot = last_plot(), 
+       width = 3, 
+       height = 4)
 
 # I prefer using pdf() to save my plots because
 # you can save many plots in one document
-pdf(file="test3.pdf", width = 3, height = 4)
-  pl; pl1; pl2
+pdf(file="all_plots.pdf", 
+    width = 3, 
+    height = 4)
+  pl
+  pl1
+  pl2
+  pl3
 dev.off()
 
 
+#### Mind Expander 9.6 ####
 
-
-##################################################
-#Mind expanders 9.6, i.e. 2
-#2
-pl <- ggplot(data = snow) + 
-  aes(x = Year, y = Herd, fill = Week_snowmelt) + 
-  geom_tile()
-pl
-
-##################################################
-
-
-
-# select numerical column headers, or headers with white space using back ticks
-popsize %>% filter(Year > 1979, Year < 1985) %>% spread(Year, Pop_Size) %>%  select(Herd, `1980`)
-
-# ungroup elements
-popsize %>% group_by(Herd, Year) %>% tally() %>% ungroup()
-
-
-
-
-
-
-
-
-
-
-
-
-#Mind Expander 2
-snow_stats <- snow %>% 
-  group_by(Year) %>%
-  summarise(
-    meanPerc_snowcover = mean(Perc_snowcover),
-    meanWeek_snowmelt = mean(Week_snowmelt))
- snow_stats
-
-#Mind Expander 3
- 
- ggplot(data=snow_stats, aes(x=meanWeek_snowmelt, 
-                             y=meanPerc_snowcover))+
-    geom_point()
-
- #Mind Expander 4
- pl <- ggplot(data = popsize) + 
-   aes(x = Herd, y = Pop_Size)
- # add components to existing plot
- pl + geom_boxplot()
-
- #Mind Expander 5
- # calculate summary stats and errors
- stats <- popsize %>% 
-   filter(Year %in% c(2008:2014)) %>%
-   group_by(Year) %>%
-   summarise(
-     meanPopSize = mean(Pop_Size),
-     SD = sd(Pop_Size))	#std deviation
-     # N = n(),            #sample size
-     # SEM = SD/sqrt(N),   #std error
-     # CI = SEM * qt(0.975, N-1)) #conf interval
- stats
- 
- limits <- aes(ymax = stats$meanPopSize + stats$SD,
-               ymin = stats$meanPopSize - stats$SD)
- 
- # plot including confidence intervals
- ggplot(data = stats) + 
-   aes(x = Year, y = meanPopSize) + 
-   geom_col() +
-   geom_errorbar(limits, width = .3) 
-
-
-
-
+# https://forms.office.com/r/tJDT2BnH7F
 
