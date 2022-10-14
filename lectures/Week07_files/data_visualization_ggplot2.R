@@ -42,231 +42,286 @@ seaice <-
                values_to = "Cover")
 seaice
 
+#### Making a Plot ####
 # build the first plot
 ggplot(data = popsize)
 
+# I like piping the data better, same result as last line
+popsize %>%
+  ggplot()
+
 # add an aestethic mapping
-ggplot(data = popsize) + 
-  aes(x = Year, y = Pop_Size, 
-      colour = Herd)
+popsize %>%
+  ggplot() + 
+  aes(x = Year, 
+      y = Pop_Size, 
+      color = Herd)
 
 # add geometries
-ggplot(data = popsize) + 
-  aes(x = Year, y = Pop_Size, 
-      colour = Herd) + 
+popsize %>%
+  ggplot() + 
+  aes(x = Year, 
+      y = Pop_Size, 
+      color = Herd) + 
   geom_point() + 
   geom_line()
 
-# plot frequency distribution (histogram)
-ggplot(data = ndvi) + 
+#### plot frequency distribution (histogram) ####
+ndvi %>%
+  ggplot() + 
   aes(x = NDVI_May) + 
   geom_histogram()
 
-# "unrolled" or nested
-# These three commands produce the same graph:
-ggplot(data = ndvi) + 
-  aes(x = NDVI_May) + 
+#### "unrolled" vs nested code ####
+# These three commands also produce the same plot:
+ndvi %>%
+  ggplot(aes(x = NDVI_May)) + 
   geom_histogram()
+
 ggplot(data = ndvi, aes(x = NDVI_May)) + 
   geom_histogram()
+
 ggplot(data = ndvi) + 
   geom_histogram(aes(x = NDVI_May))
 
-# density plot
-ggplot(data = ndvi) + 
+#### density plot - unrolled looks best! ####
+ndvi %>%
+  ggplot() + 
   aes(x = NDVI_May) + 
   geom_density()
 
-#box and violin plots
+#### box and violin plots ####
 # assign plot to a variable
-pl <- ggplot(data = ndvi) + 
-  aes(x = Herd, y = NDVI_May)
-# add components to existing plot
+pl <- 
+  ndvi %>%
+  ggplot() + 
+  aes(x = Herd, 
+      y = NDVI_May)
+
+pl
+
+#### add components to existing plot ####
 pl + geom_boxplot()
 pl + geom_violin()
 
-# change color of boxes
-pl + geom_boxplot() + aes(fill = Herd)
+#### add colors ####
+ndvi %>%
+  ggplot() + 
+  aes(x = Herd, 
+      y = NDVI_May,
+      fill = Herd) + 
+  geom_boxplot() 
 
-# barplot (count data)
-ggplot(data = seaice %>% 
-         filter(Herd == "WAH")) + 
+#### barplot (count data), how many observations per year? ####
+seaice %>% 
+  filter(Herd == "WAH") %>%
+  ggplot() + 
   aes(x = Year) + 
   geom_bar()
 
-# map data to columns (note alphabetical order of x-axis)
-ggplot(data = seaice %>% 
-         filter(Herd == "WAH", 
-                Year == 1990)) +	
-  aes(x = Month, y = Cover) + 
+#### column plot ####
+# map data to columns (note order of x-axis)
+seaice %>% 
+  filter(Herd == "WAH", 
+         Year == 1990) %>%
+  ggplot() + 
+  aes(x = Month, 
+      y = Cover) + 
   geom_col()
 
 # display bars in chronolocigal order
 # convert data into factor and set to 
 #three-letter abbreviation of months
-seaice$Month <- factor(seaice$Month, 
-                       month.abb)
-ggplot(data = seaice %>% 
-         filter(Herd == "WAH", 
-                Year == 1990)) +	
-  aes(x = Month, y = Cover) + 
+seaice %>% 
+  filter(Herd == "WAH", 
+         Year == 1990) %>%
+  mutate(Month = factor(Month, 
+                        month.abb)) %>%
+  ggplot() + 
+  aes(x = Month, 
+      y = Cover) + 
   geom_col()
 
-# scatterplots
-pl <- ggplot(data = popsize %>% 
-               filter(Herd == "WAH")) + 
-  aes(x = Year, y = Pop_Size) + 
+#### scatter plots ####
+pl <- 
+  popsize %>% 
+  filter(Herd == "WAH") %>%
+  ggplot() + 
+  aes(x = Year, 
+      y = Pop_Size) + 
   geom_point()
 # show plot assigned to variable
-show(pl)
+pl
 
 # add smoothing funtion
 pl + geom_smooth()
 
-# use a linear model
+# fit a linear model
 pl + geom_smooth(method = "lm")
-# use a polynomial regression
+
+# fit a polynomial regression
 pl + geom_smooth(method = "lm", 
-                 formula = y ~ poly(x, 3),
+                 formula = y ~ poly(x, 
+                                    3),
                  se = FALSE)
 
-# calculate summary stats and errors
-stats <- popsize %>% 
-  filter(Herd %in% c("GRH", "PCH")) %>%
+#### calculate summary stats and errors, then plot with errorbars ####
+popsize_stats <- 
+  popsize %>% 
+  filter(Herd %in% c("GRH", 
+                     "PCH")) %>%
   group_by(Herd) %>%
-  summarise(
-    meanPopSize = mean(Pop_Size),
-    SD = sd(Pop_Size),	#std deviation
-    N = n(),            #sample size
-    SEM = SD/sqrt(N),   #std error
-    CI = SEM * qt(0.975, N-1)) #conf interval
-stats
+  summarize(meanPopSize = mean(Pop_Size),
+            SD = sd(Pop_Size),	#std deviation
+            N = n(),            #sample size
+            SEM = SD/sqrt(N),   #std error
+            CI = SEM * qt(0.975, N-1)) #conf interval
+popsize_stats
 
-# bar plot without error bars
-ggplot(data = stats) + 
-  aes(x = Herd, y = meanPopSize) + 
+# col plot without error bars
+popsize_stats %>%
+  ggplot() + 
+  aes(x = Herd, 
+      y = meanPopSize) + 
   geom_col()
 
-# set up aesthetic mapping for confidence intervals
-limits <- aes(ymax = stats$meanPopSize + stats$CI,
-              ymin = stats$meanPopSize - stats$CI)
+# add errorbars
+popsize_stats %>%
+  ggplot() + 
+  aes(x = Herd, 
+      y = meanPopSize) + 
+  geom_col() +
+  geom_errorbar(aes(ymax = popsize_stats$meanPopSize + 
+                      popsize_stats$CI,
+                    ymin = popsize_stats$meanPopSize - 
+                      popsize_stats$CI),
+                width = .3) 
+
+# the code is getting a bit difficult to read, so we can use
+# variables to help
+
+#### Saving Aesthetics into Variable ####
+# set up aesthetic mapping for confidence intervals in variable
+limits <- aes(ymax = popsize_stats$meanPopSize + 
+                popsize_stats$CI,
+              ymin = popsize_stats$meanPopSize - 
+                popsize_stats$CI)
 
 # plot including confidence intervals
-ggplot(data = stats) + 
-  aes(x = Herd, y = meanPopSize) + 
+popsize_stats %>%
+  ggplot() + 
+  aes(x = Herd, 
+      y = meanPopSize) + 
   geom_col() +
-  geom_errorbar(limits, width = .3) 
+  geom_errorbar(limits, 
+                width = .3) 
 
 
 
-###############################################
-#Mind expander 9.5, ie 1
-#1
-snow
-ggplot(data=snow,aes(x=Week_snowmelt, y=Perc_snowcover, colour=as.factor(Year)))+
-  geom_point()
+#### Mind Expander 9.5#####
 
-#2
-snow_stats <- snow %>% 
-  group_by(Year) %>%
-  summarise(meanPerc_snowcover = mean(Perc_snowcover), meanWeek_snowmelt = mean(Week_snowmelt))
-snow_stats
-
-#3
-ggplot(data=snow_stats, aes(x=meanWeek_snowmelt, y=meanPerc_snowcover)) + geom_point()
-
-#4
-ggplot(data = popsize, aes(x = Herd, y = Pop_Size)) + geom_boxplot()
-
-#4
-pop_stats <- popsize %>% 
-  filter(Year %in% c(2008:2014)) %>%
-  group_by(Year) %>%
-  summarise(
-    meanPopSize= mean(Pop_Size),
-    SD = sd(Pop_Size))	#std deviation
-pop_stats
-pop_limits <- aes(ymax = pop_stats$meanPopSize + pop_stats$SD, ymin = pop_stats$meanPopSize - pop_stats$SD)
-
-# plot including confidence intervals
-ggplot(data = pop_stats) + 
-  aes(x = Year, y = meanPopSize) + 
-  geom_col() +
-  geom_errorbar(pop_limits, width = .3) 
+# https://forms.office.com/r/J5F0UCxWGB
 
 
-##############################################
-
-
-
-
-# set fill color of boxes by using scales
-pl1 <- ggplot(data = popsize, 
-             aes(x = Herd, y = Pop_Size, 
-                 fill = Herd)) + 
+#### set fill color of boxes by using scales ####
+pl1 <- 
+  popsize %>%
+  ggplot() +
+  aes(x = Herd, 
+      y = Pop_Size, 
+      fill = Herd) + 
   geom_boxplot()
-show(pl1)
+pl1
 
 # choose a palette from Color Brewer
 pl1 + scale_fill_brewer(palette = "Set3")
-# palette based on hue
-pl1 + scale_fill_hue()
-# manually set values and rename the legend
-pl1 + scale_fill_manual(values = rainbow(11), 
-                       name = "aaa")
 
-# apply scales to manipulate color and size 
+# manually set values and rename the legend
+pl1 + 
+  scale_fill_manual(values = rainbow(11), 
+                    name = "HERDS")
+
+#### apply scales to manipulate color and size ####
 #of aestethic mappings
-pl2 <- ggplot(data = seaice %>% 
-               filter(Herd == "BEV")) + 
-  aes(x = Year, y = Month, colour = Cover, 
+pl2 <- 
+  seaice %>%
+  filter(Herd == "BEV") %>%
+  ggplot() + 
+  aes(x = Year, 
+      y = Month, 
+      color = Cover, 
       size = Cover) + 
   geom_point()
-show(pl2)
+pl2
 
 # change color of continuous gradient
-pl2 + scale_color_gradient(high = "white", 
-                          low = "red")
-#RColorBrewer
-install.packages("RColorBrewer")
+pl2 + 
+  scale_color_gradient(high = "white", 
+                       low = "red")
+
+#### RColorBrewer Color Pallets ####
+#install.packages("RColorBrewer")
 library(RColorBrewer)
 display.brewer.all()
 
-# facetting with identical scale of axis,
+#### faceting plots ####
 #including missing data
-ggplot(data = seaice %>% 
-         filter(Herd %in% c("WAH", "BAT"), 
-                Year %in% c(1980, 1990, 
-                            2000, 2010))) + 
-  aes(x = Month, y = Cover) + 
+seaice %>%
+  filter(Herd %in% c("WAH", 
+                     "BAT"), 
+         Year %in% c(1980, 
+                     1990, 
+                     2000, 
+                     2010)) %>%
+  ggplot() + 
+  aes(x = Month, 
+      y = Cover) + 
   geom_col() + 
-  facet_grid(Year~Herd)
+  facet_grid(Year ~ Herd)
 
-# facetting, ommit missing data
-ggplot(data = seaice %>% filter(Year == 2010)) + 
-  aes(x = Month, y = Cover) + 
-  geom_col() + 
-  facet_wrap(~Herd)
+#### faceting, allow axis values to vary among facets ####
+pl3 <- 
+  seaice %>% 
+  filter(Year == 2010) %>%
+  ggplot() + 
+  aes(x = Month, 
+      y = Cover) + 
+  geom_col() 
 
-# facetting, ommit missing data, adjusted 
+pl3 + facet_wrap(. ~ Herd)
+
+# faceting, ommit missing data, adjusted 
 #scale of axes
-ggplot(data = seaice %>% filter(Year == 2010)) + 
-  aes(x = Month, y = Cover) + 
-  geom_col() + 
-  facet_wrap(~Herd, scales = "free")
+pl3 + facet_wrap(. ~ Herd, 
+                 scales = "free")
 
-# changing labels and title
-pl <- ggplot(data = popsize) + 
-  aes(x = Year, y = Pop_Size) + 
+pl3 + facet_wrap(. ~ Herd, 
+                 scales = "free_x")
+
+pl3 + facet_wrap(. ~ Herd, 
+                 scales = "free_y")
+
+#### changing labels and title ####
+pl <- 
+  popsize %>%
+  ggplot() + 
+  aes(x = Year, 
+      y = Pop_Size) + 
   geom_point() 
-pl + xlab("Years")
-pl + ylab("Population Size") 
-pl + ggtitle("Population Dynamics")
+pl
+pl + labs(title = "Population Dynamics",
+          x = "Years",
+          y = "Population Size")
 
-# legends
-pl <- ggplot(data = popsize) + 
-  aes(x = Herd, y = Pop_Size, fill = Herd) + 
+#### legends ####
+pl <- 
+  popsize %>%
+  ggplot() + 
+  aes(x = Herd, 
+      y = Pop_Size, 
+      fill = Herd) + 
   geom_boxplot()
+
 # default
 show(pl)
 # move legend        
