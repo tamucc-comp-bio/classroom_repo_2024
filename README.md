@@ -60,7 +60,9 @@ Project examples: automatically process data from experimental apparatus; image 
 
 ---
 
-SECTION 1.  WELCOME TO THE MATRIX
+<details><summary>SECTION 1.  WELCOME TO THE MATRIX</summary>
+<p>
+
 
 * [08/26  Week00  Introduction & Data](lectures/lecture00.md)
   * [Assignment_0  Due, 09/02](assignments/assignment_0.md)
