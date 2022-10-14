@@ -123,9 +123,24 @@ Regardless of your operating system, if you have not already installed R studio,
 
 ## II. Review Material Covered for Homework
 
-The first key to completing the exercise is using the information provided to you in the `CSB/r/solutions` repository
+
+
+<details><summary>Copy the `r` dir to your repo</summary>
+<p>
+
+Start the assignment by copying the `r` dir from the `CSB` repo to your homework repo.
+
 
 ---
+
+</p>
+</details>
+
+
+<details><summary>Use the Pseudocode and Solutions</summary>
+<p>
+The first key to completing the exercise is using the information provided to you in the `CSB/r/solutions` repository
+
 
 ### `WilmesUnpub_pseudo.md`
 
@@ -156,7 +171,9 @@ library(EBImage)
 - create an empty `data.frame` to record results
 
 ```r
-results <- data.frame(JPG = character(), area = numeric(), stringsAsFactors = FALSE)
+results <- data.frame(JPG = character(), 
+                      area = numeric(), 
+                      stringsAsFactors = FALSE)
 ```
 
 - the function `list.files` can be used to list all the files in a directory
@@ -218,11 +235,19 @@ BiocManager::install("EBIimage")
 library("EBImage")
 ```
 
-#### Now we can continue addressing the question. By building the data frame of results from the images
+---
+
+</p>
+</details>
+
+<details><summary>Begin Answering the First Question</summary>
+<p>
+
+#### Now we can continue addressing the question 
 
 ```R
-# make sure you are in the right working diretory
-setwd("C:/Users/cbird/Documents/CSB/r/sandbox")
+# make sure you are in the right working diretory, `r/sandbox`
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 
 # source the getArea.R function
 source("../solutions/getArea.R")
@@ -247,6 +272,15 @@ results$area <- as.numeric(results$area)
 ```
 
 _Note that it is poor form to write a function with dependencies, like `EBImage`, without including the code to install and load the package in the script.  This is the fault of the script author, but you will find that the onus falls on you to solve these types of issues with open source software. Imagine if you had to write the function from scratch; it is usually easier to troubleshoot an existing script that is theoretically function with a little tweaking._
+
+---
+
+</p>
+</details>
+
+<details><summary>Second Question</summary>
+<p>
+
 
 #### Next we extract information from the file names to rearrange the data frame
 
@@ -305,6 +339,15 @@ results %>%                                   # the %>% is a pipe, in bash it wa
     theme_classic()                           # make it pretty
 ```
 
+---
+
+</p>
+</details>
+
+<details><summary>Third Question</summary>
+<p>
+
+
 #### Lastly, run the statistical test, using Base R
 
 ```r 
@@ -324,6 +367,13 @@ sample estimates:
 mean of the differences 
               -7096.227
 ```
+
+---
+
+</p>
+</details>
+
+
 
 ## III. [`Tidyverse`](https://www.tidyverse.org/) Data Visualization w/ `ggplot2`
 
