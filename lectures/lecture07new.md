@@ -380,6 +380,10 @@ Complete the following mind expanders:
 
 ---
 
-## Homework TBA
+## Homework 
+
+* Complete the Lecture Slides and [Mind Expander 9.6](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlURDFBNlc2UFFEOVJVMEpaWVZJWkJJNEc1US4u)
+
+* Complete the [Assignment 7 Questions](https://forms.office.com/r/s61TkPNNHH)
 
 
