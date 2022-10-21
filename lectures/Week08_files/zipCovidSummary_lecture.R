@@ -372,7 +372,7 @@ covid_cases_zip_pop <-
             by = "zip")
 
 
-#### Read In Demographic Data ####
+#### Read In Demographic Data with `bind_rows` ####
 bind_rows(read_excel(data_age_count_file_path, 
                      sheet = "Jul"),
           read_excel(data_age_count_file_path, 
@@ -382,11 +382,16 @@ bind_rows(read_excel(data_age_count_file_path,
           read_excel(data_age_count_file_path, 
                      sheet = "Oct"))
 
-#### Read In Demographic Data ####
-covid_cases_age <- bind_rows(read_excel(data_age_count_file_path, sheet = "Jul"),
-          read_excel(data_age_count_file_path, sheet = "Aug"),
-          read_excel(data_age_count_file_path, sheet = "Sep"),
-          read_excel(data_age_count_file_path, sheet = "Oct")) %>%
+#### Recode Ages into Age Classes using `mutate()` and `case_when()` ####
+covid_cases_age <- 
+  bind_rows(read_excel(data_age_count_file_path, 
+                       sheet = "Jul"),
+            read_excel(data_age_count_file_path, 
+                       sheet = "Aug"),
+            read_excel(data_age_count_file_path, 
+                       sheet = "Sep"),
+            read_excel(data_age_count_file_path, 
+                       sheet = "Oct")) %>%
   clean_names() %>%
   mutate(date = ymd(labdate)) %>%
   select(-labdate) %>%
@@ -396,10 +401,15 @@ covid_cases_age <- bind_rows(read_excel(data_age_count_file_path, sheet = "Jul")
     age_years >= 40 & age_years < 60 ~ "40-59",
     age_years >= 60 & age_years < 80 ~ "60-79",
     age_years >= 80 ~ "80+")) %>%
-  group_by(date, age_class) %>%
+  group_by(date, 
+           age_class) %>%
   summarize(new_cases = n())
   
 
-# unstack data by age class
+#### unstack data by age class using pivot_wider####
+
+covid_cases_age
+
 covid_cases_age %>%
-  pivot_wider(names_from = "age_class", values_from = "new_cases")
+  pivot_wider(names_from = "age_class", 
+              values_from = "new_cases")

@@ -866,7 +866,7 @@ Is red associated with the cases from a single zip code or the mean of all zip c
 </details>
 
 
-<details><summary> `lubridate` - The Extended Tidyverse Package for Date Data Types </summary>
+<details><summary> `lubridate` - The Extended Tidyverse Package for Date-Time Data Types </summary>
 <p>
 
 
@@ -1161,7 +1161,7 @@ covid_cases_zip_pop %>%
 </details>
 
 
-<details><summary> Mega Pipeline </summary>
+<details><summary> Mega Pipeline Combining the Zip Count and Zip Census Data </summary>
 <p>
 
 
@@ -1171,18 +1171,24 @@ We could have created the `covid_cases_zip_pop` tibble with 1 pipeline.  Here is
 
 ```r 
 #### Read In Data ####
-covid_cases_zip_pop <- read_excel("../data/zip_count_2020-08-18_2020-10-11.xlsx") %>%
+covid_cases_zip_pop <- 
+  read_excel("../data/zip_count_2020-08-18_2020-10-11.xlsx") %>%
   clean_names() %>%
   mutate(zip = as_factor(zip),
          date = ymd(labdate)) %>%
   select(-labdate) %>%
-  group_by(date, zip) %>%
+  group_by(date, 
+           zip) %>%
   summarize(new_cases = n()) %>%
-  
   left_join(read_excel("../data/zip_2010census-pop.xlsx") %>%
               clean_names() %>%
-              separate(col=zip_code, into=c('x1', 'x2', 'zip')) %>%
-              select(zip, city, population), 
+              separate(col=zip_code, 
+                       into=c('x1', 
+                              'x2', 
+                              'zip')) %>%
+              select(zip, 
+                     city, 
+                     population), 
             by = "zip")
 ```
 
@@ -1194,7 +1200,7 @@ Formatting is critical to human-readability when you pipe and nest this many com
 </details>
 
 
-<details><summary> Tidyverse Cheat Sheet </summary>
+<details><summary> Concatenate Two or More Identically Formatted Data Files with `bind_rows` </summary>
 <p>
 
 
@@ -1202,14 +1208,18 @@ Formatting is critical to human-readability when you pipe and nest this many com
 
 There are other ways to read in multiple files besides join.  If the files have the same columns and the same "smallest unit of observation" in the rows, then `bind_rows` can be used. `bind_rows` works very similarly to the `bash` command `cat`.  
 
-The 
+Also note that we are using the `sheet` option in `read_excel` to read different worksheets from the same excel file.
 
 ```r 
 #### Read In Demographic Data ####
-> bind_rows(read_excel('../data/age_count_2020-07-13_2020-10-11.xlsx', sheet = "Jul"),
-+           read_excel('../data/age_count_2020-07-13_2020-10-11.xlsx', sheet = "Aug"),
-+           read_excel('../data/age_count_2020-07-13_2020-10-11.xlsx', sheet = "Sep"),
-+           read_excel('../data/age_count_2020-07-13_2020-10-11.xlsx', sheet = "Oct"))
+> bind_rows(read_excel('../data/age_count_2020-07-13_2020-10-11.xlsx', 
++                      sheet = "Jul"),
++           read_excel('../data/age_count_2020-07-13_2020-10-11.xlsx', 
++                      sheet = "Aug"),
++           read_excel('../data/age_count_2020-07-13_2020-10-11.xlsx', 
++                      sheet = "Sep"),
++           read_excel('../data/age_count_2020-07-13_2020-10-11.xlsx', 
++                      sheet = "Oct"))
 # A tibble: 14,577 x 2
    LABDATE             AGE_YEARS
    <dttm>                  <dbl>
@@ -1232,7 +1242,7 @@ The
 </details>
 
 
-<details><summary> Tidyverse Cheat Sheet </summary>
+<details><summary> Recode Ages into Age Classes using `mutate()` and `case_when()` </summary>
 <p>
 
 
@@ -1242,10 +1252,15 @@ At this point, you have seen most of the functionality you need to get started m
 
 ```r 
 #### Read In Demographic Data ####
-covid_cases_age <- bind_rows(read_excel('../data/age_count_2020-07-13_2020-10-11.xlsx', sheet = "Jul"),
-          read_excel('../data/age_count_2020-07-13_2020-10-11.xlsx', sheet = "Aug"),
-          read_excel('../data/age_count_2020-07-13_2020-10-11.xlsx', sheet = "Sep"),
-          read_excel('../data/age_count_2020-07-13_2020-10-11.xlsx', sheet = "Oct")) %>%
+covid_cases_age <- 
+  bind_rows(read_excel('../data/age_count_2020-07-13_2020-10-11.xlsx', 
+                       sheet = "Jul"),
+            read_excel('../data/age_count_2020-07-13_2020-10-11.xlsx', 
+                       sheet = "Aug"),
+            read_excel('../data/age_count_2020-07-13_2020-10-11.xlsx', 
+                       sheet = "Sep"),
+            read_excel('../data/age_count_2020-07-13_2020-10-11.xlsx', 
+                       sheet = "Oct")) %>%
   clean_names() %>%
   mutate(date = ymd(labdate)) %>%
   select(-labdate) %>%
@@ -1255,7 +1270,8 @@ covid_cases_age <- bind_rows(read_excel('../data/age_count_2020-07-13_2020-10-11
     age_years >= 40 & age_years < 60 ~ "40-59",
     age_years >= 60 & age_years < 80 ~ "60-79",
     age_years >= 80 ~ "80+")) %>%
-  group_by(date, age_class) %>%
+  group_by(date, 
+           age_class) %>%
   summarize(new_cases = n())
 ```
 
@@ -1265,18 +1281,21 @@ covid_cases_age <- bind_rows(read_excel('../data/age_count_2020-07-13_2020-10-11
 </details>
 
 
-<details><summary> Tidyverse Cheat Sheet </summary>
+<details><summary> Reshape a Tibble Using `pivot_longer` and `pivot_wider`  </summary>
 <p>
-
 
 ### Reshape a Tibble Using `pivot` (replaces `gather` and `spread` in CSB text)
 
-The `covid_cases_age` is [stacked](https://simple.wikipedia.org/wiki/Stack_(data_structure)). It is impossible to collapse it to any fewer columns because every column has a different type and class of data. We can unstack it by making 1 column for each age class using `pivot_wider()`.  More columns make a wider tibble, which is where the name comes from.
+The `covid_cases_age` tibble is [stacked](https://simple.wikipedia.org/wiki/Stack_(data_structure)) or long. It is impossible to collapse it to any fewer columns because every column has a different type and class of data. We can unstack it (`pivot_wider`) by making 1 column for each age class using `pivot_wider()`.  More columns make a wider tibble, which is where the name comes from.
+
+Every unique name in `age_class` will become a column using the `names_from =` argument, and those columns will be filled with values from the `new_cases` column
+
 
 ```r 
 # unstack data by age class
 covid_cases_age %>%
-  pivot_wider(names_from = "age_class", values_from = "new_cases")
+  pivot_wider(names_from = "age_class", 
+              values_from = "new_cases")
 ```
 
 To go from unstacked to stacked, you can similarly use `pivot_longer()`.  More rows = longer tibble.
@@ -1289,4 +1308,4 @@ To go from unstacked to stacked, you can similarly use `pivot_longer()`.  More r
 
 ## HOMEWORK
 
-No Homework!
+TBA
