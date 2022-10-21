@@ -175,10 +175,8 @@ _Phew! It's much harder to communicate GUI instructions than CL_
 
 ## III. Organizing and Formatting an R Script
 
-<details><summary> Prepping Script </summary>
+<details><summary> Line 1: Shebang! </summary>
 <p>
-
-### Prepping Script
 
 Make sure `CSB/data_wrangling/sandbox/zipCovidSummary.R` is open in R Studio. We will review how and why the file is formatted and organized as it is.
 
@@ -188,7 +186,15 @@ Always add a shebang! to the first line of your script. This will make it execut
 #!/usr/bin/env Rscript
 ```
 
-Make sure that you also set your working directory, clear out your environment (upper right), and clear the plots from your R Studio plot panel (lower right).
+---
+
+</p>
+</details>
+
+<details><summary> Set the Working Directory </summary>
+<p>
+
+Make sure that you also set your working directory, clear out your environment (upper right), and clear the plots from your R Studio plot panel (lower right). 
 
 ```r
 # set working dir
@@ -203,15 +209,15 @@ rm(list = ls())
 # because the plot panel is a R Studio convention, and not part of R, you have to click the broom icon to clear it. 
 ```
 
+Realize that clearing out the environment does not clear packages that have been loaded.  Consequently, to avoid annoying package conflicts, always restart RStudio before working on a new data set or RScript.
+
 ---
 
 </p>
 </details>
 
-<details><summary> Reading In Data </summary>
+<details><summary> Making Code Collapsable in R Studio </summary>
 <p>
-
-### Making Code Collapsable in R Studio
 
 It is very convenient to be able to collapse and expand sections of code in your R Studio text editor.  Beside the "Housekeeping" line you will see a small grey arrow beside the line number. Click it and see what happens.
 
@@ -235,15 +241,11 @@ rm(list = ls())
 </p>
 </details>
 
-<details><summary> Reading In Data </summary>
+<details><summary> Installing Required Packages and Loading Libraries </summary>
 <p>
 
 
-### Installing Required Packages and Loading Libraries
-
 The next step is to install and load the packages you will use. In the interest of organization and usability, you should load all packages/libraries in one place near the beginning of the script.  If you realize later on that you need more packages, add them here.
-
-_Note that the `search()` command shows you the libraries that are presently loaded
 
 ```r
 #### Load Libraries ####
@@ -265,6 +267,11 @@ library(janitor)
 search()
 
 ```
+
+Packages only need to be installed once, which is why those lines are commented out.  If you get errors, run the install package lines, then try again.
+
+_Note that the `search()` command shows you the libraries that are presently loaded_
+
 
 ---
 
