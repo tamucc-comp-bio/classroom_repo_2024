@@ -102,6 +102,8 @@ library(tidyverse)
 
 ## I. [Quiz](https://forms.office.com/r/AcUvr7y74K)
 
+---
+
 ## II. Review Material Covered for Homework
 
 [Mind Expander 9.5](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUOE9LM0ZWOUZWVlZTUzBKQkZaUkcwRVg4Qy4u), [Solutions](Week07_files/mind_expander_9.5_answers.R)
@@ -109,6 +111,8 @@ library(tidyverse)
 [Mind Expander 9.6](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlURDFBNlc2UFFEOVJVMEpaWVZJWkJJNEc1US4u), [Solutions](Week07_files/mind_expander_9.6_answers.R)
 
 [Assignment 7 Solutions](../assignments/assignment_7_answers.R)
+
+---
 
 ## III. Getting the RScript & Data for Today 
 
