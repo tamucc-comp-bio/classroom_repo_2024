@@ -236,6 +236,9 @@ ls()
 rm(list = ls())
 ```
 
+`alt-o` will collapse all sections, try it!
+
+
 ---
 
 </p>
@@ -295,7 +298,7 @@ _Note that the `search()` command shows you the libraries that are presently loa
 
 ### Reading In Data
 
-We have already covered reading in data, but `tidyverse` has its own commands for reading in data.  
+We have already covered reading in data with base R commands, but `tidyverse` has its own commands for reading in data.  
 
 * `read_delim` - read in delimited text file
   * `read_csv` - specialized version of `read_delim`
