@@ -4,10 +4,17 @@
 
 CSB Ch 9
 R for Data Science Chapters Covered:
-	* Wrangle: Intro
 	* Explore: Data transformation
 	* Explore: Exploratory Data Analysis
-	* 
+	* Wrangle: Intro
+	* Wrangle: Data import
+	* Wrangle: Tidy data
+	* Wrangle: Relational data
+	* Wrangle: Factors
+	* Wrangle: Dates & times
+	* Program: Pipes
+	
+	
 
 R for Data Science Prerequisite Chapters:
 	* Explore: Intro
@@ -15,6 +22,11 @@ R for Data Science Prerequisite Chapters:
 	* Explore: Workflow: basics
 	* Explore: Workflow: scripts
 	* Explore: Workflow: projects
+	* Wrangle: Tibbles
+	* Wrangle: Factors
+	* Program: Pipes
+	* Program: Vectors
+	
 
 ###  Assignment 7 is due by beginning of class (complete Mind Expanders 9.5-9.6)
 
