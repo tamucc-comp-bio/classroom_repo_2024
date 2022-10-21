@@ -219,7 +219,9 @@ Realize that clearing out the environment does not clear packages that have been
 <details><summary> Making Code Collapsable in R Studio </summary>
 <p>
 
-It is very convenient to be able to collapse and expand sections of code in your R Studio text editor.  Beside the "Housekeeping" line you will see a small grey arrow beside the line number. Click it and see what happens.
+It is very convenient to be able to collapse and expand sections of code in your R Studio text editor.  Any comment with 4 trailing hashtags `####` will create a collapsable code section.
+
+Beside the "Housekeeping" line you will see a small grey arrow beside the line number. Click it and see what happens.
 
 ```
 #!/usr/bin/env Rscript 
@@ -367,10 +369,9 @@ tibble [6,202 x 2] (S3: tbl_df/tbl/data.frame)
 <details><summary> Tidyverse Cheat Sheet </summary>
 <p>
 
-
 ### [Tidyverse Cheat Sheet](../resources/CheatSheetTidyverse.pdf)
 
-I had two students from the 2019 Computational Biology Course make a cheat sheet for tidyverse.  It translates english to tidyverse for the most commonly used commands.  You should be able to print this out on two sides of a single sheet of paper and keep as a desk reference.  Once you know the command you want to use, you can look it up in the R Studio help panel (lower right) for specific instructions on its application.
+I had two students from the 2019 Computational Biology Course make a cheat sheet for tidyverse. In 2022, the Coastal Bend COVID Informatics & Modelling Team met to determine how to update this sheet, and it continues to be a work in progress. It translates english to tidyverse for the most commonly used commands.  You should be able to print this out on two sides of a single sheet of paper and keep as a desk reference.  Once you know the command you want to use, you can look it up in the R Studio help panel (lower right) for specific instructions on its application.   
 
 Use the [Tidyverse Cheat Sheet](../resources/CheatSheetTidyverse.pdf) to find the command to clean up the column names in a tibble, then apply it to the `covid_cases_zip` tibble
 
@@ -379,6 +380,8 @@ Use the [Tidyverse Cheat Sheet](../resources/CheatSheetTidyverse.pdf) to find th
 >
 
 ```
+
+Tidyverse also makes their own cheat sheets, but I find them to be too much.  Each package within the tidyverse has a cheat sheet attached to their main page.  One example is [dplyr](https://dplyr.tidyverse.org/).  Take a look for yourself by clicking the link and finding the cheat sheet for `dplyr`.
 
 ---
 
