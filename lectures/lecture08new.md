@@ -980,7 +980,7 @@ tibble [38 x 6] (S3: tbl_df/tbl/data.frame)
 </details>
 
 
-<details><summary> Tidyverse Cheat Sheet </summary>
+<details><summary> Isolate Numeric Zip Code Using `separate()` </summary>
 <p>
 
 
@@ -992,7 +992,10 @@ As you can probably see, the data needs a little bit of massaging before we can 
 # isolate numeric zip code
 > read_excel("../data/zip_2010census-pop.xlsx") %>%
 +   clean_names() %>%
-+   separate(col=zip_code, into=c('x1', 'x2', 'zip'))
++   separate(col=zip_code, 
++   into=c('x1', 
++          'x2', 
++          'zip'))
 # A tibble: 38 x 8
    x1    x2    zip   classification city           population timezone area_code_s
    <chr> <chr> <chr> <chr>          <chr>               <dbl> <chr>          <dbl>
@@ -1015,7 +1018,7 @@ As you can probably see, the data needs a little bit of massaging before we can 
 </details>
 
 
-<details><summary> Tidyverse Cheat Sheet </summary>
+<details><summary> Clean Up the `pop_zip` Tibble and Save It </summary>
 <p>
 
 
@@ -1025,10 +1028,16 @@ Now we can finish polishing the `pop_zip` tibble
 
 ```r 
 # isolate numeric zip code & polish tibble
-pop_zip <- read_excel("../data/zip_2010census-pop.xlsx") %>%
+pop_zip <- 
+  read_excel("../data/zip_2010census-pop.xlsx") %>%
   clean_names() %>%
-  separate(col=zip_code, into=c('x1', 'x2', 'zip')) %>%
-  select(zip, city, population)
+  separate(col=zip_code, 
+           into=c('x1', 
+                  'x2', 
+                  'zip')) %>%
+  select(zip, 
+         city, 
+         population)
 ```
 
 ---
@@ -1037,9 +1046,8 @@ pop_zip <- read_excel("../data/zip_2010census-pop.xlsx") %>%
 </details>
 
 
-<details><summary> Tidyverse Cheat Sheet </summary>
+<details><summary> Join Two Data Files With Different Columns using `join` </summary>
 <p>
-
 
 ### Join Two Data Files With Different Columns using `join`
 
@@ -1057,9 +1065,45 @@ In this situation, I want to keep all data in `covid_cases_zip` and add the city
 
 ```r 
 # left join covid_cases_zip and pop_zip, creating new tibble
-covid_cases_zip_pop <- covid_cases_zip %>%
-  left_join(pop_zip, by = "zip")
+covid_cases_zip_pop <- 
+  covid_cases_zip %>%
+  left_join(pop_zip, 
+            by = "zip")
+
+covid_cases_zip_pop
 ```
+
+```r
+# A tibble: 1,142 × 5
+# Groups:   date [91]
+   date       zip   new_cases city           population
+   <date>     <chr>     <int> <chr>               <dbl>
+ 1 2020-07-13 78339         2 Banquete              632
+ 2 2020-07-13 78343         2 Bishop               4525
+ 3 2020-07-13 78380        20 Robstown            23141
+ 4 2020-07-13 78401         1 Corpus Christi       5391
+ 5 2020-07-13 78404         2 Corpus Christi      17236
+ 6 2020-07-13 78405         7 Corpus Christi      16867
+ 7 2020-07-13 78406         1 Corpus Christi       1413
+ 8 2020-07-13 78407         2 Corpus Christi       2955
+ 9 2020-07-13 78408         5 Corpus Christi      12061
+10 2020-07-13 78409         6 Corpus Christi       2939
+# … with 1,132 more rows
+# ℹ Use `print(n = ...)` to see more rows
+
+```
+
+Let's add a column to the new tibble
+
+```r
+# create column with number of new_cases per 100 individuals to standarize across zip codes
+covid_cases_zip_pop <- 
+  covid_cases_zip %>%
+  left_join(pop_zip, 
+            by = "zip") %>%
+  mutate(new_cases_per100 = 100 * new_cases / population)
+```
+
 
 ---
 
@@ -1067,10 +1111,10 @@ covid_cases_zip_pop <- covid_cases_zip %>%
 </details>
 
 
-<details><summary> Tidyverse Cheat Sheet </summary>
+<details><summary> How Much Variation is There in Cases by Zipcode? </summary>
 <p>
 
-###
+### COLUMNPLOT: Total Cases Per Capita by Zip Code
 
 Now we can see if some zip codes have more cases than others.  We will use the `covid_cases_zip_pop` tibble, group by both "zip" and "population" (if we do not include population, summarize will remove that column).  I will remove the zip codes that had only 1 or 2 days of data, as we did previously.  I will also remove any zip codes with a population size of zero. Our standardized case metric will be number of cases in 100 individuals and we will create this using the `mutate()` command.
 

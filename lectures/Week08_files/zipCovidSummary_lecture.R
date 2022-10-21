@@ -285,31 +285,51 @@ str(pop_zip)
 # isolate numeric zip code
 read_excel(data_zip_census_file_path) %>%
   clean_names() %>%
-  separate(col=zip_code, into=c('x1', 'x2', 'zip'))
+  separate(col=zip_code, 
+           into=c('x1', 
+                  'x2', 
+                  'zip'))
 
 # isolate numeric zip code & polish tibble
-pop_zip <- read_excel(data_zip_census_file_path) %>%
+pop_zip <- 
+  read_excel(data_zip_census_file_path) %>%
   clean_names() %>%
-  separate(col=zip_code, into=c('x1', 'x2', 'zip')) %>%
-  select(zip, city, population)
+  separate(col=zip_code, 
+           into=c('x1', 
+                  'x2', 
+                  'zip')) %>%
+  select(zip, 
+         city, 
+         population)
 
+#### Join Two Data Files With Different Columns using `join` ####
 # left join covid_cases_zip and pop_zip, creating new tibble
-covid_cases_zip_pop <- covid_cases_zip %>%
-  left_join(pop_zip, by = "zip")
+covid_cases_zip_pop <- 
+  covid_cases_zip %>%
+  left_join(pop_zip, 
+            by = "zip")
 
+covid_cases_zip_pop
 
 # create column with number of new_cases per 100 individuals to standarize across zip codes
-covid_cases_zip_pop <- covid_cases_zip_pop %>%
+covid_cases_zip_pop <- 
+  covid_cases_zip %>%
+  left_join(pop_zip, 
+            by = "zip") %>%
   mutate(new_cases_per100 = 100 * new_cases / population)
 
-# COLUMNPLOT: Total Cases Per Capita by Zip Code
+#### How Much Variation is There in Cases by Zipcode? ####
 covid_cases_zip_pop %>%
-  filter(!zip %in% c("78469", "78402"),
+  filter(!zip %in% c("78469", 
+                     "78402"),
          population > 0) %>%
-  group_by(zip, population) %>%
+  group_by(zip, 
+           population) %>%
   summarize(total_cases = sum(new_cases)) %>%
   mutate(cases_per100 = 100 * total_cases / population) %>%
-  ggplot(aes(x=zip, y=cases_per100)) +
+  ggplot() +
+  aes(x=zip, 
+      y=cases_per100) +
   geom_col() +
   theme_classic()
 
