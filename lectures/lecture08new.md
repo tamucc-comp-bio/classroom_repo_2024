@@ -1111,7 +1111,7 @@ covid_cases_zip_pop <-
 </details>
 
 
-<details><summary> How Much Variation is There in Cases by Zipcode? </summary>
+<details><summary> How Much Variation is There in Cases by Zipcode & Pop Size? </summary>
 <p>
 
 ### COLUMNPLOT: Total Cases Per Capita by Zip Code
@@ -1132,17 +1132,40 @@ covid_cases_zip_pop %>%
 
 ![](Week08_files/columnplot_totcases-percap-zip.png)
 
+
+### Scatter Plot: cases per capita x pop size
+
+```r
+covid_cases_zip_pop %>%
+  filter(!zip %in% c("78469", 
+                     "78402"),
+         population > 0) %>%
+  group_by(zip, 
+           population) %>%
+  summarize(total_cases = sum(new_cases)) %>%
+  mutate(cases_per100 = 100 * total_cases / population) %>%
+  ggplot() +
+  aes(x=population, 
+      y=cases_per100) +
+  geom_point() + 
+  geom_smooth() +
+  theme_classic()
+```
+
+![](Week08_files/scatterplot_cases-per-cap_popsize.png)
+
+
 ---
 
 </p>
 </details>
 
 
-<details><summary> Tidyverse Cheat Sheet </summary>
+<details><summary> Mega Pipeline </summary>
 <p>
 
 
-### Mega Pipeline
+### Mega Pipeline Combining the Zip Count and Zip Census Data 
 
 We could have created the `covid_cases_zip_pop` tibble with 1 pipeline.  Here is what it looks like:
 

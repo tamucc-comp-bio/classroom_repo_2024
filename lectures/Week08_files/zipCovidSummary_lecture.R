@@ -333,31 +333,42 @@ covid_cases_zip_pop %>%
   geom_col() +
   theme_classic()
 
-# COLUMNPLOT: Total Cases Per Capita by Zip Code
+# Scatter Plot: cases per capita x pop size
 covid_cases_zip_pop %>%
-  filter(!zip %in% c("78469", "78402"),
+  filter(!zip %in% c("78469", 
+                     "78402"),
          population > 0) %>%
-  group_by(zip, population) %>%
+  group_by(zip, 
+           population) %>%
   summarize(total_cases = sum(new_cases)) %>%
   mutate(cases_per100 = 100 * total_cases / population) %>%
-  ggplot(aes(x=population, y=cases_per100)) +
+  ggplot() +
+  aes(x=population, 
+      y=cases_per100) +
   geom_point() + 
   geom_smooth() +
   theme_classic()
 
 
 #### Read In Zip Data ####
-covid_cases_zip_pop <- read_excel(data_zip_count_file_path) %>%
+covid_cases_zip_pop <- 
+  read_excel(data_zip_count_file_path) %>%
   clean_names() %>%
   mutate(zip = as_factor(zip),
          date = ymd(labdate)) %>%
   select(-labdate) %>%
-  group_by(date, zip) %>%
+  group_by(date, 
+           zip) %>%
   summarize(new_cases = n()) %>%
   left_join(read_excel(data_zip_census_file_path) %>%
               clean_names() %>%
-              separate(col=zip_code, into=c('x1', 'x2', 'zip')) %>%
-              select(zip, city, population), 
+              separate(col=zip_code, 
+                       into=c('x1', 
+                              'x2', 
+                              'zip')) %>%
+              select(zip, 
+                     city, 
+                     population), 
             by = "zip")
 
 
