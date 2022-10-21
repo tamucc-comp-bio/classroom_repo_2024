@@ -182,14 +182,13 @@ _Phew! It's much harder to communicate GUI instructions than CL_
 </details>
 
 
-<details><summary>Today's Data Set</summary>
+<details><summary> Organizing and Formatting an R Script </summary>
 <p>
 
-
+Make sure `CSB/data_wrangling/sandbox/zipCovidSummary.R` is open in R Studio. We will review how and why the file is formatted and organized as it is.
 
 ### Prepping Script
 
-Open a new script file and save it as `CSB/data_wrangling/sandbox/zipCovidSummary.R`
 
 Always add a shebang! to the first line of your script. This will make it executable on a linux computer.  Below is one common location for the `Rscript` command to be located, but it may vary depending upon machine.
 
@@ -261,8 +260,14 @@ search()
 
 ```
 
-___
+---
 
+</p>
+</details>
+
+
+<details><summary> Reading In Data </summary>
+<p>
 
 ### Reading In Data
 
@@ -286,8 +291,14 @@ As with all commands, there are many options available in `read_excel`, but the 
 _Note that `tidyverse` commands use `_` rather than the `.` used in base `R` commands._
 
 
-___
+---
 
+</p>
+</details>
+
+
+<details><summary> Tibbles, A Dataframe by Any Other Name... </summary>
+<p>
 
 ### Tibbles, A Dataframe by Any Other Name...
 
@@ -320,7 +331,14 @@ tibble [6,202 x 2] (S3: tbl_df/tbl/data.frame)
 
 ```
 
-___
+---
+
+</p>
+</details>
+
+
+<details><summary> Tidyverse Cheat Sheet </summary>
+<p>
 
 
 ### [Tidyverse Cheat Sheet](../resources/CheatSheetTidyverse.pdf)
@@ -335,7 +353,14 @@ Use the [Tidyverse Cheat Sheet](../resources/CheatSheetTidyverse.pdf) to find th
 
 ```
 
-___
+---
+
+</p>
+</details>
+
+
+<details><summary> Tidyverse Cheat Sheet </summary>
+<p>
 
 
 ### Pipelines
@@ -382,7 +407,14 @@ All these work and accomplish the same task, but I will be teaching you the last
 
 _Pro tip: every command name is followed by `(` and `)`. Arguments are given between the `()` and are separated by commas `,`. The command does not end until the `)`_
 
-___
+---
+
+</p>
+</details>
+
+
+<details><summary> Tidyverse Cheat Sheet </summary>
+<p>
 
 
 ### Advanced Pipelines
@@ -409,6 +441,13 @@ We are going to start teaching you data wrangling with a real data set.  The fol
 
 
 ---
+
+</p>
+</details>
+
+
+<details><summary> Tidyverse Cheat Sheet </summary>
+<p>
 
 
 ### Adding and Modifying Tibble Columns with `mutate`
@@ -476,7 +515,14 @@ Let us break down what happened in the pipeline above, starting from the line th
 
 _Note that a factor is a categorical data type that allows you to control the order of the categories in downstream figures and tables. There are several functions dedicated to creating factors and ordering their categories.  Here, we are satisfied with the the default numerical sorting of the zip codes._
 
-___
+---
+
+</p>
+</details>
+
+
+<details><summary> Tidyverse Cheat Sheet </summary>
+<p>
 
 
 ### Remove and Reorder Columns with `select`
@@ -504,7 +550,14 @@ ___
 # ... with 6,192 more rows
 ```
 
-___
+---
+
+</p>
+</details>
+
+
+<details><summary> Tidyverse Cheat Sheet </summary>
+<p>
 
 
 ### Group Tibble Rows by Column Values with `group_by`
@@ -536,7 +589,14 @@ The first step in combining rows and/or performing calculations on groups of row
 # ... with 6,192 more rows
 ```
 
-___
+---
+
+</p>
+</details>
+
+
+<details><summary> Tidyverse Cheat Sheet </summary>
+<p>
 
 
 ### Performing Row-wise Calculations Based Upon the Groupings with `summarise`
@@ -570,7 +630,14 @@ Using the `summarise` command, we can perform row-wise calculations based upon t
 # ... with 1,132 more rows
 ```
 
-___
+---
+
+</p>
+</details>
+
+
+<details><summary> Tidyverse Cheat Sheet </summary>
+<p>
 
 
 ### Explore the Data Visually With a Heat Map
@@ -605,6 +672,13 @@ covid_cases_zip %>%
 The empty tiles represent zip code x date combinations where nobody tested positive for COVID.  Note that some zip codes have very view data points. We will remove some of these for some of the figure that follow because they break they cause the `ggplot` code to break otherwise.
 
 ---
+
+</p>
+</details>
+
+
+<details><summary> Tidyverse Cheat Sheet </summary>
+<p>
 
 
 ### More Visual Exploration With a Scatterplot
@@ -644,7 +718,14 @@ covid_cases_zip %>%
 
 _Note that the high numbers of cases between Sep and Oct are backlogged cases from over the summer that were newly reported in Sep and Oct._
 
-___
+---
+
+</p>
+</details>
+
+
+<details><summary> Tidyverse Cheat Sheet </summary>
+<p>
 
 
 ### Use `filter` To Remove Rows and Create Scatterplot for All But Two Zip Codes
@@ -666,7 +747,14 @@ This will yield several warning messages. They occur because there are too few d
 
 ![](Week08_files/scatterplot_newcases-date-zip.png)
 
-___
+---
+
+</p>
+</details>
+
+
+<details><summary> Tidyverse Cheat Sheet </summary>
+<p>
 
 
 ### Plot Two Different Tibbles in 1 Scatterplot
@@ -693,7 +781,14 @@ covid_cases_zip %>%
 
 Is red associated with the cases from a single zip code or the mean of all zip codes?
 
-___
+---
+
+</p>
+</details>
+
+
+<details><summary> Tidyverse Cheat Sheet </summary>
+<p>
 
 
 ### `lubridate` - The Extended Tidyverse Package for Date Data Types
@@ -765,7 +860,15 @@ covid_cases_zip %>%
 
 ![](Week08_files/columnplot_newcases-day-monthcol.png)
 
-___
+
+---
+
+</p>
+</details>
+
+
+<details><summary> Tidyverse Cheat Sheet </summary>
+<p>
 
 
 ### Read In Population Data by Zip Code
@@ -785,7 +888,14 @@ tibble [38 x 6] (S3: tbl_df/tbl/data.frame)
  $ Area Code(s)  : num [1:38] 361 361 361 361 361 361 361 361 361 361 ...
 ```
 
-___
+---
+
+</p>
+</details>
+
+
+<details><summary> Tidyverse Cheat Sheet </summary>
+<p>
 
 
 ### Isolate Numeric Zip Code Using `separate()`
@@ -813,7 +923,14 @@ As you can probably see, the data needs a little bit of massaging before we can 
 # ... with 28 more rows
 ```
 
-___
+---
+
+</p>
+</details>
+
+
+<details><summary> Tidyverse Cheat Sheet </summary>
+<p>
 
 
 ### Clean Up the `pop_zip` Tibble and Save It
@@ -828,7 +945,14 @@ pop_zip <- read_excel("../data/zip_2010census-pop.xlsx") %>%
   select(zip, city, population)
 ```
 
-___
+---
+
+</p>
+</details>
+
+
+<details><summary> Tidyverse Cheat Sheet </summary>
+<p>
 
 
 ### Join Two Data Files With Different Columns using `join`
@@ -851,7 +975,14 @@ covid_cases_zip_pop <- covid_cases_zip %>%
   left_join(pop_zip, by = "zip")
 ```
 
-___
+---
+
+</p>
+</details>
+
+
+<details><summary> Tidyverse Cheat Sheet </summary>
+<p>
 
 ###
 
@@ -871,7 +1002,14 @@ covid_cases_zip_pop %>%
 
 ![](Week08_files/columnplot_totcases-percap-zip.png)
 
-___
+---
+
+</p>
+</details>
+
+
+<details><summary> Tidyverse Cheat Sheet </summary>
+<p>
 
 
 ### Mega Pipeline
@@ -897,7 +1035,14 @@ covid_cases_zip_pop <- read_excel("../data/zip_count_2020-08-18_2020-10-11.xlsx"
 
 Formatting is critical to human-readability when you pipe and nest this many commands together.  
 
-___
+---
+
+</p>
+</details>
+
+
+<details><summary> Tidyverse Cheat Sheet </summary>
+<p>
 
 
 ### Concatenate Two or More Identically Formatted Data Files with `bind_rows`
@@ -928,7 +1073,14 @@ The
 # ... with 14,567 more rows
 ```
 
-___
+---
+
+</p>
+</details>
+
+
+<details><summary> Tidyverse Cheat Sheet </summary>
+<p>
 
 
 ### Recode Ages into Age Classes using `mutate()` and `case_when()`
@@ -954,7 +1106,14 @@ covid_cases_age <- bind_rows(read_excel('../data/age_count_2020-07-13_2020-10-11
   summarise(new_cases = n())
 ```
 
-___
+---
+
+</p>
+</details>
+
+
+<details><summary> Tidyverse Cheat Sheet </summary>
+<p>
 
 
 ### Reshape a Tibble Using `pivot` (replaces `gather` and `spread` in CSB text)
@@ -969,8 +1128,11 @@ covid_cases_age %>%
 
 To go from unstacked to stacked, you can similarly use `pivot_longer()`.  More rows = longer tibble.
 
-___
 
+</p>
+</details>
+
+---
 
 ## HOMEWORK
 
