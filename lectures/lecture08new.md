@@ -295,8 +295,13 @@ The solution is to set all user-defined hard coded variables at the beginning of
 ```r
 #### USER DEFINED VARIABLES ####
 
+# date and zip code of every covid case
 data_zip_count_file_path = "../data/zip_count_2020-08-18_2020-10-11.xlsx"
+
+# population size in every zip code
 data_zip_census_file_path = "../data/zip_2010census-pop.xlsx"
+
+# date and age of every covid case
 data_age_count_file_path = "../data/age_count_2020-07-13_2020-10-11.xlsx"
 
 ```
@@ -384,8 +389,6 @@ When we read in `zip_count_2020-08-18_2020-10-11.xlsx` it was saved into a tibbl
 tibble [6,202 x 2] (S3: tbl_df/tbl/data.frame)
  $ LABDATE: POSIXct[1:6202], format: "2020-08-18" "2020-08-18" "2020-08-18" "2020-08-18" ...
  $ zip    : num [1:6202] 78413 78417 78405 78405 78413 ...
-
-
 ```
 
 ---
@@ -456,13 +459,14 @@ covid_cases_zip <- read_excel("../data/zip_count_2020-08-18_2020-10-11.xlsx") %>
 
 ```r
 # pipelined in R style and formatted for human readability on a single screen
-covid_cases_zip <- read_excel("../data/zip_count_2020-08-18_2020-10-11.xlsx") %>%
+covid_cases_zip <- 
+  read_excel("../data/zip_count_2020-08-18_2020-10-11.xlsx") %>%
   clean_names()
 ```
 
-All these work and accomplish the same task, but I will be teaching you the last option, pipelined and formatted in the `R` style.  So the variable where the output of the pipeline is saved is listed on the first line, regardless of how long the pipeline is.  
+All these work and accomplish the same task, but I will be teaching you the last option, pipelined and formatted in the `R` style for human readability.  So the variable where the output of the pipeline is saved is listed on the first line, regardless of how long the pipeline is.  
 
-_Pro tip: every command name is followed by `(` and `)`. Arguments are given between the `()` and are separated by commas `,`. The command does not end until the `)`_
+_Important syntax: every command name is followed by `(` and `)`. Arguments are given between the `()` and are separated by commas `,`. The command does not end until the `)`_
 
 ---
 
@@ -470,20 +474,20 @@ _Pro tip: every command name is followed by `(` and `)`. Arguments are given bet
 </details>
 
 
-<details><summary> Tidyverse Cheat Sheet </summary>
+<details><summary> Advanced Pipelines </summary>
 <p>
-
 
 ### Advanced Pipelines
 
-We are going to start teaching you data wrangling with a real data set.  The following is the pipeline required to make our first complete tibble for analysis.  Let us compare how the tibble changes 
+We are going to start teaching you data wrangling with a real data set.  The following is the pipeline required to make our first complete tibble for analysis.  Let's compare how the tibble changes 
 
 ```r
 # check previous data format
 > view(covid_cases_zip)
 
 # read in data, count up occurences of each zip code on each day, make each row a unique combination of date and zip code
-> covid_cases_zip <- read_excel("../data/zip_count_2020-08-18_2020-10-11.xlsx") %>%
+> covid_cases_zip <- 
++   read_excel("../data/zip_count_2020-08-18_2020-10-11.xlsx") %>%
 +   clean_names() %>%
 +   mutate(zip = as_factor(zip),
 +          date = ymd(labdate)) %>%
@@ -503,7 +507,7 @@ We are going to start teaching you data wrangling with a real data set.  The fol
 </details>
 
 
-<details><summary> Tidyverse Cheat Sheet </summary>
+<details><summary> Adding and Modifying Tibble Columns with `mutate` </summary>
 <p>
 
 

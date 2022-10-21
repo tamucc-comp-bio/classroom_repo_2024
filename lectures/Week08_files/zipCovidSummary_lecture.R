@@ -40,8 +40,14 @@ search()
 # you should set all user-defined variables at the beginning of the script in one section
 # this makes your script ready to be executed with command line options and
 # makes it easier to edit when you add or change variables
+
+# date and zip code of every covid case
 data_zip_count_file_path = "../data/zip_count_2020-08-18_2020-10-11.xlsx"
+
+# population size in every zip code
 data_zip_census_file_path = "../data/zip_2010census-pop.xlsx"
+
+# date and age of every covid case
 data_age_count_file_path = "../data/age_count_2020-07-13_2020-10-11.xlsx"
 
 #### Read In Data ####
@@ -61,33 +67,38 @@ overwrite this with a line of code
 # step by step
 covid_cases_zip <- read_excel(data_zip_count_file_path)
 covid_cases_zip <- clean_names(covid_cases_zip)
+
 # nested, the most common base R formatting type
 covid_cases_zip <- clean_names(read_excel(data_zip_count_file_path))
+
 # nested & formatted for human readability on a single screen
 covid_cases_zip <- clean_names(
   read_excel(data_zip_count_file_path)
-)
+  )
+
 # pipelined in linux/bash style
 read_excel(data_zip_count_file_path) %>% clean_names() -> covid_cases_zip 
+
 # pipelined in R style
 covid_cases_zip <- read_excel(data_zip_count_file_path) %>% clean_names()
+
 # pipelined in R style and formatted for human readability on a single screen
 covid_cases_zip <- 
   read_excel(data_zip_count_file_path) %>%
   clean_names()
 
-
 # check previous data format
 view(covid_cases_zip)
 
 # read in data, count up occurences of each zip code on each day, make each row a unique combination of date and zip code
-covid_cases_zip <- read_excel(data_zip_count_file_path) %>%
+covid_cases_zip <- 
+  read_excel(data_zip_count_file_path) %>%
   clean_names() %>%
   mutate(zip = as_factor(zip),
          date = ymd(labdate)) %>%
   select(-labdate) %>%
   group_by(date, zip) %>%
-  summarise(new_cases = n())
+  summarize(new_cases = n())
 
 # check data format again
 view(covid_cases_zip)
