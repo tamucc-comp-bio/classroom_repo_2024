@@ -79,12 +79,13 @@ The repository is named CSB, and it contains all of the example files and direct
 
 <details><summary>Tidyverse Install</summary>
 <p>
-```R
+
+```r
 # clear all variables from environment
 rm(list = ls())
 ```
 
-```
+```r
 # RUN THE FOLLOWING LINE IN THE CONSOLE (LOWER LEFT PANEL)
 install.packages("tidyverse")
 
