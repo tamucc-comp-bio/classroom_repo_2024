@@ -120,26 +120,72 @@ library(tidyverse)
 </p>
 </details>
 
-Today, we are going to process COVID-19 data from the Coastal Bend of Texas (here). You will need to grab some data and save it to your `CSB/data_wrangling/data` dir.
+<details><summary>Getting Today's RScript & Data Set: Commmand Line Method</summary>
+<p>
 
-###############################
-* download the [`zipCovidSummary_lecture.R`](Week08_files/zipCovidSummary_lecture.R) script which has the code for today
+Today, we are going to process COVID-19 data from the Coastal Bend of Texas. You will need to grab some data and save it to your `CSB/data_wrangling/data` dir.
 
-  * move `zipCovidSummary_lecture.R` into your `CSB/data_wrangling/sandbox` dir
+Open your terminal and move to `CSB/data_wrangling/sandbox` then download the Rscript. For those using windows, make sure you are in your windows dir
+
+```bash
+#win path (mac users, use the same CSB dir path you have been, probably ~/CSB/data_wrangling/sandbox)
+cd /mnt/c/Users/YourUserName/Downloads/CSB/data_wrangling/sandbox
+
+wget https://github.com/tamucc-comp-bio-2022/classroom_repo/blob/master/lectures/Week08_files/zipCovidSummary_lecture.R
+```
+
+Now download the data files as follows:
+
+```bash
+# do not change directories, this assumes you are in CSB/data_wrangling/sandbox
+wget --directory-prefix=../data https://github.com/tamucc-comp-bio-2022/classroom_repo/raw/master/lectures/Week08_files/zip_count_2020-08-18_2020-10-11.xlsx https://github.com/tamucc-comp-bio-2022/classroom_repo/raw/master/lectures/Week08_files/zip_2010census-pop.xlsx https://github.com/tamucc-comp-bio-2022/classroom_repo/raw/master/lectures/Week08_files/age_count_2020-07-13_2020-10-11.xlsx
+
+```
+
   
   * open `zipCovidSummary_lecture.R` in R Studio, and execute the lines as we go in the ppt.
 
-* additionally download the data for the lecture and move them to `CSB/data_wrangling/data`: 
+---
+
+</p>
+</details>
+
+
+<details><summary>Getting Today's RScript & Data Set: GUI Method</summary>
+<p>
+
+Today, we are going to process COVID-19 data from the Coastal Bend of Texas. You will need to grab some data and save it to your `CSB/data_wrangling/data` dir.
+
+* copy the [`zipCovidSummary_lecture.R`](Week08_files/zipCovidSummary_lecture.R) script into a new blank Rscript in RStudio
+
+New Blank RScript          |  zipCovidSummary_lecture.R pasted
+:-------------------------:|:-------------------------:
+![](Week08_files/blank_rscript.PNG)  |  ![](Week08_files/pasted_rscript.PNG)
+
+  * save the script as `zipCovidSummary_lecture.R` into your `CSB/data_wrangling/sandbox` dir
+  
+  * open `zipCovidSummary_lecture.R` in R Studio, and execute the lines as we go in the ppt.
+
+* additionally download these additional data files for the lecture and move them to `CSB/data_wrangling/data`: 
 
   * [zip_count_2020-08-18_2020-10-11.xlsx](Week08_files/zip_count_2020-08-18_2020-10-11.xlsx)
   
   * [zip_2010census-pop.xlsx](Week08_files/zip_2010census-pop.xlsx)
   
   * [age_count_2020-07-13_2020-10-11.xlsx](Week08_files/age_count_2020-07-13_2020-10-11.xlsx)
-################################
 
+_Phew! It's much harder to communicate GUI instructions than CL_
 
 ---
+
+</p>
+</details>
+
+
+<details><summary>Today's Data Set</summary>
+<p>
+
+
 
 ### Prepping Script
 
