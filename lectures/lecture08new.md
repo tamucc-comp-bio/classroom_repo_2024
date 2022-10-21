@@ -102,13 +102,9 @@ library(tidyverse)
 
 ## I. Review Material Covered for Homework
 
-[Mind Expander 9.5](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUOE9LM0ZWOUZWVlZTUzBKQkZaUkcwRVg4Qy4u)
+[Mind Expander 9.5](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUOE9LM0ZWOUZWVlZTUzBKQkZaUkcwRVg4Qy4u), [Mind Expander 9.5 Solutions](Week07_files/mind_expander_9.5_answers.R)
 
-[Mind Expander 9.5 Solutions](Week07_files/mind_expander_9.5_answers.R)
-
-[Mind Expander 9.6](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlURDFBNlc2UFFEOVJVMEpaWVZJWkJJNEc1US4u)
-
-[Mind Expander 9.6 Solutions](Week07_files/mind_expander_9.6_answers.R)
+[Mind Expander 9.6](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlURDFBNlc2UFFEOVJVMEpaWVZJWkJJNEc1US4u), [Mind Expander 9.6 Solutions](Week07_files/mind_expander_9.6_answers.R)
 
 [Assignment 07 Solutions](../assignments/assignment_7_answers.R)
 
