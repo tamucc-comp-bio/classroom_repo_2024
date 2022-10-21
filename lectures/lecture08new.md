@@ -131,7 +131,7 @@ Open your terminal and move to `CSB/data_wrangling/sandbox` then download the Rs
 #win path (mac users, use the same CSB dir path you have been, probably ~/CSB/data_wrangling/sandbox)
 cd /mnt/c/Users/YourUserName/Downloads/CSB/data_wrangling/sandbox
 
-wget https://github.com/tamucc-comp-bio-2022/classroom_repo/blob/master/lectures/Week08_files/zipCovidSummary_lecture.R
+wget https://raw.githubusercontent.com/tamucc-comp-bio-2022/classroom_repo/master/lectures/Week08_files/zipCovidSummary_lecture.R
 ```
 
 Now download the data files as follows:
