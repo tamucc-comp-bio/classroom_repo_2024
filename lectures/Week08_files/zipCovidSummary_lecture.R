@@ -63,7 +63,7 @@ str(covid_cases_zip)
 overwrite this with a line of code
 
 
-# pipelines
+#### Pipelines ####
 # step by step
 covid_cases_zip <- read_excel(data_zip_count_file_path)
 covid_cases_zip <- clean_names(covid_cases_zip)
@@ -87,6 +87,8 @@ covid_cases_zip <-
   read_excel(data_zip_count_file_path) %>%
   clean_names()
 
+
+#### Advanced Pipelines ####
 # check previous data format
 view(covid_cases_zip)
 
@@ -97,12 +99,14 @@ covid_cases_zip <-
   mutate(zip = as_factor(zip),
          date = ymd(labdate)) %>%
   select(-labdate) %>%
-  group_by(date, zip) %>%
+  group_by(date, 
+           zip) %>%
   summarize(new_cases = n())
 
 # check data format again
 view(covid_cases_zip)
 
+#### Adding and Modifying Tibble Columns with `mutate`####
 
 # tibble before mutate
 read_excel(data_zip_count_file_path) %>%
@@ -119,6 +123,7 @@ read_excel(data_zip_count_file_path) %>%
   mutate(zip = as_factor(zip),
          date = ymd(labdate))
 
+#### Remove and Reorder Columns with `select` ####
 
 # remove the labdate column
 read_excel(data_zip_count_file_path) %>%
@@ -127,56 +132,73 @@ read_excel(data_zip_count_file_path) %>%
          date = ymd(labdate)) %>%
   select(-labdate)
 
+#### Group Tibble Rows by Column Values with `group_by` So that Calculations by Group Can be Made####
 # group rows by both date and zip code
 read_excel(data_zip_count_file_path) %>%
   clean_names() %>%
   mutate(zip = as_factor(zip),
          date = ymd(labdate)) %>%
   select(-labdate) %>%
-  group_by(date, zip)
+  group_by(date, 
+           zip)
 
-# count the number of COVID cases by the groupings (cate x zip) using summarise() and n()
+#### Performing Row-wise Calculations Based Upon the Groupings with `summarize`####
+# count the number of COVID cases by the groupings (case x zip) using summarize() and n()
 read_excel(data_zip_count_file_path) %>%
   clean_names() %>%
   mutate(zip = as_factor(zip),
          date = ymd(labdate)) %>%
   select(-labdate) %>%
-  group_by(date, zip) %>%
-  summarise(new_cases = n())
+  group_by(date, 
+           zip) %>%
+  summarize(new_cases = n())
+
+
+#### Plot covid_cases_zip Data ####
 
 # this should already be done, but just in case, save the tibble into covid_cases_zip
-covid_cases_zip <- read_excel(data_zip_count_file_path) %>%
+covid_cases_zip <- 
+  read_excel(data_zip_count_file_path) %>%
   clean_names() %>%
   mutate(zip = as_factor(zip),
          date = ymd(labdate)) %>%
   select(-labdate) %>%
-  group_by(date, zip) %>%
-  summarise(new_cases = n())
-
-#### Plot covid_cases_zip Data ####
+  group_by(date, 
+           zip) %>%
+  summarize(new_cases = n())
 
 # HEATMAP: new cases per day by zip code
 covid_cases_zip %>%
-  ggplot(aes(x = date, y = zip, fill = new_cases)) +
+  ggplot() +
+  aes(x = date, 
+      y = zip, 
+      fill = new_cases) +
   geom_tile() +
   geom_smooth(se = FALSE)
 
 # SCATTERPLOT: new cases per day
 covid_cases_zip %>%
-  summarise(new_cases = sum(new_cases))
+  summarize(new_cases = sum(new_cases))
 
 covid_cases_zip %>%
-  summarise(new_cases = sum(new_cases)) %>%
-  ggplot(aes(x = date, y = new_cases)) +
+  summarize(new_cases = sum(new_cases)) %>%
+  ggplot() +
+  aes(x = date, 
+      y = new_cases) +
   geom_point() +
   geom_smooth() +
   theme_classic()
 
+#### Use `filter` To Remove Rows then Create Scatterplot ####
 # SCATTERPLOT: new cases per day by zip code
 # here we remove the zip codes with too little data to make this figure
 covid_cases_zip %>%
-  filter(!zip %in% c("78469", "78402")) %>%   # note, we would want to add this to the USER DEFINED VARIABLES rather than hardcoding it like this
-  ggplot(aes(x = date, y = new_cases, color = zip)) +
+  filter(!zip %in% c("78469", 
+                     "78402")) %>%   # note, we would want to add this to the USER DEFINED VARIABLES rather than hardcoding it like this
+  ggplot() +
+  aes(x = date, 
+      y = new_cases, 
+      color = zip) +
   geom_point() +
   geom_smooth(se = FALSE)  +
   theme_classic()
@@ -188,10 +210,10 @@ covid_cases_zip %>%
   geom_point(color="red4") +
   geom_smooth(se = FALSE, color="red4") +
   geom_point(data = covid_cases_zip %>%
-               summarise(mean_new_cases = mean(new_cases)), 
+               summarize(mean_new_cases = mean(new_cases)), 
              aes(x = date, y = mean_new_cases), color="black") +
   geom_smooth(data = covid_cases_zip %>%
-                summarise(mean_new_cases = mean(new_cases)), 
+                summarize(mean_new_cases = mean(new_cases)), 
               aes(x = date, y = mean_new_cases), color="black") +
   theme_classic()
 
@@ -201,14 +223,14 @@ covid_cases_zip %>%
   mutate(day = wday(date, label=TRUE, abbr=TRUE),
          month = month(date, label=TRUE, abbr=TRUE)) %>%
   group_by(day, month) %>%
-  summarise(new_cases = sum(new_cases)) 
+  summarize(new_cases = sum(new_cases)) 
 
 # COLUMNPLOT: total new cases per day of week for each month
 covid_cases_zip %>%
   mutate(day = wday(date, label=TRUE, abbr=TRUE),
          month = month(date, label=TRUE, abbr=TRUE)) %>%
   group_by(day, month) %>%
-  summarise(new_cases = sum(new_cases)) %>%
+  summarize(new_cases = sum(new_cases)) %>%
   ggplot(aes(x = day, y = new_cases)) +
   geom_col() +
   geom_smooth() +
@@ -219,7 +241,7 @@ covid_cases_zip %>%
   mutate(day = wday(date, label=TRUE, abbr=TRUE),
          month = month(date, label=TRUE, abbr=TRUE)) %>%
   group_by(day, month) %>%
-  summarise(new_cases = sum(new_cases)) %>%
+  summarize(new_cases = sum(new_cases)) %>%
   ggplot(aes(x = day, y = new_cases)) +
   geom_col() +
   geom_smooth() +
@@ -282,7 +304,7 @@ covid_cases_zip_pop <- read_excel(data_zip_count_file_path) %>%
          date = ymd(labdate)) %>%
   select(-labdate) %>%
   group_by(date, zip) %>%
-  summarise(new_cases = n()) %>%
+  summarize(new_cases = n()) %>%
   left_join(read_excel(data_zip_census_file_path) %>%
               clean_names() %>%
               separate(col=zip_code, into=c('x1', 'x2', 'zip')) %>%
@@ -315,7 +337,7 @@ covid_cases_age <- bind_rows(read_excel(data_age_count_file_path, sheet = "Jul")
     age_years >= 60 & age_years < 80 ~ "60-79",
     age_years >= 80 ~ "80+")) %>%
   group_by(date, age_class) %>%
-  summarise(new_cases = n())
+  summarize(new_cases = n())
   
 
 # unstack data by age class

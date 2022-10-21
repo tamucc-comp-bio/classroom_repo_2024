@@ -493,7 +493,7 @@ We are going to start teaching you data wrangling with a real data set.  The fol
 +          date = ymd(labdate)) %>%
 +   select(-labdate) %>%
 +   group_by(date, zip) %>%
-+   summarise(new_cases = n())
++   summarize(new_cases = n())
 
 # check data format again
 > view(covid_cases_zip)
@@ -582,7 +582,7 @@ _Note that a factor is a categorical data type that allows you to control the or
 </details>
 
 
-<details><summary> Tidyverse Cheat Sheet </summary>
+<details><summary> Remove and Reorder Columns with `select` </summary>
 <p>
 
 
@@ -617,7 +617,7 @@ _Note that a factor is a categorical data type that allows you to control the or
 </details>
 
 
-<details><summary> Tidyverse Cheat Sheet </summary>
+<details><summary> Group Tibble Rows by Column Values with `group_by` </summary>
 <p>
 
 
@@ -632,7 +632,8 @@ The first step in combining rows and/or performing calculations on groups of row
 +   mutate(zip = as_factor(zip),
 +          date = ymd(labdate)) %>%
 +   select(-labdate) %>%
-+   group_by(date, zip)
++   group_by(date, 
++            zip)
 # A tibble: 6,202 x 2
 # Groups:   date, zip [1,142]
    zip   date      
@@ -656,24 +657,26 @@ The first step in combining rows and/or performing calculations on groups of row
 </details>
 
 
-<details><summary> Tidyverse Cheat Sheet </summary>
-<p>
+<details><summary> Performing Row-wise Calculations Based Upon the Groupings with `summarize`
 
 
-### Performing Row-wise Calculations Based Upon the Groupings with `summarise`
+### Performing Row-wise Calculations Based Upon the Groupings with `summarize`
 
-Using the `summarise` command, we can perform row-wise calculations based upon their groupings. We effectively are changing the smallest unit of observation with this command, and thus it wil produce a tibble with fewer rows.  Before this command, the smallest unit of observation was a single person who tested postitive for COVID in a particular zip code on a particular date.  After this, the unit of observation will be the number of people that tested positive for COVID in a particular zip code on a particular date.
+Using the `summarize` command after grouping, we can perform row-wise calculations based upon the groupings. 
+
+We effectively are changing the smallest unit of observation with this command, and thus it will produce a tibble with fewer rows.  Before this command, the smallest unit of observation was a single person who tested postitive for COVID in a particular zip code on a particular date.  After this, the unit of observation will be the number of people that tested positive for COVID in a particular zip code on a particular date.
 
 ```r
-# count the number of COVID cases by the groupings (cate x zip) using summarise() and n()
+# count the number of COVID cases by the groupings (cate x zip) using summarize() and n()
 > read_excel("../data/zip_count_2020-08-18_2020-10-11.xlsx") %>%
 +   clean_names() %>%
 +   mutate(zip = as_factor(zip),
 +          date = ymd(labdate)) %>%
 +   select(-labdate) %>%
-+   group_by(date, zip) %>%
-+   summarise(new_cases = n())
-`summarise()` regrouping output by 'date' (override with `.groups` argument)
++   group_by(date, 
++            zip) %>%
++   summarize(new_cases = n())
+`summarize()` regrouping output by 'date' (override with `.groups` argument)
 # A tibble: 1,142 x 3
 # Groups:   date [91]
    date       zip   new_cases
@@ -697,7 +700,7 @@ Using the `summarise` command, we can perform row-wise calculations based upon t
 </details>
 
 
-<details><summary> Tidyverse Cheat Sheet </summary>
+<details><summary> Explore the Data Visually With a Heat Map </summary>
 <p>
 
 
@@ -715,7 +718,7 @@ covid_cases_zip <- read_excel("../data/zip_count_2020-08-18_2020-10-11.xlsx") %>
          date = ymd(labdate)) %>%
   select(-labdate) %>%
   group_by(date, zip) %>%
-  summarise(new_cases = n())
+  summarize(new_cases = n())
 ```
 
 ```r
@@ -723,7 +726,8 @@ covid_cases_zip <- read_excel("../data/zip_count_2020-08-18_2020-10-11.xlsx") %>
 
 # HEATMAP: new cases per day by zip code
 covid_cases_zip %>%
-  ggplot(aes(x = date, y = zip, fill = new_cases)) +
+  ggplot() +
+  aes(x = date, y = zip, fill = new_cases) +
   geom_tile() +
   geom_smooth(se = FALSE)
 ```
@@ -738,19 +742,19 @@ The empty tiles represent zip code x date combinations where nobody tested posit
 </details>
 
 
-<details><summary> Tidyverse Cheat Sheet </summary>
+<details><summary> More Visual Exploration With a Scatterplot </summary>
 <p>
 
 
 ### More Visual Exploration With a Scatterplot
 
 
-Let us make a scatter plot of the total number of new cases per day across all zip codes. Note that we take advantage of the grouping we applied to the tibble previously and use `summarise` to sum up all new cases on each date.
+Let us make a scatter plot of the total number of new cases per day across all zip codes. Note that we take advantage of the grouping we applied to the tibble previously and use `summarize` to sum up all new cases on each date.
 
 ```r 
 > covid_cases_zip %>%
-+   summarise(new_cases = sum(new_cases))
-`summarise()` ungrouping output (override with `.groups` argument)
++   summarize(new_cases = sum(new_cases))
+`summarize()` ungrouping output (override with `.groups` argument)
 # A tibble: 91 x 2
    date       new_cases
    <date>         <int>
@@ -768,8 +772,10 @@ Let us make a scatter plot of the total number of new cases per day across all z
 
 # SCATTERPLOT: new cases per day
 covid_cases_zip %>%
-   summarise(new_cases = sum(new_cases)) %>%
-   ggplot(aes(x = date, y = new_cases)) +
+   summarize(new_cases = sum(new_cases)) %>%
+   ggplot() +
+   aes(x = date, 
+       y = new_cases) +
    geom_point() +
    geom_smooth() +
    theme_classic()
@@ -785,11 +791,11 @@ _Note that the high numbers of cases between Sep and Oct are backlogged cases fr
 </details>
 
 
-<details><summary> Tidyverse Cheat Sheet </summary>
+<details><summary> Use `filter` To Remove Rows then Create Scatterplot </summary>
 <p>
 
 
-### Use `filter` To Remove Rows and Create Scatterplot for All But Two Zip Codes
+### Use `filter` To Remove Rows then Create Scatterplot for All But Two Zip Codes
 
 The `filter` command allows you to remove rows from the tibble.  Filters can be defined using typical equalities `filter(zip == 78412)`  or  `filter(zip >= 78412)`.  You can also use "and" `&` and "or" `|`: `filter(zip == 78411 | zip == 78412)`. Another way is displayed below, using `!` for "not" and `%in%` which compares the values in the column to the values in the provided vector. See the filter manual for all of the ways that filters can be constructed and applied.
 
@@ -797,14 +803,18 @@ The `filter` command allows you to remove rows from the tibble.  Filters can be 
 # SCATTERPLOT: new cases per day by zip code
 # here we remove the zip codes with too little data to make this figure
 covid_cases_zip %>%
-   filter(!zip %in% c("78469", "78402")) %>%
-   ggplot(aes(x = date, y = new_cases, color = zip)) +
+   filter(!zip %in% c("78469", 
+                      "78402")) %>%
+   ggplot() +
+   aes(x = date, 
+       y = new_cases, 
+	   color = zip) +
    geom_point() +
    geom_smooth(se = FALSE)  +
    theme_classic()
 ```
 
-This will yield several warning messages. They occur because there are too few data points in some of the zip codes.
+This will yield several warning messages. They occur because there are too few data points in some of the zip codes.  Warning messages generally are ok, it's the ERROR messages that you have be very mindful of because they mean something didn't work.
 
 ![](Week08_files/scatterplot_newcases-date-zip.png)
 
@@ -830,10 +840,10 @@ covid_cases_zip %>%
   geom_point(color="red4") +
   geom_smooth(se = FALSE, color="red4") +
   geom_point(data = covid_cases_zip %>%
-               summarise(mean_new_cases = mean(new_cases)), 
+               summarize(mean_new_cases = mean(new_cases)), 
              aes(x = date, y = mean_new_cases), color="black") +
   geom_smooth(data = covid_cases_zip %>%
-                summarise(mean_new_cases = mean(new_cases)), 
+                summarize(mean_new_cases = mean(new_cases)), 
               aes(x = date, y = mean_new_cases), color="black") +
   theme_classic()
 ```
@@ -865,8 +875,8 @@ There are many other `lubridate` commands for conveniently handling date data.  
 +   mutate(day = wday(date, label=TRUE, abbr=TRUE),
 +          month = month(date, label=TRUE, abbr=TRUE)) %>%
 +   group_by(day, month) %>%
-+   summarise(new_cases = sum(new_cases))
-`summarise()` regrouping output by 'day' (override with `.groups` argument)
++   summarize(new_cases = sum(new_cases))
+`summarize()` regrouping output by 'day' (override with `.groups` argument)
 # A tibble: 28 x 3
 # Groups:   day [7]
    day   month new_cases
@@ -892,7 +902,7 @@ covid_cases_zip %>%
   mutate(day = wday(date, label=TRUE, abbr=TRUE),
          month = month(date, label=TRUE, abbr=TRUE)) %>%
   group_by(day, month) %>%
-  summarise(new_cases = sum(new_cases)) %>%
+  summarize(new_cases = sum(new_cases)) %>%
   ggplot(aes(x = day, y = new_cases)) +
   geom_col() +
   geom_smooth() +
@@ -911,7 +921,7 @@ covid_cases_zip %>%
   mutate(day = wday(date, label=TRUE, abbr=TRUE),
          month = month(date, label=TRUE, abbr=TRUE)) %>%
   group_by(day, month) %>%
-  summarise(new_cases = sum(new_cases)) %>%
+  summarize(new_cases = sum(new_cases)) %>%
   ggplot(aes(x = day, y = new_cases)) +
   geom_col() +
   geom_smooth() +
@@ -1047,7 +1057,7 @@ covid_cases_zip_pop <- covid_cases_zip %>%
 
 ###
 
-Now we can see if some zip codes have more cases than others.  We will use the `covid_cases_zip_pop` tibble, group by both "zip" and "population" (if we do not include population, summarise will remove that column).  I will remove the zip codes that had only 1 or 2 days of data, as we did previously.  I will also remove any zip codes with a population size of zero. Our standardized case metric will be number of cases in 100 individuals and we will create this using the `mutate()` command.
+Now we can see if some zip codes have more cases than others.  We will use the `covid_cases_zip_pop` tibble, group by both "zip" and "population" (if we do not include population, summarize will remove that column).  I will remove the zip codes that had only 1 or 2 days of data, as we did previously.  I will also remove any zip codes with a population size of zero. Our standardized case metric will be number of cases in 100 individuals and we will create this using the `mutate()` command.
 
 ```r 
 # COLUMNPLOT: Total Cases Per Capita by Zip Code
@@ -1085,7 +1095,7 @@ covid_cases_zip_pop <- read_excel("../data/zip_count_2020-08-18_2020-10-11.xlsx"
          date = ymd(labdate)) %>%
   select(-labdate) %>%
   group_by(date, zip) %>%
-  summarise(new_cases = n()) %>%
+  summarize(new_cases = n()) %>%
   
   left_join(read_excel("../data/zip_2010census-pop.xlsx") %>%
               clean_names() %>%
@@ -1164,7 +1174,7 @@ covid_cases_age <- bind_rows(read_excel('../data/age_count_2020-07-13_2020-10-11
     age_years >= 60 & age_years < 80 ~ "60-79",
     age_years >= 80 ~ "80+")) %>%
   group_by(date, age_class) %>%
-  summarise(new_cases = n())
+  summarize(new_cases = n())
 ```
 
 ---
