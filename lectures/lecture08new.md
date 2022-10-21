@@ -100,7 +100,9 @@ library(tidyverse)
 
 ---
 
-## I. Review Material Covered for Homework
+## I. [Quiz](https://forms.office.com/r/AcUvr7y74K)
+
+## II. Review Material Covered for Homework
 
 [Mind Expander 9.5](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUOE9LM0ZWOUZWVlZTUzBKQkZaUkcwRVg4Qy4u), [Solutions](Week07_files/mind_expander_9.5_answers.R)
 
@@ -108,7 +110,7 @@ library(tidyverse)
 
 [Assignment 7 Solutions](../assignments/assignment_7_answers.R)
 
-## II. Getting the RScript & Data for Today 
+## III. Getting the RScript & Data for Today 
 
 
 <details><summary>Getting Today's RScript & Data Set: Commmand Line Method</summary>
@@ -173,7 +175,7 @@ _Phew! It's much harder to communicate GUI instructions than CL_
 ---
 
 
-## III. Organizing and Formatting an R Script
+## IV. Organizing and Formatting an R Script
 
 <details><summary> Line 1: Shebang! </summary>
 <p>
@@ -1306,6 +1308,6 @@ To go from unstacked to stacked, you can similarly use `pivot_longer()`.  More r
 
 ---
 
-## HOMEWORK
+## V. HOMEWORK
 
 TBA
