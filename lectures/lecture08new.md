@@ -338,12 +338,15 @@ Examples of non hardcoded variables are those that are defined using other varia
 
 
 
-## IV. [`Tidyverse`](https://www.tidyverse.org/) Data Wrangling 
+## V. [`Tidyverse`](https://www.tidyverse.org/) Data Wrangling 
 
-<details><summary>What is the Tidyverse?</summary>
+<details><summary>What is the Tidyverse and what is Data Wrangling?</summary>
 <p>
 
 ![](Week08_files/tidyverse.PNG)
+
+
+![](https://d33wubrfki0l68.cloudfront.net/e3f9e555d0035731c04642ceb58a03fb84b98a7d/4f070/diagrams/data-science-wrangle.png)
 
 ---
 

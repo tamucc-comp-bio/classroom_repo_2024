@@ -138,15 +138,11 @@ SECTION 2. DATA WRANGLING AND VISUALIZATION WITH R
 
   * Assignment TBA
 
- <!--
- 
+
 * [10/28  Week09 R Markdown (Lite) & Data Wrangling Exercises](lectures/lecture09new.md)
 
-  * [Exam 2 Part 1, Due 11/04](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMk1SV05WNTUzOVZGR0ZDNkhBNDk4SVJYWS4u)
-  * [Exam 2 Part 2, Due 11/04](https://classroom.github.com/a/dIIyk6Xd)
-
--->
-
+  * [Exam 2 Part 1, Due 11/04]()
+  * [Exam 2 Part 2, Due 11/04]()
 
 
 
