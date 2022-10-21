@@ -52,6 +52,7 @@ If the `CSB` directory does not exist in your home directory (check with `ls`), 
 	* For Mac laptops, open your `Terminal`.
 
 2. Run the code line by line in the code block below
+
 ```bash
 # check that you're in home dir, you should be there when you log in
 pwd
@@ -95,66 +96,6 @@ library(tidyverse)
 </details>
 
 
-#### Install `R` and `R Studio`
-
-If you have a windows computer, you will need to separately install `R` in the windows environment even if you already installed it in Ubuntu.  Go to the following link below, download R for Windows and run the installer as you would for any other windows app.  
-
-*If you installed R a while ago (more than a month ago), you should do it again or else problems will start to crop up*
-
-1. [R Install](https://cran.revolutionanalytics.com/)
-
-Regardless of your operating system, if you have not already installed R studio, you need to do that now.  On windows computers, install R studio in Windows.  
-
-*If you installed R Studio a while ago, you should do it again to upate to the latest version.*
-
-2. [RStudio Install](https://rstudio.com/products/rstudio/download/?utm_source=downloadrstudio&utm_medium=Site&utm_campaign=home-hero-cta#download)
-
-
-#### Clone CSB Repo to Your Windows Home Dir
-
-Just to make things a little more tricky, if you have windows, you cannot access the `CSB` repo that you cloned to your home directory in ubuntu with R Studio. So, we have to clone the repo again, but this time to your windows home dir (at least what R Studio recognizes as your windows home dir, `Documents`).
-
-Open your ubuntu terminal and navigate to your windows `Documents` directory, then clone the CSB repo to there.
-
-```bash
-# make sure you are in ubuntu
-cd /mnt/c/Users/YourWinUserName/Documents 
-git clone https://github.com/CSB-book/CSB.git
-```
-
-</p>
-</details>
-
-<details><summary>MacOS</summary>
-<p>
- 
-  * Open a terminal window
-  
-  * Consider installing [homebrew](https://brew.sh/).  You will be able to use homebrew to install linux software, such as `tree`, which is used in the slide show.
-  
-  * If the `CSB` directory does not exist in your home directory (check with `ls`), then run the following code to clone the `CSB` repository into your home directory:
-  
-    ```bash
-    git clone https://github.com/CSB-book/CSB.git
-    ```
-
-#### Install `R` and `R Studio`
-
-If you have a Mac and you already installed `R` for use in your terminal, you do not need to reinstall it.
-
-*If you installed R a while ago (more than a month ago), you should do it again or else problems will start to crop up*
-
-1. [R Install](https://cran.revolutionanalytics.com/)
-
-Regardless of your operating system, if you have not already installed R studio, you need to do that now. 
-
-*If you installed R Studio a while ago, you should do it again to upate to the latest version.*
-
-2. [RStudio Install](https://rstudio.com/products/rstudio/download/?utm_source=downloadrstudio&utm_medium=Site&utm_campaign=home-hero-cta#download)
-
-
-</p>
-</details>
 
 ---
 
