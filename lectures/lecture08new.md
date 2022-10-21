@@ -283,6 +283,34 @@ _Note that the `search()` command shows you the libraries that are presently loa
 </p>
 </details>
 
+<details><summary> User Defined / Hard coded Variables </summary>
+<p>
+
+### User Defined, [Hard coded](https://en.wikipedia.org/wiki/Hard_coding) Variables
+
+These are variables that limit the ability of the code to be applied universally.  Ideally, a script will have no hard coding.  An example of a hard coded variable is one that has a file path, thereby limiting the ability of the script to be used with directory structures and files.  Ideally, all hardcoding would be defined with command line arguments passed to the script, but when we are developing the script in RStudio, that is inconvenient.
+
+The solution is to set all user-defined hard coded variables at the beginning of the script in one section.  This makes your script ready to be adapted to be executed with command line options and makes it easier to edit when you add or change variables.
+
+```r
+#### USER DEFINED VARIABLES ####
+
+data_zip_count_file_path = "../data/zip_count_2020-08-18_2020-10-11.xlsx"
+data_zip_census_file_path = "../data/zip_2010census-pop.xlsx"
+data_age_count_file_path = "../data/age_count_2020-07-13_2020-10-11.xlsx"
+
+```
+
+Examples of non hardcoded variables are those that are defined using other variables, rather than text.  
+
+
+</p>
+</details>
+
+---
+
+
+
 ## IV. [`Tidyverse`](https://www.tidyverse.org/) Data Wrangling 
 
 <details><summary>What is the Tidyverse?</summary>
@@ -389,9 +417,8 @@ Tidyverse also makes their own cheat sheets, but I find them to be too much.  Ea
 </details>
 
 
-<details><summary> Tidyverse Cheat Sheet </summary>
+<details><summary> Pipelines </summary>
 <p>
-
 
 ### Pipelines
 
@@ -400,7 +427,7 @@ Tidyverse commands are designed to be used in pipelines that generally follow th
 The following code blocks show different ways of reading in data and cleaning up the column names in our `covid_cases_zip` tibble.
 
 ```r
-# step by step
+# step by step (poor form, will cause problems in your code)
 covid_cases_zip <- read_excel("../data/zip_count_2020-08-18_2020-10-11.xlsx")
 covid_cases_zip <- clean_names(covid_cases_zip)
 ```

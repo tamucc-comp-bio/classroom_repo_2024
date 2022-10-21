@@ -35,9 +35,17 @@ library(janitor)
 
 search()
 
+#### USER DEFINED VARIABLES ####
+
+# you should set all user-defined variables at the beginning of the script in one section
+# this makes your script ready to be executed with command line options and
+# makes it easier to edit when you add or change variables
+data_zip_count_file_path = "../data/zip_count_2020-08-18_2020-10-11.xlsx"
+data_zip_census_file_path = "../data/zip_2010census-pop.xlsx"
+data_age_count_file_path = "../data/age_count_2020-07-13_2020-10-11.xlsx"
 
 #### Read In Data ####
-covid_cases_zip <- read_excel("../data/zip_count_2020-08-18_2020-10-11.xlsx")
+covid_cases_zip <- read_excel(data_zip_count_file_path)
 
 # peak at tibble
 covid_cases_zip
@@ -51,20 +59,21 @@ overwrite this with a line of code
 
 # pipelines
 # step by step
-covid_cases_zip <- read_excel("../data/zip_count_2020-08-18_2020-10-11.xlsx")
+covid_cases_zip <- read_excel(data_zip_count_file_path)
 covid_cases_zip <- clean_names(covid_cases_zip)
 # nested, the most common base R formatting type
-covid_cases_zip <- clean_names(read_excel("../data/zip_count_2020-08-18_2020-10-11.xlsx"))
+covid_cases_zip <- clean_names(read_excel(data_zip_count_file_path))
 # nested & formatted for human readability on a single screen
 covid_cases_zip <- clean_names(
-  read_excel("../data/zip_count_2020-08-18_2020-10-11.xlsx")
+  read_excel(data_zip_count_file_path)
 )
 # pipelined in linux/bash style
-read_excel("../data/zip_count_2020-08-18_2020-10-11.xlsx") %>% clean_names() -> covid_cases_zip 
+read_excel(data_zip_count_file_path) %>% clean_names() -> covid_cases_zip 
 # pipelined in R style
-covid_cases_zip <- read_excel("../data/zip_count_2020-08-18_2020-10-11.xlsx") %>% clean_names()
+covid_cases_zip <- read_excel(data_zip_count_file_path) %>% clean_names()
 # pipelined in R style and formatted for human readability on a single screen
-covid_cases_zip <- read_excel("../data/zip_count_2020-08-18_2020-10-11.xlsx") %>%
+covid_cases_zip <- 
+  read_excel(data_zip_count_file_path) %>%
   clean_names()
 
 
@@ -72,7 +81,7 @@ covid_cases_zip <- read_excel("../data/zip_count_2020-08-18_2020-10-11.xlsx") %>
 view(covid_cases_zip)
 
 # read in data, count up occurences of each zip code on each day, make each row a unique combination of date and zip code
-covid_cases_zip <- read_excel("../data/zip_count_2020-08-18_2020-10-11.xlsx") %>%
+covid_cases_zip <- read_excel(data_zip_count_file_path) %>%
   clean_names() %>%
   mutate(zip = as_factor(zip),
          date = ymd(labdate)) %>%
@@ -85,30 +94,30 @@ view(covid_cases_zip)
 
 
 # tibble before mutate
-read_excel("../data/zip_count_2020-08-18_2020-10-11.xlsx") %>%
+read_excel(data_zip_count_file_path) %>%
   clean_names() 
 
 # convert the zip column to a factor using mutate and as_factor
-read_excel("../data/zip_count_2020-08-18_2020-10-11.xlsx") %>%
+read_excel(data_zip_count_file_path) %>%
   clean_names() %>%
   mutate(zip = as_factor(zip))
 
 # additionally make a date column that is formatted as a tidyverse date using mutate and ymd
-read_excel("../data/zip_count_2020-08-18_2020-10-11.xlsx") %>%
+read_excel(data_zip_count_file_path) %>%
   clean_names() %>%
   mutate(zip = as_factor(zip),
          date = ymd(labdate))
 
 
 # remove the labdate column
-read_excel("../data/zip_count_2020-08-18_2020-10-11.xlsx") %>%
+read_excel(data_zip_count_file_path) %>%
   clean_names() %>%
   mutate(zip = as_factor(zip),
          date = ymd(labdate)) %>%
   select(-labdate)
 
 # group rows by both date and zip code
-read_excel("../data/zip_count_2020-08-18_2020-10-11.xlsx") %>%
+read_excel(data_zip_count_file_path) %>%
   clean_names() %>%
   mutate(zip = as_factor(zip),
          date = ymd(labdate)) %>%
@@ -116,7 +125,7 @@ read_excel("../data/zip_count_2020-08-18_2020-10-11.xlsx") %>%
   group_by(date, zip)
 
 # count the number of COVID cases by the groupings (cate x zip) using summarise() and n()
-read_excel("../data/zip_count_2020-08-18_2020-10-11.xlsx") %>%
+read_excel(data_zip_count_file_path) %>%
   clean_names() %>%
   mutate(zip = as_factor(zip),
          date = ymd(labdate)) %>%
@@ -125,7 +134,7 @@ read_excel("../data/zip_count_2020-08-18_2020-10-11.xlsx") %>%
   summarise(new_cases = n())
 
 # this should already be done, but just in case, save the tibble into covid_cases_zip
-covid_cases_zip <- read_excel("../data/zip_count_2020-08-18_2020-10-11.xlsx") %>%
+covid_cases_zip <- read_excel(data_zip_count_file_path) %>%
   clean_names() %>%
   mutate(zip = as_factor(zip),
          date = ymd(labdate)) %>%
@@ -155,7 +164,7 @@ covid_cases_zip %>%
 # SCATTERPLOT: new cases per day by zip code
 # here we remove the zip codes with too little data to make this figure
 covid_cases_zip %>%
-  filter(!zip %in% c("78469", "78402")) %>%
+  filter(!zip %in% c("78469", "78402")) %>%   # note, we would want to add this to the USER DEFINED VARIABLES rather than hardcoding it like this
   ggplot(aes(x = date, y = new_cases, color = zip)) +
   geom_point() +
   geom_smooth(se = FALSE)  +
@@ -208,16 +217,16 @@ covid_cases_zip %>%
 
 
 #### read in census data by zip code####
-pop_zip <- read_excel("../data/zip_2010census-pop.xlsx") 
+pop_zip <- read_excel(data_zip_census_file_path) 
 str(pop_zip) 
 
 # isolate numeric zip code
-read_excel("../data/zip_2010census-pop.xlsx") %>%
+read_excel(data_zip_census_file_path) %>%
   clean_names() %>%
   separate(col=zip_code, into=c('x1', 'x2', 'zip'))
 
 # isolate numeric zip code & polish tibble
-pop_zip <- read_excel("../data/zip_2010census-pop.xlsx") %>%
+pop_zip <- read_excel(data_zip_census_file_path) %>%
   clean_names() %>%
   separate(col=zip_code, into=c('x1', 'x2', 'zip')) %>%
   select(zip, city, population)
@@ -256,14 +265,14 @@ covid_cases_zip_pop %>%
 
 
 #### Read In Zip Data ####
-covid_cases_zip_pop <- read_excel("../data/zip_count_2020-08-18_2020-10-11.xlsx") %>%
+covid_cases_zip_pop <- read_excel(data_zip_count_file_path) %>%
   clean_names() %>%
   mutate(zip = as_factor(zip),
          date = ymd(labdate)) %>%
   select(-labdate) %>%
   group_by(date, zip) %>%
   summarise(new_cases = n()) %>%
-  left_join(read_excel("../data/zip_2010census-pop.xlsx") %>%
+  left_join(read_excel(data_zip_census_file_path) %>%
               clean_names() %>%
               separate(col=zip_code, into=c('x1', 'x2', 'zip')) %>%
               select(zip, city, population), 
@@ -271,16 +280,20 @@ covid_cases_zip_pop <- read_excel("../data/zip_count_2020-08-18_2020-10-11.xlsx"
 
 
 #### Read In Demographic Data ####
-bind_rows(read_excel('../data/age_count_2020-07-13_2020-10-11.xlsx', sheet = "Jul"),
-          read_excel('../data/age_count_2020-07-13_2020-10-11.xlsx', sheet = "Aug"),
-          read_excel('../data/age_count_2020-07-13_2020-10-11.xlsx', sheet = "Sep"),
-          read_excel('../data/age_count_2020-07-13_2020-10-11.xlsx', sheet = "Oct"))
+bind_rows(read_excel(data_age_count_file_path, 
+                     sheet = "Jul"),
+          read_excel(data_age_count_file_path, 
+                     sheet = "Aug"),
+          read_excel(data_age_count_file_path, 
+                     sheet = "Sep"),
+          read_excel(data_age_count_file_path, 
+                     sheet = "Oct"))
 
 #### Read In Demographic Data ####
-covid_cases_age <- bind_rows(read_excel('../data/age_count_2020-07-13_2020-10-11.xlsx', sheet = "Jul"),
-          read_excel('../data/age_count_2020-07-13_2020-10-11.xlsx', sheet = "Aug"),
-          read_excel('../data/age_count_2020-07-13_2020-10-11.xlsx', sheet = "Sep"),
-          read_excel('../data/age_count_2020-07-13_2020-10-11.xlsx', sheet = "Oct")) %>%
+covid_cases_age <- bind_rows(read_excel(data_age_count_file_path, sheet = "Jul"),
+          read_excel(data_age_count_file_path, sheet = "Aug"),
+          read_excel(data_age_count_file_path, sheet = "Sep"),
+          read_excel(data_age_count_file_path, sheet = "Oct")) %>%
   clean_names() %>%
   mutate(date = ymd(labdate)) %>%
   select(-labdate) %>%
