@@ -747,7 +747,7 @@ The empty tiles represent zip code x date combinations where nobody tested posit
 <p>
 
 
-### More Visual Exploration With a Scatterplot
+### More Visual Exploration With a Scatterplot 
 
 
 Let us make a scatter plot of the total number of new cases per day across all zip codes. Note that we take advantage of the grouping we applied to the tibble previously and use `summarize` to sum up all new cases on each date.
@@ -809,7 +809,7 @@ covid_cases_zip %>%
    ggplot() +
    aes(x = date, 
        y = new_cases, 
-	   color = zip) +
+       color = zip) +
    geom_point() +
    geom_smooth(se = FALSE)  +
    theme_classic()
@@ -825,7 +825,7 @@ This will yield several warning messages. They occur because there are too few d
 </details>
 
 
-<details><summary> Tidyverse Cheat Sheet </summary>
+<details><summary> Plot Two Different Tibbles in 1 Scatterplot </summary>
 <p>
 
 
@@ -837,15 +837,22 @@ Here we make a scatter plot of a single zip code compared to the mean of all zip
 # SCATTERPLOT: new cases per day by zip code, compare to mean
 covid_cases_zip %>%
   filter(zip == "78412") %>%
-  ggplot(aes(x = date, y = new_cases)) +
+  ggplot() +
+  aes(x = date, 
+      y = new_cases) +
   geom_point(color="red4") +
-  geom_smooth(se = FALSE, color="red4") +
+  geom_smooth(se = FALSE, 
+              color="red4") +
   geom_point(data = covid_cases_zip %>%
                summarize(mean_new_cases = mean(new_cases)), 
-             aes(x = date, y = mean_new_cases), color="black") +
+             aes(x = date, 
+                 y = mean_new_cases), 
+             color="black") +
   geom_smooth(data = covid_cases_zip %>%
-                summarize(mean_new_cases = mean(new_cases)), 
-              aes(x = date, y = mean_new_cases), color="black") +
+               summarize(mean_new_cases = mean(new_cases)), 
+             aes(x = date, 
+                 y = mean_new_cases), 
+             color="black") +
   theme_classic()
 ```
 
@@ -859,7 +866,7 @@ Is red associated with the cases from a single zip code or the mean of all zip c
 </details>
 
 
-<details><summary> Tidyverse Cheat Sheet </summary>
+<details><summary> `lubridate` - The Extended Tidyverse Package for Date Data Types </summary>
 <p>
 
 
@@ -900,11 +907,18 @@ Then we use this information to make a plot that shows the number of cases by th
 ```r
 # COLUMNPLOT: total new cases per day of week with facet rows for each month
 covid_cases_zip %>%
-  mutate(day = wday(date, label=TRUE, abbr=TRUE),
-         month = month(date, label=TRUE, abbr=TRUE)) %>%
-  group_by(day, month) %>%
+  mutate(day = wday(date, 
+                    label=TRUE, 
+                    abbr=TRUE),
+         month = month(date, 
+                       label=TRUE, 
+                       abbr=TRUE)) %>%
+  group_by(day, 
+           month) %>%
   summarize(new_cases = sum(new_cases)) %>%
-  ggplot(aes(x = day, y = new_cases)) +
+  ggplot() +
+  aes(x = day, 
+      y = new_cases) +
   geom_col() +
   geom_smooth() +
   theme_classic() +
@@ -939,7 +953,7 @@ covid_cases_zip %>%
 </details>
 
 
-<details><summary> Tidyverse Cheat Sheet </summary>
+<details><summary> Read In Population Data by Zip Code </summary>
 <p>
 
 

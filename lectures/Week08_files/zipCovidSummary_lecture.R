@@ -203,46 +203,75 @@ covid_cases_zip %>%
   geom_smooth(se = FALSE)  +
   theme_classic()
 
+#### Plot Two Different Tibbles in 1 Scatterplot ####
 # SCATTERPLOT: new cases per day by zip code, compare to mean
 covid_cases_zip %>%
   filter(zip == "78412") %>%
-  ggplot(aes(x = date, y = new_cases)) +
+  ggplot() +
+  aes(x = date, 
+      y = new_cases) +
   geom_point(color="red4") +
-  geom_smooth(se = FALSE, color="red4") +
+  geom_smooth(se = FALSE, 
+              color="red4") +
   geom_point(data = covid_cases_zip %>%
                summarize(mean_new_cases = mean(new_cases)), 
-             aes(x = date, y = mean_new_cases), color="black") +
+             aes(x = date, 
+                 y = mean_new_cases), 
+             color="black") +
   geom_smooth(data = covid_cases_zip %>%
                 summarize(mean_new_cases = mean(new_cases)), 
-              aes(x = date, y = mean_new_cases), color="black") +
+              aes(x = date, 
+                  y = mean_new_cases), 
+              color="black") +
   theme_classic()
+
+#### `lubridate` - The Extended Tidyverse Package for Date Data Types ####
 
 # add columns for the day of the week and month, then 
 # change unit of observation (rows) to the number of covid cases by day of week and month
 covid_cases_zip %>%
-  mutate(day = wday(date, label=TRUE, abbr=TRUE),
-         month = month(date, label=TRUE, abbr=TRUE)) %>%
-  group_by(day, month) %>%
+  mutate(day = wday(date, 
+                    label=TRUE, 
+                    abbr=TRUE),
+         month = month(date, 
+                       label=TRUE, 
+                       abbr=TRUE)) %>%
+  group_by(day, 
+           month) %>%
   summarize(new_cases = sum(new_cases)) 
 
 # COLUMNPLOT: total new cases per day of week for each month
 covid_cases_zip %>%
-  mutate(day = wday(date, label=TRUE, abbr=TRUE),
-         month = month(date, label=TRUE, abbr=TRUE)) %>%
-  group_by(day, month) %>%
+  mutate(day = wday(date, 
+                    label=TRUE, 
+                    abbr=TRUE),
+         month = month(date, 
+                       label=TRUE, 
+                       abbr=TRUE)) %>%
+  group_by(day, 
+           month) %>%
   summarize(new_cases = sum(new_cases)) %>%
-  ggplot(aes(x = day, y = new_cases)) +
+  ggplot() +
+  aes(x = day, 
+      y = new_cases) +
   geom_col() +
   geom_smooth() +
   theme_classic() +
   facet_grid(month ~ .)
 
 covid_cases_zip %>%
-  mutate(day = wday(date, label=TRUE, abbr=TRUE),
-         month = month(date, label=TRUE, abbr=TRUE)) %>%
-  group_by(day, month) %>%
+  mutate(day = wday(date, 
+                    label=TRUE, 
+                    abbr=TRUE),
+         month = month(date, 
+                       label=TRUE, 
+                       abbr=TRUE)) %>%
+  group_by(day, 
+           month) %>%
   summarize(new_cases = sum(new_cases)) %>%
-  ggplot(aes(x = day, y = new_cases)) +
+  ggplot() +
+  aes(x = day, 
+      y = new_cases) +
   geom_col() +
   geom_smooth() +
   theme_classic() +
