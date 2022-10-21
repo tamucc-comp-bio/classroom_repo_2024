@@ -158,8 +158,8 @@ Today, we are going to process COVID-19 data from the Coastal Bend of Texas. You
 
 * copy the [`zipCovidSummary_lecture.R`](Week08_files/zipCovidSummary_lecture.R) script into a new blank Rscript in RStudio
 
-New Blank RScript          |  zipCovidSummary_lecture.R pasted
-:-------------------------:|:-------------------------:
+New Blank RScript               |  zipCovidSummary_lecture.R pasted
+:------------------------------:|:-------------------------:
 ![](Week08_files/blank_rscript.PNG)  |  ![](Week08_files/pasted_rscript.PNG)
 
   * save the script as `zipCovidSummary_lecture.R` into your `CSB/data_wrangling/sandbox` dir
