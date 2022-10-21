@@ -657,7 +657,8 @@ The first step in combining rows and/or performing calculations on groups of row
 </details>
 
 
-<details><summary> Performing Row-wise Calculations Based Upon the Groupings with `summarize`
+<details><summary> Performing Row-wise Calculations Based Upon the Groupings with `summarize` </summary>
+<p>
 
 
 ### Performing Row-wise Calculations Based Upon the Groupings with `summarize`
