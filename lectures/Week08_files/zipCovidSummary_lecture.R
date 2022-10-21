@@ -45,7 +45,7 @@ covid_cases_zip
 # more useful peak at tibble
 str(covid_cases_zip)
 
-# clean up the column names in the covid_cases_zip tibble
+# standardize the formatting of the column names in the covid_cases_zip tibble
 overwrite this with a line of code
 
 
