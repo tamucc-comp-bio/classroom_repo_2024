@@ -102,15 +102,23 @@ library(tidyverse)
 
 ## I. Review Material Covered for Homework
 
-[Mind Expander 9.5](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUOE9LM0ZWOUZWVlZTUzBKQkZaUkcwRVg4Qy4u), [Mind Expander 9.5 Solutions](Week07_files/mind_expander_9.5_answers.R)
+[Mind Expander 9.5](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUOE9LM0ZWOUZWVlZTUzBKQkZaUkcwRVg4Qy4u), [Solutions](Week07_files/mind_expander_9.5_answers.R)
 
-[Mind Expander 9.6](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlURDFBNlc2UFFEOVJVMEpaWVZJWkJJNEc1US4u), [Mind Expander 9.6 Solutions](Week07_files/mind_expander_9.6_answers.R)
+[Mind Expander 9.6](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlURDFBNlc2UFFEOVJVMEpaWVZJWkJJNEc1US4u), [Solutions](Week07_files/mind_expander_9.6_answers.R)
 
-[Assignment 07 Solutions](../assignments/assignment_7_answers.R)
+[Assignment 7 Solutions](../assignments/assignment_7_answers.R)
 
 ## II. [`Tidyverse`](https://www.tidyverse.org/) Data Wrangling 
 
-The tidyverse is an opinionated collection of R packages designed for data science. All packages share an underlying design philosophy, grammar, and data structures.
+<details><summary>What is the Tidyverse?</summary>
+<p>
+
+![](Week08_files/tidyverse.PNG)
+
+---
+
+</p>
+</details>
 
 Today, we are going to process COVID-19 data from the Coastal Bend of Texas (here). You will need to grab some data and save it to your `CSB/data_wrangling/data` dir.
 
