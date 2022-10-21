@@ -1,4 +1,20 @@
-# Week08 R Data Wrangling w/ Tidyverse R Package Ch 9
+# Week08 R Data Wrangling w/ Tidyverse R Package 
+
+![](https://d33wubrfki0l68.cloudfront.net/e3f9e555d0035731c04642ceb58a03fb84b98a7d/4f070/diagrams/data-science-wrangle.png)
+
+CSB Ch 9
+R for Data Science Chapters Covered:
+	* Wrangle: Intro
+	* Explore: Data transformation
+	* Explore: Exploratory Data Analysis
+	* 
+
+R for Data Science Prerequisite Chapters:
+	* Explore: Intro
+	* Explore: Data visualization
+	* Explore: Workflow: basics
+	* Explore: Workflow: scripts
+	* Explore: Workflow: projects
 
 ###  Assignment 7 is due by beginning of class (complete Mind Expanders 9.5-9.6)
 
