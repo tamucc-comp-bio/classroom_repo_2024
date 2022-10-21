@@ -108,17 +108,8 @@ library(tidyverse)
 
 [Assignment 7 Solutions](../assignments/assignment_7_answers.R)
 
-## II. [`Tidyverse`](https://www.tidyverse.org/) Data Wrangling 
+## II. Getting the RScript & Data for Today 
 
-<details><summary>What is the Tidyverse?</summary>
-<p>
-
-![](Week08_files/tidyverse.PNG)
-
----
-
-</p>
-</details>
 
 <details><summary>Getting Today's RScript & Data Set: Commmand Line Method</summary>
 <p>
@@ -176,19 +167,20 @@ New Blank RScript               |  zipCovidSummary_lecture.R pasted
 
 _Phew! It's much harder to communicate GUI instructions than CL_
 
----
-
 </p>
 </details>
 
+---
 
-<details><summary> Organizing and Formatting an R Script </summary>
+
+## III. Organizing and Formatting an R Script
+
+<details><summary> Prepping Script </summary>
 <p>
 
 Make sure `CSB/data_wrangling/sandbox/zipCovidSummary.R` is open in R Studio. We will review how and why the file is formatted and organized as it is.
 
 ### Prepping Script
-
 
 Always add a shebang! to the first line of your script. This will make it executable on a linux computer.  Below is one common location for the `Rscript` command to be located, but it may vary depending upon machine.
 
@@ -199,7 +191,7 @@ Always add a shebang! to the first line of your script. This will make it execut
 Make sure that you also set your working directory, clear out your environment (upper right), and clear the plots from your R Studio plot panel (lower right).
 
 ```r
-# set working dir, this only works if you saved your script to the correct dir: CSB/data_wrangling/sandbox
+# set working dir
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 
 # show list of all variables
@@ -211,9 +203,17 @@ rm(list = ls())
 # because the plot panel is a R Studio convention, and not part of R, you have to click the broom icon to clear it. 
 ```
 
+---
+
+</p>
+</details>
+
+<details><summary> Reading In Data </summary>
+<p>
+
 ### Making Code Collapsable in R Studio
 
-It is very convenient to be able to collapse and expand sections of code in your R Studio text editor.  Add the "Housekeeping" line and you will see a small grey arrow beside the line number. Click it and see what happens.
+It is very convenient to be able to collapse and expand sections of code in your R Studio text editor.  Beside the "Housekeeping" line you will see a small grey arrow beside the line number. Click it and see what happens.
 
 ```
 #!/usr/bin/env Rscript 
@@ -230,7 +230,13 @@ ls()
 rm(list = ls())
 ```
 
-___
+---
+
+</p>
+</details>
+
+<details><summary> Reading In Data </summary>
+<p>
 
 
 ### Installing Required Packages and Loading Libraries
@@ -265,6 +271,17 @@ search()
 </p>
 </details>
 
+## III. [`Tidyverse`](https://www.tidyverse.org/) Data Wrangling 
+
+<details><summary>What is the Tidyverse?</summary>
+<p>
+
+![](Week08_files/tidyverse.PNG)
+
+---
+
+</p>
+</details>
 
 <details><summary> Reading In Data </summary>
 <p>
