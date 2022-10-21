@@ -178,9 +178,9 @@ _Phew! It's much harder to communicate GUI instructions than CL_
 <details><summary> Prepping Script </summary>
 <p>
 
-Make sure `CSB/data_wrangling/sandbox/zipCovidSummary.R` is open in R Studio. We will review how and why the file is formatted and organized as it is.
-
 ### Prepping Script
+
+Make sure `CSB/data_wrangling/sandbox/zipCovidSummary.R` is open in R Studio. We will review how and why the file is formatted and organized as it is.
 
 Always add a shebang! to the first line of your script. This will make it executable on a linux computer.  Below is one common location for the `Rscript` command to be located, but it may vary depending upon machine.
 
@@ -271,7 +271,7 @@ search()
 </p>
 </details>
 
-## III. [`Tidyverse`](https://www.tidyverse.org/) Data Wrangling 
+## IV. [`Tidyverse`](https://www.tidyverse.org/) Data Wrangling 
 
 <details><summary>What is the Tidyverse?</summary>
 <p>
