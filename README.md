@@ -140,9 +140,9 @@ SECTION 2. DATA WRANGLING AND VISUALIZATION WITH R
 
 * [10/28 Week09 Data Wrangling Exercises: 1](https://classroom.github.com/a/TiIvuIKy)
  
- * Dr. Bird is at conference, SO PLEASE WORK ON THE EXERCISES ABOVE DURING THE CLASS PERIOD
- * PUSH WHAT YOU COMPLETED AT 4:30, you will be graded on what you complete during the class period.  
- * Then complete the exercises for homework and keep pushing your progress.
+  * Dr. Bird is at conference, SO PLEASE WORK ON THE EXERCISES ABOVE DURING THE CLASS PERIOD
+  * PUSH WHAT YOU COMPLETED AT 4:30, you will be graded on what you complete during the class period.  
+  * Then complete the exercises for homework and keep pushing your progress.
 
 * [11/04  Week10 R Markdown (Lite) & Data Wrangling Exercises](lectures/lecture09new.md)
 
