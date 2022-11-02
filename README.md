@@ -146,8 +146,8 @@ SECTION 2. DATA WRANGLING AND VISUALIZATION WITH R
 
 * [11/04  Week10 R Markdown (Lite) & Data Wrangling Exercises](lectures/lecture09new.md)
 
-  * [Exam 2 Part 1, Due 11/04]()
-  * [Exam 2 Part 2, Due 11/04]()
+  * [Exam 2 Part 1, Due 11/11]()
+  * [Exam 2 Part 2, Due 11/11]()
 
 
 
