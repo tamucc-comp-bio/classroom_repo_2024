@@ -1025,7 +1025,7 @@ tibble [38 x 6] (S3: tbl_df/tbl/data.frame)
 <details><summary> Isolate Numeric Zip Code Using `separate()` </summary>
 <p>
 
-Separate (Fig 12.4 in [R for Data Science](https://r4ds.had.co.nz/tidy-data.html))
+separate() (Fig 12.4 in [R for Data Science](https://r4ds.had.co.nz/tidy-data.html))
 ![](https://d33wubrfki0l68.cloudfront.net/f6fca537e77896868fedcd85d9d01031930d76c9/637d9/images/tidy-17.png)
 
 ### Isolate Numeric Zip Code Using `separate()`
@@ -1330,7 +1330,7 @@ covid_cases_age <-
 
 ### Reshape a Tibble Using `pivot` (replaces `gather` and `spread` in CSB text)
 
-Pivoting wider (Fig 12.3 in [R for Data Science](https://r4ds.had.co.nz/tidy-data.html))
+pivot_wider() (Fig 12.3 in [R for Data Science](https://r4ds.had.co.nz/tidy-data.html))
 ![](https://d33wubrfki0l68.cloudfront.net/8350f0dda414629b9d6c354f87acf5c5f722be43/bcb84/images/tidy-8.png)
 
 The `covid_cases_age` tibble is [stacked](https://simple.wikipedia.org/wiki/Stack_(data_structure)) or long. It is impossible to collapse it to any fewer columns because every column has a different type and class of data. We can unstack it (`pivot_wider`) by making 1 column for each age class using `pivot_wider()`.  More columns make a wider tibble, which is where the name comes from.
@@ -1347,7 +1347,7 @@ covid_cases_age %>%
 
 To go from unstacked to stacked, you can similarly use `pivot_longer()`.  More rows = longer tibble.
 
-Pivoting longer (Fig 12.2 in [R for Data Science](https://r4ds.had.co.nz/tidy-data.html))
+pivot_longer() (Fig 12.2 in [R for Data Science](https://r4ds.had.co.nz/tidy-data.html))
 ![](https://d33wubrfki0l68.cloudfront.net/3aea19108d39606bbe49981acda07696c0c7fcd8/2de65/images/tidy-9.png)
 
 </p>
