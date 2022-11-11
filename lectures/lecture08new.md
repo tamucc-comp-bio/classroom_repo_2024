@@ -4,6 +4,7 @@
 
 CSB Ch 9
 R for Data Science Chapters Covered:
+
 	* Explore: Data transformation
 	* Explore: Exploratory Data Analysis
 	* Wrangle: Intro
