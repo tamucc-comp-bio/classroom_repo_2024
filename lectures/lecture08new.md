@@ -362,6 +362,8 @@ Examples of non hardcoded variables are those that are defined using other varia
 
 ![](https://d33wubrfki0l68.cloudfront.net/e3f9e555d0035731c04642ceb58a03fb84b98a7d/4f070/diagrams/data-science-wrangle.png)
 
+![](https://d33wubrfki0l68.cloudfront.net/6f1ddb544fc5c69a2478e444ab8112fb0eea23f8/91adc/images/tidy-1.png)
+
 ---
 
 </p>
