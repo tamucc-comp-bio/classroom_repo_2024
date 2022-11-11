@@ -1328,6 +1328,9 @@ covid_cases_age <-
 
 ### Reshape a Tibble Using `pivot` (replaces `gather` and `spread` in CSB text)
 
+Pivoting concept (Fig 12.2 in [R for Data Science](https://r4ds.had.co.nz/tidy-data.html))
+![](https://d33wubrfki0l68.cloudfront.net/3aea19108d39606bbe49981acda07696c0c7fcd8/2de65/images/tidy-9.png)
+
 The `covid_cases_age` tibble is [stacked](https://simple.wikipedia.org/wiki/Stack_(data_structure)) or long. It is impossible to collapse it to any fewer columns because every column has a different type and class of data. We can unstack it (`pivot_wider`) by making 1 column for each age class using `pivot_wider()`.  More columns make a wider tibble, which is where the name comes from.
 
 Every unique name in `age_class` will become a column using the `names_from =` argument, and those columns will be filled with values from the `new_cases` column
