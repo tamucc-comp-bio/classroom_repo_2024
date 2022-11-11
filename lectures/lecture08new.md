@@ -359,9 +359,10 @@ Examples of non hardcoded variables are those that are defined using other varia
 
 ![](Week08_files/tidyverse.PNG)
 
-
+Flow chart of data processing
 ![](https://d33wubrfki0l68.cloudfront.net/e3f9e555d0035731c04642ceb58a03fb84b98a7d/4f070/diagrams/data-science-wrangle.png)
 
+Tidy Data Structure
 ![](https://d33wubrfki0l68.cloudfront.net/6f1ddb544fc5c69a2478e444ab8112fb0eea23f8/91adc/images/tidy-1.png)
 
 ---
