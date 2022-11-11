@@ -1026,7 +1026,6 @@ tibble [38 x 6] (S3: tbl_df/tbl/data.frame)
 <p>
 
 Separate (Fig 12.4 in [R for Data Science](https://r4ds.had.co.nz/tidy-data.html))
-
 ![](https://d33wubrfki0l68.cloudfront.net/f6fca537e77896868fedcd85d9d01031930d76c9/637d9/images/tidy-17.png)
 
 ### Isolate Numeric Zip Code Using `separate()`
