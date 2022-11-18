@@ -113,9 +113,6 @@ Project examples: automatically process data from experimental apparatus; image 
 
 SECTION 2. DATA WRANGLING AND VISUALIZATION WITH R
 
-
-
-
 * [09/30  Week05 Base R Bootcamp I](lectures/lecture05new.md)
 
   * Assignment 5 (Mind Expanders 8.3-8.5) Due 10/07
@@ -135,6 +132,8 @@ SECTION 2. DATA WRANGLING AND VISUALIZATION WITH R
 
  
 * [10/21  Week08 Data Wrangling w/ Tidyverse](lectures/lecture08new.md)
+	* [Lecture Recording](https://tamucc.zoom.us/rec/share/G5d-J22AzCa52E81H1bWFl9zusgC1yfkqo2SYVnSFgLJZ_1LFkbqQl6CZQYnM8zr.wEiZJztueINuGCSh)
+
 
 * [10/28 Week09 Data Wrangling Exercises: 1](https://classroom.github.com/a/TiIvuIKy)
  

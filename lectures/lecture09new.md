@@ -238,11 +238,33 @@ for all of the formatting options.
 </p>
 </details>
 
+<details><summary>R Markdown Resources</summary>
+<p>
+
+[Official RMarkdown Tutorial](https://rmarkdown.rstudio.com/lesson-1.html)
+
+[Official R Markdown Reference Guide](https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf) 
+
+[Official R Markdown Cheatsheet](https://posit.co/wp-content/uploads/2022/10/rmarkdown-1.pdf)
+
+[Zachary Smith's R Markdown Crash Course](https://zsmith27.github.io/rmarkdown_crash-course/index.html)
+
+[R for Data Science: R Markdown Chapter](https://r4ds.had.co.nz/r-markdown.html)
+
+[R Markdown Cookbook - most comprehensive](https://bookdown.org/yihui/rmarkdown-cookbook/)
+
+</p>
+</details>
+
 ---
 
 ### [Lesson 1](https://rmarkdown.rstudio.com/lesson-1.html)
 
 R Markdown has a very nice lesson plan that we will use to review its features.  We will link to the lesson below and then work within the R Markdown website. There is also the very thorough [R Markdown Crash Course](https://zsmith27.github.io/rmarkdown_crash-course/index.html) by Zachary M. Smith (I love `open source`) which goes beyond the scope of this class.
+
+Files needed for R Markdown lesson:
+
+	* [1-example.Rmd](Week09new_files/1-example.Rmd)
 
 
 ---
