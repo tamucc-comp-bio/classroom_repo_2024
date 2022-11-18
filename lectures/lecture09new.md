@@ -253,10 +253,15 @@ for all of the formatting options.
 
 [R Markdown Cookbook - most comprehensive](https://bookdown.org/yihui/rmarkdown-cookbook/)
 
+---
+
 </p>
 </details>
 
----
+
+
+<details><summary>R Markdown Tutorial</summary>
+<p>
 
 ### [Lesson 1](https://rmarkdown.rstudio.com/lesson-1.html)
 
@@ -266,6 +271,10 @@ Files needed for R Markdown lesson:
 
 	* [1-example.Rmd](Week09new_files/1-example.Rmd)
 
+---
+
+</p>
+</details>
 
 ---
 
