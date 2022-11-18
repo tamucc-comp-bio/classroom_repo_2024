@@ -138,6 +138,12 @@ May the force be with you.  Let me know if I should add anything here.
 
 ## I. R Markdown
 
+R Markdown is a flavor of the markdown typesetting language that works specifically with R.  You can use R markdown to create web pages, pdfs, slide shows, and other types of documents.
+
+There is an [R Markdown Chapter in R for Data Science](https://r4ds.had.co.nz/r-markdown.html) that will cover more details than we will here. 
+
+![](https://d33wubrfki0l68.cloudfront.net/61d189fd9cdf955058415d3e1b28dd60e1bd7c9b/9791d/images/rmarkdownflow.png)
+
 <details><summary>Creating an R Markdown Document</summary>
 <p>
 
@@ -213,7 +219,7 @@ The output of the code chunks are included in the resulting document.
 
 Everything else in the Rmd is markdown text if it is not code or YAML.  
 
-For example, line 10 is the first line of text.  The `##` indicates that the text `R Markdown` should be a secondary heading.
+For example, line 12 is the first line of text.  The `##` indicates that the text `R Markdown` should be a secondary heading.
 
 Markdown is a class of typesetting languages.  There are broad similarities across markdown languages but there can also be small differences.  This lecture is written in markdown and I make sure it works on GitHub.  The markdown in an Rmd can be slightly different. 
 
@@ -223,9 +229,9 @@ You can consult the
 
 and 
 
-[R Markdown Cheatsheet](https://www.rstudio.com/wp-content/uploads/2016/03/rmarkdown-cheatsheet-2.0.pdf) 
+[R Markdown Cheatsheet](https://posit.co/wp-content/uploads/2022/10/rmarkdown-1.pdf) 
 
-for all of the different formatting options.
+for all of the formatting options.
 
 ---
 
