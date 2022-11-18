@@ -146,8 +146,7 @@ SECTION 2. DATA WRANGLING AND VISUALIZATION WITH R
 
 
 * 11/11 Week 10 Data Wrangling 2  
-	* [Lecture Recording](https://tamucc.zoom.us/rec/share/64wflMEPzxHGxZz2FwtboTfiKnMTiaJI_Pv-oRuqgsiaEHFYGV_Pdqc04eqU7zRa.mzoMZsAcGSIaEtv9 
-Passcode: !yrj2A=L)
+	* [Lecture Recording](https://tamucc.zoom.us/rec/share/64wflMEPzxHGxZz2FwtboTfiKnMTiaJI_Pv-oRuqgsiaEHFYGV_Pdqc04eqU7zRa.mzoMZsAcGSIaEtv9)
 
 * [11/18  Week11 R Markdown (Lite) & Data Wrangling Exercises](lectures/lecture09new.md)
 
