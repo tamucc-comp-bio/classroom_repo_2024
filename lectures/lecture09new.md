@@ -269,7 +269,7 @@ R Markdown has a very nice lesson plan that we will use to review its features. 
 
 Files needed for R Markdown lesson:
 
-* [1-example.Rmd](Week09new_files/1-example.Rmd)
+* [all *.Rmd` files here](Week09new_files/)
 
 ---
 
