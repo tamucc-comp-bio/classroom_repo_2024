@@ -2,7 +2,7 @@
 
 ###  No assignments were due today
 
-[Lecture Stream](https://tamucc.webex.com/recordingservice/sites/tamucc/recording/playback/2bc2f615b57e4e53a192cea5d0559af9)
+[Lecture Stream]()
 
 ___
 
