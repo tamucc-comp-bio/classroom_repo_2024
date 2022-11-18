@@ -278,47 +278,9 @@ Files needed for R Markdown lesson:
 
 ---
 
-## II. Exercise 9.8.1
+## II. [Data Wrangling Exercises](https://classroom.github.com/a/fpunalz0)
 
-1. Martin (2015) studied songbirds in temperate and tropical environments. He showed (Figure 2A) that peak growth rate is higher in species suffering higher nest predation risk, and is lower in tropical species with the same level of risk as temperate species. In the same Figure (2B) he reported that   nestling period covaries with growth rate, with tropical species having a shorter nestling periods (for the same growth rate) than temperate species. The file `Martin2015_figure2.pdf` contains a figure generated with `ggplot2` similar to Figure 2 of the original paper. Reproduce the figure using the file `Martin2015_data.csv` deposited in the `CSB/ggplot2/data` folder.
-
-**Hints**: 
-
-- the file is `Tab` separated; you can use the `read_tsv` function to read the data
-- to arrange multiple plots on the same page, look at the function `grid.arrange` of the package `gridExtra`
-- in the data `site` is coded as `1`, `2`, and `3` for `Arizona - temperate`, `Venezuela - tropical`, and `Malaysia - tropical`, respectively. To display the labels you can use the function `factor`, for example
-
-```r
-m2015$site <- factor(m2015$site, levels = c(1,2,3), 
-                     labels = c("Arizona - temperate",  
-                                "Venezuela - tropical", 
-                                "Malaysia - tropical"))
-```
-
-
-Let us review the solution provided for this exercise by opening `CSB/data_wrangling/solutions/Martin2015_solution.Rmd`.  If you successfully installed everything above, you should be able to click the `knit` button and have it regenerate the pdf solution (do not worry if this does not work, it just means that either `pandoc` or `LaTeX` installation was not completed. 
-
-_Note, if you were working in the terminal and not R Studio, you could knit the file using the `render(PathToRmdFile)` command. _
-
-We will run the `R` code line by line in the Rmd, skipping the YAML and markdown to understand the solution here.
-
----
-
-
-## III. Exercise 9.8.3
-
-Each of you should complete exercise 9.8.3 in the remaining class time.
-
-## Hints and pseudo code for Exercise 9.8.3 (Urban, 2015)
-
-1. Urban (2015) conducted a meta-analysis of extinction risks and its relationship to climate change. He included 131 studies. In Figure 1, he plotted the number of studies reporting a certain overall proportion of extinction risk. The data (`data/Urban2015_data.csv`) is at a finer resolution than what needed for this figure. In fact, each study has been split into different lines according to the method and taxa used to compute the extinction risk. To reproduce Figure 1, you will need to coarse grain the data by grouping lines with the same author/year, and for each study compute the proportion of species at risk for extinction (sum the `N.Ext` for each study, and divide for the corresponding sum of `Total.N`). A close inspection of the original Figure shows that the data has been plotted in bins of unequal size (e.g., '0.5 < proportion < 1' is in one bin) so you will need to classify the various proportions into appropriate bins (0, 0-0.05, 0.05-0.1, ..., 0.5-1) before plotting. A `ggplot2` version of Figure 1 of the original paper is reported in `data/Urban2015_figure1.pdf`. Reproduce the figure.
-
-**Hints**:
-
-- the data are `Tab` separated; use `read_tsv` to read the file
-- use `tidyverse` and the function `summarise` to find the total number of extinctions (sum of `N.Ext`) and the total number of species (sum of `Total.N`) for each study (group by `Author` and `Year`)
-- the original Figure uses unequal bin widths; to reproduce the unequal bin sizes either define them explicitly in the histogram definition, or add a column to the data using the function `findInterval`
-
+Complete these exercises and push your changes to the repo before the end of class.
 
 ## HOME WORK
 
