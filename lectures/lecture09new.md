@@ -98,7 +98,7 @@ library(tidyverse)
 
 ### *_ADDITIONAL COMPUTER SETUP (NEW FOR TODAY)_* 
 
-R Markdown is a typesetting language that allows you to also incorporate R code chunks.  If you did not notice yet, the solutions for the Data Wrangling chapter are written in R Markdown.  There are a variety of applications of R Markdown.  The one I have used the most is making a report where the data changes through time, but the layout of figures and text does not change.
+R Markdown is a typesetting language that allows you to also incorporate R code chunks.  If you did not notice yet, the solutions for the Data Wrangling chapter of CSB are written in R Markdown.  There are a variety of applications of R Markdown.  The one I have used the most is making a report where the data changes through time, but the layout of figures and text does not change.
 
 1. For R Markdown to work properly, you need some additional packages installed in R Studio. Realize that R can also process R Markdown scripts from terminal without R Studio.
 
@@ -109,11 +109,11 @@ library(rmarkdown)
 library(knitr)
 ```
 
-2. You should also install `pandoc` on your computer following the instructions [here](https://pandoc.org/installing.html).
+2. You should also install `pandoc` on your computer following the instructions [here](https://pandoc.org/installing.html).  Windows people, do the windows install because we are using windows to run RStudio.
 
-3. Finally, you should install scientific typesetting software `LaTeX` that operates independently of R and RStudio. Like `Linux`, there are several flavors of `LaTeX`.  Follow the instructions [here](http://computingskillsforbiologists.com/setup/scientific-typesetting/).  
+3. Finally, you should install scientific typesetting software `LaTeX` that operates independently of R and RStudio. Like `Linux`, there are several flavors of `LaTeX`.  Follow the instructions [here](http://computingskillsforbiologists.com/setup/scientific-typesetting/).  Windows people, follow the instructions below
 
-<details><summary>Win10 *IMPORTANT* </summary>
+<details><summary>Win LaTeX install instructions *IMPORTANT* </summary>
 <p>
 
 > Follow this exactly as written. Download the `protex.zip` file as directed above. Next, extract/unzip the files first, before running `setup.exe`. Right click `setup.exe` and `run as administrator`. After running the setup.exe file, you have to click install on the `MiKTeX` and `TeXstudio` buttons. Install for all users  The install takes a while, just let it run in the background and check on it periodically until it is done. After that, `MiKTeX` will have to be exited and restarted so you can run it as a `MiKTeX` administrator.  Search for `MiKTeX` in your windows search (magnifying glass next to start button).  Then expand your "system tray" (the > and collection of icons on the right side of your task bar), right click and exit `MiKTeX`.  Then search for `MiKTeX` again, right click it, run as administrator, make sure that you are a `MiKTeX` administrator by selecting the option in the window, and search for updates. Click the `updates page` link after search is done and click `update now`. My updates errored out once. So make sure to recheck for updates and restart the updates as necessary. If you cannot get it to update completely, it should not inhibit your ability to complete most everything that follows.
@@ -138,9 +138,11 @@ May the force be with you.  Let me know if I should add anything here.
 
 ## I. R Markdown
 
+<details><summary>Creating an R Markdown Document</summary>
+<p>
 ### Creating an R Markdown Document
 
-In R Studio, open a new R Markdown document
+In R Studio, make a new R Markdown document using the `File` pulldown menu
 
 * name it `lesson-0`
 
@@ -154,6 +156,11 @@ Make sure you save the file as lesson-0 into your `CSB/data_wrangling/sandbox` a
 
 ___
 
+</p>
+</details>
+
+<details><summary>Run `lesson-0.rmd` With `knitr`</summary>
+<p>
 
 ## Run `lesson-0.rmd` With `knitr`
 
@@ -163,6 +170,11 @@ Next, we will cover the primary sections of the Rmd file.
 
 ___
 
+</p>
+</details>
+
+<details><summary>YAML Header</summary>
+<p>
 
 ### YAML Header
 
