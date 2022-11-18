@@ -7,6 +7,21 @@ Note: R for Data Science has been updatd more recently than the solutions, so th
 
 ---
 
+
+### Tidy Data
+
+1. Review the solutions to _R for Data Science Exercises_ for [Chapter 12.3.3 Pivoting](https://jrnold.github.io/r4ds-exercise-solutions/tidy-data.html#pivoting).   
+
+2. Review the solutions to _R for Data Science Exercises_ for [Chapter 12.3.4 Separating & Uniting](https://jrnold.github.io/r4ds-exercise-solutions/tidy-data.html#pivoting). 
+
+3. Review the solutions to _R for Data Science Exercises_ for [Chapter 12.3.5 Missing Values](https://jrnold.github.io/r4ds-exercise-solutions/tidy-data.html#missing-values-3).
+
+### Relational Data
+
+4. Complete [exercise 13.2.1.1](https://r4ds.had.co.nz/relational-data.html#exercises-28) in R for Data Science.
+
+5. Complete [exercises 13.3.1.1 and 13.3.1.2](https://r4ds.had.co.nz/relational-data.html#exercises-28) in R for Data Science. 
+
 ### Tibbles
 
 1. Review the solutions to _R for Data Science Exercises_ in the [Tibbles Chapter](https://jrnold.github.io/r4ds-exercise-solutions/tibbles.html).  
