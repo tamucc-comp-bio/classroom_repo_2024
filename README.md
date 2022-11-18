@@ -136,8 +136,6 @@ SECTION 2. DATA WRANGLING AND VISUALIZATION WITH R
  
 * [10/21  Week08 Data Wrangling w/ Tidyverse](lectures/lecture08new.md)
 
-  * Assignment TBA
-
 * [10/28 Week09 Data Wrangling Exercises: 1](https://classroom.github.com/a/TiIvuIKy)
  
   * Dr. Bird is at conference, SO PLEASE WORK ON THE EXERCISES ABOVE DURING THE CLASS PERIOD
@@ -145,13 +143,13 @@ SECTION 2. DATA WRANGLING AND VISUALIZATION WITH R
   * Then complete the exercises for homework and keep pushing your progress.
 
 
-* 11/11 Week 10 Data Wrangling 2  
+* 11/11 Week 11 Data Wrangling 2  
 	* [Lecture Recording](https://tamucc.zoom.us/rec/share/64wflMEPzxHGxZz2FwtboTfiKnMTiaJI_Pv-oRuqgsiaEHFYGV_Pdqc04eqU7zRa.mzoMZsAcGSIaEtv9)
 
-* [11/18  Week11 R Markdown (Lite) & Data Wrangling Exercises](lectures/lecture09new.md)
+* [11/18  Week 12 R Markdown (Lite) & Data Wrangling Exercises](lectures/lecture09new.md)
 
-  * [Exam 2 Part 1, Due 11/18]()
-  * [Exam 2 Part 2, Due 11/18]()
+  * [Exam 2 Part 1, Due 12/01]()
+  * [Exam 2 Part 2, Due 12/01]()
 
 
 
