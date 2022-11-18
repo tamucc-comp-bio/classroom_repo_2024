@@ -140,6 +140,7 @@ May the force be with you.  Let me know if I should add anything here.
 
 <details><summary>Creating an R Markdown Document</summary>
 <p>
+
 ### Creating an R Markdown Document
 
 In R Studio, make a new R Markdown document using the `File` pulldown menu
@@ -184,7 +185,13 @@ Lines 1-4 in the Rmd are the YAML header, which contains the title of the docume
 
 Several other characteristics of the Rmd document can be set in the YAML header.  This [tutorial](https://zsmith27.github.io/rmarkdown_crash-course/lesson-4-yaml-headers.html) is pretty good.
 
-___
+---
+
+</p>
+</details>
+
+<details><summary>Code Chunks</summary>
+<p>
 
 
 ### Code Chunks
@@ -193,7 +200,13 @@ Lines 6-8, 16-18, and 24-26 are code chunks.  They start with three tick marks (
 
 The output of the code chunks are included in the resulting document.
 
-___
+---
+
+</p>
+</details>
+
+<details><summary>Markdown Text</summary>
+<p>
 
 
 ### Markdown Text 
@@ -214,13 +227,19 @@ and
 
 for all of the different formatting options.
 
-___
+---
 
+</p>
+</details>
+
+---
 
 ### [Lesson 1](https://rmarkdown.rstudio.com/lesson-1.html)
 
 R Markdown has a very nice lesson plan that we will use to review its features.  We will link to the lesson below and then work within the R Markdown website. There is also the very thorough [R Markdown Crash Course](https://zsmith27.github.io/rmarkdown_crash-course/index.html) by Zachary M. Smith (I love `open source`) which goes beyond the scope of this class.
 
+
+---
 
 ## II. Exercise 9.8.1
 
