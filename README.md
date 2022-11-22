@@ -132,7 +132,7 @@ SECTION 2. DATA WRANGLING AND VISUALIZATION WITH R
 
  
 * [10/21  Week08 Data Wrangling w/ Tidyverse](lectures/lecture08new.md)
-	* [Lecture Recording](https://tamucc.zoom.us/rec/share/G5d-J22AzCa52E81H1bWFl9zusgC1yfkqo2SYVnSFgLJZ_1LFkbqQl6CZQYnM8zr.wEiZJztueINuGCSh)
+	* [Lecture Recording](https://tamucc.zoom.us/rec/share/G5d-J22AzCa52E81H1bWFl9zusgC1yfkqo2SYVnSFgLJZ_1LFkbqQl6CZQYnM8zr.wEiZJztueINuGCSh), Passcode: fe$D$$!2
 
 
 * [10/28 Week09 Data Wrangling Exercises: 1](https://classroom.github.com/a/TiIvuIKy)
@@ -143,10 +143,11 @@ SECTION 2. DATA WRANGLING AND VISUALIZATION WITH R
 
 
 * 11/11 Week 11 Data Wrangling 2  
-	* [Lecture Recording](https://tamucc.zoom.us/rec/share/64wflMEPzxHGxZz2FwtboTfiKnMTiaJI_Pv-oRuqgsiaEHFYGV_Pdqc04eqU7zRa.mzoMZsAcGSIaEtv9)
+	* [Lecture Recording](https://tamucc.zoom.us/rec/share/64wflMEPzxHGxZz2FwtboTfiKnMTiaJI_Pv-oRuqgsiaEHFYGV_Pdqc04eqU7zRa.mzoMZsAcGSIaEtv9), Passcode: !yrj2A=L
 
 * [11/18  Week 12 R Markdown (Lite) & Data Wrangling Exercises](lectures/lecture09new.md)
-
+        * [Lecture Stream](https://tamucc.zoom.us/rec/share/n-vLAmB1U6V9HPmYyPCAEJen-n60O4tDw5HdyGrQR001p8NCAqXcI78eZjfX4frn.1IcylHCClEx-nSSO), Passcode: xqfR0*Bv
+	
   * [Exam 2 Part 1, Due 12/01]()
   * [Exam 2 Part 2, Due 12/01]()
 
