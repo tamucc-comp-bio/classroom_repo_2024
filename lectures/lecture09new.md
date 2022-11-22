@@ -2,7 +2,9 @@
 
 ###  No assignments were due today
 
-[Lecture Stream]()
+[Lecture Stream](https://tamucc.zoom.us/rec/share/n-vLAmB1U6V9HPmYyPCAEJen-n60O4tDw5HdyGrQR001p8NCAqXcI78eZjfX4frn.1IcylHCClEx-nSSO)
+
+Passcode: xqfR0*Bv
 
 ___
 
