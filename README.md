@@ -143,10 +143,12 @@ SECTION 2. DATA WRANGLING AND VISUALIZATION WITH R
 
 
 * 11/11 Week 11 Data Wrangling 2  
+
 	* [Lecture Recording](https://tamucc.zoom.us/rec/share/64wflMEPzxHGxZz2FwtboTfiKnMTiaJI_Pv-oRuqgsiaEHFYGV_Pdqc04eqU7zRa.mzoMZsAcGSIaEtv9), Passcode: !yrj2A=L
 
 * [11/18  Week 12 R Markdown (Lite) & Data Wrangling Exercises](lectures/lecture09new.md)
-        * [Lecture Stream](https://tamucc.zoom.us/rec/share/n-vLAmB1U6V9HPmYyPCAEJen-n60O4tDw5HdyGrQR001p8NCAqXcI78eZjfX4frn.1IcylHCClEx-nSSO), Passcode: xqfR0*Bv
+
+	* [Lecture Stream](https://tamucc.zoom.us/rec/share/n-vLAmB1U6V9HPmYyPCAEJen-n60O4tDw5HdyGrQR001p8NCAqXcI78eZjfX4frn.1IcylHCClEx-nSSO), Passcode: xqfR0*Bv
 	
   * [Exam 2 Part 1, Due 12/01]()
   * [Exam 2 Part 2, Due 12/01]()
