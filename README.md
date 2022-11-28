@@ -150,8 +150,7 @@ SECTION 2. DATA WRANGLING AND VISUALIZATION WITH R
 
 	* [Lecture Stream](https://tamucc.zoom.us/rec/share/n-vLAmB1U6V9HPmYyPCAEJen-n60O4tDw5HdyGrQR001p8NCAqXcI78eZjfX4frn.1IcylHCClEx-nSSO), Passcode: xqfR0*Bv
 	
-  * [Exam 2 Part 1, Due 12/01]()
-  * [Exam 2 Part 2, Due 12/01]()
+  * [Exam 2, Due 12/01](https://forms.office.com/r/yEyDY7DRts)
 
 
 
