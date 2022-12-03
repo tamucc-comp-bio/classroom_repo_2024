@@ -111,7 +111,10 @@ Project examples: automatically process data from experimental apparatus; image 
 
 ---
 
-SECTION 2. DATA WRANGLING AND VISUALIZATION WITH R
+
+<details><summary>SECTION 2. DATA WRANGLING AND VISUALIZATION WITH R</summary>
+<p>
+
 
 * [09/30  Week05 Base R Bootcamp I](lectures/lecture05new.md)
 
@@ -193,6 +196,9 @@ SECTION 2. DATA WRANGLING AND VISUALIZATION WITH R
   * [Exam 2, Due 11/08](https://classroom.github.com/a/VSNTwKf2)
 
 -->
+
+</p>
+</details>
 
 </p>
 </details>
