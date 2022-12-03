@@ -202,29 +202,24 @@ SECTION 2. DATA WRANGLING AND VISUALIZATION WITH R
 <details><summary>FINAL EXAM: "Welcome to the Desert of the Real"</summary>
 <p>
 
-  <!--
+
 We have spent the semester learning:
 * the philosophy of data science and linux
 * how to control a computer from the command line
 * the basics of 3 computer languages that are critical in processing, analyzing, and visualizing biological data
   * `bash`
-  * `python`
   * `R`
 * version controling our work using git
 * distributing our work using GitHub
 
 #### Undergraduates:  
-I will issue a Final Exam in much the same way I have issued assignments. It will be due Fri Dec 4 by 4:15 PM.
+I will issue a Final Exam in much the same way I have issued assignments, in a repo. 
 
-* [20% of course grade: Final Exam Due 12/4 4:15 pm](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUREhWMzNMMjFXS1RISjlNU1gySEs5VVVDWC4u)
-* [additional 20% of course grade: Final Exam Extra Credit Due 12/6 11:59 pm](https://classroom.github.com/a/HTYwxIku)
-
+* [Final Exam Due 12/8 11:59 pm](https://classroom.github.com/a/4SGRNjwV)
 
 
-#### Graduates
-Your "final" is completing your independent project (repo due 12/04, presentations Fri 12/04 at 2:30 pm location WEBEX) where you automate the processing, analysis, and/or visualization of data
-
--->
+#### Graduate Students
+Your "final" is completing your independent project by pushing the last changes to your repo by 12/8 11:59 pm.  PhD students have a presentation also.  Most folks are available on W Dec 7 at 1:45 PM.  For those who can’t attend then, we can do Monday at 1:45 PM.  I suggest we just use one of the grad student conference rooms in Tidal Hall.  Default 2nd floor, and if that’s full, we can migrate to 1st or 3rd floor. 
 
 </p>
 </details>
