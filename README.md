@@ -152,6 +152,8 @@ Project examples: automatically process data from experimental apparatus; image 
 * [11/18  Week 12 R Markdown (Lite) & Data Wrangling Exercises](lectures/lecture09new.md)
 
 	* [Lecture Stream](https://tamucc.zoom.us/rec/share/n-vLAmB1U6V9HPmYyPCAEJen-n60O4tDw5HdyGrQR001p8NCAqXcI78eZjfX4frn.1IcylHCClEx-nSSO), Passcode: xqfR0*Bv
+
+  * [Lecture 12 Exercises](https://classroom.github.com/a/fpunalz0) 
 	
   * [Exam 2, Due 12/01](https://forms.office.com/r/yEyDY7DRts)
 
