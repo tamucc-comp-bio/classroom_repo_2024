@@ -119,7 +119,7 @@ Project examples: automatically process data from experimental apparatus; image 
 * [09/30  Week05 Base R Bootcamp I](lectures/lecture05new.md)
 
   * Assignment 5 (Mind Expanders 8.3-8.5) Due 10/07
-
+  	* See Lecture Markdown Doc for links
 
 
 * [10/07  Week06 Base R Bootcamp II](lectures/lecture06new.md)
