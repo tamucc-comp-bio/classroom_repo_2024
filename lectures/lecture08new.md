@@ -1357,4 +1357,4 @@ pivot_longer() (Fig 12.2 in [R for Data Science](https://r4ds.had.co.nz/tidy-dat
 
 ## V. HOMEWORK
 
-TBA
+Catch up on previous assignments
