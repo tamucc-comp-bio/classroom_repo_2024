@@ -6,7 +6,7 @@ This directory contains resources that will help you with your assignments .
 
 ## How To
 
-* [Install Ubuntu on Windows](https://github.com/cbirdlab/wlsUBUNTU_settings)
+* [Install Ubuntu on Windows](install_wsl_ubuntu.txt)
 
 * [Set up SSH Keys For Easy Access to Remote Servers & GitHub](howto_sshkeys.md)
 
