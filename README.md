@@ -65,7 +65,7 @@ Project examples: automatically process data from experimental apparatus; image 
 
 
 * [09/01  Week00  Introduction & Data](lectures/lecture00.md)
-  * [Assignment_0  Due, 09/02](assignments/assignment_0.md)
+  * [Assignment_0  Due, 09/08](assignments/assignment_0.md)
 
 * [09/08  Week01 Unix I](lectures/lecture01.md)
 
