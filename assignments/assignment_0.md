@@ -1,6 +1,6 @@
 # Assignment 0 
 
-## Due 09/03
+## Due 09/08
 
 ## Computer Preparation
 
