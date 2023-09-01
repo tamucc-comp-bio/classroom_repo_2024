@@ -64,20 +64,20 @@ Project examples: automatically process data from experimental apparatus; image 
 <p>
 
 
-* [08/26  Week00  Introduction & Data](lectures/lecture00.md)
+* [09/01  Week00  Introduction & Data](lectures/lecture00.md)
   * [Assignment_0  Due, 09/02](assignments/assignment_0.md)
 
-* [09/02  Week01 Unix I](lectures/lecture01.md)
+* [09/08  Week01 Unix I](lectures/lecture01.md)
 
   * [Assignment_1,  Due 09/09](assignments/assignment_1.md)
 
   * [Grad Student Course Project: Ideas, Due 09/09](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUOUo2UVRUMVgwTUlQMlpUQzUzOTIzME9LNi4u)
 
-* [09/09  Week02 Unix II](lectures/lecture02.md)
+* [09/15  Week02 Unix II](lectures/lecture02.md)
 
   * [Assignment_2,  Due 09/16](assignments/assignment_2.md)
 
-* [09/16  Week03 Unix III](lectures/lecture03.md)
+* [09/22  Week03 Unix III](lectures/lecture03.md)
 
   * [Assignment_3,  Due 09/23](assignments/assignment_3.md)
 
@@ -86,7 +86,7 @@ Project examples: automatically process data from experimental apparatus; image 
   * [Grad Student Course Project: Plan/Outline, Due 09/23](https://classroom.github.com/a/XeWhIJ3W)  
     * [Old Link To Grad Student Course Project](https://classroom.github.com/a/VuB4iKjR).  If you started with this link, then just click the link above, clone the 2022 version of this repo, and copy your work from the old repo to the new one.
 
-* [09/23  Week04 Version Control w/ Git](lectures/lecture04.md)
+* [09/29  Week04 Version Control w/ Git](lectures/lecture04.md)
 
   * [Exam_1,  Due 9/30](https://classroom.github.com/a/OyEVhNNT)
 
