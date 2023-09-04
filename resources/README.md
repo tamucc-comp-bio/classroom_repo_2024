@@ -6,8 +6,10 @@ This directory contains resources that will help you with your assignments .
 
 ## How To
 
-* [Install Ubuntu on Windows](install_wsl_ubuntu.txt)
+* [Install `Ubuntu` on Windows](install_wsl_ubuntu.txt)
 
+* [Install `Windows Termial` from the microsoft store](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701).
+  
 * [Set up SSH Keys For Easy Access to Remote Servers & GitHub](howto_sshkeys.md)
 
 * [Install R](install_r.md)
