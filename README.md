@@ -176,11 +176,11 @@ Project examples: automatically process data from experimental apparatus; image 
 
 ---
 
- <!--
+
 <details><summary>SECTION 3. PROGRAMMING WITH PYTHON</summary>
 <p>
 
-
+ <!--
 
 * [10/30  Week10 Basic Python Programming I](lectures/lecture10.md)
   * [Assignment_10, Due 11/06](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMzdVVkQwTlRQMENSVTQ5S0dUT0c1NFgwRi4u)
