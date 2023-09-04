@@ -45,7 +45,7 @@ Project examples: automatically process data from experimental apparatus; image 
 <details><summary>CLASSROOM & OFFICE LOCATIONS</summary>
 <p>
 
-[Lectures](https://tamucc.webex.com/tamucc/j.php?MTID=m04b44c32e11f93d46fd985947052e0d0) are F 2-4:30 CCH 206
+[Lectures](https://tamucc.webex.com/tamucc/j.php?MTID=m04b44c32e11f93d46fd985947052e0d0) are F 2-4:30 OCNR 241
 
 [Office hours](https://tamucc.zoom.us/my/cbird808?pwd=V1Baa0p3YzBHaHMyTzkrQ25FZyswZz09) are W-Th 2:30-5 on Zoom or TH234
 
