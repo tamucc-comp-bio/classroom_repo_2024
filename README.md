@@ -222,6 +222,7 @@ Project examples: automatically process data from experimental apparatus; image 
 <details><summary>FINAL EXAM: "Welcome to the Desert of the Real"</summary>
 <p>
 
+<!-- This is a hidden comment. It will not be visible in the rendered markdown. -->
 
 We have spent the semester learning:
 * the philosophy of data science and linux
@@ -240,6 +241,8 @@ I will issue a Final Exam in much the same way I have issued assignments, in a r
 
 #### Graduate Students
 Your "final" is completing your independent project by pushing the last changes to your repo by 12/8 11:59 pm.  PhD students have a presentation also.  Most folks are available on W Dec 7 at 1:45 PM.  For those who can’t attend then, we can do Monday at 1:45 PM.  I suggest we just use one of the grad student conference rooms in Tidal Hall.  Default 2nd floor, and if that’s full, we can migrate to 1st or 3rd floor. 
+
+-->
 
 </p>
 </details>
