@@ -69,28 +69,28 @@ Project examples: automatically process data from experimental apparatus; image 
 
 * [09/08  Week01 Unix I](lectures/lecture01.md)
 
-  * [Assignment_1,  Due 09/09](assignments/assignment_1.md)
+  * [Assignment_1,  Due 09/15](assignments/assignment_1.md)
 
   * [Grad Student Course Project: Ideas, Due 09/09](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUOUo2UVRUMVgwTUlQMlpUQzUzOTIzME9LNi4u)
 
 * [09/15  Week02 Unix II](lectures/lecture02.md)
 
-  * [Assignment_2,  Due 09/16](assignments/assignment_2.md)
+  * [Assignment_2,  Due 09/22](assignments/assignment_2.md)
 
 * [09/22  Week03 Unix III](lectures/lecture03.md)
 
-  * [Assignment_3,  Due 09/23](assignments/assignment_3.md)
+  * [Assignment_3,  Due 09/29](assignments/assignment_3.md)
 
-  * [Request Account On TAMUCC Super Computer Due 9/23](http://hpc.tamucc.edu/)
+  * [Request Account On TAMUCC Super Computer Due 9/29](http://hpc.tamucc.edu/)
 
-  * [Grad Student Course Project: Plan/Outline, Due 09/23](https://classroom.github.com/a/XeWhIJ3W)  
+  * [Grad Student Course Project: Plan/Outline, Due 09/29](https://classroom.github.com/a/XeWhIJ3W)  
     * [Old Link To Grad Student Course Project](https://classroom.github.com/a/VuB4iKjR).  If you started with this link, then just click the link above, clone the 2022 version of this repo, and copy your work from the old repo to the new one.
 
 * [09/29  Week04 Version Control w/ Git](lectures/lecture04.md)
 
-  * [Exam_1,  Due 9/30](https://classroom.github.com/a/OyEVhNNT)
+  * [Exam_1,  Due 10/06](https://classroom.github.com/a/OyEVhNNT)
 
-  * [Grad Student Course Project: GitHub Repo w/ ReadMe, Due 9/30](https://classroom.github.com/a/6-NgG7z6)
+  * [Grad Student Course Project: GitHub Repo w/ ReadMe, Due 10/06](https://classroom.github.com/a/6-NgG7z6)
 
 
 </p>
