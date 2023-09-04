@@ -23,17 +23,18 @@ During most lectures we will take a few minutes at least once and ask you to app
 
 ---
 
-
 ### If you have a Win10/11 computer, [set up Windows Subsystem Linux and install the Ubuntu App ](../resources/install_wsl_ubuntu.md)
 For those of you with windows, we will install an Ubuntu terminal that interfaces with the Linux kernel build into Win10.  Software installed in windows is not accessible in Ubuntu and vice versa.  You will be able to navigate the same files and directories with both. 
 
 ---
 
+### If you have a Win10/11 computer, [install windows termial from the microsoft store](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701) For those of you with windows, this will make it so that Ubuntu, when used inside of Windows Terminal, will exhibit normal copy (ctrl-c) and paste (ctrl-v) behavior. 
+
+---
 
 ### If you have a Mac, then [install HomeBrew](https://brew.sh/)
 
 ---
-
 
 ### [Install git on your computer](https://computingskillsforbiologists.com/setup/)
 For Windows laptops, you probably already have this.  If you open your ubuntu terminal, type in "git":
