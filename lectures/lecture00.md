@@ -28,7 +28,7 @@ For those of you with windows, we will install an Ubuntu terminal that interface
 
 ---
 
-### If you have a Win10/11 computer, [install windows termial from the microsoft store](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701) For those of you with windows, this will make it so that Ubuntu, when used inside of Windows Terminal, will exhibit normal copy (ctrl-c) and paste (ctrl-v) behavior. 
+### If you have a Win10/11 computer, [install windows termial from the microsoft store](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701). For those of you with windows, this will make it so that Ubuntu, when used inside of Windows Terminal, will exhibit normal copy (ctrl-c) and paste (ctrl-v) behavior. 
 
 ---
 
