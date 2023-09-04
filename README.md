@@ -174,6 +174,8 @@ Project examples: automatically process data from experimental apparatus; image 
   * [Install Anaconda & Jupyter, Due 10/04](http://computingskillsforbiologists.com/setup/basic-programming/), Due 10/04
 -->
 
+</p>
+</details>
 
 ---
 
