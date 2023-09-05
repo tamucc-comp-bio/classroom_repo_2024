@@ -1,6 +1,6 @@
 # Assignment 1 
 
-## Due 09/09
+## Due 09/15
 
 ## Computer Preparation
 
@@ -36,9 +36,9 @@
 <details><summary>Clone the CSB repository to your home dir</summary>
 <p>
 
-We will use the [open source files that accompany the CSB text book](https://github.com/tamucc-comp-bio-2022/CSB) in lectures and assignments.
+We will use the [open source files that accompany the CSB text book](https://github.com/tamucc-comp-bio/CSB) in lectures and assignments.
 
-If the `CSB` directory does not exist in your home directory (check with `ls`), then run the following code to clone the [`CSB` repository](https://github.com/tamucc-comp-bio-2022/CSB) into your home directory:
+If the `CSB` directory does not exist in your home directory (check with `ls`), then run the following code to clone the [`CSB` repository](https://github.com/tamucc-comp-bio/CSB) into your home directory:
 
 1. Open a terminal window
 	* For Win laptops, use `Windows Terminal` to open Ubunutu.  
@@ -56,7 +56,7 @@ cd ~
 pwd
 
 # clone the CSB repository to your home dir
-git clone git@github.com:tamucc-comp-bio-2022/CSB.git
+git clone git@github.com:tamucc-comp-bio/CSB.git
 ```
 
 The repository is named CSB, and it contains all of the example files and directories necessary to conduct the exercises in the text book.
@@ -98,7 +98,6 @@ Complete the [Pipes & Filters](https://swcarpentry.github.io/shell-novice/04-pip
 
 Complete the [Finding Things](https://swcarpentry.github.io/shell-novice/07-find/index.html) tutorial on software carpentry
 
-
 </p>
 </details>
 
@@ -111,12 +110,11 @@ Work through the following tutorial. Note the instructions to clone the CSB repo
 
 ---
 
-### Redirection of output ([stdout](https://en.wikipedia.org/wiki/Standard_streams#Standard_output_(stdout))) to file `[command] > filename`
-### Append [stdout](https://en.wikipedia.org/wiki/Standard_streams#Standard_output_(stdout)) to file `[command] >> filename` 
-### Redirect contents of file to [stdin](https://en.wikipedia.org/wiki/Standard_streams#Standard_input_(stdin)) `[command] < filename` 
+### Redirection of output ([stdout](https://en.wikipedia.org/wiki/Standard_streams#Standard_output_(stdout))) to file `[command] > filename`, Append [stdout](https://en.wikipedia.org/wiki/Standard_streams#Standard_output_(stdout)) to file `[command] >> filename`, Redirect contents of file to [stdin](https://en.wikipedia.org/wiki/Standard_streams#Standard_input_(stdin)) `[command] < filename` 
 
 ```bash
 # let’s start by moving to our sandbox in the unix dir of the CSB repo
+# you must have cloned the CSB repo to your home dir for this path to work
 $ cd ~/CSB/unix/sandbox
 
 # print text to screen, then print to file, then print file to screen
@@ -141,7 +139,7 @@ _use `Tab` key to autocomplete names, prevent spelling mistakes_
 
 ### Problem Solving Scenario
 
-A machine provides you with thousands of data files. There’s so many, it is breaking your file browser. How many files are there?
+A machine provides you with thousands of data files. There’s so many, it is breaking your Win/Mac GUI file browser. How can you determine the number of files?
 
 We will use the dir `unix/data/Saavedra2013` as an example of a directory with many files
 
@@ -206,10 +204,9 @@ In the tidy table below, columns are _*delimited*_ by tabs.  The first column ha
   
   * Each [column](https://en.wikipedia.org/wiki/Column_(database)) is one dimension or aspect of the units of observation
   
-* File extensions not always accurate, so it is important to view a file to be sure of the delimiter.
+* File extensions are not always accurate, so it is important to view a file to be sure of the delimiter.
 
 Do not type in the following code blocks.  They are here to show you TSV and CSV formatting
-
 
 Tidy Table:
 | Column 1 Header | Column 2 Header | Column 3 Header |
@@ -228,7 +225,8 @@ Row 3 Column 1	Row 3 Column 2	Row 3 Column 3
 Row 4 Column 1	Row 4 Column 2	Row 4 Column 3
 ```
 
-TSV File with tabs denoted by `\t`.  Note your text files will not contain `\t`.  I did this show where tabs were, versus spaces.
+TSV File with tabs denoted by `\t`.  Note your text files will not contain `\t`.  I did this show where tabs were, versus spaces. This is also the first use of a regular expression in this course.  The `\` is the escape character, which changes the meaning of the character that follows.  `\t` is the regular expression for a tab. Regular expressions are recognized by almost all commands across all computer languages that use a pattern (`\t`) to find matching text (tab character).
+
 ```
 Column 1 Header\tColumn 2 Header\tColumn 3 Header
 Row 1 Column 1\tRow 1 Column 2\tRow 1 Column 3
@@ -246,8 +244,8 @@ Row 3 Column 1, Row 3 Column 2, Row 3 Column 3
 Row 4 Column 1, Row 4 Column 2, Row 4 Column 3
 ```
 
-
 ---
+
 
 ### Convert Among Formats Using `tr "<old delimiter>" "<new delimiter>"`
 
@@ -268,7 +266,7 @@ _`tr` is an abbreviation for translate_
 
 ---
 
-### Using `cut` to retrieve columns and `head` to retrieve rows
+### Using `cut` to retrieve/isolate/select columns and `head` to retrieve rows
 
 ```bash
 # change directory
@@ -400,6 +398,4 @@ cut -d ";" -f 2-6 $1 | \
  # save to file (second argument)
 	sort -nrk6 > $2
 ```
-
-
 

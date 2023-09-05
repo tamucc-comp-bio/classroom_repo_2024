@@ -1,7 +1,5 @@
 # Assignment 0 
 
-## Due 09/08
-
 ## Computer Preparation
 
 <details><summary>Ubuntu on Windows</summary>
@@ -84,7 +82,7 @@ Nothing to note
 
 ### 3. [Working With Files and Directories](https://swcarpentry.github.io/shell-novice/03-create/index.html)
 
-* realize that the orange boxes don't always pertain to the directory structure in you lesson data.  For example, the 2nd one (Moving Files to a new folder) does not refer to our directory structure, but rather a hypothetical directory structure on Jamie's computer.  Who's Jamie?  idk
+* realize that the orange boxes don't always pertain to the directory structure in your lesson data.  For example, the 2nd one (Moving Files to a new folder) does not refer to our directory structure, but rather a hypothetical directory structure on Jamie's computer.  Who's Jamie?  idk
 
 ---
 

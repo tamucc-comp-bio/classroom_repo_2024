@@ -55,9 +55,9 @@ You are expected to start each lecture with your terminal window open and ready 
 </details>
 
 
-## Lecture: Unix, Linux, & CLI
+## Lecture: Unix, Linux, & the Command Line Interface (CLI)
 
-For the online version of this course, I am converting the ppt slides to a more screen-splitting friendly format here in GitHub.
+For the online version of this course, I have converted the ppt slides to a more screen-splitting friendly format here in GitHub.
 
 <details><summary>Introduction</summary>
 <p>
@@ -413,14 +413,19 @@ _Note: `ctrl + c` will stop a command if it is taking too long to complete_
 
 ### Getting Help with `bash`
 
-#### 1. Use an internet search with your favorite search engine if you know what you want to do, but do not know the command
+#### 1. Use a Large Language Model (LLM) such as [OpenAI's GPT 3.5 or 4](https://chat.openai.com/) 
+
+Example command prompt: `How do I <english description of what you want to do> with bash?`
+
+Do not be afraid to modify and try different english descriptions if you do not succeed in the first prompt.  You do need to tell the LLM you are using bash.
+
+#### 2. Use an internet search with your favorite search engine if you know what you want to do, but do not know the command
 
 Example search terms: `bash <english description of what you want to do>`
 
 Do not be afraid to modify and try different english descriptions if you do not succeed in the first search
 
-
-#### 2. Use the `man` command if you know the command but are not sure of the options and arguments
+#### 3. Use the `man` command if you know the command but are not sure of the options and arguments
 
 ```bash
 man cal
@@ -549,7 +554,7 @@ It is best not to used spaces in dir and file names, but you can wrap file names
 
 ### Set Up Data to Experiment With
 
-From here forward, we will adopt a standardized code block syntax.  The `$` represents the command prompt and you are expected to type in the commands that follow it, but _*do not start any command with the `$`*_.  The `#` is a comment to explain to you what is happening next
+From here forward, we will adopt a standardized code block syntax.  The `$` represents the command prompt and you are expected to copy and paste the commands that follow it, but _*do not start any command with the `$`*_.  The `#` is a comment to explain to you what is happening next
 
 ```bash
 # goto your home dir
@@ -559,7 +564,7 @@ $ cd ~
 $ mkdir -p ~/comp_bio/lecture_01
 $ cd ~/comp_bio/lecture_01
 
-# dowload the software carpentry data set for the Unix Shell lesson and unzip it and delete the zipped file
+# download the software carpentry data set for the Unix Shell lesson and unzip it and delete the zipped file
 $ wget https://swcarpentry.github.io/shell-novice/data/shell-lesson-data.zip
 $ unzip shell-lesson-data.zip
 $ rm shell-lesson-data.zip
@@ -567,17 +572,17 @@ $ rm shell-lesson-data.zip
 
 --- 
 
-### Copy with `cp <from> <to>`
+### Copy files or directories with `cp <from path> <to path>`
 
 ```
 # you should be in ~/comp_bio/lecture_01
 $ cd ~/comp_bio/lecture_01
 $ pwd
 
-# view the present dir
+# view the contents of the present dir
 $ ls
 
-# copy `haiku.txt` to the present directory
+# copy `haiku.txt` to the present working directory (pwd).  The path of the pwd is represented by a "."
 $ cp shell-lesson-data/exercise-data/writing/haiku.txt .
 
 # copy `haiku.txt` to the present directory and rename the copy to be `Haiku.txt`
@@ -593,11 +598,11 @@ $ tree shell-lesson-data
 
 ```
 
-_Note:  `-r` means [recursive](https://en.wikipedia.org/wiki/Recursion_(computer_science)), `-f` means force_
+_Note:  the `-r` argument for `cp` means [recursive](https://en.wikipedia.org/wiki/Recursion_(computer_science)) and `-f` means force_
 
 ---
 
-### Move or rename with `mv <from> <to>`
+### Move or rename files and directories with `mv <from path> <to path>`
 
 ```bash
 # you should be in ~/comp_bio/lecture_01
@@ -620,7 +625,7 @@ _Note:  `bash` gives no positive feedback, only negative if something is wrong. 
 
 ---
 
-### Create file with touch <filename>
+### Create file with `touch <new file path>`
 
 ```bash
 # let's move to shell-lesson-data
@@ -641,6 +646,7 @@ $ touch new_file.txt
 $ ls -l
 
 # create a new file in the `shell-lesson-data` dir (the parent dir of the present dir), then view the 
+# the path to the directory that your present working directory is within is represented by ".."
 $ touch ../another_new_file.txt
 $ ls ..
 
@@ -650,7 +656,7 @@ _Note:  `bash` gives no positive feedback, only negative if something is wrong. 
 
 ---
 
-### Remove file(s) or dir(s) with `rm <name>` 
+### Remove file(s) or dir(s) with `rm <path>` 
 ### Make dirs with `mkdir <name>`
 
 ```bash
@@ -678,14 +684,11 @@ $ rm -rf d1
 $ rm -rf ../north-pacific-gyre/exercise-data/
 ```
 
-_be careful with rm, you could delete your whole computer and there is no undo_
+_be careful with `rm`, you could delete your "whole computer", and there is no undo_
 
 ---
 
-### View large files with `less -S <filename>`
-### Print and concatenate files `cat <filename>`
-### Print and sort files `sort <filename>`
-
+### View large files with `less -S <file path>`
 
 ```bash
 # make sure you are still in the original exercise-data dir 
@@ -696,23 +699,46 @@ $ less ../north-pacific-gyre/NENE01751B.txt
 
 # type /10 inside of less to search; u=up, d=down, G=end, g=begin, q=exit
 
-# concatenate files and/or print to screen
-$ cat numbers.txt ../north-pacific-gyre/goodiff.sh proteins/cubane.pdb
-
-# print the sorted lines of a file
-$ sort ../north-pacific-gyre/NENE01751B.txt
-
-# first view, then sort a comma delimited file numerically by column 3 in reverse order and view in less
-$ cat animal-counts/animals.csv
-$ sort -nrk3,3 -t "," animal-counts/animals.csv | less
 ```
-
-_Note: in the last command we used a pipe `|` to direct the text stream from `sort` to `less`.  Remember the [Unix Philosophy](https://en.wikipedia.org/wiki/Unix_philosophy)_
 
 ---
 
-### Count words with		`wc <filename>`
-### Determine file type		`file <filename>`
+### Print and concatenate files `cat <file path>`
+
+```bash
+# concatenate files and/or print to screen
+$ cat numbers.txt ../north-pacific-gyre/goodiff.sh proteins/cubane.pdb
+```
+
+---
+
+### Print and sort files `sort <file path>`
+
+```bash
+
+# print the sorted lines of a file
+$ sort ../north-pacific-gyre/NENE01751B.txt
+```
+
+---
+
+### Connect multiple commands together into at pipeline
+
+We can use a pipe `|` to direct the text stream from `sort` to `less` or from `cat` to `sort` to `less`.  
+
+Remember the [Unix Philosophy](https://en.wikipedia.org/wiki/Unix_philosophy), where each program does one thing, and all programs have a common file format.  The common format is a text file and this enables piping text from one command to the next in a pipeline.
+
+```bash
+# first view, then sort a comma delimited file numerically by column 3 in reverse order and view in less
+$ cat animal-counts/animals.csv
+$ sort -nrk3,3 -t "," animal-counts/animals.csv | less
+$ cat animal-counts/animals.csv | sort -nrk3,3 -t "," | less
+
+```
+
+---
+
+### Count words, lines, etc with `wc <file path>`
 
 ```bash
 # count lines, words, and characters
@@ -721,18 +747,26 @@ $ wc writing/LittleWomen.txt
 # count lines only
 $ wc -l ../north-pacific-gyre/NENE01751B.txt
 
+```
+
+### Determine file type `file <filename>`
+
+Just because a file ends with a particular extension, doesn't mean that the file itself follows the format that matches that extension.  This is an example of why it's important to impart structure on your code.  You should use the correct file extension even though you don't have to so that both you and everybody else can better understand your files and code.
+
+The most common use of the `file` command in biology is to determine if files ending in `.gz` are actually zipped.
+
+```bash
 # determine file type, ASCII is a type of human-readable text file
 $ file proteins/cubane.pdb
 proteins/cubane.pdb: ASCII text
 
 ```
 
-_Do not forget to use `Tab` key to autocomplete directory names and prevent spelling mistakes_
+_Do not forget to use the `Tab` key to autocomplete directory names and prevent spelling mistakes_
 
 ---
 
-### Retrieve beginning of file `head –n <number of lines> <filename>`
-### Retrieve end of file tail `–n <number of lines> <filename>`
+### Retrieve beginning of file with `head –n <number of lines> <file path>` and end of file `tail –n <number of lines> <file path>`
 
 ```bash
 # display first two lines of a file
@@ -765,13 +799,13 @@ _Do not forget to use `Tab` key to autocomplete file names and prevent spelling 
 </p>
 </details>
 
+---
 
 ## Homework
 
+* [Assignment_1, Due 09/15](../assignments/assignment_1.md)
 
+* [Graduate Student Course Project Ideas, Due 09/15](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUOUo2UVRUMVgwTUlQMlpUQzUzOTIzME9LNi4u)
 
-* [Assignment_1, Due 09/09](../assignments/assignment_1.md)
-
-* [Graduate Student Course Project Ideas, Due 09/09](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUOUo2UVRUMVgwTUlQMlpUQzUzOTIzME9LNi4u)
-
+---
 
