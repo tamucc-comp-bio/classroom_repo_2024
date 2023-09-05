@@ -44,6 +44,6 @@ This directory contains resources that will help you with your assignments .
 
 ## Repositories Used in Class
 
-* [CSB](https://github.com/tamucc-comp-bio-2022/CSB)
+* [CSB](https://github.com/tamucc-comp-bio/CSB)
 
 * [Your homework and project repos](https://github.com/orgs/comp-bio-master/repositories)
