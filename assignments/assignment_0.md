@@ -4,6 +4,8 @@
 
 [Wickham 2014 Tidy Data.pdf](../literature/Wickham_2014_Tidy_Data.pdf)
 
+---
+
 ## Computer Preparation
 
 <details><summary>Ubuntu on Windows</summary>
