@@ -219,7 +219,7 @@ Project examples: automatically process data from experimental apparatus; image 
 
 ---
 
-<!-- This is a hidden comment. It will not be visible in the rendered markdown. -->
+<!-- This is a hidden comment. It will not be visible in the rendered markdown. 
 
 <details><summary>FINAL EXAM: "Welcome to the Desert of the Real"</summary>
 <p>
