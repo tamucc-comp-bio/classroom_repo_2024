@@ -1,6 +1,6 @@
 # Week01 UNIX
 
-### [Assignment 0](https://github.com/tamucc-comp-bio-2020/classroom_repo/blob/master/assignments/assignment_0.md) is due at the beginning of this lecture
+### [Assignment 0](../assignments/assignment_0.md) is due at the beginning of this lecture
 
 ## [Lecture Stream](https://tamucc.webex.com/recordingservice/sites/tamucc/recording/playback/89d7a9cb258e4750a09f346800aceb31)
 
