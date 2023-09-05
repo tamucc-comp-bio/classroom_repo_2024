@@ -113,4 +113,12 @@ tree ~/Desktop/shell-lesson-data
 
 ![](assignment_0_answer.png)
 
+---
+
+## Submitting Assignment 0
+
+[Upload](https://forms.office.com/r/s93wiun80L) a screenshot of your  `shell-lesson-data` directory, like the example above.
+
+
+
 
