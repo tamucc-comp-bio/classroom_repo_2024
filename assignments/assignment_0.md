@@ -2,7 +2,7 @@
 
 ## Reading for Discussion Next lecture
 
-[Wickham 2014 Tidy Data.pdf](../literature/Wickham 2014 Tidy Data.pdf)
+[Wickham 2014 Tidy Data.pdf](../literature/Wickham\ 2014\ Tidy\ Data.pdf)
 
 ## Computer Preparation
 
