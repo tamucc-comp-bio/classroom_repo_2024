@@ -1,5 +1,9 @@
 # Assignment 0 
 
+## Reading for Discussion Next lecture
+
+[Wickham 2014 Tidy Data.pdf](../literature/Wickham 2014 Tidy Data.pdf)
+
 ## Computer Preparation
 
 <details><summary>Ubuntu on Windows</summary>
