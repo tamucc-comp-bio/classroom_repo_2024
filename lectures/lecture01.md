@@ -803,9 +803,9 @@ _Do not forget to use `Tab` key to autocomplete file names and prevent spelling 
 
 ## Homework
 
-* [Assignment_1, Due 09/15](../assignments/assignment_1.md)
+* [Assignment_1](../assignments/assignment_1.md)
 
-* [Graduate Student Course Project Ideas, Due 09/15](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUOUo2UVRUMVgwTUlQMlpUQzUzOTIzME9LNi4u)
+* [Graduate Student Course Project Ideas](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUOUo2UVRUMVgwTUlQMlpUQzUzOTIzME9LNi4u)
 
 ---
 
