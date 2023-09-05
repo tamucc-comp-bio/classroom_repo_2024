@@ -88,8 +88,11 @@ Project examples: automatically process data from experimental apparatus; image 
 
   * [Request Account On TAMUCC Super Computer Due 9/29](http://hpc.tamucc.edu/)
 
-  * [Grad Student Course Project: Plan/Outline, Due 09/29](https://classroom.github.com/a/XeWhIJ3W)  
+  * [Grad Student Course Project: Plan/Outline, Due 09/29](https://classroom.github.com/a/XeWhIJ3W)
+<!-- This is a hidden comment. It will not be visible in the rendered markdown. 
+ 
     * [Old Link To Grad Student Course Project](https://classroom.github.com/a/VuB4iKjR).  If you started with this link, then just click the link above, clone the 2022 version of this repo, and copy your work from the old repo to the new one.
+-->
 
 * [09/29  Week04 Version Control w/ Git](lectures/lecture04.md)
 
