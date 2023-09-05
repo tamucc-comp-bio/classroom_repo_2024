@@ -93,7 +93,7 @@ to read about a specific subcommand or concept.
 See 'git help git' for an overview of the system.
 ```
 
-you are good to go.  Otherwise, follow the instructions for both Windows and Linux (Ubuntu Terminal)
+you are good to go.  Otherwise, follow [the instructions for both Windows and Linux (Ubuntu Terminal)](https://computingskillsforbiologists.com/setup/)
 
 ---
 
