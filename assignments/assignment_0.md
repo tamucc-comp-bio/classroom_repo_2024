@@ -11,15 +11,10 @@
 <details><summary>Ubuntu on Windows</summary>
 <p>
 
-  * If the Ubuntu app is not installed, then follow [these instructions](https://github.com/cbirdlab/wlsUBUNTU_settings/blob/master/README.md)
+  * If the Ubuntu app is not installed, then follow [these instructions](../resources/install_wsl_ubuntu.md)
   
   * Log into your Ubuntu terminal.  _We will not use `gitbash` unless you can't get Ubuntu running._ After logging in, You are in your home directory. 
      
-  * If the `CSB` directory does not exist in your home directory (check with `ls`), then run the following code to clone the `CSB` repository into your home directory:
-  
-    ```bash
-    git clone https://github.com/CSB-book/CSB.git
-    ```
   * It's always a good idea to keep your apps in `Ubuntu` up to date. _The first time you do this, it could take a long time to finish. After that, if you do this when you log in, it should go quickly._
     ```bash
     sudo apt update
@@ -60,6 +55,12 @@ mv shell-lesson-data Desktop
 ```
 
 In the code above, `wget` is a command to download files with a https web address and `https://swcarpentry.github.io/shell-novice/data/shell-lesson-data.zip` is the web address of the data file.  Notice that it is zipped.  You can use the `unzip` command to unzip it.  Once you have executed the commands above, the data will be in your present directory in the directory named `shell-lesson-data`. The last two lines will make your directory have the same structure as assumed in the lesson.  Those with macs might see an error after `mkdir Desktop`.  That's ok, it just means that the desktop dir was already there. Those with Ubuntu on windows, the `Desktop` dir will be created.  Then for everybody `mv` will move the `shell-lesson-data` dir inside of the `Desktop` dir
+
+---
+
+## Do the Assignment
+
+Your assignment is to work through [Software Carpentry's The Unix Shell](https://swcarpentry.github.io/shell-novice/) from Introducing the Shell through Working with files and directories. (click the link)
 
 ---
 
