@@ -60,7 +60,13 @@ In the code above, `wget` is a command to download files with a https web addres
 
 ## Do the Assignment
 
-Your assignment is to work through [Software Carpentry's The Unix Shell](https://swcarpentry.github.io/shell-novice/) from Introducing the Shell through Working with files and directories. (click the link)
+Your assignment is to work through [Software Carpentry's The Unix Shell](https://swcarpentry.github.io/shell-novice/01-intro.html) from Introducing the Shell through Working with files and directories. (click the link)
+
+Read through the lesson. Everytime there's a code block (has a blue line across top), copy and paste the command in the code block into your terminal. It will also show you the expected output in the block with the black line across the top (don't type this in, only the commands under the blue lines).  Also, don't type the $
+
+![](assignment_0_codeblock.png)
+
+Refer to the helpful information below while you work through the Software Carpentry Lessons.
 
 ---
 
