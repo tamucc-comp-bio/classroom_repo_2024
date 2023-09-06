@@ -8,6 +8,8 @@
 
 ## Computer Preparation
 
+You should have already prepared your computer during Lecture 0.  If you did then you can skip over this section.  
+
 <details><summary>Ubuntu on Windows</summary>
 <p>
 
