@@ -8,7 +8,7 @@
 
 ## Computer Preparation
 
-You should have already prepared your computer during Lecture 0.  If you did then you can skip over this section.  
+You should have already prepared your computer during Lecture 0.  If you did then you can skip over this section to "Description of Assignment".  
 
 <details><summary>Ubuntu on Windows</summary>
 <p>
@@ -35,6 +35,8 @@ You should have already prepared your computer during Lecture 0.  If you did the
 
  </p>
 </details>
+
+---
 
 
 ## Description of Assignment
