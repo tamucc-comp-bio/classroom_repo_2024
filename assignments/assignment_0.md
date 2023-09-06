@@ -107,7 +107,7 @@ You probably need to install `tree` as follows:
 
 ```
 #mac 
-sudo brew install tree
+brew install tree
 
 #ubuntu
 sudo apt install tree
