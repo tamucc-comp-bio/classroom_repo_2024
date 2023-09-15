@@ -94,7 +94,7 @@ The exercises in the online forms closely follow those in the book.  I do make m
 ---
 
 
-### Extra Credit, worth 1 whole assignment (Due 09/16)  
+### Extra Credit, worth 1 whole assignment  
 
 Complete Exercise 1.10.4 Data Explorer (data from Buzzard *et al.*, 2016), and submit script by updating your repository (see below). You may work in groups but each student must submit their own work.
 
