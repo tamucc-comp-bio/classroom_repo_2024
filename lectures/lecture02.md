@@ -80,7 +80,7 @@ The repository is named CSB, and it contains all of the example files and direct
 
 While the CSB text book is not required, this info provides context for those that choose to use it.
 
-The material below closely follow the book but there is some additional information that is not provided in the book (and vice versa). If you choose to follow the lecture slides, the `code blocks` are represented by green text on a black background, mimicking the terminal.
+The material below closely follows the book but there is some additional information that is not provided in the book (and vice versa). If you choose to follow the lecture slides, the `code blocks` are represented by green text on a black background, mimicking the terminal.
 
 * Page 35 **Use _BodyMass.csv_ (slides) rather than _BodyM.csv_ (book)**
 
@@ -711,7 +711,7 @@ $ sudo chown -R $USER test_dir/
 
 #### [command] [options] [arguments]
 
-* ls -ltrh CSB
+* `ls -ltrh CSB`
 
 #### a command is a simple app 
 
@@ -736,6 +736,8 @@ $ sudo chown -R $USER test_dir/
 </p>
 </details>
 
+---
+
 <details><summary>Commands for navigating and manipulating dirs & files </summary>
 <p>
 
@@ -753,6 +755,8 @@ $ sudo chown -R $USER test_dir/
 </p>
 </details>
 
+---
+
 <details><summary>Use `man`, `-h`, `--help`, or web search to get help </summary>
 <p>
 
@@ -769,6 +773,8 @@ $ sudo chown -R $USER test_dir/
 
 </p>
 </details>
+
+---
 
 <details><summary>The address of a file or dir is a *path*: `/home/username`</summary>
 <p>
@@ -791,6 +797,8 @@ $ sudo chown -R $USER test_dir/
 
 </p>
 </details>
+
+---
 
 <details><summary>Many bash commands are important for manipulating biological data</summary>
 <p>
@@ -818,6 +826,8 @@ $ sudo chown -R $USER test_dir/
 </p>
 </details>
 
+---
+
 <details><summary>Unix commands are designed to pipe `|` and redirect `>` text streams to construct pipelines that link commands and create new files</summary>
 <p>
 
@@ -832,6 +842,8 @@ $ sudo chown -R $USER test_dir/
 </p>
 </details>
 
+---
+
 <details><summary>Wildcards can be used to specify several files with one word or paths</summary>
 <p>
 
@@ -845,6 +857,8 @@ $ sudo chown -R $USER test_dir/
 
 </p>
 </details>
+
+---
 
 <details><summary>The escape character `\ ` changes the meaning of the character that follows, including end of lines</summary>
 <p>
@@ -862,9 +876,8 @@ $ sudo chown -R $USER test_dir/
 </p>
 </details>
 
-
-
 ---
+
 
 ## Computer Programming with `bash` (CSB 1.7-1.9)
 
@@ -1133,6 +1146,8 @@ height=6.3
 echo $VARIABLE $X $height
 ```
 
+---
+
 </p>
 </details>
 
@@ -1165,6 +1180,8 @@ cd ../../sandbox
 ```
 
 These examples are a bit contrived, but you will quickly find that subshells are indispensable when automating
+
+---
 
 </p>
 </details>
