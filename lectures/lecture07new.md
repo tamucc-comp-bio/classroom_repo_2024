@@ -32,7 +32,7 @@ library(tidyverse)
 <details><summary>Ubuntu on Windows</summary>
 <p>
 
-  * If the Windows Terminal or Ubuntu app are not installed, then follow [these instructions](https://github.com/cbirdlab/wlsUBUNTU_settings/blob/master/README.md)
+  * If the Windows Terminal or Ubuntu app are not installed, then follow [these instructions](../resources/README.md)
 
   * Open an Ubuntu window in Windows Terminal.  _We will not use `gitbash` unless you can't get Ubuntu running._ After logging in, You are in your home directory.
 
