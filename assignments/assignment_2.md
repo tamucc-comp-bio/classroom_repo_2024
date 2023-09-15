@@ -75,7 +75,7 @@ The repository is named CSB, and it contains all of the example files and direct
 
 4. Work through *Computer Programming with `bash` (CSB 1.7-1.9) in [Lecture_02](../lectures/lecture02.md)
 
-<details><summary>4. Complete exercises 1.10.2 and 1.10.3</summary>
+<details><summary>5. Complete exercises 1.10.2 and 1.10.3</summary>
 <p>
 
 Then, complete the exercise(s) below by answering the question(s) in the online form and submitting.  You must be logged into your TAMUCC email account to have your identity attached to your answers. 
