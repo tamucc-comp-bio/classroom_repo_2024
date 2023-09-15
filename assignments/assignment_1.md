@@ -20,7 +20,8 @@
     sudo apt update
     sudo apt upgrade
     ```
-    
+
+---
 
 </p>
 </details>
@@ -84,7 +85,6 @@ Work through the remainder of [lecture 1](../lectures/lecture01.md).  To help yo
 code blocks
 ```
 
-
 Complete [Mindexpander 01.02](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUOUo2UVRUMVgwTUlQMlpUQzUzOTIzME9LNi4u) by answering the question(s) in the online form and submitting.  You must be logged into your TAMUCC email account to have your identity attached to your answers. 
 
 * **_You can resubmit your answers as neccessary_**
@@ -94,6 +94,7 @@ Complete [Mindexpander 01.02](https://forms.office.com/Pages/ResponsePage.aspx?i
 </p>
 </details>
 
+---
 
 <details><summary>Software Carpentry</summary>
 <p>
@@ -105,6 +106,7 @@ Complete the [Finding Things](https://swcarpentry.github.io/shell-novice/07-find
 </p>
 </details>
 
+---
 
 <details><summary>Advanced `bash` Commands</summary>
 <p>
