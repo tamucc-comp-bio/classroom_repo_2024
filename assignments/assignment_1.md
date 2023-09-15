@@ -99,9 +99,9 @@ Complete [Mindexpander 01.02](https://forms.office.com/Pages/ResponsePage.aspx?i
 <details><summary>Software Carpentry</summary>
 <p>
 
-Complete the [Pipes & Filters](https://swcarpentry.github.io/shell-novice/04-pipefilter/index.html) tutorial on software carpentry
+Complete the [Pipes & Filters](https://swcarpentry.github.io/shell-novice/04-pipefilter.html) tutorial on software carpentry
 
-Complete the [Finding Things](https://swcarpentry.github.io/shell-novice/07-find/index.html) tutorial on software carpentry
+Complete the [Finding Things](https://swcarpentry.github.io/shell-novice/07-find.html) tutorial on software carpentry
 
 </p>
 </details>
