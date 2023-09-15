@@ -265,8 +265,8 @@ Row 3 Column 1, Row 3 Column 2, Row 3 Column 3
 Row 4 Column 1, Row 4 Column 2, Row 4 Column 3
 ```
 
-
 ---
+
 
 ### Convert Among Formats Using `tr "<old delimiter>" "<new delimiter>"`
 
@@ -379,6 +379,14 @@ $ cut -d";" -f2 ../data/Pacifici2013_data.csv | tail -n +2 | sort | uniq -c | tr
 [Mind Expander 01.03](https://forms.office.com/r/sSBR8Sjm9x)
 
 [Exercise 1.10.1 Next Generation Sequencing Data](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMTVENFg0UjhFTzc3Wkc0NExRTjdLSjdGNi4u)
+
+</p>
+</details>
+
+<details><summary>Reading</summary>
+<p>
+
+[Wilson_etal_2017_good_enough_practices](../literature/Wilson_etal_2017_good_enough_practices_in_scientific_computing.pdf)
 
 </p>
 </details>
