@@ -1250,5 +1250,5 @@ Note that some of these commands need to be installed on MacOS using `brew`
 
 ## Homework 
 
-* [Assignment_2, Due 09/16](../assignments/assignment_2.md)
+* [Assignment_2](../assignments/assignment_2.md)
 
