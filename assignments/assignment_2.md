@@ -1,7 +1,5 @@
 # Assignment 2 
 
-## Due 09/16
-
 ---
 
 ## Computer Preparation
