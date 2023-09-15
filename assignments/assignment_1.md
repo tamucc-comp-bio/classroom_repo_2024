@@ -272,6 +272,7 @@ _`tr` is an abbreviation for translate_
 
 ---
 
+
 ### Using `cut` to retrieve/isolate/select columns and `head` to retrieve rows
 
 ```bash
@@ -296,6 +297,7 @@ _Note: cut assumes tab delimited files.  If a different delimiter is used in the
 
 ---
 
+
 ### Connecting `cut` `head` `tail` `sort` `uniq`
 
 ```bash
@@ -317,7 +319,6 @@ $ cut -d ";" -f 2 Pacifici2013_data.csv | tail -n +2 | sort | uniq -c
 
 # output the order with the most records, including the number of records in csv
 $ cut -d";" -f2 ../data/Pacifici2013_data.csv |  tail -n +2 | sort | uniq -c | tr -s " " "\t" | cut -f2-3 | sort -n | tail -n1
-
 
 ```
 
@@ -350,6 +351,7 @@ $ cut -d";" -f2 ../data/Pacifici2013_data.csv | tail -n +2 | sort | uniq -c | tr
 </p>
 </details>
 
+---
 
 <details><summary>Mind Expander 1.3</summary>
 <p>
@@ -358,6 +360,8 @@ $ cut -d";" -f2 ../data/Pacifici2013_data.csv | tail -n +2 | sort | uniq -c | tr
 
 </p>
 </details>
+
+---
 
 <details><summary>Exercise 1.10.1</summary>
 <p>
