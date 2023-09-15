@@ -13,11 +13,12 @@ You are expected to start each lecture with your terminal window open and ready 
 <details><summary>Ubuntu on Windows</summary>
 <p>
 
-  * If the Windows Terminal or Ubuntu app are not installed, then follow [these instructions](https://github.com/cbirdlab/wlsUBUNTU_settings/blob/master/README.md)
+  * If the Windows Terminal or Ubuntu app are not installed, then follow [these instructions](../resources/README.md)
   
   * Open an Ubuntu window in Windows Terminal.  _We will not use `gitbash` unless you can't get Ubuntu running._ After logging in, You are in your home directory. 
      
   * It's always a good idea to keep your apps in `Ubuntu` up to date. _The first time you do this, it could take a long time to finish. After that, if you do this when you log in, it should go quickly._
+  
     ```bash
     sudo apt update
     sudo apt upgrade
