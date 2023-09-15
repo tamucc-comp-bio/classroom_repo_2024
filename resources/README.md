@@ -6,7 +6,7 @@ This directory contains resources that will help you with your assignments .
 
 ## How To
 
-* [Install `Ubuntu` on Windows](install_wsl_ubuntu.txt)
+* [Install `Ubuntu` on Windows](install_wsl_ubuntu.md)
 
 * [Install `Windows Terminal` from the microsoft store](https://learn.microsoft.com/en-us/windows/terminal/install).
   
