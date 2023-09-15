@@ -1,7 +1,5 @@
 # [Assignment 3](https://classroom.github.com/a/q5PkCvK7)
 
-## Due 09/23
-
 ## Computer Preparation
 
 <details><summary>Ubuntu on Windows</summary>
