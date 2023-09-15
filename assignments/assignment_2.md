@@ -67,11 +67,13 @@ The repository is named CSB, and it contains all of the example files and direct
 ---
 ## Description of Assignment
 
-1. Complete [Mind Expander 01.04](https://forms.office.com/r/uvi6cGMSMJ)
+1. Reading: [Wilson_et_al_2014_Best_practices_for_sci_comp](../literature/Wilson_et_al_2014_Best_practices_for_sci_comp.pdf)
 
-2. *OPTIONAL*: In Software Carpentry, complete The [Unix Shell Sections 5-6](https://swcarpentry.github.io/shell-novice/)
+2. Complete [Mind Expander 01.04](https://forms.office.com/r/uvi6cGMSMJ)
 
-3. Work through *Computer Programming with `bash` (CSB 1.7-1.9) in [Lecture_02](../lectures/lecture02.md)
+3. *OPTIONAL*: In Software Carpentry, complete The [Unix Shell Sections 5-6](https://swcarpentry.github.io/shell-novice/)
+
+4. Work through *Computer Programming with `bash` (CSB 1.7-1.9) in [Lecture_02](../lectures/lecture02.md)
 
 <details><summary>4. Complete exercises 1.10.2 and 1.10.3</summary>
 <p>
