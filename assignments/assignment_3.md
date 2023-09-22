@@ -74,7 +74,7 @@ The repository is named CSB, and it contains all of the example files and direct
 
 You will be working in bash to manipulate the 3d scans of limpet shells we discussed in class.  
 
-### [Click on this Link to Initiate this Assignment](https://classroom.github.com/a/q5PkCvK7)
+### [Click on this Link to Initiate this Assignment](https://classroom.github.com/a/v_HjW_Xy)
 
 * Begin by cloning your repo to your computer
 	* make sure you copy the "ssh" link from your repo (green button, upper right).
