@@ -124,21 +124,21 @@ Git is a distributed version control system that helps you keep track of changes
   * Why: You may not want to commit all the changes you've made at once. git add allows you to select the changes to include.
   * Example:
 
-```bash
-# only stage changes for a single file
-# note, your present working dir must be inside of a repo for this to work
-git add myfile.txt
-```
+	```bash
+	# only stage changes for a single file
+	# note, your present working dir must be inside of a repo for this to work
+	git add myfile.txt
+	```
 
-```bash
-# or stage all changes in the current directory
-git add .
-```
+	```bash
+	# or stage all changes in the current directory
+	git add .
+	```
 
-```bash
-# or stage all changes in the whole repo
-git add --all
-```
+	```bash
+	# or stage all changes in the whole repo
+	git add --all
+	```
 
 2. `git commit`: Save your changes to the local repository
 
@@ -146,12 +146,10 @@ git add --all
   * Why: It provides a record of changes and an associated message describing those changes, making it easier to understand the development history.
   * Example:
 
-```bash
-# take a snapshot of all added (staged) changes to the repo
-git commit -m "Implement feature X"
-```
-
-    "
+	```bash
+	# take a snapshot of all added (staged) changes to the repo
+	git commit -m "Implement feature X"
+	```
 
 3. `git push`: Update the remote repository on GitHub
 
@@ -159,10 +157,10 @@ git commit -m "Implement feature X"
   * Why: Makes your changes accessible to team members or collaborators. Also, it serves as a backup of your local repository.
   * Example:
 
-```bash
-# take a snapshot of all added (staged) changes to the repo
-git push
-```
+	```bash
+	# take a snapshot of all added (staged) changes to the repo
+	git push
+	```
 
 #### A Typical Workflow:
 
@@ -175,3 +173,8 @@ By doing this, you're keeping your code versioned, making it easier to collabora
 
 </p>
 </details>
+
+### Submitting Assignment
+
+To submit your assignment, add, commit, and push your changes to github one last time.
+
