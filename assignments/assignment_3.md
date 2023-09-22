@@ -66,7 +66,7 @@ The repository is named CSB, and it contains all of the example files and direct
 
 ## GitHub Preparation
 
-* You must be a member of our class's github repository. If you are not a member (because you did not accept the initial invite) then please let me know and I'll reinvite you. 
+* You must be a member of our class's github classroom. If you are not a member (because you did not accept the initial invite sent via email) then please let me know via email (include your github id) and I'll reinvite you. 
 
 * Make sure you are logged into github.
 
