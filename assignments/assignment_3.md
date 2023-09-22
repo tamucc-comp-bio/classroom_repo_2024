@@ -66,9 +66,11 @@ The repository is named CSB, and it contains all of the example files and direct
 
 ## GitHub Preparation
 
-* You must be a member of our class's github classroom. If you are not a member (because you did not accept the initial invite sent via email) then please let me know via email (include your github id) and I'll reinvite you. 
+* You must be a member of our class's github classroom. You can tell if you're a member by clicking the "Click on this Link to Initiate this Assignment" below. If that link does not work, then please let me know via email (include your github id) and I'll reinvite you to the classroom. 
 
 * Make sure you are logged into github.
+
+---
 
 ## Description of Assignment 
 
@@ -78,15 +80,19 @@ You will be working in bash to manipulate the 3d scans of limpet shells we discu
 
 * Begin by cloning your repo to your computer
 	* make sure you copy the "ssh" link from your repo (green button, upper right).
+   
 	```bash
+ 	# make sure that your pwd is where you think it is so that you can find this location in the future
 	git clone InsertSshLinkHere
 	```
+ 
 	* recall that on the first day of class we set up an ssh security key between your computer and GitHub. If you didn't do that, you can find the instructions [here](../resources/howto_sshkeys.md) to make an ssh key and then put the public ssh key in your github settings so that you can seamlessly push changes to your homework repo
  
-* I recommend testing functions and troubleshooting as necessary after each change you make to the script
+* As you work on the assignment, I recommend testing functions and troubleshooting as necessary after each change you make to the script
 
 * You may work in groups but each student must submit their own work.
 
+---
 
 ### Tracking & Recording Progress with `git` and `GitHub`
 
