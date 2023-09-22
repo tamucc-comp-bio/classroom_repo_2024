@@ -494,5 +494,5 @@ rm -rf admesh2tsv
 
 
 ## HOMEWORK
-[Assignment 3  Due 9/23](../assignments/assignment_3.md)
+[Assignment 3](../assignments/assignment_3.md)
 
