@@ -1,4 +1,4 @@
-# [Assignment 3](https://classroom.github.com/a/q5PkCvK7)
+# Assignment 3
 
 ## Computer Preparation
 
