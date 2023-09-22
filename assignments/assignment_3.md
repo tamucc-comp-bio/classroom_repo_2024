@@ -81,7 +81,8 @@ You will be working in bash to manipulate the 3d scans of limpet shells we discu
 	```bash
 	git clone InsertSshLinkHere
 	```
-	* recall that in [lecture 0](../lectures/lecture00.md) we set up an ssh security key between your computer 
+	* recall that on the first day of class we set up an ssh security key between your computer and GitHub. If you didn't do that, you can find the instructions [here](../resources/howto_sshkeys.md) to make an ssh key and then put the public ssh key in your github settings so that you can seamlessly push changes to your homework repo
+ 
 * I recommend testing functions and troubleshooting as necessary after each change you make to the script
 
 * You may work in groups but each student must submit their own work.
