@@ -62,7 +62,7 @@ The repository is named CSB, and it contains all of the example files and direct
 </p>
 </details>
 
-
+---
 
 ## GitHub Preparation
 
@@ -87,9 +87,11 @@ You will be working in bash to manipulate the 3d scans of limpet shells we discu
 * You may work in groups but each student must submit their own work.
 
 
-### To `push` your changes to your repository on GitHub, and thus submit the assigment, do the following
+### Tracking & Recording Progress with `git` and `GitHub`
 
-* change directories to the repo for this assignment
+As you make progress on the assignment, you will be creating and modifying files in your repo.  To have these changes be tracked, you can use git and github.  Every time you accomplish a task, you should log the changes with git and push the changes to github.  This will save and track your progress, allowing you to go back to one of these "save points" should something go very wrong as you progress further into the assignment.  (This will be on the exam, so start practicing this now).
+
+* in your terminal, change directories to the repo for this assignment
 * type the following:
 
 ```
@@ -101,3 +103,75 @@ git push
 Note that 
 * you can change the `commit` message to whatever you want (the part in quotations, but keep it brief)
 * you will have to provide your github username and password for the `push` to `origin master` if you did not set up the ssh key in lecture_0
+
+<details><summary>Detailed Info on Git and GitHub</summary>
+<p>
+
+#### What is Git?
+
+Git is a distributed version control system that helps you keep track of changes made to your code, collaborate with others, and is widely used in both academia and the industry.
+
+#### Why Use Git?
+
+1. *Versioning:* Keep track of changes and revert to older versions of code when necessary.
+2. *Collaboration:* Work with teammates on the same projects without overlapping each other's changes.
+3. *Reproducibility:* Document versions of code that produce specific results.
+
+#### Core Commands: git add, git commit, git push
+
+1. `git add`: Stage your changes for commit
+  * What it does: Tells Git that you want to include the changes made in specific files for the next commit.
+  * Why: You may not want to commit all the changes you've made at once. git add allows you to select the changes to include.
+  * Example:
+
+```bash
+# only stage changes for a single file
+# note, your present working dir must be inside of a repo for this to work
+git add myfile.txt
+```
+
+```bash
+# or stage all changes in the current directory
+git add .
+```
+
+```bash
+# or stage all changes in the whole repo
+git add --all
+```
+
+2. `git commit`: Save your changes to the local repository
+
+  * What it does: Takes the files as they are in the staging area (git add) and stores that snapshot as a unique version in your local repository.
+  * Why: It provides a record of changes and an associated message describing those changes, making it easier to understand the development history.
+  * Example:
+
+```bash
+# take a snapshot of all added (staged) changes to the repo
+git commit -m "Implement feature X"
+```
+
+    "
+
+3. `git push`: Update the remote repository on GitHub
+
+  * What it does: Sends the committed changes in your local repository to a remote repository like GitHub.
+  * Why: Makes your changes accessible to team members or collaborators. Also, it serves as a backup of your local repository.
+  * Example:
+
+```bash
+# take a snapshot of all added (staged) changes to the repo
+git push
+```
+
+#### A Typical Workflow:
+
+1. Modify your code.
+2. Stage the changes: `git add --all`
+3. Commit the changes: `git commit -m "Description of changes"`
+4. Push the changes to the remote repository: `git push`
+
+By doing this, you're keeping your code versioned, making it easier to collaborate with others, and allowing you or anyone else to understand how the codebase evolved over time.
+
+</p>
+</details>
