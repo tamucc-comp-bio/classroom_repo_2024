@@ -98,7 +98,7 @@ Project examples: automatically process data from experimental apparatus; image 
 
   * [Exam_1,  Due 10/06](https://classroom.github.com/a/OyEVhNNT)
 
-  * [Grad Student Course Project: GitHub Repo w/ ReadMe, Due 10/06](https://classroom.github.com/a/6-NgG7z6)
+  * [Grad Student Course Project: GitHub Repo w/ ReadMe, Due 10/06](https://classroom.github.com/a/e0WJb1aZ)
 
 <!-- This is a hidden comment. It will not be visible in the rendered markdown. 
 
