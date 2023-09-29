@@ -75,11 +75,21 @@ ___
 
 ### I. [Quiz!](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUNU1IUUg4Nzc1SU9KQVNRTVc0TU0xMFI1Sy4u)
 
+---
+
 ### II. [Assignment 3](../assignments/assignment_3.md) Triage
 
 We will review your burning questions about the assignment.
 
-### III. Version Control
+---
+
+### III. ChatGPT
+
+Let's use ChatGPT to solve `assignment-02-xc`.  See my [session log with ChatGPT](https://chat.openai.com/share/b6a5adb2-bd6b-4fd6-ab49-d585b2d0bb12)
+
+---
+
+### IV. Version Control
 
 <details><summary>What is version control?</summary>
 
