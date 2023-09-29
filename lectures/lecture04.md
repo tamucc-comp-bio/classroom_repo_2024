@@ -590,7 +590,7 @@ This is an example `.gitignore` that includes files created when working with R 
 </details>
 
 
-## [EXAM 1  Due 9/30](https://classroom.github.com/a/OyEVhNNT)  
+## EXAM 1  
 
 ### Initializing Exam
 
