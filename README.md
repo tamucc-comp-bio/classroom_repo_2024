@@ -96,9 +96,9 @@ Project examples: automatically process data from experimental apparatus; image 
 
 * [09/29  Week04 Version Control w/ Git](lectures/lecture04.md)
 
-  * [Exam_1,  Due 10/06](https://classroom.github.com/a/OyEVhNNT)
+  * [Exam_1,  Due 10/06](https://classroom.github.com/a/yjxB1o0W)
 
-  * [Grad Student Course Project: GitHub Repo w/ ReadMe, Due 10/06](https://classroom.github.com/a/e0WJb1aZ)
+  * [Grad Student Course Project: GitHub Repo w/ ReadMe, Due 10/06](https://classroom.github.com/a/Kh_l1f3Y)
 
 <!-- This is a hidden comment. It will not be visible in the rendered markdown. 
 
