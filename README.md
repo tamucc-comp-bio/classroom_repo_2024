@@ -64,7 +64,6 @@ Project examples: automatically process data from experimental apparatus; image 
 <p>
 
 <!-- This is a hidden comment. It will not be visible in the rendered markdown. 
-
 ### SECTION 1.  WELCOME TO THE MATRIX
 -->
 
@@ -120,11 +119,14 @@ Project examples: automatically process data from experimental apparatus; image 
 
 ---
 
+<!-- This is a hidden comment. It will not be visible in the rendered markdown. 
 
 <details><summary>SECTION 2. DATA WRANGLING AND VISUALIZATION WITH R</summary>
 <p>
 
+-->
 
+### SECTION 2. DATA WRANGLING AND VISUALIZATION WITH R
 
 * [09/30  Week05 Base R Bootcamp I](lectures/lecture05new.md)
 
