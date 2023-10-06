@@ -142,7 +142,7 @@ Project examples: automatically process data from experimental apparatus; image 
 
 * [10/13  Week06 Base R Bootcamp II](lectures/lecture06new.md)
 
-  * [Assignment 06, Due 10/14](https://classroom.github.com/a/O8hMJ5r0)
+  * [Assignment 06, Due 10/20](https://classroom.github.com/a/O8hMJ5r0)
 
  <!--
 
