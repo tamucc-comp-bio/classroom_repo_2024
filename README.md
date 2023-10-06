@@ -99,12 +99,10 @@ Project examples: automatically process data from experimental apparatus; image 
 
   * [Grad Student Course Project: GitHub Repo w/ ReadMe, Due 10/06](https://classroom.github.com/a/Kh_l1f3Y)
 
-<!-- This is a hidden comment. It will not be visible in the rendered markdown. 
 
 </p>
 </details>
 
--->
 
 
  <!--  
