@@ -128,13 +128,19 @@ Project examples: automatically process data from experimental apparatus; image 
 
 ### SECTION 2. DATA WRANGLING AND VISUALIZATION WITH R
 
-* [09/30  Week05 Base R Bootcamp I](lectures/lecture05new.md)
+* [10/06  Week05 Base R Bootcamp I](lectures/lecture05new.md)
 
-  * Assignment 5 (Mind Expanders 8.3-8.5) Due 10/07
-  	* See Lecture Markdown Doc for links
+  * Assignment 5 (Mind Expanders 8.3-8.5) Due 10/13
+
+  	* ### [Mind Expander 8.3](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUQTRGOTA5UDRZMzlPSjEwTUxCVzBIOEdKRi4u)
+  
+  	* [Mind Expander 8.4](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMlRGTE9aQVQ3QUtBQlBOUEtHN1g3QUVDOS4u)
+
+	* [Mind Expander 8.5](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMlIwMFNWME1IUVJCWktXWkZYSk1RV0pONC4u)
 
 
-* [10/07  Week06 Base R Bootcamp II](lectures/lecture06new.md)
+
+* [10/13  Week06 Base R Bootcamp II](lectures/lecture06new.md)
 
   * [Assignment 06, Due 10/14](https://classroom.github.com/a/O8hMJ5r0)
 
