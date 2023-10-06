@@ -127,7 +127,7 @@ Project examples: automatically process data from experimental apparatus; image 
 <details><summary>SECTION 2. DATA WRANGLING AND VISUALIZATION WITH R</summary>
 <p>
 
- <!--
+
 
 * [09/30  Week05 Base R Bootcamp I](lectures/lecture05new.md)
 
@@ -139,7 +139,7 @@ Project examples: automatically process data from experimental apparatus; image 
 
   * [Assignment 06, Due 10/14](https://classroom.github.com/a/O8hMJ5r0)
 
-
+ <!--
 
 * [10/14  Week07 Data Visualization w/ Tidyverse](lectures/lecture07new.md)
 
