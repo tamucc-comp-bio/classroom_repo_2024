@@ -60,14 +60,13 @@ Project examples: automatically process data from experimental apparatus; image 
 
 ---
 
-<!-- This is a hidden comment. It will not be visible in the rendered markdown. 
-
 <details><summary>SECTION 1.  WELCOME TO THE MATRIX</summary>
 <p>
 
--->
+<!-- This is a hidden comment. It will not be visible in the rendered markdown. 
 
 ### SECTION 1.  WELCOME TO THE MATRIX
+-->
 
 * [09/01  Week00  Introduction & Data](lectures/lecture00.md)
   * [Assignment_0  Due, 09/08](assignments/assignment_0.md)
