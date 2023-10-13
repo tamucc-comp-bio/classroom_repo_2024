@@ -1069,7 +1069,7 @@ install.packages("styler")
 
 Once installed, there will be style options under the "Addins" pull down menu.
 
-![](styler_addins.png)
+![](Week06_files/styler_addins.png)
 
 ---
 </p>
