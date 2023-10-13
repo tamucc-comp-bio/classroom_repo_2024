@@ -321,7 +321,7 @@ If you have a windows computer, you will need to separately install `R` in the w
 
 [Install R](../resources/install_r.md)
 
-[Install RStudio]()
+[Install RStudio](../resources/install_rstudio.md)
 
 ---
 
