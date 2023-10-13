@@ -13,8 +13,67 @@ _Note: you will not be installing R Studio on Ubuntu. If you have a Windows comp
 </p>
 </details>
 
-<details><summary>Install `R Studio`</summary>
-Regardless of your operating system, if you have not already installed R studio, you need to do that now.  On windows computers, install R studio in Windows.  
+<details><summary>Install `R Studio` on Ubuntu</summary>
+Regardless of your operating system, if you have not already installed R studio, you need to do that now.  
+  
+For those with windows computers, you can install R studio in Windows and/or Ubuntu.  If you are "afraid" to change your R and R studio, then install R Studio in Ubuntu.  If you followed the [instructions on setting up Ubuntu](install_wsl_ubuntu.md), it should work.
+
+*If you installed R Studio a while ago, you should do it again to upate to the latest version.*
+
+1. Update Ubuntu Apps
+   
+Before you can install RStudio, you need to have R installed on your machine. If you don't have R installed yet, you can install it by opening a terminal and typing the following commands:
+
+```bash
+sudo apt update
+sudo apt upgrade
+```
+
+2. Download R Studio
+
+Next, download the RStudio `.deb` package from the [RStudio website](https://posit.co/download/rstudio-desktop/). You can do this with the wget command along with the URL of the RStudio .deb package. Make sure to replace the URL with the latest version available from the RStudio website.
+
+```bash
+cd ~/Downloads
+wget https://download1.rstudio.org/electron/jammy/amd64/rstudio-2023.09.0-463-amd64.deb
+```
+
+3. Install R Studio
+
+Once the download is complete, you can install RStudio with the dpkg command.
+
+```bash
+sudo dpkg -i rstudio-2023.09.0-463-amd64.deb
+```
+
+4. Resolve Dependencies (if any):
+
+If dpkg reports any missing dependencies, you can install them with the apt command.
+
+```bash
+sudo apt-get install -f
+```
+
+
+5. Launch RStudio:
+Now that RStudio is installed, you can launch it from the terminal by typing:
+
+```bash
+rstudio
+```
+
+Make sure you install "RStudio Desktop Open Source Edition".  
+
+---
+</p>
+</details>
+
+<details><summary>Install `R Studio` on Windows or Mac</summary>
+Regardless of your operating system, if you have not already installed R studio, you need to do that now.  
+  
+For those with windows computers, you can install R studio in Windows and/or Ubuntu.  If you are "afraid" to change your R and R studio, then install R Studio in Ubuntu.  If you followed the instructions on setting up Ubuntu, it should work.
+
+
 
 *If you installed R Studio a while ago, you should do it again to upate to the latest version.*
 
