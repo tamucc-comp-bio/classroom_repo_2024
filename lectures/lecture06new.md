@@ -164,24 +164,6 @@ if (b == 5) {
 </p>
 </details>
 
-<details><summary>Auto formatting in R Studio</summary>
-<p>
-
-In RStudio, a lot of formatting is done automatically for you, making it very convenient for developing R code.
-
-Further, the `Code` drop down menu contains functions specific to code formatting
-
-* Code / Reformat Code
-
-* Code  / Reindent Lines 
-
-![](Week06_files/rstudio_codeformatting.png)
-
-
----
-</p>
-</details>
-
 <details><summary>R `for` and `while` Loops</summary>
 <p>
 
@@ -1063,6 +1045,33 @@ After you run the code, you enter debugging mode at the line of `browser()` comm
 
 ---
 
+</p>
+</details>
+
+<details><summary>Auto formatting in R Studio</summary>
+<p>
+
+In RStudio, a lot of formatting is done automatically for you, making it very convenient for developing R code.
+
+Further, the `Code` drop down menu contains functions specific to code formatting
+
+* Code / Reformat Code
+
+* Code  / Reindent Lines 
+
+![](Week06_files/rstudio_codeformatting.png)
+
+You can also use the package [`styler`](https://github.com/r-lib/styler) to do a bit more automatic styling than just the Reformat and Reindent functions in R Studio.
+
+```r
+install.packages("styler")
+```
+
+Once installed, there will be style options under the "Addins" pull down menu.
+
+![](styler_addins.png)
+
+---
 </p>
 </details>
 
