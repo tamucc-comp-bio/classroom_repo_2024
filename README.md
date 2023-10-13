@@ -142,15 +142,14 @@ Project examples: automatically process data from experimental apparatus; image 
 
 * [10/13  Week06 Base R Bootcamp II](lectures/lecture06new.md)
 
-  * [Assignment 06, Due 10/20](https://classroom.github.com/a/O8hMJ5r0)
+  * [Assignment 06, Due 10/20](https://classroom.github.com/a/uWuu7yFy)
+
+
+* [10/20  Week07 Data Visualization w/ Tidyverse](lectures/lecture07new.md)
+
+  * [Assignment 27, Due 10/21](assignments/assignment_7new.md)
 
  <!--
-
-* [10/14  Week07 Data Visualization w/ Tidyverse](lectures/lecture07new.md)
-
-  * [Assignment 07, Due 10/21](assignments/assignment_7new.md)
-
-
  
 * [10/21  Week08 Data Wrangling w/ Tidyverse](lectures/lecture08new.md)
 	* [Lecture Recording](https://tamucc.zoom.us/rec/share/G5d-J22AzCa52E81H1bWFl9zusgC1yfkqo2SYVnSFgLJZ_1LFkbqQl6CZQYnM8zr.wEiZJztueINuGCSh), Passcode: fe$D$$!2
