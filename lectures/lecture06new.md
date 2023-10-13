@@ -1143,7 +1143,7 @@ summary(petalL_ANOVA)
 </p>
 </details>
 
-### Mind Expander 8.7 (skipped)
+
 
 ---
 
