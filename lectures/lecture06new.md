@@ -1274,7 +1274,7 @@ print(c(input_file, num_reps, start_point))
 
 ## V. Homework
 
-[Complete exercise 8.23.3 in the text ](https://classroom.github.com/a/O8hMJ5r0)
+[Complete exercise 8.23.3 in the text ](https://classroom.github.com/a/uWuu7yFy)
 
 Install tidyverse in RStudio
 
