@@ -2,7 +2,7 @@
 
 ![](https://d33wubrfki0l68.cloudfront.net/795c039ba2520455d833b4034befc8cf360a70ba/558a5/diagrams/data-science-explore.png)
 
-###  Assignment 6 is due by beginning of class (complete Mind Expanders 8.2-8.5)
+###  Assignment 6 is due by beginning of class 
 
 ### [Lecture Stream]()
 
