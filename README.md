@@ -149,20 +149,18 @@ Project examples: automatically process data from experimental apparatus; image 
 
   * [Assignment 7, Due 10/27](assignments/assignment_7new.md)
 
-
  
 * [10/27  Week08 Data Wrangling w/ Tidyverse](lectures/lecture08new.md)
-	* [Lecture Recording](https://tamucc.zoom.us/rec/share/G5d-J22AzCa52E81H1bWFl9zusgC1yfkqo2SYVnSFgLJZ_1LFkbqQl6CZQYnM8zr.wEiZJztueINuGCSh), Passcode: fe$D$$!2
+	* [Lecture Recording For Those Who Were at MSGSO Conference](), 
 
- 
+ <!--
  
 * [10/28 Week09 Data Wrangling Exercises: 1](https://classroom.github.com/a/TiIvuIKy)
  
   * Dr. Bird is at conference, SO PLEASE WORK ON THE EXERCISES ABOVE DURING THE CLASS PERIOD
   * PUSH WHAT YOU COMPLETED AT 4:30, you will be graded on what you complete during the class period.  
   * Then complete the exercises for homework and keep pushing your progress.
-  * 
-<!--
+    
 
 * 11/11 Week 11 Data Wrangling 2  
 
