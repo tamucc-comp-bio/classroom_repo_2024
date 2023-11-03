@@ -166,6 +166,7 @@ wget --directory-prefix=../data https://github.com/tamucc-comp-bio/classroom_rep
 
 ```
 
+Note that we just copied three files to `../data`, aka `CSB/data_wrangling/data`.
   
   * open `zipCovidSummary_lecture.R` in R Studio, and execute the lines as we go in the ppt.
 
