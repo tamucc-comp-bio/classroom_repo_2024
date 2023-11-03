@@ -274,7 +274,7 @@ ls()
 rm(list = ls())
 ```
 
-`alt-o` will collapse all sections, try it!
+`alt-o` will collapse all sections on PC, `Command-Option-o` on a MAC, try it!
 
 
 ---
