@@ -178,6 +178,8 @@ wget --directory-prefix=../data https://github.com/tamucc-comp-bio/classroom_rep
 <details><summary>Getting Today's RScript & Data Set: GUI Method</summary>
 <p>
 
+_Warning: this is much harder than following the command line instructions. Proceed at your own risk_
+
 Today, we are going to process COVID-19 data from the Coastal Bend of Texas. You will need to grab some data and save it to your `CSB/data_wrangling/data` dir.
 
 * copy the [`zipCovidSummary_lecture.R`](Week08_files/zipCovidSummary_lecture.R) script into a new blank Rscript in RStudio
