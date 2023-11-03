@@ -152,20 +152,17 @@ library(tidyverse)
 
 Today, we are going to process COVID-19 data from the Coastal Bend of Texas. You will need to grab some data and save it to your `CSB/data_wrangling/data` dir.
 
-Open your terminal and move to `CSB/data_wrangling/sandbox` then download the Rscript. For those using windows, make sure you are in your windows dir
+Open your terminal and move to `CSB/data_wrangling/sandbox` then download the Rscript. 
 
 ```bash
-#win path (mac users, use the same CSB dir path you have been, probably ~/CSB/data_wrangling/sandbox)
-cd /mnt/c/Users/YourUserName/Downloads/CSB/data_wrangling/sandbox
-
-wget https://raw.githubusercontent.com/tamucc-comp-bio-2022/classroom_repo/master/lectures/Week08_files/zipCovidSummary_lecture.R
+wget https://raw.githubusercontent.com/tamucc-comp-bio/classroom_repo_2023/master/lectures/Week08_files/zipCovidSummary_lecture.R
 ```
 
 Now download the data files as follows:
 
 ```bash
 # do not change directories, this assumes you are in CSB/data_wrangling/sandbox
-wget --directory-prefix=../data https://github.com/tamucc-comp-bio-2022/classroom_repo/raw/master/lectures/Week08_files/zip_count_2020-08-18_2020-10-11.xlsx https://github.com/tamucc-comp-bio-2022/classroom_repo/raw/master/lectures/Week08_files/zip_2010census-pop.xlsx https://github.com/tamucc-comp-bio-2022/classroom_repo/raw/master/lectures/Week08_files/age_count_2020-07-13_2020-10-11.xlsx
+wget --directory-prefix=../data https://github.com/tamucc-comp-bio/classroom_repo_2023/raw/master/lectures/Week08_files/zip_count_2020-08-18_2020-10-11.xlsx https://github.com/tamucc-comp-bio/classroom_repo_2023/raw/master/lectures/Week08_files/zip_2010census-pop.xlsx https://github.com/tamucc-comp-bio/classroom_repo_2023/raw/master/lectures/Week08_files/age_count_2020-07-13_2020-10-11.xlsx
 
 ```
 
