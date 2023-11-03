@@ -147,11 +147,14 @@ Project examples: automatically process data from experimental apparatus; image 
 
 * [10/20  Week07 Data Visualization w/ Tidyverse](lectures/lecture07new.md)
 
-  * [Assignment 7, Due 10/27](https://classroom.github.com/a/GEsXzO_3)
+  * [Assignment 7, Due 11/03](https://classroom.github.com/a/GEsXzO_3)
 
  
-* [10/27  Week08 Data Wrangling w/ Tidyverse](lectures/lecture08new.md)
-	
+* [11/03  Week08 Data Wrangling w/ Tidyverse](lectures/lecture08new.md)
+
+  * [Exam 2 Part 1, Due 11/10](https://forms.office.com/r/yEyDY7DRts)
+
+  * [Exam 2 Part 2, Due 11/10](https://classroom.github.com/a/-4z8vT5d)
 
  <!--
  
@@ -190,15 +193,15 @@ Project examples: automatically process data from experimental apparatus; image 
 <details><summary>SECTION 3. PROGRAMMING WITH PYTHON</summary>
 <p>
 
- <!--
-
-* [10/30  Week10 Basic Python Programming I](lectures/lecture10.md)
+* [11/10  Week10 Basic Python Programming I](lectures/lecture10.md)
   * [Assignment_10, Due 11/06](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMzdVVkQwTlRQMENSVTQ5S0dUT0c1NFgwRi4u)
 
-* [11/06  Week11 Basic Python Programming II](lectures/lecture11.md)
+ <!--
+ 
+* [11/17  Week11 Basic Python Programming II](lectures/lecture11.md)
   * [Assignment 11, Due 11/13](https://classroom.github.com/a/UBC9jm2D)
 
-* [11/13  Week12 Writing Good Code](lectures/lecture12.md)
+* [12/01  Week12 Writing Good Code](lectures/lecture12.md)
   * [Assignment 12, Due 11/20](https://classroom.github.com/a/CkLJC57S)
 
 * [11/20  Week13 Scientific Computing](lectures/lecture13.md)
