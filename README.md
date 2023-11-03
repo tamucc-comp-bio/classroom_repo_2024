@@ -147,8 +147,6 @@ Project examples: automatically process data from experimental apparatus; image 
 
 * [10/20  Week07 Data Visualization w/ Tidyverse](lectures/lecture07new.md)
 
-  * [Lecture Recording For Those Who Were at MSGSO Conference](), 
-
   * [Assignment 7, Due 10/27](https://classroom.github.com/a/GEsXzO_3)
 
  
