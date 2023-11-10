@@ -74,6 +74,8 @@ In summary, for students, especially those in fields like data science, biology,
 Goto your terminal and download the most appropriate installer from the [anaconda downloads page](https://www.anaconda.com/download#downloads). Use the command line installer.  
 
 ```bash
+cd Downloads
+
 # ubuntu command line installer
 wget https://repo.anaconda.com/archive/Anaconda3-2023.09-0-Linux-x86_64.sh
 
@@ -87,6 +89,8 @@ https://repo.anaconda.com/archive/Anaconda3-2023.09-0-MacOSX-arm64.sh
 Visit the [Anaconda Installation Page](https://docs.anaconda.com/free/anaconda/install/index.html)
 
 Select the correct instructions for your computer.  For those with windows, use the Ubuntu terminal and follow the Linux instructions.
+
+Install 
 
 </p>
 </details>
@@ -301,6 +305,8 @@ ___
 
 
 ### How to Get Help
+
+* [ChatGPT](https://chat.openai.com)
 
 * [docs.python.org](https://docs.python.org/3/)
   
