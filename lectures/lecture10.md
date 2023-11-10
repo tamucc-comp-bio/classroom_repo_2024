@@ -53,7 +53,7 @@ ___
 
 ___
 
-## Computer Preparation
+## Install Anaconda
 
 <details><summary>Win10 Anaconda Setup (NEW!!)</summary>
 <p>
