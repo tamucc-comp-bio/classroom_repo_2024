@@ -71,6 +71,19 @@ In summary, for students, especially those in fields like data science, biology,
 <details><summary>Universal Anaconda Setup </summary>
 <p>
 
+Goto your terminal and download the most appropriate installer from the [anaconda downloads page](https://www.anaconda.com/download#downloads). Use the command line installer.  
+
+```bash
+# ubuntu command line installer
+wget https://repo.anaconda.com/archive/Anaconda3-2023.09-0-Linux-x86_64.sh
+
+# mac with intel cpu command line installer
+wget https://repo.anaconda.com/archive/Anaconda3-2023.09-0-MacOSX-x86_64.sh
+
+# mac with apple cpu (M1, M2, ..., etc) command line installer
+https://repo.anaconda.com/archive/Anaconda3-2023.09-0-MacOSX-arm64.sh
+```
+
 Visit the [Anaconda Installation Page](https://docs.anaconda.com/free/anaconda/install/index.html)
 
 Select the correct instructions for your computer.  For those with windows, use the Ubuntu terminal and follow the Linux instructions.
