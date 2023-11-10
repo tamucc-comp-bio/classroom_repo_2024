@@ -55,10 +55,21 @@ ___
 
 ## Install Anaconda
 
-<details><summary>Win10 Anaconda Setup (NEW!!)</summary>
+[Anaconda](https://www.anaconda.com/products/individual) is a free distribution of Python and R that includes preinstalled packages.  When you run `conda`, it is almost invisible but you will use its installations of Python and R rather than those that are already on your system.  While this may seem a bit confusing at first, the point of Anaconda is to make using Python easier.  It does this by allow you to maintain several "environments", with each environment being dedicated to a particular task with the dependencies that are unique to that task.  If you only maintain one environment in which you install all packages, they and their dependencies will start to conflict with each other. 
+
+<details><summary>Universal Anaconda Setup </summary>
 <p>
 
-[Anaconda](https://www.anaconda.com/products/individual) is a free distribution of Python and R that includes preinstalled packages.  When you run `conda`, it is almost invisible but you will use its installations of Python and R rather than those that are already on your system.  While this may seem a bit confusing at first, the point of Anaconda is to make using Python easier.  It does this by allow you to maintain several "environments", with each environment being dedicated to a particular task with the dependencies that are unique to that task.  If you only maintain one environment in which you install all packages, they and their dependencies will start to conflict with each other.  
+Visit the [Anaconda Installation Page](https://docs.anaconda.com/free/anaconda/install/index.html)
+
+Select the correct instructions for your computer.  For those with windows, use the Ubuntu terminal and follow the Linux instructions.
+
+</p>
+</details>
+
+<details><summary>Old Win/Ubuntu Anaconda Setup </summary>
+<p>
+ 
 
   * In Win10-Ubuntu terminal, `Anaconda` installation is a bit more challenging than just simply following `Anaconda` [download instructions](http://computingskillsforbiologists.com/setup/basic-programming/).  Here is how to make it work:
 
