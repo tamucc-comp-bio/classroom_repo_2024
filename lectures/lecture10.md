@@ -33,25 +33,8 @@ ___
 </p>
 </details>
 
-<details><summary>MacOS Anaconda Setup (New!!)</summary>
-<p>
-
-[Anaconda](https://www.anaconda.com/products/individual) is a free distribution of Python and R that includes preinstalled packages.  When you run `conda`, it is almost invisible but you will use its installations of Python and R rather than those that are already on your system.  While this may seem a bit confusing at first, the point of Anaconda is to make using Python easier.
-
-  *`Anaconda` should be installed following [instructions here](http://computingskillsforbiologists.com/setup/basic-programming/)
-  
-  * open terminal and type `python3`
-  
-  * To launch jupyter notebook (DONT USE JUPYTER NOTEBOOK FOR LECTURE)
-  
-
-</p>
-</details>
-
-
-
-
 ___
+
 
 ## Install Anaconda
 
@@ -154,9 +137,23 @@ conda install jupyter
 </p>
 </details>
 
+<details><summary>Old MacOS Anaconda Setup</summary>
+<p>
+
+[Anaconda](https://www.anaconda.com/products/individual) is a free distribution of Python and R that includes preinstalled packages.  When you run `conda`, it is almost invisible but you will use its installations of Python and R rather than those that are already on your system.  While this may seem a bit confusing at first, the point of Anaconda is to make using Python easier.
+
+  *`Anaconda` should be installed following [instructions here](http://computingskillsforbiologists.com/setup/basic-programming/)
+  
+  * open terminal and type `python3`
+  
+  * To launch jupyter notebook (DONT USE JUPYTER NOTEBOOK FOR LECTURE)
+  
+
+</p>
+</details>
 
 
-<details><summary>Updating Anaconda Installation on MacOS/Ubuntu</summary>
+<details><summary>Old Updating Anaconda Installation on MacOS/Ubuntu</summary>
 <p>
 
 Confirm that conda is running by checking for `(base)` before command prompt
