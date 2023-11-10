@@ -975,7 +975,3 @@ ___
 ---
 
 
-## HOMEWORK
-Assignment 10  Due 11/06  
-### [Mind Expander 3.2](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMzdVVkQwTlRQMENSVTQ5S0dUT0c1NFgwRi4u)
-
