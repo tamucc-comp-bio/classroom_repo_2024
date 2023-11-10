@@ -16,6 +16,45 @@ ___
 </p>
 </details>
 
+
+<details><summary>MacOS Terminal Setup (should already be done)</summary>
+<p>
+ 
+  * Open a terminal window
+  
+  * Consider installing [homebrew](https://brew.sh/).  You will be able to use homebrew to install linux software, such as `tree`, which is used in the slide show.
+  
+  * If the `CSB` directory does not exist in your home directory (check with `ls`), then run the following code to clone the `CSB` repository into your home directory:
+  
+    ```bash
+    git clone https://github.com/CSB-book/CSB.git
+    ```
+
+</p>
+</details>
+
+<details><summary>MacOS Anaconda Setup (New!!)</summary>
+<p>
+
+[Anaconda](https://www.anaconda.com/products/individual) is a free distribution of Python and R that includes preinstalled packages.  When you run `conda`, it is almost invisible but you will use its installations of Python and R rather than those that are already on your system.  While this may seem a bit confusing at first, the point of Anaconda is to make using Python easier.
+
+  *`Anaconda` should be installed following [instructions here](http://computingskillsforbiologists.com/setup/basic-programming/)
+  
+  * open terminal and type `python3`
+  
+  * To launch jupyter notebook (DONT USE JUPYTER NOTEBOOK FOR LECTURE)
+  
+
+</p>
+</details>
+
+
+
+
+___
+
+## Computer Preparation
+
 <details><summary>Win10 Anaconda Setup (NEW!!)</summary>
 <p>
 
@@ -101,37 +140,6 @@ conda install jupyter
 	
     * In either, click `new` button in upper right corner, then `python3`
   
-</p>
-</details>
-
-<details><summary>MacOS Terminal Setup (should already be done)</summary>
-<p>
- 
-  * Open a terminal window
-  
-  * Consider installing [homebrew](https://brew.sh/).  You will be able to use homebrew to install linux software, such as `tree`, which is used in the slide show.
-  
-  * If the `CSB` directory does not exist in your home directory (check with `ls`), then run the following code to clone the `CSB` repository into your home directory:
-  
-    ```bash
-    git clone https://github.com/CSB-book/CSB.git
-    ```
-
-</p>
-</details>
-
-<details><summary>MacOS Anaconda Setup (New!!)</summary>
-<p>
-
-[Anaconda](https://www.anaconda.com/products/individual) is a free distribution of Python and R that includes preinstalled packages.  When you run `conda`, it is almost invisible but you will use its installations of Python and R rather than those that are already on your system.  While this may seem a bit confusing at first, the point of Anaconda is to make using Python easier.
-
-  *`Anaconda` should be installed following [instructions here](http://computingskillsforbiologists.com/setup/basic-programming/)
-  
-  * open terminal and type `python3`
-  
-  * To launch jupyter notebook (DONT USE JUPYTER NOTEBOOK FOR LECTURE)
-  
-
 </p>
 </details>
 
