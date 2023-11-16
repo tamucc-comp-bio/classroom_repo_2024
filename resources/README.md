@@ -42,6 +42,12 @@ This directory contains resources that will help you with your assignments .
 
 ---
 
+## Style Guides
+
+* [R Tidyverse Script Style Guidelines - Beginner Version](r_tidyverse_script_formatting_rules.md)
+
+---
+
 ## Repositories Used in Class
 
 * [CSB](https://github.com/tamucc-comp-bio/CSB)
