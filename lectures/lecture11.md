@@ -781,14 +781,11 @@ Last thing is how to run a python script from the bash terminal.
 python3 script.py
 ```
 
-You should add a shebang! to your file. 
+You should add a shebang! to your scripts. 
 
 ```bash
 #!/usr/bin/env python3
 ```
-
-Thus, the shebang! is `/home/cbird/anaconda3/bin/python`
-
 
 ---
 
