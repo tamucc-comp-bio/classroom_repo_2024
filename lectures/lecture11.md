@@ -195,9 +195,33 @@ And also see [Keeping Anaconda Up To Date](https://www.anaconda.com/blog/keeping
 ___
 
 
-## I. Lecture Slides
+## I. Review of Python Data Structures (ch 3.4)
 
-No lecture slides this week
+Python provides built-in data structures that are special types of objects that store data that is organized in a particular manner. It is important to learn to choose the right data structure for a particular task.
+
+* Dictionaries contain key:value pairs
+
+	```python
+ 	>>> GenomeSize = {"Homo sapiens": 3200.0, "Escherichia coli": 4.6, "Arabidopsis thaliana": 157.0}
+	```
+
+* Lists contain ordered sequences of values, termed elements
+
+	```python
+ 	>>> my_list = [3, 2.44, "green", True]
+	```
+ 
+* Tuples are lists where the elements cannot be changed or reordered
+
+	```python
+ 	>>> my_tuple = (1, "two", 3)
+	```
+ 
+* Sets are collections of distinct objects (no duplicates) and have the special operators: union `|`, intersection `&`, and difference `^`
+
+	```python
+ 	>>> c = {3, 4, 5, 6}
+	```
 
 ## II. Review of Python Activities for HW
 
