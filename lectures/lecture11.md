@@ -781,13 +781,14 @@ Last thing is how to run a python script from the bash terminal.
 python3 script.py
 ```
 
-You should figure out where your python executable is and add a shebang! to your file. Mine is in `/usr/local/bin`.  I tested this in bash by typing `ls /usr/local/bin/py` and hitting the tab key twice.
-Thus, the shebang! is `/usr/local/bin/python3`
+You should add a shebang! to your file. 
+
+```bash
+#!/usr/bin/env python3
+```
+
+Thus, the shebang! is `/home/cbird/anaconda3/bin/python`
 
 
 ---
-
-
-## HOMEWORK
-[Assignment 11  Due 11/13  Excercise 3.8.1 & 2](https://classroom.github.com/a/UBC9jm2D)
 
