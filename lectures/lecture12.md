@@ -1,4 +1,4 @@
-# Week12 Python Boot Camp III: Writing Good Code
+# Lecture 12 Python Boot Camp III: Writing Good Code
 
 ### [Lecture Stream](https://tamucc.webex.com/tamucc/ldr.php?RCID=5684397867b740238d75cfce1015ab15)
 
