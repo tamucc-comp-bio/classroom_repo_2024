@@ -1,8 +1,8 @@
 # Week11 Python Boot Camp I: Basic Programming II
 
-### [Assignment10](../assignments/assignment_10.md) is due at the beginning of this lecture
+### Assignment 10 is due at the beginning of this lecture
 
-### [Lecture Stream](https://tamucc.webex.com/recordingservice/sites/tamucc/recording/playback/9b0da9c004b8430f9f96aeacdcce8c37)
+### [Lecture Stream]()
 
 ## Computer Preparation
 
