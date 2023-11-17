@@ -201,7 +201,7 @@ No lecture slides this week
 
 ## II. Review of Python Activities for HW
 
-Mind Expander 3.2
+[Mind Expander 3.2](https://forms.office.com/r/SF15e9UWxu)
 
 ## III. Work through the rest of the chapter, sections 3.5-3.7
 
