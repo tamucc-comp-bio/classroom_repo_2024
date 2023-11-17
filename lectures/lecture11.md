@@ -31,41 +31,6 @@
 </p>
 </details>
 
-___
-
-
-## Install Anaconda
-
-[Anaconda](https://www.anaconda.com/products/individual) is a free distribution of Python and R that includes preinstalled packages.  When you run `conda`, it is almost invisible but you will use its installations of Python and R rather than those that are already on your system.  While this may seem a bit confusing at first, the point of Anaconda is to make using Python easier.  It does this by allow you to maintain several "environments", with each environment being dedicated to a particular task with the dependencies that are unique to that task.  If you only maintain one environment in which you install all packages, they and their dependencies will start to conflict with each other. 
-
-<details><summary>Don't take it from me, hear what ChatGPT has to say</summary>
-<p>
-
-Anaconda is a popular distribution of Python (and R) that offers several advantages, particularly for students who are new to programming or working in data science and machine learning. Here's why students might want to learn to use Anaconda:
-
-1. Simplified Package Management: Anaconda simplifies the process of installing, managing, and updating Python packages. It comes with a package manager called conda, which makes it easy to install both Python packages and their dependencies with a single command. This is especially beneficial for beginners who might find the management of dependencies challenging.
-
-2. Pre-installed Packages: Anaconda comes with a large number of pre-installed packages, particularly those used in data science, machine learning, and scientific computing. This saves time and effort in setting up the environment and allows students to start working on projects more quickly.
-
-3. Environment Management: With Anaconda, students can create isolated environments for different projects. Each environment can have its own set of packages and Python versions, which is crucial when working on multiple projects with different dependencies. This feature helps in avoiding conflicts between package versions and ensures reproducibility of projects.
-
-4. Ease of Use for Data Science Tools: Anaconda is particularly popular in the data science community. It includes packages like NumPy, Pandas, SciPy, Matplotlib, and Jupyter, which are staples in data analysis and visualization. Learning to use these tools within the Anaconda environment can be beneficial for students interested in data science.
-
-5. Cross-Platform: Anaconda works across Windows, macOS, and Linux. This cross-platform support is beneficial for students as they can work in consistent environments regardless of their operating system.
-
-6. Community and Commercial Support: Anaconda has a large community and commercial support, making it a reliable choice for educational and professional purposes. The community provides numerous resources, tutorials, and forums for learners.
-
-7. Integrated Development Environment (IDE) Support: Anaconda Navigator, a graphical user interface included in Anaconda, makes it easier to launch applications and manage conda packages, environments, and channels without using command-line commands.
-
-8. Focus on Analytics and Computation: Since Anaconda is tailored for data science and machine learning, it helps students focus more on analytics and computation rather than the intricacies of package management and environment setup.
-
-In summary, for students, especially those in fields like data science, biology, engineering, and statistics, learning to use Anaconda can greatly facilitate their learning process by easing the setup and management of the tools they need for their studies and research.
-
-</p>
-</details>
-
----
-
 <details><summary>Universal Anaconda Setup </summary>
 <p>
 
