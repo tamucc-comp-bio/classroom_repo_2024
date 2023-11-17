@@ -204,7 +204,7 @@ Project examples: automatically process data from experimental apparatus; image 
 
  
 * [11/17  Week11 Basic Python Programming II](lectures/lecture11.md)
-  * [Assignment 11, Due 11/24](https://classroom.github.com/a/UBC9jm2D)
+  * [Assignment 11, Due 11/24](https://classroom.github.com/a/6MFtCq_D)
 
  <!--
  
