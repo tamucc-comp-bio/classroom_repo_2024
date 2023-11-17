@@ -203,7 +203,7 @@ Project examples: automatically process data from experimental apparatus; image 
   * [Assignment_10, Due 11/17](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMzdVVkQwTlRQMENSVTQ5S0dUT0c1NFgwRi4u)
 
 * [11/17  Week11 Basic Python Programming II](lectures/lecture11.md)
-  * [Assignment 11, Due 12/01](https://classroom.github.com/a/6MFtCq_D)
+  * [Assignment 11, Due 12/01](https://classroom.github.com/a/fZIZ08K1)
  
 * [12/01  Week12 Writing Good Code](lectures/lecture12.md)
   * [Assignment 12, Due 12/06](https://classroom.github.com/a/CkLJC57S)
