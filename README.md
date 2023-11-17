@@ -206,7 +206,7 @@ Project examples: automatically process data from experimental apparatus; image 
   * [Assignment 11, Due 12/01](https://classroom.github.com/a/fZIZ08K1)
  
 * [12/01  Week12 Writing Good Code](lectures/lecture12.md)
-  * [Assignment 12, Due 12/06](https://classroom.github.com/a/CkLJC57S)
+  * [Assignment 12, Due 12/06](https://classroom.github.com/a/OaQBFi1h)
 
  <!--
  
