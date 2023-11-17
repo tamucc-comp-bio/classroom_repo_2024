@@ -229,9 +229,6 @@ Python provides built-in data structures that are special types of objects that 
 
 ## III. Work through the rest of the chapter, sections 3.5-3.7
 
-* [Mind Expander (Intermezzo) 3.3](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMVNZOFAzOU0yUEQ0OFlaRDE5VjJCV0ZJSS4u)
-
-
 ### Common, General Functions
 
 The following is an overview of some of the many useful functions built into `python`
