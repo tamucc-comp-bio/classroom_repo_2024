@@ -771,7 +771,13 @@ ___
 
 Code is read more than it is written, and you should be thinking about the reader when writing your code (as well as your assignments for your courses and theses, and publications)
 
-Refer to ch 4.3.  here is where I disagree:
+Python has two documents that describe in excruciating detail how you should style your code in two Python Enhancement Proposals:
+
+* [Style Guide for Python Code](https://peps.python.org/pep-0008/)
+* [Docstring Conventions](https://peps.python.org/pep-0257/)
+
+
+If you refer to ch 4.3 in CSB, here is where I disagree:
 
 * You should use tabs for indenting (I know this is the opposite of the book), but it will reduce variation in size of indents
 
