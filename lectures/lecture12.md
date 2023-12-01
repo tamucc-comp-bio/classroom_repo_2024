@@ -533,8 +533,9 @@ ___
 We begin by building the population creation function (in our text editor), then test it in the python3 terminal
 
 ```python
-# import scipy
+# import scipy & numpy
 import scipy
+import numpy as np
 
 # make function to build population
 def build_population(N, p):
@@ -547,10 +548,10 @@ def build_population(N, p):
 	population = []
 	for i in range(N):
 		allele1 = "A"
-		if scipy.random.rand() > p:
+		if np.random.rand() > p:
 			allele1 = "a"
-		allele2 = "A"
-		if scipy.random.rand() > p:
+			allele2 = "A"
+		if np.random.rand() > p:
 			allele2 = "a"
 		population.append((allele1, allele2))
 	return population
