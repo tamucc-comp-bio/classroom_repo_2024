@@ -523,7 +523,7 @@ ___
 
 The third step is identifying modules that can be useful
 
-* `SciPy`
+* `SciPy` and `NumPy`
 
 ___
 
@@ -622,9 +622,9 @@ def reproduce_population(population):
 	new_generation = []
 	N = len(population)
 	for i in range(N):
-		dad = scipy.random.randint(N)
-		mom = scipy.random.randint(N)
-		chr_mom = scipy.random.randint(2)
+		dad = np.random.randint(N)
+		mom = np.random.randint(N)
+		chr_mom = np.random.randint(2)
 		offspring = (population[mom][chr_mom], population [dad][1 - chr_mom])
 		new_generation.append(offspring)
 	return(new_generation)
