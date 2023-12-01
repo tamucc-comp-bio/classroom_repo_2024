@@ -203,9 +203,11 @@ Project examples: automatically process data from experimental apparatus; image 
   * [Assignment_10, Due 11/17](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMzdVVkQwTlRQMENSVTQ5S0dUT0c1NFgwRi4u)
 
 * [11/17  Week11 Basic Python Programming II](lectures/lecture11.md)
+* [11/17  Week12 Writing Good Code](lectures/lecture12.md)
   * [Assignment 11, Due 12/01](https://classroom.github.com/a/fZIZ08K1)
  
 * [12/01  Week12 Writing Good Code](lectures/lecture12.md)
+* [12/01  Week13 Scientific Computing](lectures/lecture13.md)
   * [Assignment 12, Due 12/06](https://classroom.github.com/a/OaQBFi1h)
 
  <!--
@@ -235,7 +237,6 @@ Project examples: automatically process data from experimental apparatus; image 
 
 ---
 
-<!-- This is a hidden comment. It will not be visible in the rendered markdown. 
 
 <details><summary>FINAL EXAM: "Welcome to the Desert of the Real"</summary>
 <p>
@@ -253,15 +254,14 @@ We have spent the semester learning:
 #### Undergraduates:  
 I will issue a Final Exam in much the same way I have issued assignments, in a repo. 
 
-* [Final Exam Due 12/8 11:59 pm](https://classroom.github.com/a/4SGRNjwV)
+* [Final Exam Due 12/13 9:45 pm]()
 
 
 #### Graduate Students
-Your "final" is completing your independent project by pushing the last changes to your repo by 12/8 11:59 pm.  PhD students have a presentation also.  Most folks are available on W Dec 7 at 1:45 PM.  For those who can’t attend then, we can do Monday at 1:45 PM.  I suggest we just use one of the grad student conference rooms in Tidal Hall.  Default 2nd floor, and if that’s full, we can migrate to 1st or 3rd floor. 
-
-
+Your "final" is completing your independent project by pushing the last changes to your repo by 12/13 9:45 pm.  PhD students have a presentation also.  Most folks are available on M Dec 11 at 2 PM in TH310.   
 </p>
 </details>
+<!-- This is a hidden comment. It will not be visible in the rendered markdown. 
 
 -->
 
