@@ -211,11 +211,6 @@ Project examples: automatically process data from experimental apparatus; image 
 * [12/01  Week13 Scientific Computing](lectures/lecture13.md)
   * [Assignment 12, Due 12/06](https://classroom.github.com/a/OaQBFi1h)
 
- 
- 
-
-
-
 </p>
 </details>
 
@@ -239,6 +234,7 @@ We have spent the semester learning:
 * the basics of 3 computer languages that are critical in processing, analyzing, and visualizing biological data
   * `bash`
   * `R`
+  * `python`
 * version controling our work using git
 * distributing our work using GitHub
 
@@ -248,7 +244,6 @@ I will issue a Final Exam in much the same way I have issued assignments, in a r
 * [Final Exam Due 12/13 9:45 pm](https://forms.office.com/r/uYHNJTdBgQ)
 
 * [Final Exam Extra Credit Due 12/13 9:45 pm]()
-* [additional 20% of course grade: Final Exam Extra Credit Due 12/6 11:59 pm](https://classroom.github.com/a/HTYwxIku)
 
 
 
