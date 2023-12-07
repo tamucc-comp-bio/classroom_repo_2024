@@ -190,14 +190,15 @@ Project examples: automatically process data from experimental apparatus; image 
 
 ---
 
-<!-- This is a hidden comment. It will not be visible in the rendered markdown. 
 
 <details><summary>SECTION 3. PROGRAMMING WITH PYTHON</summary>
 <p>
 
--->
+<!-- This is a hidden comment. It will not be visible in the rendered markdown. 
 
 ### SECTION 3. PROGRAMMING WITH PYTHON
+
+-->
 
 * [11/10  Week10 Basic Python Programming I](lectures/lecture10.md)
   * [Assignment_10, Due 11/17](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMzdVVkQwTlRQMENSVTQ5S0dUT0c1NFgwRi4u)
