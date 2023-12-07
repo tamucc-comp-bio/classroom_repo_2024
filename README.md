@@ -211,24 +211,10 @@ Project examples: automatically process data from experimental apparatus; image 
 * [12/01  Week13 Scientific Computing](lectures/lecture13.md)
   * [Assignment 12, Due 12/06](https://classroom.github.com/a/OaQBFi1h)
 
- <!--
  
-* [12/01  Week13 Scientific Computing](lectures/lecture13.md)
-  * No Assignment
+ 
 
 
-  * Grad Student Course Project: Commit at least 1 additional working function to your GitHub project repo, Due 10/18
-
-
-
-
-* [10/25  Week08 Writing Good Code](https://github.com/tamucc-comp-bio/fall_2019/blob/master/lectures/lecture08.md)
-  * [Assignment 8, Due 11/01](https://github.com/tamucc-comp-bio/fall_2019/blob/master/assignments/assignment_8.md)
-
-* [11/01  Week09 Scientific Computing](https://github.com/tamucc-comp-bio/fall_2019/blob/master/lectures/lecture09.md)
-  * [Exam 2, Due 11/08](https://classroom.github.com/a/VSNTwKf2)
-
--->
 
 </p>
 </details>
@@ -238,10 +224,14 @@ Project examples: automatically process data from experimental apparatus; image 
 
 ---
 
+<!--
 
 <details><summary>FINAL EXAM: "Welcome to the Desert of the Real"</summary>
 <p>
 
+-->
+
+### FINAL EXAM: "Welcome to the Desert of the Real"
 
 We have spent the semester learning:
 * the philosophy of data science and linux
