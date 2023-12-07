@@ -256,7 +256,7 @@ I will issue a Final Exam in much the same way I have issued assignments, in a r
 
 * [Final Exam Due 12/13 9:45 pm](https://forms.office.com/r/uYHNJTdBgQ)
 
-* [Final Exam Extra Credit Due 12/13 9:45 pm](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUREhWMzNMMjFXS1RISjlNU1gySEs5VVVDWC4u)
+* [Final Exam Extra Credit Due 12/13 9:45 pm]()
 * [additional 20% of course grade: Final Exam Extra Credit Due 12/6 11:59 pm](https://classroom.github.com/a/HTYwxIku)
 
 
