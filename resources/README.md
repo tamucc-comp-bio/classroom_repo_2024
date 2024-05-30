@@ -20,6 +20,10 @@ This directory contains resources that will help you with your assignments .
 
 ---
 
+* [Data Organization](data_organization.md)
+
+---
+
 ## Text Books
 
 * Reference Book (not required): [Computing Skills for Biologists](https://computingskillsforbiologists.com/)
