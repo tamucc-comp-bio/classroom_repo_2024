@@ -20,6 +20,8 @@ This directory contains resources that will help you with your assignments .
 
 ---
 
+## Organizing Data
+
 * [Data Organization](data_organization.md)
 
 ---
