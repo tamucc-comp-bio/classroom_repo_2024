@@ -322,21 +322,21 @@ $ man git
 
 3. View the log history again after the commit
 
-    ```bash
-    $ git log
+```bash
+$ git log
 
-    commit 5b762fec87bd70db9bdd0d54620b8e4728927a36
-    Author: Chris Bird <cbird808@gmail.com>
-    Date:   Fri Sep 27 08:36:22 2019 -0500
+commit 5b762fec87bd70db9bdd0d54620b8e4728927a36
+Author: Chris Bird <cbird808@gmail.com>
+Date:   Fri Sep 27 08:36:22 2019 -0500
 
-        Changed the title as suggested by Murray
+Changed the title as suggested by Murray
 
-    commit a90fea2df1a59e635fba3c09a0cc0f1dfe78b2d9
-    Author: Chris Bird <cbird808@gmail.com>
-    Date:   Fri Sep 27 08:24:34 2019 -0500
+commit a90fea2df1a59e635fba3c09a0cc0f1dfe78b2d9
+Author: Chris Bird <cbird808@gmail.com>
+Date:   Fri Sep 27 08:24:34 2019 -0500
 
-        started the book
-    ```
+started the book
+```
 
     Notice that both commits are logged and each has the "fingerprint" id.
 
@@ -387,14 +387,14 @@ $ sed -i 's/\.$//' origin.txt
 
 you need to tell `git` when you remove or move version controlled files
 
-    ```bash
-    $ git mv origin.txt origins.txt
-    $ git rm *.txt
+```bash
+$ git mv origin.txt origins.txt
+$ git rm *.txt
 
-    # note that you can skip git add and go straight to commit after this
-    $ git commit -m "deleted text files"
-    $ git log
-    ```
+# note that you can skip git add and go straight to commit after this
+$ git commit -m "deleted text files"
+$ git log
+```
 
   ---
 </p>
