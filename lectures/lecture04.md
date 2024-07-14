@@ -197,6 +197,7 @@ $ man git
     ```bash
     # TAMUCC COMP BIO ONLY, Run this line
     $ cd ~/CSB/git/sandbox
+    
     # WORKSHOPS ONLY, Run this line
     $ cd sandbox
     
