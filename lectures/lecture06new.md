@@ -580,7 +580,7 @@ isTriangular <-
     }
     #if n is not integer, return FALSE
     return(FALSE)
-}
+  }
 ```
 
 Make sure that after you enter your function into the editor that you execute it to load it into the environment and make it available for use.
