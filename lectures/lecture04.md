@@ -195,7 +195,9 @@ $ man git
 1. Initializing a repository only needs to be done once.  Any directory (dir) can become a `git` repository (repo). `git` cannot version control if you do not make a dir a repo.  Let us make the `~/CSB/git/sandbox/originspecies` directory a `git` repository:
 
     ```bash
+    # TAMUCC COMP BIO ONLY, Run this line
     $ cd ~/CSB/git/sandbox
+    # WORKSHOPS ONLY, Run this line
     $ mkdir originspecies
     $ cd originspecies
     $ git init
