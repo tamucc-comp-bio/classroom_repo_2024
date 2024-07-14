@@ -570,15 +570,16 @@ Let us make our first R function:
 rm(list=ls())
 
 # function to check whether number is triangular
-isTriangular <- function(y){
-  #triangular numbers (T) defined by n(n+1)/2, thus
-  #y is triangular if the following is an integer
-  n <- (sqrt((8*y)+1) - 1) / 2
-  if(as.integer(n) == n){
-    return(TRUE) # function will end here in n is integer
-  }
-  #if n is not integer, return FALSE
-  return(FALSE)
+isTriangular <-
+  function(y){
+    #triangular numbers (T) defined by n(n+1)/2, thus
+    #y is triangular if the following is an integer
+    n <- (sqrt((8*y)+1) - 1) / 2
+    if(as.integer(n) == n){
+      return(TRUE) # function will end here in n is integer
+    }
+    #if n is not integer, return FALSE
+    return(FALSE)
 }
 ```
 
