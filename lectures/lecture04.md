@@ -173,9 +173,11 @@ $ git config --global color.ui true
 
 <details><summary>Getting Help with Git</summary>
 
+[ChatGPT](https://chatgpt.com/)
 
+[Google Gemini](https://gemini.google.com/)
 
-Besides a [duckduckgo](https://duckduckgo.com/) search,
+[duckduckgo search](https://duckduckgo.com/)
 
 ```bash
 $ git help
