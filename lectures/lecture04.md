@@ -367,13 +367,13 @@ That is the majority of the commands you will use in git: `git add`,  `git commi
   Then use the `git` argument `diff` to show all changes *since the last commit*.  
 
 
-    ```bash
-    $ sed -i 's/$/\./' origin.txt
-    $ git diff
+```bash
+$ sed -i 's/$/\./' origin.txt
+$ git diff
 
-    # now change it back by removing periods at the ends of lines
-    $ sed -i 's/\.$//' origin.txt
-    ```
+# now change it back by removing periods at the ends of lines
+$ sed -i 's/\.$//' origin.txt
+```
 
   If you do not see any differences, then you did not change the repo by adding a file or changing the text in `origin.txt`
 
