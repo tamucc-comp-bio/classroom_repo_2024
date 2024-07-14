@@ -148,24 +148,24 @@ Git is *distributed* and a full copy of the history of changes resides on every 
 
 Viewing your current `git` settings:
 
-    ```bash
-    $ git config --list
+```bash
+$ git config --list
 
-    user.name=Chris Bird
-    user.email=cbird808@gmail.com
-    core.repositoryformatversion=0
-    core.filemode=true
-    core.bare=false
-    core.logallrefupdates=true
-    ```
+user.name=Chris Bird
+user.email=cbird808@gmail.com
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+```
 
 Updating your user.name, email, etc...
 
-    ```bash
-    $ git config --global user.name "Chris Bird"
-    $ git config --global user.email cbird808@gmail.com
-    $ git config --global color.ui true
-    ```
+```bash
+$ git config --global user.name "Chris Bird"
+$ git config --global user.email cbird808@gmail.com
+$ git config --global color.ui true
+```
 
 ---
 </p>
