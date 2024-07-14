@@ -132,11 +132,11 @@ Let's use ChatGPT to solve `assignment-02-xc`.  See my [session log with ChatGPT
 
 <details><summary>Schematic diagram of how Git is used</summary>
 
-
-
 Git is *distributed* and a full copy of the history of changes resides on every instance of the *repository*
 
 ![alt text](https://github.com/tamucc-comp-bio/fall_2019/blob/master/lectures/Week04_files/distributedvcs.png)
+
+![alt text](https://miro.medium.com/v2/resize:fit:1386/format:webp/1*pEduJdPky05DeojVGVtPpQ.jpeg)
 
 ---
 </p>
