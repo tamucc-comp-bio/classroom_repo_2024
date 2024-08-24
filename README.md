@@ -220,11 +220,12 @@ Project examples: automatically process data from experimental apparatus; image 
 ---
 
 <!--
+-->
 
 <details><summary>FINAL EXAM: "Welcome to the Desert of the Real"</summary>
 <p>
 
--->
+<!-- This is a hidden comment. It will not be visible in the rendered markdown. 
 
 ### FINAL EXAM: "Welcome to the Desert of the Real"
 
@@ -251,7 +252,7 @@ I will issue a Final Exam in much the same way I have issued assignments, in a r
 Your "final" is completing your independent project by pushing the last changes to your repo by 12/13 9:45 pm.  PhD students have a presentation also.  Most folks are available on M Dec 11 at 2 PM in TH310.   
 </p>
 </details>
-<!-- This is a hidden comment. It will not be visible in the rendered markdown. 
+
 
 -->
 
