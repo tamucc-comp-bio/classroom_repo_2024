@@ -67,36 +67,36 @@ Project examples: automatically process data from experimental apparatus; image 
 ### SECTION 1.  WELCOME TO THE MATRIX
 -->
 
-* [09/01  Week00  Introduction & Data](lectures/lecture00.md)
+* [08/30  Week00  Introduction & Data](lectures/lecture00.md)
   * [Assignment_0  Due, 09/08](assignments/assignment_0.md)
 
-* [09/08  Week01 Unix I](lectures/lecture01.md)
+* [09/06  Week01 Unix I](lectures/lecture01.md)
 
-  * [Assignment_1,  Due 09/15](assignments/assignment_1.md)
+  * [Assignment_1,  Due 09/13](assignments/assignment_1.md)
 
-  * [Grad Student Course Project: Ideas, Due 09/09](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUOUo2UVRUMVgwTUlQMlpUQzUzOTIzME9LNi4u)
+  * [Grad Student Course Project: Ideas, Due 09/13](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUOUo2UVRUMVgwTUlQMlpUQzUzOTIzME9LNi4u)
 
-* [09/15  Week02 Unix II](lectures/lecture02.md)
+* [09/13  Week02 Unix II](lectures/lecture02.md)
 
-  * [Assignment_2,  Due 09/22](assignments/assignment_2.md)
+  * [Assignment_2,  Due 09/20](assignments/assignment_2.md)
 
-* [09/22  Week03 Unix III](lectures/lecture03.md)
+* [09/20  Week03 Unix III](lectures/lecture03.md)
 
-  * [Assignment_3,  Due 09/29](assignments/assignment_3.md)
+  * [Assignment_3,  Due 09/27](assignments/assignment_3.md)
 
-  * [Request Account On TAMUCC Super Computer Due 9/29](http://hpc.tamucc.edu/)
+  * [Request Account On TAMUCC Super Computer Due 9/27](http://hpc.tamucc.edu/)
 
-  * [Grad Student Course Project: Plan/Outline, Due 09/29](https://classroom.github.com/a/XeWhIJ3W)
+  * [Grad Student Course Project: Plan/Outline, Due 09/27](https://classroom.github.com/a/XeWhIJ3W)
 <!-- This is a hidden comment. It will not be visible in the rendered markdown. 
  
     * [Old Link To Grad Student Course Project](https://classroom.github.com/a/VuB4iKjR).  If you started with this link, then just click the link above, clone the 2022 version of this repo, and copy your work from the old repo to the new one.
 -->
 
-* [09/29  Week04 Version Control w/ Git](lectures/lecture04.md)
+* [09/27  Week04 Version Control w/ Git](lectures/lecture04.md)
 
-  * [Exam_1,  Due 10/06](https://classroom.github.com/a/yjxB1o0W)
+  * [Exam_1,  Due 10/04](https://classroom.github.com/a/yjxB1o0W)
 
-  * [Grad Student Course Project: GitHub Repo w/ ReadMe, Due 10/06](https://classroom.github.com/a/Kh_l1f3Y)
+  * [Grad Student Course Project: GitHub Repo w/ ReadMe, Due 10/04](https://classroom.github.com/a/Kh_l1f3Y)
 
 
 </p>
@@ -129,7 +129,7 @@ Project examples: automatically process data from experimental apparatus; image 
 
 -->
 
-* [10/06  Week05 Base R Bootcamp I](lectures/lecture05new.md)
+* [10/04  Week05 Base R Bootcamp I](lectures/lecture05new.md)
 
   * Assignment 5 (Mind Expanders 8.3-8.5) Due 10/13
 
@@ -141,21 +141,21 @@ Project examples: automatically process data from experimental apparatus; image 
 
 
 
-* [10/13  Week06 Base R Bootcamp II](lectures/lecture06new.md)
+* [10/11  Week06 Base R Bootcamp II](lectures/lecture06new.md)
 
-  * [Assignment 06, Due 10/20](https://classroom.github.com/a/uWuu7yFy)
+  * [Assignment 06, Due 10/18](https://classroom.github.com/a/uWuu7yFy)
 
 
-* [10/20  Week07 Data Visualization w/ Tidyverse](lectures/lecture07new.md)
+* [10/18  Week07 Data Visualization w/ Tidyverse](lectures/lecture07new.md)
 
-  * [Assignment 7, Due 11/03](https://classroom.github.com/a/GEsXzO_3)
+  * [Assignment 7, Due 11/01](https://classroom.github.com/a/GEsXzO_3)
 
  
-* [11/03  Week08 Data Wrangling w/ Tidyverse](lectures/lecture08new.md)
+* [11/01  Week08 Data Wrangling w/ Tidyverse](lectures/lecture08new.md)
 
-  * [Exam 2 Part 1, Due 11/10](https://forms.office.com/r/yEyDY7DRts)
+  * [Exam 2 Part 1, Due 11/08](https://forms.office.com/r/yEyDY7DRts)
 
-  * [Exam 2 Part 2, Due 11/10](https://classroom.github.com/a/-4z8vT5d)
+  * [Exam 2 Part 2, Due 11/08](https://classroom.github.com/a/-4z8vT5d)
 
  <!--
  
@@ -200,15 +200,15 @@ Project examples: automatically process data from experimental apparatus; image 
 
 -->
 
-* [11/10  Week10 Basic Python Programming I](lectures/lecture10.md)
+* [11/08  Week10 Basic Python Programming I](lectures/lecture10.md)
   * [Assignment_10, Due 11/17](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMzdVVkQwTlRQMENSVTQ5S0dUT0c1NFgwRi4u)
 
-* [11/17  Week11 Basic Python Programming II](lectures/lecture11.md)
-* [11/17  Week12 Writing Good Code](lectures/lecture12.md)
+* [11/15  Week11 Basic Python Programming II](lectures/lecture11.md)
+* [11/15  Week12 Writing Good Code](lectures/lecture12.md)
   * [Assignment 11, Due 12/01](https://classroom.github.com/a/fZIZ08K1)
  
-* [12/01  Week12 Writing Good Code](lectures/lecture12.md)
-* [12/01  Week13 Scientific Computing](lectures/lecture13.md)
+* [11/22  Week12 Writing Good Code](lectures/lecture12.md)
+* [11/22  Week13 Scientific Computing](lectures/lecture13.md)
   * [Assignment 12, Due 12/06](https://classroom.github.com/a/OaQBFi1h)
 
 </p>
