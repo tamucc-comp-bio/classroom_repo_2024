@@ -2,7 +2,11 @@
 #### BIOL 4560/5560, MARB 6560
 #### Department of Life Sciences, Texas A&M University - Corpus Christi
 
+---
+
 _bookmark this webpage_
+
+---
 
 <details><summary>OVERVIEW</summary>
 <p>
