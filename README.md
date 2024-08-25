@@ -56,7 +56,7 @@ Project examples: automatically process data from experimental apparatus; image 
 
 ---
 
-### SCHEDULE
+## SCHEDULE
 
 ---
 
