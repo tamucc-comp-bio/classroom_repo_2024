@@ -13,7 +13,7 @@ We will begin the lecture with the ppt presentation.  At the conclusion of the p
 Do not begin these until we complete the lecture. You need to complete them in order.
 
 ### Log into [GitHub](https://github.com/)
-Create an Account if You Do Not Have One. Git is a version control software and github is a cloudstorage server that serves as the hub of collaborative projects and it is where the master copy of your data and data analysis scripts lie. Github makes following core data science philosophy easy. The philosophy is, after data is digitized, all manipulations of the data should be documented and executed in code. This facilitates transparency, reproduction of methods, and we are progressing toward a day when you’re scientific research papers will be rejected if you don’t provide the scripts used to process your data. https://www.freecodecamp.org/news/git-and-github-for-beginners/ .
+[Create an Account](https://github.com/tamucc-comp-bio/how_to/blob/main/howto_github_acct.md) if You Do Not Have One. `Git` is a version control software and `github` is a cloudstorage server that serves as the hub of collaborative projects and it is where the master copy of your data and data analysis scripts lie. Github makes following core data science philosophy easy. The philosophy is, after data is digitized, all manipulations of the data should be documented and executed in code. This facilitates transparency, reproduction of methods, and we are progressing toward a day when you’re scientific research papers will be rejected if you don’t provide the scripts used to process your data. https://www.freecodecamp.org/news/git-and-github-for-beginners/ .
 
 ---
 
@@ -23,21 +23,24 @@ During most lectures we will take a few minutes at least once and ask you to app
 
 ---
 
-### If you have a Win10/11 computer, [set up Windows Subsystem Linux and install the Ubuntu App ](../resources/install_wsl_ubuntu.md)
-For those of you with windows, we will install an Ubuntu terminal that interfaces with the Linux kernel build into Win10.  Software installed in windows is not accessible in Ubuntu and vice versa.  You will be able to navigate the same files and directories with both. 
+### Make Your Launch HPC Account
+
+Complete the tasks in the [Accessing Launch HPC](https://hprc.tamu.edu/kb/User-Guides/Launch/Access/#no-ssh-login) guide and _BOOKMARK THE GUIDE IN YOUR WEBBROWSER_ because it has the [Launch Portal login link](https://hprc.tamu.edu/kb/User-Guides/Launch/Access/#no-ssh-login).  
+
+Note that your account needs to be approved manually in College Station so it will probably not be operational today.
 
 ---
 
-### If you have a Win10/11 computer, [install windows termial from the microsoft store](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701). For those of you with windows, this will make it so that Ubuntu, when used inside of Windows Terminal, will exhibit normal copy (ctrl-c) and paste (ctrl-v) behavior. 
+### Setup Your Computer for Computational Biology
+
+Complete the tasks in the [How to Set Up Your Computer for Computational Biology](https://github.com/tamucc-comp-bio/how_to/blob/main/howto_setup_computer.md) guide.
 
 ---
 
-### If you have a Mac, then [install HomeBrew](https://brew.sh/)
-
----
 
 ### [Install git on your computer](https://computingskillsforbiologists.com/setup/)
-For Windows laptops, you probably already have this.  If you open your ubuntu terminal, type in "git":
+
+For Windows computers running Ubuntu, you probably already have this.  If you open your terminal, type in "git":
 
 ```bash
 git
@@ -98,14 +101,9 @@ you are good to go.  Otherwise, follow [the instructions for both Windows and Li
 ---
 
 
-### [Set Up SSH Permissions Key](../resources/Github_SSH.pdf) And Say Goodbye to Passwords
+### Clone the "Computing Skills For Biologists" text book's repository to your computer
 
----
-
-
-### Clone the text book's repository to your computer
-
-We will use the open source files that accompany the CSB text book in lectures and assignments.
+We will use the open source files that accompany the CSB text book in some lectures and assignments.
 
 1. Open a terminal window
 	* For Win laptops, use `Windows Terminal` to open Ubunutu.  
@@ -126,17 +124,7 @@ pwd
 git clone git@github.com:tamucc-comp-bio-2022/CSB.git
 ```
 
-The repository is named CSB, and it contains all of the example files and directories necessary to conduct the exercises in the text book.
-
----
-
-
-### Install a text editor on your computer
-Win10: [notepad++](https://notepad-plus-plus.org/downloads/)
-
-MacOSX: [BBEdit](https://www.barebones.com/products/textwrangler/download.html)
-
-These text editors are very handy for viewing and editing code. Text editors edit human readable text files, such as ASCII (.txt). Most likely, the text editor you've been using is insufficient for this course. MS Word is not a text editor; it is a word processor and should not be used.
+The repository is named CSB, and it contains all of the example files and directories necessary to conduct the exercises in the text book. Note that this includes solutions to all of the exercises in the book also.
 
 ---
 
