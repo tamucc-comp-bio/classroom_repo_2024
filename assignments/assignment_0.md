@@ -14,6 +14,10 @@ You should have already prepared your computer during Lecture 0.  If you did the
 <p>
 
 Complete the tasks listed in the [How to Set Up Your Computer for Computational Biology](https://github.com/tamucc-comp-bio/how_to/blob/main/howto_setup_computer.md), up to, but not including R and RStudio.
+
+If you are having difficulty, use Launch if your account is activated.
+
+If the above are not working, then try [installing GitBash](https://carpentries.github.io/workshop-template/install_instructions/#shell).
     
 </p>
 </details>
