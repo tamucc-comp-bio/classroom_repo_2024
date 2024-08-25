@@ -71,7 +71,9 @@ Refer to the helpful information below while you work through the Software Carpe
 
 ## Resources to Help You
 
-I highly recommend that you print out the [Linux Cheat Sheet](../resources/CheatSheetLinux_8-12-2016.pdf) which I created for myself and my students when I was learning `bash`.  It's unique because it translates english into `bash`.
+I highly recommend that you print out the [Linux Cheat Sheet](../resources/CheatSheetLinux_8-12-2016.pdf) which I created for myself and my students when I was learning `bash`. Print it out and use it as a mousepad.  It's unique because it translates english into `bash`.
+
+ChatGPT, Google Gemini, and Anthropic Claude are all useful AI large language models for assisting you in understanding the concepts in this assignment.
 
 ---
 
