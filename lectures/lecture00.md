@@ -40,7 +40,7 @@ Complete the tasks in the [How to Set Up Your Computer for Computational Biology
 
 ### Check to confirm you have `git` installed
 
-For Windows computers running Ubuntu, you probably already have this.  If you open your terminal, type in "git":
+You probably already have this.  If you open your terminal, type in "git":
 
 ```bash
 git
