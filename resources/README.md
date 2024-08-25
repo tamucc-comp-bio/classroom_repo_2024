@@ -4,17 +4,13 @@ This directory contains resources that will help you with your assignments .
 
 ---
 
-## How To
+## [How To](https://github.com/tamucc-comp-bio/how_to/blob/main/README.md)
 
-* [Install `Ubuntu` on Windows](install_wsl_ubuntu.md)
+* [Create Launch HPC Account](https://hprc.tamu.edu/kb/User-Guides/Launch/Access/#no-ssh-login)
 
-* [Install `Windows Terminal` from the microsoft store](https://learn.microsoft.com/en-us/windows/terminal/install).
+* [Set Up Your Computer for Computational Biology](https://github.com/tamucc-comp-bio/how_to/blob/main/howto_setup_computer.md).
   
-* [Set up SSH Keys For Easy Access to Remote Servers & GitHub](howto_sshkeys.md)
-
-* [Install R](install_r.md)
-
-* [Install RStudio](install_rstudio.md)
+* [Organize Biological Data](https://github.com/tamucc-comp-bio/how_to/blob/main/howto_organize_data.md)
 
 * [CSB Guide to Downloading Software](https://computingskillsforbiologists.com/setup/)
 
