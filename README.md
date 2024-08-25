@@ -60,12 +60,12 @@ Project examples: automatically process data from experimental apparatus; image 
 
 ---
 
+<!-- This is a hidden comment. It will not be visible in the rendered markdown. 
 <details><summary>SECTION 1.  WELCOME TO THE MATRIX</summary>
 <p>
-
-<!-- This is a hidden comment. It will not be visible in the rendered markdown. 
-### SECTION 1.  WELCOME TO THE MATRIX
 -->
+
+### SECTION 1.  WELCOME TO THE MATRIX
 
 * [08/30  Week00  Introduction & Data](lectures/lecture00.md)
   * [Assignment_0  Due, 09/08](assignments/assignment_0.md)
@@ -98,13 +98,12 @@ Project examples: automatically process data from experimental apparatus; image 
 
   * [Grad Student Course Project: GitHub Repo w/ ReadMe, Due 10/04](https://classroom.github.com/a/Kh_l1f3Y)
 
-
+ <!-- 
 </p>
 </details>
 
 
-
- <!--  
+ 
 <details><summary>Quiz Results and Answers</summary>
 <p>
 
