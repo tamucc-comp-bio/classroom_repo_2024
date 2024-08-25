@@ -22,6 +22,8 @@ This directory contains resources that will help you with your assignments .
 
 * [R for Data Science](https://r4ds.had.co.nz/)
 
+* [R for Data Science 2](https://r4ds.hadley.nz/)
+
 * [R for Data Science: Exercise Solutions](https://jrnold.github.io/r4ds-exercise-solutions/)
 
 ---
