@@ -10,28 +10,20 @@
 
 You should have already prepared your computer during Lecture 0.  If you did then you can skip over this section to "Description of Assignment".  
 
-<details><summary>Ubuntu on Windows</summary>
+<details><summary>Windows, Mac, Linux</summary>
 <p>
 
-  * If the Ubuntu app is not installed, then follow [these instructions](../resources/install_wsl_ubuntu.md)
-  
-  * Log into your Ubuntu terminal.  _We will not use `gitbash` unless you can't get Ubuntu running._ After logging in, You are in your home directory. 
-     
-  * It's always a good idea to keep your apps in `Ubuntu` up to date. _The first time you do this, it could take a long time to finish. After that, if you do this when you log in, it should go quickly._
-    ```bash
-    sudo apt update
-    sudo apt upgrade
-    ```
+Complete the tasks listed in the [How to Set Up Your Computer for Computational Biology](https://github.com/tamucc-comp-bio/how_to/blob/main/howto_setup_computer.md), up to, but not including R and RStudio.
     
 </p>
 </details>
 
-<details><summary>MacOS</summary>
+<details><summary>ChromeOS, iOS, Android</summary>
 <p>
  
-  * Open a terminal window
+Complete the tasks listed in the [Accessing Launch Instructions](https://hprc.tamu.edu/kb/User-Guides/Launch/Access/#no-ssh-login).
 
-  * If you haven't already, install [homebrew](https://brew.sh/).  You will be able to use homebrew to install linux software, such as `tree`, which is used in the slide show.
+Your account will probably not be activated in time, so you should immediately contact Dr. Bird to request the use of one of his Linux servers.
 
  </p>
 </details>
