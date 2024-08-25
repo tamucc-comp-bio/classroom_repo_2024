@@ -49,7 +49,7 @@ Project examples: automatically process data from experimental apparatus; image 
 
 [Office hours](https://tamucc.zoom.us/my/cbird808?pwd=V1Baa0p3YzBHaHMyTzkrQ25FZyswZz09) are W-Th 1:30-4 on Zoom or TH234
 
-[Grades](https://bb9.tamucc.edu) will be maintained on black board.
+[Grades](https://canvas.tamucc.edu) will be maintained on Canvas.
 
 </p>
 </details>
