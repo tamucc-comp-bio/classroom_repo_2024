@@ -51,6 +51,7 @@ Your account will probably not be activated in time, so you should immediately c
 You will need to **download the data file for the lesson**.  Copy and paste the following code block into your terminal. _If you are having trouble copying and pasting in Ubuntu on windows, make sure that you are using the [Windows Terminal App](https://docs.microsoft.com/en-us/windows/terminal/install) to run Ubuntu.  You were asked to install the terminal app in the [Week 00 Lecture In Class Exercises](../lectures/lecture00.md). With Windows Terminal, copying and pasting should work as you're accustomed to.  For those with Macs, there should be no issues with copying and pasting._
 
 ```bash
+# copy and paste the following commands into your terminal and run them by hitting the enter/return key
 wget https://swcarpentry.github.io/shell-novice/data/shell-lesson-data.zip
 unzip shell-lesson-data.zip
 mkdir Desktop
