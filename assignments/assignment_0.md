@@ -8,7 +8,7 @@
 
 ## Computer Preparation
 
-You should have already prepared your computer during Lecture 0.  If you did then you can skip over this section to "Description of Assignment".  
+You should have already prepared your computer during Lecture 0.  If you did then you can skip over this section to "Open Your Terminal".  
 
 <details><summary>Windows, Mac, Linux</summary>
 <p>
@@ -34,7 +34,7 @@ Your account will probably not be activated in time, so you should immediately c
 
 ---
 
-## Open your Terminal
+## Open Your Terminal
 
 ![terminal](terminal.png)
 
