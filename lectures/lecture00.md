@@ -1,6 +1,8 @@
 # Week_00 INTRODUCTION & DATA
 
-## [Lecture_00 Stream](https://tamucc.webex.com/webappng/sites/tamucc/recording/playback/c435d912674b47eda6ca33daa6491eab)
+## [Lecture_00 Stream](https://tamucc.zoom.us/rec/share/vVILmR65m6g2OQpZVpJhD7-ew5rF3HDJpQKA7kV0pg5qLmk7H0ouqOy1UTU8y02W.UdfEoXsGSuVw3hcA)
+
+Passcode: 6UY=Th8g
 
 ## [Lecture_00 Slides](Week00_files/Lecture00_Overview_BigData.pdf)
 
