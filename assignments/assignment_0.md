@@ -109,7 +109,7 @@ Nothing to note
 
 ---
 
-## Self Check on Assignment 0
+## Self Check on Assignment
 
 If you did everything correctly, then the directory structure of your `shell-lesson-data` directory should look like that below.
 
