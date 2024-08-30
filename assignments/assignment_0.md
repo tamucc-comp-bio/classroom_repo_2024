@@ -66,7 +66,7 @@ In the code above, `wget` is a command to download files with a https web addres
 
 We have a steep learning curve to traverse, so we are going to "flip" the classroom next week. Flipping the classroom means that you work on the material to be covered before we address it in lecture.  Then we can spend time in lecture going over the most challenging topics, as identified by you. Then we will continue together in lecture through new material that builds upon this assignment.
 
-Your assignment is to work through [Software Carpentry's The Unix Shell](https://swcarpentry.github.io/shell-novice/) from Introducing the Shell through Working with files and directories.
+Your assignment is to work through [Software Carpentry's The Unix Shell](https://swcarpentry.github.io/shell-novice/) from "Introducing the Shell" through "Working with Files and Directories".
 
 ---
 
