@@ -34,6 +34,12 @@ Your account will probably not be activated in time, so you should immediately c
 
 ---
 
+## Open your Terminal
+
+
+
+---
+
 ## Download Data for Assignment (Do Not Follow The Download Instructions on Software Carpentry)
 
 You will need to **download the data file for the lesson**.  Copy and paste the following code block into your terminal. _If you are having trouble copying and pasting in Ubuntu on windows, make sure that you are using the [Windows Terminal App](https://docs.microsoft.com/en-us/windows/terminal/install) to run Ubuntu.  You were asked to install the terminal app in the [Week 00 Lecture In Class Exercises](../lectures/lecture00.md). With terminal, copying and pasting should work as you're accustomed to.  For those with Macs, there should be no issues with copying and pasting._
