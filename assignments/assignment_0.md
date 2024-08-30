@@ -124,7 +124,9 @@ sudo apt install tree
 ```
 
 Then you can create your assignment directory tree with the following command and argument:
+
 ```bash
+cd ~
 tree ~/Desktop/shell-lesson-data
 ```
 
