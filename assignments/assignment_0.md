@@ -40,7 +40,7 @@ Your account will probably not be activated in time, so you should immediately c
 
 * If you don't have a terminal on your computer (ChromeOS, iOS, Android, or Ubuntu install failed on Windows), then try the [Launch HPC](https://portal-launch.hprc.tamu.edu/).  Realize that your Launch HPC account, which you signed up for during Lecture 00, has to be manually approved and it may take a few days before it works. Once you can log in, select the shell access icon.
 
-![](launch_shell_access.png)
+   ![](launch_shell_access.png)
 
 * If all else fails, contact Dr. Bird to use a computer in his lab.
 
