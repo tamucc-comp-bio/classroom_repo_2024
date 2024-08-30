@@ -86,6 +86,8 @@ ChatGPT, Google Gemini, and Anthropic Claude are all useful AI large language mo
 
 ## Hints and Additions to The Unix Shell Lesson
 
+I made these notes, which are organized by the sections of the assignment, to help you navigate sticking points in the assignment and supplement the information provided by Software Carpentry.  
+
 ### 1. [Introducing the Shell](https://swcarpentry.github.io/shell-novice/01-intro/index.html)
 
 Nothing to note
