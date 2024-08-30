@@ -36,13 +36,19 @@ Your account will probably not be activated in time, so you should immediately c
 
 ## Open your Terminal
 
+![terminal](terminal.png)
 
+* If you don't have a terminal on your computer (ChromeOS, iOS, Android, or Ubuntu install failed on Windows), then try the [Launch HPC](https://portal-launch.hprc.tamu.edu/).  Realize that your Launch HPC account, which you signed up for during Lecture 00, has to be manually approved and it may take a few days before it works. Once you can log in, select the shell access icon.
+
+![](launch_shell_access.png)
+
+* If all else fails, contact Dr. Bird to use a computer in his lab.
 
 ---
 
 ## Download Data for Assignment (Do Not Follow The Download Instructions on Software Carpentry)
 
-You will need to **download the data file for the lesson**.  Copy and paste the following code block into your terminal. _If you are having trouble copying and pasting in Ubuntu on windows, make sure that you are using the [Windows Terminal App](https://docs.microsoft.com/en-us/windows/terminal/install) to run Ubuntu.  You were asked to install the terminal app in the [Week 00 Lecture In Class Exercises](../lectures/lecture00.md). With terminal, copying and pasting should work as you're accustomed to.  For those with Macs, there should be no issues with copying and pasting._
+You will need to **download the data file for the lesson**.  Copy and paste the following code block into your terminal. _If you are having trouble copying and pasting in Ubuntu on windows, make sure that you are using the [Windows Terminal App](https://docs.microsoft.com/en-us/windows/terminal/install) to run Ubuntu.  You were asked to install the terminal app in the [Week 00 Lecture In Class Exercises](../lectures/lecture00.md). With Windows Terminal, copying and pasting should work as you're accustomed to.  For those with Macs, there should be no issues with copying and pasting._
 
 ```bash
 wget https://swcarpentry.github.io/shell-novice/data/shell-lesson-data.zip
