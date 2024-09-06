@@ -16,7 +16,7 @@
 <details><summary>Windows, Mac, Linux</summary>
 <p>
 
-<hr style="height: 0.1px; border: none; background-color: grey;">
+<hr style="height: 0.1px; border: none; background-color: blue;">
 
 #### Step 0. Open Terminal
 
