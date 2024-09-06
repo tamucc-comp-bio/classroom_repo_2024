@@ -270,6 +270,8 @@ ls
 
 :light_bulb:
 
+U+1F4A1
+
 >[!TIP]
 > clear the screen with `ctrl + L` keystroke
 
