@@ -1,12 +1,14 @@
 # Week01 UNIX
 
+---
+
 ### [Assignment 0](../assignments/assignment_0.md) is due at the beginning of this lecture
 
 ## [Lecture Stream]()
 
 ## [Lecture 01 Slides](Week01_files/Lecture01_WelcomeToTheMatrix.pdf)
 
-## Computer Preparation
+---
 
 ## Computer Preparation
 
@@ -22,8 +24,26 @@ You should have already prepared your computer during Lecture 0.  If you did not
 
 * Complete the tasks listed in the [How to Set Up Your Computer for Computational Biology](https://github.com/tamucc-comp-bio/how_to/blob/main/howto_setup_computer.md), up to, but not including R and RStudio.
    * If you are having difficulty installing ubuntu, use Launch if your account is activated.
-    
-#### Step 1. Confirm you have cloned the CSB (Computing Skills For Biologists) Repo into your home dir
+
+#### Step 1. Update Your apps
+
+It's always a good idea to keep your apps in your terminal up to date. 
+ 
+For Ubuntu (Linux), enter the following commands to load the newest versions of your apps
+
+```bash
+sudo apt update
+sudo apt upgrade
+```
+
+For Mac (Homebrew), enter the following commands to load the newest versions of your apps
+
+```bash
+brew update
+brew upgrade
+```
+
+#### Step 2. Confirm you have cloned the CSB (Computing Skills For Biologists) Repo into your home dir
 
 In your terminal, enter the following commands:
 
@@ -43,7 +63,7 @@ LICENSE  README.md  data_wrangling  git  good_code  latex  python  r  regex  sci
 
 If you see the output above, you're done! Goto the next section.
 
-#### Step 2. If you didn't have the CSB Repo, clone it now
+#### Step 3. If you didn't have the CSB Repo, clone it now
 
 If you **do not** see the output above, then clone the CSB repo by entering the following commands:
 
@@ -61,7 +81,7 @@ Receiving objects: 100% (1005/1005), 26.68 MiB | 7.74 MiB/s, done.
 Resolving deltas: 100% (389/389), done.
 ```
 
-Goto Step 1. above.
+Goto Step 2 above.
 
 ---
 
@@ -76,52 +96,6 @@ Complete the tasks listed in the [Accessing Launch Instructions](https://hprc.ta
 Your account will probably not be activated in time, so you should immediately contact Dr. Bird to request the use of one of his Linux servers.
 
  </p>
-</details>
-
-
-
-
-
-
-
-
-
-
-
-
-You are expected to start each lecture with your terminal window open and ready to go.
-
-<details><summary>Ubuntu on Windows</summary>
-<p>
-
-  * If the Ubuntu app is not installed, then follow [these instructions](../resources/README.md)
-  
-  * Log into your Ubuntu terminal.  _We will not use `gitbash` unless you can't get Ubuntu running._ After logging in, You are in your home directory. 
-     
-  * If the `CSB` directory does not exist in your home directory (check with `ls`), then run the following code to clone the `CSB` repository into your home directory:
-  
-    ```bash
-    git clone https://github.com/CSB-book/CSB.git
-    ```
-  * It's always a good idea to keep your apps in `Ubuntu` up to date. _The first time you do this, it could take a long time to finish. After that, if you do this when you log in, it should go quickly._
-    ```bash
-    sudo apt update
-    sudo apt upgrade
-    ```
-    
-
-</p>
-</details>
-
-<details><summary>MacOS</summary>
-<p>
- 
-  * Open a terminal window
-  
-  * If you haven't already, install [homebrew](https://brew.sh/).  You will be able to use homebrew to install linux software, such as `tree`, which is used in the slide show.
-  
-
-</p>
 </details>
 
 
