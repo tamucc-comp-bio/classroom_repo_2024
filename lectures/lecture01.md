@@ -812,7 +812,7 @@ $ less ../north-pacific-gyre/NENE01751B.txt
 
 ```bash
 # concatenate files and/or print to screen
-$ cat numbers.txt ../north-pacific-gyre/goodiff.sh proteins/cubane.pdb
+$ cat numbers.txt ../north-pacific-gyre/goodiff.sh alkanes/cubane.pdb
 ```
 
 ---
@@ -864,8 +864,8 @@ The most common use of the `file` command in biology is to determine if files en
 
 ```bash
 # determine file type, ASCII is a type of human-readable text file
-$ file proteins/cubane.pdb
-proteins/cubane.pdb: ASCII text
+$ file alkanes/cubane.pdb
+alkanes/cubane.pdb: ASCII text
 
 ```
 
