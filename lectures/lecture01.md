@@ -25,6 +25,8 @@ You should have already prepared your computer during Lecture 0.  If you did not
 * Complete the tasks listed in the [How to Set Up Your Computer for Computational Biology](https://github.com/tamucc-comp-bio/how_to/blob/main/howto_setup_computer.md), up to, but not including R and RStudio.
    * If you are having difficulty installing ubuntu, use Launch if your account is activated.
 
+<hr style="height: 1px; border: none; background-color: black;">
+
 #### Step 1. Update Your apps
 
 It's always a good idea to keep your apps in your terminal up to date. 
