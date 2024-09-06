@@ -105,6 +105,46 @@
 
     > Select `launch Shell Access`
 
+ - [ ] Step 2. Confirm you have cloned the CSB (Computing Skills For Biologists) Repo into your home dir
+
+  > In your terminal, enter the following commands:
+
+    ```bash
+    # make sure you're in your home dir
+    cd ~
+
+    # list the directories and files in the CSB dir to confirm it's in your home dir
+    ls CSB
+    ```
+
+  > You should see the following output because we cloned the CSB Repo to your home dir in [Lecture 0](https://github.com/tamucc-comp-bio/classroom_repo_2024/blob/master/lectures/lecture00.md).  
+
+    ```bash
+    LICENSE  README.md  data_wrangling  git  good_code  latex  python  r  regex  scientific  sql  unix
+    ```
+
+  > If you see the output above, you're done! Goto the next section.
+
+- [ ] Step 3. If you didn't have the CSB Repo, clone it now
+
+  > If you **do not** see the output above, then clone the CSB repo by entering the following commands:
+
+    ```bash
+        git clone https://github.com/CSB-book/CSB.git
+    ``` 
+
+  > You should see the following output:
+
+    ```bash
+    Cloning into 'CSB'...
+    remote: Enumerating objects: 1005, done.
+    remote: Total 1005 (delta 0), reused 0 (delta 0), pack-reused 1005 (from 1)
+    Receiving objects: 100% (1005/1005), 26.68 MiB | 7.74 MiB/s, done.
+    Resolving deltas: 100% (389/389), done.
+    ```
+
+  > Goto Step 2 above.
+
  </p>
 </details>
 
@@ -685,7 +725,7 @@ $ tree .
 
 ```
 
-&#x1F4A1; TIP!: _`bash` gives no positive feedback, only negative if something is wrong.  I will do my best to make up for the callousness of `bash`_
+&#x1F4A1; TIP! _`bash` gives no positive feedback, only negative if something is wrong._
 
 
 ---
@@ -717,7 +757,7 @@ $ ls ..
 
 ```
 
-&#x1F4A1; TIP!: _`bash` gives no positive feedback, only negative if something is wrong.  I will do my best to make up for the callousness of `bash`_
+&#x1F4A1; TIP! _`bash` gives no positive feedback, only negative if something is wrong._
 
 ---
 
@@ -749,7 +789,7 @@ $ rm -rf d1
 $ rm -rf ../north-pacific-gyre/exercise-data/
 ```
 
-&#x26A0; CAUTION!: __be careful with `rm`, you could delete your "whole computer", and there is no undo_
+&#x26A0; CAUTION! _be careful with `rm`, you could delete your "whole computer", and there is no `undo`_
 
 ---
 
@@ -814,6 +854,8 @@ $ wc -l ../north-pacific-gyre/NENE01751B.txt
 
 ```
 
+---
+
 ### Determine file type `file <filename>`
 
 Just because a file ends with a particular extension, doesn't mean that the file itself follows the format that matches that extension.  This is an example of why it's important to impart structure on your code.  You should use the correct file extension even though you don't have to so that both you and everybody else can better understand your files and code.
@@ -827,7 +869,7 @@ proteins/cubane.pdb: ASCII text
 
 ```
 
-_Do not forget to use the `Tab` key to autocomplete directory names and prevent spelling mistakes_
+&#x1F4A1; TIP! _Do not forget to use the `Tab` key to autocomplete directory names and prevent spelling mistakes_
 
 ---
 
@@ -848,7 +890,7 @@ $ tail -n +2 creatures/unicorn.dat
 $ head -n -1 creatures/unicorn.dat
 ```
 
-_Do not forget to use `Tab` key to autocomplete file names and prevent spelling mistakes_
+&#x1F4A1; TIP! _Do not forget to use `Tab` key to autocomplete file names and prevent spelling mistakes_
 
 ---
 
