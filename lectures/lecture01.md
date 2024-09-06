@@ -19,6 +19,10 @@
 <details><summary>Windows, Mac, Linux</summary>
 <p>
 
+> [!IMPORTANT]
+> Make sure your computer is ready for today's lecture
+
+
 - [ ] Step 0. Open Terminal
 
   > Search for the terminal app and open it.  For Windows, make sure you are using Ubuntu.
@@ -266,8 +270,7 @@ pwd
 ls
 ```
 
-> `pwd` lists the present working directory
-> `ls` lists the contents of the present working directory
+> `pwd` lists the present working directory, `ls` lists the contents of the present working directory
 
 > [!TIP]
 > clear the screen with `ctrl + L` keystroke
