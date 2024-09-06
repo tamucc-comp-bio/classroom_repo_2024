@@ -2,11 +2,92 @@
 
 ### [Assignment 0](../assignments/assignment_0.md) is due at the beginning of this lecture
 
-## [Lecture Stream](https://tamucc.webex.com/recordingservice/sites/tamucc/recording/playback/89d7a9cb258e4750a09f346800aceb31)
+## [Lecture Stream]()
 
 ## [Lecture 01 Slides](Week01_files/Lecture01_WelcomeToTheMatrix.pdf)
 
 ## Computer Preparation
+
+## Computer Preparation
+
+
+<details><summary>Windows, Mac, Linux</summary>
+<p>
+
+#### Step 0. Open Terminal
+
+Search for the terminal app and open it.  For Windows, make sure you are using Ubuntu.
+
+You should have already prepared your computer during Lecture 0.  If you did not then:  
+
+* Complete the tasks listed in the [How to Set Up Your Computer for Computational Biology](https://github.com/tamucc-comp-bio/how_to/blob/main/howto_setup_computer.md), up to, but not including R and RStudio.
+   * If you are having difficulty installing ubuntu, use Launch if your account is activated.
+    
+#### Step 1. Confirm you have cloned the CSB (Computing Skills For Biologists) Repo into your home dir
+
+In your terminal, enter the following commands:
+
+```bash
+# make sure you're in your home dir
+cd ~
+
+# list the directories and files in the CSB dir to confirm it's in your home dir
+ls CSB
+```
+
+You should see the following output because we cloned the CSB Repo to your home dir in [Lecture 0](https://github.com/tamucc-comp-bio/classroom_repo_2024/blob/master/lectures/lecture00.md).  
+
+```bash
+LICENSE  README.md  data_wrangling  git  good_code  latex  python  r  regex  scientific  sql  unix
+```
+
+If you see the output above, you're done! Goto the next section.
+
+#### Step 2. If you didn't have the CSB Repo, clone it now
+
+If you **do not** see the output above, then clone the CSB repo by entering the following commands:
+
+```bash
+    git clone https://github.com/CSB-book/CSB.git
+``` 
+
+You should see the following output:
+
+```bash
+Cloning into 'CSB'...
+remote: Enumerating objects: 1005, done.
+remote: Total 1005 (delta 0), reused 0 (delta 0), pack-reused 1005 (from 1)
+Receiving objects: 100% (1005/1005), 26.68 MiB | 7.74 MiB/s, done.
+Resolving deltas: 100% (389/389), done.
+```
+
+Goto Step 1. above.
+
+---
+
+</p>
+</details>
+
+<details><summary>ChromeOS, iOS, Android</summary>
+<p>
+ 
+Complete the tasks listed in the [Accessing Launch Instructions](https://hprc.tamu.edu/kb/User-Guides/Launch/Access/#no-ssh-login).
+
+Your account will probably not be activated in time, so you should immediately contact Dr. Bird to request the use of one of his Linux servers.
+
+ </p>
+</details>
+
+
+
+
+
+
+
+
+
+
+
 
 You are expected to start each lecture with your terminal window open and ready to go.
 
