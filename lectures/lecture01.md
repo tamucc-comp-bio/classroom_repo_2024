@@ -268,9 +268,9 @@ ls
 
 > `pwd` lists the present working directory, `ls` lists the contents of the present working directory
 
-:light_bulb:
+<p>:light_bulb:</p>
 
-U+1F4A1
+<p>&#x1F4A1;</p>
 
 >[!TIP]
 > clear the screen with `ctrl + L` keystroke
