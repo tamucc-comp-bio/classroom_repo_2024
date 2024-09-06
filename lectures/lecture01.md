@@ -8,13 +8,15 @@
 
 ## [Lecture 01 Slides](Week01_files/Lecture01_WelcomeToTheMatrix.pdf)
 
----
+<hr style="height: 3px; border: none; background-color: black;">
 
 ## Computer Preparation
 
 
-<details><summary>**Windows, Mac, Linux**</summary>
+<details><summary>Windows, Mac, Linux</summary>
 <p>
+
+<hr style="height: 1px; border: none; background-color: black;">
 
 #### Step 0. Open Terminal
 
@@ -24,6 +26,8 @@ You should have already prepared your computer during Lecture 0.  If you did not
 
 * Complete the tasks listed in the [How to Set Up Your Computer for Computational Biology](https://github.com/tamucc-comp-bio/how_to/blob/main/howto_setup_computer.md), up to, but not including R and RStudio.
    * If you are having difficulty installing ubuntu, use Launch if your account is activated.
+
+<hr style="height: 1px; border: none; background-color: black;">
 
 <hr style="height: 1px; border: none; background-color: black;">
 
@@ -45,6 +49,10 @@ brew update
 brew upgrade
 ```
 
+<hr style="height: 1px; border: none; background-color: black;">
+
+<hr style="height: 1px; border: none; background-color: black;">
+
 #### Step 2. Confirm you have cloned the CSB (Computing Skills For Biologists) Repo into your home dir
 
 In your terminal, enter the following commands:
@@ -64,6 +72,10 @@ LICENSE  README.md  data_wrangling  git  good_code  latex  python  r  regex  sci
 ```
 
 If you see the output above, you're done! Goto the next section.
+
+<hr style="height: 1px; border: none; background-color: black;">
+
+<hr style="height: 1px; border: none; background-color: black;">
 
 #### Step 3. If you didn't have the CSB Repo, clone it now
 
@@ -85,7 +97,7 @@ Resolving deltas: 100% (389/389), done.
 
 Goto Step 2 above.
 
----
+<hr style="height: 1px; border: none; background-color: black;">
 
 </p>
 </details>
