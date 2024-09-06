@@ -13,7 +13,7 @@
 ## Computer Preparation
 
 
-<details><summary>Windows, Mac, Linux</summary>
+<details><summary>**Windows, Mac, Linux**</summary>
 <p>
 
 #### Step 0. Open Terminal
