@@ -315,11 +315,11 @@ ls /tmp
 
   * A variable stores information
 
-  * Always preceded by a `$` after it is created
+  * A variable is always preceded by a `$` after it is created
 
   * `$HOME` is an environmental variable created by the operating system and `bash`
   
-  * a shortcut for `$HOME` is the `~` character located at the upper left of your keyboard
+  &#x1F4A1; TIP!: a shortcut for `$HOME` is the `~` character located at the upper left of your keyboard
   
   * the `echo` command can be used to show the contents of a variable, such as `$HOME`
 
