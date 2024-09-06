@@ -52,19 +52,19 @@
 
   > In your terminal, enter the following commands:
 
-```bash
-# make sure you're in your home dir
-cd ~
+    ```bash
+    # make sure you're in your home dir
+    cd ~
 
-# list the directories and files in the CSB dir to confirm it's in your home dir
-ls CSB
-```
+    # list the directories and files in the CSB dir to confirm it's in your home dir
+    ls CSB
+    ```
 
   > You should see the following output because we cloned the CSB Repo to your home dir in [Lecture 0](https://github.com/tamucc-comp-bio/classroom_repo_2024/blob/master/lectures/lecture00.md).  
 
-```bash
-LICENSE  README.md  data_wrangling  git  good_code  latex  python  r  regex  scientific  sql  unix
-```
+    ```bash
+    LICENSE  README.md  data_wrangling  git  good_code  latex  python  r  regex  scientific  sql  unix
+    ```
 
   > If you see the output above, you're done! Goto the next section.
 
@@ -436,11 +436,11 @@ The rest is not important right now, but if you are dying to know, the `(base)` 
 
 ### Bash Keyboard Shortcuts
 
-*`↑`*	Scroll through previous commands
+*`↑`*   Scroll through previous commands
 
-*`Tab`*	autocomplete command, dir, or file name. if you hit tab and nothing happens there are either multiple matches or 0 matches
+*`Tab`* autocomplete command, dir, or file name. if you hit tab and nothing happens there are either multiple matches or 0 matches
 
-*`Tab,Tab`*	 show matches
+*`Tab,Tab`*  show matches
 
 ![](Week01_files/keyboard_shortcuts.png)
 
