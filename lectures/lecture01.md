@@ -124,6 +124,8 @@
 
 ## Lecture: Unix, Linux, & the Command Line Interface (CLI)
 
+> [!TIP]
+> You can refresh your webpage to collapse expanded sections if you get "lost" 
 
 <details><summary>Introduction</summary>
 <p>
