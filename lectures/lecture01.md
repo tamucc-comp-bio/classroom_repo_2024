@@ -19,10 +19,6 @@
 <details><summary>Windows, Mac, Linux</summary>
 <p>
 
-> [!IMPORTANT]
-> Make sure your computer is ready for today's lecture
-
-
 - [ ] Step 0. Open Terminal
 
   > Search for the terminal app and open it.  For Windows, make sure you are using Ubuntu.
