@@ -94,9 +94,17 @@
 <details><summary>ChromeOS, iOS, Android</summary>
 <p>
  
-Complete the tasks listed in the [Accessing Launch Instructions](https://hprc.tamu.edu/kb/User-Guides/Launch/Access/#no-ssh-login).
+ - [ ] Step 0. [Log Into Launch HPC](https://portal-launch.hprc.tamu.edu/)
 
-Your account will probably not be activated in time, so you should immediately contact Dr. Bird to request the use of one of his Linux servers.
+  > Use the following [link](https://portal-launch.hprc.tamu.edu/) to log in 
+
+  > You should have already created your account during Lecture 0.  If you did not then:  
+
+  > * Complete the tasks listed in the [Accessing Launch Instructions](https://hprc.tamu.edu/kb/User-Guides/Launch/Access/#no-ssh-login)
+
+ - [ ] Step 1. Open Terminal
+
+  > Select `launch Shell Access`
 
  </p>
 </details>
