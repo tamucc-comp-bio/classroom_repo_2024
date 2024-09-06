@@ -663,7 +663,7 @@ $ tree shell-lesson-data
 
 ```
 
-_Note:  the `-r` argument for `cp` means [recursive](https://en.wikipedia.org/wiki/Recursion_(computer_science)) and `-f` means force_
+&#x1F4A1; TIP!: _the `-r` argument for `cp` means [recursive](https://en.wikipedia.org/wiki/Recursion_(computer_science)) and `-f` means force_
 
 ---
 
@@ -685,7 +685,7 @@ $ tree .
 
 ```
 
-_Note:  `bash` gives no positive feedback, only negative if something is wrong.  I will do my best to make up for the callousness of `bash`_
+&#x1F4A1; TIP!: _`bash` gives no positive feedback, only negative if something is wrong.  I will do my best to make up for the callousness of `bash`_
 
 
 ---
@@ -717,7 +717,7 @@ $ ls ..
 
 ```
 
-_Note:  `bash` gives no positive feedback, only negative if something is wrong.  I will do my best to make up for the callousness of `bash`_
+&#x1F4A1; TIP!: _`bash` gives no positive feedback, only negative if something is wrong.  I will do my best to make up for the callousness of `bash`_
 
 ---
 
@@ -749,7 +749,7 @@ $ rm -rf d1
 $ rm -rf ../north-pacific-gyre/exercise-data/
 ```
 
-_be careful with `rm`, you could delete your "whole computer", and there is no undo_
+&#x26A0; CAUTION!: __be careful with `rm`, you could delete your "whole computer", and there is no undo_
 
 ---
 
