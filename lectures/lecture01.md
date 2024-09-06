@@ -5,9 +5,11 @@
 > [!IMPORTANT]
 > [Assignment 0](../assignments/assignment_0.md) is due at the beginning of this lecture
 
-## [Lecture Stream]()
+> [!NOTE]
+> The [Lecture Stream]() will be updated following lecture
 
-## [Lecture 01 Slides](Week01_files/Lecture01_WelcomeToTheMatrix.pdf)
+> [!NOTE]
+> I have converted the [Lecture 01 Slides](Week01_files/Lecture01_WelcomeToTheMatrix.pdf) to a more screen-splitting friendly format below.
 
 <hr style="height: 3px; border: none; background-color: black;">
 
@@ -131,7 +133,6 @@ Your account will probably not be activated in time, so you should immediately c
 
 ## Lecture: Unix, Linux, & the Command Line Interface (CLI)
 
-I have converted the ppt slides to a more screen-splitting friendly format here in GitHub.
 
 <details><summary>Introduction</summary>
 <p>
