@@ -70,19 +70,19 @@
 
   > If you **do not** see the output above, then clone the CSB repo by entering the following commands:
 
-	```bash
-		git clone https://github.com/CSB-book/CSB.git
-	``` 
+    ```bash
+        git clone https://github.com/CSB-book/CSB.git
+    ``` 
 
   > You should see the following output:
 
-	```bash
-	Cloning into 'CSB'...
-	remote: Enumerating objects: 1005, done.
-	remote: Total 1005 (delta 0), reused 0 (delta 0), pack-reused 1005 (from 1)
-	Receiving objects: 100% (1005/1005), 26.68 MiB | 7.74 MiB/s, done.
-	Resolving deltas: 100% (389/389), done.
-	```
+    ```bash
+    Cloning into 'CSB'...
+    remote: Enumerating objects: 1005, done.
+    remote: Total 1005 (delta 0), reused 0 (delta 0), pack-reused 1005 (from 1)
+    Receiving objects: 100% (1005/1005), 26.68 MiB | 7.74 MiB/s, done.
+    Resolving deltas: 100% (389/389), done.
+    ```
 
   > Goto Step 2 above.
 
@@ -102,9 +102,9 @@
     > * Complete the tasks listed in the [Accessing Launch Instructions](https://hprc.tamu.edu/kb/User-Guides/Launch/Access/#no-ssh-login)
 
  - [ ] Step 1. Open Terminal
-  
-  > Select `launch Shell Access`
-  
+
+    > Select `launch Shell Access`
+
  </p>
 </details>
 
