@@ -93,7 +93,7 @@
 
 <details><summary>ChromeOS, iOS, Android</summary>
 <p>
- 
+
  - [ ] Step 0. [Log Into Launch HPC](https://portal-launch.hprc.tamu.edu/)
 
     > Use the following [link](https://portal-launch.hprc.tamu.edu/) to log in 
