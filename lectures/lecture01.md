@@ -550,8 +550,7 @@ ls -l
 ls -ltrh
 ```
 
-_Note:  single letter options can typically be combined together, `-l –t –r -h`  =  `-ltrh`_
-
+&#x1F4A1; TIP!: _single letter options can typically be combined together, `-l –t –r -h`  =  `-ltrh`_
 
 The command `ls -ltrh` outputs a lot of information to the screen.  It can be overwhelming at first, but it is just basic information about your files and directories in the `pwd`
 
@@ -609,13 +608,7 @@ It is best not to used spaces in dir and file names, but you can wrap file names
 </details>
 
 
-<details><summary>Mind Expander 01.01</summary>
-<p>
-
 ### [Mind Expander 01.01](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUM1FFUUZLT01LR0ZGODU2WVNSV1c0NEpWMi4u)
-
-</p>
-</details>
 
 
 <details><summary>Commands to Remember</summary>
@@ -863,13 +856,8 @@ _Do not forget to use `Tab` key to autocomplete file names and prevent spelling 
 </details>
 
 
-<details><summary>Mind Expander 01.02</summary>
-<p>
-
 ### [Mind Expander 01.02](https://forms.office.com/r/M9XnBAtiUw)
 
-</p>
-</details>
 
 ---
 
