@@ -57,7 +57,7 @@ You are expected to start each lecture with your terminal window open and ready 
 
 ## Lecture: Unix, Linux, & the Command Line Interface (CLI)
 
-For the online version of this course, I have converted the ppt slides to a more screen-splitting friendly format here in GitHub.
+I have converted the ppt slides to a more screen-splitting friendly format here in GitHub.
 
 <details><summary>Introduction</summary>
 <p>
