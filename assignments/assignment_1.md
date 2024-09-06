@@ -28,14 +28,14 @@
   > It's always a good idea to keep your apps in your terminal up to date. 
   
   > For Ubuntu (Linux), enter the following commands to load the newest versions of your apps
-  
+
   ```bash
   sudo apt update
   sudo apt upgrade
   ```
-  
+
   > For Mac (Homebrew), enter the following commands to load the newest versions of your apps
-  
+
   ```bash
   brew update
   brew upgrade
@@ -48,7 +48,7 @@
     ```bash
     # make sure you're in your home dir
     cd ~
-
+    
     # list the directories and files in the CSB dir to confirm it's in your home dir
     ls CSB
     ```
