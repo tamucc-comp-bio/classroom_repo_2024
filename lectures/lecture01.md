@@ -16,20 +16,18 @@
 <details><summary>Windows, Mac, Linux</summary>
 <p>
 
-<div style="border: 1px solid black; padding: 10px;">
-    <hr style="height: 0.1px; border: none; background-color: grey;">
+	<hr style="height: 0.1px; border: none; background-color: grey;">
 
-#### Step 0. Open Terminal
+	#### Step 0. Open Terminal
 
-Search for the terminal app and open it.  For Windows, make sure you are using Ubuntu.
+	Search for the terminal app and open it.  For Windows, make sure you are using Ubuntu.
 
-You should have already prepared your computer during Lecture 0.  If you did not then:  
+	You should have already prepared your computer during Lecture 0.  If you did not then:  
 
-* Complete the tasks listed in the [How to Set Up Your Computer for Computational Biology](https://github.com/tamucc-comp-bio/how_to/blob/main/howto_setup_computer.md), up to, but not including R and RStudio.
-   * If you are having difficulty installing ubuntu, use Launch if your account is activated.
+	* Complete the tasks listed in the [How to Set Up Your Computer for Computational Biology](https://github.com/tamucc-comp-bio/how_to/blob/main/howto_setup_computer.md), up to, but not including R and RStudio.
+	   * If you are having difficulty installing ubuntu, use Launch if your account is activated.
 
-    <hr style="height: 0.1px; border: none; background-color: grey;">
-</div>
+	<hr style="height: 0.1px; border: none; background-color: grey;">
 
 <hr style="height: 0.1px; border: none; background-color: black;">
 
