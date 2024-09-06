@@ -23,9 +23,9 @@
 
 - [ ] Step 0. Open Terminal
 
-Search for the terminal app and open it.  For Windows, make sure you are using Ubuntu.
+> Search for the terminal app and open it.  For Windows, make sure you are using Ubuntu.
 
-You should have already prepared your computer during Lecture 0.  If you did not then:  
+> You should have already prepared your computer during Lecture 0.  If you did not then:  
 
 * Complete the tasks listed in the [How to Set Up Your Computer for Computational Biology](https://github.com/tamucc-comp-bio/how_to/blob/main/howto_setup_computer.md), up to, but not including R and RStudio.
    * If you are having difficulty installing ubuntu, use Launch if your account is activated.
