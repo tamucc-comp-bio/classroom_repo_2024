@@ -16,7 +16,7 @@
 <details><summary>Windows, Mac, Linux</summary>
 <p>
 
-<hr style="height: 0.1px; border: none; background-color: black;">
+<hr style="height: 0.1px; border: none; background-color: grey;">
 
 #### Step 0. Open Terminal
 
@@ -27,7 +27,7 @@ You should have already prepared your computer during Lecture 0.  If you did not
 * Complete the tasks listed in the [How to Set Up Your Computer for Computational Biology](https://github.com/tamucc-comp-bio/how_to/blob/main/howto_setup_computer.md), up to, but not including R and RStudio.
    * If you are having difficulty installing ubuntu, use Launch if your account is activated.
 
-<hr style="height: 0.1px; border: none; background-color: black;">
+<hr style="height: 0.1px; border: none; background-color: grey;">
 
 <hr style="height: 0.1px; border: none; background-color: black;">
 
