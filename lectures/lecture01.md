@@ -19,8 +19,6 @@
 <details><summary>Windows, Mac, Linux</summary>
 <p>
 
-<hr style="height: 0.1px; border: none; background-color: grey;">
-
 - [ ] Step 0. Open Terminal
 
   > Search for the terminal app and open it.  For Windows, make sure you are using Ubuntu.
@@ -70,23 +68,23 @@
 
 - [ ] Step 3. If you didn't have the CSB Repo, clone it now
 
-If you **do not** see the output above, then clone the CSB repo by entering the following commands:
+  > If you **do not** see the output above, then clone the CSB repo by entering the following commands:
 
-```bash
-    git clone https://github.com/CSB-book/CSB.git
-``` 
+	```bash
+		git clone https://github.com/CSB-book/CSB.git
+	``` 
 
-You should see the following output:
+  > You should see the following output:
 
-```bash
-Cloning into 'CSB'...
-remote: Enumerating objects: 1005, done.
-remote: Total 1005 (delta 0), reused 0 (delta 0), pack-reused 1005 (from 1)
-Receiving objects: 100% (1005/1005), 26.68 MiB | 7.74 MiB/s, done.
-Resolving deltas: 100% (389/389), done.
-```
+	```bash
+	Cloning into 'CSB'...
+	remote: Enumerating objects: 1005, done.
+	remote: Total 1005 (delta 0), reused 0 (delta 0), pack-reused 1005 (from 1)
+	Receiving objects: 100% (1005/1005), 26.68 MiB | 7.74 MiB/s, done.
+	Resolving deltas: 100% (389/389), done.
+	```
 
-Goto Step 2 above.
+  > Goto Step 2 above.
 
 <hr style="height: 0.1px; border: none; background-color: black;">
 
