@@ -1,7 +1,5 @@
 # Week01 UNIX
 
----
-
 > [!IMPORTANT]
 > [Assignment 0](../assignments/assignment_0.md) is due at the beginning of this lecture
 
@@ -23,7 +21,7 @@
 
 <hr style="height: 0.1px; border: none; background-color: grey;">
 
-#### <ins>Step 0. Open Terminal</ins>
+- [ ] Step 0. Open Terminal
 
 Search for the terminal app and open it.  For Windows, make sure you are using Ubuntu.
 
