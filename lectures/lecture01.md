@@ -479,17 +479,23 @@ _Note: `ctrl + c` will stop a command if it is taking too long to complete_
 
 ### Getting Help with `bash`
 
-#### 1. Use a Large Language Model (LLM) such as [OpenAI's GPT 3.5 or 4](https://chat.openai.com/) 
+#### 1. Use a Large Language Model (LLM) such as [OpenAI's ChatGPT](https://chat.openai.com/) (my favorite), or [Google Gemini](https://gemini.google.com/app); or [Anthropic Claude](https://www.anthropic.com/claude)
 
 Example command prompt: `How do I <english description of what you want to do> with bash?`
 
-Do not be afraid to modify and try different english descriptions if you do not succeed in the first prompt.  You do need to tell the LLM you are using bash.
+  * Do not be afraid to modify and try different english descriptions if you do not succeed in the first prompt.  You do need to tell the LLM you are using bash.
+
+  * Treat the LLM as you would your assistant or your employee
+  
+  * Make sure you provide the LLM with enough information to answer the question
+  
+  * Note that creating an account may give you access to a more powerful LLM
 
 #### 2. Use an internet search with your favorite search engine if you know what you want to do, but do not know the command
 
 Example search terms: `bash <english description of what you want to do>`
 
-Do not be afraid to modify and try different english descriptions if you do not succeed in the first search
+  * Do not be afraid to modify and try different english descriptions if you do not succeed in the first search
 
 #### 3. Use the `man` command if you know the command but are not sure of the options and arguments
 
