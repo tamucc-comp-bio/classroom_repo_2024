@@ -12,6 +12,8 @@
 
 ## Computer Preparation
 
+> [!IMPORTANT]
+> Make sure your computer is ready for today's lecture
 
 <details><summary>Windows, Mac, Linux</summary>
 <p>
