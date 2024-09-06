@@ -198,9 +198,9 @@
 
 * One program ([command](https://en.wikipedia.org/wiki/List_of_Unix_commands)) does one thing
 
-* All programs accept input as a text stream and output a modified [text stream](https://en.wikipedia.org/wiki/Standard_streams)
+* All programs accept input as a [text stream](https://en.wikipedia.org/wiki/Standard_streams) and output a modified text stream
 
-* Programs can be linked together into serial [pipelines](https://en.wikipedia.org/wiki/Pipeline_(Unix)) to achieve complex results
+* Programs can be linked together into serial [pipelines](https://en.wikipedia.org/wiki/Pipeline_(Unix)) to apply complex modifications to the text stream without saving to disk
 
 ---
 
@@ -255,7 +255,8 @@ Ubuntu Terminal
 
 ![](Week01_files/ubuntu_terminal.png)
 
-The CLI forces you to start memorizing where your files are and what they are named. This causes 95% of the difficulties in learning CLI, so start memorizing to your directory structure.  It is also a good idea to be deliberate and organized when creating new directories and files.
+> [!IMPORTANT]
+> The CLI forces you to start memorizing where your files are and what they are named. This causes 95% of the difficulties in learning CLI, so start memorizing your directory structure.  It is also a good idea to be deliberate and organized when creating new directories and files.
 
 We will use [code blocks](https://en.wikipedia.org/wiki/Block_(programming)) to let you know when and what to type into your CLI. Here, please enter the commands `pwd` and then `ls` into your terminal.
 
