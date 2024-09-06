@@ -270,9 +270,12 @@ ls
 
 <p>:light_bulb:</p>
 
-<p>&#x1F4A1;</p>
+&#x1F4A1; Tip!
 
->[!TIP]
+<p>&#x1F4A1; Tip!</p>
+> clear the screen with `ctrl + L` keystroke
+
+> <p>&#x1F4A1; Tip!</p>
 > clear the screen with `ctrl + L` keystroke
 
 ---
