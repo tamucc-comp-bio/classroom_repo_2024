@@ -2,7 +2,8 @@
 
 ---
 
-### [Assignment 0](../assignments/assignment_0.md) is due at the beginning of this lecture
+> [!IMPORTANT]
+> [Assignment 0](../assignments/assignment_0.md) is due at the beginning of this lecture
 
 ## [Lecture Stream]()
 
