@@ -98,6 +98,7 @@ Your account will probably not be activated in time, so you should immediately c
  </p>
 </details>
 
+---
 
 ## Text Book Vs. Lecture Slides
 
@@ -109,6 +110,7 @@ Your account will probably not be activated in time, so you should immediately c
 </p>
 </details>
 
+---
 
 ## Lecture: Unix, Linux, & the Command Line Interface (CLI)
 
