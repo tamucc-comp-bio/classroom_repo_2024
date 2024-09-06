@@ -268,14 +268,9 @@ ls
 
 > `pwd` lists the present working directory, `ls` lists the contents of the present working directory
 
-<p>:light_bulb:</p>
-
 &#x1F4A1; Tip!
 
-<p>&#x1F4A1; Tip!</p>
-> clear the screen with `ctrl + L` keystroke
-
-> <p>&#x1F4A1; Tip!</p>
+> <p>&#x1F4A1; <span style="color:green">Tip!</span></p>
 > clear the screen with `ctrl + L` keystroke
 
 ---
