@@ -18,7 +18,7 @@
 
 <hr style="height: 0.1px; border: none; background-color: grey;">
 
-#### <u>Step 0. Open Terminal</u>
+#### <ins>Step 0. Open Terminal</ins>
 
 Search for the terminal app and open it.  For Windows, make sure you are using Ubuntu.
 
