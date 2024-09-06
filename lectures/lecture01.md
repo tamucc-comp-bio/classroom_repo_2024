@@ -255,11 +255,9 @@ Ubuntu Terminal
 
 ![](Week01_files/ubuntu_terminal.png)
 
-> [!IMPORTANT]
-> The CLI forces you to start memorizing where your files are and what they are named. This causes 95% of the difficulties in learning CLI, so start memorizing your directory structure.  It is also a good idea to be deliberate and organized when creating new directories and files.
+&#x2757 IMPORTANT!: The CLI forces you to start memorizing where your files are and what they are named. This causes 95% of the difficulties in learning CLI, so start memorizing your directory structure.  It is also a good idea to be deliberate and organized when creating new directories and files.
 
-> [!TIP]
-> We will use [code blocks](https://en.wikipedia.org/wiki/Block_(programming)) to let you know when and what to type into your CLI. Here, please enter the commands `pwd` and then `ls` into your terminal.
+&#x1F4A1; TIP!: We will use [code blocks](https://en.wikipedia.org/wiki/Block_(programming)) to let you know when and what to type into your CLI. Here, please enter the commands `pwd` and then `ls` into your terminal.
 
 ```bash
 pwd
@@ -268,10 +266,7 @@ ls
 
 > `pwd` lists the present working directory, `ls` lists the contents of the present working directory
 
-&#x1F4A1; <span style="color:green">Tip!</span>
-
-> <p>&#x1F4A1; <span style="color:green">Tip!</span></p>
-> clear the screen with `ctrl + L` keystroke
+&#x1F4A1; TIP!: clear the screen with `ctrl + L` keystroke
 
 ---
 
