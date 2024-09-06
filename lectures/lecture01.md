@@ -268,7 +268,7 @@ ls
 
 > `pwd` lists the present working directory, `ls` lists the contents of the present working directory
 
-&#x1F4A1; Tip!
+&#x1F4A1; <span style="color:green">Tip!</span>
 
 > <p>&#x1F4A1; <span style="color:green">Tip!</span></p>
 > clear the screen with `ctrl + L` keystroke
