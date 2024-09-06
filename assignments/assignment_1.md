@@ -186,7 +186,7 @@ Complete the [Finding Things](https://swcarpentry.github.io/shell-novice/07-find
 <details><summary>Advanced `bash` Commands</summary>
 <p>
 
-Work through the following tutorial. Note the instructions to clone the CSB repo in the [Computer Preparation instructions](#computer-preparation) above
+Work through the following tutorial. Note the instructions to clone the CSB repo in the Computer Preparation instructions above
 
 
 ---
@@ -245,9 +245,9 @@ $ rm filelist.txt
 
 ### Piping Text Streams From One Command to the Next with `|`
 
-![Common Operating Systems](Week01_files/pipeline.png)
+![Common Operating Systems](../lectures/Week01_files/pipeline.png)
 
-![Common Operating Systems](Week01_files/pipeline2.png)
+![Common Operating Systems](../lectures/Week01_files/pipeline2.png)
 
 A pipe `|` passes the [stdout](https://en.wikipedia.org/wiki/Standard_streams#Standard_output_(stdout)) from one command to the [stdin](https://en.wikipedia.org/wiki/Standard_streams#Standard_input_(stdin)) of another
 
