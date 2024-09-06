@@ -266,11 +266,11 @@ pwd
 ls
 ```
 
-`pwd` lists the present working directory
+> `pwd` lists the present working directory
+> `ls` lists the contents of the present working directory
 
-`ls` lists the contents of the present working directory
-
-Pro tip: clear the screen with `ctrl + L` keystroke
+> [!TIP]
+> clear the screen with `ctrl + L` keystroke
 
 ---
 
