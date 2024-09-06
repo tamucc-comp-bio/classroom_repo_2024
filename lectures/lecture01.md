@@ -150,20 +150,20 @@
 
 #### 1. Graphical User Interface ([GUI](https://en.wikipedia.org/wiki/Graphical_user_interface))
 
-    A mouse or your finger is used to interface with images on a screen.
+  A mouse or your finger is used to interface with images on a screen.
 
-    ![](Week01_files/mouse.png)
+  ![](Week01_files/mouse.png)
 
-    ![](Week01_files/gui.png)
+  ![](Week01_files/gui.png)
 
 
 #### 2. Command-line Interface ([CLI](https://en.wikipedia.org/wiki/Command-line_interface))
 
-    A keyboard is used to type commands into the computer and computer gives feedback on the screen.
+  A keyboard is used to type commands into the computer and computer gives feedback on the screen.
 
-    ![](Week01_files/keyboard.png)
+  ![](Week01_files/keyboard.png)
 
-    ![](Week01_files/cli.png)
+  ![](Week01_files/cli.png)
 
 ---
 
