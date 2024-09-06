@@ -30,33 +30,25 @@
   > * Complete the tasks listed in the [How to Set Up Your Computer for Computational Biology](https://github.com/tamucc-comp-bio/how_to/blob/main/howto_setup_computer.md), up to, but not including R and RStudio.
   >    * If you are having difficulty installing ubuntu, use Launch if your account is activated.
 
-<hr style="height: 0.1px; border: none; background-color: grey;">
+- [ ] Step 1. Update Your apps
 
-<hr style="height: 0.1px; border: none; background-color: black;">
-
-#### Step 1. Update Your apps
-
-It's always a good idea to keep your apps in your terminal up to date. 
+  > It's always a good idea to keep your apps in your terminal up to date. 
  
-For Ubuntu (Linux), enter the following commands to load the newest versions of your apps
+  > For Ubuntu (Linux), enter the following commands to load the newest versions of your apps
 
 ```bash
 sudo apt update
 sudo apt upgrade
 ```
 
-For Mac (Homebrew), enter the following commands to load the newest versions of your apps
+  > For Mac (Homebrew), enter the following commands to load the newest versions of your apps
 
 ```bash
 brew update
 brew upgrade
 ```
 
-<hr style="height: 0.1px; border: none; background-color: black;">
-
-<hr style="height: 0.1px; border: none; background-color: black;">
-
-#### Step 2. Confirm you have cloned the CSB (Computing Skills For Biologists) Repo into your home dir
+- [ ] Step 2. Confirm you have cloned the CSB (Computing Skills For Biologists) Repo into your home dir
 
 In your terminal, enter the following commands:
 
@@ -80,7 +72,7 @@ If you see the output above, you're done! Goto the next section.
 
 <hr style="height: 0.1px; border: none; background-color: black;">
 
-#### Step 3. If you didn't have the CSB Repo, clone it now
+- [ ] Step 3. If you didn't have the CSB Repo, clone it now
 
 If you **do not** see the output above, then clone the CSB repo by entering the following commands:
 
