@@ -303,9 +303,7 @@ ls /tmp
 
 `/home/<your-username>` (Linux) `/Users/<your-username>` (Mac) or is the directory where you are expected to create and maintain your directories and files.
 
-&#x1F4A1; TIP!: `<your-username>` should be replaced with your personal username.  don't include the `<>`
-
-  * Note that `<username>` is a place holder for your username on your computer
+  &#x1F4A1; TIP!: `<your-username>` should be replaced with your personal username.  don't include the `<>`
   
   * Starting directory upon login
 
