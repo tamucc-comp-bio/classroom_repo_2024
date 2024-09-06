@@ -255,7 +255,7 @@ Ubuntu Terminal
 
 ![](Week01_files/ubuntu_terminal.png)
 
-&#x2757 IMPORTANT!: The CLI forces you to start memorizing where your files are and what they are named. This causes 95% of the difficulties in learning CLI, so start memorizing your directory structure.  It is also a good idea to be deliberate and organized when creating new directories and files.
+&#x2757; IMPORTANT!: The CLI forces you to start memorizing where your files are and what they are named. This causes 95% of the difficulties in learning CLI, so start memorizing your directory structure.  It is also a good idea to be deliberate and organized when creating new directories and files.
 
 &#x1F4A1; TIP!: We will use [code blocks](https://en.wikipedia.org/wiki/Block_(programming)) to let you know when and what to type into your CLI. Here, please enter the commands `pwd` and then `ls` into your terminal.
 
@@ -301,7 +301,9 @@ ls /tmp
 
 ### Your Home Directory
 
-`/home/<username>` is the directory where you are expected to create and maintain your directories and files.
+`/home/<your-username>` (Linux) `/Users/<your-username>` (Mac) or is the directory where you are expected to create and maintain your directories and files.
+
+&#x1F4A1; TIP!: `<your-username>` should be replaced with your personal username.  don't include the `<>`
 
   * Note that `<username>` is a place holder for your username on your computer
   
