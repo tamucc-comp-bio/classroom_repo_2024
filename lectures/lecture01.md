@@ -33,24 +33,24 @@
 - [ ] Step 1. Update Your apps
 
   > It's always a good idea to keep your apps in your terminal up to date. 
- 
+  
   > For Ubuntu (Linux), enter the following commands to load the newest versions of your apps
-
-```bash
-sudo apt update
-sudo apt upgrade
-```
-
+  
+  ```bash
+  sudo apt update
+  sudo apt upgrade
+  ```
+  
   > For Mac (Homebrew), enter the following commands to load the newest versions of your apps
-
-```bash
-brew update
-brew upgrade
-```
+  
+  ```bash
+  brew update
+  brew upgrade
+  ```
 
 - [ ] Step 2. Confirm you have cloned the CSB (Computing Skills For Biologists) Repo into your home dir
 
-In your terminal, enter the following commands:
+  > In your terminal, enter the following commands:
 
 ```bash
 # make sure you're in your home dir
@@ -60,17 +60,13 @@ cd ~
 ls CSB
 ```
 
-You should see the following output because we cloned the CSB Repo to your home dir in [Lecture 0](https://github.com/tamucc-comp-bio/classroom_repo_2024/blob/master/lectures/lecture00.md).  
+  > You should see the following output because we cloned the CSB Repo to your home dir in [Lecture 0](https://github.com/tamucc-comp-bio/classroom_repo_2024/blob/master/lectures/lecture00.md).  
 
 ```bash
 LICENSE  README.md  data_wrangling  git  good_code  latex  python  r  regex  scientific  sql  unix
 ```
 
-If you see the output above, you're done! Goto the next section.
-
-<hr style="height: 0.1px; border: none; background-color: black;">
-
-<hr style="height: 0.1px; border: none; background-color: black;">
+  > If you see the output above, you're done! Goto the next section.
 
 - [ ] Step 3. If you didn't have the CSB Repo, clone it now
 
