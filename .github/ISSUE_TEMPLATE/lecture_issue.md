@@ -1,5 +1,5 @@
 ---
-name: Lecture Materials Issue Report
+name: Lecture Materials Issue
 about: Submit a problem you're facing with lecture materials
 title: "Lecture <Insert Lecture Num>: <Insert Section Title or Command or Brief Description> "
 labels: question
