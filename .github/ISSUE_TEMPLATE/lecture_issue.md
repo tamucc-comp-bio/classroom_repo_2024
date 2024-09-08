@@ -10,7 +10,7 @@ assignees: ''
 > This is a markdown formatted template. Click preview to render.
 > Don't delete the headings - lines beginning with #.
 > check all relevant boxes by replacing [ ] with [x].
-> Replace text as necessary to describe your issue.
+> Replace text as necessary to describe your issue. Be sure to replace the `<>` too.
 > After submitting, it is possible to edit this by clicking the `...` in the upper right corner of this box.
 > [GitHub MarkDown Guide](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 
@@ -22,8 +22,8 @@ assignees: ''
 Lecture URL: <For example, `https://github.com/tamucc-comp-bio/classroom_repo_2024/blob/master/lectures/lecture01.md`>
 
 ### Which section of the lecture are you working on?
-Section title: <Insert the name of the collapasable section>
-Slide title: <Insert the name of the "slide" - typically this is the heading just below a line seperator>
+Section title: <Insert the name of the collapasible section>
+Slide title: <Insert the name of the "slide" - typically this is the heading just below a line separator>
 
 ### Describe the Issue
 A clear and concise description of the problem.
