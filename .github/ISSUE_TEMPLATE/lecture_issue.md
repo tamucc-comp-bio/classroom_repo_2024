@@ -1,5 +1,5 @@
 ---
-name: Lecture Materials Issue
+name: Lecture Issue
 about: Submit a problem you're facing with the lecture materials
 title: "Assignment <Insert Assignment Num>: <Insert Brief Description>"
 labels: question
