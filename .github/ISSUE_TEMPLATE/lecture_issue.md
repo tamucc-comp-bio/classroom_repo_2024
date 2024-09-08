@@ -1,7 +1,7 @@
 ---
 name: Lecture Materials Issue
 about: Submit a problem you're facing with lecture materials
-title: "Lecture <Insert Lecture Num>: <Insert Section Title or Command or Brief Description> "
+title: "Lecture <Insert Lecture Num>: <Insert Brief Description> "
 labels: question
 assignees: ''
 ---
@@ -16,7 +16,6 @@ assignees: ''
 
 ### Before Submitting
 - [ ] I have searched through all **open** and **closed** issues to ensure this issue has not been addressed.
-
 - [ ] I have tried to use a LLM (e.g. ChatGPT) to resolve
 
 ### Which lecture are you working on?
