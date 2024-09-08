@@ -7,7 +7,7 @@ assignees: ''
 ---
 
 > [!NOTE]
-> This is a markdown formatted template.
+> This is a markdown formatted template. Click preview to render.
 > Don't delete the headings - lines beginning with #.
 > check all relevant boxes by replacing [ ] with [x].
 > Replace text as necessary to describe your issue.
