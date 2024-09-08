@@ -4,7 +4,7 @@
 > [Assignment 0](../assignments/assignment_0.md) is due at the beginning of this lecture
 
 > [!NOTE]
-> The [Lecture Stream](https://tamucc.zoom.us/rec/share/UQb7AOLp98Jf2AK4TpVBCS4WDkqTVTou1YRBltp6DmGmg5q-UQj8QQOfgY4xH5rF.wCD5QvPeyB0h2wio) will be updated following lecture
+> The [Lecture Stream](https://tamucc.zoom.us/rec/share/UQb7AOLp98Jf2AK4TpVBCS4WDkqTVTou1YRBltp6DmGmg5q-UQj8QQOfgY4xH5rF.wCD5QvPeyB0h2wio) will be updated following lecture.
 > Passcode: f9$KsB%B
 
 > [!NOTE]
