@@ -41,9 +41,6 @@ AND/OR
 <copy and paste your terminal input and output here. don't delete the ``` above and below this line, they create a code box>
 ```
 
-### Expected Behavior
-A clear and concise description of what you expected to happen.
-
 ### Screenshots
 If applicable, add screenshots to help explain your issue.
 
