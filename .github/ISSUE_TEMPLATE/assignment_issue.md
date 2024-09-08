@@ -1,7 +1,7 @@
 ---
-name: Lecture Materials Issue
-about: Submit a problem you're facing with the lecture materials
-title: "Assignment <Insert Assignment Num>: <Insert Brief Description>"
+name: Assignment Issue
+about: Submit a problem you're facing with an assignment
+title: "Assignment <Insert Assignment Num>: <Insert Brief Description> "
 labels: question
 assignees: ''
 ---
@@ -21,13 +21,13 @@ assignees: ''
 
 
 ### Which assignment are you working on?
-Lecture URL: <For example, `https://github.com/tamucc-comp-bio/classroom_repo_2024/blob/master/lectures/lecture01.md`>
-Lecture Title: <copy and paste title of lecture>
+Assignment URL: <For example, `https://github.com/tamucc-comp-bio/classroom_repo_2024/blob/master/lectures/lecture01.md`>
+Assignment Title: <copy and paste title of assignment>
 
 
 ### Which part of the assignment are you working on?
-Section title: <Insert the name of the collapsible section>
-Slide title: <Insert the name of the "slide" - typically this is the heading just below a line separator>
+Describe which section, step, etc... you are working on
+
 
 ### Describe the Issue
 A clear and concise description of the problem.
