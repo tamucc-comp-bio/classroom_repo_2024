@@ -115,12 +115,14 @@ If you did everything correctly, then the directory structure of your `shell-les
 
 You probably need to install `tree` as follows:
 
-```
+```bash
 #mac
 brew update
 brew upgrade
 brew install tree
+```
 
+```bash
 #ubuntu
 sudo apt update
 sudo apt upgrade
