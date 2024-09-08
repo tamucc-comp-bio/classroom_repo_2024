@@ -12,7 +12,6 @@ assignees: ''
 > check all relevant boxes by replacing [ ] with [x].
 > Replace text as necessary to describe your issue. Be sure to replace the `<>` too.
 > After submitting, it is possible to edit this by clicking the `...` in the upper right corner of this box.
-> [GitHub MarkDown Guide](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 
 ### Before Submitting
 - [ ] I have read the note above.
