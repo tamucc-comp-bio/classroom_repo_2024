@@ -7,7 +7,7 @@ assignees: ''
 ---
 
 > [!NOTE]
-> This is a markdown formatted template. Click preview to render.
+> This is a markdown formatted template. Click the `preview` tab above to render.
 > Don't delete the headings - lines beginning with #.
 > check all relevant boxes by replacing [ ] with [x].
 > Replace text as necessary to describe your issue. Be sure to replace the `<>` too.
@@ -15,6 +15,7 @@ assignees: ''
 > [GitHub MarkDown Guide](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 
 ### Before Submitting
+- [ ] I have read the note above.
 - [ ] I have searched through all **open** and **closed** issues to ensure this issue has not been addressed.
 - [ ] I have tried to use a LLM (e.g. ChatGPT) to resolve
 
@@ -22,7 +23,7 @@ assignees: ''
 Lecture URL: <For example, `https://github.com/tamucc-comp-bio/classroom_repo_2024/blob/master/lectures/lecture01.md`>
 
 ### Which section of the lecture are you working on?
-Section title: <Insert the name of the collapasible section>
+Section title: <Insert the name of the collapsible section>
 Slide title: <Insert the name of the "slide" - typically this is the heading just below a line separator>
 
 ### Describe the Issue
