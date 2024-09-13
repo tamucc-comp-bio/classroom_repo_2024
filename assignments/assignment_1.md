@@ -197,6 +197,7 @@ Work through the following tutorial. Note the instructions to clone the CSB repo
 # let’s start by moving to our sandbox in the unix dir of the CSB repo
 # you must have cloned the CSB repo to your home dir for this path to work
 $ cd ~/CSB/unix/sandbox
+$ pwd
 ```
 
 After running `cd ~/CSB/unix/sandbox`, your present working directory (`pwd`) is `sandbox`.  If the `cd ~/CSB/unix/sandbox` failed, then you should consult the [Computer Preparation Section](#computer-preparation) above
@@ -242,10 +243,19 @@ A machine provides you with thousands of data files. There’s so many, it is fr
 
 We will use the dir `unix/data/Saavedra2013` as an example of a directory with many files
 
-```bash
-# start by moving to our sandbox if you are not already there
-$ cd ~/CSB/unix/sandbox
+```
+CSB/unix
+├── data
+│   ├── Saavedra2013
+│   └── miRNA
+├── installation
+├── **sandbox**  #YOU ARE HERE!
+└── solutions
+```
 
+&#x1F4A1; TIP! _To specify `unix/data/Saavedra2013` from `unix/sandbox` you can use the relative path `../data/Saavedra2013`_
+
+```bash
 # save file names to file in pwd
 $ ls ../data/Saavedra2013 > filelist.txt
 
