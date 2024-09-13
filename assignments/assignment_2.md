@@ -84,7 +84,7 @@ You may work in groups, but each person must fill out the online answer form.
 
 The exercises in the online forms closely follow those in the book.  I do make minor modifications and provide tips in the online form.  
 
-&#x2757; !IMPORTANT _To ensure that your work is saved, **I highly recommend that you first record your answers in a text document in either Notepad++ or BBedit and save them to your computer**.  For an excellently formatted example, see the solutions provided by the book in `CSB/unix/solutions`._ 
+&#x2757; IMPORTANT  _To ensure that your work is saved, **I highly recommend that you first record your answers in a text document in either Notepad++ or BBedit and save them to your computer**.  For an excellently formatted example, see the solutions provided by the book in `CSB/unix/solutions`._ 
 
 * [Exercise 1.10.2 Hormone Levels in Baboons](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUQldJQTVHMTlYMFVYTkhZSDBZR1A0Q1E2Ny4u)
 
@@ -100,9 +100,9 @@ The exercises in the online forms closely follow those in the book.  I do make m
 
 Complete Exercise 1.10.4 Data Explorer (data from Buzzard *et al.*, 2016), and submit script by updating your repository (see below). You may work in groups but each student must submit their own work.
 
-[Click on this Link to Initiate this Assignment](https://classroom.github.com/a/1YPEsAVJ)
+[Click on this Link to Initiate this Assignment](https://classroom.github.com/a/bpGFIcSJ)
 
-Please try to at least click the link and let me know if you run into any problems getting the assignment or cloning the repo because Assignment 3 will be issued this way.  For those of you that do this, I'll extend the due date for another week ([let's see if anybody reads this](https://forms.office.com/r/SyUUFzLLgg)).
+Please try to at least click the link at the end of this paragraph and let me know if you run into any problems getting the assignment or cloning the repo because Assignment 3 will be issued this way.  For those of you that do this, I'll extend the due date for another week ([let's see if anybody reads this](https://forms.office.com/r/SyUUFzLLgg)).
 
 Hints:
 
