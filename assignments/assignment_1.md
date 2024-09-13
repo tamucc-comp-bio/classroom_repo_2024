@@ -191,7 +191,7 @@ Work through the following tutorial. Note the instructions to clone the CSB repo
 
 ---
 
-### Redirection of output ([stdout](https://en.wikipedia.org/wiki/Standard_streams#Standard_output_(stdout))) to file `[command] > filename`, Append [stdout](https://en.wikipedia.org/wiki/Standard_streams#Standard_output_(stdout)) to file `[command] >> filename`, Redirect contents of file to [stdin](https://en.wikipedia.org/wiki/Standard_streams#Standard_input_(stdin)) `[command] < filename` 
+### Move the the `CSB/unix/sandbox` directory
 
 ```bash
 # let’s start by moving to our sandbox in the unix dir of the CSB repo
@@ -210,6 +210,10 @@ CSB/unix
 ├── **sandbox**  #YOU SHOULD BE HERE!
 └── solutions
 ```
+
+---
+
+### Redirection of output ([stdout](https://en.wikipedia.org/wiki/Standard_streams#Standard_output_(stdout))) to file `[command] > filename`, Append [stdout](https://en.wikipedia.org/wiki/Standard_streams#Standard_output_(stdout)) to file `[command] >> filename`, Redirect contents of file to [stdin](https://en.wikipedia.org/wiki/Standard_streams#Standard_input_(stdin)) `[command] < filename` 
 
 ```
 # print text to screen, then print to file, then print file to screen
