@@ -251,13 +251,24 @@ $ rm filelist.txt
 
 A pipe `|` passes the [stdout](https://en.wikipedia.org/wiki/Standard_streams#Standard_output_(stdout)) from one command to the [stdin](https://en.wikipedia.org/wiki/Standard_streams#Standard_input_(stdin)) of another
 
-&#x2753; QUESTION _How many files are there?_
+&#x2753; QUESTION _How many files are there in `CSB/unix/data/Saavedra2013`?_
+
+```
+CSB/unix
+├── data
+│   ├── Saavedra2013
+│   └── miRNA
+├── installation
+├── sandbox
+│   └── Papers and reviews
+└── solutions
+```
 
 ```bash
 # list file names
 $ ls ../data/Saavedra2013
 
-# list file names and pipe into wc
+# list file names and pipe into wc to return the number of files
 $ ls ../data/Saavedra2013 | wc –l
 59
 
