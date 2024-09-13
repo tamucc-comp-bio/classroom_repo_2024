@@ -602,9 +602,9 @@ $ cut -d ";" -f2-6 ../data/Pacifici2013_data.csv | tr ";" " " | tail -n+2 | sort
 
 &#x1F4A1; _`\` is the "[escape character](https://en.wikipedia.org/wiki/Escape_character)".  The character following the `\` has an alternate meaning._
 
-    &#x1F4A1; _`t` is the letter "t", `\t` is a [metacharacter](https://en.wikipedia.org/wiki/Metacharacter) that symbolizes a tab_
+  &#x1F4A1; _`t` is the letter "t", `\t` is a [metacharacter](https://en.wikipedia.org/wiki/Metacharacter) that symbolizes a tab_
 
-    &#x1F4A1; _`n` is the letter "n", `\n` is a metacharacter that symbolizes the end of a line (aka line feed)_
+  &#x1F4A1; _`n` is the letter "n", `\n` is a metacharacter that symbolizes the end of a line (aka line feed)_
 
 ---
 
