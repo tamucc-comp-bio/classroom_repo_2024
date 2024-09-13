@@ -251,7 +251,7 @@ $ rm filelist.txt
 
 A pipe `|` passes the [stdout](https://en.wikipedia.org/wiki/Standard_streams#Standard_output_(stdout)) from one command to the [stdin](https://en.wikipedia.org/wiki/Standard_streams#Standard_input_(stdin)) of another
 
-How many files are there?
+&#x3F; QUESTION _How many files are there?_
 
 ```bash
 # list file names
