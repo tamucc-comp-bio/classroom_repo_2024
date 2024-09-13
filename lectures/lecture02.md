@@ -509,6 +509,8 @@ $ cut -d";" -f2 ../data/Pacifici2013_data.csv | tail -n +2 | sort | uniq -c | tr
 
 [Tidy Data (Wickham 2014)](../literature/Wickham_2014_Tidy_Data.pdf)
 
+![tidy-1](https://r4ds.hadley.nz/images/tidy-1.png)
+
 [Good enough practices (Wilson etal 2017)](../literature/Wilson_etal_2017_good_enough_practices_in_scientific_computing.pdf)
 
 </p>
@@ -558,7 +560,7 @@ abbbb
 
 ```
 
-_Note: `tr` does not accept a file as an argument, always use pipe `|` or redirect a file into `tr` (`tr " " "," < file.txt`)_
+&#x1F4A1; TIP! _`tr` does not accept a file as an argument, always use pipe `|` or redirect a file into `tr` (`tr " " "," < file.txt`)_
 
 ---
 
@@ -596,7 +598,7 @@ $ cut -d ";" -f2-6 ../data/Pacifici2013_data.csv | tr ";" " " | tail -n+2 | sort
 $ cut -d ";" -f2-6 ../data/Pacifici2013_data.csv | tr ";" " " | tail -n+2 | sort -nrk6 > BodyMass.csv
 ```
 
-_Note: in step 1, we use `tr` to replace semicolons `;` with "[line feeds](https://en.wikipedia.org/wiki/Newline)" `\n` to view one column header per line._
+&#x1F4A1; TIP! _in step 1, we use `tr` to replace semicolons `;` with "[line feeds](https://en.wikipedia.org/wiki/Newline)" `\n` to view one column header per line._
 
 _`\ ` is the "[escape character](https://en.wikipedia.org/wiki/Escape_character)".  What follows the `\ ` has an alternate meaning._
   * `t` is the letter "t", `\t` is a [metacharacter](https://en.wikipedia.org/wiki/Metacharacter) that symbolizes a tab
@@ -634,7 +636,7 @@ ls [ghm]*fasta
 
 ```
 
-_Note: in unix and linux, hidden files are marked by a "leading dot" `.`.  Try `ls -a` to see all files, including those that are hidden.  Wildcards will not return hidden files without being preceded by a `.` _
+&#x1F4A1; TIP! _in unix and linux, hidden files are marked by a "leading dot" `.`.  Try `ls -a` to see all files, including those that are hidden.  Wildcards will not return hidden files without being preceded by a `.` _
 
 ---
 
@@ -693,7 +695,7 @@ $ grep -r "Gorilla" ../data
 
 ```
 
-_Note: the `grep -c` option is very handy for counting and can negate the need for `wc -l` _
+&#x1F4A1; TIP! _the `grep -c` option is very handy for counting and can negate the need for `wc -l` _
 
 ---
 
@@ -1112,7 +1114,7 @@ Now that each command is on one line, we can reorganize the comments to occur im
 
 ![](Week02_files/nano_screen_4.png)
 
-_Note: `ctrl + k` will delete a line in `nano`_
+&#x1F4A1; TIP! _`ctrl + k` will delete a line in `nano`_
 
 
 ---
@@ -1135,7 +1137,7 @@ Let us make our script accept a path to the input file and a path to the output 
 
 Do not forget to save your work with `ctrl + o`.
 
-_Note: all variables are preceded by a `$`.  Avoid creating variables named 1, 2, etc because they could interfere with arguments read in from the command line._
+&#x1F4A1; TIP! _all variables are preceded by a `$`.  Avoid creating variables named 1, 2, etc because they could interfere with arguments read in from the command line._
 
 ---
 
@@ -1239,7 +1241,7 @@ $ for i in *.fasta
 
 ```
 
-_Note: When setting a variable equal to a value, don’t use a `$`. When calling the value held in the variable, use a `$`_
+&#x1F4A1; TIP! _When setting a variable equal to a value, don’t use a `$`. When calling the value held in the variable, use a `$`_
 
 ---
 
