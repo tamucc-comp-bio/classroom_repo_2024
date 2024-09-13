@@ -354,7 +354,7 @@ Row 2 Column 1\tRow 2 Column 2\tRow 2 Column 3
 Row 3 Column 1\tRow 3 Column 2\tRow 3 Column 3
 Row 4 Column 1\tRow 4 Column 2\tRow 4 Column 3
 ```
-&#x26A0; CAUTION! _Do not type in these code blocks.  They are here to show you TSV and CSV formatting_
+
 CSV
 ```
 Column 1 Header, Column 2 Header, Column 3 Header
@@ -363,7 +363,7 @@ Row 2 Column 1, Row 2 Column 2, Row 2 Column 3
 Row 3 Column 1, Row 3 Column 2, Row 3 Column 3
 Row 4 Column 1, Row 4 Column 2, Row 4 Column 3
 ```
-&#x26A0; CAUTION! _Do not type in these code blocks.  They are here to show you TSV and CSV formatting_
+
 ---
 
 
@@ -382,7 +382,7 @@ $ cat ../data/Pacifici2013_data.csv | tr ";" "\t" | less -S
 
 ```
 
-_`tr` is an abbreviation for translate_
+&#x1F4A1; _`tr` is an abbreviation for translate_
 
 ---
 
@@ -407,7 +407,7 @@ $ head -n 1 Pacifici2013_data.csv | cut -d ";" -f 1
 
 ```
 
-_Note: cut assumes tab delimited files.  If a different delimiter is used in the file, the `-d` option is used to specify the delimiter.  It is very easy to mistake spaces for tabs, and that will make `cut` do odd things with your data if you do not set `-d " "`_
+&#x1F4A1; _`cut` assumes tab delimited files.  If a different delimiter is used in the file, the `-d` option is used to specify the delimiter.  It is very easy to mistake spaces for tabs, and that will make `cut` do odd things with your data if you do not set `-d " "`_
 
 ---
 
