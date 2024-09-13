@@ -443,8 +443,9 @@ $ cut -d";" -f2 ../data/Pacifici2013_data.csv | tail -n +2 | sort | uniq -c | tr
 </details>
 
 
-[Software Carpentry, The Unix Shell: Pipes & Filters](https://swcarpentry.github.io/shell-novice/04-pipefilter.html) tutorial on software carpentry
+[Software Carpentry, The Unix Shell: Pipes & Filters](https://swcarpentry.github.io/shell-novice/04-pipefilter.html) 
 
+[Software Carpentry, The Unix Shell: Finding Things](https://swcarpentry.github.io/shell-novice/07-find.html)
 
 <details><summary>Mind Expander & Exercise Review</summary>
 <p>
