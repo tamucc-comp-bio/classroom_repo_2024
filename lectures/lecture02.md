@@ -608,7 +608,11 @@ $ cut -d ";" -f2-6 ../data/Pacifici2013_data.csv | tr ";" " " | tail -n+2 | sort
 
 ---
 
-### [Wildcards](https://en.wikipedia.org/wiki/Wildcard_character) are Symbols that Represent Multiple Characters
+### [Glob Patterns](https://en.wikipedia.org/wiki/Glob_(programming)) with [Wildcard Characters](https://en.wikipedia.org/wiki/Wildcard_character)
+
+[Glob patterns](https://en.wikipedia.org/wiki/Glob_(programming)) are used to specify groups of directories and files based on common naming.
+
+[Wildcards](https://en.wikipedia.org/wiki/Wildcard_character) are special characters that represent multiple characters simultaneously
 
 `*` Matches zero or more characters, except "leading dot"
 
