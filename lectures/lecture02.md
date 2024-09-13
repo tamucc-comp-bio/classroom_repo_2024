@@ -701,7 +701,7 @@ $ grep -r "Gorilla" ../data
 
 ```
 
-&#x1F4A1; TIP! _the `grep -c` option is very handy for counting and can negate the need for `wc -l` _
+&#x1F4A1; TIP! _the `grep -c` option is very handy for counting and can negate the need for `wc -l`_
 
 ---
 
@@ -791,9 +791,10 @@ $ ls –l
 ### Super User Do to Execute Command as Administrator: `sudo <command> <options> <arguments>`
 
 * Use `sudo` when computer tells you no.
-* Make sure you are certain that you are correct and computer is wrong to not execute your command.
+
 * You will need sudo for installing software
 
+&#x26A0; CAUTION! _Make sure you are certain that you want to execute the command before using `sudo`, especially in combination with `rm`, `cp`, `mv`._
 
 ```bash
 $ apt update
