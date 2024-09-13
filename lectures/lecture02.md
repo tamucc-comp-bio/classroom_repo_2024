@@ -1,6 +1,14 @@
 # Week02 UNIX II
 
-### [Assignment 1](../assignments/assignment_1.md) is due at the beginning of this lecture
+> [!IMPORTANT]
+> [Assignment 1](../assignments/assignment_1.md) is due at the beginning of this lecture
+
+> [!NOTE]
+> The [Lecture Stream]() will be updated following lecture.
+> Passcode: 
+
+> [!NOTE]
+> I converted the [**Lecture_02 Slides**](Week02_files/Lecture02_WelcomeToTheMatrix.pdf)  to a more screen-splitting friendly format here in GitHub.
 
 ### [Lecture Stream]()
 
@@ -122,8 +130,6 @@ After you log into the class and get your computer set up, please complete the q
 
 
 ## Review `assignment_01` Due Today 
-
-I converted the [**Lecture_02 Slides**](https://github.com/tamucc-comp-bio-2020/classroom_repo/blob/master/lectures/Week02_files/Lecture02_WelcomeToTheMatrix.pdf)  to a more screen-splitting friendly format here in GitHub.
 
 <details><summary>Advanced `bash` Commands</summary>
 <p>
