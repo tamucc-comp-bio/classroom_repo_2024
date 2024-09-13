@@ -213,7 +213,7 @@ My first line
 My second line
 ```
 
-&#x1F4A1; TIP!: _use `Tab` key to autocomplete names, prevent spelling mistakes_
+&#x1F4A1; TIP! _use `Tab` key to autocomplete names, prevent spelling mistakes_
 
 ---
 
@@ -287,7 +287,6 @@ In the tidy table below, columns are _*delimited*_ by tabs.  The first column ha
   
 * File extensions are not always accurate, so it is important to view a file to be sure of the delimiter.
 
-&#x26A0; CAUTION! _Do not type in the following code blocks.  They are here to show you TSV and CSV formatting_
 
 Tidy Table:
 | Column 1 Header | Column 2 Header | Column 3 Header |
@@ -306,6 +305,8 @@ Row 3 Column 1	Row 3 Column 2	Row 3 Column 3
 Row 4 Column 1	Row 4 Column 2	Row 4 Column 3
 ```
 
+&#x26A0; CAUTION! _Do not type in these code blocks.  They are here to show you TSV and CSV formatting_
+
 TSV File with tabs denoted by `\t`.  Note your text files will not contain `\t`.  I did this show where tabs were, versus spaces. This is also the first use of a regular expression in this course.  The `\` is the escape character, which changes the meaning of the character that follows.  `\t` is the regular expression for a tab. Regular expressions are recognized by almost all commands across all computer languages that use a pattern (`\t`) to find matching text (tab character).
 
 ```
@@ -315,7 +316,7 @@ Row 2 Column 1\tRow 2 Column 2\tRow 2 Column 3
 Row 3 Column 1\tRow 3 Column 2\tRow 3 Column 3
 Row 4 Column 1\tRow 4 Column 2\tRow 4 Column 3
 ```
-
+&#x26A0; CAUTION! _Do not type in these code blocks.  They are here to show you TSV and CSV formatting_
 CSV
 ```
 Column 1 Header, Column 2 Header, Column 3 Header
@@ -324,7 +325,7 @@ Row 2 Column 1, Row 2 Column 2, Row 2 Column 3
 Row 3 Column 1, Row 3 Column 2, Row 3 Column 3
 Row 4 Column 1, Row 4 Column 2, Row 4 Column 3
 ```
-
+&#x26A0; CAUTION! _Do not type in these code blocks.  They are here to show you TSV and CSV formatting_
 ---
 
 
