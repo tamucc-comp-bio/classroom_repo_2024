@@ -519,7 +519,7 @@ $ cut -d";" -f2 ../data/Pacifici2013_data.csv | tail -n +2 | sort | uniq -c | tr
 ---
 
 
-## Additional Important Commands (rest of CSB Section 1.6)
+## Additional Important `bash` Commands (rest of CSB Section 1.6)
 
 <details><summary>Additional Important Commands</summary>
 <p>
@@ -598,11 +598,13 @@ $ cut -d ";" -f2-6 ../data/Pacifici2013_data.csv | tr ";" " " | tail -n+2 | sort
 $ cut -d ";" -f2-6 ../data/Pacifici2013_data.csv | tr ";" " " | tail -n+2 | sort -nrk6 > BodyMass.csv
 ```
 
-&#x1F4A1; TIP! _in step 1, we use `tr` to replace semicolons `;` with "[line feeds](https://en.wikipedia.org/wiki/Newline)" `\n` to view one column header per line._
+&#x1F4A1; _in step 1, we use `tr` to replace semicolons `;` with "[line feeds](https://en.wikipedia.org/wiki/Newline)" `\n` to view one column header per line._
 
-_`\ ` is the "[escape character](https://en.wikipedia.org/wiki/Escape_character)".  What follows the `\ ` has an alternate meaning._
-  * `t` is the letter "t", `\t` is a [metacharacter](https://en.wikipedia.org/wiki/Metacharacter) that symbolizes a tab
-  * `n` is the letter "n", `\n` is a metacharacter that symbolizes the end of a line (aka line feed)
+&#x1F4A1; _`\ ` is the "[escape character](https://en.wikipedia.org/wiki/Escape_character)".  What follows the `\ ` has an alternate meaning._
+
+&#x1F4A1; _`t` is the letter "t", `\t` is a [metacharacter](https://en.wikipedia.org/wiki/Metacharacter) that symbolizes a tab_
+
+&#x1F4A1; _`n` is the letter "n", `\n` is a metacharacter that symbolizes the end of a line (aka line feed)_
 
 ---
 
