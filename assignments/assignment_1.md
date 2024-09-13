@@ -199,7 +199,7 @@ Work through the following tutorial. Note the instructions to clone the CSB repo
 $ cd ~/CSB/unix/sandbox
 ```
 
-After running `cd ~/CSB/unix/sandbox`, your present working directory (`pwd`) is `sandbox`.  If the `cd ~/CSB/unix/sandbox` failed, then you should consult the [Computer Preparation Section](#Computer Preparation) above
+After running `cd ~/CSB/unix/sandbox`, your present working directory (`pwd`) is `sandbox`.  If the `cd ~/CSB/unix/sandbox` failed, then you should consult the [Computer Preparation Section](#computer-preparation) above
 
 ```
 CSB/unix
