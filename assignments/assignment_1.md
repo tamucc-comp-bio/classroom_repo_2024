@@ -197,7 +197,21 @@ Work through the following tutorial. Note the instructions to clone the CSB repo
 # let’s start by moving to our sandbox in the unix dir of the CSB repo
 # you must have cloned the CSB repo to your home dir for this path to work
 $ cd ~/CSB/unix/sandbox
+```
 
+After running `cd ~/CSB/unix/sandbox`, your present working directory (`pwd`) is `sandbox`.  If the `cd ~/CSB/unix/sandbox` failed, then you should consult the [Computer Preparation Section](#Computer Preparation) above
+
+```
+CSB/unix
+├── data
+│   ├── Saavedra2013
+│   └── miRNA
+├── installation
+├── **sandbox**  #YOU SHOULD BE HERE!
+└── solutions
+```
+
+```
 # print text to screen, then print to file, then print file to screen
 $ echo "My first line" 
 My first line
