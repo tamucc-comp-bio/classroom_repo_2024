@@ -4,8 +4,8 @@
 > [Assignment 1](../assignments/assignment_1.md) is due at the beginning of this lecture
 
 > [!NOTE]
-> The [Lecture Stream]() will be updated following lecture.
-> Passcode: 
+> The [Lecture Stream](https://tamucc.zoom.us/rec/share/mPRmPrj6p4ZmnqEu7EqyqsVOUWPVvROiz-x-j2-BoAQnoNCFVTwCfeuKJFoJNGGn.z1g7STRMBC1dLXib ) will be updated following lecture.
+> Passcode: 1Y7Kk%?4 
 
 > [!NOTE]
 > I converted the [**Lecture_02 Slides**](Week02_files/Lecture02_WelcomeToTheMatrix.pdf)  to a more screen-splitting friendly format here in GitHub.
