@@ -213,14 +213,14 @@ My first line
 My second line
 ```
 
-_use `Tab` key to autocomplete names, prevent spelling mistakes_
+&#x1F4A1; TIP!: _use `Tab` key to autocomplete names, prevent spelling mistakes_
 
 ---
 
 
 ### Problem Solving Scenario
 
-A machine provides you with thousands of data files. There’s so many, it is breaking your Win/Mac GUI file browser. How can you determine the number of files?
+A machine provides you with thousands of data files. There’s so many, it is freezing your Win/Mac GUI file browser. How can you determine the number of files?
 
 We will use the dir `unix/data/Saavedra2013` as an example of a directory with many files
 
@@ -269,7 +269,7 @@ $ ls ../data/Saavedra2013 | wc –l
 
 In the tidy table below, columns are _*delimited*_ by tabs.  The first column has no column header but is the sample ID.  Ozone, Solar.R, Wind, Temp, Month, and Day are all pieces of data (dimensions) describing each of the 10 samples.
 
-![Common Operating Systems](Week01_files/tsv.png)
+![Common Operating Systems](../lectures/Week01_files/tsv.png)
 
 * Tab Separated Values (TSV)
 
