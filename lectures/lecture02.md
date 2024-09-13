@@ -794,8 +794,6 @@ $ ls –l
 
 * You will need sudo for installing software
 
-&#x26A0; CAUTION! _Make sure you are certain that you want to execute the command before using `sudo`, especially in combination with `rm`, `cp`, `mv`._
-
 ```bash
 $ apt update
 Reading package lists... Done
@@ -807,6 +805,9 @@ W: Problem unlinking the file /var/cache/apt/srcpkgcache.bin - RemoveCaches (13:
 $ sudo apt update
 
 ```
+
+&#x26A0; CAUTION! _Make sure you are certain that you want to execute the command before using `sudo`, especially in combination with `rm`, `cp`, `mv`._
+
 
 ---
 
@@ -984,7 +985,7 @@ $ sudo chown -R $USER test_dir/
 
 ---
 
-<details><summary>Wildcards can be used to specify several files with one word or paths</summary>
+<details><summary>Glob patterns employ wildcards and common naming to specify several files with one word or path</summary>
 <p>
 
 #### `*` can be any character
@@ -1291,12 +1292,12 @@ echo $VARIABLE $X $height
 </p>
 </details>
 
-<details><summary>Using Subshells </summary>
+<details><summary>Using Subshells (aka Child Processes) </summary>
 <p>
 
 It is often useful to use a unix command to return an argument for another unix command or to generate a value to be saved into a variable.  But how?
 
-We can specify a subshell by wrapping a unix command or pipeline with`$()` 
+In CLI `bash` we are operating a [shell](https://en.wikipedia.org/wiki/Shell_(computing)).  We can specify a [subshell](https://en.wikipedia.org/wiki/Child_process), which is a shell within the shell, by wrapping a unix command or pipeline inside of `$()` 
 
 ```bash
 VARIABLE=1375
