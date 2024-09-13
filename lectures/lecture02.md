@@ -205,14 +205,37 @@ After you log into the class and get your computer set up, please complete the q
 <details><summary>Advanced `bash` Commands</summary>
 <p>
 
-### Redirection of output ([stdout](https://en.wikipedia.org/wiki/Standard_streams#Standard_output_(stdout))) to file `[command] > filename`
-### Append [stdout](https://en.wikipedia.org/wiki/Standard_streams#Standard_output_(stdout)) to file `[command] >> filename` 
-### Redirect contents of file to [stdin](https://en.wikipedia.org/wiki/Standard_streams#Standard_input_(stdin)) `[command] < filename` 
+Work through the following tutorial. Note the instructions to clone the CSB repo in the Computer Preparation instructions above
+
+
+---
+
+### Move the the `CSB/unix/sandbox` directory
 
 ```bash
-# let’s start by moving to our sandbox
+# let’s start by moving to our sandbox in the unix dir of the CSB repo
+# you must have cloned the CSB repo to your home dir for this path to work
 $ cd ~/CSB/unix/sandbox
+$ pwd
+```
 
+After running `cd ~/CSB/unix/sandbox`, your present working directory (`pwd`) is `sandbox`.  If the `cd ~/CSB/unix/sandbox` failed, then you should consult the [Computer Preparation Section](#computer-preparation) above
+
+```
+CSB/unix
+├── data
+│   ├── Saavedra2013
+│   └── miRNA
+├── installation
+├── **sandbox**  #YOU SHOULD BE HERE!
+└── solutions
+```
+
+---
+
+### Redirection of output ([stdout](https://en.wikipedia.org/wiki/Standard_streams#Standard_output_(stdout))) to file `[command] > filename`, Append [stdout](https://en.wikipedia.org/wiki/Standard_streams#Standard_output_(stdout)) to file `[command] >> filename`, Redirect contents of file to [stdin](https://en.wikipedia.org/wiki/Standard_streams#Standard_input_(stdin)) `[command] < filename` 
+
+```
 # print text to screen, then print to file, then print file to screen
 $ echo "My first line" 
 My first line
@@ -228,23 +251,30 @@ My first line
 My second line
 ```
 
-
-
-
-_use `Tab` key to autocomplete names, prevent spelling mistakes_
+&#x1F4A1; TIP! _use `Tab` key to autocomplete names, prevent spelling mistakes_
 
 ---
 
+
 ### Problem Solving Scenario
 
-A machine provides you with thousands of data files. There’s so many, it is breaking your file browser. How many files are there?
+A machine provides you with thousands of data files. There’s so many, it is freezing your Win/Mac GUI file browser. How can you determine the number of files?
 
 We will use the dir `unix/data/Saavedra2013` as an example of a directory with many files
 
-```bash
-# start by moving to our sandbox if you are not already there
-$ cd ~/CSB/unix/sandbox
+```
+CSB/unix
+├── data
+│   ├── Saavedra2013
+│   └── miRNA
+├── installation
+├── **sandbox**  #YOU ARE HERE!
+└── solutions
+```
 
+&#x1F4A1; TIP! _To specify `unix/data/Saavedra2013` from `unix/sandbox` you can use the relative path `../data/Saavedra2013`_
+
+```bash
 # save file names to file in pwd
 $ ls ../data/Saavedra2013 > filelist.txt
 
@@ -262,19 +292,29 @@ $ rm filelist.txt
 
 ### Piping Text Streams From One Command to the Next with `|`
 
-![Common Operating Systems](Week01_files/pipeline.png)
+![Common Operating Systems](../lectures/Week01_files/pipeline.png)
 
-![Common Operating Systems](Week01_files/pipeline2.png)
+![Common Operating Systems](../lectures/Week01_files/pipeline2.png)
 
 A pipe `|` passes the [stdout](https://en.wikipedia.org/wiki/Standard_streams#Standard_output_(stdout)) from one command to the [stdin](https://en.wikipedia.org/wiki/Standard_streams#Standard_input_(stdin)) of another
 
-How many files are there?
+&#x2753; QUESTION _How many files are there in `CSB/unix/data/Saavedra2013`?_
+
+```
+CSB/unix
+├── data
+│   ├── Saavedra2013
+│   └── miRNA
+├── installation
+├── **sandbox**  #YOU ARE HERE!
+└── solutions
+```
 
 ```bash
 # list file names
 $ ls ../data/Saavedra2013
 
-# list file names and pipe into wc
+# list file names and pipe into wc to return the number of files
 $ ls ../data/Saavedra2013 | wc –l
 59
 
@@ -286,7 +326,7 @@ $ ls ../data/Saavedra2013 | wc –l
 
 In the tidy table below, columns are _*delimited*_ by tabs.  The first column has no column header but is the sample ID.  Ozone, Solar.R, Wind, Temp, Month, and Day are all pieces of data (dimensions) describing each of the 10 samples.
 
-![Common Operating Systems](Week01_files/tsv.png)
+![Common Operating Systems](../lectures/Week01_files/tsv.png)
 
 * Tab Separated Values (TSV)
 
@@ -302,9 +342,7 @@ In the tidy table below, columns are _*delimited*_ by tabs.  The first column ha
   
   * Each [column](https://en.wikipedia.org/wiki/Column_(database)) is one dimension or aspect of the units of observation
   
-* File extensions not always accurate, so it is important to view a file to be sure of the delimiter.
-
-Do not type in the following code blocks.  They are here to show you TSV and CSV formatting
+* File extensions are not always accurate, so it is important to view a file to be sure of the delimiter.
 
 
 Tidy Table:
@@ -324,7 +362,10 @@ Row 3 Column 1	Row 3 Column 2	Row 3 Column 3
 Row 4 Column 1	Row 4 Column 2	Row 4 Column 3
 ```
 
-TSV File with tabs denoted by `\t`.  Note your text files will not contain `\t`.  I did this show where tabs were, versus spaces.
+&#x26A0; CAUTION! _Do not type in these code blocks.  They are here to show you TSV and CSV formatting_
+
+TSV File with tabs denoted by `\t`.  Note your text files will not contain `\t`.  I did this show where tabs were, versus spaces. This is also the first use of a regular expression in this course.  The `\` is the escape character, which changes the meaning of the character that follows.  `\t` is the regular expression for a tab. Regular expressions are recognized by almost all commands across all computer languages that use a pattern (`\t`) to find matching text (tab character).
+
 ```
 Column 1 Header\tColumn 2 Header\tColumn 3 Header
 Row 1 Column 1\tRow 1 Column 2\tRow 1 Column 3
@@ -360,11 +401,12 @@ $ cat ../data/Pacifici2013_data.csv | tr ";" "\t" | less -S
 
 ```
 
-_`tr` is an abbreviation for translate_
+&#x1F4A1; _`tr` is an abbreviation for translate_
 
 ---
 
-### Using `cut` to retrieve columns and `head` to retrieve rows
+
+### Using `cut` to retrieve/isolate/select columns and `head` to retrieve rows
 
 ```bash
 # change directory
@@ -384,9 +426,10 @@ $ head -n 1 Pacifici2013_data.csv | cut -d ";" -f 1
 
 ```
 
-_Note: cut assumes tab delimited files.  If a different delimiter is used in the file, the `-d` option is used to specify the delimiter.  It is very easy to mistake spaces for tabs, and that will make `cut` do odd things with your data if you do not set `-d " "`_
+&#x1F4A1; _`cut` assumes tab delimited files.  If a different delimiter is used in the file, the `-d` option is used to specify the delimiter.  It is very easy to mistake spaces for tabs, and that will make `cut` do odd things with your data if you do not set `-d " "`_
 
 ---
+
 
 ### Connecting `cut` `head` `tail` `sort` `uniq`
 
@@ -410,14 +453,13 @@ $ cut -d ";" -f 2 Pacifici2013_data.csv | tail -n +2 | sort | uniq -c
 # output the order with the most records, including the number of records in csv
 $ cut -d";" -f2 ../data/Pacifici2013_data.csv |  tail -n +2 | sort | uniq -c | tr -s " " "\t" | cut -f2-3 | sort -n | tail -n1
 
-
 ```
 
-_Note: `uniq` is a command that that removes consecutive duplicate lines (rows). For this reason, the input to `uniq` is almost always sorted beforehand.  Use `man uniq` to see the description of the `-c` option.  I use `uniq -c` all the time._
+&#x1F4A1; _`uniq` is a command that that removes consecutive duplicate lines (rows). For this reason, the input to `uniq` is almost always sorted beforehand.  Use `man uniq` to see the description of the `-c` option.  I use `uniq -c` all the time._
 
-_Note: `sort -t";"` specifies the delimiter character, also known as a field separator.  Try `man sort` and search `/field` to see the manual entry for this._
+&#x1F4A1; _`sort -t";"` specifies the delimiter character, also known as a field separator.  Try `man sort` and search `/field` to see the manual entry for this._
 
-_Note: `tr -s` can be used to easily convert files or text streams that have multiple spaces in between columns (such as the output of `uniq -c` into a tab separated format.  The `-s` means squish consecutive charcters to one character_
+&#x1F4A1; _`tr -s` can be used to easily convert files or text streams that have multiple spaces in between columns (such as the output of `uniq -c` into a tab separated format.  The `-s` means squish consecutive charcters to one character_
 
 ---
 
@@ -441,6 +483,7 @@ $ cut -d";" -f2 ../data/Pacifici2013_data.csv | tail -n +2 | sort | uniq -c | tr
 
 </p>
 </details>
+
 
 
 [Software Carpentry, The Unix Shell: Pipes & Filters](https://swcarpentry.github.io/shell-novice/04-pipefilter.html) 
