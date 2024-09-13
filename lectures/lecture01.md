@@ -859,7 +859,7 @@ $ wc -l ../north-pacific-gyre/NENE01751B.txt
 
 ### Determine file type `file <filename>`
 
-Just because a file ends with a particular extension, doesn't mean that the file itself follows the format that matches that extension.  This is an example of why it's important to impart structure on your code.  You should use the correct file extension even though you don't have to so that both you and everybody else can better understand your files and code.
+Just because a file ends with a particular extension, doesn't mean that the file itself follows the format that matches that extension.  This is an example of why it's important to impart structure and adhere to standards when organizing data.  You should use the correct file extension so that both you and everybody else can better understand your files.
 
 The most common use of the `file` command in biology is to determine if files ending in `.gz` are actually zipped.
 
