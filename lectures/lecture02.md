@@ -190,6 +190,7 @@ cut -d ";" -f 2-6 $1 | \
 </p>
 </details>
 
+
 ---
 
 ## [Week 02 Quiz](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMjIySEJCNFlSMVJRSUo0SU5HSFNKMVRHWC4u)
