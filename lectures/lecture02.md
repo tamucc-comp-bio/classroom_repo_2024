@@ -507,7 +507,9 @@ $ cut -d";" -f2 ../data/Pacifici2013_data.csv | tail -n +2 | sort | uniq -c | tr
 <details><summary>Reading</summary>
 <p>
 
-[Wilson_etal_2017_good_enough_practices](../literature/Wilson_etal_2017_good_enough_practices_in_scientific_computing.pdf)
+[Tidy Data (Wickham 2014)](../literature/Wickham_2014_Tidy_Data.pdf)
+
+[Good enough practices (Wilson etal 2017)](../literature/Wilson_etal_2017_good_enough_practices_in_scientific_computing.pdf)
 
 </p>
 </details>
