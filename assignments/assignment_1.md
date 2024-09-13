@@ -287,7 +287,7 @@ In the tidy table below, columns are _*delimited*_ by tabs.  The first column ha
   
 * File extensions are not always accurate, so it is important to view a file to be sure of the delimiter.
 
-Do not type in the following code blocks.  They are here to show you TSV and CSV formatting
+&#x26A0; CAUTION! _Do not type in the following code blocks.  They are here to show you TSV and CSV formatting_
 
 Tidy Table:
 | Column 1 Header | Column 2 Header | Column 3 Header |
