@@ -199,7 +199,7 @@ After you log into the class and get your computer set up, please complete the q
 ---
 
 
-## Review `assignment_01` Due Today 
+## Review [`assignment_01`](../assignments/assignment_1.md) Due Today 
 
 <details><summary>Advanced `bash` Commands</summary>
 <p>
