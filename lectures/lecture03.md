@@ -1,10 +1,14 @@
 # Week03 UNIX III - Beyond the CSB Text Book
 
-### [Assignment 2](../assignments/assignment_2.md) is due at the beginning of this lecture
 
-<!-- 
-### [Lecture Stream]() 
--->
+> [!IMPORTANT]
+> [Assignment 2](../assignments/assignment_2.md) is due at the beginning of this lecture
+
+> [!NOTE]
+> The [Lecture Stream]() will be updated following lecture.
+> Passcode:  
+
+
 
 ---
 
