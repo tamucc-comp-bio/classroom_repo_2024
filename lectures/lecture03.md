@@ -551,7 +551,7 @@ The images above are rendered 3d scans, but the data file is in [STL](https://en
 
 Unfortunately, the output of `admesh` is not tidy.  Fortunately for you, I made a tool to tame the `admesh` output, `admesh2tsv.bash`. I'll show you how this works and then you'll edit it for homework.
 
-#### Clone the ['admesh2tsv' repo](https://github.com/comp-bio-master/admesh2tsv) to your `comp_bio` dir
+#### Clone the [`admesh2tsv` repo](https://github.com/comp-bio-master/admesh2tsv) to your `comp_bio` dir
 
 ```bash
 mkdir ~/comp_bio  
