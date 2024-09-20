@@ -306,7 +306,7 @@ Let us all move to our `~/CSB/unix/sandbox` and copy the Marra and Dalziel data 
 
 ---
 
-`Marra2014_data.fasta` is an interleaved FASTA file.  Interleaved means that a single squence is spread across multiple lines, it makes data manipulation difficult. There are tools to convert between an interleaved and non-interleaved format, but let's just create our own now called `deInterleaveFASTA.sh`.
+`Marra2014_data.fasta` is an interleaved FASTA file.  Interleaved means that a single squence is spread across multiple lines, it makes data manipulation difficult. There are tools to convert between an interleaved and non-interleaved format, but let's just create our own and name it `deInterleaveFASTA.sh`.
 
 ``` bash
 # for those with Macs, let me know if this returns an error
@@ -314,7 +314,20 @@ touch deInterleaveFASTA.sh
 echo '#!/bin/bash' > deInterleaveFASTA.sh && echo 'awk '"'"'/^>/ {if (seq) print seq; print; seq=""} /^[^>]/ {seq=seq $0} END {if (seq) print seq}'"'"' "$1"' >> deInterleaveFASTA.sh
 ```
 
-And then let's test it
+Take a look at the script we just created
+
+```bash
+cat deInterleaveFASTA.sh
+```
+
+You should see the following:
+
+```
+#!/bin/bash
+awk '/^>/ {if (seq) print seq; print; seq=""} /^[^>]/ {seq=seq $0} END {if (seq) print seq}' "$1"
+```
+
+And then let's test our new script for converting interleaved to non-interleaved FASTA files
 
 ```bash
 # for those with Macs, let me know if this doesn't work...
@@ -338,7 +351,7 @@ ATCCTAGCTACTCTGGAGACTGAGGATTGAAGTTCAAAGTCAGCTCAAGCAAGAGATTTGTTTACAATTAACCCACAAAA
   
   ```bash
   # we can use the paste command to take a single column of data and make it multi column
-  $ head -n 20 Marra2014_data.fasta | paste - - - - - - - - - - | less -S
+  $ bash deInterleaveFASTA.sh Marra2014_data.fasta | paste - - | less -S
 
   >contig00001  length=527  numreads=2  gene=isogroup00001  status=it_thresh      ATCCTAGCTACTCTGGAGACTGAGGATTGAAGTTCAAAGTCAGCTCAAGCAAGAGATTTG    TTTACAATTAACCCACAAAAGGCTGTTAC
   >contig00002  length=551  numreads=8  gene=isogroup00001  status=it_thresh      GAACCATCCTGCGCGGGAAAGATCTAGAAGCTGGCACGTCAAACTGCTGCCGAGTAACGA    CTGTGAAAATACAGAGCAGAACGTACAGG
