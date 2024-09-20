@@ -304,7 +304,29 @@ Let us all move to our `~/CSB/unix/sandbox` and copy the Marra and Dalziel data 
   # use q to exit less
   ```
 
-This is an interleaved FASTA file.  Interleaved means that a single squence is spread across multiple lines, it makes data manipulation difficult. There are tools to convert between an interleaved and non-interleaved format, but we won't get into that now.
+---
+
+`Marra2014_data.fasta` is an interleaved FASTA file.  Interleaved means that a single squence is spread across multiple lines, it makes data manipulation difficult. There are tools to convert between an interleaved and non-interleaved format, but let's just create our own now called `deInterleaveFASTA.sh`.
+
+``` bash
+# for those with Macs, let me know if this returns an error
+touch deInterleaveFASTA.sh
+echo '#!/bin/bash' > deInterleaveFASTA.sh && echo 'awk '"'"'/^>/ {if (seq) print seq; print; seq=""} /^[^>]/ {seq=seq $0} END {if (seq) print seq}'"'"' "$1"' >> deInterleaveFASTA.sh
+```
+
+And then let's test it
+
+```bash
+# for those with Macs, let me know if this doesn't work...
+bash deInterleaveFASTA.sh Marra2014_data.fasta | less -S
+```
+
+You should see
+
+```
+>contig00001  length=527  numreads=2  gene=isogroup00001  status=it_thresh
+ATCCTAGCTACTCTGGAGACTGAGGATTGAAGTTCAAAGTCAGCTCAAGCAAGAGATTTGTTTACAATTAACCCACAAAAGGCTGTTACTGAAGGTGTGGCTTAAGTGTCAGAGCAACAGCTATGAGTGGAGGAATTTTCTATTACAATATAATTTCATCTCTGGTAAATTGACCAATTAACTGGAACTTTTTCCAACTGAAATAAATGGTAAACTTTTTATCCACCATTCTGCCATCTGACTCACAAAGACCCATGGGAATGGGTGATGAAATCCAACATGCTTCTTTGTAGCAAAAATAAATAAAATCCCCAGAAGGGTGAGGTAAATGGAAAACTCCAAACTCGCCCCTCAGGTGGGTGTAATTTACCCAAGTCTGAGAGGAGGCAGAGTTTTTCCCAATGGACTTTGGTTAAGTGAGATATGCTGGTCTGTAGAAGGAGGGAGTTCTAGGAAAACAGACACTTAAGTAGGGCCGAACTAAAAATTGTATCAGTCAGATCTTCATGTGAAGTCCTGTGTGCCCA
+```
 
 ---
 
