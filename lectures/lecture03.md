@@ -5,8 +5,8 @@
 > [Assignment 2](../assignments/assignment_2.md) is due at the beginning of this lecture
 
 > [!NOTE]
-> The [Lecture Stream]() will be updated following lecture.
-> Passcode:  
+> The [Lecture Stream](https://tamucc.zoom.us/rec/share/ysyGalrSfN7BLqY7l8Q-Gm3OWrjZvYNu5GMak06BseQF19GSQkN-8EfQL7HQA_8.c2Ek6NPfPozlHAWU) will be updated following lecture.
+> Passcode: Ys.4!Imi
 
 
 ---
