@@ -119,7 +119,7 @@
   > If you **do not** see the output above, then clone the CSB repo by entering the following commands:
 
     ```bash
-        git clone https://github.com/CSB-book/CSB.git
+    git clone https://github.com/CSB-book/CSB.git
     ``` 
 
   > You should see the following output:
@@ -151,7 +151,7 @@
 
 You will be working in bash to manipulate the 3d scans of limpet shells we discussed in class.  
 
-### [Click on this Link to Initiate this Assignment]()
+### [Click on this Link to Initiate this Assignment](https://classroom.github.com/a/CWLE574N)
 
 * Begin by cloning your repo to your computer
 	* make sure you copy the "ssh" link from your repo (green button, upper right).
