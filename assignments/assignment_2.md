@@ -4,64 +4,139 @@
 
 ## Computer Preparation
 
-<details><summary>Ubuntu on Windows</summary>
+> [!IMPORTANT]
+> Make sure your computer is ready to complete the assignment
+
+<details><summary>Windows, Mac, Linux</summary>
 <p>
 
-  * If the Windows Terminal or Ubuntu app are not installed, then follow [these instructions](../resources/README.md)
+- [ ] Step 0. Open Terminal
+
+  > Search for the terminal app and open it.  For Windows, make sure you are using Ubuntu.
+
+  > You should have already prepared your computer during Lecture 0.  If you did not then:  
+
+  > * Complete the tasks listed in the [How to Set Up Your Computer for Computational Biology](https://github.com/tamucc-comp-bio/how_to/blob/main/howto_setup_computer.md), up to, but not including R and RStudio.
+  >    * If you are having difficulty installing ubuntu, use Launch if your account is activated.
+
+- [ ] Step 1. Update Your apps
+
+  > It's always a good idea to keep your apps in your terminal up to date. 
   
-  * Open an Ubuntu window in Windows Terminal.  _We will not use `gitbash` unless you can't get Ubuntu running._ After logging in, You are in your home directory. 
-     
-  * It's always a good idea to keep your apps in `Ubuntu` up to date. _The first time you do this, it could take a long time to finish. After that, if you do this when you log in, it should go quickly._
+  > For Ubuntu (Linux), enter the following commands to load the newest versions of your apps
+
+  ```bash
+  sudo apt update
+  sudo apt upgrade
+  ```
+
+  > For Mac (Homebrew), enter the following commands to load the newest versions of your apps
+
+  ```bash
+  brew update
+  brew upgrade
+  ```
+
+- [ ] Step 2. Confirm you have cloned the CSB (Computing Skills For Biologists) Repo into your home dir
+
+    > In your terminal, enter the following commands:
+
     ```bash
-    sudo apt update
-    sudo apt upgrade
-    ```
+    # make sure you're in your home dir
+    cd ~
     
+    # list the directories and files in the CSB dir to confirm it's in your home dir
+    ls CSB
+    ```
+
+    > You should see the following output because we cloned the CSB Repo to your home dir in [Lecture 0](https://github.com/tamucc-comp-bio/classroom_repo_2024/blob/master/lectures/lecture00.md).  
+
+    ```bash
+    LICENSE  README.md  data_wrangling  git  good_code  latex  python  r  regex  scientific  sql  unix
+    ```
+
+    > If you see the output above, you're done! Goto the next section.
+
+- [ ] Step 3. If you didn't have the CSB Repo, clone it now
+
+  > If you **do not** see the output above, then clone the CSB repo by entering the following commands:
+
+    ```bash
+        git clone https://github.com/CSB-book/CSB.git
+    ``` 
+
+  > You should see the following output:
+
+    ```bash
+    Cloning into 'CSB'...
+    remote: Enumerating objects: 1005, done.
+    remote: Total 1005 (delta 0), reused 0 (delta 0), pack-reused 1005 (from 1)
+    Receiving objects: 100% (1005/1005), 26.68 MiB | 7.74 MiB/s, done.
+    Resolving deltas: 100% (389/389), done.
+    ```
+
+  > Goto Step 2 above.
+
+<hr style="height: 0.1px; border: none; background-color: black;">
 
 </p>
 </details>
 
-<details><summary>MacOS</summary>
-<p>
- 
-  * Open a terminal window
-  
-  * If you haven't already, install [homebrew](https://brew.sh/).  You will be able to use homebrew to install linux software, such as `tree`, which is used in the slide show.
-  
-
-</p>
-</details>
-
-  
-<details><summary>If you have not already, clone the CSB repository to your home dir</summary>
+<details><summary>ChromeOS, iOS, Android</summary>
 <p>
 
-We will use the [open source files that accompany the CSB text book](https://github.com/tamucc-comp-bio-2022/CSB) in lectures and assignments.
+ - [ ] Step 0. [Log Into Launch HPC](https://portal-launch.hprc.tamu.edu/)
 
-If the `CSB` directory does not exist in your home directory (check with `ls`), then run the following code to clone the [`CSB` repository](https://github.com/tamucc-comp-bio-2022/CSB) into your home directory:
+    > Use the following [link](https://portal-launch.hprc.tamu.edu/) to log in 
 
-1. Open a terminal window
-	* For Win laptops, use `Windows Terminal` to open Ubunutu.  
-	* For Mac laptops, open your `Terminal`.
-	
-2. Run the code line by line in the code block below 
-```bash
-# check that you're in home dir, you should be there when you log in
-pwd
+    > You should have already created your account during Lecture 0.  If you did not then:  
+    > * Complete the tasks listed in the [Accessing Launch Instructions](https://hprc.tamu.edu/kb/User-Guides/Launch/Access/#no-ssh-login)
 
-# if you are not in your home dir, then move there
-cd ~
+ - [ ] Step 1. Open Terminal
 
-# if pwd does not return `/home/yourusername` then let Dr. Bird know
-pwd
+    > Select `launch Shell Access`
 
-# clone the CSB repository to your home dir
-git clone git@github.com:tamucc-comp-bio-2022/CSB.git
-```
+ - [ ] Step 2. Confirm you have cloned the CSB (Computing Skills For Biologists) Repo into your home dir
 
-The repository is named CSB, and it contains all of the example files and directories necessary to conduct the exercises in the text book.
+  > In your terminal, enter the following commands:
 
-</p>
+    ```bash
+    # make sure you're in your home dir
+    cd ~
+
+    # list the directories and files in the CSB dir to confirm it's in your home dir
+    ls CSB
+    ```
+
+  > You should see the following output because we cloned the CSB Repo to your home dir in [Lecture 0](https://github.com/tamucc-comp-bio/classroom_repo_2024/blob/master/lectures/lecture00.md).  
+
+    ```bash
+    LICENSE  README.md  data_wrangling  git  good_code  latex  python  r  regex  scientific  sql  unix
+    ```
+
+  > If you see the output above, you're done! Goto the next section.
+
+- [ ] Step 3. If you didn't have the CSB Repo, clone it now
+
+  > If you **do not** see the output above, then clone the CSB repo by entering the following commands:
+
+    ```bash
+        git clone https://github.com/CSB-book/CSB.git
+    ``` 
+
+  > You should see the following output:
+
+    ```bash
+    Cloning into 'CSB'...
+    remote: Enumerating objects: 1005, done.
+    remote: Total 1005 (delta 0), reused 0 (delta 0), pack-reused 1005 (from 1)
+    Receiving objects: 100% (1005/1005), 26.68 MiB | 7.74 MiB/s, done.
+    Resolving deltas: 100% (389/389), done.
+    ```
+
+  > Goto Step 2 above.
+
+ </p>
 </details>
 
 ---
@@ -107,7 +182,7 @@ Please try to at least click the link at the end of this paragraph and let me kn
 Hints:
 
 * Start by cloning this repository to your computer
-	* make sure you copy the "ssh" link from your repo (green button, upper right).
+	* make sure you copy the "ssh" (not the "html") link from your repo (green button, upper right).
 	```bash
 	git clone InsertSshLinkHere
 	```
@@ -138,7 +213,7 @@ Hints:
 
 * change directories to the directory for this assignment
 
-* type the following:
+* type the following while your `pwd` is inside of the assignment repo:
 
 	```
 	git add *
