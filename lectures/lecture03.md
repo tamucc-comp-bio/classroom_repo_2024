@@ -558,6 +558,13 @@ mkdir ~/comp_bio
 # you should get an error here saying that you've already created this dir
 cd ~/comp_bio
 git clone git@github.com:comp-bio-master/admesh2tsv.git
+
+# move into the new Repo and explore
+cd admesh2tsv
+ls -lh
+cat README.md
+less -S admesh.out
+less -S admesh2tsv.bash
 ```
 
 In the lecture, I will orient you to this repo which .
