@@ -9,9 +9,7 @@
 > Passcode:  
 
 
-
 ---
-
 
 ## Computer Preparation
 
@@ -306,11 +304,11 @@ Let us all move to our `~/CSB/unix/sandbox` and copy the Marra and Dalziel data 
   # use q to exit less
   ```
 
-This is an interleaved FASTA file.  Interleaved means that a single squence is spread across multiple lines, it make data manipulation difficult and there are tools to convert between an interleaved and non-interleaved format (but that is too specific right now).
+This is an interleaved FASTA file.  Interleaved means that a single squence is spread across multiple lines, it makes data manipulation difficult. There are tools to convert between an interleaved and non-interleaved format, but we won't get into that now.
 
 ---
 
-### [`paste`](https://ss64.com/bash/paste.html) is used for combining files and text objects by *columns* or converting a file with one column into a file with several columns
+### [`paste`](https://ss64.com/bash/paste.html) is used for binding files and text objects together by adding *columns* (recall that `cat` binds by row) or converting a file with one column into a file with several columns
   
   Paste is very convenient for converting non-tidy data into tidy data.  An example is `Marra2014_data.fasta`.  There is only 1 column and each row contains different types of information about different observational units.  Because there are the same number of lines for each of the first two observational units, the file can be converted to a tidy format which is easier to modify.  
   
@@ -501,7 +499,7 @@ A function is a command that you can define and use in the terminal environment 
 
 Let us build upon the if-then-else logic in the last section to create a function that decides whether the two arguments passed to it are equal.
 
-* The name of the function is `DECIDER`
+* The name of the function is `DOES_A_EQUAL_B`
 
 * The `()` are there because other languages have the same structure, but they do not do anything
 
@@ -516,7 +514,7 @@ Note that a function treats "arguments" just like a script.  The first argument 
 Also note the indenting to make code readable and signify hierarchy
 
 ```bash
-DECIDER(){
+DOES_A_EQUAL_B(){
 A=$1
 B=$2
 if [ "$A" != "$B" ]; then
@@ -530,7 +528,7 @@ fi
 After you enter the function, nothing will happen, but it has been stored into memory and can now be used.
 
 ```bash
-DECIDER 1 2
+DOES_A_EQUAL_B 1 2
   ```
 
 ---
