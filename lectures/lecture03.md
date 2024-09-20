@@ -547,7 +547,7 @@ We found that shell surface area is associateD with human harvesting and want to
 
 #### [Related Publication from my Research Group](https://onlinelibrary.wiley.com/doi/abs/10.1111/jbi.13845?af=R)
 
-The images above are rendered 3d scans, but the data file is in [STL](https://en.wikipedia.org/wiki/STL_%28file_format%29) format.  An stl file is obtuse and not the easiest for a human to read.  Consequently, a tool to extract information from stl files, [admesh](https://admesh.readthedocs.io/en/latest/#), was created as a master's thesis.  I found this program on GitHub and used it to extract the surface areas of the shells.  It was the best program I could find to automate this task.  Unfortunately, I did also have to manipulate the `*.stl` files and clip off the bottom surface covering the shell aperature using a bash tool that I made.  
+The images above are rendered 3d scans, but the data file is in [STL](https://en.wikipedia.org/wiki/STL_%28file_format%29) format.  An `*.stl` file is obtuse and not the easiest for a human to read.  Consequently, a tool to extract information from `*.stl` files, [admesh](https://admesh.readthedocs.io/en/latest/#), was created as a master's thesis.  I found this program on GitHub and used it to extract the surface areas of the shells.  It was the best program I could find to automate this task.  Unfortunately, I did also have to manipulate the `*.stl` files and clip off the bottom surface covering the shell aperature using a bash tool that I made.  
 
 Unfortunately, the output of `admesh` is not tidy.  Fortunately for you, I made a tool to tame the `admesh` output, `admesh2tsv.bash`. I'll show you how this works and then you'll edit it for homework.
 
