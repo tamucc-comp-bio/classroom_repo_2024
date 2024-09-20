@@ -334,7 +334,7 @@ And then let's test our new script for converting interleaved to non-interleaved
 bash deInterleaveFASTA.sh Marra2014_data.fasta | less -S
 ```
 
-You should see
+The sequences should each be on 1 line, rather than several.
 
 ```
 >contig00001  length=527  numreads=2  gene=isogroup00001  status=it_thresh
@@ -345,16 +345,16 @@ ATCCTAGCTACTCTGGAGACTGAGGATTGAAGTTCAAAGTCAGCTCAAGCAAGAGATTTGTTTACAATTAACCCACAAAA
 
 ### [`paste`](https://ss64.com/bash/paste.html) is used for binding files and text objects together by adding *columns* (recall that `cat` binds by row) or converting a file with one column into a file with several columns
   
-  Paste is very convenient for converting non-tidy data into tidy data.  An example is `Marra2014_data.fasta`.  There is only 1 column and each row contains different types of information about different observational units.  Because there are the same number of lines for each of the first two observational units, the file can be converted to a tidy format which is easier to modify.  
+  Paste is very convenient for converting non-tidy data into tidy data.  An example is `Marra2014_data.fasta`.  There is only 1 column and each row contains different types of information about different observational units.  Because there are the two lines per observational unit, the file can be converted to a tidy format which is easier to modify.  
   
-
+Note that we will use the `deInterleaveFASTA.sh` script so that sequences aren't spread across multiple lines.
   
   ```bash
   # we can use the paste command to take a single column of data and make it multi column
   $ bash deInterleaveFASTA.sh Marra2014_data.fasta | paste - - | less -S
 
-  >contig00001  length=527  numreads=2  gene=isogroup00001  status=it_thresh      ATCCTAGCTACTCTGGAGACTGAGGATTGAAGTTCAAAGTCAGCTCAAGCAAGAGATTTG    TTTACAATTAACCCACAAAAGGCTGTTAC
-  >contig00002  length=551  numreads=8  gene=isogroup00001  status=it_thresh      GAACCATCCTGCGCGGGAAAGATCTAGAAGCTGGCACGTCAAACTGCTGCCGAGTAACGA    CTGTGAAAATACAGAGCAGAACGTACAGG
+  >contig00001  length=527  numreads=2  gene=isogroup00001  status=it_thresh      ATCCTAGCTACTCTGGAGACTGAGGATTGAAGTTCAAAGTCAGCTCAAGCAAGAGATTTGTTTACAATTAACCCACAAAAGGCTGTTACTGAAGGTGTGGCTTAAGTGTCAGAGCAACAGCTATGAGTGGAGGAATTTTCTATTACAATATAATTTCATCTCTGGTAAATTGACCAATTAACTGGAACTTTTTCCAACTGAAATAAATGGTAAACTTTTTATCCACCATTCTGCCATCTGACTCACAAAGACCCATGGGAATGGGTGATGAAATCCAACATGCTTCTTTGTAGCAAAAATAAATAAAATCCCCAGAAGGGTGAGGTAAATGGAAAACTCCAAACTCGCCCCTCAGGTGGGTGTAATTTACCCAAGTCTGAGAGGAGGCAGAGTTTTTCCCAATGGACTTTGGTTAAGTGAGATATGCTGGTCTGTAGAAGGAGGGAGTTCTAGGAAAACAGACACTTAAGTAGGGCCGAACTAAAAATTGTATCAGTCAGATCTTCATGTGAAGTCCTGTGTGCCCA
+  >contig00002  length=551  numreads=8  gene=isogroup00001  status=it_thresh      GAACCATCCTGCGCGGGAAAGATCTAGAAGCTGGCACGTCAAACTGCTGCCGAGTAACGACTGTGAAAATACAGAGCAGAACGTACAGGTGGTAATGCACTGGAAAGGAAGAAACTGATCGTCTCCTGTGACCTCCAGATTCCACTGGCATAAGTACTGTCATCTGTGTGCCACACAGAAAGGCGCTCCGTGGTAAAGTACGATCATCACCAATCTACCTATAAGAGAAACAGACTGGCTCCACAGTGCAAGTATAAGGGAGACTTGGAGAAGGCACTTGAAGGCACTGTTTTAATTAATTCCATCATTTCTTTGGTATTTCTCAGGCTTTGGGATCCTCTGTAAACCTGGCATCCACTGGTGGAAGCTTTATGGGTGTGGGGGAGGCACTGGCATCATCAGAGTGCGACGGTCCTCAGCAGGTTCCCCGGGGTGCCCGGCCCCACCACGTATGTGCACTCCGACTTCTCTGCAAACTTCCCGCAGCAGGACCAGTGGGGACGGCCCGGATGGCCCTTGTGTCCGTGACCGCAGCCCAGGTACCCACCTGg
   ```
   
   ```bash
@@ -376,7 +376,9 @@ ATCCTAGCTACTCTGGAGACTGAGGATTGAAGTTCAAAGTCAGCTCAAGCAAGAGATTTGTTTACAATTAACCCACAAAA
   9,1906,BALTIMORE,NA,528259.7712 CTAAAAATTGTATCAGTCAGATCTTCATGTGAAGTCCTGTGTGCCCA
   ```
   
-  It is very common to use subshells to pass text streams to `paste` (and `cat`).  When doing this, we use the following syntax `<()`
+  The output looks odd because the files `Dalziel2016_data.csv` and `Marra2014_data.fasta` do not have the same format or observational units.  This was just a demonstration that paste treats each file as a column and binds them together as separate columns, row by row.
+  
+  &#x1F4A1; TIP! _It is very common to use subshells to pass text streams to `paste` (and `cat`).  When doing this, we use the following syntax `<()`_
   
   ```
   paste <(echo Testing) <(echo 1) <(echo 2) <(echo 3)
