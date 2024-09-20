@@ -92,7 +92,8 @@ Office hours are W-Th 1:30-4 on Zoom or TH234
 
   * [Request Account On TAMUCC Super Computer Due 9/27](http://hpc.tamucc.edu/)
 
-  * [Grad Student Course Project: Plan/Outline, Due 09/27](https://classroom.github.com/a/XeWhIJ3W)
+  * [Grad Student Course Project: Plan/Outline, Due 09/27]()
+  
 <!-- This is a hidden comment. It will not be visible in the rendered markdown. 
  
     * [Old Link To Grad Student Course Project](https://classroom.github.com/a/VuB4iKjR).  If you started with this link, then just click the link above, clone the 2022 version of this repo, and copy your work from the old repo to the new one.
@@ -100,9 +101,9 @@ Office hours are W-Th 1:30-4 on Zoom or TH234
 
 * [09/27  Week04 Version Control w/ Git](lectures/lecture04.md)
 
-  * [Exam_1,  Due 10/04](https://classroom.github.com/a/yjxB1o0W)
+  * [Exam_1,  Due 10/04]()
 
-  * [Grad Student Course Project: GitHub Repo w/ ReadMe, Due 10/04](https://classroom.github.com/a/Kh_l1f3Y)
+  * [Grad Student Course Project: GitHub Repo w/ ReadMe, Due 10/04]()
 
  <!-- 
 </p>
