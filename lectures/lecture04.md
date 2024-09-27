@@ -499,6 +499,7 @@ Let us review what we have learned by making a new project in your sandbox and i
 ---
 
 <details><summary> Troubleshooting `git`</summary>
+<p>
 
 Git can get confused if you are not dilligent in your pattern of adding and comitting changes and it will be neccessary to troublshoot conflicts.
 
@@ -539,6 +540,7 @@ Git can get confused if you are not dilligent in your pattern of adding and comi
 </details>
 
 <details><summary>Remote Repositories (GitHub)</summary>
+<p>
 
 1. Cloning a repository:
   ```bash
@@ -561,6 +563,7 @@ Git can get confused if you are not dilligent in your pattern of adding and comi
 
 
 <details><summary>GitHub Repo Philosophy</summary>
+<p>
 
 * You should be conducting your work in your repo, not somewhere else.
   * If you are doing some things for the project on the supercomputer (or a remote server) you should clone your repo there and run the scripts in/from it.
@@ -587,6 +590,7 @@ Git can get confused if you are not dilligent in your pattern of adding and comi
   </details>
 
 <details><summary>Directory Organization Philosophy</summary>
+<p>
 
 * Every directory should have a descriptive name
 
@@ -605,6 +609,7 @@ Git can get confused if you are not dilligent in your pattern of adding and comi
   </details>
 
 <details><summary>Large files (>100MB) and `.gitignore`</summary>
+<p>
 
 If you are working with large files, GitHub will not accept them and it will cause problems with git. You should add large files to the `.gitignore` file.
 
