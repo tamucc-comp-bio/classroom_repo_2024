@@ -699,6 +699,8 @@ When you don't follow my GitHub usage philosophy, your repo will not sync with g
 	* A "rabbit hole" is a dir in a dir in a dir in a dir in a...
 	* Try to minimize nested directories
 
+* Consult [How to Organize Biological Data](https://github.com/tamucc-comp-bio/how_to/blob/main/howto_organize_data.md)
+
   ---
   </p>
   </details>

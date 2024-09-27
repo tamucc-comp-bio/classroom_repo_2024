@@ -92,7 +92,7 @@ Office hours are W-Th 1:30-4 on Zoom or TH234
 
   * [Request Account On TAMUCC Super Computer Due 9/27](http://hpc.tamucc.edu/)
 
-  * [Grad Student Course Project: Plan/Outline, Due 09/27]()
+  * [Grad Student Course Project: Plan/Outline, Due 09/27](https://forms.office.com/r/4ANAsh1v5Z)
   
 <!-- This is a hidden comment. It will not be visible in the rendered markdown. 
  
