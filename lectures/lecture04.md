@@ -582,12 +582,28 @@ Git can get confused if you are not dilligent in your pattern of adding and comi
 
 * Every time you walk away from a computer after working on your repo,`push` your changes
 
-* When you don't follow this philosophy, your repo will not sync with github, and you'll see errors
-	* &#x1F4A1; TIP! _To solve, "burn it down" and start over.  Make a new repo, and copy the contents of your old repo to the new one._
 
-  ---
-  </p>
-  </details>
+---
+</p>
+</details>
+  
+<details><summary>HELP! I CAN'T PUSH MY CHANGES TO GitHub</summary>
+<p>
+
+ 
+When you don't follow my GitHub usage philosophy, your repo will not sync with github, and you'll see errors
+
+&#x1F4A1; TIP! _To solve, "burn it down" and start over.  Make a new repo, and copy the contents of your old repo to the new one._
+
+* Rename the repo on your computer to ORIGINALNAME_old
+* Clone a fresh copy of the repo from GitHub into the parent directory of your old repo
+* Copy the newest files and dirs from your old repo into the new repo you just cloned
+* add, commit, and push the changes to GitHub
+
+
+---
+</p>
+</details>
 
 <details><summary>Directory Organization Philosophy</summary>
 <p>
