@@ -164,6 +164,9 @@ Let's use ChatGPT to solve `assignment-02-xc`.  See my [session log with ChatGPT
 
 Here are some &#x1F4A1; tips to help you get the most out of working with ChatGPT to successfully complete computational tasks:
 
+0. **Start Each Problem with a New Conversation**  
+   Guide ChatGPT by clearly explaining what you want, rather than expecting it to know everything. If something doesn't work, give feedback and iterate.
+
 1. **Treat ChatGPT as an Assistant, Not an Authority**  
    Guide ChatGPT by clearly explaining what you want, rather than expecting it to know everything. If something doesn't work, give feedback and iterate.
 
@@ -200,7 +203,10 @@ Here are some &#x1F4A1; tips to help you get the most out of working with ChatGP
 12. **Iterate on Responses**  
     Don’t expect the first response to always be perfect—it's common to go through a few iterations before reaching the best solution.
 
-13. **Include Relevant Logs and Outputs**  
+13. **Don't Go Through Too Many Iterations**
+    If you go through several cycles of ChatGPT getting it wrong, start a new conversation and change your approach. I've found that ChatGPT can get stuck and changing the prompts can provide different results. 
+
+14. **Include Relevant Logs and Outputs**  
     When debugging or troubleshooting, share logs, errors, or partial outputs with ChatGPT. This makes it easier to pinpoint issues.
 
 By following these tips, you'll be able to use ChatGPT more effectively, developing both your technical and problem-solving skills!
