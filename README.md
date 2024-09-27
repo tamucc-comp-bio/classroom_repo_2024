@@ -103,9 +103,11 @@ Office hours are W-Th 1:30-4 on Zoom or TH234
 
   * [Exam_1,  Due 10/04](https://classroom.github.com/a/et6ym0V4)
 
+ <!-- 
+ 
   * [Grad Student Course Project: GitHub Repo w/ ReadMe, Due 10/04]()
 
- <!-- 
+
 </p>
 </details>
 
