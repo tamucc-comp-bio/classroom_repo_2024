@@ -583,7 +583,7 @@ Git can get confused if you are not dilligent in your pattern of adding and comi
 * Every time you walk away from a computer after working on your repo,`push` your changes
 
 * When you don't follow this philosophy, your repo will not sync with github, and you'll see errors
-	* To solve, "burn it down" and start over.  Make a new repo, and copy the contents of your old repo to the new one.
+	* &#x1F4A1; TIP! _To solve, "burn it down" and start over.  Make a new repo, and copy the contents of your old repo to the new one._
 
   ---
   </p>
