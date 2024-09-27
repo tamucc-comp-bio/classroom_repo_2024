@@ -174,7 +174,7 @@ Here are some &#x1F4A1; tips to help you get the most out of working with ChatGP
    Show the directory structure and contents of key files. ChatGPT can give more targeted help when it understands the layout of your project.
 
 4. **Explicit File, Directory, and Column Naming**  
-   Name files, directories, and columns in a way that a human could interpret without guidance. It makes it easier for ChatGPT (and other humans!) to follow your work.
+   Name files, directories, and columns in a way that a human could interpret without guidance. It makes it easier for ChatGPT (and humans!) to follow your work.
 
 5. **Give Incremental Information**  
    When asking for help with scripts or code, start with small parts, share outputs, and iterate. This helps avoid errors and keeps solutions accurate.
@@ -186,12 +186,12 @@ Here are some &#x1F4A1; tips to help you get the most out of working with ChatGP
    When creating scripts or analyzing data, verify that ChatGPT's suggestions work with your specific data by testing them. Provide examples of your data or run the commands yourself.
 
 8. **Be Explicit About Errors and Results**  
-   If a suggestion doesn’t work, provide the exact error message or describe what went wrong. ChatGPT can provide a better solution if it understands what didn’t work.
+   If a suggestion doesn’t work, provide the exact terminal code and associated error message or describe what went wrong. ChatGPT can provide a better solution if it understands what didn’t work.
 
 9. **Use ChatGPT for Planning**  
    When tackling large tasks, ask ChatGPT to help you plan steps before diving into code. You can also have it review your process.
 
-10. **Request Unit Tests and Edge Case Testing**  
+10. **Request [Unit Tests](https://en.wikipedia.org/wiki/Unit_testing) and [Edge Case Testing](https://en.wikipedia.org/wiki/Edge_case)**  
     Ask ChatGPT to create unit tests or edge case scenarios to ensure the robustness of scripts.
 
 11. **Provide Problem Instructions in Detail**  
