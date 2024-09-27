@@ -159,6 +159,55 @@ We will review your burning questions about the assignment.
 ### III. ChatGPT
 
 Let's use ChatGPT to solve `assignment-02-xc`.  See my [session log with ChatGPT](https://chat.openai.com/share/b6a5adb2-bd6b-4fd6-ab49-d585b2d0bb12)
+<details><summary>ChatGPT Hacks!</summary>
+<p>
+
+Here are some &#x1F4A1; tips to help you get the most out of working with ChatGPT to successfully complete computational tasks:
+
+1. **Treat ChatGPT as an Assistant, Not an Authority**  
+   Guide ChatGPT by clearly explaining what you want, rather than expecting it to know everything. If something doesn't work, give feedback and iterate.
+
+2. **Provide Context Clearly**  
+   Describe your environment (e.g., bash, R, Python) and tools you're using. This helps ChatGPT give relevant answers.
+
+3. **Share File Structures and Data Layout**  
+   Show the directory structure and contents of key files. ChatGPT can give more targeted help when it understands the layout of your project.
+
+4. **Explicit File, Directory, and Column Naming**  
+   Name files, directories, and columns in a way that a human could interpret without guidance. It makes it easier for ChatGPT (and other humans!) to follow your work.
+
+5. **Give Incremental Information**  
+   When asking for help with scripts or code, start with small parts, share outputs, and iterate. This helps avoid errors and keeps solutions accurate.
+
+6. **Ask for Clarifications and Explanations**  
+   Don't hesitate to ask why certain steps are taken, or for explanations of code or concepts. Use this opportunity to learn, not just solve problems.
+
+7. **Test Assumptions**  
+   When creating scripts or analyzing data, verify that ChatGPT's suggestions work with your specific data by testing them. Provide examples of your data or run the commands yourself.
+
+8. **Be Explicit About Errors and Results**  
+   If a suggestion doesn’t work, provide the exact error message or describe what went wrong. ChatGPT can provide a better solution if it understands what didn’t work.
+
+9. **Use ChatGPT for Planning**  
+   When tackling large tasks, ask ChatGPT to help you plan steps before diving into code. You can also have it review your process.
+
+10. **Request Unit Tests and Edge Case Testing**  
+    Ask ChatGPT to create unit tests or edge case scenarios to ensure the robustness of scripts.
+
+11. **Provide Problem Instructions in Detail**  
+    When seeking help on exercises or tasks, provide as much detail as possible. This ensures ChatGPT understands what the end goal is.
+
+12. **Iterate on Responses**  
+    Don’t expect the first response to always be perfect—it's common to go through a few iterations before reaching the best solution.
+
+13. **Include Relevant Logs and Outputs**  
+    When debugging or troubleshooting, share logs, errors, or partial outputs with ChatGPT. This makes it easier to pinpoint issues.
+
+By following these tips, you'll be able to use ChatGPT more effectively, developing both your technical and problem-solving skills!
+
+
+</p>
+</details>
 
 ---
 
@@ -172,8 +221,8 @@ Let's use ChatGPT to solve `assignment-02-xc`.  See my [session log with ChatGPT
 
 ---
 
-  </p>
-  </details>
+</p>
+</details>
 
 <details><summary>Why use version control?</summary>
 
