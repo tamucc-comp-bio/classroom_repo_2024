@@ -165,8 +165,7 @@ Let's use ChatGPT to solve `assignment-02-xc`.  See my [session log with ChatGPT
 ### IV. Version Control
 
 <details><summary>What is version control?</summary>
-
-
+<p>
 
 * A tool to record changes to your files and directory structure
   * additions, deletions, changes, etc
@@ -191,8 +190,7 @@ Let's use ChatGPT to solve `assignment-02-xc`.  See my [session log with ChatGPT
 </details>
 
 <details><summary>What is Git?</summary>
-
-
+<p>
 
 `git` is a version control tool and [`GitHub`](https://github.com) is a website that uses `git`.  `git` is popular, free, open source, and [`GitHub`](https://github.com) is a paid service that is free for educational use.  Fun fact, the [person who made linux os](https://en.wikipedia.org/wiki/Linus_Torvalds) created `git` to version control his and others work on linux.  Thus, `git` is in the "DNA" of linux.
 
@@ -204,6 +202,7 @@ Let's use ChatGPT to solve `assignment-02-xc`.  See my [session log with ChatGPT
 </details>
 
 <details><summary>Schematic diagram of how Git is used</summary>
+<p>
 
 Git is *distributed* and a full copy of the history of changes resides on every instance of the *repository*
 
@@ -216,8 +215,7 @@ Git is *distributed* and a full copy of the history of changes resides on every 
 </details>
 
 <details><summary>Configuring Git</summary>
-
-
+<p>
 
 Viewing your current `git` settings:
 
@@ -245,6 +243,7 @@ $ git config --global color.ui true
 </details>
 
 <details><summary>Getting Help with Git</summary>
+<p>
 
 [ChatGPT](https://chatgpt.com/)
 
@@ -431,8 +430,7 @@ It is important to note that `git` is made to track human-readable text files.  
 </details>
 
 <details><summary>Showing Changes Since Last Commit</summary>
-
-
+<p>
 
   We will use the `sed` command to find the ends of lines (represented by `$` in regex) and replace them with a period (represented by `\.` in regex).  The `-i` argument tells `sed` to change the input file rather than outputting a text stream.
 
@@ -456,6 +454,7 @@ $ sed -i 's/\.$//' origin.txt
 </details>
 
 <details><summary>Moving and Removing Files in a Repo</summary>
+<p>
 
 you need to tell `git` when you remove or move version controlled files
 
@@ -473,6 +472,7 @@ $ git log
 </details>
 
 <details><summary>Putting it All Together</summary>
+<p>
 
 Let us review what we have learned by making a new project in your sandbox and initializing the repo
 
