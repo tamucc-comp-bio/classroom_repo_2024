@@ -364,7 +364,7 @@ $ man git
 </details>
 
 <details><summary>Tracking a Change in a Text Document</summary>
-
+<p>
 
 
 1. Let us change the text in our tracked document
@@ -420,6 +420,7 @@ That is the majority of the commands you will use in git: `git add`,  `git commi
 </details>
 
 <details><summary>Git Can Only Track Internal Changes Made to Text Documents</summary>
+<p>
 
 It is important to note that `git` is made to track human-readable text files.  A human-readable text file will be readable by your text editor. Files that are binary (`docx`, etc) cannot be tracked by `git` in the same way that text files can.
 
