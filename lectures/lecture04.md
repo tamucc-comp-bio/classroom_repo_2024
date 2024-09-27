@@ -1,6 +1,11 @@
 # Week04 How to use ChatGPT  and   How to use Version Control
 
-### [Assignment 3](../assignments/assignment_3.md) is due at the beginning of this lecture
+> [!IMPORTANT]
+> [Assignment 3](../assignments/assignment_3.md) is due at the beginning of this lecture
+
+> [!NOTE]
+> The [Lecture Stream](https://tamucc.zoom.us/rec/share/ysyGalrSfN7BLqY7l8Q-Gm3OWrjZvYNu5GMak06BseQF19GSQkN-8EfQL7HQA_8.c2Ek6NPfPozlHAWU) will be updated following lecture.
+> Passcode: Ys.4!Imi
 
 ___
 
