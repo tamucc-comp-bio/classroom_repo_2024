@@ -776,5 +776,7 @@ This is an example `.gitignore` that includes files created when working with R 
 </details>
 
 
-## EXAM 1 Due Next Week Before Class
+## EXAM 1 Due Next Week Before Class 
+
+[See Course Schedule](../README.md)
 
