@@ -634,7 +634,7 @@ summary(z)
 ---
 
 ### [Mind Expander 8.1](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMFpONVRLSkNYUU9VQ1RXVzhGODBPTFM1UC4u) If you have a TAMUCC email address, use this link to receive credit
-### [Mind Expander 8.1 (Outside TAMUCC)](https://forms.office.com/r/t1Ljzp9FAN)
+* [Mind Expander 8.1 (Outside TAMUCC)](https://forms.office.com/r/t1Ljzp9FAN)
 
 ___
 
@@ -861,7 +861,8 @@ str(trees)
 </details>
 
 ### [Mind Expander 8.2](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlURDZQWkY5U1VSWU84WDU5Sk1HWE80NjdVVy4u)
-### [Mind Expander 8.2 (Outside TAMUCC)](https://forms.office.com/r/YiLKYYguir)
+
+* [Mind Expander 8.2 (Outside TAMUCC)](https://forms.office.com/r/YiLKYYguir)
 
 ___
 
