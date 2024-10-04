@@ -227,93 +227,14 @@ ___
 </p>
 </details>
 
-<details><summary>Install R on Ubuntu</summary>
+<details><summary>Install R</summary>
 <p>
 
-[Official Instructions](https://cloud.r-project.org/bin/linux/ubuntu/)
+Consult the [Install R Instructions](https://github.com/tamucc-comp-bio/how_to/blob/main/install_r.md) in the [How to Set Up Your Computer for Computational Biology](https://github.com/tamucc-comp-bio/how_to/blob/main/howto_setup_computer.md) tutorial
 
-1. Start by updating and upgrading your existing Ubuntu commands and apps:
-
-```
-# this may take some time to complete if you have not been running these commands regularly
-sudo apt update
-sudo apt upgrade
-```
-
-2. Install the dependencies needed
-
-```
-# update indices
-sudo apt update -qq
-
-# install two helper packages we need
-sudo apt install --no-install-recommends software-properties-common dirmngr
-
-# add the signing key (by Michael Rutter) for these repos
-# To verify key, run gpg --show-keys /etc/apt/trusted.gpg.d/cran_ubuntu_key.asc
-# Fingerprint: E298A3A825C0D65DFD57CBB651716619E084DAB9
-wget -qO- https://cloud.r-project.org/bin/linux/ubuntu/marutter_pubkey.asc | sudo tee -a /etc/apt/trusted.gpg.d/cran_ubuntu_key.asc
-
-# add the R 4.0 repo from CRAN -- adjust 'focal' to 'groovy' or 'bionic' as needed
-sudo add-apt-repository "deb https://cloud.r-project.org/bin/linux/ubuntu $(lsb_release -cs)-cran40/"
-```
-
-3. Install R v4.XX.  
-
-```
-# if R was not on your system before starting this procedure then:
-sudo apt install --no-install-recommends r-base
-sudo apt-get install r-base-dev
-
-# else if R was on your system, but it was an older version, such as 3.6, then
-sudo apt-get install r-base-dev
-sudo apt update
-sudo apt upgrade
-```
-
-4. Verify that you have successfully installed R v 4.XX
-
-```
-R --version
-```
-
-If the above instructions did not work, you can consult the [full README](https://cloud.r-project.org/bin/linux/ubuntu/fullREADME.html).
-
----
+___
 </p>
 </details>
-
-<details><summary>Install R on Win</summary>
-<p>
-
-1. Goto the [R download page](https://cran.revolutionanalytics.com/) and select the Win or Mac OS X Download link.
-
-2. Select "install R for the first time"
-
-
-If you have trouble with this, then consult the [CSB instructions](http://computingskillsforbiologists.com/setup/statistical-computing/)
-
----
-</p>
-</details>
-
-<details><summary>Install R on Mac</summary>
-<p>
-
-1. Goto the [R download page](https://cran.revolutionanalytics.com/) and select the Win or Mac OS X Download link.
-
-2. [Determine if you have an Intel or Apple cpu.](https://www.howtogeek.com/706226/how-to-check-if-your-mac-is-using-an-intel-or-apple-silicon-processor/)
-
-3. MacOS: Select the R-X.X.X.pkg download link for your OS and computer setup
-    * the choice depends on whether you have a M1/2 chip, or intel.
-
-
-If you have trouble with this, then consult the [CSB instructions](http://computingskillsforbiologists.com/setup/statistical-computing/)
-
----
-</p>
-</details>
-
 
 <details><summary>Running R from terminal</summary>
 <p>
@@ -996,4 +917,4 @@ ___
 
 ## HOMEWORK
 
-[Assignment 5](../assignments/assignment_5.md)
+### [Assignment 5](../assignments/assignment_5.md)
