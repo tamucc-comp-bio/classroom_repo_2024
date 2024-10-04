@@ -5,7 +5,11 @@
 
 > [!NOTE]
 > The [Lecture Stream]()
-Passcode: 
+> Passcode: 
+
+> [!NOTE]
+> I converted the [Lecture_05 Slides](Week05new_files/Introduction%20to%20R%201.pptx) to a more screen-splitting friendly format here in GitHub.
+
 
 ---
 
@@ -149,9 +153,6 @@ Passcode:
 ___
 
 
-## [I. Lecture Slides](Week05new_files/Introduction%20to%20R%201.pptx)
-
-I converted the lecture slides into this markdown document so you will not use them during class, but you can refer to them later as necessary.
 
 ---
 
