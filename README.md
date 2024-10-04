@@ -147,16 +147,7 @@ This is the end of the hidden section
 
 * [10/04  Week05 Base R Bootcamp I](lectures/lecture05new.md)
 
-  * Assignment 5 (Mind Expanders 8.3-8.5) Due 10/11
-
-  	* Complete lecture 5 Mind Expanders
-  
-  	* [Mind Expander 8.4](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMlRGTE9aQVQ3QUtBQlBOUEtHN1g3QUVDOS4u)
-		* [Mind Expander 8.4 (Outside TAMUCC)](https://forms.office.com/r/SSp12A7HD8)
-
-	* [Mind Expander 8.5](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMlIwMFNWME1IUVJCWktXWkZYSk1RV0pONC4u)
-		* [Mind Expander 8.5 (Outside TAMUCC)](https://forms.office.com/r/yjp2fTYGXc)
-
+  * [Assignment 5 Due 10/11](../assignments/assignment_5.md)
 
 * [10/11  Week06 Base R Bootcamp II](lectures/lecture06new.md)
 
