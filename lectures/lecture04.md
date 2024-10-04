@@ -1,4 +1,4 @@
-# Week04 How to use ChatGPT  and   How to use Version Control
+# Week04 How to use ChatGPT and How to use Version Control
 
 > [!IMPORTANT]
 > [Assignment 3](../assignments/assignment_3.md) is due at the beginning of this lecture
