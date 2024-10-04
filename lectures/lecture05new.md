@@ -633,8 +633,8 @@ summary(z)
 
 ---
 
-### [Mind Expander 8.1 TAMUCC](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMFpONVRLSkNYUU9VQ1RXVzhGODBPTFM1UC4u) 
-### [Mind Expander 8.1 Outside TAMUCC](https://forms.office.com/r/t1Ljzp9FAN)
+### [Mind Expander 8.1](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMFpONVRLSkNYUU9VQ1RXVzhGODBPTFM1UC4u) If you are a TAMUCC student, use this link
+### [Mind Expander 8.1 (Outside TAMUCC)](https://forms.office.com/r/t1Ljzp9FAN)
 
 ___
 
@@ -998,5 +998,7 @@ ___
 Complete the Mind Expanders up through 8.5.  You can use the resources in this markdown document, google searches, and/or the CSB text book (the Mind Expanders are based in the "intermezzos") to gain the context required to complete this assignment.
 
 [Mind Expander 8.4](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMlRGTE9aQVQ3QUtBQlBOUEtHN1g3QUVDOS4u)
+[Mind Expander 8.4 (Outside TAMUCC)](https://forms.office.com/r/SSp12A7HD8)
 
 [Mind Expander 8.5](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMlIwMFNWME1IUVJCWktXWkZYSk1RV0pONC4u)
+[Mind Expander 8.5 (Outside TAMUCC)](https://forms.office.com/r/yjp2fTYGXc)
