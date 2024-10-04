@@ -147,7 +147,7 @@ This is the end of the hidden section
 
 * [10/04  Week05 Base R Bootcamp I](lectures/lecture05new.md)
 
-  * Assignment 5 (Mind Expanders 8.3-8.5) Due 10/13
+  * Assignment 5 (Mind Expanders 8.3-8.5) Due 10/11
 
   	* ### [Mind Expander 8.3](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUQTRGOTA5UDRZMzlPSjEwTUxCVzBIOEdKRi4u)
   
@@ -169,9 +169,9 @@ This is the end of the hidden section
  
 * [11/01  Week08 Data Wrangling w/ Tidyverse](lectures/lecture08new.md)
 
-  * [Exam 2 Part 1, Due 11/08](https://forms.office.com/r/yEyDY7DRts)
+  * [Exam 2 Part 1, Due 11/08]()
 
-  * [Exam 2 Part 2, Due 11/08](https://classroom.github.com/a/-4z8vT5d)
+  * [Exam 2 Part 2, Due 11/08]()
 
  <!--
  
