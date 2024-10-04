@@ -147,7 +147,7 @@ This is the end of the hidden section
 
 * [10/04  Week05 Base R Bootcamp I](lectures/lecture05new.md)
 
-  * [Assignment 5 Due 10/11](../assignments/assignment_5.md)
+  * [Assignment 5 Due 10/11](assignments/assignment_5.md)
 
 * [10/11  Week06 Base R Bootcamp II](lectures/lecture06new.md)
 
