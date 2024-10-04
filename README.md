@@ -66,12 +66,16 @@ Office hours are W-Th 1:30-4 on Zoom or TH234
 
 ---
 
-<!-- This is a hidden comment. It will not be visible in the rendered markdown. 
+
 <details><summary>SECTION 1.  WELCOME TO THE MATRIX</summary>
 <p>
--->
+
+<!-- This is a hidden comment. It will not be visible in the rendered markdown. 
 
 ### SECTION 1.  WELCOME TO THE MATRIX
+
+the hidden section ends here
+-->
 
 * [08/30  Week00  Introduction & Data](lectures/lecture00.md)
   * [Assignment_0  Due, 09/08](assignments/assignment_0.md)
@@ -120,22 +124,26 @@ Office hours are W-Th 1:30-4 on Zoom or TH234
 
 * [Quiz Wk 2](https://forms.office.com/Pages/AnalysisPage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMjIySEJCNFlSMVJRSUo0SU5HSFNKMVRHWC4u&AnalyzerToken=EoUZORmaO6qYwQJjsmmNDCGnDljXugop)
 
+-->
+
 </p>
 </details>
 
--->
+
 
 ---
 
+<!-- This is a hidden comment. It will not be visible in the rendered markdown. 
 
 <details><summary>SECTION 2. DATA WRANGLING AND VISUALIZATION WITH R</summary>
 <p>
 
-<!-- This is a hidden comment. It will not be visible in the rendered markdown. 
+This is the end of the hidden section
+-->
 
 ### SECTION 2. DATA WRANGLING AND VISUALIZATION WITH R
 
--->
+
 
 * [10/04  Week05 Base R Bootcamp I](lectures/lecture05new.md)
 
