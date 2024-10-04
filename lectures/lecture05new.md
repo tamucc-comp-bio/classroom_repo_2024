@@ -16,7 +16,7 @@
 ## Computer Preparation
 
 > [!IMPORTANT]
-> Make sure your computer is ready to complete the assignment
+> Make sure your computer is ready for the lecture
 
 <details><summary>Windows, Mac, Linux</summary>
 <p>
@@ -150,15 +150,12 @@
  </p>
 </details>
 
-___
-
-
 
 ---
 
-## II. Lecture Activities
+## Lecture Activities
 
-We will not use `R Studio` today.  I want you to use the terminal to run R for now.  I will introduce `R Studio` in a future lecture.
+We will not use [`R Studio`](https://posit.co/download/rstudio-desktop/) today.  I want you to use the terminal to run `R` for now.  I will introduce `R Studio` in a future lecture.
 
 ___
 
