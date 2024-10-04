@@ -988,7 +988,7 @@ list.files()
 
 
 ### [Mind Expander 8.3](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUQTRGOTA5UDRZMzlPSjEwTUxCVzBIOEdKRi4u)
-### [Mind Expander 8.3 (Outside TAMUCC)](https://forms.office.com/r/srFGhBuqCD)
+* [Mind Expander 8.3 (Outside TAMUCC)](https://forms.office.com/r/srFGhBuqCD)
 ___
 
 
