@@ -143,7 +143,7 @@
 
 Complete the Mind Expanders up through 8.5.  You can use the resources in this markdown document, google searches, and/or the CSB text book (the Mind Expanders are based in the "intermezzos") to gain the context required to complete this assignment.
 
-To receive credit in the TAMUCC course, Computational Skills for 21st Century Biologists, use the primary (first link) for each Mind Expander, not the "Outside TAMUCC" link.
+To receive credit in the TAMUCC course, Computational Skills for 21st Century Biologists, use the primary (1st) link for each Mind Expander, **_not_** the "Outside TAMUCC" link.
 
 * [Mind Expander 8.3](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUQTRGOTA5UDRZMzlPSjEwTUxCVzBIOEdKRi4u)
 	* [Mind Expander 8.3 (Outside TAMUCC)](https://forms.office.com/r/srFGhBuqCD)
