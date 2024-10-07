@@ -4,8 +4,8 @@
 > Exam 1 is due at the beginning of this lecture
 
 > [!NOTE]
-> The [Lecture Stream]()
-> Passcode: 
+> The [Lecture Stream](https://tamucc.zoom.us/rec/share/5oTEFguSs5hjKLwLgRrNUP5dWToM-SLnQ2rv7a2fsgCLOehiHPLX-Xi9eUNUbKcX.YzmL5DfjpC1z9sdh)
+> Passcode: Qft0Te?5
 
 > [!NOTE]
 > I converted the [Lecture_05 Slides](Week05new_files/Introduction%20to%20R%201.pptx) to a more screen-splitting friendly format here in GitHub.
@@ -231,6 +231,8 @@ ___
 <p>
 
 Consult the [Install R Instructions](https://github.com/tamucc-comp-bio/how_to/blob/main/install_r.md) in the [How to Set Up Your Computer for Computational Biology](https://github.com/tamucc-comp-bio/how_to/blob/main/howto_setup_computer.md) tutorial
+
+If you are using the launch HPC, then you already have R.
 
 ___
 </p>
