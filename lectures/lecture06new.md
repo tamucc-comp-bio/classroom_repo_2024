@@ -2,7 +2,13 @@
 
 ###  Assignment 5 is due by beginning of class (complete Mind Expanders 8.2-8.5)
 
-### [Lecture Stream](https://tamucc.webex.com/recordingservice/sites/tamucc/recording/playback/a0af1796542845cd88f3c07adb15cb1a)
+> [!IMPORTANT]
+> Assignment 5 is due by beginning of class (complete Mind Expanders 8.3-8.5)
+
+> [!NOTE]
+> The [Lecture Stream]()
+> Passcode: TBA
+
 
 ___
 
