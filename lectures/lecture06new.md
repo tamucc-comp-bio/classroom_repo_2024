@@ -148,9 +148,9 @@ ___
  </p>
 </details>
 
-[If you have not already, install R](../resources/install_r.md)
+[If you have not already, install R](https://github.com/tamucc-comp-bio/how_to/blob/main/install_r.md)
 
-[If you have not already, install RStudio](../resources/install_rstudio.md)
+[If you have not already, install RStudio](https://github.com/tamucc-comp-bio/how_to/blob/main/install_rstudio.md)
 
 
 ---
@@ -395,9 +395,10 @@ If you have a Mac and you already installed `R` for use in your terminal, you do
 
 If you have a windows computer, you will need to separately install `R` in the windows environment even if you already installed it in Ubuntu.  
 
-[Install R](../resources/install_r.md)
+[Install R](https://github.com/tamucc-comp-bio/how_to/blob/main/install_r.md)
 
-[Install RStudio](../resources/install_rstudio.md)
+[Install RStudio](https://github.com/tamucc-comp-bio/how_to/blob/main/install_rstudio.md)
+
 
 ---
 
