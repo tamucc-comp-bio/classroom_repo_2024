@@ -933,6 +933,8 @@ sample(x,10,replace=TRUE) #bootstrapping
 
 ### [Mind Expander 8.6](https://forms.office.com/r/qSCU9G4MNM)
 
+	* [Mind Expander 8.6 (Outside TAMUCC)](https://forms.office.com/r/mumEZZThEX)
+
 
 ---
 

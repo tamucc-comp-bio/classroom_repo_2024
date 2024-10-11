@@ -151,7 +151,7 @@ This is the end of the hidden section
 
 * [10/11  Week06 Base R Bootcamp II](lectures/lecture06new.md)
 
-  * [Assignment 06, Due 10/18]()
+  * [Assignment 06, Due 10/18](https://classroom.github.com/a/Hut2FQRZ)
 
 
 * [10/18  Week07 Data Visualization w/ Tidyverse](lectures/lecture07new.md)
