@@ -293,6 +293,7 @@ while(i <= 10){   #while i <= 10
 
 ### [Mind Expander 8.4](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMlRGTE9aQVQ3QUtBQlBOUEtHN1g3QUVDOS4u)
 
+  [Mind Expander 8.4 (Outside TAMUCC)](https://forms.office.com/r/SSp12A7HD8)
 
 <details><summary>R `if`-`then` Logic Statements</summary>
 <p>
@@ -360,6 +361,8 @@ if(y%%2 == 0){
 </details>
 
 ### [Mind Expander 8.5](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMlIwMFNWME1IUVJCWktXWkZYSk1RV0pONC4u)
+
+  [Mind Expander 8.5 (Outside TAMUCC)](https://forms.office.com/r/yjp2fTYGXc)
 
 ---
 
@@ -933,7 +936,7 @@ sample(x,10,replace=TRUE) #bootstrapping
 
 ### [Mind Expander 8.6](https://forms.office.com/r/qSCU9G4MNM)
 
-	* [Mind Expander 8.6 (Outside TAMUCC)](https://forms.office.com/r/mumEZZThEX)
+  [Mind Expander 8.6 (Outside TAMUCC)](https://forms.office.com/r/mumEZZThEX)
 
 
 ---
