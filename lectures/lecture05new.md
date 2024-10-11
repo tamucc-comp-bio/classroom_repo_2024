@@ -4,7 +4,7 @@
 > Exam 1 is due at the beginning of this lecture
 
 > [!NOTE]
-> The [Lecture Stream](https://tamucc.zoom.us/rec/share/5oTEFguSs5hjKLwLgRrNUP5dWToM-SLnQ2rv7a2fsgCLOehiHPLX-Xi9eUNUbKcX.YzmL5DfjpC1z9sdh)
+> [Lecture Stream](https://tamucc.zoom.us/rec/share/5oTEFguSs5hjKLwLgRrNUP5dWToM-SLnQ2rv7a2fsgCLOehiHPLX-Xi9eUNUbKcX.YzmL5DfjpC1z9sdh)
 > Passcode: Qft0Te?5
 
 > [!NOTE]

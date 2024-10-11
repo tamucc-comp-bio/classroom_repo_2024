@@ -6,9 +6,8 @@
 > Assignment 5 is due by beginning of class (complete Mind Expanders 8.3-8.5)
 
 > [!NOTE]
-> The [Lecture Stream]()
+> [Lecture Stream]()
 > Passcode: TBA
-
 
 ___
 
@@ -157,13 +156,7 @@ ___
 ---
 
 
-## [I. Lecture Slides](Week05new_files/Introduction%20to%20R%201.pptx)
-
-I converted the lecture slides into this markdown document so you will not use them during class, but you can refer to them later as necessary. 
-
----
-
-## II. Review Material Covered for Homework
+## I. Review Material Covered for Homework
 
 <details><summary>R Scripts</summary>
 <p>
@@ -371,7 +364,7 @@ if(y%%2 == 0){
 ---
 
 
-## III. New Material Not Previously Covered: R Studio
+## II. New Material: R Studio
 
 
 <details><summary>R Studio</summary>
@@ -498,7 +491,7 @@ Global Environment (upper right)
 
 ---
 
-## IV. New Material Not Previously Covered: More R, but now in R Studio
+## III. New Material: More R, but now in R Studio
 
 From here forward, I request that you please work in R Studio, unless otherwise specified, to reduce minor issues that might crop up between platforms. However, it is important to realize that everything we are learning will also work in the R terminal from the linux/unix command line and with minor exceptions, _almost_ nothing we cover will be only usable in R Studio.
 
@@ -1353,9 +1346,9 @@ print(c(input_file, num_reps, start_point))
 </details>
 
 
-## V. Homework
+## IV. Homework
 
-[Complete exercise 8.23.3 in the text ](https://classroom.github.com/a/uWuu7yFy)
+[Complete exercise 8.23.3 in the text, Consult the Schedule for the Link](../README.md)
 
 Install tidyverse in RStudio
 
