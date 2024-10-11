@@ -153,6 +153,12 @@ This is the end of the hidden section
 
   * [Assignment 06, Due 10/18](https://classroom.github.com/a/Hut2FQRZ)
 
+  * Install tidyverse in RStudio
+
+	```r
+	install.packages("tidyverse")
+	install.packages("janitor")
+	```
 
 * [10/18  Week07 Data Visualization w/ Tidyverse](lectures/lecture07new.md)
 
