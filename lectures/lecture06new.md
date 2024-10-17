@@ -6,8 +6,8 @@
 > Assignment 5 is due by beginning of class (complete Mind Expanders 8.3-8.5)
 
 > [!NOTE]
-> [Lecture Stream]()
-> Passcode: TBA
+> [Lecture Stream](https://tamucc-my.sharepoint.com/:v:/r/personal/chris_bird_tamucc_edu/Documents/!Teaching/2024_09/ComputationalBiology/compbio_lecture_6_2024.mp4?csf=1&web=1&e=3lQ7nf&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+> Passcode: Not Required
 
 ___
 
