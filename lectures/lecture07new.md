@@ -12,7 +12,7 @@
 > Passcode: TBA
 
 > [!NOTE]
-> I converted the [Lecture_07 Slides](Week07_files/ggplot2_1.pptx) to a more screen-splitting friendly format here in GitHub.
+> Download the [Lecture_07 Slides](Week07_files/ggplot2_1.pptx)
 
 ___
 
