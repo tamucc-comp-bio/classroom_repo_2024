@@ -464,13 +464,15 @@ Today, I am going to project a ppt slide show.  I would like you to set up R Stu
 ---
 
 
-## Mind Expanders
+## Mind Expanders in Lecture Slides
 
 Complete the following mind expanders:
 
-[Mind Expander 9.5](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUOE9LM0ZWOUZWVlZTUzBKQkZaUkcwRVg4Qy4u)
+#### [Mind Expander 9.5 (labelled 1 in the slides)](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUOE9LM0ZWOUZWVlZTUzBKQkZaUkcwRVg4Qy4u)
+   * [CSB Mind Expander 9.5 (Outside TAMUCC)](https://forms.office.com/r/B9h9HxJwDh)
 
-[Mind Expander 9.6](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlURDFBNlc2UFFEOVJVMEpaWVZJWkJJNEc1US4u)
+#### [Mind Expander 9.6(labelled 2 in the slides)](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlURDFBNlc2UFFEOVJVMEpaWVZJWkJJNEc1US4u)
+   * [CSB Mind Expander 9.6 (Outside TAMUCC)](https://forms.office.com/r/ASyvGqbY0v)
 
 ---
 
