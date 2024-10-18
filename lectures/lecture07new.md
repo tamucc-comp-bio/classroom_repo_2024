@@ -454,19 +454,20 @@ The tidyverse is an opinionated collection of R packages designed for data scien
 
 Today, I am going to project a ppt slide show.  I would like you to set up R Studio as follows:
 
-* Clone the [Lecture_07 Repository](https://classroom.github.com/a/29Mmh-zd) to your computer
+> [!IMPORTANT]
+> Clone the [Lecture_07 Repository](https://classroom.github.com/a/29Mmh-zd) to your computer
 
-  * Open `repository_lecture-07_YourUserName/CSB/data_wrangling/sandbox/data_visualization_ggplot2.R` 
-  
-  * open `data_visualization_ggplot2.R` in R Studio, and execute the lines as we go in the ppt.
+> [!IMPORTANT]
+> Open `repository_lecture-07_YourUserName/CSB/data_wrangling/sandbox/data_visualization_ggplot2.R` 
 
+> [!IMPORTANT]
+> Open `repository_lecture-07_YourUserName/comp-bio_lecture-07_slides.pptx.pptx` in R Studio, and execute the lines as we go in the ppt.
 
 ---
 
-
 ## Mind Expanders in Lecture Slides
 
-Complete the following mind expanders:
+These are the Mind Expanders referenced in the lecture slides:
 
 #### [Mind Expander 9.5 (labelled 1 in the slides)](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUOE9LM0ZWOUZWVlZTUzBKQkZaUkcwRVg4Qy4u)
    * [CSB Mind Expander 9.5 (Outside TAMUCC)](https://forms.office.com/r/B9h9HxJwDh)
@@ -478,7 +479,7 @@ Complete the following mind expanders:
 
 ## Homework 
 
-* Complete the Lecture and [Mind Expander 9.6](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlURDFBNlc2UFFEOVJVMEpaWVZJWkJJNEc1US4u)
+* Complete the Lecture and Mind Expander 9.6
 
 * Complete the [Assignment 7 (Link in Schedule)](../README.md#schedule)
 	* clone this repo to your computer, update the R script, then push the changes to github
