@@ -183,7 +183,8 @@ ___
 <details><summary>Checking to see if you have R</summary>
 <p>
 
-Note that there are differences here if you have a Mac or Windows computer.
+> [!NOTE]
+> there are differences here if you have a Mac or Windows computer.
 
 To check if you have `R`, goto your terminal window and enter the following command:
 
@@ -382,7 +383,8 @@ The name of a variable can be almost anything you want, but try to avoid punctua
 
 ```
 
-Note that numbers should not be quotified, but character strings need to be quotified.
+> [!NOTE]
+> numbers should not be quotified, but character strings need to be quotified
 
 You can view the contents of variables by simply typing their name
 ```R
@@ -431,7 +433,8 @@ Try it out by creating the following variables
 > r <- 3==4
 ```
 
-Note that R will automatically choose a data type if you do not specify one.  It usually gets the data type right, but not always.
+> [!NOTE]
+> that R will automatically choose a data type if you do not specify one.  It usually gets the data type right, but not always.
 
 We can query the data type of a variable using `is.type(variable)`
 
@@ -799,7 +802,8 @@ Before you start reading and writing files, it is important to know where the wo
 
 `setwd(“path”)`	changes where you are, like `cd` in `bash`
 
-Note, root in windows is `C:/` rather than `/`
+> [!NOTE]
+> root in windows is `C:/` rather than `/`
 
 ```R
 rm(list=ls())
