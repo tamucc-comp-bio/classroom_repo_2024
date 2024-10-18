@@ -11,6 +11,9 @@
 > [Lecture Stream]()
 > Passcode: TBA
 
+> [!NOTE]
+> I converted the [Lecture_07 Slides](Week07_files/ggplot2_1.pptx) to a more screen-splitting friendly format here in GitHub.
+
 ___
 
 ## Computer Preparation
@@ -281,7 +284,7 @@ Bioconductor version 3.11 (BiocManager 1.30.10),
   ?BiocManager::install for help
 ```
 
-Continuing from the bioconductor website, with an eye on the pseudocode hints, we see that there is a new way to load the `EBImage` bioconductor library. biocLite has been depricated (scroll to bottom of bioconductor page to see).
+Continuing from the bioconductor website, with an eye on the pseudocode hints, we see that there is a new way to load the `EBImage` bioconductor library. biocLite has been deprecated (scroll to bottom of bioconductor page to see).
 
 _Note that we prefix the `install` command with `BiocManager::`.  We did this because `install` could be a function in another R package.  When this is a concern, you can add the name of the package for the command you want to run to make sure the correct function is run. 5% of mysterious R behavior is caused by different packages having functions with the same name but the user does not realize it._
 
@@ -429,6 +432,24 @@ alternative hypothesis: true difference in means is less than 0
 sample estimates:
 mean of the differences 
               -7096.227
+```
+
+> [!NOTE]
+> ChatGPT is generally excellent at helping you interpret the output of statistical tests in R, especially if you show it the data that was processed using `str()` and you've named columns descriptively
+
+```
+The output indicates the result of a paired t-test comparing two sets of values (tp1 and tp2), where the alternative hypothesis is that the true mean of the differences between tp1 and tp2 is less than 0.
+
+Here's a breakdown of the results:
+
+    t = -20.01: This is the t-statistic, a measure of how many standard errors the observed difference is from the null hypothesis (that there is no difference between tp1 and tp2).
+    df = 21: The degrees of freedom, which is based on the number of pairs in the data (in this case, 22 pairs, so n−1=21n−1=21).
+    p-value = 1.856e-15: This is the probability of observing a t-statistic as extreme as -20.01 (or more extreme) under the null hypothesis. A p-value this small indicates that the null hypothesis can be rejected with very high confidence.
+    alternative hypothesis: true difference in means is less than 0: This is the alternative hypothesis that was tested, meaning that the mean of tp1 is less than the mean of tp2.
+    95 percent confidence interval: (-Inf, -6486.002): This interval suggests that with 95% confidence, the true difference in means is between negative infinity and -6486.002.
+    mean of the differences: -7096.227: The mean difference between tp1 and tp2 is -7096.227, indicating that on average, tp1 is smaller than tp2 by about 7096.
+
+Since the p-value is extremely small, this suggests that there is strong evidence that the mean of tp1 is significantly less than the mean of tp2.
 ```
 
 ---
