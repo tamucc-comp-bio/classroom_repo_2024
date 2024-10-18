@@ -12,7 +12,7 @@
 > Passcode: TBA
 
 > [!NOTE]
-> Download the [Lecture_07 Slides](Week07_files/ggplot2_1.pptx)
+> Clone the [Lecture_07 Repository](https://classroom.github.com/a/29Mmh-zd) to your computer
 
 ___
 
@@ -448,15 +448,15 @@ Since the p-value is extremely small, this suggests that there is strong evidenc
 
 ## II. [`Tidyverse`](https://www.tidyverse.org/) Data Visualization w/ `ggplot2`
 
- R packages for data science
+**R packages for data science**
 
 The tidyverse is an opinionated collection of R packages designed for data science. All packages share an underlying design philosophy, grammar, and data structures.
 
 Today, I am going to project a ppt slide show.  I would like you to set up R Studio as follows:
 
-* download the [`data_visualization_ggplot2.R`](Week07_files/data_visualization_ggplot2.R) script which has the code from the [Lecture_07 Slides](Week07_files/ggplot2_1.pptx)
+* Clone the [Lecture_07 Repository](https://classroom.github.com/a/29Mmh-zd) to your computer
 
-  * move `data_visualization_ggplot2.R` into your `CSB/data_wrangling/sandbox` dir
+  * Open `repository_lecture-07_YourUserName/CSB/data_wrangling/sandbox/data_visualization_ggplot2.R` 
   
   * open `data_visualization_ggplot2.R` in R Studio, and execute the lines as we go in the ppt.
 
