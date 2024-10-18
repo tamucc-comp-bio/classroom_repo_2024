@@ -454,7 +454,7 @@ The tidyverse is an opinionated collection of R packages designed for data scien
 
 Today, I am going to project a ppt slide show.  I would like you to set up R Studio as follows:
 
-* download the [`data_visualization_ggplot2.R`](Week07_files/data_visualization_ggplot2.R) script which has the code from the ppt slides
+* download the [`data_visualization_ggplot2.R`](Week07_files/data_visualization_ggplot2.R) script which has the code from the [Lecture_07 Slides](Week07_files/ggplot2_1.pptx)
 
   * move `data_visualization_ggplot2.R` into your `CSB/data_wrangling/sandbox` dir
   
