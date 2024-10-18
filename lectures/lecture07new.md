@@ -177,19 +177,7 @@ rm(list = ls())
 
 ---
 
-___
-
-
-
----
-
-## [I. Lecture Slides](Week07_files/ggplot2_1.pptx)
-
----
-
-## II. Review Material Covered for Homework
-
-
+## I. Review Material Covered for Homework
 
 <details><summary>Copy the `r` dir to your repo</summary>
 <p>
@@ -437,20 +425,19 @@ mean of the differences
 > [!NOTE]
 > ChatGPT is generally excellent at helping you interpret the output of statistical tests in R, especially if you show it the data that was processed using `str()` and you've named columns descriptively
 
-```
 The output indicates the result of a paired t-test comparing two sets of values (tp1 and tp2), where the alternative hypothesis is that the true mean of the differences between tp1 and tp2 is less than 0.
 
 Here's a breakdown of the results:
 
-    t = -20.01: This is the t-statistic, a measure of how many standard errors the observed difference is from the null hypothesis (that there is no difference between tp1 and tp2).
-    df = 21: The degrees of freedom, which is based on the number of pairs in the data (in this case, 22 pairs, so n−1=21n−1=21).
-    p-value = 1.856e-15: This is the probability of observing a t-statistic as extreme as -20.01 (or more extreme) under the null hypothesis. A p-value this small indicates that the null hypothesis can be rejected with very high confidence.
-    alternative hypothesis: true difference in means is less than 0: This is the alternative hypothesis that was tested, meaning that the mean of tp1 is less than the mean of tp2.
-    95 percent confidence interval: (-Inf, -6486.002): This interval suggests that with 95% confidence, the true difference in means is between negative infinity and -6486.002.
-    mean of the differences: -7096.227: The mean difference between tp1 and tp2 is -7096.227, indicating that on average, tp1 is smaller than tp2 by about 7096.
+* t = -20.01: This is the t-statistic, a measure of how many standard errors the observed difference is from the null hypothesis (that there is no difference between tp1 and tp2).
+* df = 21: The degrees of freedom, which is based on the number of pairs in the data (in this case, 22 pairs, so n−1=21n−1=21).
+* p-value = 1.856e-15: This is the probability of observing a t-statistic as extreme as -20.01 (or more extreme) under the null hypothesis. A p-value this small indicates that the null hypothesis can be rejected with very high confidence.
+* alternative hypothesis: true difference in means is less than 0: This is the alternative hypothesis that was tested, meaning that the mean of tp1 is less than the mean of tp2.
+* 95 percent confidence interval: (-Inf, -6486.002): This interval suggests that with 95% confidence, the true difference in means is between negative infinity and -6486.002.
+* mean of the differences: -7096.227: The mean difference between tp1 and tp2 is -7096.227, indicating that on average, tp1 is smaller than tp2 by about 7096.
 
 Since the p-value is extremely small, this suggests that there is strong evidence that the mean of tp1 is significantly less than the mean of tp2.
-```
+
 
 ---
 
@@ -459,7 +446,7 @@ Since the p-value is extremely small, this suggests that there is strong evidenc
 
 ---
 
-## III. [`Tidyverse`](https://www.tidyverse.org/) Data Visualization w/ `ggplot2`
+## II. [`Tidyverse`](https://www.tidyverse.org/) Data Visualization w/ `ggplot2`
 
  R packages for data science
 
@@ -489,7 +476,7 @@ Complete the following mind expanders:
 
 ## Homework 
 
-* Complete the Lecture Slides and [Mind Expander 9.6](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlURDFBNlc2UFFEOVJVMEpaWVZJWkJJNEc1US4u)
+* Complete the Lecture and [Mind Expander 9.6](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlURDFBNlc2UFFEOVJVMEpaWVZJWkJJNEc1US4u)
 
 * Complete the [Assignment 7 Questions](https://classroom.github.com/a/G7cmolw_)
 	* clone this repo to your computer, update the R script, then push the changes to github
