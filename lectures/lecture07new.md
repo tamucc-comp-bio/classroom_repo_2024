@@ -4,14 +4,12 @@
 
 ###  Assignment 6 is due by beginning of class 
 
-###  Assignment 5 is due by beginning of class (complete Mind Expanders 8.2-8.5)
-
 > [!IMPORTANT]
-> Assignment 5 is due by beginning of class (complete Mind Expanders 8.3-8.5)
+> Assignment 6 is due by beginning of class 
 
 > [!NOTE]
-> [Lecture Stream](https://tamucc-my.sharepoint.com/:v:/r/personal/chris_bird_tamucc_edu/Documents/!Teaching/2024_09/ComputationalBiology/compbio_lecture_6_2024.mp4?csf=1&web=1&e=3lQ7nf&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
-> Passcode: Not Required
+> [Lecture Stream]()
+> Passcode: TBA
 
 ___
 
@@ -19,6 +17,16 @@ ___
 
 > [!IMPORTANT]
 > Make sure your computer is ready for the lecture
+
+### *_PLEASE INSTALL TIDYVERSE IN R STUDIO AS SOON AS YOU READ THIS_*
+
+```
+# RUN THE FOLLOWING LINE IN THE CONSOLE (LOWER LEFT PANEL)
+install.packages("tidyverse")
+
+# ADD THE FOLLOWING LINE TO YOUR TEXT DOCUMENT (UPPER LEFT PANEL), THEN EXECUTE IT (CTRL-ENTER)
+library(tidyverse)
+```
 
 <details><summary>Windows, Mac, Linux</summary>
 <p>
@@ -161,16 +169,6 @@ You are expected to start this lecture with R Studio open with a fresh and empty
 ```R
 # clear all variables from environment
 rm(list = ls())
-```
-
-### *_PLEASE INSTALL TIDYVERSE IN R STUDIO AS SOON AS YOU READ THIS_*
-
-```
-# RUN THE FOLLOWING LINE IN THE CONSOLE (LOWER LEFT PANEL)
-install.packages("tidyverse")
-
-# ADD THE FOLLOWING LINE TO YOUR TEXT DOCUMENT (UPPER LEFT PANEL), THEN EXECUTE IT (CTRL-ENTER)
-library(tidyverse)
 ```
 
 
