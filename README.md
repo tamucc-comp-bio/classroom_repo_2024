@@ -151,7 +151,7 @@ This is the end of the hidden section
 
 * [10/11  Week06 Base R Bootcamp II](lectures/lecture06new.md)
 
-  * [Assignment 06, Due 10/18](https://classroom.github.com/a/Hut2FQRZ)
+  * [Assignment 06 Q1, Due 10/18](https://classroom.github.com/a/Hut2FQRZ)
 
   * Install tidyverse in RStudio
 
@@ -162,9 +162,12 @@ This is the end of the hidden section
 
 * [10/18  Week07 Data Visualization w/ Tidyverse](lectures/lecture07new.md)
 
-  * [Assignment 7, Due 11/01]()
+  * [Assignment 6 Q 2-3, Due 11/01](https://classroom.github.com/a/Hut2FQRZ)
 
- 
+* [10/18  Week07 Data Visualization w/ Tidyverse](lectures/lecture07new.md)
+
+  * [Assignment 7, Due 11/01]()
+     
 * [11/01  Week08 Data Wrangling w/ Tidyverse](lectures/lecture08new.md)
 
   * [Exam 2 Part 1, Due 11/08]()
