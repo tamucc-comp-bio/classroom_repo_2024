@@ -164,7 +164,7 @@ This is the end of the hidden section
 
   * [Assignment 6 Q 2-3, Due 11/01](https://classroom.github.com/a/Hut2FQRZ)
 
-* [10/18  Week07 Data Visualization w/ Tidyverse](lectures/lecture07new.md)
+* [10/25  Week07 Take 2 Data Visualization w/ Tidyverse](lectures/lecture07new.md)
 
   * [Assignment 7, Due 11/01]()
      
