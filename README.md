@@ -166,7 +166,7 @@ This is the end of the hidden section
 
 * [10/25  Week07 Take 2 Data Visualization w/ Tidyverse](lectures/lecture07new.md)
 
-  * [Assignment 7, Due 11/01]()
+  * [Assignment 7, Due 11/01](https://classroom.github.com/a/GaXT-KTR)
      
 * [11/01  Week08 Data Wrangling w/ Tidyverse](lectures/lecture08new.md)
 
