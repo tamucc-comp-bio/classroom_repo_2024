@@ -465,7 +465,7 @@ Today, I am going to project a ppt slide show.  I would like you to set up R Stu
 > Open `repository_lecture-07_YourUserName/CSB/data_wrangling/sandbox/data_visualization_ggplot2.R` 
 
 > [!IMPORTANT]
-> Open `repository_lecture-07_YourUserName/comp-bio_lecture-07_slides.pptx.pptx` in R Studio, and execute the lines as we go in the ppt.
+> Open `repository_lecture-07_YourUserName/comp-bio_lecture-07_slides.pptx` in R Studio, and execute the lines as we go in the ppt.
 
 ---
 
