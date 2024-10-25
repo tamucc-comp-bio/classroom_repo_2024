@@ -8,9 +8,13 @@
 > Assignment 6 is due by beginning of class 
 
 > [!NOTE]
-> [Lecture Stream]()
-> Passcode: TBA
+> [Lecture Stream Day 1](https://tamucc.zoom.us/rec/share/VZ9XdC_rCSdajLecrDBAEm_qETvZcsE5ypXUxQ-jElVdDlIuY1ymwFG64t54fwxp.T0xWh8Lf4gOHI2Ig)
+> Passcode: =hfRC*98
 
+> [!NOTE]
+> [Lecture Stream Day 2]()
+> Passcode: tba
+> 
 > [!NOTE]
 > Clone the [Lecture_07 Repository](https://classroom.github.com/a/29Mmh-zd) to your computer
 
