@@ -12,8 +12,8 @@
 > Passcode: =hfRC*98
 
 > [!NOTE]
-> [Lecture Stream Day 2]()
-> Passcode: tba
+> [Lecture Stream Day 2](https://tamucc.zoom.us/rec/share/Io9AkMIVAgXpz3bQuLbPp-jgkK7f2dCFZRjjSXigA320AXkFJ4g07udLhwB2IxOr.1RQckMKGAFbM7Y8S )
+> Passcode: Wq.O362#
 > 
 > [!NOTE]
 > Clone the [Lecture_07 Repository](https://classroom.github.com/a/29Mmh-zd) to your computer
