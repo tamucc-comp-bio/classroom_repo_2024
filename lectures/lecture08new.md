@@ -17,33 +17,6 @@ CSB Ch 9
 | Program: Pipes                             | Program: Vectors                          |
 
 
-R for Data Science Chapters Covered:
-
-* Explore: Data transformation
-* Explore: Exploratory Data Analysis
-* Wrangle: Intro
-* Wrangle: Data import
-* Wrangle: Tidy data
-* Wrangle: Relational data
-* Wrangle: Factors
-* Wrangle: Dates & times
-* Program: Pipes
-	
-	
-
-R for Data Science Prerequisite Chapters:
-
-* Explore: Intro
-* Explore: Data visualization
-* Explore: Workflow: basics
-* Explore: Workflow: scripts
-* Explore: Workflow: projects
-* Wrangle: Tibbles
-* Wrangle: Factors
-* Program: Pipes
-* Program: Vectors
-	
-
 > [!IMPORTANT]
 > Assignment 7 is due by beginning of class 
 
