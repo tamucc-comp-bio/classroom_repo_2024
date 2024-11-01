@@ -2,6 +2,17 @@
 
 ![](https://d33wubrfki0l68.cloudfront.net/e3f9e555d0035731c04642ceb58a03fb84b98a7d/4f070/diagrams/data-science-wrangle.png)
 
+> [!IMPORTANT]
+> Assignment 7 is due by beginning of class 
+
+> [!NOTE]
+> [Lecture Stream]()
+> Passcode: TBA
+
+> [!NOTE]
+> Clone the [Lecture_08 Repository](https://classroom.github.com/a/7TPXzcRG) to your computer
+
+
 CSB Ch 9
 
 | R for Data Science Chapters Covered       | R for Data Science Prerequisite Chapters   |
@@ -16,16 +27,6 @@ CSB Ch 9
 | Wrangle: Dates & times                     | Program: Pipes                            |
 | Program: Pipes                             | Program: Vectors                          |
 
-
-> [!IMPORTANT]
-> Assignment 7 is due by beginning of class 
-
-> [!NOTE]
-> [Lecture Stream]()
-> Passcode: TBA
-
-> [!NOTE]
-> Clone the [Lecture_08 Repository](https://classroom.github.com/a/7TPXzcRG) to your computer
 
 ___
 
