@@ -10,7 +10,7 @@
 > Passcode: TBA
 
 > [!NOTE]
-> Clone the [Lecture_08 Repository](https://classroom.github.com/a/7TPXzcRG) to your computer
+> Clone the [Lecture_08 Repository](https://classroom.github.com/a/3EsZ3wUz) to your computer
 
 
 CSB Ch 9
@@ -201,7 +201,11 @@ install.packages("readxl")
 ## III. Getting the RScript & Data for Today 
 
 > [!IMPORTANT]
-> Clone the [Lecture_08 Repository](https://classroom.github.com/a/7TPXzcRG) to your computer
+> 1. Clone the [Lecture_08 Repository](https://classroom.github.com/a/3EsZ3wUz) to your computer
+
+2. Open  `repository_lecture-08/CSB/data_wrangling/sandbox/zipCovidSummary_lecture.R` in RStudio
+3. Note that the data for today's lecture is in `repository_lecture-08/CSB/data_wrangling/data`
+4. Continue in the next section, here
 
 <!--
 
@@ -267,7 +271,6 @@ _Phew! It's much harder to communicate GUI instructions than CL_
 -->
 
 ---
-
 
 ## IV. Organizing and Formatting an R Script
 
