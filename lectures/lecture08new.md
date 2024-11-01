@@ -51,14 +51,13 @@ You are expected to start this lecture with R Studio open with a fresh and empty
 > [!IMPORTANT]
 > Make sure your computer is ready for the lecture
 
-### *_PLEASE INSTALL TIDYVERSE IN R STUDIO AS SOON AS YOU READ THIS_*
+### *_PLEASE INSTALL `janitor` AND `readxl` IN R STUDIO AS SOON AS YOU READ THIS_*
 
 ```
 # RUN THE FOLLOWING LINE IN THE CONSOLE (LOWER LEFT PANEL)
-install.packages("tidyverse")
+install.packages("janitor")
+install.packages("readxl")
 
-# ADD THE FOLLOWING LINE TO YOUR TEXT DOCUMENT (UPPER LEFT PANEL), THEN EXECUTE IT (CTRL-ENTER)
-library(tidyverse)
 ```
 
 <details><summary>Windows, Mac, Linux</summary>
