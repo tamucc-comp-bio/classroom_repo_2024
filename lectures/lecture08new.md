@@ -32,10 +32,6 @@ ___
 
 ## Computer Preparation
 
-You are expected to start this lecture with R Studio open with a fresh and empty text document in the upper left panel and a clean environment.
-
-## Computer Preparation
-
 > [!IMPORTANT]
 > Make sure your computer is ready for the lecture
 
