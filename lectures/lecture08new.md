@@ -6,8 +6,8 @@
 > Assignment 7 is due by beginning of class 
 
 > [!NOTE]
-> [Lecture Stream]()
-> Passcode: TBA
+> [Lecture Stream](https://tamucc.zoom.us/rec/share/nTeSzlFU2vRvuM3erglagcyfIFgIrCBM0YEl4DYVB9aqQ5Y9mv2q46HbSkTVfzUN.bqD7kMLnMWyUY-SH?startTime=1730488454000)
+> Passcode: %6cAV0Bu
 
 
 CSB Ch 9
