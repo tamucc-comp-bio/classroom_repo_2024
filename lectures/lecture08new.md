@@ -3,6 +3,20 @@
 ![](https://d33wubrfki0l68.cloudfront.net/e3f9e555d0035731c04642ceb58a03fb84b98a7d/4f070/diagrams/data-science-wrangle.png)
 
 CSB Ch 9
+
+| R for Data Science Chapters Covered       | R for Data Science Prerequisite Chapters   |
+|-------------------------------------------|--------------------------------------------|
+| Explore: Data transformation               | Explore: Intro                             |
+| Explore: Exploratory Data Analysis         | Explore: Data visualization                |
+| Wrangle: Intro                             | Explore: Workflow: basics                 |
+| Wrangle: Data import                       | Explore: Workflow: scripts                |
+| Wrangle: Tidy data                         | Explore: Workflow: projects               |
+| Wrangle: Relational data                   | Wrangle: Tibbles                          |
+| Wrangle: Factors                           | Wrangle: Factors                          |
+| Wrangle: Dates & times                     | Program: Pipes                            |
+| Program: Pipes                             | Program: Vectors                          |
+
+
 R for Data Science Chapters Covered:
 
 * Explore: Data transformation
