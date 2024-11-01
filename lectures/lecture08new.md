@@ -34,11 +34,11 @@ R for Data Science Prerequisite Chapters:
 > Assignment 7 is due by beginning of class 
 
 > [!NOTE]
-> [Lecture Stream Day 1]()
+> [Lecture Stream]()
 > Passcode: TBA
 
 > [!NOTE]
-> Clone the [Lecture_08 Repository]() to your computer
+> Clone the [Lecture_08 Repository](https://classroom.github.com/a/7TPXzcRG) to your computer
 
 ###  Assignment 7 is due by beginning of class (complete Mind Expanders 9.5-9.6)
 
@@ -156,6 +156,10 @@ library(tidyverse)
 
 ## III. Getting the RScript & Data for Today 
 
+> [!IMPORTANT]
+> Clone the [Lecture_08 Repository](https://classroom.github.com/a/7TPXzcRG) to your computer
+
+<!--
 
 <details><summary>Getting Today's RScript & Data Set: Commmand Line Method</summary>
 <p>
@@ -215,6 +219,8 @@ _Phew! It's much harder to communicate GUI instructions than CL_
 
 </p>
 </details>
+
+-->
 
 ---
 
