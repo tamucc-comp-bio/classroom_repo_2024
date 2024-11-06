@@ -1418,3 +1418,5 @@ pivot_longer() (Fig 12.2 in [R for Data Science](https://r4ds.had.co.nz/tidy-dat
 
 ---
 
+# Assignment: Exam 2, linked in the [Course Schedule](../README.md) 
+
