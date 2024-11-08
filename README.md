@@ -234,13 +234,13 @@ This is the end of the hidden section
 
 ---
 
-<!--
--->
+<!-- This is a hidden comment. It will not be visible in the rendered markdown. 
+
 
 <details><summary>FINAL EXAM: "Welcome to the Desert of the Real"</summary>
 <p>
 
-<!-- This is a hidden comment. It will not be visible in the rendered markdown. 
+-->
 
 ### FINAL EXAM: "Welcome to the Desert of the Real"
 
@@ -257,18 +257,18 @@ We have spent the semester learning:
 #### Undergraduates:  
 I will issue a Final Exam in much the same way I have issued assignments, in a repo. 
 
-* [Final Exam Due 12/13 9:45 pm](https://forms.office.com/r/uYHNJTdBgQ)
+* [Final Exam Due 12/13 9:45 pm]()
 
-* [Final Exam Extra Credit Due 12/13 9:45 pm](https://classroom.github.com/a/VVivXGsW)
+* [Final Exam Extra Credit Due 12/13 9:45 pm]()
 
 
 
 #### Graduate Students
-Your "final" is completing your independent project by pushing the last changes to your repo by 12/13 9:45 pm.  PhD students have a presentation also.  Most folks are available on M Dec 11 at 2 PM in TH310.   
+Your "final" is completing your independent project by pushing the last changes to your repo by 12/13 9:45 pm.  PhD students have a presentation also.  Let's find a mutually agreeable date and time.   
 </p>
 </details>
 
 
--->
+
 
 ---
