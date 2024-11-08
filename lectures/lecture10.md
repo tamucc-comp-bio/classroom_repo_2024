@@ -146,11 +146,11 @@ ___
 ___
 
 
-## Install Anaconda
+## Install Miniconda
 
 Follow the instructions in [how_to/install_conda.md](https://github.com/tamucc-comp-bio/how_to/blob/main/install_conda.md) to install MiniConda
 
-[Anaconda](https://www.anaconda.com/products/individual) is a free distribution of Python and R that includes preinstalled packages.  When you run `conda`, it is almost invisible but you will use its installations of Python and R rather than those that are already on your system.  While this may seem a bit confusing at first, the point of Anaconda is to make using Python easier.  It does this by allow you to maintain several "environments", with each environment being dedicated to a particular task with the dependencies that are unique to that task.  If you only maintain one environment in which you install all packages, they and their dependencies will start to conflict with each other. 
+[Miniconda/Anaconda](https://www.anaconda.com/products/individual) is a free distribution of Python and R that includes preinstalled packages.  When you run `conda`, it is almost invisible but you will use its installations of Python and R rather than those that are already on your system.  While this may seem a bit confusing at first, the point of Anaconda is to make using Python easier.  It does this by allow you to maintain several "environments", with each environment being dedicated to a particular task with the dependencies that are unique to that task.  If you only maintain one environment in which you install all packages, they and their dependencies will start to conflict with each other. 
 
 <details><summary>Don't take it from me, hear what ChatGPT has to say</summary>
 <p>
@@ -195,15 +195,15 @@ ___
 
 ___
 
-### Activating & Deactivating Anaconda
+### Activating & Deactivating Conda
 
-After you install Anaconda and restart, confirm that conda is running by checking for `(base)` before command prompt
+After you install Conda and restart, confirm that Conda is running by checking for `(base)` before command prompt
 
 ```bash
 (base) cbird@XPS15:~$
 ```
 
-If conda is not on, you can turn it on:
+If `conda` is not on, you can turn it on:
 
 ```bash
 conda activate
@@ -218,9 +218,9 @@ conda deactivate
 ___
 
 
-### One More Time, What is Anaconda?
+### One More Time, What is Conda?
 
-When `conda` is turned on, your default `python` will be that installed by `anaconda` and will include all the packages that `anaconda` preinstalls. You are not in a "conda command prompt", rather, `bash` is altered when `conda` is running.
+When `conda` is turned on, your default `python` will be that installed inside of your base `conda` environment and will include all the packages that `miniconda/anaconda` preinstalls. You are not in a "conda command prompt", rather, `bash` is altered when `conda` is running.
 
 You know that `conda` is running if your have `(base)` or something similar prior to your command prompt:
 
@@ -245,9 +245,11 @@ ___
 We will work in `python3`. There are also legacy apps that require `python2` although `python2` is being phased out.
 
 ```bash
-(base) cbird@XPS15:~$ python3
-Python 3.7.3 (default, Mar 27 2019, 22:11:17)
-[GCC 7.3.0] :: Anaconda, Inc. on linux
+(base) cbird@XPS15:~$ python
+```
+
+```python
+Python 3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:27:36) [GCC 11.2.0] on linux
 Type "help", "copyright", "credits" or "license" for more information.
 >>>
 ```
@@ -543,6 +545,8 @@ AttributeError: 'str' object has no attribute 'print'
 
 #### [Mind Expander 3.1](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUNllCM0VQNk1ZVDVXWUwzVlVVWVQzSEIxNy4u)
 
+	[Mind Expander 3.1 (Outside TAMUCC)](https://forms.office.com/r/MCUc0YCr3b)
+
 ---
 
 ## IV. Python [Data Structures](https://docs.python.org/3/tutorial/datastructures.html) (ch 3.4)
@@ -812,7 +816,7 @@ ___
 
 ### [Sets](https://docs.python.org/3/tutorial/datastructures.html#sets)
 
-Sets are lists without diplicated entries and have special operators.
+Sets are lists without duplicated entries and have special operators.
 
 * Union - values in set 1 *or* set 2
 
@@ -925,6 +929,10 @@ ___
 
 ### [Mind Expander 3.2](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMzdVVkQwTlRQMENSVTQ5S0dUT0c1NFgwRi4u)
 
+* [Mind Expander 3.2 (Outside TAMUCC)](https://forms.office.com/r/ufyV1Xtraf)
+
 ---
 
+# Assignment
 
+[Consult the Schedule](../README.md)

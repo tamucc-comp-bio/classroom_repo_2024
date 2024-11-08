@@ -169,6 +169,7 @@ This is the end of the hidden section
 * [11/01  Week08 Data Wrangling w/ Tidyverse](lectures/lecture08new.md)
 
   * [Exam 2 Part 1, Due 11/08](https://forms.office.com/r/yEyDY7DRts)
+	* [Exam 2 Part 1 (Outside TAMUCC)](https://forms.office.com/r/TycAwVuDEW)
 
   * [Exam 2 Part 2, Due 11/08](https://classroom.github.com/a/DC3teNj3)
 
