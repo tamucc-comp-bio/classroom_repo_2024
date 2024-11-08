@@ -4,8 +4,8 @@
 > Exam 2 is due by beginning of class 
 
 > [!NOTE]
-> [Lecture Stream]()
-> Passcode: TBA
+> [Lecture Stream](https://tamucc.zoom.us/rec/share/9HqT1yYNfNXGKuGKoxuMfQCtuM67SLW2vBFYOh2JrSUPVCSn-Po1Ue373aLz0yg5.YFhGdS_bnpUnME1Q)
+> Passcode: vM&5B^wn
 ___
 
 ## Computer Preparation
