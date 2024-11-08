@@ -545,7 +545,7 @@ AttributeError: 'str' object has no attribute 'print'
 
 #### [Mind Expander 3.1](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUNllCM0VQNk1ZVDVXWUwzVlVVWVQzSEIxNy4u)
 
-	[Mind Expander 3.1 (Outside TAMUCC)](https://forms.office.com/r/MCUc0YCr3b)
+[Mind Expander 3.1 (Outside TAMUCC)](https://forms.office.com/r/MCUc0YCr3b)
 
 ---
 
