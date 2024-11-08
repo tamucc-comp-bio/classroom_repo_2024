@@ -218,6 +218,7 @@ This is the end of the hidden section
 
 * [11/08  Week10 Basic Python Programming I](lectures/lecture10.md)
   * [Assignment_10, Due 11/15](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMzdVVkQwTlRQMENSVTQ5S0dUT0c1NFgwRi4u)
+    * [Assignment_10 (Outside TAMUCC](https://forms.office.com/r/WCR8WG3u63)
 
 * [11/15  Week11 Basic Python Programming II](lectures/lecture11.md)
 * [11/15  Week12 Writing Good Code](lectures/lecture12.md)
