@@ -133,17 +133,15 @@ the hidden section ends here
 
 ---
 
-<!-- This is a hidden comment. It will not be visible in the rendered markdown. 
-
 <details><summary>SECTION 2. DATA WRANGLING AND VISUALIZATION WITH R</summary>
 <p>
 
-This is the end of the hidden section
--->
+<!-- This is a hidden comment. It will not be visible in the rendered markdown. 
 
 ### SECTION 2. DATA WRANGLING AND VISUALIZATION WITH R
 
-
+This is the end of the hidden section
+-->
 
 * [10/04  Week05 Base R Bootcamp I](lectures/lecture05new.md)
 
