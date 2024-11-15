@@ -7,191 +7,148 @@
 
 ## Computer Preparation
 
-Log into your TAMUCC email account
-
-<details><summary>Win10 - Ubuntu Setup (should already be done)</summary>
+<details><summary>Windows, Mac, Linux</summary>
 <p>
 
-  * If the Ubuntu app is not installed, then follow [these instructions](https://github.com/cbirdlab/wlsUBUNTU_settings/blob/master/InstallLinuxOnWindows_Automated.pdf)
+- [ ] Step 0. Open Terminal
+
+  > Search for the terminal app and open it.  For Windows, make sure you are using Ubuntu.
+
+  > You should have already prepared your computer during Lecture 0.  If you did not then:  
+
+  > * Complete the tasks listed in the [How to Set Up Your Computer for Computational Biology](https://github.com/tamucc-comp-bio/how_to/blob/main/howto_setup_computer.md), up to, but not including R and RStudio.
+  >    * If you are having difficulty installing ubuntu, use Launch if your account is activated.
+
+- [ ] Step 1. Update Your apps
+
+  > It's always a good idea to keep your apps in your terminal up to date. 
   
-  * Log into your Ubuntu terminal.  _We will not use `gitbash` unless you can not get Ubuntu running._ After logging in, You are in your home directory. 
-  
-  * If you are using an Ubuntu terminal that has not been setup (you will know because it will ask you to create a new user name and password) or you notice odd cursor behavior when editing text in the terminal, then run the following code:
-  
+  > For Ubuntu (Linux), enter the following commands to load the newest versions of your apps
+
+  ```bash
+  sudo apt update
+  sudo apt upgrade
+  ```
+
+  > For Mac (Homebrew), enter the following commands to load the newest versions of your apps
+
+  ```bash
+  brew update
+  brew upgrade
+  ```
+
+- [ ] Step 2. Confirm you have cloned the CSB (Computing Skills For Biologists) Repo into your home dir
+
+    > In your terminal, enter the following commands:
+
     ```bash
-    git clone https://github.com/cbirdlab/wlsUBUNTU_settings.git
-    . ./wlsUBUNTU_settings/updateSettings.bash
-    rm -rf wlsUBUNTU_settings
-    ```
+    # make sure you're in your home dir
+    cd ~
     
-  * If the `CSB` directory does not exist in your home directory (check with `ls`), then run the following code to clone the `CSB` repository into your home directory:
-  
-    ```bash
-    git clone https://github.com/CSB-book/CSB.git
+    # list the directories and files in the CSB dir to confirm it's in your home dir
+    ls CSB
     ```
 
-  * It is always a good idea to keep your apps in `Ubuntu` up to date. _The first time you do this, it could take a long time to finish. After that, if you do this when you log in, it should go quickly._
+    > You should see the following output because we cloned the CSB Repo to your home dir in [Lecture 0](https://github.com/tamucc-comp-bio/classroom_repo_2024/blob/master/lectures/lecture00.md).  
+
     ```bash
-    sudo apt update
-    sudo apt upgrade
-    ```
-</p>
-</details>
-
-<details><summary>Win10 Anaconda Setup (Should already be done)</summary>
-<p>
-
-[Anaconda](https://www.anaconda.com/products/individual) is a free distribution of Python and R that includes preinstalled packages.  When you run `conda`, it is almost invisible but you will use its installations of Python and R rather than those that are already on your system.  While this may seem a bit confusing at first, the point of Anaconda is to make using Python easier.
-
-  * In Win10-Ubuntu terminal, `Anaconda` installation is a bit more challenging than just simply following `Anaconda` [download instructions](http://computingskillsforbiologists.com/setup/basic-programming/).  Here is how to make it work:
-
-```bash
-sudo apt update
-sudo apt upgrade
-cd ~
-mkdir downloads
-cd downloads
-wget https://repo.anaconda.com/archive/Anaconda3-2020.07-Linux-x86_64.sh
-
-# check data integrity
-sha256sum Anaconda3-2020.07-Linux-x86_64.sh
-
-# install
-sudo bash Anaconda3-2020.07-Linux-x86_64.sh
-```
-
-Review the license agreement.  Note that the `d` key allows you to go down page by page.
-
-If you see this message:
-
-```bash
-Anaconda3 will now be installed into this location:
-/root/anaconda3
-
-    - Press ENTER to confirm the location
-    - Press CTRL-C to abort the installation
-    - Or specify a different location below
-```
-
-We do not want to save to `/root/anaconda3`.  We want to save to `~/anaconda3`, but the installer does not recognize the ~. 
-
-```bash
-# if your installer is not pointed to ~/anaconda3, type the following
-/home/YOURUSERNAME/anaconda3
-```
-
-Hit enter and finish install.
-
-When asked to initialize conda, do it.
-
-```bash
-exit
-```
-
-Restart ubunutu terminal
-
-```bash
-cd ~
-
-# make sure you have folder anaconda3
-ls -d */
-
-# set permissions
-sudo chmod -R 777 anaconda3
-
-# if it is still not on, you will see a (base) before your command prompt if it is on, then do this:
-export PATH=~/anaconda3/bin:$PATH
-conda init
-
-# lastly, you can install jupiter notebook if you want, but we wont be using it
-conda install jupyter
-```
-
-  * Using *Python*
-  
-    * open ubuntu terminal and type `python3`
-	
-  * Using Jupyter Notebook  (DONT USE JUPYTER NOTEBOOK FOR LECTURE)
-  
-    * In Win10-Ubunutu Terminal, first make sure the win10 `xming` app is running, then:
-    
-      ```bash
-      #navigate to directory where you want to launch programming/
-      jupyter notebook
-      ```
-      
-    * If you installed anaconda in Win10, goto start menu and select `Jupyter Notebook (Anaconda3)`
-	
-    * In either, click `new` button in upper right corner, then `python3`
-  
-</p>
-</details>
-
-<details><summary>MacOS Terminal Setup (should already be done)</summary>
-<p>
- 
-  * Open a terminal window
-  
-  * Consider installing [homebrew](https://brew.sh/).  You will be able to use homebrew to install linux software, such as `tree`, which is used in the slide show.
-  
-  * If the `CSB` directory does not exist in your home directory (check with `ls`), then run the following code to clone the `CSB` repository into your home directory:
-  
-    ```bash
-    git clone https://github.com/CSB-book/CSB.git
+    LICENSE  README.md  data_wrangling  git  good_code  latex  python  r  regex  scientific  sql  unix
     ```
 
+    > If you see the output above, you're done! Goto the next section.
+
+- [ ] Step 3. If you didn't have the CSB Repo, clone it now
+
+  > If you **do not** see the output above, then clone the CSB repo by entering the following commands:
+
+    ```bash
+        git clone https://github.com/CSB-book/CSB.git
+    ``` 
+
+  > You should see the following output:
+
+    ```bash
+    Cloning into 'CSB'...
+    remote: Enumerating objects: 1005, done.
+    remote: Total 1005 (delta 0), reused 0 (delta 0), pack-reused 1005 (from 1)
+    Receiving objects: 100% (1005/1005), 26.68 MiB | 7.74 MiB/s, done.
+    Resolving deltas: 100% (389/389), done.
+    ```
+
+  > Goto Step 2 above.
+
+<hr style="height: 0.1px; border: none; background-color: black;">
+
 </p>
 </details>
 
-<details><summary>MacOS Anaconda Setup (Should already be done)</summary>
+<details><summary>ChromeOS, iOS, Android</summary>
 <p>
 
-[Anaconda](https://www.anaconda.com/products/individual) is a free distribution of Python and R that includes preinstalled packages.  When you run `conda`, it is almost invisible but you will use its installations of Python and R rather than those that are already on your system.  While this may seem a bit confusing at first, the point of Anaconda is to make using Python easier.
+ - [ ] Step 0. [Log Into Launch HPC](https://portal-launch.hprc.tamu.edu/)
 
-  *`Anaconda` should be installed following [instructions here](http://computingskillsforbiologists.com/setup/basic-programming/)
-  
-  * open terminal and type `python3`
-  
-  * To launch jupyter notebook (DONT USE JUPYTER NOTEBOOK FOR LECTURE)
-  
+    > Use the following [link](https://portal-launch.hprc.tamu.edu/) to log in 
 
-</p>
+    > You should have already created your account during Lecture 0.  If you did not then:  
+    > * Complete the tasks listed in the [Accessing Launch Instructions](https://hprc.tamu.edu/kb/User-Guides/Launch/Access/#no-ssh-login)
+
+ - [ ] Step 1. Open Terminal
+
+    > Select `launch Shell Access`
+
+ - [ ] Step 2. Confirm you have cloned the CSB (Computing Skills For Biologists) Repo into your home dir
+
+  > In your terminal, enter the following commands:
+
+    ```bash
+    # make sure you're in your home dir
+    cd ~
+
+    # list the directories and files in the CSB dir to confirm it's in your home dir
+    ls CSB
+    ```
+
+  > You should see the following output because we cloned the CSB Repo to your home dir in [Lecture 0](https://github.com/tamucc-comp-bio/classroom_repo_2024/blob/master/lectures/lecture00.md).  
+
+    ```bash
+    LICENSE  README.md  data_wrangling  git  good_code  latex  python  r  regex  scientific  sql  unix
+    ```
+
+  > If you see the output above, you're done! Goto the next section.
+
+- [ ] Step 3. If you didn't have the CSB Repo, clone it now
+
+  > If you **do not** see the output above, then clone the CSB repo by entering the following commands:
+
+    ```bash
+        git clone https://github.com/CSB-book/CSB.git
+    ``` 
+
+  > You should see the following output:
+
+    ```bash
+    Cloning into 'CSB'...
+    remote: Enumerating objects: 1005, done.
+    remote: Total 1005 (delta 0), reused 0 (delta 0), pack-reused 1005 (from 1)
+    Receiving objects: 100% (1005/1005), 26.68 MiB | 7.74 MiB/s, done.
+    Resolving deltas: 100% (389/389), done.
+    ```
+
+  > Goto Step 2 above.
+
+ </p>
 </details>
 
 
 
-<details><summary>Updating Anaconda Installation on MacOS/Ubuntu</summary>
-<p>
-
-Confirm that conda is running by checking for `(base)` before command prompt
-
-```bash
-(base) cbird@XPS15:~$
-```
-
-To update to latest version:
-
-```bash
-# this will take a while
-conda update --all
-```
-
-To update to a specific version ([see list of versions](https://repo.anaconda.com/archive/)): 
-
-```bash
-# this will take a while
-conda install anaconda=VERSIONNAME
-```
-
-You can also consult the [official documentation](https://docs.anaconda.com/anaconda/install/update-version/)
-
-And also see [Keeping Anaconda Up To Date](https://www.anaconda.com/blog/keeping-anaconda-date)
-
-</p>
+<details><summary>Install Miniconda</summary>
+ <p>
+	[how_to/install_conda.md](https://github.com/tamucc-comp-bio/how_to/blob/main/install_conda.md)
+ </p>
 </details>
-
 
 ___
+
 
 
 ## I. Review Assignment 11
