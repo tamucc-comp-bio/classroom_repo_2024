@@ -335,6 +335,8 @@ ___
 
 #### [Mind Expander 4.1](https://forms.office.com/Pages/ResponsePage.aspx?id=8frLNKZngUepylFOslULZlFZdbyVx8RLiPt1GobhHnlUMExGOVA0TUROVklLUlhKSUtaN0ZKS1UzNS4u)
 
+    * [Mind Expander 4.1(Outside TAMUCC)](https://forms.office.com/r/2FTh5pV1Ra)
+
 Answer the questions in the above link while referring to the following code blocks (you are expected to run them in `python`):
 
 ```python
