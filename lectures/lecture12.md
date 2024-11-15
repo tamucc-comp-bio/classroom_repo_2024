@@ -195,7 +195,7 @@ ___
 
 As with most other coding languages, `python` allows you to create [functions](https://en.wikipedia.org/wiki/Subroutine). 
 
-When dividing the complex task of making a program into steps, it is important to avoid over and underdividing.
+When dividing the complex task of making a program into steps, it is important to avoid both over and underdividing.
 * Too many user-defined functions are hard to track
 * Too few user-defined functions makes bloated code (too many lines)
 
@@ -294,8 +294,8 @@ Let us define more functions in your text editor, then copy and paste these new 
 
 ```python
 #print a dictionary
-def print_dictionary(mydic):
-	for k, v in mydic.items():
+def print_dictionary(mydictionary):
+	for k, v in mydictionary.items():
 		print("key: ", k, " value: ", str(v))
 
 #return a list with results
@@ -426,8 +426,28 @@ There are 4 different ways to to load a module. Below we will use generic terms 
 
 You should definitely create your own modules to save you time. They would contain fuctions that you use frequently.
 
-___
+> [!IMPORTANT]
+> Exit python with `ctrl-d`
 
+```bash
+# you can install python packages from the bash terminal using pip
+
+pip install scipy
+```
+
+> [!IMPORTANT]
+> Enter python 
+
+```bash
+python3
+```
+
+```python
+import scipy
+```
+
+
+---
 
 ### 4.2.3 Program Structure: Making a Program
 
@@ -497,7 +517,10 @@ def build_population(N, p):
 		Each individual has two chromosomes, containing
 		allele "A" or "a", with probability p or 1-p,
 		respectively.
-		The population is a list of tuples.
+		The population stored as a list of tuples, 
+		where each tuple contains a genotype, 
+		e.g. a pop of two indiviudals, one hetero and 
+		one homozygote is represented as follows [("A", "a"), ("A", "A")].
 	"""
 	population = []
 	for i in range(N):
