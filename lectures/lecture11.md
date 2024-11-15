@@ -248,7 +248,8 @@ ___
 
 If then statements are used to conditionally run code (make decisions about which code should be run)
 
-*_Note that the `...` are shown in your terminal and should not be typed.*_
+> [!NOTE]
+> *_the `...` are shown in your terminal and should not be typed.*_
 
 ```python
 # pseudo code describing basic structure of if then statments, do not type
@@ -348,8 +349,8 @@ While we are printing out the values of variables, this is for your edification.
 
 ___
 
-
-It is very possible to create an infinite loop, so before running you want to be sure that the loop will end.
+> [!CAUTION]
+> It is very possible to create an infinite loop, so before running you want to be sure that the loop will end.
 
 Use `ctrl+c` to stop an infinite loop
 
@@ -384,7 +385,8 @@ ___
 
 `continue` skips the remaining code in 1 cycle of the loop
 
-Here, we print out the first 100 even numbers, counting from 0.  Note that it really matters where the line `found = found + 1` is placed
+Here, we print out the first 100 even numbers, counting from 0.  
+
 
 ```python
 x = 0
@@ -402,6 +404,9 @@ x = 0
 .
 200
 ```
+
+> [!NOTE]
+> it really matters where the line `found = found + 1` is placed
 
 ___
 
@@ -467,7 +472,7 @@ dict_items([(0, 'a'), (1, 'b'), (2, 'c')])
 ___
 
 
-The `range` function is useful to create a list of numbers for a For loop.  Note the non-intuitive behavior with the final value in the range.
+The `range` function is useful to create a list of numbers for a For loop.  
 
 ```python
 >>> list(range(10))
@@ -491,6 +496,9 @@ The `range` function is useful to create a list of numbers for a For loop.  Note
 64
 81
 ```
+
+> [!NOTE]
+> Potentially non-intuitive behavior with the final value in the range.
 
 ___
 
