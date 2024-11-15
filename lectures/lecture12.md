@@ -1,9 +1,8 @@
 # Lecture 12 Python Boot Camp III: Writing Good Code
 
-### [Lecture Stream](https://tamucc.webex.com/tamucc/ldr.php?RCID=5684397867b740238d75cfce1015ab15)
-
-### Assignment 11 is due at the beginning of this lecture
-
+> [!NOTE]
+> [Lecture Stream]()
+> Passcode: TBA
 
 ## Computer Preparation
 
@@ -148,8 +147,6 @@
 </details>
 
 ___
-
-
 
 ## I. Review Assignment 11
 
