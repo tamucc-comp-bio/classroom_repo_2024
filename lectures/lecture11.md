@@ -185,6 +185,8 @@ Python provides built-in data structures that are special types of objects that 
 
 [Mind Expander 3.2](https://forms.office.com/r/SF15e9UWxu)
 
+* [Mind Expander 3.2 (Outside TAMUCC)](https://forms.office.com/r/ufyV1Xtraf)
+
 ## III. Work through the rest of the chapter, sections 3.5-3.7
 
 ### Common, General Functions
