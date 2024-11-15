@@ -643,11 +643,14 @@ cp ../solutions/drift.py .
 ```
 
 > [!IMPORTANT]
-> There is an error in the `drift.py` script.  Be sure to fix it with `sed`
+> There are two errors in the `drift.py` script.  Be sure to fix it with `sed`
 
 ```bash
-sed -i 's/scipy\.random/np\.random/g' drift.py
+# add import numpy as np after import scipy
 sed -i '/import scipy/a import numpy as np' drift.py
+
+# replace scipy.random with np.random
+sed -i 's/scipy\.random/np\.random/g' drift.py
 python3
 ```
 
