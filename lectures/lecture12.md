@@ -525,16 +525,16 @@ def build_population(N, p):
 	population = []
 	for i in range(N):
 		allele1 = "A"
-        if np.random.rand() > p:
-            allele1 = "a"
-        else:
-            allele1 = "A"
+		if np.random.rand() > p:
+			allele1 = "a"
+		else:
+			allele1 = "A"
 
-        # Determine allele2
-        if np.random.rand() > p:
-            allele2 = "a"
-        else:
-            allele2 = "A"
+		# Determine allele2
+		if np.random.rand() > p:
+			allele2 = "a"
+		else:
+			allele2 = "A"
 		population.append((allele1, allele2))
 	return population
 
