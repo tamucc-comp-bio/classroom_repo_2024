@@ -577,8 +577,12 @@ Test the genotype function
 >>> my_pop = build_population(6, 0.5)
 >>> my_pop
 [('a', 'A'), ('A', 'A'), ('a', 'A'), ('a', 'a'), ('A', 'A'), ('A', 'a')]
+
 >>> compute_frequencies(my_pop)
 {'AA': 2, 'aa': 1, 'Aa': 1, 'aA': 2}
+
+>>> compute_frequencies(build_population(100, 0.8))
+{'AA': 61, 'aa': 6, 'Aa': 12, 'aA': 21}
 ```
 
 ___
@@ -636,6 +640,14 @@ Exit `python` (`ctrl-d`) and copy `drift.py` to your sandbox.
 ```bash
 cd ~/CSB/good_code/sandbox
 cp ../solutions/drift.py .
+```
+
+> [!IMPORTANT]
+> There is an error in the `drift.py` script.  Be sure to fix it with `sed`
+
+```bash
+sed -i 's/scipy\.random/np\.random/g' drift.py
+sed -i '/import scipy/a import numpy as np' drift.py
 python3
 ```
 
