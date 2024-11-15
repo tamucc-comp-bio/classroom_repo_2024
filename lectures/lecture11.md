@@ -143,6 +143,13 @@
 </details>
 
 
+
+<details><summary>Install Miniconda</summary>
+ <p>
+	[how_to/install_conda.md](https://github.com/tamucc-comp-bio/how_to/blob/main/install_conda.md)
+ </p>
+</details>
+
 ___
 
 
