@@ -513,30 +513,32 @@ import numpy as np
 
 # make function to build population
 def build_population(N, p):
-	"""The population consists of N individuals.
-		Each individual has two chromosomes, containing
-		allele "A" or "a", with probability p or 1-p,
-		respectively.
-		The population stored as a list of tuples, 
-		where each tuple contains a genotype, 
-		e.g. a pop of two indiviudals, one hetero and 
-		one homozygote is represented as follows [("A", "a"), ("A", "A")].
-	"""
-	population = []
-	for i in range(N):
-		allele1 = "A"
-		if np.random.rand() > p:
-			allele1 = "a"
-		else:
-			allele1 = "A"
-
-		# Determine allele2
-		if np.random.rand() > p:
-			allele2 = "a"
-		else:
-			allele2 = "A"
-		population.append((allele1, allele2))
-	return population
+    """The population consists of N individuals.
+        Each individual has two chromosomes, containing
+        allele "A" or "a", with probability p or 1-p,
+        respectively.
+        The population stored as a list of tuples, 
+        where each tuple contains a genotype, 
+        e.g. a pop of two indiviudals, one hetero and 
+        one homozygote is represented as follows [("A", "a"), ("A", "A")].
+    """
+    population = []
+    for i in range(N):
+        # Determine allele 1
+        if np.random.rand() > p:
+            allele1 = "a"
+        else:
+            allele1 = "A"
+        
+        # Determine allele 2
+        if np.random.rand() > p:
+            allele2 = "a"
+        else:
+            allele2 = "A"
+        
+        population.append((allele1, allele2))
+    
+    return population
 
 ```
 
