@@ -1,8 +1,8 @@
 # Lecture 12 Python Boot Camp III: Writing Good Code
 
 > [!NOTE]
-> [Lecture Stream]()
-> Passcode: TBA
+> [Lecture Stream](https://tamucc.zoom.us/rec/share/XU_Zb00JD1LAIOsXqg6jVv-goQ9a21q_w9jgs1npiwi3Bzk1GF8KHzZqQqh66S2x.N5sKXhzsbZ-WQRo8)
+> Passcode: y9e6EN%=
 
 ## Computer Preparation
 
