@@ -4,9 +4,8 @@
 > Assignment 10 is due by beginning of class 
 
 > [!NOTE]
-> [Lecture Stream]()
-> Passcode: TBA
-
+> [Lecture Stream](https://tamucc.zoom.us/rec/share/JCvUoA12-XHtkzRtr6iOUZ6AtFD6LRT3lMxds_Q-iWAsrP7llOu5o11H9Qpo40tl.pfTvYjBlQkUdjUeY)
+> Passcode: y9e6EN%=
 
 ## Computer Preparation
 
