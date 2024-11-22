@@ -153,13 +153,7 @@
 
 ___
 
-## I. Review Assignment 11
-
-Does anybody want to go over assignment 11? 
-
-Which exercise?
-
-### Python Problem Solving 101
+## I. Python Problem Solving 101
 
 * Think through problem
 * Break down complex tasks into simple steps

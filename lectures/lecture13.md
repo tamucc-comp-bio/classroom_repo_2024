@@ -151,16 +151,10 @@
 </details>
 
 
-
-
 ___
 
 
-## I. Review Assignment 12
-
-Does anybody want to go over assignment 12? 
-
-### Review: Python Problem Solving 101
+## I. Review: Python Problem Solving 101
 
 * Think through problem
 * Break down complex tasks into simple steps
