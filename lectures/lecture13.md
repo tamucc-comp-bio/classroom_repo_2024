@@ -337,6 +337,14 @@ conda list | grep 'numpy\|scipy\|pandas\|biopython'
 
 ```
 
+Now let's install some other packages for this lecture
+
+```bash
+conda install -c conda-forge scikit-image
+
+conda install -c conda-forge matplotlib
+```
+
 Confirm installation of biopython in python3 terminal
 
 ```python
