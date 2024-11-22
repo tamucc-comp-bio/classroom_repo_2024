@@ -4,8 +4,10 @@
 > [Lecture Stream]()
 > Passcode: TBA
 
-### Assignment 12 is due the last day of classes
+> [!IMPORTANT]
+> Assignment 12 is due the last day of classes
 
+---
 
 ## Computer Preparation
 
