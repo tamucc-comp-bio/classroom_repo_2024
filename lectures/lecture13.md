@@ -206,6 +206,8 @@ You can create a new environment with `conda` in the `bash` terminal
 (base) cbird@xps13plus:~$ conda create -n comp_bio_lecture_13
 ```
 
+You should see similar output to this:
+
 ```bash
 Channels:
  - defaults
@@ -221,6 +223,8 @@ Solving environment: done
 
 Proceed ([y]/n)? y
 ```
+
+Say "y" and proceed
 
 ```bash
 Preparing transaction: done
@@ -240,19 +244,23 @@ You can change between environments using `conda activate` and `conda deactivate
 
 ```bash
 (base) cbird@xps13plus:~$ conda activate comp_bio_lecture_13
-```
-
-```bash
 (comp_bio_lecture_13) cbird@xps13plus:~$
 ```
 
+```bash
+(comp_bio_lecture_13) cbird@xps13plus:~$ conda deactivate
+(base) cbird@xps13plus:~$
+```
+
+```bash
+(base) cbird@xps13plus:~$ conda activate
+(base) cbird@xps13plus:~$ conda activate comp_bio_lecture_13
+```
 > [!NOTE]
 > The present `conda` environment is listed prior to your command prompt `(comp_bio_lecture_13)`
 
 ```bash
-(comp_bio_lecture_13) cbird@xps13plus:~$ conda deactivate
-(base) cbird@xps13plus:~$ conda activate
-(base) cbird@xps13plus:~$ conda activate comp_bio_lecture_13
+
 (comp_bio_lecture_13) cbird@xps13plus:~$
 ```
 
