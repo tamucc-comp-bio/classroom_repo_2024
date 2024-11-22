@@ -259,6 +259,7 @@ You can change between environments using `conda activate` and `conda deactivate
 > [!NOTE]
 > The present `conda` environment is listed prior to your command prompt `(comp_bio_lecture_13)`
 
+---
 
 ### Installation of Packages
 
@@ -274,9 +275,65 @@ conda list
 # list numpy scipy pandas biopython
 conda list | grep 'numpy\|scipy\|pandas\|biopython'
 
-# I had numpy, scipy, and pandas
-# to install biopython
+# I had no packages
+
+# install scipy
+conda install scipy
+
+# check packages
+conda list | grep 'numpy\|scipy\|pandas\|biopython'
+
+# install pandas, I got an error when I didn't include -c conda-forge
+conda install pandas -c conda-forge
+
+# check packages
+conda list | grep 'numpy\|scipy\|pandas\|biopython'
+
+# install biopython
 conda install biopython
+
+# I got hung up here, so tried the following:
+
+conda clean --all
+
+conda update --all
+
+conda install -c conda-forge biopython
+
+# that didn't work so I went to: https://anaconda.org/conda-forge/biopython
+
+conda install conda-forge::biopython
+
+```
+
+We can't install `biopython` because it doesn't work with the newest version of Python
+Delete the environment and start Over
+
+```bash
+conda deactivate
+
+conda remove -n comp_bio_lecture_13 --all
+
+```
+
+Create the environment with an older version of Python, v 3.10
+
+```bash
+conda create -n comp_bio_lecture_13 python=3.10
+```
+
+Activate the new environment and install scipy, pandas, and Biopython
+
+```bash
+conda activate comp_bio_lecture_13
+
+conda install conda-forge::biopython
+
+conda install conda-forge::scipy
+
+conda install anaconda::pandas 
+
+conda list | grep 'numpy\|scipy\|pandas\|biopython'
 
 ```
 
