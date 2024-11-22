@@ -176,6 +176,65 @@ These are packages that extend the functionality of `python`, making it easier t
 * *Pandas*: manipulation, analysis, and visualization of data sets
 * *Biopython8*: bioinformatics, connection to biological databases
 
+---
+
+### Importance of using `conda` Environments
+
+I have stressed the importance of using `conda` in conjunction with `python`.  
+
+The diversity of Python libraries often leads to version conflicts or dependency issues when working on multiple projects. This is where environments, such as those provided by `conda`, become essential. Using environments when working with Python is not just a best practice; it’s a necessity for efficient, reproducible, and conflict-free project management. They empower you to focus on your code and analyses instead of troubleshooting software compatibility issues.
+
+* **Dependency Management:** Each project may require different versions of Python or specific libraries. For example, one project might rely on Biopython 1.8, while another needs the latest version of Pandas. Using environments, you can ensure each project has access to only the tools and dependencies it requires, avoiding conflicts.
+
+* **Isolation:** Environments isolate the libraries of one project from another. This means you can work on different projects with completely different requirements on the same system without interference.
+
+* **Reproducibility:** By creating and exporting an environment file, you can share the exact setup with collaborators. This ensures that they can replicate your work seamlessly, which is a cornerstone of good scientific practice.
+
+* **Stability for Long-Term Projects:** Over time, library updates may introduce changes or deprecate functions you rely on. An environment locks in the versions of your libraries, allowing you to revisit old projects without compatibility issues.
+
+* **Ease of Use:** Tools like Miniconda make creating and managing environments simple. You can quickly set up a fresh environment tailored to your needs and even clone or modify existing ones with minimal effort.
+
+---
+
+### Create an Environment for Today's Lecture
+
+As an example of how to use environments, we will make and use an environment in `conda` explicitly for today's lecture activities.
+
+You can create a new environment with `conda` in the `bash` terminal
+
+```bash
+conda create -n comp_bio_lecture_13
+```
+
+```bash
+Channels:
+ - defaults
+Platform: linux-64
+Collecting package metadata (repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: /home/cbird/miniconda3/envs/comp_bio_lecture_13
+
+
+
+Proceed ([y]/n)? y
+```
+
+```bash
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+#
+# To activate this environment, use
+#
+#     $ conda activate comp_bio_lecture_13
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+```
 
 ### Installation of Packages
 
