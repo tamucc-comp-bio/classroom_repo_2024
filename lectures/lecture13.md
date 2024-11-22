@@ -203,7 +203,7 @@ As an example of how to use environments, we will make and use an environment in
 You can create a new environment with `conda` in the `bash` terminal
 
 ```bash
-conda create -n comp_bio_lecture_13
+(base) cbird@xps13plus:~$ conda create -n comp_bio_lecture_13
 ```
 
 ```bash
@@ -234,6 +234,26 @@ Executing transaction: done
 # To deactivate an active environment, use
 #
 #     $ conda deactivate
+```
+
+You can change between environments using `conda activate` and `conda deactivate`
+
+```bash
+(base) cbird@xps13plus:~$ conda activate comp_bio_lecture_13
+```
+
+```bash
+(comp_bio_lecture_13) cbird@xps13plus:~$
+```
+
+> [!NOTE]
+> The present `conda` environment is listed prior to your command prompt `(comp_bio_lecture_13)`
+
+```bash
+(comp_bio_lecture_13) cbird@xps13plus:~$ conda deactivate
+(base) cbird@xps13plus:~$ conda activate
+(base) cbird@xps13plus:~$ conda activate comp_bio_lecture_13
+(comp_bio_lecture_13) cbird@xps13plus:~$
 ```
 
 ### Installation of Packages
