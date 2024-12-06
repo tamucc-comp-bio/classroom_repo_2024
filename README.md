@@ -261,7 +261,7 @@ I will issue a Final Exam in much the same way I have issued assignments, in a M
 
 * [Final Exam (Python) Due 12/13 9:45 pm](https://forms.office.com/r/uYHNJTdBgQ)  LIVE!
 
-* [Final Exam Extra Credit Due 12/13 9:45 pm]()  COMING SOON!
+* [Final Exam Extra Credit Due 12/13 9:45 pm](https://classroom.github.com/a/czMTVVik)  LIVE!
 
 
 
