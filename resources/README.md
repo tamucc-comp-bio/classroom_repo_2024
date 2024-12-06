@@ -51,3 +51,9 @@ This directory contains resources that will help you with your assignments .
 * [CSB](https://github.com/tamucc-comp-bio/CSB)
 
 * [Your homework and project repos](https://github.com/orgs/comp-bio-master/repositories)
+
+----
+
+## Helpful Pages
+
+* [The Linux Wiki](https://www.thelinuxwiki.net/index.php?title=The_Linux_Wiki)
