@@ -266,7 +266,7 @@ I will issue a Final Exam in much the same way I have issued assignments, in a M
 
 
 #### Graduate Students
-Your "final" is completing your independent project by pushing the last changes to your repo by 12/13 9:45 pm.  PhD students have a presentation also.  Let's find a mutually agreeable date and time.   
+Your "final" is completing your independent project by pushing the last changes to your repo by 12/13 9:45 pm.  PhD students have a presentation also on Monday Dec 9 at 2PM in Tidal Hall 2nd Floor Grad Student Conf Table.  All are invited to attend.   
 </p>
 </details>
 
