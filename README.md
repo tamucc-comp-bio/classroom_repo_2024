@@ -257,11 +257,11 @@ We have spent the semester learning:
 * distributing our work using GitHub
 
 #### Undergraduates:  
-I will issue a Final Exam in much the same way I have issued assignments, in a repo. 
+I will issue a Final Exam in much the same way I have issued assignments, in a MS Form and a Repo. You can use all resources at your disposal to complete the exam and extra credit.
 
-* [Final Exam Due 12/13 9:45 pm]()
+* [Final Exam (Python) Due 12/13 9:45 pm](https://forms.office.com/r/uYHNJTdBgQ)  LIVE!
 
-* [Final Exam Extra Credit Due 12/13 9:45 pm]()
+* [Final Exam Extra Credit Due 12/13 9:45 pm]()  COMING SOON!
 
 
 
